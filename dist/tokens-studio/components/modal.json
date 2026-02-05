@@ -1,0 +1,103 @@
+{
+  "modal": {
+    "padding": {
+      "header": {
+        "$value": "{spacing.lg}",
+        "$type": "dimension",
+        "$description": "Modal header padding (24px). Use for title and close button area."
+      },
+      "body": {
+        "$value": "{spacing.lg}",
+        "$type": "dimension",
+        "$description": "Modal body content padding (24px). Use for main dialog content."
+      },
+      "footer": {
+        "$value": "{spacing.md}",
+        "$type": "dimension",
+        "$description": "Modal footer padding (16px). Use for action button container."
+      }
+    },
+    "borderRadius": {
+      "$value": "{radius.lg}",
+      "$type": "dimension",
+      "$description": "Modal container border radius (16px). Use for elevated floating elements."
+    },
+    "width": {
+      "xs": {
+        "$value": "20rem",
+        "$type": "dimension",
+        "$description": "Extra small modal width (320px). Use for: confirmations, alerts."
+      },
+      "sm": {
+        "$value": "25rem",
+        "$type": "dimension",
+        "$description": "Small modal width (400px). Use for: simple dialogs, prompts."
+      },
+      "md": {
+        "$value": "32.5rem",
+        "$type": "dimension",
+        "$description": "Medium modal width (520px). DEFAULT for most modals."
+      },
+      "lg": {
+        "$value": "45rem",
+        "$type": "dimension",
+        "$description": "Large modal width (720px). Use for: complex forms, detail views."
+      },
+      "xl": {
+        "$value": "60rem",
+        "$type": "dimension",
+        "$description": "Extra large modal width (960px). Use for: data-heavy content, galleries."
+      }
+    },
+    "shadow": {
+      "$value": "{shadow.xl}",
+      "$description": "Modal shadow for elevation effect."
+    },
+    "overlay": {
+      "opacity": {
+        "$value": "{opacity.overlay}",
+        "$type": "number",
+        "$description": "Modal backdrop opacity."
+      }
+    },
+    "transition": {
+      "duration": {
+        "$value": "{motion.duration.normal}",
+        "$type": "duration",
+        "$description": "Modal open/close transition duration."
+      },
+      "easing": {
+        "enter": {
+          "$value": "{motion.easing.easeOut}",
+          "$description": "Modal entrance easing - decelerates into view."
+        },
+        "exit": {
+          "$value": "{motion.easing.easeIn}",
+          "$description": "Modal exit easing - accelerates out."
+        }
+      }
+    },
+    "zIndex": {
+      "$value": "{zIndex.modal}",
+      "$type": "number",
+      "$description": "Modal z-index for stacking context."
+    },
+    "title": {
+      "fontSize": {
+        "$value": "{typography.fontSize.lg}",
+        "$type": "dimension",
+        "$description": "Modal title font size."
+      },
+      "fontWeight": {
+        "$value": "{typography.fontWeight.semibold}",
+        "$type": "number",
+        "$description": "Modal title font weight."
+      },
+      "lineHeight": {
+        "$value": "{typography.lineHeight.sm}",
+        "$type": "number",
+        "$description": "Modal title line height."
+      }
+    }
+  }
+}
