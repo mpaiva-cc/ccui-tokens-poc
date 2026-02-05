@@ -1,0 +1,528 @@
+{
+    "$description": "Component color tokens for CCUI 3.0 light theme. These tokens define component-specific colors using semantic token references, enabling theme-aware component styling.",
+    "componentColors": {
+        "$description": "Theme-specific color tokens for UI components. Use these to style components with consistent, theme-aware colors.",
+        "button": {
+        "$description": "Button component color tokens",
+        "filled": {
+            "$description": "Filled button variant colors",
+            "backgroundColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Filled button background color. Uses primary color."
+            },
+            "textColor": {
+                "$value": "{color.primary.contrast}",
+                "$type": "color",
+                "$description": "Filled button text color. White for contrast on primary."
+            },
+            "hoverBackgroundColor": {
+                "$value": "{color.primary.filled-hover}",
+                "$type": "color",
+                "$description": "Filled button hover background color."
+            }
+        },
+        "outline": {
+            "$description": "Outline button variant colors",
+            "borderColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Outline button border color. Uses primary color."
+            },
+            "textColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Outline button text color. Uses primary color."
+            },
+            "hoverBackgroundColor": {
+                "$value": "{color.primary.light}",
+                "$type": "color",
+                "$description": "Outline button hover background color."
+            }
+        },
+        "light": {
+            "$description": "Light button variant colors",
+            "backgroundColor": {
+                "$value": "{color.primary.light}",
+                "$type": "color",
+                "$description": "Light button background color."
+            },
+            "textColor": {
+                "$value": "{color.primary.light-color}",
+                "$type": "color",
+                "$description": "Light button text color."
+            },
+            "hoverBackgroundColor": {
+                "$value": "{color.primary.light-hover}",
+                "$type": "color",
+                "$description": "Light button hover background color."
+            }
+        },
+        "subtle": {
+            "$description": "Subtle/transparent button variant colors",
+            "backgroundColor": {
+                "$value": "transparent",
+                "$type": "color",
+                "$description": "Subtle button background color. Transparent by default."
+            },
+            "textColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Subtle button text color."
+            },
+            "hoverBackgroundColor": {
+                "$value": "{color.primary.light}",
+                "$type": "color",
+                "$description": "Subtle button hover background color."
+            }
+        },
+        "default": {
+            "$description": "Default button variant colors",
+            "backgroundColor": {
+                "$value": "{color.default}",
+                "$type": "color",
+                "$description": "Default button background color."
+            },
+            "textColor": {
+                "$value": "{color.default-color}",
+                "$type": "color",
+                "$description": "Default button text color."
+            },
+            "borderColor": {
+                "$value": "{color.default-border}",
+                "$type": "color",
+                "$description": "Default button border color."
+            },
+            "hoverBackgroundColor": {
+                "$value": "{color.default-hover}",
+                "$type": "color",
+                "$description": "Default button hover background color."
+            }
+        },
+        "disabled": {
+            "$description": "Disabled button state colors",
+            "backgroundColor": {
+                "$value": "{color.disabled}",
+                "$type": "color",
+                "$description": "Disabled button background color."
+            },
+            "textColor": {
+                "$value": "{color.disabled-color}",
+                "$type": "color",
+                "$description": "Disabled button text color."
+            },
+            "borderColor": {
+                "$value": "{color.disabled-border}",
+                "$type": "color",
+                "$description": "Disabled button border color."
+            }
+        }
+    },
+    "input": {
+        "$description": "Input component color tokens",
+        "default": {
+            "$description": "Default input state colors",
+            "backgroundColor": {
+                "$value": "{color.default}",
+                "$type": "color",
+                "$description": "Default input background color."
+            },
+            "textColor": {
+                "$value": "{color.text}",
+                "$type": "color",
+                "$description": "Input text color."
+            },
+            "borderColor": {
+                "$value": "{color.default-border}",
+                "$type": "color",
+                "$description": "Default input border color."
+            },
+            "placeholderColor": {
+                "$value": "{color.placeholder}",
+                "$type": "color",
+                "$description": "Input placeholder text color."
+            }
+        },
+        "focus": {
+            "$description": "Focus state input colors",
+            "borderColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Focused input border color."
+            },
+            "ringColor": {
+                "$value": "{color.primary.light}",
+                "$type": "color",
+                "$description": "Focus ring color around input."
+            }
+        },
+        "error": {
+            "$description": "Error state input colors",
+            "borderColor": {
+                "$value": "{color.error}",
+                "$type": "color",
+                "$description": "Error state input border color."
+            },
+            "textColor": {
+                "$value": "{color.error}",
+                "$type": "color",
+                "$description": "Error message text color."
+            }
+        },
+        "disabled": {
+            "$description": "Disabled input state colors",
+            "backgroundColor": {
+                "$value": "{color.disabled}",
+                "$type": "color",
+                "$description": "Disabled input background color."
+            },
+            "textColor": {
+                "$value": "{color.disabled-color}",
+                "$type": "color",
+                "$description": "Disabled input text color."
+            },
+            "borderColor": {
+                "$value": "{color.disabled-border}",
+                "$type": "color",
+                "$description": "Disabled input border color."
+            }
+        }
+    },
+    "card": {
+        "$description": "Card component color tokens",
+        "backgroundColor": {
+            "$value": "{color.default}",
+            "$type": "color",
+            "$description": "Card background color."
+        },
+        "borderColor": {
+            "$value": "{color.default-border}",
+            "$type": "color",
+            "$description": "Card border color."
+        }
+    },
+    "badge": {
+        "$description": "Badge component color tokens",
+        "filled": {
+            "backgroundColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Filled badge background color."
+            },
+            "textColor": {
+                "$value": "{color.primary.contrast}",
+                "$type": "color",
+                "$description": "Filled badge text color."
+            }
+        },
+        "light": {
+            "backgroundColor": {
+                "$value": "{color.primary.light}",
+                "$type": "color",
+                "$description": "Light badge background color."
+            },
+            "textColor": {
+                "$value": "{color.primary.light-color}",
+                "$type": "color",
+                "$description": "Light badge text color."
+            }
+        },
+        "outline": {
+            "borderColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Outline badge border color."
+            },
+            "textColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Outline badge text color."
+            }
+        }
+    },
+    "alert": {
+        "$description": "Alert component color tokens",
+        "info": {
+            "backgroundColor": {
+                "$value": "{component.info.background}",
+                "$type": "color",
+                "$description": "Info alert background color."
+            },
+            "borderColor": {
+                "$value": "{component.info.border}",
+                "$type": "color",
+                "$description": "Info alert border color."
+            },
+            "textColor": {
+                "$value": "{component.info.text}",
+                "$type": "color",
+                "$description": "Info alert text color."
+            }
+        },
+        "success": {
+            "backgroundColor": {
+                "$value": "{component.success.background}",
+                "$type": "color",
+                "$description": "Success alert background color."
+            },
+            "borderColor": {
+                "$value": "{component.success.border}",
+                "$type": "color",
+                "$description": "Success alert border color."
+            },
+            "textColor": {
+                "$value": "{component.success.text}",
+                "$type": "color",
+                "$description": "Success alert text color."
+            }
+        },
+        "warning": {
+            "backgroundColor": {
+                "$value": "{component.warning.background}",
+                "$type": "color",
+                "$description": "Warning alert background color."
+            },
+            "borderColor": {
+                "$value": "{component.warning.border}",
+                "$type": "color",
+                "$description": "Warning alert border color."
+            },
+            "textColor": {
+                "$value": "{component.warning.text}",
+                "$type": "color",
+                "$description": "Warning alert text color."
+            }
+        },
+        "error": {
+            "backgroundColor": {
+                "$value": "{component.error.background}",
+                "$type": "color",
+                "$description": "Error alert background color."
+            },
+            "borderColor": {
+                "$value": "{component.error.border}",
+                "$type": "color",
+                "$description": "Error alert border color."
+            },
+            "textColor": {
+                "$value": "{component.error.text}",
+                "$type": "color",
+                "$description": "Error alert text color."
+            }
+        }
+    },
+    "table": {
+        "$description": "Table component color tokens",
+        "headerBackgroundColor": {
+            "$value": "{color.gray.0}",
+            "$type": "color",
+            "$description": "Table header background color."
+        },
+        "borderColor": {
+            "$value": "{color.default-border}",
+            "$type": "color",
+            "$description": "Table border color."
+        },
+        "stripedBackgroundColor": {
+            "$value": "{color.gray.0}",
+            "$type": "color",
+            "$description": "Alternating row background color."
+        },
+        "hoverBackgroundColor": {
+            "$value": "{color.default-hover}",
+            "$type": "color",
+            "$description": "Row hover background color."
+        },
+        "selectedBackgroundColor": {
+            "$value": "{component.selected.background}",
+            "$type": "color",
+            "$description": "Selected row background color."
+        }
+    },
+    "tabs": {
+        "$description": "Tabs component color tokens",
+        "default": {
+            "textColor": {
+                "$value": "{color.dimmed}",
+                "$type": "color",
+                "$description": "Inactive tab text color."
+            },
+            "hoverTextColor": {
+                "$value": "{color.text}",
+                "$type": "color",
+                "$description": "Tab hover text color."
+            }
+        },
+        "active": {
+            "textColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Active tab text color."
+            },
+            "indicatorColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Active tab indicator color."
+            }
+        },
+        "borderColor": {
+            "$value": "{color.default-border}",
+            "$type": "color",
+            "$description": "Tab list border color."
+        }
+    },
+    "checkbox": {
+        "$description": "Checkbox component color tokens",
+        "unchecked": {
+            "borderColor": {
+                "$value": "{color.default-border}",
+                "$type": "color",
+                "$description": "Unchecked checkbox border color."
+            },
+            "backgroundColor": {
+                "$value": "{color.default}",
+                "$type": "color",
+                "$description": "Unchecked checkbox background color."
+            }
+        },
+        "checked": {
+            "borderColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Checked checkbox border color."
+            },
+            "backgroundColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "Checked checkbox background color."
+            },
+            "checkmarkColor": {
+                "$value": "{color.primary.contrast}",
+                "$type": "color",
+                "$description": "Checkmark icon color."
+            }
+        },
+        "disabled": {
+            "borderColor": {
+                "$value": "{color.disabled-border}",
+                "$type": "color",
+                "$description": "Disabled checkbox border color."
+            },
+            "backgroundColor": {
+                "$value": "{color.disabled}",
+                "$type": "color",
+                "$description": "Disabled checkbox background color."
+            }
+        }
+    },
+    "switch": {
+        "$description": "Switch component color tokens",
+        "off": {
+            "trackColor": {
+                "$value": "{color.gray.2}",
+                "$type": "color",
+                "$description": "Off state track background color."
+            },
+            "thumbColor": {
+                "$value": "{color.white}",
+                "$type": "color",
+                "$description": "Switch thumb color."
+            }
+        },
+        "on": {
+            "trackColor": {
+                "$value": "{color.primary.filled}",
+                "$type": "color",
+                "$description": "On state track background color."
+            },
+            "thumbColor": {
+                "$value": "{color.white}",
+                "$type": "color",
+                "$description": "Switch thumb color when on."
+            }
+        },
+        "disabled": {
+            "trackColor": {
+                "$value": "{color.disabled}",
+                "$type": "color",
+                "$description": "Disabled switch track color."
+            },
+            "thumbColor": {
+                "$value": "{color.gray.3}",
+                "$type": "color",
+                "$description": "Disabled switch thumb color."
+            }
+        }
+    },
+    "select": {
+        "$description": "Select component color tokens",
+        "backgroundColor": {
+            "$value": "{color.default}",
+            "$type": "color",
+            "$description": "Select input background color."
+        },
+        "borderColor": {
+            "$value": "{color.default-border}",
+            "$type": "color",
+            "$description": "Select input border color."
+        },
+        "textColor": {
+            "$value": "{color.text}",
+            "$type": "color",
+            "$description": "Select input text color."
+        },
+        "dropdown": {
+            "backgroundColor": {
+                "$value": "{color.default}",
+                "$type": "color",
+                "$description": "Dropdown menu background color."
+            },
+            "borderColor": {
+                "$value": "{color.default-border}",
+                "$type": "color",
+                "$description": "Dropdown menu border color."
+            }
+        },
+        "option": {
+            "hoverBackgroundColor": {
+                "$value": "{color.default-hover}",
+                "$type": "color",
+                "$description": "Option hover background color."
+            },
+            "selectedBackgroundColor": {
+                "$value": "{color.primary.light}",
+                "$type": "color",
+                "$description": "Selected option background color."
+            },
+            "selectedTextColor": {
+                "$value": "{color.primary.light-color}",
+                "$type": "color",
+                "$description": "Selected option text color."
+            }
+        }
+    },
+    "modal": {
+        "$description": "Modal component color tokens",
+        "backgroundColor": {
+            "$value": "{color.default}",
+            "$type": "color",
+            "$description": "Modal background color."
+        },
+        "overlayColor": {
+            "$value": "{color.overlay.light}",
+            "$type": "color",
+            "$description": "Modal overlay/backdrop color."
+        },
+        "headerBorderColor": {
+            "$value": "{color.default-border}",
+            "$type": "color",
+            "$description": "Modal header bottom border color."
+        },
+        "footerBorderColor": {
+            "$value": "{color.default-border}",
+            "$type": "color",
+            "$description": "Modal footer top border color."
+        }
+    }
+    }
+}

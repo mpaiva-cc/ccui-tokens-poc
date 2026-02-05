@@ -1,0 +1,21 @@
+{
+    "$description": "CCUI 3.0 Brand Identity Tokens for dark mode - PLACEHOLDER VALUES. Uses same brand colors as light mode, adjusted for dark backgrounds.",
+    "brand": {
+        "$description": "Core brand identity colors for CCUI 3.0 dark mode. These are placeholders.",
+        "primary": {
+            "$value": "#3c90f1",
+            "$type": "color",
+            "$description": "PLACEHOLDER - Primary brand color for dark mode (lighter shade). Update when brand guidelines finalized."
+        },
+        "secondary": {
+            "$value": "#9872e8",
+            "$type": "color",
+            "$description": "PLACEHOLDER - Secondary brand color for dark mode. Update when brand guidelines finalized."
+        },
+        "accent": {
+            "$value": "#10b794",
+            "$type": "color",
+            "$description": "PLACEHOLDER - Accent brand color for dark mode. Update when brand guidelines finalized."
+        }
+    }
+}

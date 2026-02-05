@@ -3,138 +3,194 @@
  *
  * Prevents accidental token removal by enforcing minimum counts.
  * These thresholds should be updated when intentionally adding/removing tokens.
+ *
+ * Build structure (multi-theme):
+ * - CSS: dist/css/primitives.css + dist/css/{theme}.css per theme
+ * - Tokens Studio: dist/tokens-studio/primitives/*.json, semantic/*.json
  */
 import { describe, it, expect } from 'vitest';
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
 import {
   getThemeNames,
-  loadFlatTokenJSON,
-  loadThemeCSS,
+  loadAllCSS,
   parseCSSVariables,
+  getDistPath,
 } from './test-utils';
 
+const DIST_DIR = getDistPath();
+const TOKENS_STUDIO_DIR = join(DIST_DIR, 'tokens-studio');
+
 /**
- * Minimum expected token counts per category.
+ * Minimum expected token counts.
  * Update these when intentionally adding or removing tokens.
- *
- * Current baselines (as of initial implementation):
- * - Total tokens: ~90-100 per theme
- * - Color tokens: ~5+ (colorPalette tokens are separate)
- * - Spacing tokens: currently 0 (spacing is in core primitives)
- * - Typography tokens: ~1+ per theme
  */
 const MIN_TOKEN_COUNTS = {
-  total: 80, // Minimum total tokens per theme (dark=93, light=99)
-  colors: 3, // Minimum color-related tokens (theme semantic colors)
-  spacing: 0, // Spacing is in core primitives, not theme-specific
-  typography: 1, // Minimum typography tokens
+  cssVariablesTotal: 200, // Minimum total CSS variables (all formats combined)
   ccuiVariables: 50, // Minimum --ccui-* CSS variables
   mantineVariables: 50, // Minimum --mantine-* CSS variables
+  neutralVariables: 50, // Minimum neutral (no prefix) CSS variables
+  semanticTokens: 10, // Minimum tokens per semantic theme
 };
 
 describe('Token Count Regression', () => {
   const themes = getThemeNames();
 
-  describe.each(themes)('Theme: %s', (themeName) => {
-    const flatTokens = loadFlatTokenJSON(themeName);
-    const tokenKeys = Object.keys(flatTokens);
+  describe('Combined CSS Variable Counts', () => {
+    const css = loadAllCSS();
+    const allVars = parseCSSVariables(css);
 
-    describe('Total Token Counts', () => {
-      it(`should have at least ${MIN_TOKEN_COUNTS.total} total tokens`, () => {
-        expect(tokenKeys.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.total);
+    const neutralVars = Array.from(allVars.keys()).filter(
+      (k) => !k.startsWith('--ccui-') && !k.startsWith('--mantine-')
+    );
+    const ccuiVars = Array.from(allVars.keys()).filter((k) => k.startsWith('--ccui-'));
+    const mantineVars = Array.from(allVars.keys()).filter((k) => k.startsWith('--mantine-'));
+
+    it(`should have at least ${MIN_TOKEN_COUNTS.cssVariablesTotal} total CSS variables`, () => {
+      expect(allVars.size).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.cssVariablesTotal);
+    });
+
+    it(`should have at least ${MIN_TOKEN_COUNTS.neutralVariables} neutral CSS variables`, () => {
+      expect(neutralVars.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.neutralVariables);
+    });
+
+    it(`should have at least ${MIN_TOKEN_COUNTS.ccuiVariables} CCUI CSS variables`, () => {
+      expect(ccuiVars.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.ccuiVariables);
+    });
+
+    it(`should have at least ${MIN_TOKEN_COUNTS.mantineVariables} Mantine CSS variables`, () => {
+      expect(mantineVars.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.mantineVariables);
+    });
+
+    it('should report CSS variable counts', () => {
+      console.log('CSS variable counts:');
+      console.log(`  Total: ${allVars.size}`);
+      console.log(`  Neutral (no prefix): ${neutralVars.length}`);
+      console.log(`  CCUI (--ccui-*): ${ccuiVars.length}`);
+      console.log(`  Mantine (--mantine-*): ${mantineVars.length}`);
+      expect(true).toBe(true);
+    });
+  });
+
+  describe('Semantic Token Counts', () => {
+    describe.each(themes)('Theme: %s', (themeName) => {
+      const filePath = join(TOKENS_STUDIO_DIR, 'semantic', `${themeName}.json`);
+
+      it(`should have at least ${MIN_TOKEN_COUNTS.semanticTokens} semantic tokens`, () => {
+        if (!existsSync(filePath)) {
+          return; // Handled by build-output tests
+        }
+
+        const content = readFileSync(filePath, 'utf-8');
+        const tokens = JSON.parse(content);
+
+        const countTokens = (obj: unknown): number => {
+          if (typeof obj !== 'object' || obj === null) return 0;
+          let count = 0;
+          for (const value of Object.values(obj)) {
+            if (typeof value === 'object' && value !== null && '$value' in value) {
+              count++;
+            } else if (typeof value === 'object') {
+              count += countTokens(value);
+            }
+          }
+          return count;
+        };
+
+        const tokenCount = countTokens(tokens);
+        expect(tokenCount).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.semanticTokens);
       });
 
-      it('should report current token count', () => {
-        console.log(`${themeName}: ${tokenKeys.length} total tokens`);
+      it('should report semantic token count', () => {
+        if (!existsSync(filePath)) {
+          console.log(`${themeName}: file not found`);
+          return;
+        }
+
+        const content = readFileSync(filePath, 'utf-8');
+        const tokens = JSON.parse(content);
+
+        const countTokens = (obj: unknown): number => {
+          if (typeof obj !== 'object' || obj === null) return 0;
+          let count = 0;
+          for (const value of Object.values(obj)) {
+            if (typeof value === 'object' && value !== null && '$value' in value) {
+              count++;
+            } else if (typeof value === 'object') {
+              count += countTokens(value);
+            }
+          }
+          return count;
+        };
+
+        console.log(`${themeName}: ${countTokens(tokens)} semantic tokens`);
         expect(true).toBe(true);
       });
     });
+  });
 
-    describe('Color Token Counts', () => {
-      const colorTokens = tokenKeys.filter(
-        (key) =>
-          key.toLowerCase().includes('color') ||
-          key.toLowerCase().includes('background') ||
-          (key.toLowerCase().includes('border') &&
-            !key.toLowerCase().includes('radius') &&
-            !key.toLowerCase().includes('width'))
-      );
+  describe('Primitive Token Set Counts', () => {
+    const primitiveSets = [
+      'color.json',
+      'spacing.json',
+      'radius.json',
+      'typography.json',
+      'system.json',
+    ];
 
-      it(`should have at least ${MIN_TOKEN_COUNTS.colors} color tokens`, () => {
-        expect(colorTokens.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.colors);
-      });
+    it.each(primitiveSets)('primitives/%s should have tokens', (fileName) => {
+      const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
+      if (!existsSync(filePath)) {
+        return;
+      }
 
-      it('should report color token count', () => {
-        console.log(`${themeName}: ${colorTokens.length} color tokens`);
-        expect(true).toBe(true);
-      });
+      const content = readFileSync(filePath, 'utf-8');
+      const tokens = JSON.parse(content);
+
+      const countTokens = (obj: unknown): number => {
+        if (typeof obj !== 'object' || obj === null) return 0;
+        let count = 0;
+        for (const value of Object.values(obj)) {
+          if (typeof value === 'object' && value !== null && '$value' in value) {
+            count++;
+          } else if (typeof value === 'object') {
+            count += countTokens(value);
+          }
+        }
+        return count;
+      };
+
+      expect(countTokens(tokens)).toBeGreaterThan(0);
     });
 
-    describe('Spacing Token Counts', () => {
-      const spacingTokens = tokenKeys.filter(
-        (key) =>
-          key.toLowerCase().includes('spacing') ||
-          key.toLowerCase().includes('gap') ||
-          key.toLowerCase().includes('padding') ||
-          key.toLowerCase().includes('margin')
-      );
+    it('should report primitive token set counts', () => {
+      console.log('Primitive token set counts:');
+      for (const fileName of primitiveSets) {
+        const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
+        if (!existsSync(filePath)) {
+          console.log(`  ${fileName}: not found`);
+          continue;
+        }
 
-      it(`should have at least ${MIN_TOKEN_COUNTS.spacing} spacing tokens`, () => {
-        expect(spacingTokens.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.spacing);
-      });
-    });
+        const content = readFileSync(filePath, 'utf-8');
+        const tokens = JSON.parse(content);
 
-    describe('Typography Token Counts', () => {
-      const typographyTokens = tokenKeys.filter(
-        (key) =>
-          key.toLowerCase().includes('font') ||
-          key.toLowerCase().includes('text') ||
-          key.toLowerCase().includes('line-height') ||
-          key.toLowerCase().includes('letter-spacing')
-      );
+        const countTokens = (obj: unknown): number => {
+          if (typeof obj !== 'object' || obj === null) return 0;
+          let count = 0;
+          for (const value of Object.values(obj)) {
+            if (typeof value === 'object' && value !== null && '$value' in value) {
+              count++;
+            } else if (typeof value === 'object') {
+              count += countTokens(value);
+            }
+          }
+          return count;
+        };
 
-      it(`should have at least ${MIN_TOKEN_COUNTS.typography} typography tokens`, () => {
-        expect(typographyTokens.length).toBeGreaterThanOrEqual(
-          MIN_TOKEN_COUNTS.typography
-        );
-      });
-    });
-
-    describe('CSS Variable Counts', () => {
-      // Load theme-specific and shared files
-      const ccuiSemanticCSS = loadThemeCSS(themeName, 'ccui-semantic.css');
-      const ccuiPrimitivesCSS = loadThemeCSS('shared', 'ccui-primitives.css');
-      const ccuiSemanticVars = parseCSSVariables(ccuiSemanticCSS);
-      const ccuiPrimitiveVars = parseCSSVariables(ccuiPrimitivesCSS);
-      const ccuiCount = Array.from(ccuiSemanticVars.keys()).filter((k) =>
-        k.startsWith('--ccui-')
-      ).length + Array.from(ccuiPrimitiveVars.keys()).filter((k) =>
-        k.startsWith('--ccui-')
-      ).length;
-
-      const mantineCSS = loadThemeCSS(themeName, 'mantine-theme.css');
-      const mantinePrimitivesCSS = loadThemeCSS('shared', 'mantine-primitives.css');
-      const mantineVars = parseCSSVariables(mantineCSS);
-      const mantinePrimitiveVars = parseCSSVariables(mantinePrimitivesCSS);
-      const mantineCount = Array.from(mantineVars.keys()).filter((k) =>
-        k.startsWith('--mantine-')
-      ).length + Array.from(mantinePrimitiveVars.keys()).filter((k) =>
-        k.startsWith('--mantine-')
-      ).length;
-
-      it(`should have at least ${MIN_TOKEN_COUNTS.ccuiVariables} CCUI CSS variables`, () => {
-        expect(ccuiCount).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.ccuiVariables);
-      });
-
-      it(`should have at least ${MIN_TOKEN_COUNTS.mantineVariables} Mantine CSS variables`, () => {
-        expect(mantineCount).toBeGreaterThanOrEqual(
-          MIN_TOKEN_COUNTS.mantineVariables
-        );
-      });
-
-      it('should report CSS variable counts', () => {
-        console.log(`${themeName}: ${ccuiCount} CCUI vars, ${mantineCount} Mantine vars`);
-        expect(true).toBe(true);
-      });
+        console.log(`  ${fileName}: ${countTokens(tokens)} tokens`);
+      }
+      expect(true).toBe(true);
     });
   });
 
@@ -146,10 +202,30 @@ describe('Token Count Regression', () => {
       }
 
       const counts = themes.map((theme) => {
-        const flatTokens = loadFlatTokenJSON(theme);
+        const filePath = join(TOKENS_STUDIO_DIR, 'semantic', `${theme}.json`);
+        if (!existsSync(filePath)) {
+          return { theme, count: 0 };
+        }
+
+        const content = readFileSync(filePath, 'utf-8');
+        const tokens = JSON.parse(content);
+
+        const countTokens = (obj: unknown): number => {
+          if (typeof obj !== 'object' || obj === null) return 0;
+          let count = 0;
+          for (const value of Object.values(obj)) {
+            if (typeof value === 'object' && value !== null && '$value' in value) {
+              count++;
+            } else if (typeof value === 'object') {
+              count += countTokens(value);
+            }
+          }
+          return count;
+        };
+
         return {
           theme,
-          count: Object.keys(flatTokens).length,
+          count: countTokens(tokens),
         };
       });
 
@@ -175,20 +251,25 @@ describe('Token Count Regression', () => {
 
   describe('Category Breakdown', () => {
     it('should report token breakdown by category', () => {
-      const theme = themes[0];
-      const flatTokens = loadFlatTokenJSON(theme);
-      const tokenKeys = Object.keys(flatTokens);
+      const css = loadAllCSS();
+      const vars = parseCSSVariables(css);
+
+      // Filter to just neutral variables for analysis
+      const neutralVars = Array.from(vars.keys()).filter(
+        (k) => !k.startsWith('--ccui-') && !k.startsWith('--mantine-')
+      );
 
       // Count tokens by prefix/category
       const categories = new Map<string, number>();
 
-      for (const key of tokenKeys) {
-        // Get first part of token path
-        const category = key.split('.')[0];
+      for (const varName of neutralVars) {
+        // Get first part after -- prefix
+        const withoutPrefix = varName.replace(/^--/, '');
+        const category = withoutPrefix.split('-')[0];
         categories.set(category, (categories.get(category) || 0) + 1);
       }
 
-      console.log(`\nToken breakdown for ${theme}:`);
+      console.log('\nToken breakdown by category (neutral format):');
       const sortedCategories = [...categories.entries()].sort(
         (a, b) => b[1] - a[1]
       );

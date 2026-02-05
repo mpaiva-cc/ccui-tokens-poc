@@ -1,0 +1,43 @@
+{
+    "$description": "Core z-index primitives for stacking order and layering. Z-index controls which elements appear on top when they overlap. RULE: Always use these tokens - never use arbitrary z-index values. Gaps of 100 between levels allow for intermediate values if needed. Higher z-index = visually on top.",
+    "zIndex": {
+        "$type": "number",
+        "$description": "Stacking layer scale for managing element overlap. Layers are separated by 100 to allow intermediate values. Order represents visual priority: base (bottom) → max (top). Elements should stay within their designated layer range.",
+        "base": {
+            "$value": 0,
+            "$description": "Base layer (z-index: 0). DEFAULT for all standard content. Use for: page content, cards, sections, anything in normal document flow. Establishes baseline - everything else stacks above this. Never use negative z-index unless absolutely necessary."
+        },
+        "app": {
+            "$value": 100,
+            "$description": "Application layer (z-index: 100). Use for: app-level UI chrome, sidebars, persistent navigation. First elevated layer above base content. Common in: app shells, navigation drawers, persistent toolbars."
+        },
+        "dropdown": {
+            "$value": 150,
+            "$description": "Dropdown layer (z-index: 150). Use for: dropdown menus, select options, autocomplete lists, combobox panels. Above app chrome but below sticky headers. Common in: Select menu, Dropdown, Autocomplete, Menu, Popover (when not in modal)."
+        },
+        "sticky": {
+            "$value": 200,
+            "$description": "Sticky layer (z-index: 200). Use for: sticky headers, fixed navigation, persistent UI elements, scroll-aware banners. Stays visible during scroll but below overlay content. Common in: Sticky header, fixed sidebar, persistent action bars, scroll-to-top buttons."
+        },
+        "overlay": {
+            "$value": 300,
+            "$description": "Overlay layer (z-index: 300). Use for: modal backdrops, drawer overlays, lightbox backgrounds, focus-trap containers. Dims/blocks underlying content. Separate from modal content to allow proper stacking. Common in: Modal backdrop, Drawer backdrop, lightbox overlay."
+        },
+        "modal": {
+            "$value": 400,
+            "$description": "Modal layer (z-index: 400). Use for: modal dialogs, side drawers, full-screen overlays, dialog content. Primary overlay content layer - above backdrop but below popovers. Common in: Modal content, Drawer content, Dialog, Sheet, full-screen menus."
+        },
+        "popover": {
+            "$value": 500,
+            "$description": "Popover layer (z-index: 500). Use for: popovers triggered from within modals, nested floating elements, color pickers, date pickers in modals. Above modal content but below tooltips. Common in: DatePicker in modal, ColorPicker in modal, nested menus."
+        },
+        "tooltip": {
+            "$value": 600,
+            "$description": "Tooltip layer (z-index: 600). Use for: tooltips, toasts, notifications, snackbars. Near top of standard layers. Common in: Tooltip, Toast, Snackbar, notification badges, loading indicators."
+        },
+        "max": {
+            "$value": 9999,
+            "$description": "Maximum layer (z-index: 9999). HIGHEST layer - use sparingly. Use for: critical system overlays, loading states that must block all interaction, debug overlays. Reserved for truly exceptional cases where nothing else should appear on top."
+        }
+    }
+}

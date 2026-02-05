@@ -1,0 +1,119 @@
+{
+    "$description": "Vanilla Mantine light theme semantic colors. These are the default Mantine values with no customizations. Use this as a baseline reference for creating brand themes.",
+    "color": {
+        "$description": "Mantine default semantic color assignments for light theme.",
+        "text": {
+            "$value": "{color.black}",
+            "$type": "color",
+            "$description": "Default Mantine text color (black) for light theme."
+        },
+        "body": {
+            "$value": "{color.white}",
+            "$type": "color",
+            "$description": "Default Mantine body background color (white) for light theme."
+        },
+        "bright": {
+            "$value": "{color.black}",
+            "$type": "color",
+            "$description": "Default Mantine bright text color for maximum contrast."
+        },
+        "error": {
+            "$value": "{color.red.6}",
+            "$type": "color",
+            "$description": "Default Mantine error color (red.6)."
+        },
+        "placeholder": {
+            "$value": "{color.gray.5}",
+            "$type": "color",
+            "$description": "Default Mantine placeholder text color."
+        },
+        "anchor": {
+            "$value": "{color.blue.6}",
+            "$type": "color",
+            "$description": "Default Mantine anchor/link color (blue.6)."
+        },
+        "default": {
+            "$value": "{color.white}",
+            "$type": "color",
+            "$description": "Default Mantine component background color."
+        },
+        "default-hover": {
+            "$value": "{color.gray.0}",
+            "$type": "color",
+            "$description": "Default Mantine hover background color."
+        },
+        "default-color": {
+            "$value": "{color.black}",
+            "$type": "color",
+            "$description": "Default Mantine text color on default backgrounds."
+        },
+        "default-border": {
+            "$value": "{color.gray.4}",
+            "$type": "color",
+            "$description": "Default Mantine border color."
+        },
+        "dimmed": {
+            "$value": "{color.gray.6}",
+            "$type": "color",
+            "$description": "Default Mantine dimmed/muted text color."
+        },
+        "disabled": {
+            "$value": "{color.gray.2}",
+            "$type": "color",
+            "$description": "Default Mantine disabled background color."
+        },
+        "disabled-color": {
+            "$value": "{color.gray.5}",
+            "$type": "color",
+            "$description": "Default Mantine disabled text color."
+        },
+        "disabled-border": {
+            "$value": "{color.gray.3}",
+            "$type": "color",
+            "$description": "Default Mantine disabled border color."
+        },
+        "primary": {
+            "$description": "Mantine primary color system (blue by default). Primary shade is 6 for light theme.",
+            "filled": {
+                "$value": "{colorPalette.blue.filled}",
+                "$type": "color",
+                "$description": "Primary filled background (blue.6)."
+            },
+            "filled-hover": {
+                "$value": "{colorPalette.blue.filled-hover}",
+                "$type": "color",
+                "$description": "Primary filled hover state (blue.7)."
+            },
+            "light": {
+                "$value": "{colorPalette.blue.light}",
+                "$type": "color",
+                "$description": "Primary light variant background."
+            },
+            "light-hover": {
+                "$value": "{colorPalette.blue.light-hover}",
+                "$type": "color",
+                "$description": "Primary light variant hover."
+            },
+            "light-color": {
+                "$value": "{colorPalette.blue.light-color}",
+                "$type": "color",
+                "$description": "Text color on primary light backgrounds."
+            },
+            "contrast": {
+                "$value": "{color.white}",
+                "$type": "color",
+                "$description": "Contrast text color on primary filled backgrounds."
+            },
+            "0": { "$value": "{color.blue.0}", "$type": "color" },
+            "1": { "$value": "{color.blue.1}", "$type": "color" },
+            "2": { "$value": "{color.blue.2}", "$type": "color" },
+            "3": { "$value": "{color.blue.3}", "$type": "color" },
+            "4": { "$value": "{color.blue.4}", "$type": "color" },
+            "5": { "$value": "{color.blue.5}", "$type": "color" },
+            "6": { "$value": "{color.blue.6}", "$type": "color" },
+            "7": { "$value": "{color.blue.7}", "$type": "color" },
+            "8": { "$value": "{color.blue.8}", "$type": "color" },
+            "9": { "$value": "{color.blue.9}", "$type": "color" }
+        }
+    }
+}

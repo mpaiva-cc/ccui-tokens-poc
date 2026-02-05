@@ -1,6 +1,0 @@
-{
-    "$description": "ClearCo Dark theme metadata",
-    "name": "clearco-dark",
-    "extends": "base",
-    "colorScheme": "dark"
-}

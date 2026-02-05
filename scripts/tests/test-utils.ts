@@ -8,36 +8,123 @@ import { join } from 'path';
 const DIST_DIR = join(__dirname, '../../dist');
 const CSS_DIR = join(DIST_DIR, 'css');
 const JSON_DIR = join(DIST_DIR, 'tokens-studio');
+const PRIMITIVES_CSS_FILE = join(CSS_DIR, 'primitives.css');
+
+/**
+ * All theme names in the multi-theme system
+ */
+export const ALL_THEME_NAMES = [
+  'mantine-light',
+  'mantine-dark',
+  'ccui-21-light',
+  'ccui-30-light',
+  'ccui-30-dark',
+] as const;
+
+export type ThemeName = typeof ALL_THEME_NAMES[number];
+
+/**
+ * Check if the primitives CSS file exists
+ */
+export function hasPrimitivesCSS(): boolean {
+  return existsSync(PRIMITIVES_CSS_FILE);
+}
+
+/**
+ * Load the primitives CSS file
+ */
+export function loadPrimitivesCSS(): string {
+  if (!existsSync(PRIMITIVES_CSS_FILE)) {
+    throw new Error(`Primitives CSS file not found: ${PRIMITIVES_CSS_FILE}`);
+  }
+  return readFileSync(PRIMITIVES_CSS_FILE, 'utf-8');
+}
+
+/**
+ * Check if a theme CSS file exists
+ */
+export function hasThemeCSS(themeName: string): boolean {
+  return existsSync(join(CSS_DIR, `${themeName}.css`));
+}
+
+/**
+ * Load a specific theme's CSS file
+ */
+export function loadThemeCSSFile(themeName: string): string {
+  const filePath = join(CSS_DIR, `${themeName}.css`);
+  if (!existsSync(filePath)) {
+    throw new Error(`Theme CSS file not found: ${filePath}`);
+  }
+  return readFileSync(filePath, 'utf-8');
+}
+
+/**
+ * Load all CSS (primitives + all themes combined) for analysis
+ * This is useful for tests that need to check all variables
+ */
+export function loadAllCSS(): string {
+  let allCSS = '';
+
+  // Load primitives
+  if (hasPrimitivesCSS()) {
+    allCSS += loadPrimitivesCSS() + '\n';
+  }
+
+  // Load all theme files
+  for (const themeName of ALL_THEME_NAMES) {
+    if (hasThemeCSS(themeName)) {
+      allCSS += loadThemeCSSFile(themeName) + '\n';
+    }
+  }
+
+  return allCSS;
+}
+
+/**
+ * Check if the combined CSS file exists (backwards compatibility)
+ * @deprecated Use hasPrimitivesCSS() and hasThemeCSS() instead
+ */
+export function hasCombinedCSS(): boolean {
+  return hasPrimitivesCSS();
+}
+
+/**
+ * Load the combined CSS file (backwards compatibility)
+ * Now loads all CSS files combined for analysis
+ * @deprecated Use loadPrimitivesCSS() and loadThemeCSSFile() instead
+ */
+export function loadCombinedCSS(): string {
+  return loadAllCSS();
+}
 
 /**
  * Get all available theme names from the dist directory
- * Excludes the 'shared' folder which contains primitives, not a theme
+ * Returns themes that have CSS files in dist/css/
  */
 export function getThemeNames(): string[] {
-  if (!existsSync(CSS_DIR)) {
-    return [];
-  }
-  return readdirSync(CSS_DIR, { withFileTypes: true })
-    .filter((dirent) => dirent.isDirectory() && dirent.name !== 'shared')
-    .map((dirent) => dirent.name);
+  return ALL_THEME_NAMES.filter(themeName => hasThemeCSS(themeName));
 }
 
 /**
- * Check if shared primitives folder exists
+ * Check if shared primitives exist
  */
 export function hasSharedPrimitives(): boolean {
-  return existsSync(join(CSS_DIR, 'shared'));
+  return hasPrimitivesCSS();
 }
 
 /**
- * Get expected CSS files for a theme (not shared primitives)
+ * Get expected CSS files for themes
  */
-export function getThemeCSSFiles(): string[] {
-  return ['ccui-semantic.css', 'mantine-theme.css'];
+export function getExpectedCSSFiles(): string[] {
+  return [
+    'primitives.css',
+    ...ALL_THEME_NAMES.map(name => `${name}.css`)
+  ];
 }
 
 /**
  * Get expected JSON files for a theme (not shared primitives)
+ * @deprecated Legacy function
  */
 export function getThemeJSONFiles(): string[] {
   return ['tokens.json', 'tokens-flat.json'];
@@ -45,16 +132,25 @@ export function getThemeJSONFiles(): string[] {
 
 /**
  * Get expected CSS files for shared primitives
+ * @deprecated Use getExpectedCSSFiles() instead
  */
 export function getSharedCSSFiles(): string[] {
-  return ['ccui-primitives.css', 'mantine-primitives.css'];
+  return ['primitives.css'];
 }
 
 /**
  * Get expected JSON files for shared primitives
+ * @deprecated Legacy function
  */
 export function getSharedJSONFiles(): string[] {
   return ['primitives.json'];
+}
+
+/**
+ * @deprecated Use getExpectedCSSFiles() instead
+ */
+export function getThemeCSSFiles(): string[] {
+  return ALL_THEME_NAMES.map(name => `${name}.css`);
 }
 
 /**
@@ -80,12 +176,13 @@ export function parseCSSVariables(cssContent: string): Map<string, string> {
 /**
  * Load CSS file for a theme
  */
-export function loadThemeCSS(themeName: string, fileName: string): string {
-  const filePath = join(CSS_DIR, themeName, fileName);
-  if (!existsSync(filePath)) {
-    throw new Error(`CSS file not found: ${filePath}`);
+export function loadThemeCSS(themeName: string, _fileName?: string): string {
+  // Load the theme's CSS file directly
+  if (hasThemeCSS(themeName)) {
+    return loadThemeCSSFile(themeName);
   }
-  return readFileSync(filePath, 'utf-8');
+
+  throw new Error(`Theme CSS file not found: ${themeName}.css`);
 }
 
 /**
@@ -660,7 +757,12 @@ export function meetsWCAG_AAA(foreground: string, background: string): boolean {
 // ============================================
 
 export function cssFileExists(themeName: string, fileName: string): boolean {
-  return existsSync(join(CSS_DIR, themeName, fileName));
+  // Check legacy path
+  if (existsSync(join(CSS_DIR, themeName, fileName))) {
+    return true;
+  }
+  // With consolidated output, check if combined CSS exists
+  return hasCombinedCSS();
 }
 
 export function jsonFileExists(themeName: string, fileName: string): boolean {

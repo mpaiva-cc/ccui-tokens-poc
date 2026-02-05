@@ -1,0 +1,7 @@
+{
+    "name": "ccui-21-light",
+    "extends": "base",
+    "colorScheme": "light",
+    "description": "CCUI 2.1 brand theme (light mode) - Current production ClearCo brand styling",
+    "version": "2.1.0"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ccui-30-light",
+    "extends": "base",
+    "colorScheme": "light",
+    "description": "CCUI 3.0 rebranding theme (light mode) - Placeholder values for new brand identity",
+    "version": "3.0.0-placeholder"
+}

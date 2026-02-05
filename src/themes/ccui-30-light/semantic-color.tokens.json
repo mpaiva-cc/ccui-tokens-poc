@@ -1,0 +1,119 @@
+{
+    "$description": "CCUI 3.0 light theme semantic colors. PLACEHOLDER VALUES - Update with final brand colors when guidelines are finalized. Currently using vanilla Mantine defaults.",
+    "color": {
+        "$description": "Semantic color assignments for CCUI 3.0 light theme.",
+        "text": {
+            "$value": "{color.black}",
+            "$type": "color",
+            "$description": "Primary text color for light theme."
+        },
+        "body": {
+            "$value": "{color.white}",
+            "$type": "color",
+            "$description": "Body/page background color for light theme."
+        },
+        "bright": {
+            "$value": "{color.black}",
+            "$type": "color",
+            "$description": "Bright text color for maximum contrast."
+        },
+        "error": {
+            "$value": "{color.red.6}",
+            "$type": "color",
+            "$description": "Error state color."
+        },
+        "placeholder": {
+            "$value": "{color.gray.5}",
+            "$type": "color",
+            "$description": "Placeholder text color."
+        },
+        "anchor": {
+            "$value": "{color.blue.6}",
+            "$type": "color",
+            "$description": "Anchor/link text color."
+        },
+        "default": {
+            "$value": "{color.white}",
+            "$type": "color",
+            "$description": "Default component background color."
+        },
+        "default-hover": {
+            "$value": "{color.gray.0}",
+            "$type": "color",
+            "$description": "Default hover background color."
+        },
+        "default-color": {
+            "$value": "{color.black}",
+            "$type": "color",
+            "$description": "Default text color on default backgrounds."
+        },
+        "default-border": {
+            "$value": "{color.gray.4}",
+            "$type": "color",
+            "$description": "Default border color."
+        },
+        "dimmed": {
+            "$value": "{color.gray.6}",
+            "$type": "color",
+            "$description": "Dimmed/muted text color."
+        },
+        "disabled": {
+            "$value": "{color.gray.2}",
+            "$type": "color",
+            "$description": "Disabled background color."
+        },
+        "disabled-color": {
+            "$value": "{color.gray.5}",
+            "$type": "color",
+            "$description": "Disabled text color."
+        },
+        "disabled-border": {
+            "$value": "{color.gray.3}",
+            "$type": "color",
+            "$description": "Disabled border color."
+        },
+        "primary": {
+            "$description": "Primary color system for CCUI 3.0. PLACEHOLDER - uses blue, update for rebranding.",
+            "filled": {
+                "$value": "{colorPalette.blue.filled}",
+                "$type": "color",
+                "$description": "Primary filled background."
+            },
+            "filled-hover": {
+                "$value": "{colorPalette.blue.filled-hover}",
+                "$type": "color",
+                "$description": "Primary filled hover state."
+            },
+            "light": {
+                "$value": "{colorPalette.blue.light}",
+                "$type": "color",
+                "$description": "Primary light variant background."
+            },
+            "light-hover": {
+                "$value": "{colorPalette.blue.light-hover}",
+                "$type": "color",
+                "$description": "Primary light variant hover."
+            },
+            "light-color": {
+                "$value": "{colorPalette.blue.light-color}",
+                "$type": "color",
+                "$description": "Text color on primary light backgrounds."
+            },
+            "contrast": {
+                "$value": "{color.white}",
+                "$type": "color",
+                "$description": "Contrast text color on primary filled backgrounds."
+            },
+            "0": { "$value": "{color.blue.0}", "$type": "color" },
+            "1": { "$value": "{color.blue.1}", "$type": "color" },
+            "2": { "$value": "{color.blue.2}", "$type": "color" },
+            "3": { "$value": "{color.blue.3}", "$type": "color" },
+            "4": { "$value": "{color.blue.4}", "$type": "color" },
+            "5": { "$value": "{color.blue.5}", "$type": "color" },
+            "6": { "$value": "{color.blue.6}", "$type": "color" },
+            "7": { "$value": "{color.blue.7}", "$type": "color" },
+            "8": { "$value": "{color.blue.8}", "$type": "color" },
+            "9": { "$value": "{color.blue.9}", "$type": "color" }
+        }
+    }
+}

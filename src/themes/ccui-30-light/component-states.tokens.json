@@ -1,0 +1,171 @@
+{
+    "$description": "Component state tokens for CCUI 3.0 light theme. These tokens define consistent interactive states (hover, active, focus, disabled, error) that can be used by any UI component.",
+    "component": {
+        "$description": "Generic component state tokens. Use these for consistent interactive behavior across all components.",
+        "default": {
+            "$description": "Default/resting state tokens",
+            "background": {
+                "$value": "{color.white}",
+                "$type": "color",
+                "$description": "Default component background color"
+            },
+            "border": {
+                "$value": "{color.gray.4}",
+                "$type": "color",
+                "$description": "Default component border color"
+            },
+            "text": {
+                "$value": "{color.black}",
+                "$type": "color",
+                "$description": "Default component text color"
+            }
+        },
+        "hover": {
+            "$description": "Hover state tokens",
+            "background": {
+                "$value": "{color.gray.0}",
+                "$type": "color",
+                "$description": "Hover state background color"
+            },
+            "border": {
+                "$value": "{color.gray.5}",
+                "$type": "color",
+                "$description": "Hover state border color"
+            }
+        },
+        "active": {
+            "$description": "Active/pressed state tokens",
+            "background": {
+                "$value": "{color.gray.1}",
+                "$type": "color",
+                "$description": "Active/pressed state background color"
+            },
+            "border": {
+                "$value": "{color.gray.6}",
+                "$type": "color",
+                "$description": "Active/pressed state border color"
+            }
+        },
+        "focus": {
+            "$description": "Focus state tokens",
+            "ring": {
+                "$value": "{color.blue.5}",
+                "$type": "color",
+                "$description": "Focus ring color"
+            },
+            "border": {
+                "$value": "{color.blue.5}",
+                "$type": "color",
+                "$description": "Focus state border color"
+            }
+        },
+        "disabled": {
+            "$description": "Disabled state tokens",
+            "background": {
+                "$value": "{color.gray.1}",
+                "$type": "color",
+                "$description": "Disabled state background color"
+            },
+            "text": {
+                "$value": "{color.gray.5}",
+                "$type": "color",
+                "$description": "Disabled state text color"
+            },
+            "border": {
+                "$value": "{color.gray.3}",
+                "$type": "color",
+                "$description": "Disabled state border color"
+            }
+        },
+        "error": {
+            "$description": "Error state tokens",
+            "background": {
+                "$value": "{color.red.0}",
+                "$type": "color",
+                "$description": "Error state background color"
+            },
+            "text": {
+                "$value": "{color.red.7}",
+                "$type": "color",
+                "$description": "Error state text color"
+            },
+            "border": {
+                "$value": "{color.red.5}",
+                "$type": "color",
+                "$description": "Error state border color"
+            }
+        },
+        "success": {
+            "$description": "Success state tokens",
+            "background": {
+                "$value": "{color.green.0}",
+                "$type": "color",
+                "$description": "Success state background color"
+            },
+            "text": {
+                "$value": "{color.green.7}",
+                "$type": "color",
+                "$description": "Success state text color"
+            },
+            "border": {
+                "$value": "{color.green.5}",
+                "$type": "color",
+                "$description": "Success state border color"
+            }
+        },
+        "warning": {
+            "$description": "Warning state tokens",
+            "background": {
+                "$value": "{color.yellow.0}",
+                "$type": "color",
+                "$description": "Warning state background color"
+            },
+            "text": {
+                "$value": "{color.yellow.8}",
+                "$type": "color",
+                "$description": "Warning state text color (darker for contrast)"
+            },
+            "border": {
+                "$value": "{color.yellow.5}",
+                "$type": "color",
+                "$description": "Warning state border color"
+            }
+        },
+        "info": {
+            "$description": "Info state tokens",
+            "background": {
+                "$value": "{color.blue.0}",
+                "$type": "color",
+                "$description": "Info state background color"
+            },
+            "text": {
+                "$value": "{color.blue.7}",
+                "$type": "color",
+                "$description": "Info state text color"
+            },
+            "border": {
+                "$value": "{color.blue.5}",
+                "$type": "color",
+                "$description": "Info state border color"
+            }
+        },
+        "selected": {
+            "$description": "Selected state tokens",
+            "background": {
+                "$value": "{color.blue.0}",
+                "$type": "color",
+                "$description": "Selected state background color"
+            },
+            "text": {
+                "$value": "{color.blue.7}",
+                "$type": "color",
+                "$description": "Selected state text color"
+            },
+            "border": {
+                "$value": "{color.blue.5}",
+                "$type": "color",
+                "$description": "Selected state border color"
+            }
+        }
+    }
+}

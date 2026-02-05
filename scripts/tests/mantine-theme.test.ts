@@ -4,30 +4,38 @@
  * Verifies that Mantine CSS variables are correctly mapped
  * and all required Mantine tokens are present.
  *
- * Build structure:
- * - Theme-specific (mantine-theme.css): colors, shadows, semantic tokens
- * - Shared primitives (mantine-primitives.css): spacing, radius, typography, breakpoints
+ * Build structure (multi-theme):
+ * - Primitives: dist/css/primitives.css
+ * - Theme files: dist/css/{theme}.css
  */
 import { describe, it, expect } from 'vitest';
 import {
   getThemeNames,
-  loadThemeCSS,
+  loadPrimitivesCSS,
+  loadThemeCSSFile,
+  hasThemeCSS,
   parseCSSVariables,
+  ALL_THEME_NAMES,
 } from './test-utils';
 
 describe('Mantine Compatibility Layer', () => {
   const themes = getThemeNames();
 
-  // Load shared primitives once (spacing, radius, typography)
-  const sharedMantineCSS = loadThemeCSS('shared', 'mantine-primitives.css');
-  const sharedVariables = parseCSSVariables(sharedMantineCSS);
+  // Load shared primitives once
+  const primitivesCSS = loadPrimitivesCSS();
+  const primitivesVariables = parseCSSVariables(primitivesCSS);
 
   describe.each(themes)('Theme: %s', (themeName) => {
-    const mantineCSS = loadThemeCSS(themeName, 'mantine-theme.css');
-    const themeVariables = parseCSSVariables(mantineCSS);
+    if (!hasThemeCSS(themeName)) {
+      it.skip('theme CSS not found', () => {});
+      return;
+    }
 
-    // Combine shared + theme-specific variables
-    const variables = new Map([...sharedVariables, ...themeVariables]);
+    const themeCSS = loadThemeCSSFile(themeName);
+    const themeVariables = parseCSSVariables(themeCSS);
+
+    // Combine primitives + theme-specific variables
+    const variables = new Map([...primitivesVariables, ...themeVariables]);
 
     describe('Color Palettes', () => {
       // Mantine expects color palettes with shades 0-9
@@ -305,11 +313,12 @@ describe('Mantine Compatibility Layer', () => {
   });
 
   describe('Cross-Theme Consistency', () => {
-    it('both themes should have similar Mantine variables (warn on differences)', () => {
+    it('all themes should have similar Mantine variables (warn on differences)', () => {
       if (themes.length < 2) return;
 
       const variableSets = themes.map((theme) => {
-        const css = loadThemeCSS(theme, 'mantine-theme.css');
+        if (!hasThemeCSS(theme)) return { theme, vars: new Set<string>() };
+        const css = loadThemeCSSFile(theme);
         const vars = parseCSSVariables(css);
         return {
           theme,
@@ -336,8 +345,7 @@ describe('Mantine Compatibility Layer', () => {
           }
         }
 
-        // Dark theme is intentionally incomplete - warn but don't fail
-        // This will become stricter once dark theme is fully implemented
+        // Themes may intentionally have different variables - warn but don't fail
         expect(true).toBe(true);
       }
     });

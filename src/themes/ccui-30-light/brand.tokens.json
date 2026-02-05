@@ -1,0 +1,21 @@
+{
+    "$description": "CCUI 3.0 Brand Identity Tokens - PLACEHOLDER VALUES. Update these with final brand colors when brand guidelines are finalized.",
+    "brand": {
+        "$description": "Core brand identity colors for CCUI 3.0 rebranding. These are placeholders.",
+        "primary": {
+            "$value": "#0974eb",
+            "$type": "color",
+            "$description": "PLACEHOLDER - Primary brand color. Update when brand guidelines finalized."
+        },
+        "secondary": {
+            "$value": "#6536c7",
+            "$type": "color",
+            "$description": "PLACEHOLDER - Secondary brand color. Update when brand guidelines finalized."
+        },
+        "accent": {
+            "$value": "#0c846b",
+            "$type": "color",
+            "$description": "PLACEHOLDER - Accent brand color. Update when brand guidelines finalized."
+        }
+    }
+}

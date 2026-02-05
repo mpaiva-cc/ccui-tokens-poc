@@ -1,0 +1,106 @@
+{
+    "$description": "CCUI 3.0 dark theme semantic colors. PLACEHOLDER VALUES - Update with final brand colors when guidelines are finalized.",
+    "color": {
+        "$description": "Semantic color assignments for CCUI 3.0 dark theme.",
+        "$type": "color",
+        "text": {
+            "$value": "{color.dark.0}",
+            "$description": "Primary text color for dark theme (light gray)."
+        },
+        "body": {
+            "$value": "{color.dark.7}",
+            "$description": "Body/page background color for dark theme."
+        },
+        "bright": {
+            "$value": "{color.white}",
+            "$description": "Bright text color for maximum contrast in dark theme."
+        },
+        "error": {
+            "$value": "{color.red.6}",
+            "$description": "Error state color."
+        },
+        "placeholder": {
+            "$value": "{color.dark.3}",
+            "$description": "Placeholder text color for dark theme."
+        },
+        "anchor": {
+            "$value": "{color.blue.4}",
+            "$description": "Anchor/link text color for dark theme (lighter shade)."
+        },
+        "default": {
+            "$value": "{color.dark.6}",
+            "$description": "Default component background color for dark theme."
+        },
+        "default-hover": {
+            "$value": "{color.dark.5}",
+            "$description": "Default hover background color for dark theme."
+        },
+        "default-color": {
+            "$value": "{color.white}",
+            "$description": "Default text color on default backgrounds."
+        },
+        "default-border": {
+            "$value": "{color.dark.4}",
+            "$description": "Default border color for dark theme."
+        },
+        "dimmed": {
+            "$value": "{color.dark.2}",
+            "$description": "Dimmed/muted text color for dark theme."
+        },
+        "disabled": {
+            "$value": "{color.dark.5}",
+            "$description": "Disabled background color for dark theme."
+        },
+        "disabled-color": {
+            "$value": "{color.dark.3}",
+            "$description": "Disabled text color for dark theme."
+        },
+        "disabled-border": {
+            "$value": "{color.dark.4}",
+            "$description": "Disabled border color for dark theme."
+        },
+        "primary": {
+            "$description": "Primary color system for CCUI 3.0 dark mode. PLACEHOLDER - uses blue, update for rebranding.",
+            "filled": {
+                "$value": "{colorPalette.blue.filled}",
+                "$type": "color",
+                "$description": "Primary filled background."
+            },
+            "filled-hover": {
+                "$value": "{colorPalette.blue.filled-hover}",
+                "$type": "color",
+                "$description": "Primary filled hover state."
+            },
+            "light": {
+                "$value": "{colorPalette.blue.light}",
+                "$type": "color",
+                "$description": "Primary light variant background."
+            },
+            "light-hover": {
+                "$value": "{colorPalette.blue.light-hover}",
+                "$type": "color",
+                "$description": "Primary light variant hover."
+            },
+            "light-color": {
+                "$value": "{colorPalette.blue.light-color}",
+                "$type": "color",
+                "$description": "Text color on primary light backgrounds."
+            },
+            "contrast": {
+                "$value": "{color.white}",
+                "$type": "color",
+                "$description": "Contrast text color on primary filled backgrounds."
+            },
+            "0": { "$value": "{color.blue.0}", "$type": "color" },
+            "1": { "$value": "{color.blue.1}", "$type": "color" },
+            "2": { "$value": "{color.blue.2}", "$type": "color" },
+            "3": { "$value": "{color.blue.3}", "$type": "color" },
+            "4": { "$value": "{color.blue.4}", "$type": "color" },
+            "5": { "$value": "{color.blue.5}", "$type": "color" },
+            "6": { "$value": "{color.blue.6}", "$type": "color" },
+            "7": { "$value": "{color.blue.7}", "$type": "color" },
+            "8": { "$value": "{color.blue.8}", "$type": "color" },
+            "9": { "$value": "{color.blue.9}", "$type": "color" }
+        }
+    }
+}

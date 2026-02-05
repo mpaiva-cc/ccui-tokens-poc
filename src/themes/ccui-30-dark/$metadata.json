@@ -1,0 +1,7 @@
+{
+    "name": "ccui-30-dark",
+    "extends": "base",
+    "colorScheme": "dark",
+    "description": "CCUI 3.0 rebranding theme (dark mode) - Placeholder values for new brand identity",
+    "version": "3.0.0-placeholder"
+}

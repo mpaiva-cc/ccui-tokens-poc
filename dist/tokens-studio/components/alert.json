@@ -1,0 +1,111 @@
+{
+  "alert": {
+    "padding": {
+      "xs": {
+        "$value": "{spacing.xs}",
+        "$type": "dimension",
+        "$description": "Extra small alert padding (10px). Use for: compact inline alerts, form field errors, dense notification lists. Minimal visual footprint."
+      },
+      "sm": {
+        "$value": "{spacing.sm}",
+        "$type": "dimension",
+        "$description": "Small alert padding (12px). Use for: standard form validation, secondary notifications, space-efficient layouts."
+      },
+      "md": {
+        "$value": "{spacing.md}",
+        "$type": "dimension",
+        "$description": "Medium alert padding (16px). DEFAULT. Use for: most alerts, system notifications, prominent user feedback. Good balance of prominence and space."
+      },
+      "lg": {
+        "$value": "{spacing.lg}",
+        "$type": "dimension",
+        "$description": "Large alert padding (20px). Use for: important system alerts, featured notifications, alerts with more content. More breathing room."
+      },
+      "xl": {
+        "$value": "{spacing.xl}",
+        "$type": "dimension",
+        "$description": "Extra large alert padding (32px). Use for: high-emphasis critical alerts, full-width banners, alerts with rich content or actions."
+      }
+    },
+    "borderRadius": {
+      "$value": "{radius.sm}",
+      "$type": "dimension",
+      "$description": "Alert border radius (4px). Slight rounding softens the alert container. Matches other form/content containers for visual consistency."
+    },
+    "borderWidth": {
+      "$value": "{borderWidth.thin}",
+      "$type": "dimension",
+      "$description": "Alert border width (1px). Thin border provides subtle container definition. Border color varies by alert variant (error, warning, success, info)."
+    },
+    "icon": {
+      "size": {
+        "$value": "{sizing.alert.iconSize}",
+        "$type": "dimension",
+        "$description": "Alert icon size (20px). Sized to be clearly visible alongside title/message text without dominating. Proportional to typical alert padding."
+      },
+      "gap": {
+        "$value": "{spacing.sm}",
+        "$type": "dimension",
+        "$description": "Gap between icon and content (12px). Provides clear separation between status icon and alert text. Maintains visual association."
+      }
+    },
+    "title": {
+      "fontSize": {
+        "$value": "{typography.fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Alert title font size (14px). Same as body text but distinguished by weight. Keeps alerts compact while remaining readable."
+      },
+      "fontWeight": {
+        "$value": "{typography.fontWeight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Alert title font weight (600). Semibold provides clear hierarchy between title and message without being overly heavy."
+      },
+      "lineHeight": {
+        "$value": "{typography.lineHeight.sm}",
+        "$type": "number",
+        "$description": "Alert title line height (1.25). Tighter line height for single-line titles. Keeps alert compact vertically."
+      }
+    },
+    "message": {
+      "fontSize": {
+        "$value": "{typography.fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Alert message font size (14px). Standard body text size for readability. Matches title size but lighter weight."
+      },
+      "lineHeight": {
+        "$value": "{typography.lineHeight.md}",
+        "$type": "number",
+        "$description": "Alert message line height (1.5). More generous line height for multi-line messages. Improves readability of longer alert text."
+      }
+    },
+    "closeButton": {
+      "size": {
+        "$value": "{sizing.alert.closeButtonSize}",
+        "$type": "dimension",
+        "$description": "Close button size (18px). Clickable/tappable close icon. Sized for adequate touch target while not competing with alert content."
+      },
+      "offset": {
+        "$value": "{spacing.sm}",
+        "$type": "dimension",
+        "$description": "Close button offset from edge (12px). Positions close button away from container edge for comfortable interaction and visual balance."
+      }
+    },
+    "transition": {
+      "duration": {
+        "$value": "{motion.duration.normal}",
+        "$type": "duration",
+        "$description": "Alert transition duration (200ms). Moderate duration allows the animation to be perceived without feeling slow. Balances awareness and efficiency."
+      },
+      "easing": {
+        "enter": {
+          "$value": "{motion.easing.easeOut}",
+          "$description": "Alert entrance easing (ease-out). Decelerating motion - alert arrives quickly and settles into place. Feels like it's sliding in."
+        },
+        "exit": {
+          "$value": "{motion.easing.easeIn}",
+          "$description": "Alert exit easing (ease-in). Accelerating motion - alert starts slow and speeds up as it leaves. Feels like it's sliding away."
+        }
+      }
+    }
+  }
+}
