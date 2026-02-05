@@ -361,12 +361,24 @@ const SYSTEM_TOKEN_CATEGORIES = [
     'heading'
 ];
 
+// Helper to check if a token is a composite typography token (not valid for CSS output)
+function isCompositeTypographyToken(token) {
+    // Composite typography tokens have $type: "typography" with an object $value
+    const type = token.$type || token.type;
+    if (type === 'typography') {
+        const value = token.$value ?? token.value;
+        return typeof value === 'object' && value !== null;
+    }
+    return false;
+}
+
 StyleDictionary.registerFormat({
     name: 'css/neutral-shared-primitives',
     format: ({ dictionary, options }) => {
         const selector = options.selector || ':root';
         const sharedTokens = dictionary.allTokens.filter(token =>
-            SHARED_PRIMITIVE_CATEGORIES.includes(token.path[0]) || SYSTEM_TOKEN_CATEGORIES.includes(token.path[0])
+            (SHARED_PRIMITIVE_CATEGORIES.includes(token.path[0]) || SYSTEM_TOKEN_CATEGORIES.includes(token.path[0])) &&
+            !isCompositeTypographyToken(token)
         );
         const variables = sharedTokens
             .map(token => `  --${token.name}: ${token.$value};`)
@@ -379,7 +391,10 @@ StyleDictionary.registerFormat({
     name: 'css/neutral-theme-specific',
     format: ({ dictionary, options }) => {
         const selector = options.selector || ':root';
-        const themeTokens = dictionary.allTokens.filter(token => THEME_SPECIFIC_CATEGORIES.includes(token.path[0]));
+        const themeTokens = dictionary.allTokens.filter(token =>
+            THEME_SPECIFIC_CATEGORIES.includes(token.path[0]) &&
+            !isCompositeTypographyToken(token)
+        );
         const variables = themeTokens
             .map(token => `  --${token.name}: ${token.$value};`)
             .join('\n');
@@ -392,7 +407,8 @@ StyleDictionary.registerFormat({
     format: ({ dictionary, options }) => {
         const selector = options.selector || ':root';
         const sharedTokens = dictionary.allTokens.filter(token =>
-            SHARED_PRIMITIVE_CATEGORIES.includes(token.path[0]) || SYSTEM_TOKEN_CATEGORIES.includes(token.path[0])
+            (SHARED_PRIMITIVE_CATEGORIES.includes(token.path[0]) || SYSTEM_TOKEN_CATEGORIES.includes(token.path[0])) &&
+            !isCompositeTypographyToken(token)
         );
         const variables = sharedTokens
             .map(token => `  --${token.name}: ${token.$value};`)
@@ -405,7 +421,10 @@ StyleDictionary.registerFormat({
     name: 'css/ccui-theme-specific',
     format: ({ dictionary, options }) => {
         const selector = options.selector || ':root';
-        const themeTokens = dictionary.allTokens.filter(token => THEME_SPECIFIC_CATEGORIES.includes(token.path[0]));
+        const themeTokens = dictionary.allTokens.filter(token =>
+            THEME_SPECIFIC_CATEGORIES.includes(token.path[0]) &&
+            !isCompositeTypographyToken(token)
+        );
         const variables = themeTokens
             .map(token => `  --${token.name}: ${token.$value};`)
             .join('\n');
@@ -418,7 +437,9 @@ StyleDictionary.registerFormat({
     format: ({ dictionary, options }) => {
         const selector = options.selector || ':root';
         const sharedTokens = dictionary.allTokens.filter(token =>
-            SHARED_PRIMITIVE_CATEGORIES.includes(token.path[0]) && isMantineOfficialToken(token)
+            SHARED_PRIMITIVE_CATEGORIES.includes(token.path[0]) &&
+            isMantineOfficialToken(token) &&
+            !isCompositeTypographyToken(token)
         );
         const variables = sharedTokens
             .map(token => `  --${token.name}: ${token.$value};`)
@@ -432,7 +453,9 @@ StyleDictionary.registerFormat({
     format: ({ dictionary, options }) => {
         const selector = options.selector || ':root';
         const themeTokens = dictionary.allTokens.filter(token =>
-            THEME_SPECIFIC_CATEGORIES.includes(token.path[0]) && isMantineOfficialToken(token)
+            THEME_SPECIFIC_CATEGORIES.includes(token.path[0]) &&
+            isMantineOfficialToken(token) &&
+            !isCompositeTypographyToken(token)
         );
         const variables = themeTokens
             .map(token => `  --${token.name}: ${token.$value};`)
