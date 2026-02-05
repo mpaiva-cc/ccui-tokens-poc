@@ -1,19 +1,9 @@
 {
   "tokenSetOrder": [
-    "primitives/color",
-    "primitives/spacing",
-    "primitives/radius",
-    "primitives/typography",
-    "primitives/motion",
-    "primitives/border",
-    "primitives/breakpoints",
-    "primitives/interaction",
-    "primitives/sizing",
+    "primitives",
     "semantic/light",
     "semantic/dark",
     "semantic/high-contrast",
-    "component/button",
-    "component/input",
-    "component/modal"
+    "components"
   ]
 }

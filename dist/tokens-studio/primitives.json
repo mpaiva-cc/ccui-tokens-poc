@@ -1,4 +1,79 @@
 {
+  "border/style/none": {
+    "$value": "none",
+    "$type": "strokeStyle",
+    "$description": "No border style."
+  },
+  "border/style/solid": {
+    "$value": "solid",
+    "$type": "strokeStyle",
+    "$description": "Solid border style. DEFAULT for all standard borders."
+  },
+  "border/style/dashed": {
+    "$value": "dashed",
+    "$type": "strokeStyle",
+    "$description": "Dashed border style. Use for: drop zones, placeholder elements."
+  },
+  "border/style/dotted": {
+    "$value": "dotted",
+    "$type": "strokeStyle",
+    "$description": "Dotted border style. Use for: decorative elements."
+  },
+  "border/width/0": {
+    "$value": "0",
+    "$type": "dimension",
+    "$description": "No border (0px). Use for: removing inherited borders."
+  },
+  "border/width/100": {
+    "$value": "1px",
+    "$type": "dimension",
+    "$description": "Thin border (1px). DEFAULT for most UI borders."
+  },
+  "border/width/200": {
+    "$value": "2px",
+    "$type": "dimension",
+    "$description": "Medium border (2px). Use for: emphasis, active states."
+  },
+  "border/width/400": {
+    "$value": "4px",
+    "$type": "dimension",
+    "$description": "Thick border (4px). Use for: strong emphasis."
+  },
+  "breakpoint/xs": {
+    "$value": "36em",
+    "$type": "dimension",
+    "$description": "Extra small breakpoint (576px). Large phones, small tablets."
+  },
+  "breakpoint/sm": {
+    "$value": "48em",
+    "$type": "dimension",
+    "$description": "Small breakpoint (768px). Tablets in portrait."
+  },
+  "breakpoint/md": {
+    "$value": "62em",
+    "$type": "dimension",
+    "$description": "Medium breakpoint (992px). Tablets landscape, standard laptops."
+  },
+  "breakpoint/lg": {
+    "$value": "75em",
+    "$type": "dimension",
+    "$description": "Large breakpoint (1200px). Large laptops, standard desktops."
+  },
+  "breakpoint/xl": {
+    "$value": "88em",
+    "$type": "dimension",
+    "$description": "Extra large breakpoint (1408px). Large desktop monitors."
+  },
+  "content-width/sm": {
+    "$value": "37.5em",
+    "$type": "dimension",
+    "$description": "Small content width (600px). Use for: prose content."
+  },
+  "content-width/lg": {
+    "$value": "80em",
+    "$type": "dimension",
+    "$description": "Large content width (1280px). Use for: full application layouts."
+  },
   "color/white": {
     "$value": "#ffffff",
     "$type": "color",
@@ -714,189 +789,584 @@
     "$type": "color",
     "$description": "Darkest orange - maximum emphasis"
   },
-  "color/text/primary": {
-    "$value": "{color/black}",
-    "$type": "color",
-    "$description": "Primary text color. Use for: headings, body text, labels."
+  "focus/ring/width": {
+    "$value": "3px",
+    "$type": "dimension",
+    "$description": "Focus ring width (3px)."
   },
-  "color/text/secondary": {
-    "$value": "{color/gray/600}",
-    "$type": "color",
-    "$description": "Secondary text color. Use for: metadata, timestamps, captions."
+  "focus/ring/offset": {
+    "$value": "2px",
+    "$type": "dimension",
+    "$description": "Focus ring offset from element (2px)."
   },
-  "color/text/tertiary": {
-    "$value": "{color/gray/500}",
-    "$type": "color",
-    "$description": "Tertiary text color. Use for: placeholder text, help text."
-  },
-  "color/text/disabled": {
-    "$value": "{color/gray/400}",
-    "$type": "color",
-    "$description": "Disabled text color."
-  },
-  "color/text/inverse": {
-    "$value": "{color/white}",
-    "$type": "color",
-    "$description": "Inverse text color. Use for: text on dark backgrounds."
-  },
-  "color/text/error": {
-    "$value": "{color/red/700}",
-    "$type": "color",
-    "$description": "Error text color. WCAG AA compliant."
-  },
-  "color/text/success": {
-    "$value": "{color/green/700}",
-    "$type": "color",
-    "$description": "Success text color."
-  },
-  "color/text/warning": {
-    "$value": "{color/yellow/700}",
-    "$type": "color",
-    "$description": "Warning text color."
-  },
-  "color/text/info": {
-    "$value": "{color/blue/700}",
-    "$type": "color",
-    "$description": "Info text color."
-  },
-  "color/surface/primary": {
-    "$value": "{color/white}",
-    "$type": "color",
-    "$description": "Primary surface. Use for: page backgrounds, cards."
-  },
-  "color/surface/secondary": {
-    "$value": "{color/gray/50}",
-    "$type": "color",
-    "$description": "Secondary surface. Use for: subtle backgrounds, zebra striping."
-  },
-  "color/surface/tertiary": {
-    "$value": "{color/gray/100}",
-    "$type": "color",
-    "$description": "Tertiary surface. Use for: input backgrounds."
-  },
-  "color/surface/elevated": {
-    "$value": "{color/white}",
-    "$type": "color",
-    "$description": "Elevated surface. Use for: modals, dropdowns."
-  },
-  "color/surface/inverse": {
-    "$value": "{color/gray/900}",
-    "$type": "color",
-    "$description": "Inverse surface. Use for: tooltips, dark cards."
-  },
-  "color/border/default": {
-    "$value": "{color/gray/300}",
-    "$type": "color",
-    "$description": "Default border color. Use for: inputs, cards."
-  },
-  "color/border/strong": {
-    "$value": "{color/gray/400}",
-    "$type": "color",
-    "$description": "Strong border color. Use for: emphasis."
-  },
-  "color/border/subtle": {
-    "$value": "{color/gray/200}",
-    "$type": "color",
-    "$description": "Subtle border color. Use for: dividers."
-  },
-  "color/border/focus": {
+  "focus/ring/color": {
     "$value": "{color/blue/500}",
     "$type": "color",
-    "$description": "Focus border/ring color."
+    "$description": "Focus ring color (primary blue)."
   },
-  "color/action/primary": {
-    "$value": "{color/blue/600}",
-    "$type": "color",
-    "$description": "Primary action color. Use for: primary buttons, links."
+  "opacity/0": {
+    "$value": 0,
+    "$type": "number",
+    "$description": "Fully transparent (0%)."
   },
-  "color/action/primary-hover": {
-    "$value": "{color/blue/700}",
-    "$type": "color",
-    "$description": "Primary action hover color."
+  "opacity/5": {
+    "$value": 0.05,
+    "$type": "number",
+    "$description": "5% opacity - barely visible."
   },
-  "color/action/primary-active": {
-    "$value": "{color/blue/800}",
-    "$type": "color",
-    "$description": "Primary action active/pressed color."
+  "opacity/10": {
+    "$value": 0.1,
+    "$type": "number",
+    "$description": "10% opacity - subtle transparency."
   },
-  "color/action/secondary": {
-    "$value": "{color/gray/100}",
-    "$type": "color",
-    "$description": "Secondary action background."
+  "opacity/20": {
+    "$value": 0.2,
+    "$type": "number",
+    "$description": "20% opacity - light transparency."
   },
-  "color/action/secondary-hover": {
-    "$value": "{color/gray/200}",
-    "$type": "color",
-    "$description": "Secondary action hover."
+  "opacity/25": {
+    "$value": 0.25,
+    "$type": "number",
+    "$description": "25% opacity - quarter visible."
   },
-  "color/status/error/bg": {
-    "$value": "{color/red/50}",
-    "$type": "color",
-    "$description": "Error background color."
+  "opacity/30": {
+    "$value": 0.3,
+    "$type": "number",
+    "$description": "30% opacity - moderate transparency."
   },
-  "color/status/error/border": {
-    "$value": "{color/red/300}",
-    "$type": "color",
-    "$description": "Error border color."
+  "opacity/40": {
+    "$value": 0.4,
+    "$type": "number",
+    "$description": "40% opacity - semi-transparent."
   },
-  "color/status/success/bg": {
-    "$value": "{color/green/50}",
-    "$type": "color",
-    "$description": "Success background color."
+  "opacity/50": {
+    "$value": 0.5,
+    "$type": "number",
+    "$description": "50% opacity - half visible."
   },
-  "color/status/success/border": {
-    "$value": "{color/green/300}",
-    "$type": "color",
-    "$description": "Success border color."
+  "opacity/60": {
+    "$value": 0.6,
+    "$type": "number",
+    "$description": "60% opacity - mostly visible."
   },
-  "color/status/warning/bg": {
-    "$value": "{color/yellow/50}",
-    "$type": "color",
-    "$description": "Warning background color."
+  "opacity/70": {
+    "$value": 0.7,
+    "$type": "number",
+    "$description": "70% opacity - high visibility."
   },
-  "color/status/warning/border": {
-    "$value": "{color/yellow/300}",
-    "$type": "color",
-    "$description": "Warning border color."
+  "opacity/75": {
+    "$value": 0.75,
+    "$type": "number",
+    "$description": "75% opacity - three-quarters visible."
   },
-  "color/status/info/bg": {
-    "$value": "{color/blue/50}",
-    "$type": "color",
-    "$description": "Info background color."
+  "opacity/80": {
+    "$value": 0.8,
+    "$type": "number",
+    "$description": "80% opacity - mostly solid."
   },
-  "color/status/info/border": {
-    "$value": "{color/blue/300}",
-    "$type": "color",
-    "$description": "Info border color."
+  "opacity/90": {
+    "$value": 0.9,
+    "$type": "number",
+    "$description": "90% opacity - nearly solid."
   },
-  "shadow/xs": {
-    "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1)",
-    "$type": "shadow",
-    "$description": "Extra small shadow. Use for: subtle elevation."
+  "opacity/100": {
+    "$value": 1,
+    "$type": "number",
+    "$description": "Fully opaque (100%)."
   },
-  "shadow/sm": {
-    "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem",
-    "$type": "shadow",
-    "$description": "Small shadow. Use for: cards, dropdowns."
+  "opacity/disabled": {
+    "$value": 0.5,
+    "$type": "number",
+    "$description": "Disabled element opacity (50%)."
   },
-  "shadow/md": {
-    "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem",
-    "$type": "shadow",
-    "$description": "Medium shadow. Use for: modals."
+  "opacity/overlay": {
+    "$value": 0.6,
+    "$type": "number",
+    "$description": "Modal overlay opacity (60%)."
   },
-  "shadow/lg": {
-    "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem",
-    "$type": "shadow",
-    "$description": "Large shadow. Use for: elevated modals, popovers."
+  "z-index/base": {
+    "$value": 0,
+    "$type": "number",
+    "$description": "Base layer (z-index: 0). DEFAULT for all standard content."
   },
-  "shadow/xl": {
-    "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem",
-    "$type": "shadow",
-    "$description": "Extra large shadow. Use for: maximum elevation."
+  "z-index/dropdown": {
+    "$value": 100,
+    "$type": "number",
+    "$description": "Dropdown layer (z-index: 100). Dropdown menus, selects."
   },
-  "shadow/footer": {
-    "$value": "0 -0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04)",
-    "$type": "shadow",
-    "$description": "Shadow for fixed footers (reversed direction)."
+  "z-index/sticky": {
+    "$value": 200,
+    "$type": "number",
+    "$description": "Sticky layer (z-index: 200). Sticky headers, fixed navigation."
+  },
+  "z-index/overlay": {
+    "$value": 300,
+    "$type": "number",
+    "$description": "Overlay layer (z-index: 300). Modal backdrops."
+  },
+  "z-index/modal": {
+    "$value": 400,
+    "$type": "number",
+    "$description": "Modal layer (z-index: 400). Modal dialogs, drawers."
+  },
+  "z-index/popover": {
+    "$value": 500,
+    "$type": "number",
+    "$description": "Popover layer (z-index: 500). Popovers in modals."
+  },
+  "z-index/tooltip": {
+    "$value": 600,
+    "$type": "number",
+    "$description": "Tooltip layer (z-index: 600). HIGHEST standard layer."
+  },
+  "motion/duration/instant": {
+    "$value": "0ms",
+    "$type": "duration",
+    "$description": "Instant/no duration (0ms). Use for: prefers-reduced-motion fallback."
+  },
+  "motion/duration/fast": {
+    "$value": "100ms",
+    "$type": "duration",
+    "$description": "Fast transitions (100ms). Use for: micro-interactions, hover states."
+  },
+  "motion/duration/normal": {
+    "$value": "200ms",
+    "$type": "duration",
+    "$description": "Normal transitions (200ms). DEFAULT for most UI transitions."
+  },
+  "motion/duration/slow": {
+    "$value": "300ms",
+    "$type": "duration",
+    "$description": "Slow transitions (300ms). Use for: larger element transitions."
+  },
+  "motion/duration/slower": {
+    "$value": "500ms",
+    "$type": "duration",
+    "$description": "Slower transitions (500ms). MAXIMUM recommended duration."
+  },
+  "motion/easing/linear": {
+    "$value": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "$type": "cubicBezier",
+    "$description": "Linear easing - constant speed, no acceleration."
+  },
+  "motion/easing/ease": {
+    "$value": [
+      0.25,
+      0.1,
+      0.25,
+      1
+    ],
+    "$type": "cubicBezier",
+    "$description": "Standard ease curve - CSS default."
+  },
+  "motion/easing/ease-in": {
+    "$value": [
+      0.42,
+      0,
+      1,
+      1
+    ],
+    "$type": "cubicBezier",
+    "$description": "Ease in - starts slow, accelerates. Use for exits."
+  },
+  "motion/easing/ease-out": {
+    "$value": [
+      0,
+      0,
+      0.58,
+      1
+    ],
+    "$type": "cubicBezier",
+    "$description": "Ease out - starts fast, decelerates. RECOMMENDED for most UI."
+  },
+  "motion/easing/ease-in-out": {
+    "$value": [
+      0.42,
+      0,
+      0.58,
+      1
+    ],
+    "$type": "cubicBezier",
+    "$description": "Ease in and out - slow start, fast middle, slow end."
+  },
+  "motion/easing/emphasized": {
+    "$value": [
+      0.2,
+      0,
+      0,
+      1
+    ],
+    "$type": "cubicBezier",
+    "$description": "Emphasized deceleration - quick start, strong deceleration."
+  },
+  "radius/0": {
+    "$value": "0",
+    "$type": "dimension",
+    "$description": "No radius - sharp corners."
+  },
+  "radius/100": {
+    "$value": "0.125rem",
+    "$type": "dimension",
+    "$description": "Extra small radius (2px). Use for: small badges, tags, inline code."
+  },
+  "radius/200": {
+    "$value": "0.25rem",
+    "$type": "dimension",
+    "$description": "Small radius (4px). DEFAULT for small components. Use for: buttons, inputs."
+  },
+  "radius/300": {
+    "$value": "0.375rem",
+    "$type": "dimension",
+    "$description": "Medium-small radius (6px). Use for: between sm and md."
+  },
+  "radius/400": {
+    "$value": "0.5rem",
+    "$type": "dimension",
+    "$description": "Medium radius (8px). Use for: cards, modals, larger containers."
+  },
+  "radius/600": {
+    "$value": "0.75rem",
+    "$type": "dimension",
+    "$description": "Medium-large radius (12px). Use for: between md and lg."
+  },
+  "radius/800": {
+    "$value": "1rem",
+    "$type": "dimension",
+    "$description": "Large radius (16px). Use for: hero cards, featured content."
+  },
+  "radius/1000": {
+    "$value": "1.5rem",
+    "$type": "dimension",
+    "$description": "Extra large radius (24px). Use for: hero sections, large promotional elements."
+  },
+  "radius/1200": {
+    "$value": "2rem",
+    "$type": "dimension",
+    "$description": "2X large radius (32px). Use for: very large cards."
+  },
+  "radius/full": {
+    "$value": "9999px",
+    "$type": "dimension",
+    "$description": "Full/pill radius (circular). Use for: avatars, round buttons, pills."
+  },
+  "sizing/input/xs": {
+    "$value": "1.875rem",
+    "$type": "dimension",
+    "$description": "Extra small input height (30px)."
+  },
+  "sizing/input/sm": {
+    "$value": "2.25rem",
+    "$type": "dimension",
+    "$description": "Small input height (36px)."
+  },
+  "sizing/input/md": {
+    "$value": "2.625rem",
+    "$type": "dimension",
+    "$description": "Medium input height (42px). DEFAULT."
+  },
+  "sizing/input/lg": {
+    "$value": "3rem",
+    "$type": "dimension",
+    "$description": "Large input height (48px)."
+  },
+  "sizing/input/xl": {
+    "$value": "3.75rem",
+    "$type": "dimension",
+    "$description": "Extra large input height (60px)."
+  },
+  "sizing/button/xs": {
+    "$value": "1.875rem",
+    "$type": "dimension",
+    "$description": "Extra small button height (30px)."
+  },
+  "sizing/button/sm": {
+    "$value": "2.25rem",
+    "$type": "dimension",
+    "$description": "Small button height (36px)."
+  },
+  "sizing/button/md": {
+    "$value": "2.625rem",
+    "$type": "dimension",
+    "$description": "Medium button height (42px). DEFAULT."
+  },
+  "sizing/button/lg": {
+    "$value": "3rem",
+    "$type": "dimension",
+    "$description": "Large button height (48px)."
+  },
+  "sizing/button/xl": {
+    "$value": "3.75rem",
+    "$type": "dimension",
+    "$description": "Extra large button height (60px)."
+  },
+  "sizing/icon/xs": {
+    "$value": "0.75rem",
+    "$type": "dimension",
+    "$description": "Extra small icon size (12px)."
+  },
+  "sizing/icon/sm": {
+    "$value": "1rem",
+    "$type": "dimension",
+    "$description": "Small icon size (16px)."
+  },
+  "sizing/icon/md": {
+    "$value": "1.25rem",
+    "$type": "dimension",
+    "$description": "Medium icon size (20px). DEFAULT."
+  },
+  "sizing/icon/lg": {
+    "$value": "1.5rem",
+    "$type": "dimension",
+    "$description": "Large icon size (24px)."
+  },
+  "sizing/icon/xl": {
+    "$value": "2rem",
+    "$type": "dimension",
+    "$description": "Extra large icon size (32px)."
+  },
+  "spacing/0": {
+    "$value": "0px",
+    "$type": "dimension",
+    "$description": "Zero spacing. Use for: removing default margins/padding."
+  },
+  "spacing/50": {
+    "$value": "2px",
+    "$type": "dimension",
+    "$description": "Micro spacing (2px). Use for: fine adjustments, hairline gaps."
+  },
+  "spacing/100": {
+    "$value": "4px",
+    "$type": "dimension",
+    "$description": "Extra small spacing (4px). Use for: tight component internals, icon gaps."
+  },
+  "spacing/150": {
+    "$value": "6px",
+    "$type": "dimension",
+    "$description": "Small-extra small spacing (6px). Use for: compact elements."
+  },
+  "spacing/200": {
+    "$value": "8px",
+    "$type": "dimension",
+    "$description": "Small spacing (8px). Use for: standard component gaps, form field margins."
+  },
+  "spacing/250": {
+    "$value": "10px",
+    "$type": "dimension",
+    "$description": "Small-medium spacing (10px). Use for: tight padding in compact components."
+  },
+  "spacing/300": {
+    "$value": "12px",
+    "$type": "dimension",
+    "$description": "Medium-small spacing (12px). Use for: standard component internal padding."
+  },
+  "spacing/400": {
+    "$value": "16px",
+    "$type": "dimension",
+    "$description": "Medium spacing (16px). DEFAULT. Use for: standard gaps, modal padding."
+  },
+  "spacing/500": {
+    "$value": "20px",
+    "$type": "dimension",
+    "$description": "Medium-large spacing (20px). Use for: generous padding, card spacing."
+  },
+  "spacing/600": {
+    "$value": "24px",
+    "$type": "dimension",
+    "$description": "Large spacing (24px). Use for: section padding within components."
+  },
+  "spacing/800": {
+    "$value": "32px",
+    "$type": "dimension",
+    "$description": "Extra large spacing (32px). Use for: major section separation."
+  },
+  "spacing/1000": {
+    "$value": "40px",
+    "$type": "dimension",
+    "$description": "2X large spacing (40px). Use for: page-level margins, hero sections."
+  },
+  "spacing/1200": {
+    "$value": "48px",
+    "$type": "dimension",
+    "$description": "3X large spacing (48px). Use for: maximum separation."
+  },
+  "gridSpacing/100": {
+    "$value": "8px",
+    "$type": "dimension",
+    "$description": "Extra small grid gap (8px). Use for: compact card grids."
+  },
+  "gridSpacing/200": {
+    "$value": "16px",
+    "$type": "dimension",
+    "$description": "Small grid gap (16px). Use for: standard card grids."
+  },
+  "gridSpacing/300": {
+    "$value": "24px",
+    "$type": "dimension",
+    "$description": "Medium grid gap (24px). Use for: default content grids."
+  },
+  "gridSpacing/400": {
+    "$value": "32px",
+    "$type": "dimension",
+    "$description": "Large grid gap (32px). Use for: spacious card layouts."
+  },
+  "gridSpacing/500": {
+    "$value": "40px",
+    "$type": "dimension",
+    "$description": "Extra large grid gap (40px). Use for: hero grids."
+  },
+  "gridSpacing/600": {
+    "$value": "48px",
+    "$type": "dimension",
+    "$description": "2X large grid gap (48px). Use for: maximum separation in grids."
+  },
+  "verticalRhythm/100": {
+    "$value": "0.4rem",
+    "$type": "dimension",
+    "$description": "Quarter baseline (6.4px). Use for: list item spacing."
+  },
+  "verticalRhythm/200": {
+    "$value": "0.8rem",
+    "$type": "dimension",
+    "$description": "Half baseline (12.8px). Use for: heading bottom margins."
+  },
+  "verticalRhythm/300": {
+    "$value": "1.2rem",
+    "$type": "dimension",
+    "$description": "Three-quarter baseline (19.2px). Use for: paragraph spacing."
+  },
+  "verticalRhythm/400": {
+    "$value": "1.6rem",
+    "$type": "dimension",
+    "$description": "Single baseline (25.6px). DEFAULT prose spacing."
+  },
+  "verticalRhythm/600": {
+    "$value": "2.4rem",
+    "$type": "dimension",
+    "$description": "1.5 baselines (38.4px). Use for: heading top margins."
+  },
+  "verticalRhythm/800": {
+    "$value": "3.2rem",
+    "$type": "dimension",
+    "$description": "Double baseline (51.2px). Use for: major section breaks."
+  },
+  "verticalRhythm/1200": {
+    "$value": "4.8rem",
+    "$type": "dimension",
+    "$description": "Triple baseline (76.8px). Use for: page section breaks."
+  },
+  "typography/font-family/sans": {
+    "$value": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    "$type": "fontFamily",
+    "$description": "Primary sans-serif font stack. Use for: all body text, UI labels."
+  },
+  "typography/font-family/heading": {
+    "$value": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    "$type": "fontFamily",
+    "$description": "Heading/display font stack optimized for accessibility."
+  },
+  "typography/font-family/mono": {
+    "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+    "$type": "fontFamily",
+    "$description": "Monospace font stack for code and technical content."
+  },
+  "typography/font-size/100": {
+    "$value": "0.75rem",
+    "$type": "dimension",
+    "$description": "Extra small font size (12px). MINIMUM readable size."
+  },
+  "typography/font-size/200": {
+    "$value": "0.875rem",
+    "$type": "dimension",
+    "$description": "Small font size (14px). Use for: secondary text, table content."
+  },
+  "typography/font-size/300": {
+    "$value": "1rem",
+    "$type": "dimension",
+    "$description": "Medium font size (16px). DEFAULT body text size."
+  },
+  "typography/font-size/400": {
+    "$value": "1.125rem",
+    "$type": "dimension",
+    "$description": "Large font size (18px). Use for: lead paragraphs."
+  },
+  "typography/font-size/500": {
+    "$value": "1.25rem",
+    "$type": "dimension",
+    "$description": "Extra large font size (20px). Use for: small headings."
+  },
+  "typography/font-size/600": {
+    "$value": "1.375rem",
+    "$type": "dimension",
+    "$description": "2X large font size (22px). Use for: medium headings (h4)."
+  },
+  "typography/font-size/700": {
+    "$value": "1.625rem",
+    "$type": "dimension",
+    "$description": "3X large font size (26px). Use for: prominent headings (h3)."
+  },
+  "typography/font-size/800": {
+    "$value": "2.125rem",
+    "$type": "dimension",
+    "$description": "4X large font size (34px). Use for: major headings (h1-h2)."
+  },
+  "typography/font-size/900": {
+    "$value": "2.5rem",
+    "$type": "dimension",
+    "$description": "5X large font size (40px). Use for: hero display text."
+  },
+  "typography/font-weight/light": {
+    "$value": 300,
+    "$type": "fontWeight",
+    "$description": "Light font weight (300). Use sparingly for: large display text."
+  },
+  "typography/font-weight/regular": {
+    "$value": 400,
+    "$type": "fontWeight",
+    "$description": "Regular font weight (400). DEFAULT for all body text."
+  },
+  "typography/font-weight/medium": {
+    "$value": 500,
+    "$type": "fontWeight",
+    "$description": "Medium font weight (500). Use for: subtle emphasis, navigation items."
+  },
+  "typography/font-weight/semibold": {
+    "$value": 600,
+    "$type": "fontWeight",
+    "$description": "Semibold font weight (600). Use for: buttons, important labels."
+  },
+  "typography/font-weight/bold": {
+    "$value": 700,
+    "$type": "fontWeight",
+    "$description": "Bold font weight (700). Use for: headings (h1-h3)."
+  },
+  "typography/line-height/tight": {
+    "$value": 1.2,
+    "$type": "number",
+    "$description": "Tight line height (1.2 / 120%). Use for: large display headings."
+  },
+  "typography/line-height/snug": {
+    "$value": 1.35,
+    "$type": "number",
+    "$description": "Snug line height (1.35 / 135%). Use for: smaller headings."
+  },
+  "typography/line-height/normal": {
+    "$value": 1.5,
+    "$type": "number",
+    "$description": "Normal line height (1.5 / 150%). WCAG MINIMUM for body text."
+  },
+  "typography/line-height/relaxed": {
+    "$value": 1.65,
+    "$type": "number",
+    "$description": "Relaxed line height (1.65 / 165%). Use for: longer paragraphs."
+  },
+  "typography/line-height/loose": {
+    "$value": 1.8,
+    "$type": "number",
+    "$description": "Loose line height (1.8 / 180%). Use for: long-form prose."
   }
 }

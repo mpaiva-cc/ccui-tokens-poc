@@ -3,27 +3,27 @@
   "button": {
     "height": {
       "xs": {
-        "$value": "{sizing.button.xs}",
+        "$value": "{sizing/button/xs}",
         "$type": "dimension",
         "$description": "Extra small button height."
       },
       "sm": {
-        "$value": "{sizing.button.sm}",
+        "$value": "{sizing/button/sm}",
         "$type": "dimension",
         "$description": "Small button height."
       },
       "md": {
-        "$value": "{sizing.button.md}",
+        "$value": "{sizing/button/md}",
         "$type": "dimension",
         "$description": "Medium button height. DEFAULT."
       },
       "lg": {
-        "$value": "{sizing.button.lg}",
+        "$value": "{sizing/button/lg}",
         "$type": "dimension",
         "$description": "Large button height."
       },
       "xl": {
-        "$value": "{sizing.button.xl}",
+        "$value": "{sizing/button/xl}",
         "$type": "dimension",
         "$description": "Extra large button height."
       }
@@ -31,77 +31,77 @@
     "padding": {
       "x": {
         "xs": {
-          "$value": "{spacing.250}",
+          "$value": "{spacing/250}",
           "$type": "dimension",
           "$description": "Extra small horizontal padding (10px)."
         },
         "sm": {
-          "$value": "{spacing.300}",
+          "$value": "{spacing/300}",
           "$type": "dimension",
           "$description": "Small horizontal padding (12px)."
         },
         "md": {
-          "$value": "{spacing.400}",
+          "$value": "{spacing/400}",
           "$type": "dimension",
           "$description": "Medium horizontal padding (16px). DEFAULT."
         },
         "lg": {
-          "$value": "{spacing.600}",
+          "$value": "{spacing/600}",
           "$type": "dimension",
           "$description": "Large horizontal padding (24px)."
         },
         "xl": {
-          "$value": "{spacing.800}",
+          "$value": "{spacing/800}",
           "$type": "dimension",
           "$description": "Extra large horizontal padding (32px)."
         }
       }
     },
     "radius": {
-      "$value": "{radius.200}",
+      "$value": "{radius/200}",
       "$type": "dimension",
       "$description": "Button border radius (4px)."
     },
     "font-size": {
       "xs": {
-        "$value": "{typography.font-size.100}",
+        "$value": "{typography/font-size/100}",
         "$type": "dimension",
         "$description": "Extra small button font size (12px)."
       },
       "sm": {
-        "$value": "{typography.font-size.200}",
+        "$value": "{typography/font-size/200}",
         "$type": "dimension",
         "$description": "Small button font size (14px)."
       },
       "md": {
-        "$value": "{typography.font-size.200}",
+        "$value": "{typography/font-size/200}",
         "$type": "dimension",
         "$description": "Medium button font size (14px)."
       },
       "lg": {
-        "$value": "{typography.font-size.300}",
+        "$value": "{typography/font-size/300}",
         "$type": "dimension",
         "$description": "Large button font size (16px)."
       },
       "xl": {
-        "$value": "{typography.font-size.300}",
+        "$value": "{typography/font-size/300}",
         "$type": "dimension",
         "$description": "Extra large button font size (16px)."
       }
     },
     "font-weight": {
-      "$value": "{typography.font-weight.semibold}",
+      "$value": "{typography/font-weight/semibold}",
       "$type": "fontWeight",
       "$description": "Button font weight (semibold)."
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
+        "$value": "{motion/duration/fast}",
         "$type": "duration",
         "$description": "Button transition duration (100ms)."
       },
       "easing": {
-        "$value": "{motion.easing.ease-out}",
+        "$value": "{motion/easing/ease-out}",
         "$type": "cubicBezier",
         "$description": "Button transition easing."
       }

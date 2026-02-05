@@ -131,7 +131,7 @@ function buildPrimitiveColorMap(): Map<string, string> {
 }
 
 /**
- * Resolve a token reference like "{color.blue.500}" to its actual value
+ * Resolve a token reference like "{color/blue/500}" or "{color.blue.500}" to its actual value
  */
 function resolveTokenReference(
   value: string,
@@ -148,7 +148,21 @@ function resolveTokenReference(
   }
 
   const refPath = refMatch[1];
-  const resolved = primitiveColors.get(refPath);
+
+  // Try direct lookup first
+  let resolved = primitiveColors.get(refPath);
+
+  // If not found with slashes, try converting slashes to dots
+  if (!resolved && refPath.includes('/')) {
+    const dotPath = refPath.replace(/\//g, '.');
+    resolved = primitiveColors.get(dotPath);
+  }
+
+  // If not found with dots, try converting dots to slashes
+  if (!resolved && refPath.includes('.')) {
+    const slashPath = refPath.replace(/\./g, '/');
+    resolved = primitiveColors.get(slashPath);
+  }
 
   if (!resolved) {
     return null;
@@ -234,9 +248,9 @@ describe('WCAG Color Contrast Validation', () => {
       });
 
       it('primary text on primary surface should meet WCAG AA (4.5:1)', () => {
-        // Get text.primary and surface.primary values
-        const textPrimary = tokens.get('color.text.primary');
-        const surfacePrimary = tokens.get('color.surface.primary');
+        // Get text/primary and surface/primary values (slash notation)
+        const textPrimary = tokens.get('color/text/primary');
+        const surfacePrimary = tokens.get('color/surface/primary');
 
         if (!textPrimary || !surfacePrimary) {
           console.log(`Skipping: ${themeName} missing text.primary or surface.primary`);
@@ -263,8 +277,8 @@ describe('WCAG Color Contrast Validation', () => {
       });
 
       it('secondary text on primary surface should meet WCAG AA large text (3:1)', () => {
-        const textSecondary = tokens.get('color.text.secondary');
-        const surfacePrimary = tokens.get('color.surface.primary');
+        const textSecondary = tokens.get('color/text/secondary');
+        const surfacePrimary = tokens.get('color/surface/primary');
 
         if (!textSecondary || !surfacePrimary) {
           console.log(`Skipping: ${themeName} missing text.secondary or surface.primary`);
@@ -291,8 +305,8 @@ describe('WCAG Color Contrast Validation', () => {
       });
 
       it('error text on primary surface should meet WCAG AA (4.5:1)', () => {
-        const textError = tokens.get('color.text.error');
-        const surfacePrimary = tokens.get('color.surface.primary');
+        const textError = tokens.get('color/text/error');
+        const surfacePrimary = tokens.get('color/surface/primary');
 
         if (!textError || !surfacePrimary) {
           console.log(`Skipping: ${themeName} missing text.error or surface.primary`);
@@ -320,8 +334,8 @@ describe('WCAG Color Contrast Validation', () => {
 
       if (themeName === 'high-contrast') {
         it('high-contrast theme should have enhanced contrast ratios', () => {
-          const textPrimary = tokens.get('color.text.primary');
-          const surfacePrimary = tokens.get('color.surface.primary');
+          const textPrimary = tokens.get('color/text/primary');
+          const surfacePrimary = tokens.get('color/surface/primary');
 
           if (!textPrimary || !surfacePrimary) return;
 
@@ -390,9 +404,9 @@ describe('WCAG Color Contrast Validation', () => {
       for (const themeName of themes) {
         const tokens = collectTokens(loadSemanticTokens(themeName));
 
-        const textPrimary = tokens.get('color.text.primary');
-        const surfacePrimary = tokens.get('color.surface.primary');
-        const textError = tokens.get('color.text.error');
+        const textPrimary = tokens.get('color/text/primary');
+        const surfacePrimary = tokens.get('color/surface/primary');
+        const textError = tokens.get('color/text/error');
 
         let textOnSurface: number | null = null;
         let errorOnSurface: number | null = null;

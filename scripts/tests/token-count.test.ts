@@ -27,7 +27,7 @@ import {
  * Update these when intentionally adding or removing tokens.
  */
 const MIN_TOKEN_COUNTS = {
-  primitivesPerSet: 5, // Minimum tokens per primitive set
+  primitivesPerSet: 2, // Minimum tokens per primitive set (some like focus, content-width have few)
   semanticPerTheme: 30, // Minimum semantic tokens per theme
   componentPerSet: 5, // Minimum component tokens per set
   cssVariables: 100, // Minimum total CSS variables

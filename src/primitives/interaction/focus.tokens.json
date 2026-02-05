@@ -13,7 +13,7 @@
         "$description": "Focus ring offset from element (2px)."
       },
       "color": {
-        "$value": "{color.blue.500}",
+        "$value": "{color/blue/500}",
         "$type": "color",
         "$description": "Focus ring color (primary blue)."
       }

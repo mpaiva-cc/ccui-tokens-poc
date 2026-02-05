@@ -74,10 +74,11 @@ export function getThemeNames(): string[] {
 }
 
 /**
- * Check if primitives folder exists
+ * Check if primitives exist (either consolidated file or folder)
  */
 export function hasPrimitives(): boolean {
-  return existsSync(join(TOKENS_STUDIO_DIR, 'primitives'));
+  return existsSync(join(TOKENS_STUDIO_DIR, 'primitives.json')) ||
+         existsSync(join(TOKENS_STUDIO_DIR, 'primitives'));
 }
 
 /**
@@ -88,16 +89,34 @@ export function hasSemanticTokens(): boolean {
 }
 
 /**
- * Check if component folder exists
+ * Check if component tokens exist (either consolidated file or folder)
  */
 export function hasComponentTokens(): boolean {
-  return existsSync(join(TOKENS_STUDIO_DIR, 'component'));
+  return existsSync(join(TOKENS_STUDIO_DIR, 'components.json')) ||
+         existsSync(join(TOKENS_STUDIO_DIR, 'component'));
 }
 
 /**
- * Get all primitive token set names
+ * Get all primitive token set names.
+ * For consolidated format, extracts unique root categories from the flat keys.
  */
 export function getPrimitiveSetNames(): string[] {
+  // First check for consolidated primitives.json
+  const consolidatedPath = join(TOKENS_STUDIO_DIR, 'primitives.json');
+  if (existsSync(consolidatedPath)) {
+    const allPrimitives = JSON.parse(readFileSync(consolidatedPath, 'utf-8'));
+    const categories = new Set<string>();
+    for (const key of Object.keys(allPrimitives)) {
+      // Extract root category from flat keys like "color/blue/500"
+      const rootCategory = key.split('/')[0];
+      if (!rootCategory.startsWith('$')) {
+        categories.add(rootCategory);
+      }
+    }
+    return Array.from(categories);
+  }
+
+  // Fall back to separate files
   const primitivesDir = join(TOKENS_STUDIO_DIR, 'primitives');
   if (!existsSync(primitivesDir)) {
     return [];
@@ -108,9 +127,26 @@ export function getPrimitiveSetNames(): string[] {
 }
 
 /**
- * Get all component token set names
+ * Get all component token set names.
+ * For consolidated format, extracts unique root categories from the flat keys.
  */
 export function getComponentSetNames(): string[] {
+  // First check for consolidated components.json
+  const consolidatedPath = join(TOKENS_STUDIO_DIR, 'components.json');
+  if (existsSync(consolidatedPath)) {
+    const allComponents = JSON.parse(readFileSync(consolidatedPath, 'utf-8'));
+    const categories = new Set<string>();
+    for (const key of Object.keys(allComponents)) {
+      // Extract root category from flat keys like "button/height/xs"
+      const rootCategory = key.split('/')[0];
+      if (!rootCategory.startsWith('$')) {
+        categories.add(rootCategory);
+      }
+    }
+    return Array.from(categories);
+  }
+
+  // Fall back to separate files
   const componentDir = join(TOKENS_STUDIO_DIR, 'component');
   if (!existsSync(componentDir)) {
     return [];
@@ -125,9 +161,28 @@ export function getComponentSetNames(): string[] {
 // ============================================
 
 /**
- * Load a primitive token set JSON file
+ * Load a primitive token set JSON file.
+ * If setName is provided, filters from the consolidated primitives.json.
+ * If no setName, loads the entire primitives.json.
  */
-export function loadPrimitiveTokens(setName: string): TokenStructure {
+export function loadPrimitiveTokens(setName?: string): TokenStructure {
+  // First try the consolidated primitives.json file
+  const consolidatedPath = join(TOKENS_STUDIO_DIR, 'primitives.json');
+  if (existsSync(consolidatedPath)) {
+    const allPrimitives = JSON.parse(readFileSync(consolidatedPath, 'utf-8'));
+    if (!setName) return allPrimitives;
+
+    // Filter tokens by setName prefix (e.g., "color" -> tokens starting with "color/")
+    const filtered: TokenStructure = {};
+    for (const [key, value] of Object.entries(allPrimitives)) {
+      if (key.startsWith(`${setName}/`) || key === setName) {
+        filtered[key] = value as TokenValue | TokenStructure;
+      }
+    }
+    return filtered;
+  }
+
+  // Fall back to separate files if consolidated doesn't exist
   const filePath = join(TOKENS_STUDIO_DIR, 'primitives', `${setName}.json`);
   if (!existsSync(filePath)) {
     throw new Error(`Primitive token file not found: ${filePath}`);
@@ -147,9 +202,28 @@ export function loadSemanticTokens(themeName: string): TokenStructure {
 }
 
 /**
- * Load a component token set JSON file
+ * Load a component token set JSON file.
+ * If setName is provided, filters from the consolidated components.json.
+ * If no setName, loads the entire components.json.
  */
-export function loadComponentTokens(setName: string): TokenStructure {
+export function loadComponentTokens(setName?: string): TokenStructure {
+  // First try the consolidated components.json file
+  const consolidatedPath = join(TOKENS_STUDIO_DIR, 'components.json');
+  if (existsSync(consolidatedPath)) {
+    const allComponents = JSON.parse(readFileSync(consolidatedPath, 'utf-8'));
+    if (!setName) return allComponents;
+
+    // Filter tokens by setName prefix (e.g., "button" -> tokens starting with "button/")
+    const filtered: TokenStructure = {};
+    for (const [key, value] of Object.entries(allComponents)) {
+      if (key.startsWith(`${setName}/`) || key === setName) {
+        filtered[key] = value as TokenValue | TokenStructure;
+      }
+    }
+    return filtered;
+  }
+
+  // Fall back to separate files if consolidated doesn't exist
   const filePath = join(TOKENS_STUDIO_DIR, 'component', `${setName}.json`);
   if (!existsSync(filePath)) {
     throw new Error(`Component token file not found: ${filePath}`);
@@ -284,7 +358,8 @@ export function collectDeprecatedTokens(
 }
 
 /**
- * Recursively collect all tokens from a token structure
+ * Recursively collect all tokens from a token structure.
+ * Handles both nested structures and flat key structures (with "/" separators)
  */
 export function collectTokens(
   structure: TokenStructure,
@@ -296,7 +371,10 @@ export function collectTokens(
     // Skip metadata keys
     if (key.startsWith('$')) continue;
 
-    const currentPath = path ? `${path}.${key}` : key;
+    // For flat keys with "/" separator (Figma-compatible format)
+    // e.g., "color/blue/500" should use "/" for joining
+    const separator = key.includes('/') || path.includes('/') ? '/' : '.';
+    const currentPath = path ? `${path}${separator}${key}` : key;
 
     if (isToken(value)) {
       tokens.set(currentPath, value);
@@ -310,7 +388,8 @@ export function collectTokens(
 }
 
 /**
- * Flatten tokens to a simple key-value map
+ * Flatten tokens to a simple key-value map.
+ * Handles both nested structures and flat key structures (with "/" separators)
  */
 export function flattenTokens(
   structure: TokenStructure,
@@ -321,7 +400,9 @@ export function flattenTokens(
   for (const [key, value] of Object.entries(structure)) {
     if (key.startsWith('$')) continue;
 
-    const currentPath = path ? `${path}.${key}` : key;
+    // For flat keys with "/" separator (Figma-compatible format)
+    const separator = key.includes('/') || path.includes('/') ? '/' : '.';
+    const currentPath = path ? `${path}${separator}${key}` : key;
 
     if (isToken(value)) {
       flat[currentPath] = typeof value.$value === 'object'
@@ -519,11 +600,13 @@ export function isValidEasing(value: string | number | Record<string, unknown> |
 }
 
 /**
- * Check if a value is a token reference (e.g., "{color.blue.500}")
+ * Check if a value is a token reference (e.g., "{color.blue.500}" or "{color/blue/500}")
+ * Supports both dot notation and slash notation for Figma compatibility
  */
 export function isTokenReference(value: string | number | Record<string, unknown>): boolean {
   if (typeof value !== 'string') return false;
-  return /^\{[a-zA-Z][a-zA-Z0-9.-]+\}$/.test(value.trim());
+  // Match {reference} with dots, slashes, or hyphens in the path
+  return /^\{[a-zA-Z][a-zA-Z0-9./-]+\}$/.test(value.trim());
 }
 
 /**

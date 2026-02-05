@@ -77,27 +77,34 @@ function checkUnresolvedReferences(content, filePath) {
 }
 
 // ========================================
-// CUSTOM TRANSFORMS
+// CUSTOM TRANSFORMS & PREPROCESSORS
 // ========================================
 
-// Transform token references from slash notation to dot notation for Style Dictionary
-StyleDictionary.registerTransform({
-    name: 'attribute/slash-to-dot',
-    type: 'value',
-    transitive: true,
-    filter: (token) => {
-        const value = token.$value ?? token.value ?? token.original?.$value ?? token.original?.value;
-        return typeof value === 'string' && value.includes('{') && value.includes('/');
-    },
-    transform: (token) => {
-        const value = token.$value ?? token.value ?? token.original?.$value ?? token.original?.value;
-        if (typeof value === 'string' && value.includes('{')) {
-            // Replace slashes with dots in references, e.g., {color/blue/500} -> {color.blue.500}
-            return value.replace(/\{([^}]+)\}/g, (match, ref) => {
-                return `{${ref.replace(/\//g, '.')}}`;
-            });
+// Preprocessor to convert slash references to dot notation for Style Dictionary resolution
+// Style Dictionary resolves references using dot paths internally
+StyleDictionary.registerPreprocessor({
+    name: 'slash-to-dot-references',
+    preprocessor: (dictionary) => {
+        function convertReferences(obj) {
+            if (typeof obj === 'string') {
+                // Convert {color/blue/500} to {color.blue.500}
+                return obj.replace(/\{([^}]+)\}/g, (match, ref) => {
+                    return `{${ref.replace(/\//g, '.')}}`;
+                });
+            }
+            if (Array.isArray(obj)) {
+                return obj.map(convertReferences);
+            }
+            if (obj && typeof obj === 'object') {
+                const result = {};
+                for (const [key, value] of Object.entries(obj)) {
+                    result[key] = convertReferences(value);
+                }
+                return result;
+            }
+            return obj;
         }
-        return value;
+        return convertReferences(dictionary);
     }
 });
 
@@ -185,17 +192,17 @@ StyleDictionary.registerTransform({
 // Register transform groups
 StyleDictionary.registerTransformGroup({
     name: 'ccui/css',
-    transforms: ['attribute/cti', 'attribute/slash-to-dot', 'name/ccui']
+    transforms: ['attribute/cti', 'name/ccui']
 });
 
 StyleDictionary.registerTransformGroup({
     name: 'mantine/css',
-    transforms: ['attribute/cti', 'attribute/slash-to-dot', 'name/mantine-theme']
+    transforms: ['attribute/cti', 'name/mantine-theme']
 });
 
 StyleDictionary.registerTransformGroup({
     name: 'tokens-studio/json',
-    transforms: ['attribute/slash-to-dot']
+    transforms: []
 });
 
 // ========================================
@@ -294,7 +301,11 @@ function getOriginalValue(token) {
     const original = token.original || token;
     const value = original.$value ?? original.value;
     if (typeof value === 'string' && value.startsWith('{') && value.endsWith('}')) {
-        return value;
+        // Convert references back to slash notation for Tokens Studio output
+        // e.g., {color.blue.500} -> {color/blue/500}
+        return value.replace(/\{([^}]+)\}/g, (match, ref) => {
+            return `{${ref.replace(/\./g, '/')}}`;
+        });
     }
     return token.$value ?? token.value;
 }
@@ -303,16 +314,8 @@ function buildTokensStudioStructure(tokens) {
     const result = {};
 
     tokens.forEach(token => {
-        const path = token.path;
-        let current = result;
-
-        for (let i = 0; i < path.length - 1; i++) {
-            const segment = path[i];
-            if (!current[segment]) current[segment] = {};
-            current = current[segment];
-        }
-
-        const finalKey = path[path.length - 1];
+        // Create flat key with slash separators for Figma sub-groups
+        const flatKey = token.path.join('/');
         const dtcgType = inferDtcgType(token);
 
         const tokenObj = { "$value": getOriginalValue(token) };
@@ -321,7 +324,7 @@ function buildTokensStudioStructure(tokens) {
         const description = token.$description ?? token.description ?? token.comment;
         if (description) tokenObj["$description"] = description;
 
-        current[finalKey] = tokenObj;
+        result[flatKey] = tokenObj;
     });
 
     return result;
@@ -342,49 +345,16 @@ StyleDictionary.registerFormat({
 function generateTokensStudioMetadata() {
     return {
         tokenSetOrder: [
-            // Primitives
-            "primitives/color",
-            "primitives/spacing",
-            "primitives/radius",
-            "primitives/typography",
-            "primitives/motion",
-            "primitives/border",
-            "primitives/breakpoints",
-            "primitives/interaction",
-            "primitives/sizing",
-            // Semantic
+            "primitives",
             "semantic/light",
             "semantic/dark",
             "semantic/high-contrast",
-            // Components
-            "component/button",
-            "component/input",
-            "component/modal"
+            "components"
         ]
     };
 }
 
 function generateTokensStudioThemes() {
-    // Primitive token sets - used as source by all themes
-    const primitiveSetStatus = {
-        "primitives/color": "source",
-        "primitives/spacing": "source",
-        "primitives/radius": "source",
-        "primitives/typography": "source",
-        "primitives/motion": "source",
-        "primitives/border": "source",
-        "primitives/breakpoints": "source",
-        "primitives/interaction": "source",
-        "primitives/sizing": "source"
-    };
-
-    // Component token sets
-    const componentSetStatus = {
-        "component/button": "enabled",
-        "component/input": "enabled",
-        "component/modal": "enabled"
-    };
-
     return [
         // Primitives theme group - single "Base" theme (no modes needed)
         {
@@ -392,15 +362,7 @@ function generateTokensStudioThemes() {
             name: "Base",
             group: "primitives",
             selectedTokenSets: {
-                "primitives/color": "enabled",
-                "primitives/spacing": "enabled",
-                "primitives/radius": "enabled",
-                "primitives/typography": "enabled",
-                "primitives/motion": "enabled",
-                "primitives/border": "enabled",
-                "primitives/breakpoints": "enabled",
-                "primitives/interaction": "enabled",
-                "primitives/sizing": "enabled"
+                "primitives": "enabled"
             }
         },
         // Semantic theme group - light/dark/high-contrast modes
@@ -409,7 +371,7 @@ function generateTokensStudioThemes() {
             name: "Light",
             group: "semantic",
             selectedTokenSets: {
-                ...primitiveSetStatus,
+                "primitives": "source",
                 "semantic/light": "enabled",
                 "semantic/dark": "disabled",
                 "semantic/high-contrast": "disabled"
@@ -420,7 +382,7 @@ function generateTokensStudioThemes() {
             name: "Dark",
             group: "semantic",
             selectedTokenSets: {
-                ...primitiveSetStatus,
+                "primitives": "source",
                 "semantic/light": "disabled",
                 "semantic/dark": "enabled",
                 "semantic/high-contrast": "disabled"
@@ -431,7 +393,7 @@ function generateTokensStudioThemes() {
             name: "High Contrast",
             group: "semantic",
             selectedTokenSets: {
-                ...primitiveSetStatus,
+                "primitives": "source",
                 "semantic/light": "disabled",
                 "semantic/dark": "disabled",
                 "semantic/high-contrast": "enabled"
@@ -443,8 +405,8 @@ function generateTokensStudioThemes() {
             name: "Base",
             group: "component",
             selectedTokenSets: {
-                ...primitiveSetStatus,
-                ...componentSetStatus
+                "primitives": "source",
+                "components": "enabled"
             }
         }
     ];
@@ -483,6 +445,7 @@ async function buildPrimitives() {
         const sd = new StyleDictionary({
             source: primitiveFiles,
             usesDtcg: true,
+            preprocessors: ['slash-to-dot-references'],
             platforms: {
                 "css-ccui": {
                     "transformGroup": "ccui/css",
@@ -493,85 +456,12 @@ async function buildPrimitives() {
                         "options": { "selector": ":root" }
                     }]
                 },
-                "tokens-studio-primitives-color": {
+                "tokens-studio-primitives": {
                     "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
+                    "buildPath": `${distFolder}/tokens-studio/`,
                     "files": [{
-                        "destination": "color.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'color'
-                    }]
-                },
-                "tokens-studio-primitives-spacing": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "spacing.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => ['spacing', 'gridSpacing', 'verticalRhythm'].includes(token.path[0])
-                    }]
-                },
-                "tokens-studio-primitives-radius": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "radius.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'radius'
-                    }]
-                },
-                "tokens-studio-primitives-typography": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "typography.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'typography'
-                    }]
-                },
-                "tokens-studio-primitives-motion": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "motion.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'motion'
-                    }]
-                },
-                "tokens-studio-primitives-border": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "border.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'border'
-                    }]
-                },
-                "tokens-studio-primitives-breakpoints": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "breakpoints.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => ['breakpoint', 'content-width'].includes(token.path[0])
-                    }]
-                },
-                "tokens-studio-primitives-interaction": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "interaction.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => ['z-index', 'focus', 'opacity'].includes(token.path[0])
-                    }]
-                },
-                "tokens-studio-primitives-sizing": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{
-                        "destination": "sizing.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'sizing'
+                        "destination": "primitives.json",
+                        "format": "json/tokens-studio-set"
                     }]
                 }
             },
@@ -598,6 +488,7 @@ async function buildSemanticTheme(themeName) {
         const sd = new StyleDictionary({
             source: sourceFiles,
             usesDtcg: true,
+            preprocessors: ['slash-to-dot-references'],
             platforms: {
                 "css-semantic": {
                     "transformGroup": "ccui/css",
@@ -642,6 +533,7 @@ async function buildComponents() {
         const sd = new StyleDictionary({
             source: sourceFiles,
             usesDtcg: true,
+            preprocessors: ['slash-to-dot-references'],
             platforms: {
                 "css-components": {
                     "transformGroup": "ccui/css",
@@ -653,31 +545,13 @@ async function buildComponents() {
                         "filter": (token) => COMPONENT_CATEGORIES.includes(token.path[0])
                     }]
                 },
-                "tokens-studio-component-button": {
+                "tokens-studio-components": {
                     "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/component/`,
+                    "buildPath": `${distFolder}/tokens-studio/`,
                     "files": [{
-                        "destination": "button.json",
+                        "destination": "components.json",
                         "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'button'
-                    }]
-                },
-                "tokens-studio-component-input": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/component/`,
-                    "files": [{
-                        "destination": "input.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'input'
-                    }]
-                },
-                "tokens-studio-component-modal": {
-                    "transformGroup": "tokens-studio/json",
-                    "buildPath": `${distFolder}/tokens-studio/component/`,
-                    "files": [{
-                        "destination": "modal.json",
-                        "format": "json/tokens-studio-set",
-                        "filter": (token) => token.path[0] === 'modal'
+                        "filter": (token) => COMPONENT_CATEGORIES.includes(token.path[0])
                     }]
                 }
             },
@@ -787,6 +661,19 @@ async function buildTokensStudioConfig() {
 
     fs.writeFileSync(`${tokensStudioDir}/$metadata.json`, JSON.stringify(generateTokensStudioMetadata(), null, 2));
     fs.writeFileSync(`${tokensStudioDir}/$themes.json`, JSON.stringify(generateTokensStudioThemes(), null, 2));
+
+    // Clean up old folder structure (now consolidated into single files)
+    const oldDirs = [
+        `${tokensStudioDir}/primitives`,
+        `${tokensStudioDir}/component`
+    ];
+    for (const dir of oldDirs) {
+        if (fs.existsSync(dir)) {
+            fs.rmSync(dir, { recursive: true, force: true });
+            console.log(`🧹 Removed legacy folder: ${dir}`);
+        }
+    }
+
     console.log('✅ Tokens Studio config built');
     return true;
 }
@@ -805,12 +692,15 @@ async function validateBuild() {
         checkUnresolvedReferences(content, combinedCssPath);
     }
 
+    // Validate consolidated Tokens Studio files
     const tokensStudioFiles = [
         `${distFolder}/tokens-studio/$metadata.json`,
         `${distFolder}/tokens-studio/$themes.json`,
+        `${distFolder}/tokens-studio/primitives.json`,
         `${distFolder}/tokens-studio/semantic/light.json`,
         `${distFolder}/tokens-studio/semantic/dark.json`,
-        `${distFolder}/tokens-studio/semantic/high-contrast.json`
+        `${distFolder}/tokens-studio/semantic/high-contrast.json`,
+        `${distFolder}/tokens-studio/components.json`
     ];
 
     for (const filePath of tokensStudioFiles) {

@@ -3,27 +3,27 @@
   "input": {
     "height": {
       "xs": {
-        "$value": "{sizing.input.xs}",
+        "$value": "{sizing/input/xs}",
         "$type": "dimension",
         "$description": "Extra small input height."
       },
       "sm": {
-        "$value": "{sizing.input.sm}",
+        "$value": "{sizing/input/sm}",
         "$type": "dimension",
         "$description": "Small input height."
       },
       "md": {
-        "$value": "{sizing.input.md}",
+        "$value": "{sizing/input/md}",
         "$type": "dimension",
         "$description": "Medium input height. DEFAULT."
       },
       "lg": {
-        "$value": "{sizing.input.lg}",
+        "$value": "{sizing/input/lg}",
         "$type": "dimension",
         "$description": "Large input height."
       },
       "xl": {
-        "$value": "{sizing.input.xl}",
+        "$value": "{sizing/input/xl}",
         "$type": "dimension",
         "$description": "Extra large input height."
       }
@@ -31,94 +31,94 @@
     "padding": {
       "x": {
         "xs": {
-          "$value": "{spacing.250}",
+          "$value": "{spacing/250}",
           "$type": "dimension",
           "$description": "Extra small horizontal padding."
         },
         "sm": {
-          "$value": "{spacing.300}",
+          "$value": "{spacing/300}",
           "$type": "dimension",
           "$description": "Small horizontal padding."
         },
         "md": {
-          "$value": "{spacing.300}",
+          "$value": "{spacing/300}",
           "$type": "dimension",
           "$description": "Medium horizontal padding. DEFAULT."
         },
         "lg": {
-          "$value": "{spacing.400}",
+          "$value": "{spacing/400}",
           "$type": "dimension",
           "$description": "Large horizontal padding."
         },
         "xl": {
-          "$value": "{spacing.400}",
+          "$value": "{spacing/400}",
           "$type": "dimension",
           "$description": "Extra large horizontal padding."
         }
       }
     },
     "radius": {
-      "$value": "{radius.200}",
+      "$value": "{radius/200}",
       "$type": "dimension",
       "$description": "Input border radius (4px)."
     },
     "border-width": {
-      "$value": "{border.width.100}",
+      "$value": "{border/width/100}",
       "$type": "dimension",
       "$description": "Input border width (1px)."
     },
     "font-size": {
       "xs": {
-        "$value": "{typography.font-size.100}",
+        "$value": "{typography/font-size/100}",
         "$type": "dimension",
         "$description": "Extra small input font size."
       },
       "sm": {
-        "$value": "{typography.font-size.200}",
+        "$value": "{typography/font-size/200}",
         "$type": "dimension",
         "$description": "Small input font size."
       },
       "md": {
-        "$value": "{typography.font-size.300}",
+        "$value": "{typography/font-size/300}",
         "$type": "dimension",
         "$description": "Medium input font size. DEFAULT."
       },
       "lg": {
-        "$value": "{typography.font-size.300}",
+        "$value": "{typography/font-size/300}",
         "$type": "dimension",
         "$description": "Large input font size."
       },
       "xl": {
-        "$value": "{typography.font-size.400}",
+        "$value": "{typography/font-size/400}",
         "$type": "dimension",
         "$description": "Extra large input font size."
       }
     },
     "line-height": {
-      "$value": "{typography.line-height.normal}",
+      "$value": "{typography/line-height/normal}",
       "$type": "number",
       "$description": "Input line height."
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
+        "$value": "{motion/duration/fast}",
         "$type": "duration",
         "$description": "Input transition duration."
       },
       "easing": {
-        "$value": "{motion.easing.ease-out}",
+        "$value": "{motion/easing/ease-out}",
         "$type": "cubicBezier",
         "$description": "Input transition easing."
       }
     },
     "focus": {
       "ring-width": {
-        "$value": "{focus.ring.width}",
+        "$value": "{focus/ring/width}",
         "$type": "dimension",
         "$description": "Focus ring width."
       },
       "ring-offset": {
-        "$value": "{focus.ring.offset}",
+        "$value": "{focus/ring/offset}",
         "$type": "dimension",
         "$description": "Focus ring offset."
       }

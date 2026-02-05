@@ -4,142 +4,142 @@
     "$type": "color",
     "text": {
       "primary": {
-        "$value": "{color.black}",
+        "$value": "{color/black}",
         "$description": "Primary text color. Use for: headings, body text, labels."
       },
       "secondary": {
-        "$value": "{color.gray.600}",
+        "$value": "{color/gray/600}",
         "$description": "Secondary text color. Use for: metadata, timestamps, captions."
       },
       "tertiary": {
-        "$value": "{color.gray.500}",
+        "$value": "{color/gray/500}",
         "$description": "Tertiary text color. Use for: placeholder text, help text."
       },
       "disabled": {
-        "$value": "{color.gray.400}",
+        "$value": "{color/gray/400}",
         "$description": "Disabled text color."
       },
       "inverse": {
-        "$value": "{color.white}",
+        "$value": "{color/white}",
         "$description": "Inverse text color. Use for: text on dark backgrounds."
       },
       "error": {
-        "$value": "{color.red.700}",
+        "$value": "{color/red/700}",
         "$description": "Error text color. WCAG AA compliant."
       },
       "success": {
-        "$value": "{color.green.700}",
+        "$value": "{color/green/700}",
         "$description": "Success text color."
       },
       "warning": {
-        "$value": "{color.yellow.700}",
+        "$value": "{color/yellow/700}",
         "$description": "Warning text color."
       },
       "info": {
-        "$value": "{color.blue.700}",
+        "$value": "{color/blue/700}",
         "$description": "Info text color."
       }
     },
     "surface": {
       "primary": {
-        "$value": "{color.white}",
+        "$value": "{color/white}",
         "$description": "Primary surface. Use for: page backgrounds, cards."
       },
       "secondary": {
-        "$value": "{color.gray.50}",
+        "$value": "{color/gray/50}",
         "$description": "Secondary surface. Use for: subtle backgrounds, zebra striping."
       },
       "tertiary": {
-        "$value": "{color.gray.100}",
+        "$value": "{color/gray/100}",
         "$description": "Tertiary surface. Use for: input backgrounds."
       },
       "elevated": {
-        "$value": "{color.white}",
+        "$value": "{color/white}",
         "$description": "Elevated surface. Use for: modals, dropdowns."
       },
       "inverse": {
-        "$value": "{color.gray.900}",
+        "$value": "{color/gray/900}",
         "$description": "Inverse surface. Use for: tooltips, dark cards."
       }
     },
     "border": {
       "default": {
-        "$value": "{color.gray.300}",
+        "$value": "{color/gray/300}",
         "$description": "Default border color. Use for: inputs, cards."
       },
       "strong": {
-        "$value": "{color.gray.400}",
+        "$value": "{color/gray/400}",
         "$description": "Strong border color. Use for: emphasis."
       },
       "subtle": {
-        "$value": "{color.gray.200}",
+        "$value": "{color/gray/200}",
         "$description": "Subtle border color. Use for: dividers."
       },
       "focus": {
-        "$value": "{color.blue.500}",
+        "$value": "{color/blue/500}",
         "$description": "Focus border/ring color."
       }
     },
     "action": {
       "primary": {
-        "$value": "{color.blue.600}",
+        "$value": "{color/blue/600}",
         "$description": "Primary action color. Use for: primary buttons, links."
       },
       "primary-hover": {
-        "$value": "{color.blue.700}",
+        "$value": "{color/blue/700}",
         "$description": "Primary action hover color."
       },
       "primary-active": {
-        "$value": "{color.blue.800}",
+        "$value": "{color/blue/800}",
         "$description": "Primary action active/pressed color."
       },
       "secondary": {
-        "$value": "{color.gray.100}",
+        "$value": "{color/gray/100}",
         "$description": "Secondary action background."
       },
       "secondary-hover": {
-        "$value": "{color.gray.200}",
+        "$value": "{color/gray/200}",
         "$description": "Secondary action hover."
       }
     },
     "status": {
       "error": {
         "bg": {
-          "$value": "{color.red.50}",
+          "$value": "{color/red/50}",
           "$description": "Error background color."
         },
         "border": {
-          "$value": "{color.red.300}",
+          "$value": "{color/red/300}",
           "$description": "Error border color."
         }
       },
       "success": {
         "bg": {
-          "$value": "{color.green.50}",
+          "$value": "{color/green/50}",
           "$description": "Success background color."
         },
         "border": {
-          "$value": "{color.green.300}",
+          "$value": "{color/green/300}",
           "$description": "Success border color."
         }
       },
       "warning": {
         "bg": {
-          "$value": "{color.yellow.50}",
+          "$value": "{color/yellow/50}",
           "$description": "Warning background color."
         },
         "border": {
-          "$value": "{color.yellow.300}",
+          "$value": "{color/yellow/300}",
           "$description": "Warning border color."
         }
       },
       "info": {
         "bg": {
-          "$value": "{color.blue.50}",
+          "$value": "{color/blue/50}",
           "$description": "Info background color."
         },
         "border": {
-          "$value": "{color.blue.300}",
+          "$value": "{color/blue/300}",
           "$description": "Info border color."
         }
       }

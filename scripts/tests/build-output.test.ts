@@ -234,6 +234,8 @@ describe('Build Output Validation', () => {
   describe('Token Set Coverage', () => {
     it('primitives should cover core categories', () => {
       const primitives = getPrimitiveSetNames();
+      // Core categories in the consolidated primitives.json
+      // Note: breakpoint (singular), and interaction split into focus, opacity, z-index
       const coreCategories = [
         'color',
         'spacing',
@@ -241,9 +243,11 @@ describe('Build Output Validation', () => {
         'typography',
         'motion',
         'border',
-        'breakpoints',
-        'interaction',
+        'breakpoint',  // singular in our structure
         'sizing',
+        'focus',       // part of interaction
+        'z-index',     // part of interaction
+        'opacity',     // part of interaction
       ];
 
       for (const category of coreCategories) {

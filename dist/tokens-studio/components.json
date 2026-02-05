@@ -1,0 +1,292 @@
+{
+  "button/height/xs": {
+    "$value": "{sizing/button/xs}",
+    "$type": "dimension",
+    "$description": "Extra small button height."
+  },
+  "button/height/sm": {
+    "$value": "{sizing/button/sm}",
+    "$type": "dimension",
+    "$description": "Small button height."
+  },
+  "button/height/md": {
+    "$value": "{sizing/button/md}",
+    "$type": "dimension",
+    "$description": "Medium button height. DEFAULT."
+  },
+  "button/height/lg": {
+    "$value": "{sizing/button/lg}",
+    "$type": "dimension",
+    "$description": "Large button height."
+  },
+  "button/height/xl": {
+    "$value": "{sizing/button/xl}",
+    "$type": "dimension",
+    "$description": "Extra large button height."
+  },
+  "button/padding/x/xs": {
+    "$value": "{spacing/250}",
+    "$type": "dimension",
+    "$description": "Extra small horizontal padding (10px)."
+  },
+  "button/padding/x/sm": {
+    "$value": "{spacing/300}",
+    "$type": "dimension",
+    "$description": "Small horizontal padding (12px)."
+  },
+  "button/padding/x/md": {
+    "$value": "{spacing/400}",
+    "$type": "dimension",
+    "$description": "Medium horizontal padding (16px). DEFAULT."
+  },
+  "button/padding/x/lg": {
+    "$value": "{spacing/600}",
+    "$type": "dimension",
+    "$description": "Large horizontal padding (24px)."
+  },
+  "button/padding/x/xl": {
+    "$value": "{spacing/800}",
+    "$type": "dimension",
+    "$description": "Extra large horizontal padding (32px)."
+  },
+  "button/radius": {
+    "$value": "{radius/200}",
+    "$type": "dimension",
+    "$description": "Button border radius (4px)."
+  },
+  "button/font-size/xs": {
+    "$value": "{typography/font-size/100}",
+    "$type": "dimension",
+    "$description": "Extra small button font size (12px)."
+  },
+  "button/font-size/sm": {
+    "$value": "{typography/font-size/200}",
+    "$type": "dimension",
+    "$description": "Small button font size (14px)."
+  },
+  "button/font-size/md": {
+    "$value": "{typography/font-size/200}",
+    "$type": "dimension",
+    "$description": "Medium button font size (14px)."
+  },
+  "button/font-size/lg": {
+    "$value": "{typography/font-size/300}",
+    "$type": "dimension",
+    "$description": "Large button font size (16px)."
+  },
+  "button/font-size/xl": {
+    "$value": "{typography/font-size/300}",
+    "$type": "dimension",
+    "$description": "Extra large button font size (16px)."
+  },
+  "button/font-weight": {
+    "$value": "{typography/font-weight/semibold}",
+    "$type": "fontWeight",
+    "$description": "Button font weight (semibold)."
+  },
+  "button/transition/duration": {
+    "$value": "{motion/duration/fast}",
+    "$type": "duration",
+    "$description": "Button transition duration (100ms)."
+  },
+  "button/transition/easing": {
+    "$value": "{motion/easing/ease-out}",
+    "$type": "cubicBezier",
+    "$description": "Button transition easing."
+  },
+  "input/height/xs": {
+    "$value": "{sizing/input/xs}",
+    "$type": "dimension",
+    "$description": "Extra small input height."
+  },
+  "input/height/sm": {
+    "$value": "{sizing/input/sm}",
+    "$type": "dimension",
+    "$description": "Small input height."
+  },
+  "input/height/md": {
+    "$value": "{sizing/input/md}",
+    "$type": "dimension",
+    "$description": "Medium input height. DEFAULT."
+  },
+  "input/height/lg": {
+    "$value": "{sizing/input/lg}",
+    "$type": "dimension",
+    "$description": "Large input height."
+  },
+  "input/height/xl": {
+    "$value": "{sizing/input/xl}",
+    "$type": "dimension",
+    "$description": "Extra large input height."
+  },
+  "input/padding/x/xs": {
+    "$value": "{spacing/250}",
+    "$type": "dimension",
+    "$description": "Extra small horizontal padding."
+  },
+  "input/padding/x/sm": {
+    "$value": "{spacing/300}",
+    "$type": "dimension",
+    "$description": "Small horizontal padding."
+  },
+  "input/padding/x/md": {
+    "$value": "{spacing/300}",
+    "$type": "dimension",
+    "$description": "Medium horizontal padding. DEFAULT."
+  },
+  "input/padding/x/lg": {
+    "$value": "{spacing/400}",
+    "$type": "dimension",
+    "$description": "Large horizontal padding."
+  },
+  "input/padding/x/xl": {
+    "$value": "{spacing/400}",
+    "$type": "dimension",
+    "$description": "Extra large horizontal padding."
+  },
+  "input/radius": {
+    "$value": "{radius/200}",
+    "$type": "dimension",
+    "$description": "Input border radius (4px)."
+  },
+  "input/border-width": {
+    "$value": "{border/width/100}",
+    "$type": "dimension",
+    "$description": "Input border width (1px)."
+  },
+  "input/font-size/xs": {
+    "$value": "{typography/font-size/100}",
+    "$type": "dimension",
+    "$description": "Extra small input font size."
+  },
+  "input/font-size/sm": {
+    "$value": "{typography/font-size/200}",
+    "$type": "dimension",
+    "$description": "Small input font size."
+  },
+  "input/font-size/md": {
+    "$value": "{typography/font-size/300}",
+    "$type": "dimension",
+    "$description": "Medium input font size. DEFAULT."
+  },
+  "input/font-size/lg": {
+    "$value": "{typography/font-size/300}",
+    "$type": "dimension",
+    "$description": "Large input font size."
+  },
+  "input/font-size/xl": {
+    "$value": "{typography/font-size/400}",
+    "$type": "dimension",
+    "$description": "Extra large input font size."
+  },
+  "input/line-height": {
+    "$value": "{typography/line-height/normal}",
+    "$type": "number",
+    "$description": "Input line height."
+  },
+  "input/transition/duration": {
+    "$value": "{motion/duration/fast}",
+    "$type": "duration",
+    "$description": "Input transition duration."
+  },
+  "input/transition/easing": {
+    "$value": "{motion/easing/ease-out}",
+    "$type": "cubicBezier",
+    "$description": "Input transition easing."
+  },
+  "input/focus/ring-width": {
+    "$value": "{focus/ring/width}",
+    "$type": "dimension",
+    "$description": "Focus ring width."
+  },
+  "input/focus/ring-offset": {
+    "$value": "{focus/ring/offset}",
+    "$type": "dimension",
+    "$description": "Focus ring offset."
+  },
+  "modal/padding/header": {
+    "$value": "{spacing/500}",
+    "$type": "dimension",
+    "$description": "Modal header padding (20px)."
+  },
+  "modal/padding/body": {
+    "$value": "{spacing/500}",
+    "$type": "dimension",
+    "$description": "Modal body padding (20px)."
+  },
+  "modal/padding/footer": {
+    "$value": "{spacing/400}",
+    "$type": "dimension",
+    "$description": "Modal footer padding (16px)."
+  },
+  "modal/radius": {
+    "$value": "{radius/800}",
+    "$type": "dimension",
+    "$description": "Modal border radius (16px)."
+  },
+  "modal/width/xs": {
+    "$value": "20rem",
+    "$type": "dimension",
+    "$description": "Extra small modal width (320px)."
+  },
+  "modal/width/sm": {
+    "$value": "25rem",
+    "$type": "dimension",
+    "$description": "Small modal width (400px)."
+  },
+  "modal/width/md": {
+    "$value": "32.5rem",
+    "$type": "dimension",
+    "$description": "Medium modal width (520px). DEFAULT."
+  },
+  "modal/width/lg": {
+    "$value": "45rem",
+    "$type": "dimension",
+    "$description": "Large modal width (720px)."
+  },
+  "modal/width/xl": {
+    "$value": "60rem",
+    "$type": "dimension",
+    "$description": "Extra large modal width (960px)."
+  },
+  "modal/overlay/opacity": {
+    "$value": "{opacity/overlay}",
+    "$type": "number",
+    "$description": "Modal backdrop opacity."
+  },
+  "modal/transition/duration": {
+    "$value": "{motion/duration/normal}",
+    "$type": "duration",
+    "$description": "Modal transition duration."
+  },
+  "modal/transition/easing/enter": {
+    "$value": "{motion/easing/ease-out}",
+    "$type": "cubicBezier",
+    "$description": "Modal entrance easing."
+  },
+  "modal/transition/easing/exit": {
+    "$value": "{motion/easing/ease-in}",
+    "$type": "cubicBezier",
+    "$description": "Modal exit easing."
+  },
+  "modal/z-index": {
+    "$value": "{z-index/modal}",
+    "$type": "number",
+    "$description": "Modal z-index."
+  },
+  "modal/title/font-size": {
+    "$value": "{typography/font-size/400}",
+    "$type": "dimension",
+    "$description": "Modal title font size (18px)."
+  },
+  "modal/title/font-weight": {
+    "$value": "{typography/font-weight/semibold}",
+    "$type": "fontWeight",
+    "$description": "Modal title font weight."
+  },
+  "modal/title/line-height": {
+    "$value": "{typography/line-height/snug}",
+    "$type": "number",
+    "$description": "Modal title line height."
+  }
+}

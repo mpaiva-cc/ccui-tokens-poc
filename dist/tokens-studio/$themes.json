@@ -4,15 +4,7 @@
     "name": "Base",
     "group": "primitives",
     "selectedTokenSets": {
-      "primitives/color": "enabled",
-      "primitives/spacing": "enabled",
-      "primitives/radius": "enabled",
-      "primitives/typography": "enabled",
-      "primitives/motion": "enabled",
-      "primitives/border": "enabled",
-      "primitives/breakpoints": "enabled",
-      "primitives/interaction": "enabled",
-      "primitives/sizing": "enabled"
+      "primitives": "enabled"
     }
   },
   {
@@ -20,15 +12,7 @@
     "name": "Light",
     "group": "semantic",
     "selectedTokenSets": {
-      "primitives/color": "source",
-      "primitives/spacing": "source",
-      "primitives/radius": "source",
-      "primitives/typography": "source",
-      "primitives/motion": "source",
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/interaction": "source",
-      "primitives/sizing": "source",
+      "primitives": "source",
       "semantic/light": "enabled",
       "semantic/dark": "disabled",
       "semantic/high-contrast": "disabled"
@@ -39,15 +23,7 @@
     "name": "Dark",
     "group": "semantic",
     "selectedTokenSets": {
-      "primitives/color": "source",
-      "primitives/spacing": "source",
-      "primitives/radius": "source",
-      "primitives/typography": "source",
-      "primitives/motion": "source",
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/interaction": "source",
-      "primitives/sizing": "source",
+      "primitives": "source",
       "semantic/light": "disabled",
       "semantic/dark": "enabled",
       "semantic/high-contrast": "disabled"
@@ -58,15 +34,7 @@
     "name": "High Contrast",
     "group": "semantic",
     "selectedTokenSets": {
-      "primitives/color": "source",
-      "primitives/spacing": "source",
-      "primitives/radius": "source",
-      "primitives/typography": "source",
-      "primitives/motion": "source",
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/interaction": "source",
-      "primitives/sizing": "source",
+      "primitives": "source",
       "semantic/light": "disabled",
       "semantic/dark": "disabled",
       "semantic/high-contrast": "enabled"
@@ -77,18 +45,8 @@
     "name": "Base",
     "group": "component",
     "selectedTokenSets": {
-      "primitives/color": "source",
-      "primitives/spacing": "source",
-      "primitives/radius": "source",
-      "primitives/typography": "source",
-      "primitives/motion": "source",
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/interaction": "source",
-      "primitives/sizing": "source",
-      "component/button": "enabled",
-      "component/input": "enabled",
-      "component/modal": "enabled"
+      "primitives": "source",
+      "components": "enabled"
     }
   }
 ]

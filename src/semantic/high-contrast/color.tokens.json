@@ -4,142 +4,142 @@
     "$type": "color",
     "text": {
       "primary": {
-        "$value": "{color.black}",
+        "$value": "{color/black}",
         "$description": "Primary text color - maximum contrast."
       },
       "secondary": {
-        "$value": "{color.gray.800}",
+        "$value": "{color/gray/800}",
         "$description": "Secondary text color - higher contrast than normal light theme."
       },
       "tertiary": {
-        "$value": "{color.gray.700}",
+        "$value": "{color/gray/700}",
         "$description": "Tertiary text color - meets AAA requirements."
       },
       "disabled": {
-        "$value": "{color.gray.600}",
+        "$value": "{color/gray/600}",
         "$description": "Disabled text color - still perceivable."
       },
       "inverse": {
-        "$value": "{color.white}",
+        "$value": "{color/white}",
         "$description": "Inverse text color."
       },
       "error": {
-        "$value": "{color.red.800}",
+        "$value": "{color/red/800}",
         "$description": "Error text color - enhanced contrast."
       },
       "success": {
-        "$value": "{color.green.800}",
+        "$value": "{color/green/800}",
         "$description": "Success text color - enhanced contrast."
       },
       "warning": {
-        "$value": "{color.yellow.800}",
+        "$value": "{color/yellow/800}",
         "$description": "Warning text color - enhanced contrast."
       },
       "info": {
-        "$value": "{color.blue.800}",
+        "$value": "{color/blue/800}",
         "$description": "Info text color - enhanced contrast."
       }
     },
     "surface": {
       "primary": {
-        "$value": "{color.white}",
+        "$value": "{color/white}",
         "$description": "Primary surface - pure white."
       },
       "secondary": {
-        "$value": "{color.gray.50}",
+        "$value": "{color/gray/50}",
         "$description": "Secondary surface."
       },
       "tertiary": {
-        "$value": "{color.gray.100}",
+        "$value": "{color/gray/100}",
         "$description": "Tertiary surface."
       },
       "elevated": {
-        "$value": "{color.white}",
+        "$value": "{color/white}",
         "$description": "Elevated surface."
       },
       "inverse": {
-        "$value": "{color.black}",
+        "$value": "{color/black}",
         "$description": "Inverse surface - pure black."
       }
     },
     "border": {
       "default": {
-        "$value": "{color.gray.700}",
+        "$value": "{color/gray/700}",
         "$description": "Default border - higher contrast."
       },
       "strong": {
-        "$value": "{color.black}",
+        "$value": "{color/black}",
         "$description": "Strong border - maximum contrast."
       },
       "subtle": {
-        "$value": "{color.gray.500}",
+        "$value": "{color/gray/500}",
         "$description": "Subtle border - still visible."
       },
       "focus": {
-        "$value": "{color.blue.700}",
+        "$value": "{color/blue/700}",
         "$description": "Focus border - enhanced visibility."
       }
     },
     "action": {
       "primary": {
-        "$value": "{color.blue.700}",
+        "$value": "{color/blue/700}",
         "$description": "Primary action color - enhanced contrast."
       },
       "primary-hover": {
-        "$value": "{color.blue.800}",
+        "$value": "{color/blue/800}",
         "$description": "Primary action hover color."
       },
       "primary-active": {
-        "$value": "{color.blue.900}",
+        "$value": "{color/blue/900}",
         "$description": "Primary action active color."
       },
       "secondary": {
-        "$value": "{color.gray.200}",
+        "$value": "{color/gray/200}",
         "$description": "Secondary action background."
       },
       "secondary-hover": {
-        "$value": "{color.gray.300}",
+        "$value": "{color/gray/300}",
         "$description": "Secondary action hover."
       }
     },
     "status": {
       "error": {
         "bg": {
-          "$value": "{color.red.100}",
+          "$value": "{color/red/100}",
           "$description": "Error background - more visible."
         },
         "border": {
-          "$value": "{color.red.700}",
+          "$value": "{color/red/700}",
           "$description": "Error border - enhanced."
         }
       },
       "success": {
         "bg": {
-          "$value": "{color.green.100}",
+          "$value": "{color/green/100}",
           "$description": "Success background."
         },
         "border": {
-          "$value": "{color.green.700}",
+          "$value": "{color/green/700}",
           "$description": "Success border - enhanced."
         }
       },
       "warning": {
         "bg": {
-          "$value": "{color.yellow.100}",
+          "$value": "{color/yellow/100}",
           "$description": "Warning background."
         },
         "border": {
-          "$value": "{color.yellow.700}",
+          "$value": "{color/yellow/700}",
           "$description": "Warning border - enhanced."
         }
       },
       "info": {
         "bg": {
-          "$value": "{color.blue.100}",
+          "$value": "{color/blue/100}",
           "$description": "Info background."
         },
         "border": {
-          "$value": "{color.blue.700}",
+          "$value": "{color/blue/700}",
           "$description": "Info border - enhanced."
         }
       }
