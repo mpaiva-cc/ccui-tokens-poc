@@ -1,0 +1,5 @@
+{
+    "$description": "Base theme metadata",
+    "name": "base",
+    "description": "Base theme containing shared foundations and core token references"
+}

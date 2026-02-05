@@ -1,0 +1,29 @@
+{
+    "$description": "Core line height primitives as unitless multipliers of font-size. Unitless values scale proportionally with font size (1.5 = 150% of font-size). ACCESSIBILITY: WCAG 1.4.12 requires line-height of at least 1.5 for body text. Tighter values (xs, sm) only for headings and single-line elements.",
+    "typography": {
+        "lineHeight": {
+            "$type": "number",
+            "$description": "Line height scale from tight (display) to loose (prose). Match line height to content type: tighter for headings, looser for body text. RULE: Longer line lengths need more line height. Use xs-sm only for headings/buttons, md-xl for readable content.",
+            "xs": {
+                "$value": 1.2,
+                "$description": "Tight line height (1.2 / 120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for headings 24px+ or single-line UI elements. Common in: h1, hero headlines, button text, badge labels."
+            },
+            "sm": {
+                "$value": 1.35,
+                "$description": "Snug line height (1.35 / 135%). Use for: smaller headings (h3-h6), subheadings, short multi-line text, compact interfaces. Tighter than body but readable for short passages. Common in: h3-h6 headings, card titles, navigation items, form labels, compact UI text."
+            },
+            "md": {
+                "$value": 1.5,
+                "$description": "Normal line height (1.5 / 150%). WCAG MINIMUM for body text. Use for: standard body text, paragraphs, UI descriptions, form inputs, most readable content. Baseline for accessibility compliance. Common in: body paragraphs, descriptions, form values, help text, table cells."
+            },
+            "lg": {
+                "$value": 1.65,
+                "$description": "Relaxed line height (1.65 / 165%). Use for: longer paragraphs, improved readability, wide content areas, users who need more visual separation. Better for sustained reading. Common in: article content, documentation, expanded descriptions, accessibility-focused interfaces."
+            },
+            "xl": {
+                "$value": 1.8,
+                "$description": "Loose line height (1.8 / 180%). Use for: long-form prose, documentation, maximum readability, accessibility accommodations. Very generous spacing between lines. Common in: blog posts, help documentation, legal text, content prioritizing readability over density."
+            }
+        }
+    }
+}

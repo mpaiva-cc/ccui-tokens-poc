@@ -1,0 +1,32 @@
+{
+    "$description": "Core letter-spacing (tracking) primitives for typography fine-tuning. Letter-spacing adjusts the space between characters uniformly. Use sparingly - most text should use default (normal) spacing. Tighter spacing works for large headlines; wider spacing for small caps, labels, or overlines.",
+    "typography": {
+        "letterSpacing": {
+            "$type": "dimension",
+            "tighter": {
+                "$value": "-0.05em",
+                "$description": "Tighter tracking (-0.05em). Use for: very large display text (48px+), hero headlines, logos. Brings characters closer for visual cohesion at large sizes. CAUTION: Can reduce readability if overused."
+            },
+            "tight": {
+                "$value": "-0.025em",
+                "$description": "Slightly tight tracking (-0.025em). Use for: large headings (h1-h2), medium display text. Subtle tightening that improves visual density without sacrificing readability."
+            },
+            "normal": {
+                "$value": "0",
+                "$description": "Default letter spacing (0). DEFAULT for all body text and most headings. Let the typeface's natural spacing work. Optimal for reading comprehension."
+            },
+            "wide": {
+                "$value": "0.025em",
+                "$description": "Slightly wide tracking (0.025em). Use for: small text (12px or less), captions that need more breathing room. Improves legibility at small sizes."
+            },
+            "wider": {
+                "$value": "0.05em",
+                "$description": "Wide tracking (0.05em). Use for: small caps, labels, overlines, all-caps text. Prevents all-caps text from feeling cramped. Common in: button text (sometimes), navigation labels, category headers."
+            },
+            "widest": {
+                "$value": "0.1em",
+                "$description": "Maximum tracking (0.1em). Use for: stylistic emphasis, spaced-out headings, decorative typography. Very pronounced spacing for special typographic treatments. Use sparingly."
+            }
+        }
+    }
+}

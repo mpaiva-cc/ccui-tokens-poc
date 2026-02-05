@@ -1,0 +1,33 @@
+{
+    "$description": "Core animation easing primitives defining motion curves. Easing creates natural, physical-feeling motion. RULE: Elements entering use ease-out (decelerate into view), elements leaving use ease-in (accelerate away), bidirectional uses ease-in-out. Linear only for continuous/looping animations.",
+    "motion": {
+        "easing": {
+            "$type": "cubicBezier",
+            "$description": "Cubic-bezier easing curves for CSS transitions and animations. Values are [x1, y1, x2, y2] control points. Each curve creates different motion character. Match easing to animation intent: ease-out for entrances, ease-in for exits, ease-in-out for transformations.",
+            "linear": {
+                "$value": [0, 0, 1, 1],
+                "$description": "Linear easing - constant speed, no acceleration. CSS: linear. Use for: progress bars, looping animations, continuous scrolling, mechanical movements. Feels robotic/artificial - avoid for UI interactions. Only use when constant speed is intentionally desired. Common in: progress indicators, loading spinners, continuous carousels."
+            },
+            "ease": {
+                "$value": [0.25, 0.1, 0.25, 1],
+                "$description": "Standard ease curve - CSS default. Quick start, gradual slow-down. Use for: general-purpose transitions when specific easing isn't needed. Good default but 'easeOut' often feels better for UI. CSS: ease. Common in: fallback transitions, simple state changes."
+            },
+            "easeIn": {
+                "$value": [0.42, 0, 1, 1],
+                "$description": "Ease in - starts slow, accelerates. CSS: ease-in. Use for: elements LEAVING the screen, dismissals, fade-outs, exits. Creates sense of departure/acceleration away. AVOID for entrances - feels sluggish. Common in: modal dismiss, toast exit, dropdown close, element removal animations."
+            },
+            "easeOut": {
+                "$value": [0, 0, 0.58, 1],
+                "$description": "Ease out - starts fast, decelerates. CSS: ease-out. RECOMMENDED for most UI transitions. Use for: elements ENTERING the screen, reveals, expansions, focus states. Creates sense of arrival/settling into place. Feels responsive and natural. Common in: modal open, tooltip appear, dropdown open, hover effects."
+            },
+            "easeInOut": {
+                "$value": [0.42, 0, 0.58, 1],
+                "$description": "Ease in and out - slow start, fast middle, slow end. CSS: ease-in-out. Use for: elements transforming in place, position changes, size changes, bidirectional animations. Natural for movements that start and end at rest. Common in: tab transitions, carousel slides, position animations, transform effects."
+            },
+            "emphasized": {
+                "$value": [0.2, 0, 0, 1],
+                "$description": "Emphasized deceleration - quick start, strong deceleration. Custom Material-inspired curve. Use for: attention-grabbing entrances, important notifications, emphasized reveals, dramatic effect. More pronounced than standard easeOut. Use sparingly for emphasis. Common in: snackbar/toast entrance, important alerts, feature reveals, celebration animations."
+            }
+        }
+    }
+}

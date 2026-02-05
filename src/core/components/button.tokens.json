@@ -1,0 +1,96 @@
+{
+    "$description": "Button component tokens. These tokens compose primitive tokens into button-specific configurations for consistent button styling across the design system.",
+    "button": {
+        "height": {
+            "$description": "Button height values mapped from sizing primitives.",
+            "xs": {
+                "$value": "{sizing.button.xs}",
+                "$description": "Extra small button height. Use for inline actions, compact toolbars."
+            },
+            "sm": {
+                "$value": "{sizing.button.sm}",
+                "$description": "Small button height. Use for secondary actions, compact layouts."
+            },
+            "md": {
+                "$value": "{sizing.button.md}",
+                "$description": "Medium button height. DEFAULT for most buttons."
+            },
+            "lg": {
+                "$value": "{sizing.button.lg}",
+                "$description": "Large button height. Use for prominent CTAs."
+            },
+            "xl": {
+                "$value": "{sizing.button.xl}",
+                "$description": "Extra large button height. Use for marketing CTAs."
+            }
+        },
+        "padding": {
+            "$type": "dimension",
+            "x": {
+                "xs": {
+                    "$value": "{spacing.xs}",
+                    "$description": "Extra small horizontal padding (8px). Use for compact icon buttons."
+                },
+                "sm": {
+                    "$value": "{spacing.sm}",
+                    "$description": "Small horizontal padding (12px). Use for secondary action buttons."
+                },
+                "md": {
+                    "$value": "{spacing.md}",
+                    "$description": "Medium horizontal padding (16px). Use for standard buttons. DEFAULT."
+                },
+                "lg": {
+                    "$value": "{spacing.lg}",
+                    "$description": "Large horizontal padding (24px). Use for prominent CTA buttons."
+                },
+                "xl": {
+                    "$value": "{spacing.xl}",
+                    "$description": "Extra large horizontal padding (32px). Use for marketing buttons."
+                }
+            }
+        },
+        "borderRadius": {
+            "$value": "{radius.sm}",
+            "$type": "dimension",
+            "$description": "Default button border radius (4px). Use for consistent alignment with inputs."
+        },
+        "fontSize": {
+            "$description": "Button font sizes for each size variant.",
+            "xs": {
+                "$value": "{typography.fontSize.xs}",
+                "$description": "Extra small button font size."
+            },
+            "sm": {
+                "$value": "{typography.fontSize.sm}",
+                "$description": "Small button font size."
+            },
+            "md": {
+                "$value": "{typography.fontSize.sm}",
+                "$description": "Medium button font size. Uses sm for better proportions."
+            },
+            "lg": {
+                "$value": "{typography.fontSize.md}",
+                "$description": "Large button font size."
+            },
+            "xl": {
+                "$value": "{typography.fontSize.md}",
+                "$description": "Extra large button font size."
+            }
+        },
+        "fontWeight": {
+            "$value": "{typography.fontWeight.semibold}",
+            "$type": "fontWeight",
+            "$description": "Button font weight. Semibold for clear affordance."
+        },
+        "transition": {
+            "duration": {
+                "$value": "{motion.duration.fast}",
+                "$description": "Button transition duration for hover/active states."
+            },
+            "easing": {
+                "$value": "{motion.easing.easeOut}",
+                "$description": "Button transition easing curve."
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "$description": "Core sizing primitives for component dimensions. These tokens define standard heights and widths for interactive elements, ensuring visual consistency across the design system. Use sizing tokens instead of hardcoded dimensions for inputs, buttons, and icons.",
+    "sizing": {
+        "$type": "dimension",
+        "input": {
+            "$description": "Standard heights for input fields and form controls. Matches Mantine's input size scale.",
+            "xs": {
+                "$value": "1.875rem",
+                "$description": "Extra small input height (30px). Use for: compact forms, inline editing, space-constrained UIs."
+            },
+            "sm": {
+                "$value": "2.25rem",
+                "$description": "Small input height (36px). Use for: secondary inputs, compact layouts, mobile-optimized forms."
+            },
+            "md": {
+                "$value": "2.625rem",
+                "$description": "Medium input height (42px). DEFAULT size for most inputs. Use for: standard forms, primary data entry."
+            },
+            "lg": {
+                "$value": "3rem",
+                "$description": "Large input height (48px). Use for: prominent inputs, touch-optimized UIs, hero forms."
+            },
+            "xl": {
+                "$value": "3.75rem",
+                "$description": "Extra large input height (60px). Use for: marketing forms, high-emphasis inputs, accessibility focus."
+            }
+        },
+        "button": {
+            "$description": "Standard heights for button elements. Aligns with input heights for form consistency.",
+            "xs": {
+                "$value": "1.875rem",
+                "$description": "Extra small button height (30px). Use for: inline actions, compact toolbars, icon-only buttons."
+            },
+            "sm": {
+                "$value": "2.25rem",
+                "$description": "Small button height (36px). Use for: secondary actions, compact layouts, less prominent CTAs."
+            },
+            "md": {
+                "$value": "2.625rem",
+                "$description": "Medium button height (42px). DEFAULT size for most buttons. Use for: primary actions, form submits."
+            },
+            "lg": {
+                "$value": "3rem",
+                "$description": "Large button height (48px). Use for: prominent CTAs, hero sections, touch-optimized UIs."
+            },
+            "xl": {
+                "$value": "3.75rem",
+                "$description": "Extra large button height (60px). Use for: marketing CTAs, high-emphasis actions."
+            }
+        },
+        "icon": {
+            "$description": "Standard sizes for icon elements. Use these to ensure icons are appropriately sized relative to text and other elements.",
+            "xs": {
+                "$value": "0.75rem",
+                "$description": "Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs."
+            },
+            "sm": {
+                "$value": "1rem",
+                "$description": "Small icon size (16px). Use for: inline icons, button icons with text, input icons."
+            },
+            "md": {
+                "$value": "1.25rem",
+                "$description": "Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons."
+            },
+            "lg": {
+                "$value": "1.5rem",
+                "$description": "Large icon size (24px). Use for: prominent icons, action icons, toolbar icons."
+            },
+            "xl": {
+                "$value": "2rem",
+                "$description": "Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons."
+            }
+        }
+    }
+}

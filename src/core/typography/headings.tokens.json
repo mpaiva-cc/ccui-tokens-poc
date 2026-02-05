@@ -1,0 +1,114 @@
+{
+    "$description": "Heading typography definitions for h1-h6 elements. These compose font size, weight, and line height tokens into semantic heading styles.",
+    "typography": {
+        "headings": {
+            "fontWeight": {
+                "$value": "{typography.fontWeight.bold}",
+                "$type": "fontWeight",
+                "$description": "Default font weight for all headings."
+            },
+            "h1": {
+                "fontSize": {
+                    "$value": "{typography.fontSize.4xl}",
+                    "$type": "dimension",
+                    "$description": "H1 font size (34px). Use for page titles."
+                },
+                "fontWeight": {
+                    "$value": "{typography.fontWeight.bold}",
+                    "$type": "fontWeight",
+                    "$description": "Bold weight (700) for maximum visual hierarchy on page titles."
+                },
+                "lineHeight": {
+                    "$value": "{typography.lineHeight.xs}",
+                    "$type": "number",
+                    "$description": "Tight line height for large headings."
+                }
+            },
+            "h2": {
+                "fontSize": {
+                    "$value": "{typography.fontSize.3xl}",
+                    "$type": "dimension",
+                    "$description": "H2 font size (26px). Use for section headings."
+                },
+                "fontWeight": {
+                    "$value": "{typography.fontWeight.bold}",
+                    "$type": "fontWeight",
+                    "$description": "Bold weight (700) for strong section hierarchy."
+                },
+                "lineHeight": {
+                    "$value": "{typography.lineHeight.xs}",
+                    "$type": "number",
+                    "$description": "Tight line height (1.2) for compact section headings."
+                }
+            },
+            "h3": {
+                "fontSize": {
+                    "$value": "{typography.fontSize.2xl}",
+                    "$type": "dimension",
+                    "$description": "H3 font size (22px). Use for subsection headings."
+                },
+                "fontWeight": {
+                    "$value": "{typography.fontWeight.semibold}",
+                    "$type": "fontWeight",
+                    "$description": "Semibold weight (600) for clear subsection emphasis."
+                },
+                "lineHeight": {
+                    "$value": "{typography.lineHeight.sm}",
+                    "$type": "number",
+                    "$description": "Snug line height (1.35) for medium-sized headings."
+                }
+            },
+            "h4": {
+                "fontSize": {
+                    "$value": "{typography.fontSize.xl}",
+                    "$type": "dimension",
+                    "$description": "H4 font size (20px). Use for card titles."
+                },
+                "fontWeight": {
+                    "$value": "{typography.fontWeight.semibold}",
+                    "$type": "fontWeight",
+                    "$description": "Semibold weight (600) for card and component titles."
+                },
+                "lineHeight": {
+                    "$value": "{typography.lineHeight.sm}",
+                    "$type": "number",
+                    "$description": "Snug line height (1.35) for card title readability."
+                }
+            },
+            "h5": {
+                "fontSize": {
+                    "$value": "{typography.fontSize.lg}",
+                    "$type": "dimension",
+                    "$description": "H5 font size (18px). Use for small headings."
+                },
+                "fontWeight": {
+                    "$value": "{typography.fontWeight.semibold}",
+                    "$type": "fontWeight",
+                    "$description": "Semibold weight (600) for minor section emphasis."
+                },
+                "lineHeight": {
+                    "$value": "{typography.lineHeight.sm}",
+                    "$type": "number",
+                    "$description": "Snug line height (1.35) for compact minor headings."
+                }
+            },
+            "h6": {
+                "fontSize": {
+                    "$value": "{typography.fontSize.md}",
+                    "$type": "dimension",
+                    "$description": "H6 font size (16px). Use for label-like headings."
+                },
+                "fontWeight": {
+                    "$value": "{typography.fontWeight.semibold}",
+                    "$type": "fontWeight",
+                    "$description": "Semibold weight (600) for label-style heading emphasis."
+                },
+                "lineHeight": {
+                    "$value": "{typography.lineHeight.md}",
+                    "$type": "number",
+                    "$description": "Normal line height (1.5) matching body text rhythm."
+                }
+            }
+        }
+    }
+}

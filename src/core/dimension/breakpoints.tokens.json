@@ -1,0 +1,39 @@
+{
+    "$description": "Core breakpoint and content width primitives for responsive design. Breakpoints use em units for accessibility (respect user font size preferences). Based on common device categories but designed for content-first responsive design, not device-specific layouts.",
+    "breakpoints": {
+        "$type": "dimension",
+        "$description": "Viewport width breakpoints for media queries. Use mobile-first approach: base styles for mobile, then layer on complexity at larger breakpoints. Values in em units = px/16. USAGE: @media (min-width: TOKEN_VALUE) for progressive enhancement.",
+        "xs": {
+            "$value": "36em",
+            "$description": "Extra small breakpoint (576px). Use for: large phones in landscape, small tablets. Content starts having room to breathe. Typical changes: side-by-side layouts begin, hiding mobile-only elements. Above this: no longer 'mobile-only' context."
+        },
+        "sm": {
+            "$value": "48em",
+            "$description": "Small breakpoint (768px). Use for: tablets in portrait, small laptops. Two-column layouts become comfortable. Typical changes: sidebars can appear, cards go 2-up, navigation expands. Common tablet breakpoint. Desktop-like experiences begin here."
+        },
+        "md": {
+            "$value": "62em",
+            "$description": "Medium breakpoint (992px). Use for: tablets in landscape, standard laptops, small desktops. Full desktop layouts are comfortable. Typical changes: three-column layouts, full navigation, expanded sidebars. Most 'desktop' designs target this minimum."
+        },
+        "lg": {
+            "$value": "75em",
+            "$description": "Large breakpoint (1200px). Use for: large laptops, standard desktop monitors. Generous space available. Typical changes: four-column grids, expanded dashboards, side panels. Content max-widths often kick in here to prevent over-stretching."
+        },
+        "xl": {
+            "$value": "88em",
+            "$description": "Extra large breakpoint (1408px). Use for: large desktop monitors, high-resolution displays. Maximum layouts. Typical changes: ultra-wide layouts, multi-panel views, data-dense dashboards. Consider max-width constraints - too wide hurts readability."
+        }
+    },
+    "contentWidth": {
+        "$type": "dimension",
+        "$description": "Maximum content width constraints for readability and layout control. Apply as max-width on content containers. Prevents content from stretching uncomfortably wide on large screens.",
+        "sm": {
+            "$value": "37.5em",
+            "$description": "Small content width (600px). Use for: prose content, documentation, blog posts, reading-focused layouts. Optimal line length for readability (~65-75 characters). Common in: article bodies, help documentation, settings panels, narrow modals."
+        },
+        "lg": {
+            "$value": "80em",
+            "$description": "Large content width (1280px). Use for: full application layouts, dashboards, data-heavy interfaces. Maximum comfortable width for most content. Common in: main app container, dashboard layouts, admin interfaces. Beyond this, consider multi-column or sidebar layouts."
+        }
+    }
+}

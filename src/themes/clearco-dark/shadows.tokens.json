@@ -1,0 +1,34 @@
+{
+    "shadows": {
+        "xs": {
+            "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2)",
+            "$type": "shadow",
+            "$description": "Extra small shadow (dark theme)"
+        },
+        "sm": {
+            "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.12) 0 0.4375rem 0.4375rem -0.3125rem",
+            "$type": "shadow",
+            "$description": "Small shadow (dark theme)"
+        },
+        "md": {
+            "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.12) 0 0.625rem 0.625rem -0.3125rem",
+            "$type": "shadow",
+            "$description": "Medium shadow (dark theme)"
+        },
+        "lg": {
+            "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.12) 0 0.75rem 0.75rem -0.4375rem",
+            "$type": "shadow",
+            "$description": "Large shadow (dark theme)"
+        },
+        "xl": {
+            "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.12) 0 1.0625rem 1.0625rem -0.4375rem",
+            "$type": "shadow",
+            "$description": "Extra large shadow (dark theme)"
+        },
+        "footer": {
+            "$value": "0 -0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.12), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.12)",
+            "$type": "shadow",
+            "$description": "Shadow for fixed footers (dark theme)"
+        }
+    }
+}

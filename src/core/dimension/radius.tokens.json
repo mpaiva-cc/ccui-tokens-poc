@@ -1,0 +1,31 @@
+{
+    "$description": "Core border radius primitives defining the roundness system. Consistent radii create visual harmony across components. RULE: Match radius to component size - smaller components use smaller radii. Nested elements should use smaller radii than their containers to maintain visual proportions.",
+    "radius": {
+        "$type": "dimension",
+        "$description": "Border radius scale from subtle to fully rounded. Values are rem-based for accessibility (scale with user font preferences). Choose radius based on component size and context - not arbitrary aesthetics.",
+        "xs": {
+            "$value": "0.125rem",
+            "$description": "Extra small radius (2px). Use for: small badges, tags, inline code blocks, tiny indicators, nested elements inside sm-radius containers. Barely perceptible rounding - softens without calling attention. Common in: chip components, status dots, code snippets."
+        },
+        "sm": {
+            "$value": "0.25rem",
+            "$description": "Small radius (4px). DEFAULT for small components. Use for: buttons, inputs, dropdowns, tooltips, small cards, table cells. The workhorse radius - professional and subtle. Most form elements use this. Common in: Button, Input, Select, Badge, Alert."
+        },
+        "md": {
+            "$value": "0.5rem",
+            "$description": "Medium radius (8px). Use for: cards, modals, dialogs, larger containers, image thumbnails, panels. Creates friendly, approachable feel without being playful. Common in: Card, Modal, Popover, larger interactive surfaces."
+        },
+        "lg": {
+            "$value": "1rem",
+            "$description": "Large radius (16px). Use for: hero cards, featured content, marketing components, prominent UI elements. Noticeably rounded - use intentionally for emphasis or friendly tone. Common in: feature cards, promotional banners, onboarding modals."
+        },
+        "xl": {
+            "$value": "2rem",
+            "$description": "Extra large radius (32px). Use for: hero sections, large promotional elements, artistic layouts, very large cards. Significantly rounded - creates soft, approachable aesthetic. Use sparingly - can feel too casual for business applications."
+        },
+        "full": {
+            "$value": "9999px",
+            "$description": "Full/pill radius (circular). Use for: avatar circles, round buttons, pill-shaped tags, circular indicators, FABs. Creates perfect circles on square elements or pill shapes on rectangles. Common in: Avatar, round IconButton, pill Badge, circular progress."
+        }
+    }
+}
