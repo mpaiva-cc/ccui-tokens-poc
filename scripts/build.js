@@ -62,6 +62,24 @@ function getThemeSelector(themeName) {
 // Official Mantine color palettes
 const MANTINE_PALETTES = ['dark', 'gray', 'red', 'pink', 'grape', 'violet', 'indigo', 'blue', 'cyan', 'teal', 'green', 'lime', 'yellow', 'orange'];
 
+// Helper to identify primitive palette color tokens (these belong in core/color.json, not semantic)
+function isPrimitiveColorToken(token) {
+    const path = token.path;
+    if (path[0] !== 'color') return false;
+
+    // color.white, color.black, color.transparent
+    if (path.length === 2 && ['white', 'black', 'transparent'].includes(path[1])) {
+        return true;
+    }
+
+    // color.{palette}.{0-9} - primitive palette shades
+    if (path.length === 3 && MANTINE_PALETTES.includes(path[1]) && /^[0-9]$/.test(path[2])) {
+        return true;
+    }
+
+    return false;
+}
+
 // Official Mantine color variants
 const MANTINE_COLOR_VARIANTS = ['filled', 'filled-hover', 'light', 'light-hover', 'light-color', 'outline', 'outline-hover', 'text'];
 
@@ -514,7 +532,14 @@ StyleDictionary.registerFormat({
     format: ({ dictionary }) => {
         const semanticTokens = dictionary.allTokens.filter(token => {
             const category = token.path[0];
-            return ['color', 'colorPalette', 'shadows', 'mantine', 'opacity'].includes(category);
+            if (!['color', 'colorPalette', 'shadows', 'mantine', 'opacity'].includes(category)) {
+                return false;
+            }
+            // Exclude primitive palette colors - they belong in core/color.json
+            if (isPrimitiveColorToken(token)) {
+                return false;
+            }
+            return true;
         });
         const structure = buildTokensStudioStructure(semanticTokens);
         return JSON.stringify(structure, null, 2);
