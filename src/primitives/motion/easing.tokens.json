@@ -1,0 +1,32 @@
+{
+  "$description": "Core animation easing primitives defining motion curves.",
+  "motion": {
+    "easing": {
+      "$type": "cubicBezier",
+      "linear": {
+        "$value": [0, 0, 1, 1],
+        "$description": "Linear easing - constant speed, no acceleration."
+      },
+      "ease": {
+        "$value": [0.25, 0.1, 0.25, 1],
+        "$description": "Standard ease curve - CSS default."
+      },
+      "ease-in": {
+        "$value": [0.42, 0, 1, 1],
+        "$description": "Ease in - starts slow, accelerates. Use for exits."
+      },
+      "ease-out": {
+        "$value": [0, 0, 0.58, 1],
+        "$description": "Ease out - starts fast, decelerates. RECOMMENDED for most UI."
+      },
+      "ease-in-out": {
+        "$value": [0.42, 0, 0.58, 1],
+        "$description": "Ease in and out - slow start, fast middle, slow end."
+      },
+      "emphasized": {
+        "$value": [0.2, 0, 0, 1],
+        "$description": "Emphasized deceleration - quick start, strong deceleration."
+      }
+    }
+  }
+}

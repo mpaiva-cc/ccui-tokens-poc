@@ -1,0 +1,24 @@
+{
+  "$description": "Core border style primitives for stroke patterns.",
+  "border": {
+    "style": {
+      "$type": "strokeStyle",
+      "none": {
+        "$value": "none",
+        "$description": "No border style."
+      },
+      "solid": {
+        "$value": "solid",
+        "$description": "Solid border style. DEFAULT for all standard borders."
+      },
+      "dashed": {
+        "$value": "dashed",
+        "$description": "Dashed border style. Use for: drop zones, placeholder elements."
+      },
+      "dotted": {
+        "$value": "dotted",
+        "$description": "Dotted border style. Use for: decorative elements."
+      }
+    }
+  }
+}

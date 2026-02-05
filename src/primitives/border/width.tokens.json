@@ -1,0 +1,24 @@
+{
+  "$description": "Core border width primitives for defining element boundaries.",
+  "border": {
+    "width": {
+      "$type": "dimension",
+      "0": {
+        "$value": "0",
+        "$description": "No border (0px). Use for: removing inherited borders."
+      },
+      "100": {
+        "$value": "1px",
+        "$description": "Thin border (1px). DEFAULT for most UI borders."
+      },
+      "200": {
+        "$value": "2px",
+        "$description": "Medium border (2px). Use for: emphasis, active states."
+      },
+      "400": {
+        "$value": "4px",
+        "$description": "Thick border (4px). Use for: strong emphasis."
+      }
+    }
+  }
+}

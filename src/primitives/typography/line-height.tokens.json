@@ -1,0 +1,28 @@
+{
+  "$description": "Core line height primitives as unitless multipliers. WCAG requires line-height of at least 1.5 for body text.",
+  "typography": {
+    "line-height": {
+      "$type": "number",
+      "tight": {
+        "$value": 1.2,
+        "$description": "Tight line height (1.2 / 120%). Use for: large display headings."
+      },
+      "snug": {
+        "$value": 1.35,
+        "$description": "Snug line height (1.35 / 135%). Use for: smaller headings."
+      },
+      "normal": {
+        "$value": 1.5,
+        "$description": "Normal line height (1.5 / 150%). WCAG MINIMUM for body text."
+      },
+      "relaxed": {
+        "$value": 1.65,
+        "$description": "Relaxed line height (1.65 / 165%). Use for: longer paragraphs."
+      },
+      "loose": {
+        "$value": 1.8,
+        "$description": "Loose line height (1.8 / 180%). Use for: long-form prose."
+      }
+    }
+  }
+}

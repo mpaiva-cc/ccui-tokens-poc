@@ -1,135 +1,209 @@
 /**
  * Shared test utilities for design token validation
+ *
+ * Updated for new architecture:
+ * - CSS: Single combined file at dist/css/ccui-tokens.css
+ * - Tokens Studio: dist/tokens-studio/{primitives,semantic,component}/*.json
+ * - Themes: light, dark, high-contrast (in semantic folder)
  */
 import { readFileSync, existsSync, readdirSync } from 'fs';
-import { join } from 'path';
+import { join, basename } from 'path';
 
 // Paths - relative to repo root
 const DIST_DIR = join(__dirname, '../../dist');
 const CSS_DIR = join(DIST_DIR, 'css');
-const JSON_DIR = join(DIST_DIR, 'tokens-studio');
+const TOKENS_STUDIO_DIR = join(DIST_DIR, 'tokens-studio');
 
-/**
- * Get all available theme names from the dist directory
- * Excludes the 'shared' folder which contains primitives, not a theme
- */
-export function getThemeNames(): string[] {
-  if (!existsSync(CSS_DIR)) {
-    return [];
-  }
-  return readdirSync(CSS_DIR, { withFileTypes: true })
-    .filter((dirent) => dirent.isDirectory() && dirent.name !== 'shared')
-    .map((dirent) => dirent.name);
+// ============================================
+// Path and file helpers
+// ============================================
+
+export function getDistPath(): string {
+  return DIST_DIR;
+}
+
+export function getCSSPath(): string {
+  return CSS_DIR;
+}
+
+export function getTokensStudioPath(): string {
+  return TOKENS_STUDIO_DIR;
 }
 
 /**
- * Check if shared primitives folder exists
+ * Get the main combined CSS file path
  */
-export function hasSharedPrimitives(): boolean {
-  return existsSync(join(CSS_DIR, 'shared'));
+export function getMainCSSPath(): string {
+  return join(CSS_DIR, 'ccui-tokens.css');
 }
 
 /**
- * Get expected CSS files for a theme (not shared primitives)
+ * Check if the main CSS file exists
  */
-export function getThemeCSSFiles(): string[] {
-  return ['ccui-semantic.css', 'mantine-theme.css'];
+export function mainCSSExists(): boolean {
+  return existsSync(getMainCSSPath());
 }
 
 /**
- * Get expected JSON files for a theme (not shared primitives)
+ * Load the main CSS file
  */
-export function getThemeJSONFiles(): string[] {
-  return ['tokens.json', 'tokens-flat.json'];
-}
-
-/**
- * Get expected CSS files for shared primitives
- */
-export function getSharedCSSFiles(): string[] {
-  return ['ccui-primitives.css', 'mantine-primitives.css'];
-}
-
-/**
- * Get expected JSON files for shared primitives
- */
-export function getSharedJSONFiles(): string[] {
-  return ['primitives.json'];
-}
-
-/**
- * Parse CSS file and extract custom properties (CSS variables)
- * Returns a Map of variable name to value
- */
-export function parseCSSVariables(cssContent: string): Map<string, string> {
-  const variables = new Map<string, string>();
-
-  // Match CSS custom properties: --name: value;
-  const regex = /--([a-zA-Z0-9-_]+)\s*:\s*([^;]+);/g;
-  let match;
-
-  while ((match = regex.exec(cssContent)) !== null) {
-    const name = `--${match[1]}`;
-    const value = match[2].trim();
-    variables.set(name, value);
-  }
-
-  return variables;
-}
-
-/**
- * Load CSS file for a theme
- */
-export function loadThemeCSS(themeName: string, fileName: string): string {
-  const filePath = join(CSS_DIR, themeName, fileName);
+export function loadMainCSS(): string {
+  const filePath = getMainCSSPath();
   if (!existsSync(filePath)) {
     throw new Error(`CSS file not found: ${filePath}`);
   }
   return readFileSync(filePath, 'utf-8');
 }
 
+// ============================================
+// Theme helpers
+// ============================================
+
 /**
- * Load JSON tokens for a theme
+ * Get all available theme names from the semantic folder
+ * Returns: ['light', 'dark', 'high-contrast']
  */
-export function loadTokenJSON(themeName: string, fileName: string = 'tokens.json'): TokenStructure {
-  const filePath = join(JSON_DIR, themeName, fileName);
+export function getThemeNames(): string[] {
+  const semanticDir = join(TOKENS_STUDIO_DIR, 'semantic');
+  if (!existsSync(semanticDir)) {
+    return [];
+  }
+  return readdirSync(semanticDir, { withFileTypes: true })
+    .filter((dirent) => dirent.isFile() && dirent.name.endsWith('.json'))
+    .map((dirent) => dirent.name.replace('.json', ''));
+}
+
+/**
+ * Check if primitives folder exists
+ */
+export function hasPrimitives(): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, 'primitives'));
+}
+
+/**
+ * Check if semantic folder exists
+ */
+export function hasSemanticTokens(): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, 'semantic'));
+}
+
+/**
+ * Check if component folder exists
+ */
+export function hasComponentTokens(): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, 'component'));
+}
+
+/**
+ * Get all primitive token set names
+ */
+export function getPrimitiveSetNames(): string[] {
+  const primitivesDir = join(TOKENS_STUDIO_DIR, 'primitives');
+  if (!existsSync(primitivesDir)) {
+    return [];
+  }
+  return readdirSync(primitivesDir, { withFileTypes: true })
+    .filter((dirent) => dirent.isFile() && dirent.name.endsWith('.json'))
+    .map((dirent) => dirent.name.replace('.json', ''));
+}
+
+/**
+ * Get all component token set names
+ */
+export function getComponentSetNames(): string[] {
+  const componentDir = join(TOKENS_STUDIO_DIR, 'component');
+  if (!existsSync(componentDir)) {
+    return [];
+  }
+  return readdirSync(componentDir, { withFileTypes: true })
+    .filter((dirent) => dirent.isFile() && dirent.name.endsWith('.json'))
+    .map((dirent) => dirent.name.replace('.json', ''));
+}
+
+// ============================================
+// Token JSON loading
+// ============================================
+
+/**
+ * Load a primitive token set JSON file
+ */
+export function loadPrimitiveTokens(setName: string): TokenStructure {
+  const filePath = join(TOKENS_STUDIO_DIR, 'primitives', `${setName}.json`);
   if (!existsSync(filePath)) {
-    throw new Error(`JSON file not found: ${filePath}`);
+    throw new Error(`Primitive token file not found: ${filePath}`);
   }
   return JSON.parse(readFileSync(filePath, 'utf-8'));
 }
 
 /**
- * Load flat JSON tokens for a theme
+ * Load a semantic theme token JSON file
  */
-export function loadFlatTokenJSON(themeName: string): Record<string, string> {
-  const filePath = join(JSON_DIR, themeName, 'tokens-flat.json');
+export function loadSemanticTokens(themeName: string): TokenStructure {
+  const filePath = join(TOKENS_STUDIO_DIR, 'semantic', `${themeName}.json`);
   if (!existsSync(filePath)) {
-    throw new Error(`JSON file not found: ${filePath}`);
+    throw new Error(`Semantic token file not found: ${filePath}`);
   }
   return JSON.parse(readFileSync(filePath, 'utf-8'));
 }
 
 /**
- * Token structure from Style Dictionary output
+ * Load a component token set JSON file
  */
+export function loadComponentTokens(setName: string): TokenStructure {
+  const filePath = join(TOKENS_STUDIO_DIR, 'component', `${setName}.json`);
+  if (!existsSync(filePath)) {
+    throw new Error(`Component token file not found: ${filePath}`);
+  }
+  return JSON.parse(readFileSync(filePath, 'utf-8'));
+}
+
+/**
+ * Load $themes.json
+ */
+export function loadThemesConfig(): ThemeConfig[] {
+  const filePath = join(TOKENS_STUDIO_DIR, '$themes.json');
+  if (!existsSync(filePath)) {
+    throw new Error(`$themes.json not found: ${filePath}`);
+  }
+  return JSON.parse(readFileSync(filePath, 'utf-8'));
+}
+
+/**
+ * Load $metadata.json
+ */
+export function loadMetadata(): Record<string, unknown> {
+  const filePath = join(TOKENS_STUDIO_DIR, '$metadata.json');
+  if (!existsSync(filePath)) {
+    throw new Error(`$metadata.json not found: ${filePath}`);
+  }
+  return JSON.parse(readFileSync(filePath, 'utf-8'));
+}
+
+// ============================================
+// Token structures and types
+// ============================================
+
 export interface TokenValue {
-  $value: string;
+  $value: string | number | Record<string, unknown>;
   $type?: string;
   $description?: string;
-  $deprecated?: string | boolean; // Deprecation notice or flag
+  $deprecated?: string | boolean;
 }
 
 export interface TokenStructure {
   [key: string]: TokenValue | TokenStructure;
 }
 
-/**
- * Information about a deprecated token
- */
+export interface ThemeConfig {
+  id: string;
+  name: string;
+  group: string;
+  selectedTokenSets: Record<string, 'enabled' | 'disabled' | 'source'>;
+}
+
 export interface DeprecatedTokenInfo {
   path: string;
-  value: string;
+  value: string | number | Record<string, unknown>;
   deprecationMessage: string;
   suggestedReplacement?: string;
 }
@@ -160,7 +234,6 @@ export function getDeprecationMessage(token: TokenValue): string {
 
 /**
  * Extract suggested replacement from deprecation message
- * Looks for patterns like "Use X instead" or "Replace with X"
  */
 export function extractReplacement(message: string): string | undefined {
   const patterns = [
@@ -220,6 +293,9 @@ export function collectTokens(
   const tokens = new Map<string, TokenValue>();
 
   for (const [key, value] of Object.entries(structure)) {
+    // Skip metadata keys
+    if (key.startsWith('$')) continue;
+
     const currentPath = path ? `${path}.${key}` : key;
 
     if (isToken(value)) {
@@ -234,134 +310,169 @@ export function collectTokens(
 }
 
 /**
- * Validate color format
- * Supports: #hex, rgb(), rgba(), hsl(), hsla(), transparent, color keywords
+ * Flatten tokens to a simple key-value map
  */
-export function isValidColor(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
+export function flattenTokens(
+  structure: TokenStructure,
+  path: string = ''
+): Record<string, string | number> {
+  const flat: Record<string, string | number> = {};
 
+  for (const [key, value] of Object.entries(structure)) {
+    if (key.startsWith('$')) continue;
+
+    const currentPath = path ? `${path}.${key}` : key;
+
+    if (isToken(value)) {
+      flat[currentPath] = typeof value.$value === 'object'
+        ? JSON.stringify(value.$value)
+        : value.$value;
+    } else if (typeof value === 'object' && value !== null) {
+      Object.assign(flat, flattenTokens(value as TokenStructure, currentPath));
+    }
+  }
+
+  return flat;
+}
+
+// ============================================
+// CSS parsing utilities
+// ============================================
+
+/**
+ * Parse CSS file and extract custom properties (CSS variables)
+ * Returns a Map of variable name to value
+ */
+export function parseCSSVariables(cssContent: string): Map<string, string> {
+  const variables = new Map<string, string>();
+
+  // Match CSS custom properties: --name: value;
+  const regex = /--([a-zA-Z0-9-_]+)\s*:\s*([^;]+);/g;
+  let match;
+
+  while ((match = regex.exec(cssContent)) !== null) {
+    const name = `--${match[1]}`;
+    const value = match[2].trim();
+    variables.set(name, value);
+  }
+
+  return variables;
+}
+
+/**
+ * Extract CSS variables for a specific selector/section
+ */
+export function extractCSSSection(
+  cssContent: string,
+  selectorPattern: string | RegExp
+): string | null {
+  const pattern = typeof selectorPattern === 'string'
+    ? new RegExp(`${selectorPattern}\\s*\\{([^}]+)\\}`, 's')
+    : selectorPattern;
+
+  const match = cssContent.match(pattern);
+  return match ? match[1] : null;
+}
+
+/**
+ * Get CSS variables from the :root section
+ */
+export function getRootVariables(cssContent: string): Map<string, string> {
+  const rootSection = extractCSSSection(cssContent, ':root');
+  if (!rootSection) return new Map();
+  return parseCSSVariables(`:root { ${rootSection} }`);
+}
+
+/**
+ * Get CSS variables for a specific theme
+ */
+export function getThemeVariables(
+  cssContent: string,
+  theme: 'light' | 'dark'
+): Map<string, string> {
+  const pattern = new RegExp(
+    `\\[data-mantine-color-scheme="${theme}"\\]\\s*\\{([^}]+)\\}`,
+    's'
+  );
+  const section = extractCSSSection(cssContent, pattern);
+  if (!section) return new Map();
+  return parseCSSVariables(`[data-mantine-color-scheme="${theme}"] { ${section} }`);
+}
+
+// ============================================
+// Validation utilities
+// ============================================
+
+/**
+ * Validate color format
+ */
+export function isValidColor(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim().toLowerCase();
 
-  // transparent keyword
   if (trimmed === 'transparent') return true;
+  if (/^#([0-9a-f]{3}|[0-9a-f]{4}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(trimmed)) return true;
+  if (/^rgba?\s*\([^)]+\)$/i.test(trimmed)) return true;
+  if (/^hsla?\s*\([^)]+\)$/i.test(trimmed)) return true;
+  if (/^oklch\s*\([^)]+\)$/i.test(trimmed)) return true;
 
-  // Hex colors: #RGB, #RRGGBB, #RGBA, #RRGGBBAA
-  if (/^#([0-9a-f]{3}|[0-9a-f]{4}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(trimmed)) {
-    return true;
-  }
-
-  // RGB/RGBA
-  if (/^rgba?\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
-
-  // HSL/HSLA
-  if (/^hsla?\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
-
-  // oklch (modern color space)
-  if (/^oklch\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
-
-  // CSS color keywords (common ones)
   const colorKeywords = [
     'inherit', 'initial', 'unset', 'currentcolor',
     'white', 'black', 'red', 'green', 'blue', 'yellow', 'orange', 'purple',
     'gray', 'grey', 'pink', 'brown', 'cyan', 'magenta'
   ];
-  if (colorKeywords.includes(trimmed)) {
-    return true;
-  }
+  if (colorKeywords.includes(trimmed)) return true;
 
   return false;
 }
 
 /**
  * Validate dimension format
- * Supports: px, rem, em, %, vw, vh, etc.
  */
-export function isValidDimension(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
-
+export function isValidDimension(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value === 'number') return true;
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim();
 
-  // Zero without unit
   if (trimmed === '0') return true;
-
-  // Number with unit
-  if (/^-?[\d.]+\s*(px|rem|em|%|vw|vh|vmin|vmax|ch|ex|cap|ic|lh|rlh|vi|vb|svw|svh|lvw|lvh|dvw|dvh)$/i.test(trimmed)) {
-    return true;
-  }
-
-  // calc() expressions
-  if (/^calc\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
-
-  // var() references
-  if (/^var\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
+  if (/^-?[\d.]+\s*(px|rem|em|%|vw|vh|vmin|vmax|ch|ex|cap|ic|lh|rlh|vi|vb|svw|svh|lvw|lvh|dvw|dvh)$/i.test(trimmed)) return true;
+  if (/^calc\s*\([^)]+\)$/i.test(trimmed)) return true;
+  if (/^var\s*\([^)]+\)$/i.test(trimmed)) return true;
 
   return false;
 }
 
 /**
  * Validate font weight
- * Supports: 100-900, normal, bold, lighter, bolder
  */
-export function isValidFontWeight(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
-
+export function isValidFontWeight(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value === 'number') return value >= 1 && value <= 1000;
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim().toLowerCase();
 
-  // Keywords
-  if (['normal', 'bold', 'lighter', 'bolder', 'inherit', 'initial', 'unset'].includes(trimmed)) {
-    return true;
-  }
+  if (['normal', 'bold', 'lighter', 'bolder', 'inherit', 'initial', 'unset'].includes(trimmed)) return true;
 
-  // Numeric (100-900 in steps of 100, or any number 1-1000)
   const num = parseInt(trimmed, 10);
-  if (!isNaN(num) && num >= 1 && num <= 1000) {
-    return true;
-  }
-
-  return false;
+  return !isNaN(num) && num >= 1 && num <= 1000;
 }
 
 /**
  * Validate font family
- * Should be a string with proper quotes for multi-word fonts
  */
-export function isValidFontFamily(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
-
+export function isValidFontFamily(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim();
 
-  // Generic families
   const genericFamilies = ['serif', 'sans-serif', 'monospace', 'cursive', 'fantasy', 'system-ui', 'ui-serif', 'ui-sans-serif', 'ui-monospace', 'ui-rounded', 'emoji', 'math', 'fangsong'];
 
-  // Split by comma and validate each family
   const families = trimmed.split(',').map(f => f.trim());
 
   for (const family of families) {
     if (!family) return false;
-
-    // Generic family (unquoted)
     if (genericFamilies.includes(family.toLowerCase())) continue;
-
-    // Quoted font name
     if (/^["'][^"']+["']$/.test(family)) continue;
-
-    // Unquoted single-word font name
     if (/^[a-zA-Z][a-zA-Z0-9-]*$/.test(family)) continue;
-
-    // var() reference
     if (/^var\s*\([^)]+\)$/i.test(family)) continue;
-
-    // If none match, it's invalid
     return false;
   }
 
@@ -370,71 +481,61 @@ export function isValidFontFamily(value: string): boolean {
 
 /**
  * Validate duration (for animations)
- * Supports: ms, s
  */
-export function isValidDuration(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
-
+export function isValidDuration(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value === 'number') return value >= 0;
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim();
 
-  // Zero
   if (trimmed === '0' || trimmed === '0s' || trimmed === '0ms') return true;
-
-  // Number with unit
-  if (/^[\d.]+\s*(ms|s)$/i.test(trimmed)) {
-    return true;
-  }
+  if (/^[\d.]+\s*(ms|s)$/i.test(trimmed)) return true;
 
   return false;
 }
 
 /**
  * Validate easing function
- * Supports: keywords and cubic-bezier()
  */
-export function isValidEasing(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
+export function isValidEasing(value: string | number | Record<string, unknown> | number[]): boolean {
+  // Accept arrays of 4 numbers (cubicBezier format from Tokens Studio)
+  if (Array.isArray(value)) {
+    if (value.length !== 4) return false;
+    return value.every(v => typeof v === 'number' && !isNaN(v));
+  }
 
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim().toLowerCase();
 
-  // Keywords
   const keywords = ['linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out', 'step-start', 'step-end'];
   if (keywords.includes(trimmed)) return true;
+  if (/^cubic-bezier\s*\(\s*[\d.]+\s*,\s*[\d.-]+\s*,\s*[\d.]+\s*,\s*[\d.-]+\s*\)$/i.test(trimmed)) return true;
+  if (/^steps\s*\([^)]+\)$/i.test(trimmed)) return true;
 
-  // cubic-bezier()
-  if (/^cubic-bezier\s*\(\s*[\d.]+\s*,\s*[\d.-]+\s*,\s*[\d.]+\s*,\s*[\d.-]+\s*\)$/i.test(trimmed)) {
-    return true;
-  }
-
-  // steps()
-  if (/^steps\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
+  // Also accept raw cubic-bezier values (e.g., "0.25,0.1,0.25,1" or "0.25, 0.1, 0.25, 1")
+  // This is the format used in Tokens Studio when serialized as string
+  if (/^[\d.-]+\s*,\s*[\d.-]+\s*,\s*[\d.-]+\s*,\s*[\d.-]+$/.test(trimmed)) return true;
 
   return false;
 }
 
 /**
+ * Check if a value is a token reference (e.g., "{color.blue.500}")
+ */
+export function isTokenReference(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value !== 'string') return false;
+  return /^\{[a-zA-Z][a-zA-Z0-9.-]+\}$/.test(value.trim());
+}
+
+/**
  * Validate box-shadow
  */
-export function isValidShadow(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
-
+export function isValidShadow(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim().toLowerCase();
 
-  // none keyword
   if (trimmed === 'none') return true;
-
-  // Shadow value should contain at least some numeric values with units
-  // and optionally colors. This is a loose check.
-  if (/\d+(px|rem|em)/.test(trimmed)) {
-    return true;
-  }
-
-  // var() reference
-  if (/^var\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
+  if (/\d+(px|rem|em)/.test(trimmed)) return true;
+  if (/^var\s*\([^)]+\)$/i.test(trimmed)) return true;
 
   return false;
 }
@@ -442,8 +543,9 @@ export function isValidShadow(value: string): boolean {
 /**
  * Validate opacity (0-1)
  */
-export function isValidOpacity(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
+export function isValidOpacity(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value === 'number') return value >= 0 && value <= 1;
+  if (typeof value !== 'string') return false;
 
   const num = parseFloat(value.trim());
   return !isNaN(num) && num >= 0 && num <= 1;
@@ -452,15 +554,13 @@ export function isValidOpacity(value: string): boolean {
 /**
  * Validate z-index (integer)
  */
-export function isValidZIndex(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
-
+export function isValidZIndex(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value === 'number') return Number.isInteger(value);
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim();
 
-  // auto keyword
   if (trimmed.toLowerCase() === 'auto') return true;
 
-  // Integer
   const num = parseInt(trimmed, 10);
   return !isNaN(num) && num.toString() === trimmed;
 }
@@ -468,56 +568,38 @@ export function isValidZIndex(value: string): boolean {
 /**
  * Validate border radius
  */
-export function isValidBorderRadius(value: string): boolean {
-  if (!value || typeof value !== 'string') return false;
-
+export function isValidBorderRadius(value: string | number | Record<string, unknown>): boolean {
+  if (typeof value === 'number') return value >= 0;
+  if (typeof value !== 'string') return false;
   const trimmed = value.trim();
 
-  // Zero
   if (trimmed === '0') return true;
-
-  // Single value or multiple values with units
-  if (/^[\d.]+(px|rem|em|%)?(\s+[\d.]+(px|rem|em|%)?)*$/i.test(trimmed)) {
-    return true;
-  }
-
-  // var() reference
-  if (/^var\s*\([^)]+\)$/i.test(trimmed)) {
-    return true;
-  }
+  if (/^[\d.]+(px|rem|em|%)?(\s+[\d.]+(px|rem|em|%)?)*$/i.test(trimmed)) return true;
+  if (/^var\s*\([^)]+\)$/i.test(trimmed)) return true;
 
   return false;
 }
 
 // ============================================
-// WCAG Contrast Utilities (No External Dependencies)
+// WCAG Contrast Utilities
 // ============================================
 
-/**
- * RGB color interface
- */
 interface RGB {
   r: number;
   g: number;
   b: number;
 }
 
-/**
- * Parse hex color to RGB values (0-255)
- */
 function parseHexColor(hex: string): RGB | null {
-  // Remove # if present
   const cleanHex = hex.replace(/^#/, '');
 
   let r: number, g: number, b: number;
 
   if (cleanHex.length === 3) {
-    // #RGB
     r = parseInt(cleanHex[0] + cleanHex[0], 16);
     g = parseInt(cleanHex[1] + cleanHex[1], 16);
     b = parseInt(cleanHex[2] + cleanHex[2], 16);
   } else if (cleanHex.length === 6 || cleanHex.length === 8) {
-    // #RRGGBB or #RRGGBBAA
     r = parseInt(cleanHex.slice(0, 2), 16);
     g = parseInt(cleanHex.slice(2, 4), 16);
     b = parseInt(cleanHex.slice(4, 6), 16);
@@ -525,16 +607,11 @@ function parseHexColor(hex: string): RGB | null {
     return null;
   }
 
-  if (isNaN(r) || isNaN(g) || isNaN(b)) {
-    return null;
-  }
+  if (isNaN(r) || isNaN(g) || isNaN(b)) return null;
 
   return { r, g, b };
 }
 
-/**
- * Parse rgb() or rgba() color to RGB values
- */
 function parseRgbColor(rgbStr: string): RGB | null {
   const match = rgbStr.match(/rgba?\s*\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)/i);
   if (!match) return null;
@@ -548,18 +625,13 @@ function parseRgbColor(rgbStr: string): RGB | null {
   return { r, g, b };
 }
 
-/**
- * Parse any supported color format to RGB
- */
 export function parseColorToRGB(colorValue: string): RGB | null {
   if (!colorValue || typeof colorValue !== 'string') return null;
 
   const trimmed = colorValue.trim().toLowerCase();
 
-  // Handle transparent
   if (trimmed === 'transparent') return null;
 
-  // Handle common color keywords
   const colorKeywords: Record<string, RGB> = {
     white: { r: 255, g: 255, b: 255 },
     black: { r: 0, g: 0, b: 0 },
@@ -573,36 +645,18 @@ export function parseColorToRGB(colorValue: string): RGB | null {
     grey: { r: 128, g: 128, b: 128 },
   };
 
-  if (colorKeywords[trimmed]) {
-    return colorKeywords[trimmed];
-  }
-
-  // Hex colors
-  if (trimmed.startsWith('#')) {
-    return parseHexColor(trimmed);
-  }
-
-  // RGB/RGBA
-  if (trimmed.startsWith('rgb')) {
-    return parseRgbColor(trimmed);
-  }
+  if (colorKeywords[trimmed]) return colorKeywords[trimmed];
+  if (trimmed.startsWith('#')) return parseHexColor(trimmed);
+  if (trimmed.startsWith('rgb')) return parseRgbColor(trimmed);
 
   return null;
 }
 
-/**
- * Convert sRGB component to linear RGB
- * Per WCAG 2.1 algorithm
- */
 function sRGBtoLinear(value: number): number {
   const v = value / 255;
   return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
 }
 
-/**
- * Calculate relative luminance per WCAG 2.1
- * https://www.w3.org/WAI/WCAG21/Techniques/general/G17.html
- */
 export function getRelativeLuminance(rgb: RGB): number {
   const r = sRGBtoLinear(rgb.r);
   const g = sRGBtoLinear(rgb.g);
@@ -611,10 +665,6 @@ export function getRelativeLuminance(rgb: RGB): number {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }
 
-/**
- * Calculate WCAG 2.1 contrast ratio between two colors
- * Returns ratio as a number (e.g., 4.5 for 4.5:1)
- */
 export function getContrastRatio(foreground: string, background: string): number | null {
   const fgRGB = parseColorToRGB(foreground);
   const bgRGB = parseColorToRGB(background);
@@ -624,57 +674,47 @@ export function getContrastRatio(foreground: string, background: string): number
   const L1 = getRelativeLuminance(fgRGB);
   const L2 = getRelativeLuminance(bgRGB);
 
-  // Lighter color should be L1
   const lighter = Math.max(L1, L2);
   const darker = Math.min(L1, L2);
 
   return (lighter + 0.05) / (darker + 0.05);
 }
 
-/**
- * Check if contrast meets WCAG AA for normal text (4.5:1)
- */
 export function meetsWCAG_AA(foreground: string, background: string): boolean {
   const ratio = getContrastRatio(foreground, background);
   return ratio !== null && ratio >= 4.5;
 }
 
-/**
- * Check if contrast meets WCAG AA for large text (3:1)
- */
 export function meetsWCAG_AA_LargeText(foreground: string, background: string): boolean {
   const ratio = getContrastRatio(foreground, background);
   return ratio !== null && ratio >= 3;
 }
 
-/**
- * Check if contrast meets WCAG AAA for normal text (7:1)
- */
 export function meetsWCAG_AAA(foreground: string, background: string): boolean {
   const ratio = getContrastRatio(foreground, background);
   return ratio !== null && ratio >= 7;
 }
 
 // ============================================
-// File existence helpers
+// File existence helpers (legacy compatibility)
 // ============================================
 
-export function cssFileExists(themeName: string, fileName: string): boolean {
-  return existsSync(join(CSS_DIR, themeName, fileName));
+export function primitiveFileExists(setName: string): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, 'primitives', `${setName}.json`));
 }
 
-export function jsonFileExists(themeName: string, fileName: string): boolean {
-  return existsSync(join(JSON_DIR, themeName, fileName));
+export function semanticFileExists(themeName: string): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, 'semantic', `${themeName}.json`));
 }
 
-export function getDistPath(): string {
-  return DIST_DIR;
+export function componentFileExists(setName: string): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, 'component', `${setName}.json`));
 }
 
-export function getCSSPath(themeName: string): string {
-  return join(CSS_DIR, themeName);
+export function themesConfigExists(): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, '$themes.json'));
 }
 
-export function getJSONPath(themeName: string): string {
-  return join(JSON_DIR, themeName);
+export function metadataExists(): boolean {
+  return existsSync(join(TOKENS_STUDIO_DIR, '$metadata.json'));
 }

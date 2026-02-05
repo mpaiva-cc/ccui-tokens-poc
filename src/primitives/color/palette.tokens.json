@@ -1,0 +1,200 @@
+{
+  "$description": "Core color palette primitives using OKLCH-optimized values. Palette colors are organized in 10-shade scales (50-900) where 50 is lightest and 900 is darkest. Shades 500-600 are typically the 'base' shade for each color. Use slashes in paths for Figma hierarchy: color/blue/500.",
+  "color": {
+    "$type": "color",
+    "white": {
+      "$value": "#ffffff",
+      "$description": "Pure white. Use for: light theme backgrounds, text on dark backgrounds."
+    },
+    "black": {
+      "$value": "#000000",
+      "$description": "Pure black. Use for: dark theme text emphasis, high-contrast borders."
+    },
+    "transparent": {
+      "$value": "transparent",
+      "$description": "Fully transparent. Use for: invisible interactive areas, overlay starting states."
+    },
+    "dark": {
+      "$description": "Neutral dark scale (10 shades). Primary use: dark theme backgrounds, surfaces, and UI chrome.",
+      "50": { "$value": "#d5d7d9", "$description": "Lightest dark - text color on dark backgrounds" },
+      "100": { "$value": "#b4b7bb", "$description": "Light dark - secondary text on dark theme" },
+      "200": { "$value": "#93979c", "$description": "Mid-light dark - placeholder text on dark theme" },
+      "300": { "$value": "#74787e", "$description": "Medium dark - dimmed text, decorative elements" },
+      "400": { "$value": "#565b61", "$description": "Mid dark - borders on dark theme, dividers" },
+      "500": { "$value": "#3a3f46", "$description": "Base dark - elevated surfaces on dark theme" },
+      "600": { "$value": "#21262d", "$description": "Dark base - primary dark theme background" },
+      "700": { "$value": "#181c22", "$description": "Darker - alternative dark background" },
+      "800": { "$value": "#13161b", "$description": "Very dark - modal overlays on dark theme" },
+      "900": { "$value": "#0e1014", "$description": "Darkest - near-black for maximum contrast" }
+    },
+    "gray": {
+      "$description": "Neutral gray scale (10 shades). Primary use: borders, dividers, disabled states, secondary text.",
+      "50": { "$value": "#f3f4f5", "$description": "Lightest gray - subtle backgrounds, hover states" },
+      "100": { "$value": "#e4e6e8", "$description": "Light gray - input backgrounds, disabled backgrounds" },
+      "200": { "$value": "#c8cbce", "$description": "Mid-light gray - borders, dividers" },
+      "300": { "$value": "#adb1b5", "$description": "Medium gray - placeholder text, icons" },
+      "400": { "$value": "#92979d", "$description": "Mid gray - secondary icons, chart gridlines" },
+      "500": { "$value": "#787e85", "$description": "Base gray - dimmed text, help text" },
+      "600": { "$value": "#5f656d", "$description": "Dark gray - secondary text, labels" },
+      "700": { "$value": "#474d55", "$description": "Darker gray - primary text alternative" },
+      "800": { "$value": "#31363d", "$description": "Very dark gray - high-emphasis text" },
+      "900": { "$value": "#1c2026", "$description": "Darkest gray - headings, maximum emphasis" }
+    },
+    "red": {
+      "$description": "Red scale (10 shades). Semantic meaning: error, danger, destructive actions.",
+      "50": { "$value": "#fef1f0", "$description": "Lightest red - error alert backgrounds" },
+      "100": { "$value": "#fcdcda", "$description": "Light red - hover state for error backgrounds" },
+      "200": { "$value": "#f9b8b4", "$description": "Mid-light red - progress indicators" },
+      "300": { "$value": "#f4928c", "$description": "Medium red - icons on error backgrounds" },
+      "400": { "$value": "#ed6a63", "$description": "Mid red - error icons on white backgrounds" },
+      "500": { "$value": "#e5413a", "$description": "Base red - primary destructive buttons" },
+      "600": { "$value": "#cf2720", "$description": "Dark red - error text on white" },
+      "700": { "$value": "#a01d18", "$description": "Darker red - error text with maximum contrast" },
+      "800": { "$value": "#731511", "$description": "Very dark red - text on light red backgrounds" },
+      "900": { "$value": "#480d0b", "$description": "Darkest red - extreme emphasis" }
+    },
+    "pink": {
+      "$description": "Pink scale (10 shades). Decorative accent color.",
+      "50": { "$value": "#fdeef5", "$description": "Lightest pink - subtle highlights" },
+      "100": { "$value": "#fad7e7", "$description": "Light pink - hover states" },
+      "200": { "$value": "#f5afcf", "$description": "Mid-light pink - decorative borders" },
+      "300": { "$value": "#ee85b5", "$description": "Medium pink - icons, illustrations" },
+      "400": { "$value": "#e55a9b", "$description": "Mid pink - interactive elements" },
+      "500": { "$value": "#da2d80", "$description": "Base pink - primary accent applications" },
+      "600": { "$value": "#b91f69", "$description": "Dark pink - text on light pink backgrounds" },
+      "700": { "$value": "#8e1851", "$description": "Darker pink - high contrast applications" },
+      "800": { "$value": "#65113a", "$description": "Very dark pink - text on light backgrounds" },
+      "900": { "$value": "#3f0b24", "$description": "Darkest pink - maximum emphasis" }
+    },
+    "grape": {
+      "$description": "Grape/purple scale (10 shades). Decorative accent - suggests creativity, premium.",
+      "50": { "$value": "#fbeff9", "$description": "Lightest grape - premium feature backgrounds" },
+      "100": { "$value": "#f5d9f1", "$description": "Light grape - hover states" },
+      "200": { "$value": "#ebb3e3", "$description": "Mid-light grape - decorative elements" },
+      "300": { "$value": "#df8bd3", "$description": "Medium grape - icons, illustrations" },
+      "400": { "$value": "#d262c2", "$description": "Mid grape - interactive accents" },
+      "500": { "$value": "#c338b0", "$description": "Base grape - primary grape applications" },
+      "600": { "$value": "#a22993", "$description": "Dark grape - text on light grape backgrounds" },
+      "700": { "$value": "#7c2071", "$description": "Darker grape - high contrast" },
+      "800": { "$value": "#581750", "$description": "Very dark grape - text applications" },
+      "900": { "$value": "#370e32", "$description": "Darkest grape - maximum emphasis" }
+    },
+    "violet": {
+      "$description": "Violet scale (10 shades). Decorative accent - suggests innovation, technology.",
+      "50": { "$value": "#f5f1fd", "$description": "Lightest violet - feature highlight backgrounds" },
+      "100": { "$value": "#e6dcfa", "$description": "Light violet - hover states" },
+      "200": { "$value": "#cdb9f5", "$description": "Mid-light violet - decorative" },
+      "300": { "$value": "#b396ef", "$description": "Medium violet - icons" },
+      "400": { "$value": "#9872e8", "$description": "Mid violet - interactive elements" },
+      "500": { "$value": "#7c4ee0", "$description": "Base violet - primary applications" },
+      "600": { "$value": "#6536c7", "$description": "Dark violet - text on light backgrounds" },
+      "700": { "$value": "#4e2a99", "$description": "Darker violet - high contrast" },
+      "800": { "$value": "#381e6d", "$description": "Very dark violet - text" },
+      "900": { "$value": "#231344", "$description": "Darkest violet - maximum emphasis" }
+    },
+    "indigo": {
+      "$description": "Indigo scale (10 shades). Decorative accent between blue and violet.",
+      "50": { "$value": "#f0f2fe", "$description": "Lightest indigo - subtle backgrounds" },
+      "100": { "$value": "#dce0fc", "$description": "Light indigo - hover states" },
+      "200": { "$value": "#b9c2f9", "$description": "Mid-light indigo - decorative" },
+      "300": { "$value": "#96a3f5", "$description": "Medium indigo - icons" },
+      "400": { "$value": "#7284f0", "$description": "Mid indigo - interactive elements" },
+      "500": { "$value": "#4e65ea", "$description": "Base indigo - primary applications" },
+      "600": { "$value": "#364fd0", "$description": "Dark indigo - text on light backgrounds" },
+      "700": { "$value": "#2a3da0", "$description": "Darker indigo - high contrast" },
+      "800": { "$value": "#1e2c72", "$description": "Very dark indigo - text" },
+      "900": { "$value": "#131c47", "$description": "Darkest indigo - maximum emphasis" }
+    },
+    "blue": {
+      "$description": "Blue scale (10 shades). PRIMARY BRAND COLOR - use for primary actions, links, focus states.",
+      "50": { "$value": "#eaf3fe", "$description": "Lightest blue - primary light backgrounds" },
+      "100": { "$value": "#cfe3fc", "$description": "Light blue - hover backgrounds, info alerts" },
+      "200": { "$value": "#9fc8fa", "$description": "Mid-light blue - progress bars, decorative" },
+      "300": { "$value": "#6eacf6", "$description": "Medium blue - icons on light backgrounds" },
+      "400": { "$value": "#3c90f1", "$description": "Mid blue - primary buttons on dark theme" },
+      "500": { "$value": "#0974eb", "$description": "Base blue - primary buttons, links (light theme)" },
+      "600": { "$value": "#0760c6", "$description": "Dark blue - primary brand color, main CTAs" },
+      "700": { "$value": "#064a98", "$description": "Darker blue - pressed states" },
+      "800": { "$value": "#04356c", "$description": "Very dark blue - high contrast text" },
+      "900": { "$value": "#032142", "$description": "Darkest blue - maximum emphasis" }
+    },
+    "cyan": {
+      "$description": "Cyan scale (10 shades). Decorative accent - suggests freshness, clarity.",
+      "50": { "$value": "#e5f6fa", "$description": "Lightest cyan - info backgrounds" },
+      "100": { "$value": "#c5eaf3", "$description": "Light cyan - hover states" },
+      "200": { "$value": "#8cd6e7", "$description": "Mid-light cyan - decorative" },
+      "300": { "$value": "#52c1da", "$description": "Medium cyan - icons" },
+      "400": { "$value": "#17accc", "$description": "Mid cyan - interactive elements" },
+      "500": { "$value": "#0d95b3", "$description": "Base cyan - primary applications" },
+      "600": { "$value": "#0b7d96", "$description": "Dark cyan - text on light backgrounds" },
+      "700": { "$value": "#086073", "$description": "Darker cyan - high contrast" },
+      "800": { "$value": "#064552", "$description": "Very dark cyan - text" },
+      "900": { "$value": "#042b33", "$description": "Darkest cyan - maximum emphasis" }
+    },
+    "teal": {
+      "$description": "Teal scale (10 shades). Decorative accent between cyan and green.",
+      "50": { "$value": "#e3f7f3", "$description": "Lightest teal - subtle success backgrounds" },
+      "100": { "$value": "#c0ede4", "$description": "Light teal - hover states" },
+      "200": { "$value": "#83dcc9", "$description": "Mid-light teal - decorative" },
+      "300": { "$value": "#46caae", "$description": "Medium teal - icons" },
+      "400": { "$value": "#10b794", "$description": "Mid teal - interactive elements" },
+      "500": { "$value": "#0e9e80", "$description": "Base teal - primary applications" },
+      "600": { "$value": "#0c846b", "$description": "Dark teal - text on light backgrounds" },
+      "700": { "$value": "#096552", "$description": "Darker teal - high contrast" },
+      "800": { "$value": "#06483b", "$description": "Very dark teal - text" },
+      "900": { "$value": "#042d25", "$description": "Darkest teal - maximum emphasis" }
+    },
+    "green": {
+      "$description": "Green scale (10 shades). Semantic meaning: success, positive actions, completion.",
+      "50": { "$value": "#e7f6ec", "$description": "Lightest green - success alert backgrounds" },
+      "100": { "$value": "#c9ead4", "$description": "Light green - hover state for success backgrounds" },
+      "200": { "$value": "#94d6aa", "$description": "Mid-light green - progress indicators" },
+      "300": { "$value": "#5fc180", "$description": "Medium green - success icons on light backgrounds" },
+      "400": { "$value": "#2aab58", "$description": "Mid green - success badges, online indicators" },
+      "500": { "$value": "#1d9448", "$description": "Base green - primary success buttons" },
+      "600": { "$value": "#187c3c", "$description": "Dark green - success text on white" },
+      "700": { "$value": "#125f2e", "$description": "Darker green - success text with maximum contrast" },
+      "800": { "$value": "#0d4421", "$description": "Very dark green - text on light green backgrounds" },
+      "900": { "$value": "#082a15", "$description": "Darkest green - extreme emphasis" }
+    },
+    "lime": {
+      "$description": "Lime scale (10 shades). Decorative accent - suggests freshness, nature.",
+      "50": { "$value": "#eef6dc", "$description": "Lightest lime - subtle backgrounds" },
+      "100": { "$value": "#daedb4", "$description": "Light lime - hover states" },
+      "200": { "$value": "#b6db6e", "$description": "Mid-light lime - decorative" },
+      "300": { "$value": "#93c82d", "$description": "Medium lime - icons, highlights" },
+      "400": { "$value": "#7eb11c", "$description": "Mid lime - interactive elements" },
+      "500": { "$value": "#6d9918", "$description": "Base lime - primary applications" },
+      "600": { "$value": "#5b8014", "$description": "Dark lime - text on light backgrounds" },
+      "700": { "$value": "#466210", "$description": "Darker lime - high contrast" },
+      "800": { "$value": "#32460b", "$description": "Very dark lime - text" },
+      "900": { "$value": "#1f2b07", "$description": "Darkest lime - maximum emphasis" }
+    },
+    "yellow": {
+      "$description": "Yellow scale (10 shades). Semantic meaning: warning, caution, pending states.",
+      "50": { "$value": "#fef6dc", "$description": "Lightest yellow - warning backgrounds" },
+      "100": { "$value": "#fceab3", "$description": "Light yellow - hover state for warning backgrounds" },
+      "200": { "$value": "#f9d56a", "$description": "Mid-light yellow - caution icons" },
+      "300": { "$value": "#f5c023", "$description": "Medium yellow - warning badges" },
+      "400": { "$value": "#daa711", "$description": "Mid yellow - decorative, charts" },
+      "500": { "$value": "#bc900f", "$description": "Base yellow - rarely used for text" },
+      "600": { "$value": "#9d780c", "$description": "Dark yellow - minimum for text" },
+      "700": { "$value": "#795c0a", "$description": "Darker yellow - warning text on light backgrounds" },
+      "800": { "$value": "#564207", "$description": "Very dark yellow - safe for body text on white" },
+      "900": { "$value": "#352904", "$description": "Darkest yellow - high contrast text" }
+    },
+    "orange": {
+      "$description": "Orange scale (10 shades). Decorative accent - suggests energy, warmth.",
+      "50": { "$value": "#fef1e6", "$description": "Lightest orange - promotional backgrounds" },
+      "100": { "$value": "#fcddc6", "$description": "Light orange - hover states" },
+      "200": { "$value": "#f9bb8f", "$description": "Mid-light orange - decorative" },
+      "300": { "$value": "#f49857", "$description": "Medium orange - icons, highlights" },
+      "400": { "$value": "#ed7621", "$description": "Mid orange - interactive elements" },
+      "500": { "$value": "#d2620f", "$description": "Base orange - primary applications" },
+      "600": { "$value": "#af520c", "$description": "Dark orange - text on light backgrounds" },
+      "700": { "$value": "#873f0a", "$description": "Darker orange - high contrast" },
+      "800": { "$value": "#612d07", "$description": "Very dark orange - text" },
+      "900": { "$value": "#3c1c04", "$description": "Darkest orange - maximum emphasis" }
+    }
+  }
+}

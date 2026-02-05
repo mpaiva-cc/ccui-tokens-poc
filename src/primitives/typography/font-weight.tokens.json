@@ -1,0 +1,28 @@
+{
+  "$description": "Core font weight primitives for typographic emphasis hierarchy.",
+  "typography": {
+    "font-weight": {
+      "$type": "fontWeight",
+      "light": {
+        "$value": 300,
+        "$description": "Light font weight (300). Use sparingly for: large display text."
+      },
+      "regular": {
+        "$value": 400,
+        "$description": "Regular font weight (400). DEFAULT for all body text."
+      },
+      "medium": {
+        "$value": 500,
+        "$description": "Medium font weight (500). Use for: subtle emphasis, navigation items."
+      },
+      "semibold": {
+        "$value": 600,
+        "$description": "Semibold font weight (600). Use for: buttons, important labels."
+      },
+      "bold": {
+        "$value": 700,
+        "$description": "Bold font weight (700). Use for: headings (h1-h3)."
+      }
+    }
+  }
+}

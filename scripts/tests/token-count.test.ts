@@ -3,196 +3,188 @@
  *
  * Prevents accidental token removal by enforcing minimum counts.
  * These thresholds should be updated when intentionally adding/removing tokens.
+ *
+ * New architecture:
+ * - Primitives: dist/tokens-studio/primitives/*.json
+ * - Semantic: dist/tokens-studio/semantic/{light,dark,high-contrast}.json
+ * - Component: dist/tokens-studio/component/*.json
  */
 import { describe, it, expect } from 'vitest';
 import {
   getThemeNames,
-  loadFlatTokenJSON,
-  loadThemeCSS,
+  getPrimitiveSetNames,
+  getComponentSetNames,
+  loadSemanticTokens,
+  loadPrimitiveTokens,
+  loadComponentTokens,
+  loadMainCSS,
   parseCSSVariables,
+  flattenTokens,
 } from './test-utils';
 
 /**
  * Minimum expected token counts per category.
  * Update these when intentionally adding or removing tokens.
- *
- * Current baselines (as of initial implementation):
- * - Total tokens: ~90-100 per theme
- * - Color tokens: ~5+ (colorPalette tokens are separate)
- * - Spacing tokens: currently 0 (spacing is in core primitives)
- * - Typography tokens: ~1+ per theme
  */
 const MIN_TOKEN_COUNTS = {
-  total: 80, // Minimum total tokens per theme (dark=93, light=99)
-  colors: 3, // Minimum color-related tokens (theme semantic colors)
-  spacing: 0, // Spacing is in core primitives, not theme-specific
-  typography: 1, // Minimum typography tokens
-  ccuiVariables: 50, // Minimum --ccui-* CSS variables
-  mantineVariables: 50, // Minimum --mantine-* CSS variables
+  primitivesPerSet: 5, // Minimum tokens per primitive set
+  semanticPerTheme: 30, // Minimum semantic tokens per theme
+  componentPerSet: 5, // Minimum component tokens per set
+  cssVariables: 100, // Minimum total CSS variables
 };
 
 describe('Token Count Regression', () => {
-  const themes = getThemeNames();
+  describe('Primitive Token Counts', () => {
+    const primitives = getPrimitiveSetNames();
 
-  describe.each(themes)('Theme: %s', (themeName) => {
-    const flatTokens = loadFlatTokenJSON(themeName);
-    const tokenKeys = Object.keys(flatTokens);
+    it('should have expected number of primitive sets', () => {
+      expect(primitives.length).toBeGreaterThanOrEqual(5);
+    });
 
-    describe('Total Token Counts', () => {
-      it(`should have at least ${MIN_TOKEN_COUNTS.total} total tokens`, () => {
-        expect(tokenKeys.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.total);
+    describe.each(primitives)('Primitive: %s', (setName) => {
+      const tokens = loadPrimitiveTokens(setName);
+      const flat = flattenTokens(tokens);
+      const count = Object.keys(flat).length;
+
+      it(`should have at least ${MIN_TOKEN_COUNTS.primitivesPerSet} tokens`, () => {
+        expect(count).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.primitivesPerSet);
       });
 
-      it('should report current token count', () => {
-        console.log(`${themeName}: ${tokenKeys.length} total tokens`);
+      it('should report token count', () => {
+        console.log(`primitives/${setName}: ${count} tokens`);
         expect(true).toBe(true);
       });
     });
 
-    describe('Color Token Counts', () => {
-      const colorTokens = tokenKeys.filter(
-        (key) =>
-          key.toLowerCase().includes('color') ||
-          key.toLowerCase().includes('background') ||
-          (key.toLowerCase().includes('border') &&
-            !key.toLowerCase().includes('radius') &&
-            !key.toLowerCase().includes('width'))
-      );
+    it('should report total primitive tokens', () => {
+      let total = 0;
+      for (const setName of primitives) {
+        const tokens = loadPrimitiveTokens(setName);
+        const flat = flattenTokens(tokens);
+        total += Object.keys(flat).length;
+      }
+      console.log(`Total primitives: ${total} tokens across ${primitives.length} sets`);
+      expect(total).toBeGreaterThan(50);
+    });
+  });
 
-      it(`should have at least ${MIN_TOKEN_COUNTS.colors} color tokens`, () => {
-        expect(colorTokens.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.colors);
+  describe('Semantic Token Counts', () => {
+    const themes = getThemeNames();
+
+    describe.each(themes)('Theme: %s', (themeName) => {
+      const tokens = loadSemanticTokens(themeName);
+      const flat = flattenTokens(tokens);
+      const count = Object.keys(flat).length;
+
+      it(`should have at least ${MIN_TOKEN_COUNTS.semanticPerTheme} tokens`, () => {
+        expect(count).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.semanticPerTheme);
       });
 
-      it('should report color token count', () => {
-        console.log(`${themeName}: ${colorTokens.length} color tokens`);
+      it('should report token count', () => {
+        console.log(`semantic/${themeName}: ${count} tokens`);
         expect(true).toBe(true);
       });
-    });
 
-    describe('Spacing Token Counts', () => {
-      const spacingTokens = tokenKeys.filter(
-        (key) =>
-          key.toLowerCase().includes('spacing') ||
-          key.toLowerCase().includes('gap') ||
-          key.toLowerCase().includes('padding') ||
-          key.toLowerCase().includes('margin')
-      );
-
-      it(`should have at least ${MIN_TOKEN_COUNTS.spacing} spacing tokens`, () => {
-        expect(spacingTokens.length).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.spacing);
+      it('should have color tokens', () => {
+        const colorTokens = Object.keys(flat).filter(k => k.includes('color'));
+        expect(colorTokens.length).toBeGreaterThan(10);
       });
     });
 
-    describe('Typography Token Counts', () => {
-      const typographyTokens = tokenKeys.filter(
-        (key) =>
-          key.toLowerCase().includes('font') ||
-          key.toLowerCase().includes('text') ||
-          key.toLowerCase().includes('line-height') ||
-          key.toLowerCase().includes('letter-spacing')
-      );
-
-      it(`should have at least ${MIN_TOKEN_COUNTS.typography} typography tokens`, () => {
-        expect(typographyTokens.length).toBeGreaterThanOrEqual(
-          MIN_TOKEN_COUNTS.typography
-        );
+    it('all themes should have identical token counts', () => {
+      const counts = themes.map((theme) => {
+        const tokens = loadSemanticTokens(theme);
+        const flat = flattenTokens(tokens);
+        return Object.keys(flat).length;
       });
+
+      const uniqueCounts = new Set(counts);
+      expect(
+        uniqueCounts.size,
+        `All themes should have same count. Found: ${themes.map((t, i) => `${t}=${counts[i]}`).join(', ')}`
+      ).toBe(1);
+    });
+  });
+
+  describe('Component Token Counts', () => {
+    const components = getComponentSetNames();
+
+    it('should have expected number of component sets', () => {
+      expect(components.length).toBeGreaterThanOrEqual(3);
     });
 
-    describe('CSS Variable Counts', () => {
-      // Load theme-specific and shared files
-      const ccuiSemanticCSS = loadThemeCSS(themeName, 'ccui-semantic.css');
-      const ccuiPrimitivesCSS = loadThemeCSS('shared', 'ccui-primitives.css');
-      const ccuiSemanticVars = parseCSSVariables(ccuiSemanticCSS);
-      const ccuiPrimitiveVars = parseCSSVariables(ccuiPrimitivesCSS);
-      const ccuiCount = Array.from(ccuiSemanticVars.keys()).filter((k) =>
-        k.startsWith('--ccui-')
-      ).length + Array.from(ccuiPrimitiveVars.keys()).filter((k) =>
-        k.startsWith('--ccui-')
-      ).length;
+    describe.each(components)('Component: %s', (setName) => {
+      const tokens = loadComponentTokens(setName);
+      const flat = flattenTokens(tokens);
+      const count = Object.keys(flat).length;
 
-      const mantineCSS = loadThemeCSS(themeName, 'mantine-theme.css');
-      const mantinePrimitivesCSS = loadThemeCSS('shared', 'mantine-primitives.css');
-      const mantineVars = parseCSSVariables(mantineCSS);
-      const mantinePrimitiveVars = parseCSSVariables(mantinePrimitivesCSS);
-      const mantineCount = Array.from(mantineVars.keys()).filter((k) =>
-        k.startsWith('--mantine-')
-      ).length + Array.from(mantinePrimitiveVars.keys()).filter((k) =>
-        k.startsWith('--mantine-')
-      ).length;
-
-      it(`should have at least ${MIN_TOKEN_COUNTS.ccuiVariables} CCUI CSS variables`, () => {
-        expect(ccuiCount).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.ccuiVariables);
+      it(`should have at least ${MIN_TOKEN_COUNTS.componentPerSet} tokens`, () => {
+        expect(count).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.componentPerSet);
       });
 
-      it(`should have at least ${MIN_TOKEN_COUNTS.mantineVariables} Mantine CSS variables`, () => {
-        expect(mantineCount).toBeGreaterThanOrEqual(
-          MIN_TOKEN_COUNTS.mantineVariables
-        );
-      });
-
-      it('should report CSS variable counts', () => {
-        console.log(`${themeName}: ${ccuiCount} CCUI vars, ${mantineCount} Mantine vars`);
+      it('should report token count', () => {
+        console.log(`component/${setName}: ${count} tokens`);
         expect(true).toBe(true);
       });
     });
   });
 
-  describe('Token Count Change Detection', () => {
-    it('should detect significant token count changes between themes', () => {
-      if (themes.length < 2) {
-        console.log('Only one theme - skipping comparison');
-        return;
-      }
+  describe('CSS Variable Counts', () => {
+    const css = loadMainCSS();
+    const allVars = parseCSSVariables(css);
 
-      const counts = themes.map((theme) => {
-        const flatTokens = loadFlatTokenJSON(theme);
-        return {
-          theme,
-          count: Object.keys(flatTokens).length,
-        };
-      });
+    it(`should have at least ${MIN_TOKEN_COUNTS.cssVariables} CSS variables`, () => {
+      expect(allVars.size).toBeGreaterThanOrEqual(MIN_TOKEN_COUNTS.cssVariables);
+    });
 
-      const maxCount = Math.max(...counts.map((c) => c.count));
-      const minCount = Math.min(...counts.map((c) => c.count));
+    it('should have CCUI-prefixed variables', () => {
+      const ccuiVars = Array.from(allVars.keys()).filter(k => k.startsWith('--ccui-'));
+      expect(ccuiVars.length).toBeGreaterThan(50);
+      console.log(`CCUI CSS variables: ${ccuiVars.length}`);
+    });
 
-      // Alert if there's more than 10% difference
-      const percentDiff = ((maxCount - minCount) / maxCount) * 100;
-
-      if (percentDiff > 10) {
-        console.warn(
-          `Token count difference between themes: ${percentDiff.toFixed(1)}%`
-        );
-        counts.forEach(({ theme, count }) => {
-          console.warn(`  ${theme}: ${count} tokens`);
-        });
-      }
-
-      // Don't fail, just warn
+    it('should report total CSS variable count', () => {
+      console.log(`Total CSS variables: ${allVars.size}`);
       expect(true).toBe(true);
     });
   });
 
   describe('Category Breakdown', () => {
-    it('should report token breakdown by category', () => {
-      const theme = themes[0];
-      const flatTokens = loadFlatTokenJSON(theme);
-      const tokenKeys = Object.keys(flatTokens);
+    it('should report token breakdown by category for primitives', () => {
+      console.log('\nPrimitive token breakdown:');
 
-      // Count tokens by prefix/category
+      for (const setName of getPrimitiveSetNames()) {
+        const tokens = loadPrimitiveTokens(setName);
+        const flat = flattenTokens(tokens);
+        const categories = new Map<string, number>();
+
+        for (const key of Object.keys(flat)) {
+          const category = key.split('.')[0];
+          categories.set(category, (categories.get(category) || 0) + 1);
+        }
+
+        console.log(`  ${setName}:`);
+        for (const [category, count] of [...categories.entries()].sort((a, b) => b[1] - a[1])) {
+          console.log(`    ${category}: ${count}`);
+        }
+      }
+
+      expect(true).toBe(true);
+    });
+
+    it('should report token breakdown by category for semantic tokens', () => {
+      const theme = getThemeNames()[0];
+      const tokens = loadSemanticTokens(theme);
+      const flat = flattenTokens(tokens);
       const categories = new Map<string, number>();
 
-      for (const key of tokenKeys) {
-        // Get first part of token path
+      for (const key of Object.keys(flat)) {
         const category = key.split('.')[0];
         categories.set(category, (categories.get(category) || 0) + 1);
       }
 
-      console.log(`\nToken breakdown for ${theme}:`);
-      const sortedCategories = [...categories.entries()].sort(
-        (a, b) => b[1] - a[1]
-      );
-      for (const [category, count] of sortedCategories) {
+      console.log(`\nSemantic token breakdown (${theme}):`);
+      for (const [category, count] of [...categories.entries()].sort((a, b) => b[1] - a[1])) {
         console.log(`  ${category}: ${count}`);
       }
 

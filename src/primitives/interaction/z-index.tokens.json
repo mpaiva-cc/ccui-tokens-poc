@@ -1,0 +1,34 @@
+{
+  "$description": "Core z-index primitives for stacking order and layering.",
+  "z-index": {
+    "$type": "number",
+    "base": {
+      "$value": 0,
+      "$description": "Base layer (z-index: 0). DEFAULT for all standard content."
+    },
+    "dropdown": {
+      "$value": 100,
+      "$description": "Dropdown layer (z-index: 100). Dropdown menus, selects."
+    },
+    "sticky": {
+      "$value": 200,
+      "$description": "Sticky layer (z-index: 200). Sticky headers, fixed navigation."
+    },
+    "overlay": {
+      "$value": 300,
+      "$description": "Overlay layer (z-index: 300). Modal backdrops."
+    },
+    "modal": {
+      "$value": 400,
+      "$description": "Modal layer (z-index: 400). Modal dialogs, drawers."
+    },
+    "popover": {
+      "$value": 500,
+      "$description": "Popover layer (z-index: 500). Popovers in modals."
+    },
+    "tooltip": {
+      "$value": 600,
+      "$description": "Tooltip layer (z-index: 600). HIGHEST standard layer."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$description": "Core animation duration primitives for consistent motion timing.",
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "instant": {
+        "$value": "0ms",
+        "$description": "Instant/no duration (0ms). Use for: prefers-reduced-motion fallback."
+      },
+      "fast": {
+        "$value": "100ms",
+        "$description": "Fast transitions (100ms). Use for: micro-interactions, hover states."
+      },
+      "normal": {
+        "$value": "200ms",
+        "$description": "Normal transitions (200ms). DEFAULT for most UI transitions."
+      },
+      "slow": {
+        "$value": "300ms",
+        "$description": "Slow transitions (300ms). Use for: larger element transitions."
+      },
+      "slower": {
+        "$value": "500ms",
+        "$description": "Slower transitions (500ms). MAXIMUM recommended duration."
+      }
+    }
+  }
+}

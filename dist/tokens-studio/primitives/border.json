@@ -1,0 +1,48 @@
+{
+  "border": {
+    "style": {
+      "none": {
+        "$value": "none",
+        "$type": "strokeStyle",
+        "$description": "No border style."
+      },
+      "solid": {
+        "$value": "solid",
+        "$type": "strokeStyle",
+        "$description": "Solid border style. DEFAULT for all standard borders."
+      },
+      "dashed": {
+        "$value": "dashed",
+        "$type": "strokeStyle",
+        "$description": "Dashed border style. Use for: drop zones, placeholder elements."
+      },
+      "dotted": {
+        "$value": "dotted",
+        "$type": "strokeStyle",
+        "$description": "Dotted border style. Use for: decorative elements."
+      }
+    },
+    "width": {
+      "0": {
+        "$value": "0",
+        "$type": "dimension",
+        "$description": "No border (0px). Use for: removing inherited borders."
+      },
+      "100": {
+        "$value": "1px",
+        "$type": "dimension",
+        "$description": "Thin border (1px). DEFAULT for most UI borders."
+      },
+      "200": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Medium border (2px). Use for: emphasis, active states."
+      },
+      "400": {
+        "$value": "4px",
+        "$type": "dimension",
+        "$description": "Thick border (4px). Use for: strong emphasis."
+      }
+    }
+  }
+}

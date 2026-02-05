@@ -1,0 +1,148 @@
+{
+  "$description": "Semantic color tokens for the dark theme. These tokens provide MEANING-based color usage.",
+  "color": {
+    "$type": "color",
+    "text": {
+      "primary": {
+        "$value": "{color.white}",
+        "$description": "Primary text color. Use for: headings, body text, labels."
+      },
+      "secondary": {
+        "$value": "{color.gray.300}",
+        "$description": "Secondary text color. Use for: metadata, timestamps, captions."
+      },
+      "tertiary": {
+        "$value": "{color.gray.400}",
+        "$description": "Tertiary text color. Use for: placeholder text, help text."
+      },
+      "disabled": {
+        "$value": "{color.gray.600}",
+        "$description": "Disabled text color."
+      },
+      "inverse": {
+        "$value": "{color.black}",
+        "$description": "Inverse text color. Use for: text on light backgrounds."
+      },
+      "error": {
+        "$value": "{color.red.400}",
+        "$description": "Error text color (lighter for dark theme)."
+      },
+      "success": {
+        "$value": "{color.green.400}",
+        "$description": "Success text color."
+      },
+      "warning": {
+        "$value": "{color.yellow.400}",
+        "$description": "Warning text color."
+      },
+      "info": {
+        "$value": "{color.blue.400}",
+        "$description": "Info text color."
+      }
+    },
+    "surface": {
+      "primary": {
+        "$value": "{color.dark.900}",
+        "$description": "Primary surface. Use for: page backgrounds."
+      },
+      "secondary": {
+        "$value": "{color.dark.800}",
+        "$description": "Secondary surface. Use for: cards, panels."
+      },
+      "tertiary": {
+        "$value": "{color.dark.700}",
+        "$description": "Tertiary surface. Use for: input backgrounds."
+      },
+      "elevated": {
+        "$value": "{color.dark.800}",
+        "$description": "Elevated surface. Use for: modals, dropdowns."
+      },
+      "inverse": {
+        "$value": "{color.gray.100}",
+        "$description": "Inverse surface. Use for: light elements on dark."
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{color.dark.700}",
+        "$description": "Default border color."
+      },
+      "strong": {
+        "$value": "{color.dark.600}",
+        "$description": "Strong border color."
+      },
+      "subtle": {
+        "$value": "{color.dark.800}",
+        "$description": "Subtle border color."
+      },
+      "focus": {
+        "$value": "{color.blue.400}",
+        "$description": "Focus border/ring color."
+      }
+    },
+    "action": {
+      "primary": {
+        "$value": "{color.blue.500}",
+        "$description": "Primary action color. Lighter than light theme."
+      },
+      "primary-hover": {
+        "$value": "{color.blue.400}",
+        "$description": "Primary action hover color."
+      },
+      "primary-active": {
+        "$value": "{color.blue.300}",
+        "$description": "Primary action active/pressed color."
+      },
+      "secondary": {
+        "$value": "{color.dark.800}",
+        "$description": "Secondary action background."
+      },
+      "secondary-hover": {
+        "$value": "{color.dark.700}",
+        "$description": "Secondary action hover."
+      }
+    },
+    "status": {
+      "error": {
+        "bg": {
+          "$value": "{color.red.900}",
+          "$description": "Error background color."
+        },
+        "border": {
+          "$value": "{color.red.700}",
+          "$description": "Error border color."
+        }
+      },
+      "success": {
+        "bg": {
+          "$value": "{color.green.900}",
+          "$description": "Success background color."
+        },
+        "border": {
+          "$value": "{color.green.700}",
+          "$description": "Success border color."
+        }
+      },
+      "warning": {
+        "bg": {
+          "$value": "{color.yellow.900}",
+          "$description": "Warning background color."
+        },
+        "border": {
+          "$value": "{color.yellow.700}",
+          "$description": "Warning border color."
+        }
+      },
+      "info": {
+        "bg": {
+          "$value": "{color.blue.900}",
+          "$description": "Info background color."
+        },
+        "border": {
+          "$value": "{color.blue.700}",
+          "$description": "Info border color."
+        }
+      }
+    }
+  }
+}

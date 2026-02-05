@@ -1,0 +1,140 @@
+{
+  "focus": {
+    "ring": {
+      "width": {
+        "$value": "3px",
+        "$type": "dimension",
+        "$description": "Focus ring width (3px)."
+      },
+      "offset": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Focus ring offset from element (2px)."
+      },
+      "color": {
+        "$value": "{color.blue.500}",
+        "$type": "color",
+        "$description": "Focus ring color (primary blue)."
+      }
+    }
+  },
+  "opacity": {
+    "0": {
+      "$value": 0,
+      "$type": "number",
+      "$description": "Fully transparent (0%)."
+    },
+    "5": {
+      "$value": 0.05,
+      "$type": "number",
+      "$description": "5% opacity - barely visible."
+    },
+    "10": {
+      "$value": 0.1,
+      "$type": "number",
+      "$description": "10% opacity - subtle transparency."
+    },
+    "20": {
+      "$value": 0.2,
+      "$type": "number",
+      "$description": "20% opacity - light transparency."
+    },
+    "25": {
+      "$value": 0.25,
+      "$type": "number",
+      "$description": "25% opacity - quarter visible."
+    },
+    "30": {
+      "$value": 0.3,
+      "$type": "number",
+      "$description": "30% opacity - moderate transparency."
+    },
+    "40": {
+      "$value": 0.4,
+      "$type": "number",
+      "$description": "40% opacity - semi-transparent."
+    },
+    "50": {
+      "$value": 0.5,
+      "$type": "number",
+      "$description": "50% opacity - half visible."
+    },
+    "60": {
+      "$value": 0.6,
+      "$type": "number",
+      "$description": "60% opacity - mostly visible."
+    },
+    "70": {
+      "$value": 0.7,
+      "$type": "number",
+      "$description": "70% opacity - high visibility."
+    },
+    "75": {
+      "$value": 0.75,
+      "$type": "number",
+      "$description": "75% opacity - three-quarters visible."
+    },
+    "80": {
+      "$value": 0.8,
+      "$type": "number",
+      "$description": "80% opacity - mostly solid."
+    },
+    "90": {
+      "$value": 0.9,
+      "$type": "number",
+      "$description": "90% opacity - nearly solid."
+    },
+    "100": {
+      "$value": 1,
+      "$type": "number",
+      "$description": "Fully opaque (100%)."
+    },
+    "disabled": {
+      "$value": 0.5,
+      "$type": "number",
+      "$description": "Disabled element opacity (50%)."
+    },
+    "overlay": {
+      "$value": 0.6,
+      "$type": "number",
+      "$description": "Modal overlay opacity (60%)."
+    }
+  },
+  "z-index": {
+    "base": {
+      "$value": 0,
+      "$type": "number",
+      "$description": "Base layer (z-index: 0). DEFAULT for all standard content."
+    },
+    "dropdown": {
+      "$value": 100,
+      "$type": "number",
+      "$description": "Dropdown layer (z-index: 100). Dropdown menus, selects."
+    },
+    "sticky": {
+      "$value": 200,
+      "$type": "number",
+      "$description": "Sticky layer (z-index: 200). Sticky headers, fixed navigation."
+    },
+    "overlay": {
+      "$value": 300,
+      "$type": "number",
+      "$description": "Overlay layer (z-index: 300). Modal backdrops."
+    },
+    "modal": {
+      "$value": 400,
+      "$type": "number",
+      "$description": "Modal layer (z-index: 400). Modal dialogs, drawers."
+    },
+    "popover": {
+      "$value": 500,
+      "$type": "number",
+      "$description": "Popover layer (z-index: 500). Popovers in modals."
+    },
+    "tooltip": {
+      "$value": 600,
+      "$type": "number",
+      "$description": "Tooltip layer (z-index: 600). HIGHEST standard layer."
+    }
+  }
+}

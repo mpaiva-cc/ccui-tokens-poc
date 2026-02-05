@@ -1,0 +1,70 @@
+{
+  "$description": "Core opacity primitives for transparency effects.",
+  "opacity": {
+    "$type": "number",
+    "0": {
+      "$value": 0,
+      "$description": "Fully transparent (0%)."
+    },
+    "5": {
+      "$value": 0.05,
+      "$description": "5% opacity - barely visible."
+    },
+    "10": {
+      "$value": 0.1,
+      "$description": "10% opacity - subtle transparency."
+    },
+    "20": {
+      "$value": 0.2,
+      "$description": "20% opacity - light transparency."
+    },
+    "25": {
+      "$value": 0.25,
+      "$description": "25% opacity - quarter visible."
+    },
+    "30": {
+      "$value": 0.3,
+      "$description": "30% opacity - moderate transparency."
+    },
+    "40": {
+      "$value": 0.4,
+      "$description": "40% opacity - semi-transparent."
+    },
+    "50": {
+      "$value": 0.5,
+      "$description": "50% opacity - half visible."
+    },
+    "60": {
+      "$value": 0.6,
+      "$description": "60% opacity - mostly visible."
+    },
+    "70": {
+      "$value": 0.7,
+      "$description": "70% opacity - high visibility."
+    },
+    "75": {
+      "$value": 0.75,
+      "$description": "75% opacity - three-quarters visible."
+    },
+    "80": {
+      "$value": 0.8,
+      "$description": "80% opacity - mostly solid."
+    },
+    "90": {
+      "$value": 0.9,
+      "$description": "90% opacity - nearly solid."
+    },
+    "100": {
+      "$value": 1,
+      "$description": "Fully opaque (100%)."
+    },
+    "disabled": {
+      "$value": 0.5,
+      "$description": "Disabled element opacity (50%)."
+    },
+    "overlay": {
+      "$value": 0.6,
+      "$description": "Modal overlay opacity (60%)."
+    }
+  }
+}

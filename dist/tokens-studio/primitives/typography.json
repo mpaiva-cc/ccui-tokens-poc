@@ -1,0 +1,122 @@
+{
+  "typography": {
+    "font-family": {
+      "sans": {
+        "$value": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "$type": "fontFamily",
+        "$description": "Primary sans-serif font stack. Use for: all body text, UI labels."
+      },
+      "heading": {
+        "$value": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "$type": "fontFamily",
+        "$description": "Heading/display font stack optimized for accessibility."
+      },
+      "mono": {
+        "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+        "$type": "fontFamily",
+        "$description": "Monospace font stack for code and technical content."
+      }
+    },
+    "font-size": {
+      "100": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$description": "Extra small font size (12px). MINIMUM readable size."
+      },
+      "200": {
+        "$value": "0.875rem",
+        "$type": "dimension",
+        "$description": "Small font size (14px). Use for: secondary text, table content."
+      },
+      "300": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "Medium font size (16px). DEFAULT body text size."
+      },
+      "400": {
+        "$value": "1.125rem",
+        "$type": "dimension",
+        "$description": "Large font size (18px). Use for: lead paragraphs."
+      },
+      "500": {
+        "$value": "1.25rem",
+        "$type": "dimension",
+        "$description": "Extra large font size (20px). Use for: small headings."
+      },
+      "600": {
+        "$value": "1.375rem",
+        "$type": "dimension",
+        "$description": "2X large font size (22px). Use for: medium headings (h4)."
+      },
+      "700": {
+        "$value": "1.625rem",
+        "$type": "dimension",
+        "$description": "3X large font size (26px). Use for: prominent headings (h3)."
+      },
+      "800": {
+        "$value": "2.125rem",
+        "$type": "dimension",
+        "$description": "4X large font size (34px). Use for: major headings (h1-h2)."
+      },
+      "900": {
+        "$value": "2.5rem",
+        "$type": "dimension",
+        "$description": "5X large font size (40px). Use for: hero display text."
+      }
+    },
+    "font-weight": {
+      "light": {
+        "$value": 300,
+        "$type": "fontWeight",
+        "$description": "Light font weight (300). Use sparingly for: large display text."
+      },
+      "regular": {
+        "$value": 400,
+        "$type": "fontWeight",
+        "$description": "Regular font weight (400). DEFAULT for all body text."
+      },
+      "medium": {
+        "$value": 500,
+        "$type": "fontWeight",
+        "$description": "Medium font weight (500). Use for: subtle emphasis, navigation items."
+      },
+      "semibold": {
+        "$value": 600,
+        "$type": "fontWeight",
+        "$description": "Semibold font weight (600). Use for: buttons, important labels."
+      },
+      "bold": {
+        "$value": 700,
+        "$type": "fontWeight",
+        "$description": "Bold font weight (700). Use for: headings (h1-h3)."
+      }
+    },
+    "line-height": {
+      "tight": {
+        "$value": 1.2,
+        "$type": "number",
+        "$description": "Tight line height (1.2 / 120%). Use for: large display headings."
+      },
+      "snug": {
+        "$value": 1.35,
+        "$type": "number",
+        "$description": "Snug line height (1.35 / 135%). Use for: smaller headings."
+      },
+      "normal": {
+        "$value": 1.5,
+        "$type": "number",
+        "$description": "Normal line height (1.5 / 150%). WCAG MINIMUM for body text."
+      },
+      "relaxed": {
+        "$value": 1.65,
+        "$type": "number",
+        "$description": "Relaxed line height (1.65 / 165%). Use for: longer paragraphs."
+      },
+      "loose": {
+        "$value": 1.8,
+        "$type": "number",
+        "$description": "Loose line height (1.8 / 180%). Use for: long-form prose."
+      }
+    }
+  }
+}

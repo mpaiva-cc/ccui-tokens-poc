@@ -5,15 +5,25 @@
  * - WCAG AA normal text: 4.5:1 ratio
  * - WCAG AA large text/UI: 3:1 ratio
  * - WCAG AAA normal text: 7:1 ratio
+ *
+ * New architecture:
+ * - CSS: Single combined file at dist/css/ccui-tokens.css
+ * - Semantic tokens in dist/tokens-studio/semantic/{light,dark,high-contrast}.json
  */
 import { describe, it, expect } from 'vitest';
 import {
   getThemeNames,
-  loadThemeCSS,
+  loadMainCSS,
+  loadSemanticTokens,
+  loadPrimitiveTokens,
+  getPrimitiveSetNames,
   parseCSSVariables,
+  collectTokens,
+  flattenTokens,
   getContrastRatio,
   meetsWCAG_AA,
   meetsWCAG_AA_LargeText,
+  isTokenReference,
 } from './test-utils';
 
 /**
@@ -24,9 +34,8 @@ function resolveValue(
   variables: Map<string, string>,
   depth = 0
 ): string | null {
-  if (depth > 10) return null; // Prevent infinite loops
+  if (depth > 10) return null;
 
-  // Check for var() reference
   const varMatch = value.match(/var\(\s*(--[a-zA-Z0-9-_]+)\s*(?:,\s*([^)]+))?\)/);
   if (varMatch) {
     const referencedVar = varMatch[1];
@@ -59,14 +68,8 @@ function getResolvedColor(
 
 /**
  * Blend an rgba color with a solid background color.
- * This properly handles semi-transparent colors for contrast calculations.
- *
- * @param rgbaColor - Color in rgba() format, e.g. "rgba(20, 94, 184, 0.1)"
- * @param bgColor - Solid background color in hex format, e.g. "#ffffff"
- * @returns Blended color as hex string, or null if parsing fails
  */
 function blendRgbaWithBackground(rgbaColor: string, bgColor: string): string | null {
-  // Parse rgba color
   const rgbaMatch = rgbaColor.match(/rgba?\s*\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)\s*(?:,\s*([\d.]+))?\s*\)/i);
   if (!rgbaMatch) return null;
 
@@ -75,7 +78,6 @@ function blendRgbaWithBackground(rgbaColor: string, bgColor: string): string | n
   const fgB = parseFloat(rgbaMatch[3]);
   const alpha = rgbaMatch[4] !== undefined ? parseFloat(rgbaMatch[4]) : 1;
 
-  // Parse hex background color
   const hexMatch = bgColor.match(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i);
   if (!hexMatch) return null;
 
@@ -83,281 +85,295 @@ function blendRgbaWithBackground(rgbaColor: string, bgColor: string): string | n
   const bgG = parseInt(hexMatch[2], 16);
   const bgB = parseInt(hexMatch[3], 16);
 
-  // Alpha blend: result = fg * alpha + bg * (1 - alpha)
   const resultR = Math.round(fgR * alpha + bgR * (1 - alpha));
   const resultG = Math.round(fgG * alpha + bgG * (1 - alpha));
   const resultB = Math.round(fgB * alpha + bgB * (1 - alpha));
 
-  // Convert to hex
   return '#' +
     resultR.toString(16).padStart(2, '0') +
     resultG.toString(16).padStart(2, '0') +
     resultB.toString(16).padStart(2, '0');
 }
 
-/**
- * Check if a color value is in rgba format
- */
 function isRgbaColor(color: string): boolean {
   return /^rgba?\s*\(/i.test(color.trim());
 }
 
-/**
- * Get a color value, blending with background if it's rgba
- */
-function getEffectiveColor(
-  color: string,
-  bodyBg: string
-): string | null {
+function getEffectiveColor(color: string, bodyBg: string): string | null {
   if (isRgbaColor(color)) {
     return blendRgbaWithBackground(color, bodyBg);
   }
   return color;
 }
 
+/**
+ * Build a map of all primitive color tokens for resolving references
+ */
+function buildPrimitiveColorMap(): Map<string, string> {
+  const colorMap = new Map<string, string>();
+
+  try {
+    // Load the color primitive tokens
+    const colorTokens = loadPrimitiveTokens('color');
+    const flat = flattenTokens(colorTokens);
+
+    for (const [path, value] of Object.entries(flat)) {
+      if (typeof value === 'string') {
+        // Store with original path format (e.g., "color.blue.500")
+        colorMap.set(path, value);
+      }
+    }
+  } catch {
+    // Color primitives may not exist, ignore
+  }
+
+  return colorMap;
+}
+
+/**
+ * Resolve a token reference like "{color.blue.500}" to its actual value
+ */
+function resolveTokenReference(
+  value: string,
+  primitiveColors: Map<string, string>,
+  depth = 0
+): string | null {
+  if (depth > 10) return null;
+
+  // Check if it's a reference
+  const refMatch = value.match(/^\{([^}]+)\}$/);
+  if (!refMatch) {
+    // Not a reference, return as-is
+    return value;
+  }
+
+  const refPath = refMatch[1];
+  const resolved = primitiveColors.get(refPath);
+
+  if (!resolved) {
+    return null;
+  }
+
+  // Check if the resolved value is also a reference
+  if (resolved.startsWith('{')) {
+    return resolveTokenReference(resolved, primitiveColors, depth + 1);
+  }
+
+  return resolved;
+}
+
+/**
+ * Check if a value is a valid color (hex, rgb, hsl) or can be resolved to one
+ */
+function isValidColorValue(value: string, primitiveColors: Map<string, string>): boolean {
+  // If it's a direct color value
+  if (
+    value.startsWith('#') ||
+    value.startsWith('rgb') ||
+    value.startsWith('hsl')
+  ) {
+    return true;
+  }
+
+  // If it's a reference, try to resolve it
+  if (value.startsWith('{')) {
+    const resolved = resolveTokenReference(value, primitiveColors);
+    return resolved !== null && (
+      resolved.startsWith('#') ||
+      resolved.startsWith('rgb') ||
+      resolved.startsWith('hsl')
+    );
+  }
+
+  return false;
+}
+
 describe('WCAG Color Contrast Validation', () => {
   const themes = getThemeNames();
+  const mainCSS = loadMainCSS();
+  const allCSSVariables = parseCSSVariables(mainCSS);
 
-  describe.each(themes)('Theme: %s', (themeName) => {
-    // Load all CSS files to get complete variable set
-    const allVariables = new Map<string, string>();
+  // Build primitive color map for resolving references
+  const primitiveColors = buildPrimitiveColorMap();
 
-    // Load theme-specific files
-    const themeCSSFiles = ['ccui-semantic.css', 'mantine-theme.css'];
-    for (const file of themeCSSFiles) {
-      const css = loadThemeCSS(themeName, file);
-      const vars = parseCSSVariables(css);
-      vars.forEach((value, key) => allVariables.set(key, value));
-    }
+  describe('Semantic Token Color Contrast', () => {
+    describe.each(themes)('Theme: %s', (themeName) => {
+      const semanticTokens = loadSemanticTokens(themeName);
+      const tokens = collectTokens(semanticTokens);
 
-    // Load shared primitives
-    const sharedCSSFiles = ['ccui-primitives.css', 'mantine-primitives.css'];
-    for (const file of sharedCSSFiles) {
-      const css = loadThemeCSS('shared', file);
-      const vars = parseCSSVariables(css);
-      vars.forEach((value, key) => allVariables.set(key, value));
-    }
+      it('should have text colors with valid values or references', () => {
+        const textTokens = Array.from(tokens.entries())
+          .filter(([path]) => path.includes('text'));
 
-    describe('Body Text Contrast', () => {
-      it('primary text on body background should meet WCAG AA (4.5:1)', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const textColor = getResolvedColor('--mantine-color-text', allVariables);
+        expect(textTokens.length).toBeGreaterThan(0);
 
-        if (!bodyBg || !textColor) {
-          console.log(`Skipping: missing body (${bodyBg}) or text (${textColor}) colors`);
+        for (const [path, token] of textTokens) {
+          const value = token.$value;
+          // Accept direct color values OR token references that resolve to colors
+          expect(
+            typeof value === 'string' && isValidColorValue(value, primitiveColors),
+            `${path} should have a valid color value or reference, got: ${value}`
+          ).toBe(true);
+        }
+      });
+
+      it('should have surface colors with valid values or references', () => {
+        const surfaceTokens = Array.from(tokens.entries())
+          .filter(([path]) => path.includes('surface'));
+
+        expect(surfaceTokens.length).toBeGreaterThan(0);
+
+        for (const [path, token] of surfaceTokens) {
+          const value = token.$value;
+          // Accept direct color values OR token references that resolve to colors
+          expect(
+            typeof value === 'string' && isValidColorValue(value, primitiveColors),
+            `${path} should have a valid color value or reference, got: ${value}`
+          ).toBe(true);
+        }
+      });
+
+      it('primary text on primary surface should meet WCAG AA (4.5:1)', () => {
+        // Get text.primary and surface.primary values
+        const textPrimary = tokens.get('color.text.primary');
+        const surfacePrimary = tokens.get('color.surface.primary');
+
+        if (!textPrimary || !surfacePrimary) {
+          console.log(`Skipping: ${themeName} missing text.primary or surface.primary`);
           return;
         }
 
-        const ratio = getContrastRatio(textColor, bodyBg);
+        const textValue = textPrimary.$value as string;
+        const bgValue = surfacePrimary.$value as string;
+
+        // Resolve references if needed
+        const textColor = resolveTokenReference(textValue, primitiveColors);
+        const bgColor = resolveTokenReference(bgValue, primitiveColors);
+
+        if (!textColor || !bgColor) {
+          console.log(`Skipping: ${themeName} could not resolve color references`);
+          return;
+        }
+
+        const ratio = getContrastRatio(textColor, bgColor);
         expect(
           ratio,
-          `Text on body contrast: ${ratio?.toFixed(2)}:1 (need 4.5:1)`
+          `${themeName}: text.primary (${textColor}) on surface.primary (${bgColor}) contrast: ${ratio?.toFixed(2)}:1 (need 4.5:1)`
         ).toBeGreaterThanOrEqual(4.5);
       });
 
-      it('dimmed text on body background should meet WCAG AA for large text (3:1)', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const dimmedColor = getResolvedColor('--mantine-color-dimmed', allVariables);
+      it('secondary text on primary surface should meet WCAG AA large text (3:1)', () => {
+        const textSecondary = tokens.get('color.text.secondary');
+        const surfacePrimary = tokens.get('color.surface.primary');
 
-        if (!bodyBg || !dimmedColor) {
-          console.log(`Skipping: missing body or dimmed colors`);
+        if (!textSecondary || !surfacePrimary) {
+          console.log(`Skipping: ${themeName} missing text.secondary or surface.primary`);
           return;
         }
 
-        const ratio = getContrastRatio(dimmedColor, bodyBg);
+        const textValue = textSecondary.$value as string;
+        const bgValue = surfacePrimary.$value as string;
+
+        // Resolve references if needed
+        const textColor = resolveTokenReference(textValue, primitiveColors);
+        const bgColor = resolveTokenReference(bgValue, primitiveColors);
+
+        if (!textColor || !bgColor) {
+          console.log(`Skipping: ${themeName} could not resolve color references`);
+          return;
+        }
+
+        const ratio = getContrastRatio(textColor, bgColor);
         expect(
           ratio,
-          `Dimmed text on body contrast: ${ratio?.toFixed(2)}:1 (need 3:1)`
+          `${themeName}: text.secondary (${textColor}) on surface.primary (${bgColor}) contrast: ${ratio?.toFixed(2)}:1 (need 3:1)`
         ).toBeGreaterThanOrEqual(3);
       });
-    });
 
-    describe('Error State Contrast', () => {
-      it('error text on body background should meet WCAG AA (4.5:1) or AA-large (3:1)', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const errorColor = getResolvedColor('--mantine-color-error', allVariables);
+      it('error text on primary surface should meet WCAG AA (4.5:1)', () => {
+        const textError = tokens.get('color.text.error');
+        const surfacePrimary = tokens.get('color.surface.primary');
 
-        if (!bodyBg || !errorColor) {
-          console.log(`Skipping: missing body or error colors`);
+        if (!textError || !surfacePrimary) {
+          console.log(`Skipping: ${themeName} missing text.error or surface.primary`);
           return;
         }
 
-        const ratio = getContrastRatio(errorColor, bodyBg);
-        // Error text is typically rendered at 14px+ which qualifies as large text
-        // WCAG AA for large text is 3:1, but we prefer 4.5:1
-        if (ratio && ratio < 4.5 && ratio >= 3) {
-          console.warn(
-            `WARNING: Error color contrast is ${ratio.toFixed(2)}:1 - passes AA-large but not AA-normal`
-          );
-        }
-        expect(
-          ratio,
-          `Error text on body contrast: ${ratio?.toFixed(2)}:1 (need 3:1 for large text)`
-        ).toBeGreaterThanOrEqual(3);
-      });
-    });
+        const textValue = textError.$value as string;
+        const bgValue = surfacePrimary.$value as string;
 
-    describe('Placeholder Text Contrast', () => {
-      it('placeholder text should meet minimum contrast (3:1) - warn if low', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const placeholderColor = getResolvedColor(
-          '--mantine-color-placeholder',
-          allVariables
-        );
+        // Resolve references if needed
+        const textColor = resolveTokenReference(textValue, primitiveColors);
+        const bgColor = resolveTokenReference(bgValue, primitiveColors);
 
-        if (!bodyBg || !placeholderColor) {
-          console.log(`Skipping: missing body or placeholder colors`);
+        if (!textColor || !bgColor) {
+          console.log(`Skipping: ${themeName} could not resolve color references`);
           return;
         }
 
-        const ratio = getContrastRatio(placeholderColor, bodyBg);
-        // Placeholder can be lower contrast but we warn if it's too low
-        // Note: WCAG allows lower contrast for placeholder text (non-text contrast)
-        if (ratio && ratio < 3) {
-          console.warn(
-            `WARNING: Placeholder contrast is ${ratio.toFixed(2)}:1 (recommended: 3:1 for non-text elements)`
-          );
-        }
-        // Only fail if contrast is extremely low (< 2:1)
+        const ratio = getContrastRatio(textColor, bgColor);
         expect(
           ratio,
-          `Placeholder on body contrast: ${ratio?.toFixed(2)}:1 (minimum 2:1)`
-        ).toBeGreaterThanOrEqual(2);
-      });
-    });
-
-    describe('Link/Anchor Contrast', () => {
-      it('anchor color on body background should meet WCAG AA (4.5:1)', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const anchorColor = getResolvedColor('--mantine-color-anchor', allVariables);
-
-        if (!bodyBg || !anchorColor) {
-          console.log(`Skipping: missing body or anchor colors`);
-          return;
-        }
-
-        const ratio = getContrastRatio(anchorColor, bodyBg);
-        expect(
-          ratio,
-          `Anchor on body contrast: ${ratio?.toFixed(2)}:1 (need 4.5:1)`
+          `${themeName}: text.error (${textColor}) on surface.primary (${bgColor}) contrast: ${ratio?.toFixed(2)}:1 (need 4.5:1)`
         ).toBeGreaterThanOrEqual(4.5);
       });
-    });
 
-    describe('Primary Button Contrast', () => {
-      it('white text on primary filled should meet WCAG AA (4.5:1)', () => {
-        const primaryFilled = getResolvedColor(
-          '--mantine-primary-color-filled',
-          allVariables
-        );
-        const whiteColor = getResolvedColor('--mantine-color-white', allVariables);
+      if (themeName === 'high-contrast') {
+        it('high-contrast theme should have enhanced contrast ratios', () => {
+          const textPrimary = tokens.get('color.text.primary');
+          const surfacePrimary = tokens.get('color.surface.primary');
 
-        if (!primaryFilled || !whiteColor) {
-          console.log(`Skipping: missing primary-filled or white colors`);
-          return;
-        }
+          if (!textPrimary || !surfacePrimary) return;
 
-        const ratio = getContrastRatio(whiteColor, primaryFilled);
-        expect(
-          ratio,
-          `White on primary-filled contrast: ${ratio?.toFixed(2)}:1 (need 4.5:1)`
-        ).toBeGreaterThanOrEqual(4.5);
-      });
-    });
+          const textValue = textPrimary.$value as string;
+          const bgValue = surfacePrimary.$value as string;
 
-    describe('Primary Light Variant Contrast', () => {
-      it('primary light color text on primary light background should meet WCAG AA (4.5:1)', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const lightBgRaw = getResolvedColor(
-          '--mantine-primary-color-light',
-          allVariables
-        );
-        const lightColor = getResolvedColor(
-          '--mantine-primary-color-light-color',
-          allVariables
-        );
+          // Resolve references if needed
+          const textColor = resolveTokenReference(textValue, primitiveColors);
+          const bgColor = resolveTokenReference(bgValue, primitiveColors);
 
-        if (!bodyBg || !lightBgRaw || !lightColor) {
-          console.log(`Skipping: missing primary-light colors (body: ${bodyBg}, light: ${lightBgRaw}, light-color: ${lightColor})`);
-          return;
-        }
-
-        // The "light" background is often rgba - blend it with body background
-        // to get the effective displayed color
-        const effectiveLightBg = getEffectiveColor(lightBgRaw, bodyBg);
-
-        if (!effectiveLightBg) {
-          console.log(`Skipping: could not compute effective light background color`);
-          return;
-        }
-
-        const ratio = getContrastRatio(lightColor, effectiveLightBg);
-        expect(
-          ratio,
-          `Primary light text on light bg contrast: ${ratio?.toFixed(2)}:1 (need 4.5:1) [bg: ${effectiveLightBg}, text: ${lightColor}]`
-        ).toBeGreaterThanOrEqual(4.5);
-      });
-    });
-
-    describe('Color Palette Contrast Report', () => {
-      it('should report contrast ratios for key color combinations', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-
-        if (!bodyBg) {
-          console.log('Cannot generate report: missing body color');
-          return;
-        }
-
-        const colorVars = [
-          '--mantine-color-text',
-          '--mantine-color-dimmed',
-          '--mantine-color-error',
-          '--mantine-color-placeholder',
-          '--mantine-color-anchor',
-          '--mantine-primary-color-filled',
-        ];
-
-        console.log(`\nContrast ratios for ${themeName} (vs body background):`);
-
-        for (const varName of colorVars) {
-          const color = getResolvedColor(varName, allVariables);
-          if (color) {
-            const ratio = getContrastRatio(color, bodyBg);
-            const status =
-              ratio && ratio >= 4.5
-                ? 'AA'
-                : ratio && ratio >= 3
-                  ? 'AA-large'
-                  : 'FAIL';
-            console.log(
-              `  ${varName.replace('--mantine-', '')}: ${ratio?.toFixed(2)}:1 [${status}]`
-            );
+          if (!textColor || !bgColor) {
+            console.log('Skipping: could not resolve high-contrast color references');
+            return;
           }
-        }
 
-        expect(true).toBe(true);
-      });
+          const ratio = getContrastRatio(textColor, bgColor);
+          // High contrast should aim for WCAG AAA (7:1)
+          expect(
+            ratio,
+            `high-contrast: text.primary should have enhanced contrast (${ratio?.toFixed(2)}:1, target: 7:1)`
+          ).toBeGreaterThanOrEqual(7);
+        });
+      }
     });
+  });
 
-    describe('Dark/Gray Scale Contrast', () => {
-      it('dark-0 on body (light theme) or body on dark-0 (dark theme) should have good contrast', () => {
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const dark0 = getResolvedColor('--mantine-color-dark-0', allVariables);
+  describe('CSS Variable Contrast', () => {
+    it('should have contrast report for key combinations', () => {
+      console.log('\nContrast ratios for key CSS variable combinations:');
 
-        if (!bodyBg || !dark0) {
-          console.log(`Skipping: missing colors`);
-          return;
+      // Check some key CCUI variable combinations if they exist
+      const pairs = [
+        ['--ccui-color-text-primary', '--ccui-color-surface-primary'],
+        ['--ccui-color-text-secondary', '--ccui-color-surface-primary'],
+        ['--ccui-color-text-error', '--ccui-color-surface-primary'],
+      ];
+
+      for (const [fgVar, bgVar] of pairs) {
+        const fg = getResolvedColor(fgVar, allCSSVariables);
+        const bg = getResolvedColor(bgVar, allCSSVariables);
+
+        if (fg && bg) {
+          const ratio = getContrastRatio(fg, bg);
+          const status =
+            ratio && ratio >= 7 ? 'AAA' :
+            ratio && ratio >= 4.5 ? 'AA' :
+            ratio && ratio >= 3 ? 'AA-large' : 'FAIL';
+          console.log(`  ${fgVar} on ${bgVar}: ${ratio?.toFixed(2)}:1 [${status}]`);
         }
+      }
 
-        const ratio = getContrastRatio(dark0, bodyBg);
-
-        // This is informational - dark-0 is typically used for backgrounds
-        console.log(
-          `${themeName}: dark-0 vs body contrast: ${ratio?.toFixed(2)}:1`
-        );
-
-        expect(true).toBe(true);
-      });
+      expect(true).toBe(true);
     });
   });
 
@@ -368,50 +384,37 @@ describe('WCAG Color Contrast Validation', () => {
         return;
       }
 
-      const results: Array<{
-        theme: string;
-        textOnBody: number | null;
-        errorOnBody: number | null;
-        anchorOnBody: number | null;
-      }> = [];
+      console.log('\nCross-theme contrast comparison:');
+      console.log('Theme\t\t\tText/Surface\tError/Surface');
 
       for (const themeName of themes) {
-        const allVariables = new Map<string, string>();
+        const tokens = collectTokens(loadSemanticTokens(themeName));
 
-        // Load theme-specific files
-        const themeCSSFiles = ['ccui-semantic.css', 'mantine-theme.css'];
-        for (const file of themeCSSFiles) {
-          const css = loadThemeCSS(themeName, file);
-          const vars = parseCSSVariables(css);
-          vars.forEach((value, key) => allVariables.set(key, value));
+        const textPrimary = tokens.get('color.text.primary');
+        const surfacePrimary = tokens.get('color.surface.primary');
+        const textError = tokens.get('color.text.error');
+
+        let textOnSurface: number | null = null;
+        let errorOnSurface: number | null = null;
+
+        if (textPrimary && surfacePrimary) {
+          const textColor = resolveTokenReference(textPrimary.$value as string, primitiveColors);
+          const bgColor = resolveTokenReference(surfacePrimary.$value as string, primitiveColors);
+          if (textColor && bgColor) {
+            textOnSurface = getContrastRatio(textColor, bgColor);
+          }
         }
 
-        // Load shared primitives
-        const sharedCSSFiles = ['ccui-primitives.css', 'mantine-primitives.css'];
-        for (const file of sharedCSSFiles) {
-          const css = loadThemeCSS('shared', file);
-          const vars = parseCSSVariables(css);
-          vars.forEach((value, key) => allVariables.set(key, value));
+        if (textError && surfacePrimary) {
+          const textColor = resolveTokenReference(textError.$value as string, primitiveColors);
+          const bgColor = resolveTokenReference(surfacePrimary.$value as string, primitiveColors);
+          if (textColor && bgColor) {
+            errorOnSurface = getContrastRatio(textColor, bgColor);
+          }
         }
 
-        const bodyBg = getResolvedColor('--mantine-color-body', allVariables);
-        const textColor = getResolvedColor('--mantine-color-text', allVariables);
-        const errorColor = getResolvedColor('--mantine-color-error', allVariables);
-        const anchorColor = getResolvedColor('--mantine-color-anchor', allVariables);
-
-        results.push({
-          theme: themeName,
-          textOnBody: bodyBg && textColor ? getContrastRatio(textColor, bodyBg) : null,
-          errorOnBody: bodyBg && errorColor ? getContrastRatio(errorColor, bodyBg) : null,
-          anchorOnBody: bodyBg && anchorColor ? getContrastRatio(anchorColor, bodyBg) : null,
-        });
-      }
-
-      console.log('\nCross-theme contrast comparison:');
-      console.log('Theme\t\t\tText\tError\tAnchor');
-      for (const result of results) {
         console.log(
-          `${result.theme}\t${result.textOnBody?.toFixed(1) || 'N/A'}\t${result.errorOnBody?.toFixed(1) || 'N/A'}\t${result.anchorOnBody?.toFixed(1) || 'N/A'}`
+          `${themeName.padEnd(16)}\t${textOnSurface?.toFixed(1) || 'N/A'}\t\t${errorOnSurface?.toFixed(1) || 'N/A'}`
         );
       }
 

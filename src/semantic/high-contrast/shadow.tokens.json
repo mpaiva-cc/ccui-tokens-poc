@@ -1,0 +1,30 @@
+{
+  "$description": "Shadow tokens for the high-contrast theme. Shadows with increased opacity for visibility.",
+  "shadow": {
+    "$type": "shadow",
+    "xs": {
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2)",
+      "$description": "Extra small shadow - enhanced visibility."
+    },
+    "sm": {
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.08) 0 0.4375rem 0.4375rem -0.3125rem",
+      "$description": "Small shadow - enhanced."
+    },
+    "md": {
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.08) 0 0.625rem 0.625rem -0.3125rem",
+      "$description": "Medium shadow - enhanced."
+    },
+    "lg": {
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.08) 0 0.75rem 0.75rem -0.4375rem",
+      "$description": "Large shadow - enhanced."
+    },
+    "xl": {
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.08) 0 1.0625rem 1.0625rem -0.4375rem",
+      "$description": "Extra large shadow - enhanced."
+    },
+    "footer": {
+      "$value": "0 -0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.08), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.08)",
+      "$description": "Shadow for fixed footers."
+    }
+  }
+}

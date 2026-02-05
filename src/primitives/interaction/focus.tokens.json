@@ -1,0 +1,22 @@
+{
+  "$description": "Core focus ring primitives for keyboard navigation accessibility.",
+  "focus": {
+    "ring": {
+      "width": {
+        "$value": "3px",
+        "$type": "dimension",
+        "$description": "Focus ring width (3px)."
+      },
+      "offset": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Focus ring offset from element (2px)."
+      },
+      "color": {
+        "$value": "{color.blue.500}",
+        "$type": "color",
+        "$description": "Focus ring color (primary blue)."
+      }
+    }
+  }
+}

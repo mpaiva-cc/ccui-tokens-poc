@@ -1,50 +1,94 @@
 [
   {
-    "id": "clearco-light",
-    "name": "Light",
-    "group": "mode",
+    "id": "primitives-base",
+    "name": "Base",
+    "group": "primitives",
     "selectedTokenSets": {
-      "core/color": "source",
-      "core/spacing": "source",
-      "core/radius": "source",
-      "core/typography": "source",
-      "core/shadow": "source",
-      "core/motion": "source",
-      "core/border": "source",
-      "core/breakpoints": "source",
-      "core/z-index": "source",
-      "core/opacity": "source",
-      "core/sizing": "source",
-      "core/focus": "source",
-      "semantic/light": "enabled",
-      "semantic/dark": "disabled",
-      "components/button": "enabled",
-      "components/input": "enabled",
-      "components/modal": "enabled"
+      "primitives/color": "enabled",
+      "primitives/spacing": "enabled",
+      "primitives/radius": "enabled",
+      "primitives/typography": "enabled",
+      "primitives/motion": "enabled",
+      "primitives/border": "enabled",
+      "primitives/breakpoints": "enabled",
+      "primitives/interaction": "enabled",
+      "primitives/sizing": "enabled"
     }
   },
   {
-    "id": "clearco-dark",
-    "name": "Dark",
-    "group": "mode",
+    "id": "semantic-light",
+    "name": "Light",
+    "group": "semantic",
     "selectedTokenSets": {
-      "core/color": "source",
-      "core/spacing": "source",
-      "core/radius": "source",
-      "core/typography": "source",
-      "core/shadow": "source",
-      "core/motion": "source",
-      "core/border": "source",
-      "core/breakpoints": "source",
-      "core/z-index": "source",
-      "core/opacity": "source",
-      "core/sizing": "source",
-      "core/focus": "source",
+      "primitives/color": "source",
+      "primitives/spacing": "source",
+      "primitives/radius": "source",
+      "primitives/typography": "source",
+      "primitives/motion": "source",
+      "primitives/border": "source",
+      "primitives/breakpoints": "source",
+      "primitives/interaction": "source",
+      "primitives/sizing": "source",
+      "semantic/light": "enabled",
+      "semantic/dark": "disabled",
+      "semantic/high-contrast": "disabled"
+    }
+  },
+  {
+    "id": "semantic-dark",
+    "name": "Dark",
+    "group": "semantic",
+    "selectedTokenSets": {
+      "primitives/color": "source",
+      "primitives/spacing": "source",
+      "primitives/radius": "source",
+      "primitives/typography": "source",
+      "primitives/motion": "source",
+      "primitives/border": "source",
+      "primitives/breakpoints": "source",
+      "primitives/interaction": "source",
+      "primitives/sizing": "source",
       "semantic/light": "disabled",
       "semantic/dark": "enabled",
-      "components/button": "enabled",
-      "components/input": "enabled",
-      "components/modal": "enabled"
+      "semantic/high-contrast": "disabled"
+    }
+  },
+  {
+    "id": "semantic-high-contrast",
+    "name": "High Contrast",
+    "group": "semantic",
+    "selectedTokenSets": {
+      "primitives/color": "source",
+      "primitives/spacing": "source",
+      "primitives/radius": "source",
+      "primitives/typography": "source",
+      "primitives/motion": "source",
+      "primitives/border": "source",
+      "primitives/breakpoints": "source",
+      "primitives/interaction": "source",
+      "primitives/sizing": "source",
+      "semantic/light": "disabled",
+      "semantic/dark": "disabled",
+      "semantic/high-contrast": "enabled"
+    }
+  },
+  {
+    "id": "component-base",
+    "name": "Base",
+    "group": "component",
+    "selectedTokenSets": {
+      "primitives/color": "source",
+      "primitives/spacing": "source",
+      "primitives/radius": "source",
+      "primitives/typography": "source",
+      "primitives/motion": "source",
+      "primitives/border": "source",
+      "primitives/breakpoints": "source",
+      "primitives/interaction": "source",
+      "primitives/sizing": "source",
+      "component/button": "enabled",
+      "component/input": "enabled",
+      "component/modal": "enabled"
     }
   }
 ]

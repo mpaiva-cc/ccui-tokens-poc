@@ -4,172 +4,282 @@
  * Verifies that the token build produces all expected outputs
  * with valid syntax and non-empty content.
  *
- * Build structure:
- * - Themes (clearco-light, clearco-dark): ccui-semantic.css, mantine-theme.css, tokens.json, tokens-flat.json
- * - Shared primitives: ccui-primitives.css, mantine-primitives.css, primitives.json
+ * New architecture:
+ * - CSS: Single combined file at dist/css/ccui-tokens.css
+ * - Tokens Studio: dist/tokens-studio/{primitives,semantic,component}/*.json
+ * - Themes: $themes.json with 3 groups (primitives, semantic, component)
  */
 import { describe, it, expect } from 'vitest';
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import {
+  mainCSSExists,
+  getMainCSSPath,
+  loadMainCSS,
+  hasPrimitives,
+  hasSemanticTokens,
+  hasComponentTokens,
   getThemeNames,
-  hasSharedPrimitives,
-  getThemeCSSFiles,
-  getThemeJSONFiles,
-  getSharedCSSFiles,
-  getSharedJSONFiles,
-  cssFileExists,
-  jsonFileExists,
-  getCSSPath,
-  getJSONPath,
+  getPrimitiveSetNames,
+  getComponentSetNames,
+  loadPrimitiveTokens,
+  loadSemanticTokens,
+  loadComponentTokens,
+  loadThemesConfig,
+  loadMetadata,
+  themesConfigExists,
+  metadataExists,
+  getTokensStudioPath,
 } from './test-utils';
 
 describe('Build Output Validation', () => {
-  const themes = getThemeNames();
-  const themeCSSFiles = getThemeCSSFiles();
-  const themeJSONFiles = getThemeJSONFiles();
-  const sharedCSSFiles = getSharedCSSFiles();
-  const sharedJSONFiles = getSharedJSONFiles();
-
-  it('should have at least one theme', () => {
-    expect(themes.length).toBeGreaterThan(0);
-  });
-
-  it('should have shared primitives folder', () => {
-    expect(hasSharedPrimitives()).toBe(true);
-  });
-
-  describe.each(themes)('Theme: %s', (themeName) => {
-    describe('CSS Files', () => {
-      it.each(themeCSSFiles)('should have %s', (fileName) => {
-        expect(cssFileExists(themeName, fileName)).toBe(true);
-      });
-
-      it.each(themeCSSFiles)('%s should be non-empty', (fileName) => {
-        const filePath = join(getCSSPath(themeName), fileName);
-        const content = readFileSync(filePath, 'utf-8');
-        expect(content.length).toBeGreaterThan(0);
-      });
-
-      it.each(themeCSSFiles)('%s should have valid CSS syntax', (fileName) => {
-        const filePath = join(getCSSPath(themeName), fileName);
-        const content = readFileSync(filePath, 'utf-8');
-
-        // Check for balanced braces
-        const openBraces = (content.match(/{/g) || []).length;
-        const closeBraces = (content.match(/}/g) || []).length;
-        expect(openBraces).toBe(closeBraces);
-
-        // Check for color-scheme selector (theme-specific CSS uses data attribute for scoping)
-        const hasColorSchemeSelector =
-          content.includes('[data-mantine-color-scheme="light"]') ||
-          content.includes('[data-mantine-color-scheme="dark"]');
-        expect(hasColorSchemeSelector).toBe(true);
-
-        // Check for CSS custom properties
-        expect(content).toMatch(/--[\w-]+\s*:/);
-      });
+  describe('CSS Output', () => {
+    it('should have main CSS file', () => {
+      expect(mainCSSExists()).toBe(true);
     });
 
-    describe('JSON Files', () => {
-      it.each(themeJSONFiles)('should have %s', (fileName) => {
-        expect(jsonFileExists(themeName, fileName)).toBe(true);
-      });
+    it('main CSS file should be non-empty', () => {
+      const content = loadMainCSS();
+      expect(content.length).toBeGreaterThan(0);
+    });
 
-      it.each(themeJSONFiles)('%s should be valid JSON', (fileName) => {
-        const filePath = join(getJSONPath(themeName), fileName);
-        const content = readFileSync(filePath, 'utf-8');
+    it('main CSS file should have valid syntax (balanced braces)', () => {
+      const content = loadMainCSS();
+      const openBraces = (content.match(/{/g) || []).length;
+      const closeBraces = (content.match(/}/g) || []).length;
+      expect(openBraces).toBe(closeBraces);
+    });
 
-        expect(() => JSON.parse(content)).not.toThrow();
-      });
+    it('main CSS file should have :root section for primitives', () => {
+      const content = loadMainCSS();
+      expect(content).toContain(':root');
+    });
 
-      it.each(themeJSONFiles)('%s should be non-empty object', (fileName) => {
-        const filePath = join(getJSONPath(themeName), fileName);
-        const content = readFileSync(filePath, 'utf-8');
-        const parsed = JSON.parse(content);
+    it('main CSS file should have light theme section', () => {
+      const content = loadMainCSS();
+      expect(content).toContain('[data-mantine-color-scheme="light"]');
+    });
 
-        expect(typeof parsed).toBe('object');
-        expect(Object.keys(parsed).length).toBeGreaterThan(0);
-      });
+    it('main CSS file should have dark theme section', () => {
+      const content = loadMainCSS();
+      expect(content).toContain('[data-mantine-color-scheme="dark"]');
+    });
+
+    it('main CSS file should have CSS custom properties', () => {
+      const content = loadMainCSS();
+      expect(content).toMatch(/--[\w-]+\s*:/);
+    });
+
+    it('main CSS file should have ccui-prefixed variables', () => {
+      const content = loadMainCSS();
+      expect(content).toMatch(/--ccui-[\w-]+\s*:/);
     });
   });
 
-  describe('Shared Primitives', () => {
-    describe('CSS Files', () => {
-      it.each(sharedCSSFiles)('should have %s', (fileName) => {
-        expect(cssFileExists('shared', fileName)).toBe(true);
-      });
-
-      it.each(sharedCSSFiles)('%s should be non-empty', (fileName) => {
-        const filePath = join(getCSSPath('shared'), fileName);
-        const content = readFileSync(filePath, 'utf-8');
-        expect(content.length).toBeGreaterThan(0);
-      });
-
-      it.each(sharedCSSFiles)('%s should have valid CSS syntax', (fileName) => {
-        const filePath = join(getCSSPath('shared'), fileName);
-        const content = readFileSync(filePath, 'utf-8');
-
-        // Check for balanced braces
-        const openBraces = (content.match(/{/g) || []).length;
-        const closeBraces = (content.match(/}/g) || []).length;
-        expect(openBraces).toBe(closeBraces);
-
-        // Check for :root selector
-        expect(content).toContain(':root');
-
-        // Check for CSS custom properties
-        expect(content).toMatch(/--[\w-]+\s*:/);
-      });
+  describe('Tokens Studio Structure', () => {
+    it('should have primitives folder', () => {
+      expect(hasPrimitives()).toBe(true);
     });
 
-    describe('JSON Files', () => {
-      it.each(sharedJSONFiles)('should have %s', (fileName) => {
-        expect(jsonFileExists('shared', fileName)).toBe(true);
-      });
+    it('should have semantic folder', () => {
+      expect(hasSemanticTokens()).toBe(true);
+    });
 
-      it.each(sharedJSONFiles)('%s should be valid JSON', (fileName) => {
-        const filePath = join(getJSONPath('shared'), fileName);
-        const content = readFileSync(filePath, 'utf-8');
+    it('should have component folder', () => {
+      expect(hasComponentTokens()).toBe(true);
+    });
 
-        expect(() => JSON.parse(content)).not.toThrow();
-      });
+    it('should have $themes.json', () => {
+      expect(themesConfigExists()).toBe(true);
+    });
 
-      it.each(sharedJSONFiles)('%s should be non-empty object', (fileName) => {
-        const filePath = join(getJSONPath('shared'), fileName);
-        const content = readFileSync(filePath, 'utf-8');
-        const parsed = JSON.parse(content);
-
-        expect(typeof parsed).toBe('object');
-        expect(Object.keys(parsed).length).toBeGreaterThan(0);
-      });
+    it('should have $metadata.json', () => {
+      expect(metadataExists()).toBe(true);
     });
   });
 
-  describe('Cross-Theme Consistency', () => {
-    it('should have same CSS files across all themes', () => {
-      if (themes.length < 2) return;
+  describe('Primitive Token Sets', () => {
+    const primitives = getPrimitiveSetNames();
 
-      for (const theme of themes) {
-        for (const file of themeCSSFiles) {
-          expect(
-            cssFileExists(theme, file),
-            `${theme} should have ${file}`
-          ).toBe(true);
-        }
+    it('should have at least one primitive token set', () => {
+      expect(primitives.length).toBeGreaterThan(0);
+    });
+
+    it('should have expected primitive sets', () => {
+      const expected = ['color', 'spacing', 'radius', 'typography', 'motion'];
+      for (const setName of expected) {
+        expect(
+          primitives.includes(setName),
+          `Missing primitive set: ${setName}`
+        ).toBe(true);
       }
     });
 
-    it('should have same JSON files across all themes', () => {
-      if (themes.length < 2) return;
+    it.each(primitives)('primitive/%s.json should be valid JSON', (setName) => {
+      expect(() => loadPrimitiveTokens(setName)).not.toThrow();
+    });
+
+    it.each(primitives)('primitive/%s.json should be non-empty', (setName) => {
+      const tokens = loadPrimitiveTokens(setName);
+      expect(Object.keys(tokens).length).toBeGreaterThan(0);
+    });
+  });
+
+  describe('Semantic Token Sets (Themes)', () => {
+    const themes = getThemeNames();
+
+    it('should have at least one semantic theme', () => {
+      expect(themes.length).toBeGreaterThan(0);
+    });
+
+    it('should have expected themes', () => {
+      const expected = ['light', 'dark', 'high-contrast'];
+      for (const themeName of expected) {
+        expect(
+          themes.includes(themeName),
+          `Missing theme: ${themeName}`
+        ).toBe(true);
+      }
+    });
+
+    it.each(themes)('semantic/%s.json should be valid JSON', (themeName) => {
+      expect(() => loadSemanticTokens(themeName)).not.toThrow();
+    });
+
+    it.each(themes)('semantic/%s.json should be non-empty', (themeName) => {
+      const tokens = loadSemanticTokens(themeName);
+      expect(Object.keys(tokens).length).toBeGreaterThan(0);
+    });
+  });
+
+  describe('Component Token Sets', () => {
+    const components = getComponentSetNames();
+
+    it('should have at least one component token set', () => {
+      expect(components.length).toBeGreaterThan(0);
+    });
+
+    it('should have expected component sets', () => {
+      const expected = ['button', 'input', 'modal'];
+      for (const setName of expected) {
+        expect(
+          components.includes(setName),
+          `Missing component set: ${setName}`
+        ).toBe(true);
+      }
+    });
+
+    it.each(components)('component/%s.json should be valid JSON', (setName) => {
+      expect(() => loadComponentTokens(setName)).not.toThrow();
+    });
+
+    it.each(components)('component/%s.json should be non-empty', (setName) => {
+      const tokens = loadComponentTokens(setName);
+      expect(Object.keys(tokens).length).toBeGreaterThan(0);
+    });
+  });
+
+  describe('Themes Configuration', () => {
+    it('$themes.json should have valid structure', () => {
+      const themes = loadThemesConfig();
+      expect(Array.isArray(themes)).toBe(true);
+      expect(themes.length).toBeGreaterThan(0);
+    });
+
+    it('$themes.json should have required theme groups', () => {
+      const themes = loadThemesConfig();
+      const groups = new Set(themes.map(t => t.group));
+
+      expect(groups.has('primitives')).toBe(true);
+      expect(groups.has('semantic')).toBe(true);
+      expect(groups.has('component')).toBe(true);
+    });
+
+    it('$themes.json entries should have required fields', () => {
+      const themes = loadThemesConfig();
 
       for (const theme of themes) {
-        for (const file of themeJSONFiles) {
-          expect(
-            jsonFileExists(theme, file),
-            `${theme} should have ${file}`
-          ).toBe(true);
+        expect(theme.id).toBeDefined();
+        expect(theme.name).toBeDefined();
+        expect(theme.group).toBeDefined();
+        expect(theme.selectedTokenSets).toBeDefined();
+        expect(typeof theme.selectedTokenSets).toBe('object');
+      }
+    });
+
+    it('semantic group should have light/dark/high-contrast themes', () => {
+      const themes = loadThemesConfig();
+      const semanticThemes = themes.filter(t => t.group === 'semantic');
+
+      const themeNames = semanticThemes.map(t => t.name.toLowerCase());
+      expect(themeNames).toContain('light');
+      expect(themeNames).toContain('dark');
+      expect(themeNames).toContain('high contrast');
+    });
+  });
+
+  describe('Metadata Configuration', () => {
+    it('$metadata.json should have valid structure', () => {
+      const metadata = loadMetadata();
+      expect(typeof metadata).toBe('object');
+    });
+
+    it('$metadata.json should have tokenSetOrder', () => {
+      const metadata = loadMetadata();
+      expect(metadata.tokenSetOrder).toBeDefined();
+      expect(Array.isArray(metadata.tokenSetOrder)).toBe(true);
+    });
+  });
+
+  describe('Token Set Coverage', () => {
+    it('primitives should cover core categories', () => {
+      const primitives = getPrimitiveSetNames();
+      const coreCategories = [
+        'color',
+        'spacing',
+        'radius',
+        'typography',
+        'motion',
+        'border',
+        'breakpoints',
+        'interaction',
+        'sizing',
+      ];
+
+      for (const category of coreCategories) {
+        expect(
+          primitives.includes(category),
+          `Missing primitive category: ${category}`
+        ).toBe(true);
+      }
+    });
+
+    it('semantic themes should have consistent token categories', () => {
+      const themes = getThemeNames();
+
+      if (themes.length < 2) return;
+
+      const firstThemeTokens = loadSemanticTokens(themes[0]);
+      const firstCategories = new Set(Object.keys(firstThemeTokens).filter(k => !k.startsWith('$')));
+
+      for (const theme of themes.slice(1)) {
+        const themeTokens = loadSemanticTokens(theme);
+        const categories = new Set(Object.keys(themeTokens).filter(k => !k.startsWith('$')));
+
+        const missingInFirst = [...categories].filter(c => !firstCategories.has(c));
+        const missingInCurrent = [...firstCategories].filter(c => !categories.has(c));
+
+        if (missingInFirst.length > 0 || missingInCurrent.length > 0) {
+          console.log(`Category differences between ${themes[0]} and ${theme}:`);
+          if (missingInFirst.length > 0) console.log(`  Only in ${theme}: ${missingInFirst.join(', ')}`);
+          if (missingInCurrent.length > 0) console.log(`  Only in ${themes[0]}: ${missingInCurrent.join(', ')}`);
         }
+
+        // Categories should match for theme switching to work
+        expect(
+          missingInCurrent.length,
+          `${theme} is missing categories: ${missingInCurrent.join(', ')}`
+        ).toBe(0);
       }
     });
   });

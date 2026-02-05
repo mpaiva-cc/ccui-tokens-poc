@@ -747,121 +747,121 @@
       "primary": {
         "$value": "{color.black}",
         "$type": "color",
-        "$description": "Primary text color. Use for: headings, body text, labels."
+        "$description": "Primary text color - maximum contrast."
       },
       "secondary": {
-        "$value": "{color.gray.600}",
+        "$value": "{color.gray.800}",
         "$type": "color",
-        "$description": "Secondary text color. Use for: metadata, timestamps, captions."
+        "$description": "Secondary text color - higher contrast than normal light theme."
       },
       "tertiary": {
-        "$value": "{color.gray.500}",
+        "$value": "{color.gray.700}",
         "$type": "color",
-        "$description": "Tertiary text color. Use for: placeholder text, help text."
+        "$description": "Tertiary text color - meets AAA requirements."
       },
       "disabled": {
-        "$value": "{color.gray.400}",
+        "$value": "{color.gray.600}",
         "$type": "color",
-        "$description": "Disabled text color."
+        "$description": "Disabled text color - still perceivable."
       },
       "inverse": {
         "$value": "{color.white}",
         "$type": "color",
-        "$description": "Inverse text color. Use for: text on dark backgrounds."
+        "$description": "Inverse text color."
       },
       "error": {
-        "$value": "{color.red.700}",
+        "$value": "{color.red.800}",
         "$type": "color",
-        "$description": "Error text color. WCAG AA compliant."
+        "$description": "Error text color - enhanced contrast."
       },
       "success": {
-        "$value": "{color.green.700}",
+        "$value": "{color.green.800}",
         "$type": "color",
-        "$description": "Success text color."
+        "$description": "Success text color - enhanced contrast."
       },
       "warning": {
-        "$value": "{color.yellow.700}",
+        "$value": "{color.yellow.800}",
         "$type": "color",
-        "$description": "Warning text color."
+        "$description": "Warning text color - enhanced contrast."
       },
       "info": {
-        "$value": "{color.blue.700}",
+        "$value": "{color.blue.800}",
         "$type": "color",
-        "$description": "Info text color."
+        "$description": "Info text color - enhanced contrast."
       }
     },
     "surface": {
       "primary": {
         "$value": "{color.white}",
         "$type": "color",
-        "$description": "Primary surface. Use for: page backgrounds, cards."
+        "$description": "Primary surface - pure white."
       },
       "secondary": {
         "$value": "{color.gray.50}",
         "$type": "color",
-        "$description": "Secondary surface. Use for: subtle backgrounds, zebra striping."
+        "$description": "Secondary surface."
       },
       "tertiary": {
         "$value": "{color.gray.100}",
         "$type": "color",
-        "$description": "Tertiary surface. Use for: input backgrounds."
+        "$description": "Tertiary surface."
       },
       "elevated": {
         "$value": "{color.white}",
         "$type": "color",
-        "$description": "Elevated surface. Use for: modals, dropdowns."
+        "$description": "Elevated surface."
       },
       "inverse": {
-        "$value": "{color.gray.900}",
+        "$value": "{color.black}",
         "$type": "color",
-        "$description": "Inverse surface. Use for: tooltips, dark cards."
+        "$description": "Inverse surface - pure black."
       }
     },
     "border": {
       "default": {
-        "$value": "{color.gray.300}",
+        "$value": "{color.gray.700}",
         "$type": "color",
-        "$description": "Default border color. Use for: inputs, cards."
+        "$description": "Default border - higher contrast."
       },
       "strong": {
-        "$value": "{color.gray.400}",
+        "$value": "{color.black}",
         "$type": "color",
-        "$description": "Strong border color. Use for: emphasis."
+        "$description": "Strong border - maximum contrast."
       },
       "subtle": {
-        "$value": "{color.gray.200}",
+        "$value": "{color.gray.500}",
         "$type": "color",
-        "$description": "Subtle border color. Use for: dividers."
+        "$description": "Subtle border - still visible."
       },
       "focus": {
-        "$value": "{color.blue.500}",
+        "$value": "{color.blue.700}",
         "$type": "color",
-        "$description": "Focus border/ring color."
+        "$description": "Focus border - enhanced visibility."
       }
     },
     "action": {
       "primary": {
-        "$value": "{color.blue.600}",
+        "$value": "{color.blue.700}",
         "$type": "color",
-        "$description": "Primary action color. Use for: primary buttons, links."
+        "$description": "Primary action color - enhanced contrast."
       },
       "primary-hover": {
-        "$value": "{color.blue.700}",
+        "$value": "{color.blue.800}",
         "$type": "color",
         "$description": "Primary action hover color."
       },
       "primary-active": {
-        "$value": "{color.blue.800}",
+        "$value": "{color.blue.900}",
         "$type": "color",
-        "$description": "Primary action active/pressed color."
+        "$description": "Primary action active color."
       },
       "secondary": {
-        "$value": "{color.gray.100}",
+        "$value": "{color.gray.200}",
         "$type": "color",
         "$description": "Secondary action background."
       },
       "secondary-hover": {
-        "$value": "{color.gray.200}",
+        "$value": "{color.gray.300}",
         "$type": "color",
         "$description": "Secondary action hover."
       }
@@ -869,84 +869,84 @@
     "status": {
       "error": {
         "bg": {
-          "$value": "{color.red.50}",
+          "$value": "{color.red.100}",
           "$type": "color",
-          "$description": "Error background color."
+          "$description": "Error background - more visible."
         },
         "border": {
-          "$value": "{color.red.300}",
+          "$value": "{color.red.700}",
           "$type": "color",
-          "$description": "Error border color."
+          "$description": "Error border - enhanced."
         }
       },
       "success": {
         "bg": {
-          "$value": "{color.green.50}",
+          "$value": "{color.green.100}",
           "$type": "color",
-          "$description": "Success background color."
+          "$description": "Success background."
         },
         "border": {
-          "$value": "{color.green.300}",
+          "$value": "{color.green.700}",
           "$type": "color",
-          "$description": "Success border color."
+          "$description": "Success border - enhanced."
         }
       },
       "warning": {
         "bg": {
-          "$value": "{color.yellow.50}",
+          "$value": "{color.yellow.100}",
           "$type": "color",
-          "$description": "Warning background color."
+          "$description": "Warning background."
         },
         "border": {
-          "$value": "{color.yellow.300}",
+          "$value": "{color.yellow.700}",
           "$type": "color",
-          "$description": "Warning border color."
+          "$description": "Warning border - enhanced."
         }
       },
       "info": {
         "bg": {
-          "$value": "{color.blue.50}",
+          "$value": "{color.blue.100}",
           "$type": "color",
-          "$description": "Info background color."
+          "$description": "Info background."
         },
         "border": {
-          "$value": "{color.blue.300}",
+          "$value": "{color.blue.700}",
           "$type": "color",
-          "$description": "Info border color."
+          "$description": "Info border - enhanced."
         }
       }
     }
   },
   "shadow": {
     "xs": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1)",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2)",
       "$type": "shadow",
-      "$description": "Extra small shadow. Use for: subtle elevation."
+      "$description": "Extra small shadow - enhanced visibility."
     },
     "sm": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.08) 0 0.4375rem 0.4375rem -0.3125rem",
       "$type": "shadow",
-      "$description": "Small shadow. Use for: cards, dropdowns."
+      "$description": "Small shadow - enhanced."
     },
     "md": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.08) 0 0.625rem 0.625rem -0.3125rem",
       "$type": "shadow",
-      "$description": "Medium shadow. Use for: modals."
+      "$description": "Medium shadow - enhanced."
     },
     "lg": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.08) 0 0.75rem 0.75rem -0.4375rem",
       "$type": "shadow",
-      "$description": "Large shadow. Use for: elevated modals, popovers."
+      "$description": "Large shadow - enhanced."
     },
     "xl": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.08) 0 1.0625rem 1.0625rem -0.4375rem",
       "$type": "shadow",
-      "$description": "Extra large shadow. Use for: maximum elevation."
+      "$description": "Extra large shadow - enhanced."
     },
     "footer": {
-      "$value": "0 -0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04)",
+      "$value": "0 -0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.08), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.08)",
       "$type": "shadow",
-      "$description": "Shadow for fixed footers (reversed direction)."
+      "$description": "Shadow for fixed footers."
     }
   }
 }

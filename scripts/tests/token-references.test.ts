@@ -4,116 +4,116 @@
  * Verifies that all token references resolve correctly
  * and there are no unresolved references in the output.
  *
- * Build structure:
- * - Themes (clearco-light, clearco-dark): ccui-semantic.css, mantine-theme.css
- * - Shared primitives: ccui-primitives.css, mantine-primitives.css
+ * New architecture:
+ * - CSS: Single combined file at dist/css/ccui-tokens.css
+ * - Tokens Studio: dist/tokens-studio/{primitives,semantic,component}/*.json
  */
 import { describe, it, expect } from 'vitest';
 import {
   getThemeNames,
-  getThemeCSSFiles,
-  getSharedCSSFiles,
-  loadThemeCSS,
-  loadFlatTokenJSON,
+  getPrimitiveSetNames,
+  getComponentSetNames,
+  loadMainCSS,
+  loadSemanticTokens,
+  loadPrimitiveTokens,
+  loadComponentTokens,
   parseCSSVariables,
+  flattenTokens,
 } from './test-utils';
 
 describe('Token Reference Resolution', () => {
-  const themes = getThemeNames();
-  const themeCSSFiles = getThemeCSSFiles();
-  const sharedCSSFiles = getSharedCSSFiles();
+  describe('CSS Output', () => {
+    it('should have no unresolved {references} in CSS', () => {
+      const css = loadMainCSS();
 
-  describe.each(themes)('Theme: %s', (themeName) => {
-    describe('CSS Output', () => {
-      it.each(themeCSSFiles)(
-        '%s should have no unresolved {references}',
-        (fileName) => {
-          const css = loadThemeCSS(themeName, fileName);
+      // Look for unresolved Style Dictionary references like {color.primary}
+      const unresolvedRefs = css.match(/\{[a-zA-Z][a-zA-Z0-9.]+\}/g) || [];
 
-          // Look for unresolved Style Dictionary references like {color.primary}
-          const unresolvedRefs = css.match(/\{[a-zA-Z][a-zA-Z0-9.]+\}/g) || [];
-
-          expect(
-            unresolvedRefs,
-            `Unresolved references in ${fileName}:\n${unresolvedRefs.join('\n')}`
-          ).toHaveLength(0);
-        }
-      );
-
-      it.each(themeCSSFiles)(
-        '%s should have no undefined values',
-        (fileName) => {
-          const css = loadThemeCSS(themeName, fileName);
-          const variables = parseCSSVariables(css);
-
-          const undefinedVars: string[] = [];
-
-          for (const [name, value] of variables) {
-            if (
-              value === 'undefined' ||
-              value === 'null' ||
-              value === '[object Object]'
-            ) {
-              undefinedVars.push(`${name}: ${value}`);
-            }
-          }
-
-          expect(
-            undefinedVars,
-            `Undefined values in ${fileName}:\n${undefinedVars.join('\n')}`
-          ).toHaveLength(0);
-        }
-      );
-
-      it.each(themeCSSFiles)(
-        '%s should have no empty values',
-        (fileName) => {
-          const css = loadThemeCSS(themeName, fileName);
-          const variables = parseCSSVariables(css);
-
-          const emptyVars: string[] = [];
-
-          for (const [name, value] of variables) {
-            if (value === '' || value.trim() === '') {
-              emptyVars.push(name);
-            }
-          }
-
-          expect(
-            emptyVars,
-            `Empty values in ${fileName}:\n${emptyVars.join('\n')}`
-          ).toHaveLength(0);
-        }
-      );
+      expect(
+        unresolvedRefs.length,
+        `Unresolved references in CSS:\n${unresolvedRefs.slice(0, 10).join('\n')}`
+      ).toBe(0);
     });
 
-    describe('JSON Output', () => {
-      it('tokens-flat.json should have no unresolved references', () => {
-        const flatTokens = loadFlatTokenJSON(themeName);
+    it('should have no undefined values in CSS', () => {
+      const css = loadMainCSS();
+      const variables = parseCSSVariables(css);
 
-        const unresolvedRefs: string[] = [];
+      const undefinedVars: string[] = [];
 
-        for (const [key, value] of Object.entries(flatTokens)) {
-          if (typeof value === 'string') {
-            // Check for Style Dictionary reference syntax
-            if (/\{[a-zA-Z][a-zA-Z0-9.]+\}/.test(value)) {
-              unresolvedRefs.push(`${key}: ${value}`);
+      for (const [name, value] of variables) {
+        if (
+          value === 'undefined' ||
+          value === 'null' ||
+          value === '[object Object]'
+        ) {
+          undefinedVars.push(`${name}: ${value}`);
+        }
+      }
+
+      expect(
+        undefinedVars.length,
+        `Undefined values in CSS:\n${undefinedVars.join('\n')}`
+      ).toBe(0);
+    });
+
+    it('should have no empty values in CSS', () => {
+      const css = loadMainCSS();
+      const variables = parseCSSVariables(css);
+
+      const emptyVars: string[] = [];
+
+      for (const [name, value] of variables) {
+        if (value === '' || value.trim() === '') {
+          emptyVars.push(name);
+        }
+      }
+
+      expect(
+        emptyVars.length,
+        `Empty values in CSS:\n${emptyVars.join('\n')}`
+      ).toBe(0);
+    });
+  });
+
+  describe('Semantic Token References', () => {
+    // NOTE: Semantic tokens in Tokens Studio format SHOULD contain references
+    // like {color.blue.500}. These are resolved during the build process.
+    // The CSS output should have no unresolved references.
+    const themes = getThemeNames();
+
+    describe.each(themes)('Theme: %s', (themeName) => {
+      it('should have valid token references (pointing to primitives)', () => {
+        const tokens = loadSemanticTokens(themeName);
+        const flat = flattenTokens(tokens);
+
+        // Semantic tokens should contain references - that's the expected format
+        // We check that references follow valid format (not malformed)
+        const malformedRefs: string[] = [];
+
+        for (const [key, value] of Object.entries(flat)) {
+          if (typeof value === 'string' && value.includes('{')) {
+            // Check for malformed references (missing closing brace, etc.)
+            const refMatch = value.match(/\{([^}]*)\}/);
+            if (!refMatch || refMatch[1].length === 0) {
+              malformedRefs.push(`${key}: ${value}`);
             }
           }
         }
 
         expect(
-          unresolvedRefs,
-          `Unresolved references in tokens-flat.json:\n${unresolvedRefs.join('\n')}`
-        ).toHaveLength(0);
+          malformedRefs.length,
+          `Malformed references in ${themeName}:\n${malformedRefs.join('\n')}`
+        ).toBe(0);
       });
 
-      it('tokens-flat.json should have no undefined or null values', () => {
-        const flatTokens = loadFlatTokenJSON(themeName);
+      it('should have no undefined or null values', () => {
+        const tokens = loadSemanticTokens(themeName);
+        const flat = flattenTokens(tokens);
 
         const invalidValues: string[] = [];
 
-        for (const [key, value] of Object.entries(flatTokens)) {
+        for (const [key, value] of Object.entries(flat)) {
           if (
             value === undefined ||
             value === null ||
@@ -125,157 +125,185 @@ describe('Token Reference Resolution', () => {
         }
 
         expect(
-          invalidValues,
-          `Invalid values in tokens-flat.json:\n${invalidValues.join('\n')}`
-        ).toHaveLength(0);
-      });
-    });
-
-    describe('CSS var() References', () => {
-      it('all var() references in semantic tokens should reference existing variables', () => {
-        // Load theme CSS files and shared primitives to get complete variable set
-        const allVariables = new Map<string, string>();
-
-        // Load theme-specific CSS files
-        for (const file of themeCSSFiles) {
-          const css = loadThemeCSS(themeName, file);
-          const vars = parseCSSVariables(css);
-          vars.forEach((value, key) => allVariables.set(key, value));
-        }
-
-        // Load shared primitives CSS files
-        for (const file of sharedCSSFiles) {
-          const css = loadThemeCSS('shared', file);
-          const vars = parseCSSVariables(css);
-          vars.forEach((value, key) => allVariables.set(key, value));
-        }
-
-        // Find all var() references in semantic CSS
-        const semanticCSS = loadThemeCSS(themeName, 'ccui-semantic.css');
-        const varRefRegex = /var\(\s*(--[a-zA-Z0-9-_]+)\s*(?:,\s*([^)]+))?\)/g;
-
-        const missingRefs: string[] = [];
-        let match;
-
-        while ((match = varRefRegex.exec(semanticCSS)) !== null) {
-          const referencedVar = match[1];
-          // Skip if it has a fallback value
-          const hasFallback = match[2] !== undefined;
-
-          if (!hasFallback && !allVariables.has(referencedVar)) {
-            missingRefs.push(referencedVar);
-          }
-        }
-
-        // Remove duplicates
-        const uniqueMissing = [...new Set(missingRefs)];
-
-        expect(
-          uniqueMissing,
-          `Missing referenced variables:\n${uniqueMissing.join('\n')}`
-        ).toHaveLength(0);
+          invalidValues.length,
+          `Invalid values in ${themeName}:\n${invalidValues.join('\n')}`
+        ).toBe(0);
       });
     });
   });
 
-  describe('Shared Primitives', () => {
-    describe('CSS Output', () => {
-      it.each(sharedCSSFiles)(
-        '%s should have no unresolved {references}',
-        (fileName) => {
-          const css = loadThemeCSS('shared', fileName);
+  describe('Primitive Token References', () => {
+    const primitives = getPrimitiveSetNames();
 
-          // Look for unresolved Style Dictionary references like {color.primary}
-          const unresolvedRefs = css.match(/\{[a-zA-Z][a-zA-Z0-9.]+\}/g) || [];
+    describe.each(primitives)('Primitive: %s', (setName) => {
+      it('should have valid references (only to other primitives)', () => {
+        const tokens = loadPrimitiveTokens(setName);
+        const flat = flattenTokens(tokens);
 
-          expect(
-            unresolvedRefs,
-            `Unresolved references in ${fileName}:\n${unresolvedRefs.join('\n')}`
-          ).toHaveLength(0);
-        }
-      );
+        // Primitives may reference other primitives (e.g., focus.ring.color -> color.blue.500)
+        // This is valid cross-referencing within the primitives layer
+        // We just check that references are well-formed
+        const malformedRefs: string[] = [];
 
-      it.each(sharedCSSFiles)(
-        '%s should have no undefined values',
-        (fileName) => {
-          const css = loadThemeCSS('shared', fileName);
-          const variables = parseCSSVariables(css);
-
-          const undefinedVars: string[] = [];
-
-          for (const [name, value] of variables) {
-            if (
-              value === 'undefined' ||
-              value === 'null' ||
-              value === '[object Object]'
-            ) {
-              undefinedVars.push(`${name}: ${value}`);
+        for (const [key, value] of Object.entries(flat)) {
+          if (typeof value === 'string' && value.includes('{')) {
+            // Check for malformed references (missing closing brace, empty, etc.)
+            const refMatch = value.match(/\{([^}]*)\}/);
+            if (!refMatch || refMatch[1].length === 0) {
+              malformedRefs.push(`${key}: ${value}`);
             }
           }
-
-          expect(
-            undefinedVars,
-            `Undefined values in ${fileName}:\n${undefinedVars.join('\n')}`
-          ).toHaveLength(0);
         }
-      );
 
-      it.each(sharedCSSFiles)(
-        '%s should have no empty values',
-        (fileName) => {
-          const css = loadThemeCSS('shared', fileName);
-          const variables = parseCSSVariables(css);
+        expect(
+          malformedRefs.length,
+          `Malformed references in primitives/${setName}:\n${malformedRefs.slice(0, 10).join('\n')}`
+        ).toBe(0);
+      });
 
-          const emptyVars: string[] = [];
+      it('should have no undefined or null values', () => {
+        const tokens = loadPrimitiveTokens(setName);
+        const flat = flattenTokens(tokens);
 
-          for (const [name, value] of variables) {
-            if (value === '' || value.trim() === '') {
-              emptyVars.push(name);
+        const invalidValues: string[] = [];
+
+        for (const [key, value] of Object.entries(flat)) {
+          if (
+            value === undefined ||
+            value === null ||
+            value === 'undefined' ||
+            value === 'null'
+          ) {
+            invalidValues.push(`${key}: ${value}`);
+          }
+        }
+
+        expect(
+          invalidValues.length,
+          `Invalid values in primitives/${setName}:\n${invalidValues.join('\n')}`
+        ).toBe(0);
+      });
+    });
+  });
+
+  describe('Component Token References', () => {
+    // NOTE: Component tokens may contain references to primitives
+    // These are resolved during the build process.
+    const components = getComponentSetNames();
+
+    describe.each(components)('Component: %s', (setName) => {
+      it('should have valid token references (pointing to primitives)', () => {
+        const tokens = loadComponentTokens(setName);
+        const flat = flattenTokens(tokens);
+
+        // Component tokens may contain references - that's expected
+        // We check that references follow valid format
+        const malformedRefs: string[] = [];
+
+        for (const [key, value] of Object.entries(flat)) {
+          if (typeof value === 'string' && value.includes('{')) {
+            const refMatch = value.match(/\{([^}]*)\}/);
+            if (!refMatch || refMatch[1].length === 0) {
+              malformedRefs.push(`${key}: ${value}`);
             }
           }
-
-          expect(
-            emptyVars,
-            `Empty values in ${fileName}:\n${emptyVars.join('\n')}`
-          ).toHaveLength(0);
         }
-      );
+
+        expect(
+          malformedRefs.length,
+          `Malformed references in component/${setName}:\n${malformedRefs.join('\n')}`
+        ).toBe(0);
+      });
+
+      it('should have no undefined or null values', () => {
+        const tokens = loadComponentTokens(setName);
+        const flat = flattenTokens(tokens);
+
+        const invalidValues: string[] = [];
+
+        for (const [key, value] of Object.entries(flat)) {
+          if (
+            value === undefined ||
+            value === null ||
+            value === 'undefined' ||
+            value === 'null'
+          ) {
+            invalidValues.push(`${key}: ${value}`);
+          }
+        }
+
+        expect(
+          invalidValues.length,
+          `Invalid values in component/${setName}:\n${invalidValues.join('\n')}`
+        ).toBe(0);
+      });
+    });
+  });
+
+  describe('CSS var() Reference Validation', () => {
+    it('all var() references should point to existing variables', () => {
+      const css = loadMainCSS();
+      const allVariables = parseCSSVariables(css);
+
+      // Find all var() references
+      const varRefRegex = /var\(\s*(--[a-zA-Z0-9-_]+)\s*(?:,\s*([^)]+))?\)/g;
+
+      const missingRefs: string[] = [];
+      let match;
+
+      while ((match = varRefRegex.exec(css)) !== null) {
+        const referencedVar = match[1];
+        const hasFallback = match[2] !== undefined;
+
+        // Skip if it has a fallback value
+        if (!hasFallback && !allVariables.has(referencedVar)) {
+          missingRefs.push(referencedVar);
+        }
+      }
+
+      // Remove duplicates
+      const uniqueMissing = [...new Set(missingRefs)];
+
+      expect(
+        uniqueMissing.length,
+        `Missing var() references:\n${uniqueMissing.slice(0, 20).join('\n')}`
+      ).toBe(0);
     });
   });
 
   describe('Cross-Theme Reference Consistency', () => {
-    it('both themes should resolve the same token paths', () => {
+    it('all themes should resolve the same token paths', () => {
+      const themes = getThemeNames();
+
       if (themes.length < 2) return;
 
       const tokenSets = themes.map((theme) => {
-        const flatTokens = loadFlatTokenJSON(theme);
-        return new Set(Object.keys(flatTokens));
+        const tokens = loadSemanticTokens(theme);
+        const flat = flattenTokens(tokens);
+        return {
+          theme,
+          paths: new Set(Object.keys(flat)),
+        };
       });
 
-      // Find tokens unique to each theme
-      const [firstSet, ...restSets] = tokenSets;
+      const [first, ...rest] = tokenSets;
 
-      for (let i = 0; i < restSets.length; i++) {
-        const otherSet = restSets[i];
-        const otherTheme = themes[i + 1];
+      for (const other of rest) {
+        const onlyInFirst = [...first.paths].filter(p => !other.paths.has(p));
+        const onlyInOther = [...other.paths].filter(p => !first.paths.has(p));
 
-        const onlyInFirst = [...firstSet].filter((t) => !otherSet.has(t));
-        const onlyInOther = [...otherSet].filter((t) => !firstSet.has(t));
-
-        // Log differences but don't fail - some theme-specific tokens are expected
+        // Log differences for debugging
         if (onlyInFirst.length > 0 || onlyInOther.length > 0) {
-          console.log(`Token differences between ${themes[0]} and ${otherTheme}:`);
+          console.log(`Token differences between ${first.theme} and ${other.theme}:`);
           if (onlyInFirst.length > 0) {
-            console.log(`  Only in ${themes[0]}: ${onlyInFirst.slice(0, 5).join(', ')}${onlyInFirst.length > 5 ? '...' : ''}`);
+            console.log(`  Only in ${first.theme}: ${onlyInFirst.slice(0, 5).join(', ')}${onlyInFirst.length > 5 ? '...' : ''}`);
           }
           if (onlyInOther.length > 0) {
-            console.log(`  Only in ${otherTheme}: ${onlyInOther.slice(0, 5).join(', ')}${onlyInOther.length > 5 ? '...' : ''}`);
+            console.log(`  Only in ${other.theme}: ${onlyInOther.slice(0, 5).join(', ')}${onlyInOther.length > 5 ? '...' : ''}`);
           }
         }
       }
 
-      // This test passes as long as we don't have undefined values
-      // The cross-theme consistency test will validate structure matches
       expect(true).toBe(true);
     });
   });

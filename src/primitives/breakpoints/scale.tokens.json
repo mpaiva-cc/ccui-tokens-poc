@@ -1,0 +1,37 @@
+{
+  "$description": "Core breakpoint and content width primitives for responsive design.",
+  "breakpoint": {
+    "$type": "dimension",
+    "xs": {
+      "$value": "36em",
+      "$description": "Extra small breakpoint (576px). Large phones, small tablets."
+    },
+    "sm": {
+      "$value": "48em",
+      "$description": "Small breakpoint (768px). Tablets in portrait."
+    },
+    "md": {
+      "$value": "62em",
+      "$description": "Medium breakpoint (992px). Tablets landscape, standard laptops."
+    },
+    "lg": {
+      "$value": "75em",
+      "$description": "Large breakpoint (1200px). Large laptops, standard desktops."
+    },
+    "xl": {
+      "$value": "88em",
+      "$description": "Extra large breakpoint (1408px). Large desktop monitors."
+    }
+  },
+  "content-width": {
+    "$type": "dimension",
+    "sm": {
+      "$value": "37.5em",
+      "$description": "Small content width (600px). Use for: prose content."
+    },
+    "lg": {
+      "$value": "80em",
+      "$description": "Large content width (1280px). Use for: full application layouts."
+    }
+  }
+}

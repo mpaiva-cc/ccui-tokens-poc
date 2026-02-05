@@ -1,0 +1,20 @@
+{
+  "$description": "Core font family primitives defining the typographic voice of the design system.",
+  "typography": {
+    "font-family": {
+      "$type": "fontFamily",
+      "sans": {
+        "$value": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "$description": "Primary sans-serif font stack. Use for: all body text, UI labels."
+      },
+      "heading": {
+        "$value": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "$description": "Heading/display font stack optimized for accessibility."
+      },
+      "mono": {
+        "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+        "$description": "Monospace font stack for code and technical content."
+      }
+    }
+  }
+}

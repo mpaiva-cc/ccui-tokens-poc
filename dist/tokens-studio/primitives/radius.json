@@ -1,0 +1,54 @@
+{
+  "radius": {
+    "0": {
+      "$value": "0",
+      "$type": "dimension",
+      "$description": "No radius - sharp corners."
+    },
+    "100": {
+      "$value": "0.125rem",
+      "$type": "dimension",
+      "$description": "Extra small radius (2px). Use for: small badges, tags, inline code."
+    },
+    "200": {
+      "$value": "0.25rem",
+      "$type": "dimension",
+      "$description": "Small radius (4px). DEFAULT for small components. Use for: buttons, inputs."
+    },
+    "300": {
+      "$value": "0.375rem",
+      "$type": "dimension",
+      "$description": "Medium-small radius (6px). Use for: between sm and md."
+    },
+    "400": {
+      "$value": "0.5rem",
+      "$type": "dimension",
+      "$description": "Medium radius (8px). Use for: cards, modals, larger containers."
+    },
+    "600": {
+      "$value": "0.75rem",
+      "$type": "dimension",
+      "$description": "Medium-large radius (12px). Use for: between md and lg."
+    },
+    "800": {
+      "$value": "1rem",
+      "$type": "dimension",
+      "$description": "Large radius (16px). Use for: hero cards, featured content."
+    },
+    "1000": {
+      "$value": "1.5rem",
+      "$type": "dimension",
+      "$description": "Extra large radius (24px). Use for: hero sections, large promotional elements."
+    },
+    "1200": {
+      "$value": "2rem",
+      "$type": "dimension",
+      "$description": "2X large radius (32px). Use for: very large cards."
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension",
+      "$description": "Full/pill radius (circular). Use for: avatars, round buttons, pills."
+    }
+  }
+}
