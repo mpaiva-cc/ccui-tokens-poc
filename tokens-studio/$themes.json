@@ -1,0 +1,50 @@
+[
+  {
+    "id": "clearco-light",
+    "name": "Light",
+    "group": "mode",
+    "selectedTokenSets": {
+      "core/color": "source",
+      "core/spacing": "source",
+      "core/radius": "source",
+      "core/typography": "source",
+      "core/shadow": "source",
+      "core/motion": "source",
+      "core/border": "source",
+      "core/breakpoints": "source",
+      "core/z-index": "source",
+      "core/opacity": "source",
+      "core/sizing": "source",
+      "core/focus": "source",
+      "semantic/light": "enabled",
+      "semantic/dark": "disabled",
+      "components/button": "enabled",
+      "components/input": "enabled",
+      "components/modal": "enabled"
+    }
+  },
+  {
+    "id": "clearco-dark",
+    "name": "Dark",
+    "group": "mode",
+    "selectedTokenSets": {
+      "core/color": "source",
+      "core/spacing": "source",
+      "core/radius": "source",
+      "core/typography": "source",
+      "core/shadow": "source",
+      "core/motion": "source",
+      "core/border": "source",
+      "core/breakpoints": "source",
+      "core/z-index": "source",
+      "core/opacity": "source",
+      "core/sizing": "source",
+      "core/focus": "source",
+      "semantic/light": "disabled",
+      "semantic/dark": "enabled",
+      "components/button": "enabled",
+      "components/input": "enabled",
+      "components/modal": "enabled"
+    }
+  }
+]
