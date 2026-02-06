@@ -706,11 +706,28 @@ const TOKENS_STUDIO_COMPONENT_SETS = {
 
 function getOriginalValue(token) {
     const original = token.original || token;
-    const value = original.$value ?? original.value;
-    if (typeof value === 'string' && value.startsWith('{') && value.endsWith('}')) {
-        return value;
+    const originalValue = original.$value ?? original.value;
+    const resolvedValue = token.$value ?? token.value;
+    const tokenType = token.$type || token.type;
+
+    // For simple string references, preserve the original
+    if (typeof originalValue === 'string' && originalValue.startsWith('{') && originalValue.endsWith('}')) {
+        return originalValue;
     }
-    return token.$value ?? token.value;
+
+    // For composite tokens (typography, boxShadow), preserve original references
+    // These have object values where inner properties may be references
+    if (tokenType === 'typography' && typeof originalValue === 'object' && originalValue !== null) {
+        // Return the original value object which should contain unresolved references
+        return originalValue;
+    }
+
+    // For boxShadow arrays, preserve original (may contain references in color)
+    if (tokenType === 'boxShadow' && Array.isArray(originalValue)) {
+        return originalValue;
+    }
+
+    return resolvedValue;
 }
 
 function buildTokensStudioStructure(tokens) {
