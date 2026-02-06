@@ -92,14 +92,14 @@ ccui-tokens/
 
 ## Token Format
 
-CCUI uses the [W3C Design Tokens Community Group (DTCG)](https://www.designtokens.org/) format:
+CCUI uses the Tokens Studio format with `$value` and `$type` prefixes:
 
 ```json
 {
   "spacing": {
     "md": {
       "$value": "1rem",
-      "$type": "dimension",
+      "$type": "spacing",
       "$description": "Medium spacing (16px)"
     }
   }
@@ -111,15 +111,18 @@ CCUI uses the [W3C Design Tokens Community Group (DTCG)](https://www.designtoken
 | Type | Description | Example |
 |------|-------------|---------|
 | `color` | Color values | `#3b82f6` |
-| `dimension` | Sizes with units | `1rem`, `16px` |
-| `fontFamily` | Font stacks | `'Public Sans', sans-serif` |
-| `fontWeight` | Numeric weights | `400`, `700` |
-| `number` | Unitless values | `1.5` (line-height) |
-| `duration` | Time values | `150ms` |
+| `spacing` | Spacing/padding | `1rem`, `16px` |
+| `borderRadius` | Corner radii | `0.25rem`, `4px` |
+| `fontFamilies` | Font stacks | `'Public Sans', sans-serif` |
+| `fontSizes` | Font sizes | `1rem`, `14px` |
+| `fontWeights` | Font weights | `400`, `700` |
+| `lineHeights` | Line heights | `1.5`, `150%` |
+| `letterSpacing` | Letter spacing | `-0.025em` |
+| `duration` | Animation duration | `150ms` |
 | `cubicBezier` | Easing functions | `[0.4, 0, 0.2, 1]` |
 | `shadow` | Box shadows | Composite object |
 | `typography` | Text styles | Composite object |
-| `strokeStyle` | Border styles | `solid`, `dashed` |
+| `opacity` | Opacity values | `50%` |
 
 ## Development
 

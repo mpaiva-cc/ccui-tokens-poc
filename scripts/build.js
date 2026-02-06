@@ -468,11 +468,14 @@ StyleDictionary.registerFormat({
 // TOKENS STUDIO FORMATS
 // ========================================
 
-const DTCG_TYPE_MAP = {
+// Tokens Studio type mapping
+// Note: Tokens Studio uses its own type vocabulary even in "DTCG mode"
+// These are NOT W3C DTCG types - they're Tokens Studio-specific
+const TOKENS_STUDIO_TYPE_MAP = {
     'color': 'color',
     'dimension': 'dimension',
-    'fontFamily': 'fontFamily',
-    'fontWeight': 'fontWeight',
+    'fontFamily': 'fontFamilies',      // TS uses plural
+    'fontWeight': 'fontWeights',       // TS uses plural
     'duration': 'duration',
     'cubicBezier': 'cubicBezier',
     'number': 'number',
@@ -481,42 +484,97 @@ const DTCG_TYPE_MAP = {
     'transition': 'transition',
     'shadow': 'shadow',
     'gradient': 'gradient',
-    'typography': 'typography'
+    'typography': 'typography',
+    // Tokens Studio specific types (not in W3C DTCG)
+    'fontSizes': 'fontSizes',
+    'lineHeights': 'lineHeights',
+    'letterSpacing': 'letterSpacing',
+    'paragraphSpacing': 'paragraphSpacing',
+    'spacing': 'spacing',
+    'borderRadius': 'borderRadius',
+    'borderWidth': 'borderWidth',
+    'opacity': 'opacity',
+    'sizing': 'sizing'
 };
 
-function inferDtcgType(token) {
+// Infer Tokens Studio type from token context
+// This outputs Tokens Studio-compatible types, not W3C DTCG types
+function inferTokensStudioType(token) {
     const path = token.path;
     const value = token.$value ?? token.value;
+    const originalType = token.$type || token.type;
 
-    if (token.$type && DTCG_TYPE_MAP[token.$type]) return DTCG_TYPE_MAP[token.$type];
-    if (token.type && DTCG_TYPE_MAP[token.type]) return DTCG_TYPE_MAP[token.type];
-
-    const rootCategory = path[0];
-
-    if (rootCategory === 'color' || rootCategory === 'colorPalette' || rootCategory === 'brand') return 'color';
-
-    if (['spacing', 'gridSpacing', 'verticalRhythm', 'radius', 'sizing',
-         'borderWidth', 'contentWidth', 'breakpoints'].includes(rootCategory)) {
-        return 'dimension';
-    }
-
-    if (rootCategory === 'typography' || rootCategory === 'fontFamily') {
-        if (path.includes('fontFamily')) return 'fontFamily';
-        if (path.includes('fontWeight')) return 'fontWeight';
-        if (path.includes('fontSize') || path.includes('lineHeight') || path.includes('letterSpacing')) {
-            return 'dimension';
+    // If token has an explicit type, map it to Tokens Studio type
+    if (originalType && TOKENS_STUDIO_TYPE_MAP[originalType]) {
+        // Special handling: W3C DTCG uses 'fontFamily' but TS expects 'fontFamilies'
+        if (originalType === 'fontFamily') return 'fontFamilies';
+        if (originalType === 'fontWeight') return 'fontWeights';
+        // For dimension/number, we need to look at context to determine specific TS type
+        if (originalType === 'dimension' || originalType === 'number') {
+            // Fall through to path-based inference
+        } else {
+            return TOKENS_STUDIO_TYPE_MAP[originalType];
         }
     }
 
+    const rootCategory = path[0];
+
+    // Color tokens
+    if (rootCategory === 'color' || rootCategory === 'colorPalette' || rootCategory === 'brand') {
+        return 'color';
+    }
+
+    // Spacing tokens
+    if (['spacing', 'gridSpacing', 'verticalRhythm'].includes(rootCategory)) {
+        return 'spacing';
+    }
+
+    // Border radius
+    if (rootCategory === 'radius') {
+        return 'borderRadius';
+    }
+
+    // Sizing tokens
+    if (rootCategory === 'sizing' || rootCategory === 'contentWidth' || rootCategory === 'breakpoints') {
+        return 'sizing';
+    }
+
+    // Border width
+    if (rootCategory === 'borderWidth') {
+        return 'borderWidth';
+    }
+
+    // Typography-related tokens
+    if (rootCategory === 'typography' || rootCategory === 'fontFamily') {
+        if (path.includes('fontFamily')) return 'fontFamilies';
+        if (path.includes('fontWeight')) return 'fontWeights';
+        if (path.includes('fontSize')) return 'fontSizes';
+        if (path.includes('lineHeight')) return 'lineHeights';
+        if (path.includes('letterSpacing')) return 'letterSpacing';
+        if (path.includes('paragraphSpacing')) return 'paragraphSpacing';
+        // Composite typography token
+        if (originalType === 'typography') return 'typography';
+    }
+
+    // Motion tokens
     if (rootCategory === 'motion') {
         if (path.includes('duration')) return 'duration';
         if (path.includes('easing')) return 'cubicBezier';
     }
 
+    // Shadow tokens
     if (rootCategory === 'shadow' || rootCategory === 'shadows') return 'shadow';
-    if (rootCategory === 'zIndex' || rootCategory === 'opacity') return 'number';
+
+    // Opacity (Tokens Studio uses 'opacity' type)
+    if (rootCategory === 'opacity') return 'opacity';
+
+    // Z-index
+    if (rootCategory === 'zIndex') return 'number';
+
+    // Border style
     if (rootCategory === 'borderStyle') return 'strokeStyle';
 
+    // Value-based inference as fallback
     if (typeof value === 'string') {
         if (value.startsWith('#') || value.startsWith('rgb') || value.startsWith('hsl') || value.startsWith('oklch')) {
             return 'color';
@@ -590,10 +648,10 @@ function buildTokensStudioStructure(tokens) {
         }
 
         const finalKey = path[path.length - 1];
-        const dtcgType = inferDtcgType(token);
+        const tsType = inferTokensStudioType(token);
 
         const tokenObj = { "$value": getOriginalValue(token) };
-        if (dtcgType) tokenObj["$type"] = dtcgType;
+        if (tsType) tokenObj["$type"] = tsType;
 
         const description = token.$description ?? token.description ?? token.comment;
         if (description) tokenObj["$description"] = description;

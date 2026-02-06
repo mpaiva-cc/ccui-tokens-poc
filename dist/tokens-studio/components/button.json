@@ -90,7 +90,7 @@
     },
     "fontWeight": {
       "$value": "{typography.fontWeight.semibold}",
-      "$type": "fontWeight",
+      "$type": "fontWeights",
       "$description": "Button font weight. Semibold for clear affordance."
     },
     "transition": {

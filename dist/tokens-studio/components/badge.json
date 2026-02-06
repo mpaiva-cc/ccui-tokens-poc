@@ -97,7 +97,7 @@
     },
     "fontWeight": {
       "$value": "{typography.fontWeight.semibold}",
-      "$type": "fontWeight",
+      "$type": "fontWeights",
       "$description": "Badge font weight (600). Semibold ensures badges stand out from surrounding body text. Provides emphasis without overwhelming."
     },
     "letterSpacing": {

@@ -88,7 +88,7 @@
     "header": {
       "fontWeight": {
         "$value": "{typography.fontWeight.semibold}",
-        "$type": "fontWeight",
+        "$type": "fontWeights",
         "$description": "Table header font weight (600). Semibold headers clearly distinguish column labels from data. Important for scanability."
       },
       "fontSize": {

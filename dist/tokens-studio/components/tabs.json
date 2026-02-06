@@ -3,7 +3,6 @@
     "list": {
       "gap": {
         "$value": "0",
-        "$type": "dimension",
         "$description": "Gap between tabs (0px). Zero gap creates connected tabs that appear as a unified navigation bar. Individual tabs handle their own spacing via padding."
       },
       "borderWidth": {
@@ -99,12 +98,12 @@
       "fontWeight": {
         "default": {
           "$value": "{typography.fontWeight.regular}",
-          "$type": "fontWeight",
+          "$type": "fontWeights",
           "$description": "Default (inactive) tab font weight (400). Regular weight for inactive tabs keeps them visually subordinate."
         },
         "active": {
           "$value": "{typography.fontWeight.medium}",
-          "$type": "fontWeight",
+          "$type": "fontWeights",
           "$description": "Active tab font weight (500). Medium weight provides subtle emphasis for the selected tab without being too heavy."
         }
       },

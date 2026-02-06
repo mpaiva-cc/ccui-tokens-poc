@@ -67,7 +67,6 @@
       },
       "strokeWidth": {
         "$value": "2.5",
-        "$type": "number",
         "$description": "Checkmark stroke width (2.5px). Bold enough to be clearly visible at all sizes. Consistent thickness ensures recognition across the size scale."
       }
     },

@@ -57,7 +57,7 @@
       },
       "fontWeight": {
         "$value": "{typography.fontWeight.semibold}",
-        "$type": "fontWeight",
+        "$type": "fontWeights",
         "$description": "Alert title font weight (600). Semibold provides clear hierarchy between title and message without being overly heavy."
       },
       "lineHeight": {
