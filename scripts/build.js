@@ -786,7 +786,7 @@ function generateTokensStudioMetadata() {
 function generateTokensStudioThemes() {
     const primitiveSetStatus = {
         "primitives/color": "source", "primitives/spacing": "source", "primitives/radius": "source",
-        "primitives/typography": "source", "primitives/shadow": "source", "primitives/motion": "source",
+        "primitives/typography": "enabled", "primitives/shadow": "source", "primitives/motion": "source",
         "primitives/border": "source", "primitives/breakpoints": "source", "primitives/z-index": "source",
         "primitives/opacity": "source", "primitives/sizing": "source", "primitives/focus": "source",
         "primitives/system": "source"
