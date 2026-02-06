@@ -7,7 +7,7 @@
             "$description": "Body font stack for Mantine theme. Roboto is Google's signature typeface, optimized for readability on screens."
         },
         "heading": {
-            "$value": "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$value": "LobsterTwo, Helvetica Neue, Helvetica, Arial, sans-serif",
             "$description": "Heading font stack for Mantine theme. Uses Roboto for consistent typography across headings and body."
         }
     }

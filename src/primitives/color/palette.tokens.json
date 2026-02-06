@@ -103,7 +103,7 @@
             "6": { "$value": "#364fd0", "$description": "Dark indigo - text on light backgrounds" },
             "7": { "$value": "#2a3da0", "$description": "Darker indigo - high contrast" },
             "8": { "$value": "#1e2c72", "$description": "Very dark indigo - text" },
-            "9": { "$value": "#131c47", "$description": "Darkest indigo - maximum emphasis" }
+            "9": { "$value": "#ff6600", "$description": "Darkest indigo - maximum emphasis 131c47" }
         },
         "blue": {
             "$description": "Blue scale (10 shades). PRIMARY BRAND COLOR - use for primary actions, links, focus states, selected items. This is the ClearCo brand blue. Shade 6 is the primary interactive color. Shade 4 for dark theme. Always ensure 4.5:1 contrast ratio for interactive elements.",

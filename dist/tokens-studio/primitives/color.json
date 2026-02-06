@@ -413,9 +413,9 @@
         "$description": "Very dark indigo - text"
       },
       "9": {
-        "$value": "#131c47",
+        "$value": "#ff6600",
         "$type": "color",
-        "$description": "Darkest indigo - maximum emphasis"
+        "$description": "Darkest indigo - maximum emphasis 131c47"
       }
     },
     "blue": {

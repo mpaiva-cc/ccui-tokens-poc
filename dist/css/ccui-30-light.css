@@ -1,7 +1,7 @@
 /**
  * CCUI Design Tokens - ccui-30-light
  * CCUI 3.0 rebranding light
- * Generated: 2026-02-06T17:23:32.640Z
+ * Generated: 2026-02-06T17:40:53.926Z
  *
  * Usage:
  *   1. Load primitives.css first
@@ -101,7 +101,7 @@
   --color-indigo-6: #364fd0;
   --color-indigo-7: #2a3da0;
   --color-indigo-8: #1e2c72;
-  --color-indigo-9: #131c47;
+  --color-indigo-9: #ff6600;
   --color-blue-0: #eaf3fe;
   --color-blue-1: #cfe3fc;
   --color-blue-2: #9fc8fa;
@@ -579,7 +579,7 @@
   --ccui-color-indigo-6: #364fd0;
   --ccui-color-indigo-7: #2a3da0;
   --ccui-color-indigo-8: #1e2c72;
-  --ccui-color-indigo-9: #131c47;
+  --ccui-color-indigo-9: #ff6600;
   --ccui-color-blue-0: #eaf3fe;
   --ccui-color-blue-1: #cfe3fc;
   --ccui-color-blue-2: #9fc8fa;
