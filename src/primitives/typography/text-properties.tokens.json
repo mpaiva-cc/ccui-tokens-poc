@@ -1,0 +1,55 @@
+{
+    "$description": "Additional typography properties required for complete Figma text style export via Tokens Studio. These tokens provide default values for paragraphIndent, paragraphSpacing, textDecoration, and textCase properties.",
+    "paragraphIndent": {
+        "$type": "dimension",
+        "$description": "Paragraph first-line indentation. Most UI text uses 'none' (0).",
+        "none": {
+            "$value": "0",
+            "$description": "No paragraph indentation. Default for UI text."
+        }
+    },
+    "paragraphSpacing": {
+        "$type": "dimension",
+        "$description": "Space between paragraphs. Most UI text uses 'none' (0).",
+        "none": {
+            "$value": "0",
+            "$description": "No paragraph spacing. Default for UI text."
+        }
+    },
+    "textDecoration": {
+        "$type": "textDecoration",
+        "$description": "Text decoration styles for underlines, strikethroughs, etc.",
+        "none": {
+            "$value": "none",
+            "$description": "No text decoration. Default for most text."
+        },
+        "underline": {
+            "$value": "underline",
+            "$description": "Underlined text. Use for: links, emphasized content."
+        },
+        "strikethrough": {
+            "$value": "line-through",
+            "$description": "Strikethrough text. Use for: deleted/removed content, completed tasks."
+        }
+    },
+    "textCase": {
+        "$type": "textCase",
+        "$description": "Text transformation/capitalization styles.",
+        "none": {
+            "$value": "none",
+            "$description": "No text transformation. Default for most text."
+        },
+        "uppercase": {
+            "$value": "uppercase",
+            "$description": "All uppercase. Use for: overlines, labels, buttons (sparingly)."
+        },
+        "lowercase": {
+            "$value": "lowercase",
+            "$description": "All lowercase. Use rarely in UI."
+        },
+        "capitalize": {
+            "$value": "capitalize",
+            "$description": "Capitalize first letter of each word. Use for: titles, headings."
+        }
+    }
+}

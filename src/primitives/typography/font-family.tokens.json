@@ -3,11 +3,11 @@
     "fontFamilies": {
         "$type": "fontFamilies",
         "body": {
-            "$value": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
             "$description": "Primary body font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support."
         },
         "heading": {
-            "$value": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
             "$description": "Heading/display font stack optimized for accessibility. Atkinson Hyperlegible Next (by Braille Institute) is designed for maximum legibility, especially for users with low vision. Use for: page titles, section headings, hero text, marketing content. Distinct letterforms reduce character confusion. Falls back to Public Sans for consistency."
         },
         "mono": {

@@ -539,6 +539,9 @@ const TOKENS_STUDIO_TYPE_MAP = {
     'lineHeights': 'lineHeights',
     'letterSpacing': 'letterSpacing',
     'paragraphSpacing': 'paragraphSpacing',
+    'paragraphIndent': 'dimension',     // TS uses dimension for paragraph indent
+    'textDecoration': 'textDecoration',
+    'textCase': 'textCase',
     'spacing': 'spacing',
     'borderRadius': 'borderRadius',
     'borderWidth': 'borderWidth',
@@ -600,6 +603,14 @@ function inferTokensStudioType(token) {
     if (rootCategory === 'lineHeights') return 'lineHeights';
     if (rootCategory === 'letterSpacing') return 'letterSpacing';
 
+    // Paragraph indent and spacing (typography properties)
+    if (rootCategory === 'paragraphIndent') return 'dimension';
+    if (rootCategory === 'paragraphSpacing') return 'dimension';
+
+    // Text decoration and case (typography properties)
+    if (rootCategory === 'textDecoration') return 'textDecoration';
+    if (rootCategory === 'textCase') return 'textCase';
+
     // Composite typography styles
     if (rootCategory === 'typography') {
         if (originalType === 'typography') return 'typography';
@@ -609,7 +620,10 @@ function inferTokensStudioType(token) {
         if (path.includes('fontSize')) return 'fontSizes';
         if (path.includes('lineHeight')) return 'lineHeights';
         if (path.includes('letterSpacing')) return 'letterSpacing';
-        if (path.includes('paragraphSpacing')) return 'paragraphSpacing';
+        if (path.includes('paragraphSpacing')) return 'dimension';
+        if (path.includes('paragraphIndent')) return 'dimension';
+        if (path.includes('textDecoration')) return 'textDecoration';
+        if (path.includes('textCase')) return 'textCase';
     }
 
     // Motion tokens
@@ -655,6 +669,10 @@ const TOKENS_STUDIO_PRIMITIVE_SETS = {
     'fontWeights': 'primitives/typography',
     'lineHeights': 'primitives/typography',
     'letterSpacing': 'primitives/typography',
+    'paragraphIndent': 'primitives/typography',
+    'paragraphSpacing': 'primitives/typography',
+    'textDecoration': 'primitives/typography',
+    'textCase': 'primitives/typography',
     'typography': 'primitives/typography',  // Composite styles
     'boxShadow': 'primitives/shadow',
     'motion': 'primitives/motion',
