@@ -255,6 +255,87 @@ function checkUnresolvedReferences(content, filePath) {
     return [];
 }
 
+// ========================================
+// SEMANTIC NAMING VALIDATION
+// ========================================
+
+// Patterns that should be avoided in semantic tokens (Mantine-compatible legacy)
+// These are kept for backward compatibility but new code should use spec patterns
+const LEGACY_SEMANTIC_PATTERNS = [
+    /^color\.text$/,
+    /^color\.body$/,
+    /^color\.bright$/,
+    /^color\.error$/,
+    /^color\.placeholder$/,
+    /^color\.anchor$/,
+    /^color\.default$/,
+    /^color\.default-hover$/,
+    /^color\.default-color$/,
+    /^color\.default-border$/,
+    /^color\.dimmed$/,
+    /^color\.disabled$/,
+    /^color\.disabled-color$/,
+    /^color\.disabled-border$/,
+    /^color\.primary\.(filled|light|contrast|filled-hover|light-hover|light-color)$/,
+];
+
+// Spec-compliant semantic patterns (category.concept.property.variant.state)
+const SPEC_COMPLIANT_PATTERNS = [
+    /^color\.content\.text\.\w+$/,           // color.content.text.default
+    /^color\.surface\.bg\.\w+$/,             // color.surface.bg.canvas
+    /^color\.surface\.border\.\w+$/,         // color.surface.border.default
+    /^color\.action\.bg\.\w+(-\w+)?$/,       // color.action.bg.primary-hover
+    /^color\.action\.text\.\w+(-\w+)?$/,     // color.action.text.primary-light
+    /^color\.feedback\.text\.\w+$/,          // color.feedback.text.error
+    /^color\.feedback\.bg\.\w+$/,            // color.feedback.bg.error
+    /^color\.feedback\.border\.\w+$/,        // color.feedback.border.error
+];
+
+// Validate semantic token naming patterns
+function validateSemanticNaming(tokens) {
+    const warnings = [];
+    const compliant = [];
+    const legacy = [];
+
+    for (const token of tokens) {
+        const path = token.path.join('.');
+
+        // Skip primitive color tokens (color.blue.5, etc.)
+        if (token.path[0] === 'color' && token.path.length === 3 && !isNaN(token.path[2])) {
+            continue;
+        }
+
+        // Skip colorPalette tokens
+        if (token.path[0] === 'colorPalette') {
+            continue;
+        }
+
+        // Skip primary scale (color.primary.0-9)
+        if (token.path[0] === 'color' && token.path[1] === 'primary' && !isNaN(token.path[2])) {
+            continue;
+        }
+
+        // Only check color semantic tokens
+        if (token.path[0] !== 'color') {
+            continue;
+        }
+
+        const isLegacy = LEGACY_SEMANTIC_PATTERNS.some(p => p.test(path));
+        const isCompliant = SPEC_COMPLIANT_PATTERNS.some(p => p.test(path));
+
+        if (isLegacy) {
+            legacy.push(path);
+        } else if (isCompliant) {
+            compliant.push(path);
+        } else if (token.path.length > 2) {
+            // Unknown pattern that's not primitive
+            warnings.push(`Unknown semantic pattern: ${path}`);
+        }
+    }
+
+    return { warnings, compliant, legacy };
+}
+
 // Register custom transform for neutral (no prefix) CSS variable names
 StyleDictionary.registerTransform({
     name: 'name/neutral',
@@ -296,12 +377,74 @@ StyleDictionary.registerTransform({
         }
 
         if (path[0] === 'color') {
+            // Primitive color palettes: color.blue.6 → mantine-color-blue-6
             if (path.length === 3 && MANTINE_PALETTES.includes(path[1])) {
                 return `mantine-color-${path[1]}-${path[2]}`;
             }
-            if (path[1] === 'primary') {
+
+            // Primary color scale: color.primary.6 → mantine-primary-color-6
+            if (path[1] === 'primary' && !isNaN(path[2])) {
                 return `mantine-primary-color-${path[2]}`;
             }
+
+            // Semantic color mappings (category.concept.property.variant.state → mantine-*)
+            // Content text colors
+            if (path[1] === 'content' && path[2] === 'text') {
+                const variant = path[3];
+                if (variant === 'default') return 'mantine-color-text';
+                if (variant === 'muted') return 'mantine-color-dimmed';
+                if (variant === 'link') return 'mantine-color-anchor';
+                if (variant === 'placeholder') return 'mantine-color-placeholder';
+                if (variant === 'disabled') return 'mantine-color-disabled-color';
+                if (variant === 'inverse') return 'mantine-color-bright';
+                return `mantine-color-${path.slice(2).join('-')}`;
+            }
+
+            // Surface background colors
+            if (path[1] === 'surface' && path[2] === 'bg') {
+                const variant = path[3];
+                if (variant === 'canvas') return 'mantine-color-body';
+                if (variant === 'default') return 'mantine-color-default';
+                if (variant === 'subtle') return 'mantine-color-default-hover';
+                if (variant === 'disabled') return 'mantine-color-disabled';
+                return `mantine-color-${path.slice(2).join('-')}`;
+            }
+
+            // Surface border colors
+            if (path[1] === 'surface' && path[2] === 'border') {
+                const variant = path[3];
+                if (variant === 'default') return 'mantine-color-default-border';
+                if (variant === 'disabled') return 'mantine-color-disabled-border';
+                return `mantine-color-${path.slice(2).join('-')}`;
+            }
+
+            // Action background colors (primary buttons, etc.)
+            if (path[1] === 'action' && path[2] === 'bg') {
+                const variant = path[3];
+                if (variant === 'primary') return 'mantine-primary-color-filled';
+                if (variant === 'primary-hover') return 'mantine-primary-color-filled-hover';
+                if (variant === 'primary-light') return 'mantine-primary-color-light';
+                if (variant === 'primary-light-hover') return 'mantine-primary-color-light-hover';
+                return `mantine-color-${path.slice(2).join('-')}`;
+            }
+
+            // Action text colors
+            if (path[1] === 'action' && path[2] === 'text') {
+                const variant = path[3];
+                if (variant === 'primary') return 'mantine-primary-color-contrast';
+                if (variant === 'primary-light') return 'mantine-primary-color-light-color';
+                return `mantine-color-${path.slice(2).join('-')}`;
+            }
+
+            // Feedback colors (error, success, warning, info)
+            if (path[1] === 'feedback') {
+                const property = path[2];  // text, bg, border
+                const variant = path[3];   // error, success, etc.
+                if (property === 'text' && variant === 'error') return 'mantine-color-error';
+                return `mantine-color-${path.slice(2).join('-')}`;
+            }
+
+            // Fallback for other color tokens
             return `mantine-color-${path.slice(1).join('-')}`;
         }
 
@@ -481,6 +624,11 @@ StyleDictionary.registerFormat({
     }
 });
 
+// Helper to get the CCUI variable name for a token (used for Mantine aliasing)
+function getCcuiVariableName(token) {
+    return `ccui-${token.path.join('-')}`;
+}
+
 StyleDictionary.registerFormat({
     name: 'css/mantine-shared-primitives',
     format: ({ dictionary, options }) => {
@@ -490,10 +638,11 @@ StyleDictionary.registerFormat({
             isMantineOfficialToken(token) &&
             !isCompositeTypographyToken(token)
         );
+        // Mantine variables alias CCUI variables (spec requirement)
         const variables = sharedTokens
-            .map(token => `  --${token.name}: ${token.$value};`)
+            .map(token => `  --${token.name}: var(--${getCcuiVariableName(token)});`)
             .join('\n');
-        return `/**\n * Mantine Shared Primitives - Auto-generated, do not edit directly\n * Theme-agnostic Mantine-compatible tokens\n */\n\n${selector} {\n${variables}\n}\n`;
+        return `/**\n * Mantine Shared Primitives - Auto-generated, do not edit directly\n * Theme-agnostic Mantine-compatible tokens\n * Note: These alias --ccui-* variables (source of truth)\n */\n\n${selector} {\n${variables}\n}\n`;
     }
 });
 
@@ -506,10 +655,11 @@ StyleDictionary.registerFormat({
             isMantineOfficialToken(token) &&
             !isCompositeTypographyToken(token)
         );
+        // Mantine variables alias CCUI variables (spec requirement)
         const variables = themeTokens
-            .map(token => `  --${token.name}: ${token.$value};`)
+            .map(token => `  --${token.name}: var(--${getCcuiVariableName(token)});`)
             .join('\n');
-        return `/**\n * Mantine Theme-Specific Tokens - Auto-generated, do not edit directly\n * Tokens that vary between themes (colors, shadows)\n */\n\n${selector} {\n${variables}\n}\n`;
+        return `/**\n * Mantine Theme-Specific Tokens - Auto-generated, do not edit directly\n * Tokens that vary between themes (colors, shadows)\n * Note: These alias --ccui-* variables (source of truth)\n */\n\n${selector} {\n${variables}\n}\n`;
     }
 });
 

@@ -1,16 +1,17 @@
 {
-    "$description": "CCUI 3.0 light theme semantic colors. PLACEHOLDER VALUES - Update with final brand colors when guidelines are finalized. Currently using vanilla Mantine defaults.",
+    "$description": "CCUI 3.0 light theme semantic colors. Includes both Mantine-compatible tokens and CCUI spec-compliant semantic aliases. PLACEHOLDER VALUES - Update with final brand colors when guidelines are finalized.",
     "color": {
-        "$description": "Semantic color assignments for CCUI 3.0 light theme.",
+        "$description": "Semantic color assignments. Legacy Mantine tokens and new CCUI spec-compliant aliases.",
+
         "text": {
             "$value": "{color.black}",
             "$type": "color",
-            "$description": "Primary text color for light theme."
+            "$description": "Primary text color (Mantine-compatible). Prefer: color.content.text.default"
         },
         "body": {
             "$value": "{color.white}",
             "$type": "color",
-            "$description": "Body/page background color for light theme."
+            "$description": "Body background color (Mantine-compatible). Prefer: color.surface.bg.canvas"
         },
         "bright": {
             "$value": "{color.black}",
@@ -20,7 +21,7 @@
         "error": {
             "$value": "{color.red.6}",
             "$type": "color",
-            "$description": "Error state color."
+            "$description": "Error color (Mantine-compatible). Prefer: color.feedback.text.error"
         },
         "placeholder": {
             "$value": "{color.gray.5}",
@@ -30,37 +31,37 @@
         "anchor": {
             "$value": "{color.blue.6}",
             "$type": "color",
-            "$description": "Anchor/link text color."
+            "$description": "Anchor/link color (Mantine-compatible). Prefer: color.content.text.link"
         },
         "default": {
             "$value": "{color.white}",
             "$type": "color",
-            "$description": "Default component background color."
+            "$description": "Default component background (Mantine-compatible). Prefer: color.surface.bg.default"
         },
         "default-hover": {
             "$value": "{color.gray.0}",
             "$type": "color",
-            "$description": "Default hover background color."
+            "$description": "Default hover background (Mantine-compatible). Prefer: color.surface.bg.subtle"
         },
         "default-color": {
             "$value": "{color.black}",
             "$type": "color",
-            "$description": "Default text color on default backgrounds."
+            "$description": "Text on default backgrounds."
         },
         "default-border": {
             "$value": "{color.gray.4}",
             "$type": "color",
-            "$description": "Default border color."
+            "$description": "Default border color (Mantine-compatible). Prefer: color.surface.border.default"
         },
         "dimmed": {
             "$value": "{color.gray.6}",
             "$type": "color",
-            "$description": "Dimmed/muted text color."
+            "$description": "Dimmed/muted text (Mantine-compatible). Prefer: color.content.text.muted"
         },
         "disabled": {
             "$value": "{color.gray.2}",
             "$type": "color",
-            "$description": "Disabled background color."
+            "$description": "Disabled background (Mantine-compatible). Prefer: color.surface.bg.disabled"
         },
         "disabled-color": {
             "$value": "{color.gray.5}",
@@ -73,36 +74,36 @@
             "$description": "Disabled border color."
         },
         "primary": {
-            "$description": "Primary color system for CCUI 3.0. PLACEHOLDER - uses blue, update for rebranding.",
+            "$description": "Primary color variants (Mantine-compatible). PLACEHOLDER - uses blue, update for rebranding.",
             "filled": {
                 "$value": "{colorPalette.blue.filled}",
                 "$type": "color",
-                "$description": "Primary filled background."
+                "$description": "Primary filled background. Prefer: color.action.bg.primary"
             },
             "filled-hover": {
                 "$value": "{colorPalette.blue.filled-hover}",
                 "$type": "color",
-                "$description": "Primary filled hover state."
+                "$description": "Primary filled hover. Prefer: color.action.bg.primary-hover"
             },
             "light": {
                 "$value": "{colorPalette.blue.light}",
                 "$type": "color",
-                "$description": "Primary light variant background."
+                "$description": "Primary light background. Prefer: color.action.bg.primary-light"
             },
             "light-hover": {
                 "$value": "{colorPalette.blue.light-hover}",
                 "$type": "color",
-                "$description": "Primary light variant hover."
+                "$description": "Primary light hover."
             },
             "light-color": {
                 "$value": "{colorPalette.blue.light-color}",
                 "$type": "color",
-                "$description": "Text color on primary light backgrounds."
+                "$description": "Text on primary light. Prefer: color.action.text.primary-light"
             },
             "contrast": {
                 "$value": "{color.white}",
                 "$type": "color",
-                "$description": "Contrast text color on primary filled backgrounds."
+                "$description": "Text on primary filled. Prefer: color.action.text.primary"
             },
             "0": { "$value": "{color.blue.0}", "$type": "color" },
             "1": { "$value": "{color.blue.1}", "$type": "color" },
@@ -114,6 +115,129 @@
             "7": { "$value": "{color.blue.7}", "$type": "color" },
             "8": { "$value": "{color.blue.8}", "$type": "color" },
             "9": { "$value": "{color.blue.9}", "$type": "color" }
+        },
+
+        "content": {
+            "$description": "CCUI spec-compliant content colors (aliases to Mantine tokens)",
+            "text": {
+                "default": {
+                    "$value": "{color.text}",
+                    "$type": "color",
+                    "$description": "Primary text color. Use for: headings, body text, labels."
+                },
+                "muted": {
+                    "$value": "{color.dimmed}",
+                    "$type": "color",
+                    "$description": "Secondary/muted text. Use for: helper text, captions."
+                },
+                "placeholder": {
+                    "$value": "{color.placeholder}",
+                    "$type": "color",
+                    "$description": "Placeholder text color."
+                },
+                "disabled": {
+                    "$value": "{color.disabled-color}",
+                    "$type": "color",
+                    "$description": "Disabled text color."
+                },
+                "inverse": {
+                    "$value": "{color.white}",
+                    "$type": "color",
+                    "$description": "Inverse text for dark backgrounds."
+                },
+                "link": {
+                    "$value": "{color.anchor}",
+                    "$type": "color",
+                    "$description": "Link/anchor text color."
+                }
+            }
+        },
+
+        "surface": {
+            "$description": "CCUI spec-compliant surface colors (aliases to Mantine tokens)",
+            "bg": {
+                "canvas": {
+                    "$value": "{color.body}",
+                    "$type": "color",
+                    "$description": "Page canvas/body background."
+                },
+                "default": {
+                    "$value": "{color.default}",
+                    "$type": "color",
+                    "$description": "Default component background."
+                },
+                "subtle": {
+                    "$value": "{color.default-hover}",
+                    "$type": "color",
+                    "$description": "Subtle background for hover states."
+                },
+                "disabled": {
+                    "$value": "{color.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled element background."
+                }
+            },
+            "border": {
+                "default": {
+                    "$value": "{color.default-border}",
+                    "$type": "color",
+                    "$description": "Default border color."
+                },
+                "disabled": {
+                    "$value": "{color.disabled-border}",
+                    "$type": "color",
+                    "$description": "Disabled border color."
+                }
+            }
+        },
+
+        "action": {
+            "$description": "CCUI spec-compliant action colors (aliases to Mantine tokens)",
+            "bg": {
+                "primary": {
+                    "$value": "{color.primary.filled}",
+                    "$type": "color",
+                    "$description": "Primary action background."
+                },
+                "primary-hover": {
+                    "$value": "{color.primary.filled-hover}",
+                    "$type": "color",
+                    "$description": "Primary action hover state."
+                },
+                "primary-light": {
+                    "$value": "{color.primary.light}",
+                    "$type": "color",
+                    "$description": "Primary light variant background."
+                },
+                "primary-light-hover": {
+                    "$value": "{color.primary.light-hover}",
+                    "$type": "color",
+                    "$description": "Primary light variant hover."
+                }
+            },
+            "text": {
+                "primary": {
+                    "$value": "{color.primary.contrast}",
+                    "$type": "color",
+                    "$description": "Text on primary backgrounds."
+                },
+                "primary-light": {
+                    "$value": "{color.primary.light-color}",
+                    "$type": "color",
+                    "$description": "Text on primary light backgrounds."
+                }
+            }
+        },
+
+        "feedback": {
+            "$description": "CCUI spec-compliant feedback colors",
+            "text": {
+                "error": {
+                    "$value": "{color.error}",
+                    "$type": "color",
+                    "$description": "Error text color."
+                }
+            }
         }
     }
 }

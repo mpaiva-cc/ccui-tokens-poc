@@ -42,153 +42,258 @@
     "text": {
       "$value": "{color.black}",
       "$type": "color",
-      "$description": "Primary text color (#000000 in light theme). Use for: headings, body text, labels, primary content. HIGHEST contrast against body background. WCAG AAA compliant (21:1 contrast ratio). Common in: Typography, labels, form field values, card content, navigation text."
+      "$description": "Primary text color (Mantine-compatible). Prefer: color.content.text.default"
     },
     "body": {
       "$value": "{color.white}",
       "$type": "color",
-      "$description": "Body/page background color (#FFFFFF in light theme). Use for: main page background, card backgrounds, content area base. FOUNDATIONAL surface color - everything else layers on top. Common in: App shell background, Card, Paper, Modal content area, page wrappers."
+      "$description": "Body background color (Mantine-compatible). Prefer: color.surface.bg.canvas"
     },
     "bright": {
       "$value": "{color.black}",
       "$type": "color",
-      "$description": "Bright/emphasis text color. In light theme, same as text (black). Use for: highest emphasis content, key figures, critical information, visual hierarchy peaks. Provides flexibility for themes where bright differs from text. Common in: Dashboard metrics, highlighted text, key stats."
+      "$description": "Bright text color for maximum contrast."
     },
     "error": {
       "$value": "{color.red.7}",
       "$type": "color",
-      "$description": "Error state text color (red.7). WCAG AA compliant with 6.02:1 contrast ratio against white. Use for: error messages, validation failures, destructive action warnings, critical alerts. ACCESSIBILITY: Combine with an icon - don't rely on color alone to convey errors. Common in: Form validation errors, Alert (error variant), Toast (error), inline error messages."
+      "$description": "Error color (Mantine-compatible). Prefer: color.feedback.text.error"
     },
     "placeholder": {
       "$value": "{color.gray.6}",
       "$type": "color",
-      "$description": "Placeholder text color (gray.6). WCAG AA-large text compliant with 3.32:1 contrast. Use for: input placeholder text, empty state hints, secondary guidance text. CAUTION: Not suitable for essential information - only use for hints that enhance, not provide, meaning. Common in: Input placeholders, Select placeholder, search hints, empty state descriptions."
+      "$description": "Placeholder text color."
     },
     "anchor": {
       "$value": "{color.blue.6}",
       "$type": "color",
-      "$description": "Anchor/link text color (blue.6). Use for: hyperlinks, clickable text, text buttons, navigation links. Must be distinguishable from surrounding text. ACCESSIBILITY: Ensure 3:1 contrast against non-link text per WCAG 1.4.1. Underline recommended for in-paragraph links. Common in: Anchor elements, text-style buttons, breadcrumb links, inline navigation."
+      "$description": "Anchor/link color (Mantine-compatible). Prefer: color.content.text.link"
     },
     "default": {
       "$value": "{color.white}",
       "$type": "color",
-      "$description": "Default surface/background color for components. Use for: button backgrounds, input backgrounds, card surfaces, component base layer. Provides neutral canvas for content. Common in: Button (default variant), Input background, Card surface, Dropdown trigger, Tab panels."
+      "$description": "Default component background (Mantine-compatible). Prefer: color.surface.bg.default"
     },
     "default-hover": {
       "$value": "{color.gray.0}",
       "$type": "color",
-      "$description": "Default hover background color (gray.0 - very light gray). Use for: hover states on default surfaces, interactive row highlights, button hover feedback. Provides subtle visual feedback without dramatic color shift. Common in: Button:hover, Table row:hover, List item:hover, Menu item:hover, Dropdown option:hover."
+      "$description": "Default hover background (Mantine-compatible). Prefer: color.surface.bg.subtle"
     },
     "default-color": {
       "$value": "{color.black}",
       "$type": "color",
-      "$description": "Default text color for default-background components. Use for: button text, input text, component labels. Pairs with 'default' background for proper contrast. Common in: Button text, Input value, Tab label, Menu item text, Badge text."
+      "$description": "Text on default backgrounds."
     },
     "default-border": {
       "$value": "{color.gray.4}",
       "$type": "color",
-      "$description": "Default border color (gray.4 - medium gray). Use for: input borders, card boundaries, component outlines, dividers. Provides subtle definition without harsh contrast. Common in: Input border, Card border, Table cell borders, Divider lines, Tab container borders."
+      "$description": "Default border color (Mantine-compatible). Prefer: color.surface.border.default"
     },
     "dimmed": {
       "$value": "{color.gray.6}",
       "$type": "color",
-      "$description": "Dimmed/muted text color (gray.6). Use for: secondary text, metadata, timestamps, captions, helper text, de-emphasized content. Lower contrast than primary text to establish visual hierarchy. ACCESSIBILITY: Ensure still meets minimum 4.5:1 contrast for small text. Common in: Timestamps, bylines, helper text, secondary labels, metadata."
+      "$description": "Dimmed/muted text (Mantine-compatible). Prefer: color.content.text.muted"
     },
     "disabled": {
       "$value": "{color.gray.2}",
       "$type": "color",
-      "$description": "Disabled element background color (gray.2 - light gray). Use for: disabled button backgrounds, inactive input backgrounds, unavailable component surfaces. Visually indicates non-interactivity. ACCESSIBILITY: Use with aria-disabled='true'. Color alone is not sufficient - combine with disabled-color text. Common in: Button:disabled background, Input:disabled background, disabled toggle/switch."
+      "$description": "Disabled background (Mantine-compatible). Prefer: color.surface.bg.disabled"
     },
     "disabled-color": {
       "$value": "{color.gray.5}",
       "$type": "color",
-      "$description": "Disabled element text color (gray.5). Use for: disabled button text, inactive labels, unavailable option text. Reduced contrast indicates non-interactivity. ACCESSIBILITY: Disabled elements are exempt from WCAG contrast requirements BUT should still be perceivable. Pairs with 'disabled' background. Common in: Button:disabled text, Select:disabled option, disabled form label."
+      "$description": "Disabled text color."
     },
     "disabled-border": {
       "$value": "{color.gray.3}",
       "$type": "color",
-      "$description": "Disabled element border color (gray.3). Use for: disabled input borders, inactive component outlines. Completes the disabled state trio (disabled, disabled-color, disabled-border). Common in: Input:disabled border, Button:disabled outline, disabled Card border."
+      "$description": "Disabled border color."
     },
     "primary": {
       "0": {
         "$value": "{color.blue.0}",
-        "$type": "color",
-        "$description": "Primary shade 0 - lightest. Use for: very subtle backgrounds, light hover states, table zebra striping with primary tint. Nearly white with a hint of primary. Common in: Light info backgrounds, subtle selected states."
+        "$type": "color"
       },
       "1": {
         "$value": "{color.blue.1}",
-        "$type": "color",
-        "$description": "Primary shade 1. Use for: light backgrounds, subtle emphasis, secondary selections. Noticeably tinted but still light. Common in: Info panel backgrounds, light chips/tags."
+        "$type": "color"
       },
       "2": {
         "$value": "{color.blue.2}",
-        "$type": "color",
-        "$description": "Primary shade 2. Use for: hover states on shade 1 backgrounds, light borders, subtle dividers. Common in: Card hover with primary tint, light accent borders."
+        "$type": "color"
       },
       "3": {
         "$value": "{color.blue.3}",
-        "$type": "color",
-        "$description": "Primary shade 3. Use for: visible but soft accents, disabled primary buttons, light mode decorative elements. Common in: Progress bar tracks, light decorative borders."
+        "$type": "color"
       },
       "4": {
         "$value": "{color.blue.4}",
-        "$type": "color",
-        "$description": "Primary shade 4. Use for: medium-light accents, dark theme primary button backgrounds. Balanced between light and saturated. Common in: Icons on light backgrounds, secondary badges."
+        "$type": "color"
       },
       "5": {
         "$value": "{color.blue.5}",
-        "$type": "color",
-        "$description": "Primary shade 5. Use for: focus rings, medium emphasis accents, link hover states. Middle of the primary scale. Common in: Focus ring color, interactive element outlines."
+        "$type": "color"
       },
       "6": {
         "$value": "{color.blue.6}",
-        "$type": "color",
-        "$description": "Primary shade 6 - PRIMARY INTERACTIVE. Main shade for buttons and interactive elements in light theme. Use for: primary buttons, links, active states. WCAG AA compliant against white backgrounds. Common in: Button (primary), Anchor, Checkbox:checked, Radio:selected."
+        "$type": "color"
       },
       "7": {
         "$value": "{color.blue.7}",
-        "$type": "color",
-        "$description": "Primary shade 7. Use for: primary button hover, pressed states, darker accents. Darker than interactive shade for state differentiation. Common in: Button (primary):hover, pressed states, dark accents."
+        "$type": "color"
       },
       "8": {
         "$value": "{color.blue.8}",
-        "$type": "color",
-        "$description": "Primary shade 8. Use for: active/pressed states, high-contrast accents on light backgrounds. Quite dark - use sparingly. Common in: Active button states, high emphasis borders."
+        "$type": "color"
       },
       "9": {
         "$value": "{color.blue.9}",
-        "$type": "color",
-        "$description": "Primary shade 9 - darkest primary. Use for: extreme emphasis, near-black primary tints, dark theme text on primary backgrounds. Very dark - maximum primary saturation. Common in: Dark mode primary text, high contrast accents."
+        "$type": "color"
       },
       "filled": {
         "$value": "{colorPalette.blue.filled}",
         "$type": "color",
-        "$description": "Primary filled background color. Use for: primary button backgrounds, selected toggles, active tabs, main CTAs. This is the HERO primary color - highest brand visibility. ACCESSIBILITY: Use with primary.contrast text for proper contrast. Common in: Button (primary), active Tab, selected Checkbox/Radio, primary Badge."
+        "$description": "Primary filled background. Prefer: color.action.bg.primary"
       },
       "filled-hover": {
         "$value": "{colorPalette.blue.filled-hover}",
         "$type": "color",
-        "$description": "Primary filled hover state background. Use for: primary button hover, active element hover feedback. Slightly darker than filled for visible hover response. Common in: Button (primary):hover, active Tab:hover, primary action hover states."
+        "$description": "Primary filled hover. Prefer: color.action.bg.primary-hover"
       },
       "light": {
         "$value": "{colorPalette.blue.light}",
         "$type": "color",
-        "$description": "Primary light/subtle background color. Use for: subtle primary emphasis, light variant buttons, selected row backgrounds, info alerts. Lower visual weight than filled - use for secondary primary actions. Common in: Button (primary light variant), selected Table row, Alert (info), Tag/Chip (primary)."
+        "$description": "Primary light background. Prefer: color.action.bg.primary-light"
       },
       "light-hover": {
         "$value": "{colorPalette.blue.light-hover}",
         "$type": "color",
-        "$description": "Primary light hover state background. Use for: light primary button hover, selected row hover. Slightly darker than light for hover feedback. Common in: Button (primary light):hover, selected row:hover."
+        "$description": "Primary light hover."
       },
       "light-color": {
         "$value": "{colorPalette.blue.light-color}",
         "$type": "color",
-        "$description": "Text color for use ON primary.light backgrounds. Use for: text in light primary buttons, labels in info alerts, icons on light primary surfaces. Ensures readable contrast on subtle primary backgrounds. Common in: Button (primary light) text, Alert (info) text, light primary Badge text."
+        "$description": "Text on primary light. Prefer: color.action.text.primary-light"
       },
       "contrast": {
         "$value": "{color.white}",
         "$type": "color",
-        "$description": "Contrast text color for use ON primary.filled backgrounds. White in light theme. Use for: primary button text, icons on primary backgrounds, text overlaid on brand colors. CRITICAL for accessibility - ensures readable text on primary surfaces. Common in: Button (primary) text/icon, primary Badge text, primary Chip text."
+        "$description": "Text on primary filled. Prefer: color.action.text.primary"
+      }
+    },
+    "content": {
+      "text": {
+        "default": {
+          "$value": "{color.text}",
+          "$type": "color",
+          "$description": "Primary text color. Use for: headings, body text, labels."
+        },
+        "muted": {
+          "$value": "{color.dimmed}",
+          "$type": "color",
+          "$description": "Secondary/muted text. Use for: helper text, captions."
+        },
+        "placeholder": {
+          "$value": "{color.placeholder}",
+          "$type": "color",
+          "$description": "Placeholder text color."
+        },
+        "disabled": {
+          "$value": "{color.disabled-color}",
+          "$type": "color",
+          "$description": "Disabled text color."
+        },
+        "inverse": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "Inverse text for dark backgrounds."
+        },
+        "link": {
+          "$value": "{color.anchor}",
+          "$type": "color",
+          "$description": "Link/anchor text color."
+        }
+      }
+    },
+    "surface": {
+      "bg": {
+        "canvas": {
+          "$value": "{color.body}",
+          "$type": "color",
+          "$description": "Page canvas/body background."
+        },
+        "default": {
+          "$value": "{color.default}",
+          "$type": "color",
+          "$description": "Default component background."
+        },
+        "subtle": {
+          "$value": "{color.default-hover}",
+          "$type": "color",
+          "$description": "Subtle background for hover states."
+        },
+        "disabled": {
+          "$value": "{color.disabled}",
+          "$type": "color",
+          "$description": "Disabled element background."
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.default-border}",
+          "$type": "color",
+          "$description": "Default border color."
+        },
+        "disabled": {
+          "$value": "{color.disabled-border}",
+          "$type": "color",
+          "$description": "Disabled border color."
+        }
+      }
+    },
+    "action": {
+      "bg": {
+        "primary": {
+          "$value": "{color.primary.filled}",
+          "$type": "color",
+          "$description": "Primary action background."
+        },
+        "primary-hover": {
+          "$value": "{color.primary.filled-hover}",
+          "$type": "color",
+          "$description": "Primary action hover state."
+        },
+        "primary-light": {
+          "$value": "{color.primary.light}",
+          "$type": "color",
+          "$description": "Primary light variant background."
+        },
+        "primary-light-hover": {
+          "$value": "{color.primary.light-hover}",
+          "$type": "color",
+          "$description": "Primary light variant hover."
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.primary.contrast}",
+          "$type": "color",
+          "$description": "Text on primary backgrounds."
+        },
+        "primary-light": {
+          "$value": "{color.primary.light-color}",
+          "$type": "color",
+          "$description": "Text on primary light backgrounds."
+        }
+      }
+    },
+    "feedback": {
+      "text": {
+        "error": {
+          "$value": "{color.error}",
+          "$type": "color",
+          "$description": "Error text color."
+        }
       }
     }
   },

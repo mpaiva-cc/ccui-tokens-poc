@@ -42,72 +42,72 @@
     "text": {
       "$value": "{color.black}",
       "$type": "color",
-      "$description": "Default Mantine text color (black) for light theme."
+      "$description": "Primary text color (Mantine-compatible). Prefer: color.content.text.default"
     },
     "body": {
       "$value": "{color.white}",
       "$type": "color",
-      "$description": "Default Mantine body background color (white) for light theme."
+      "$description": "Body background color (Mantine-compatible). Prefer: color.surface.bg.canvas"
     },
     "bright": {
       "$value": "{color.black}",
       "$type": "color",
-      "$description": "Default Mantine bright text color for maximum contrast."
+      "$description": "Bright text color for maximum contrast."
     },
     "error": {
       "$value": "{color.red.6}",
       "$type": "color",
-      "$description": "Default Mantine error color (red.6)."
+      "$description": "Error color (Mantine-compatible). Prefer: color.feedback.text.error"
     },
     "placeholder": {
       "$value": "{color.gray.5}",
       "$type": "color",
-      "$description": "Default Mantine placeholder text color."
+      "$description": "Placeholder text color."
     },
     "anchor": {
       "$value": "{color.blue.6}",
       "$type": "color",
-      "$description": "Default Mantine anchor/link color (blue.6)."
+      "$description": "Anchor/link color (Mantine-compatible). Prefer: color.content.text.link"
     },
     "default": {
       "$value": "{color.white}",
       "$type": "color",
-      "$description": "Default Mantine component background color."
+      "$description": "Default component background (Mantine-compatible). Prefer: color.surface.bg.default"
     },
     "default-hover": {
       "$value": "{color.gray.0}",
       "$type": "color",
-      "$description": "Default Mantine hover background color."
+      "$description": "Default hover background (Mantine-compatible). Prefer: color.surface.bg.subtle"
     },
     "default-color": {
       "$value": "{color.black}",
       "$type": "color",
-      "$description": "Default Mantine text color on default backgrounds."
+      "$description": "Text on default backgrounds."
     },
     "default-border": {
       "$value": "{color.gray.4}",
       "$type": "color",
-      "$description": "Default Mantine border color."
+      "$description": "Default border color (Mantine-compatible). Prefer: color.surface.border.default"
     },
     "dimmed": {
       "$value": "{color.gray.6}",
       "$type": "color",
-      "$description": "Default Mantine dimmed/muted text color."
+      "$description": "Dimmed/muted text (Mantine-compatible). Prefer: color.content.text.muted"
     },
     "disabled": {
       "$value": "{color.gray.2}",
       "$type": "color",
-      "$description": "Default Mantine disabled background color."
+      "$description": "Disabled background (Mantine-compatible). Prefer: color.surface.bg.disabled"
     },
     "disabled-color": {
       "$value": "{color.gray.5}",
       "$type": "color",
-      "$description": "Default Mantine disabled text color."
+      "$description": "Disabled text color."
     },
     "disabled-border": {
       "$value": "{color.gray.3}",
       "$type": "color",
-      "$description": "Default Mantine disabled border color."
+      "$description": "Disabled border color."
     },
     "primary": {
       "0": {
@@ -153,32 +153,147 @@
       "filled": {
         "$value": "{colorPalette.blue.filled}",
         "$type": "color",
-        "$description": "Primary filled background (blue.6)."
+        "$description": "Primary filled background. Prefer: color.action.bg.primary"
       },
       "filled-hover": {
         "$value": "{colorPalette.blue.filled-hover}",
         "$type": "color",
-        "$description": "Primary filled hover state (blue.7)."
+        "$description": "Primary filled hover. Prefer: color.action.bg.primary-hover"
       },
       "light": {
         "$value": "{colorPalette.blue.light}",
         "$type": "color",
-        "$description": "Primary light variant background."
+        "$description": "Primary light background. Prefer: color.action.bg.primary-light"
       },
       "light-hover": {
         "$value": "{colorPalette.blue.light-hover}",
         "$type": "color",
-        "$description": "Primary light variant hover."
+        "$description": "Primary light hover."
       },
       "light-color": {
         "$value": "{colorPalette.blue.light-color}",
         "$type": "color",
-        "$description": "Text color on primary light backgrounds."
+        "$description": "Text on primary light. Prefer: color.action.text.primary-light"
       },
       "contrast": {
         "$value": "{color.white}",
         "$type": "color",
-        "$description": "Contrast text color on primary filled backgrounds."
+        "$description": "Text on primary filled. Prefer: color.action.text.primary"
+      }
+    },
+    "content": {
+      "text": {
+        "default": {
+          "$value": "{color.text}",
+          "$type": "color",
+          "$description": "Primary text color. Use for: headings, body text, labels."
+        },
+        "muted": {
+          "$value": "{color.dimmed}",
+          "$type": "color",
+          "$description": "Secondary/muted text. Use for: helper text, captions."
+        },
+        "placeholder": {
+          "$value": "{color.placeholder}",
+          "$type": "color",
+          "$description": "Placeholder text color."
+        },
+        "disabled": {
+          "$value": "{color.disabled-color}",
+          "$type": "color",
+          "$description": "Disabled text color."
+        },
+        "inverse": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "Inverse text for dark backgrounds."
+        },
+        "link": {
+          "$value": "{color.anchor}",
+          "$type": "color",
+          "$description": "Link/anchor text color."
+        }
+      }
+    },
+    "surface": {
+      "bg": {
+        "canvas": {
+          "$value": "{color.body}",
+          "$type": "color",
+          "$description": "Page canvas/body background."
+        },
+        "default": {
+          "$value": "{color.default}",
+          "$type": "color",
+          "$description": "Default component background."
+        },
+        "subtle": {
+          "$value": "{color.default-hover}",
+          "$type": "color",
+          "$description": "Subtle background for hover states."
+        },
+        "disabled": {
+          "$value": "{color.disabled}",
+          "$type": "color",
+          "$description": "Disabled element background."
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.default-border}",
+          "$type": "color",
+          "$description": "Default border color."
+        },
+        "disabled": {
+          "$value": "{color.disabled-border}",
+          "$type": "color",
+          "$description": "Disabled border color."
+        }
+      }
+    },
+    "action": {
+      "bg": {
+        "primary": {
+          "$value": "{color.primary.filled}",
+          "$type": "color",
+          "$description": "Primary action background."
+        },
+        "primary-hover": {
+          "$value": "{color.primary.filled-hover}",
+          "$type": "color",
+          "$description": "Primary action hover state."
+        },
+        "primary-light": {
+          "$value": "{color.primary.light}",
+          "$type": "color",
+          "$description": "Primary light variant background."
+        },
+        "primary-light-hover": {
+          "$value": "{color.primary.light-hover}",
+          "$type": "color",
+          "$description": "Primary light variant hover."
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.primary.contrast}",
+          "$type": "color",
+          "$description": "Text on primary backgrounds."
+        },
+        "primary-light": {
+          "$value": "{color.primary.light-color}",
+          "$type": "color",
+          "$description": "Text on primary light backgrounds."
+        }
+      }
+    },
+    "feedback": {
+      "text": {
+        "error": {
+          "$value": "{color.error}",
+          "$type": "color",
+          "$description": "Error text color."
+        }
       }
     }
   },
