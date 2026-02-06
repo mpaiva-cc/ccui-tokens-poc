@@ -992,7 +992,13 @@ StyleDictionary.registerFormat({
     name: 'json/tokens-studio-set',
     format: ({ dictionary, options }) => {
         const setName = options.setName;
-        const tokens = filterTokensBySet(dictionary.allTokens, setName);
+        const excludeCategories = options.excludeCategories || [];
+        let tokens = filterTokensBySet(dictionary.allTokens, setName);
+        // Filter out excluded categories (used to prevent fontFamilies in primitives/typography
+        // since theme-specific fontFamilies come from semantic files)
+        if (excludeCategories.length > 0) {
+            tokens = tokens.filter(token => !excludeCategories.includes(token.path[0]));
+        }
         const structure = buildTokensStudioStructure(tokens);
         return JSON.stringify(structure, null, 2);
     }
@@ -1108,7 +1114,7 @@ async function buildSharedPrimitives() {
                 "tokens-studio-primitives-typography": {
                     "transformGroup": transformGroups.json,
                     "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "typography.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/typography" } }]
+                    "files": [{ "destination": "typography.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/typography", "excludeCategories": ["fontFamilies"] } }]
                 },
                 "tokens-studio-primitives-shadow": {
                     "transformGroup": transformGroups.json,
