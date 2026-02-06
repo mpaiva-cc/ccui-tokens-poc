@@ -2,324 +2,328 @@
   "color": {
     "overlay": {
       "light": {
-        "$value": "rgba(0, 0, 0, 0.5)",
         "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.5)",
         "$description": "Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds."
       },
       "dark": {
-        "$value": "rgba(0, 0, 0, 0.75)",
         "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.75)",
         "$description": "Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
       }
     },
     "alpha": {
       "error": {
-        "$value": "rgba(207, 39, 32, 0.15)",
         "$type": "color",
+        "$value": "rgba(207, 39, 32, 0.15)",
         "$description": "Error state semi-transparent background (15% red)"
       },
       "success": {
-        "$value": "rgba(29, 148, 72, 0.15)",
         "$type": "color",
+        "$value": "rgba(29, 148, 72, 0.15)",
         "$description": "Success state semi-transparent background (15% green)"
       },
       "warning": {
-        "$value": "rgba(218, 167, 17, 0.15)",
         "$type": "color",
+        "$value": "rgba(218, 167, 17, 0.15)",
         "$description": "Warning state semi-transparent background (15% yellow)"
       },
       "info": {
-        "$value": "rgba(9, 116, 235, 0.15)",
         "$type": "color",
+        "$value": "rgba(9, 116, 235, 0.15)",
         "$description": "Info state semi-transparent background (15% blue)"
       },
       "selected": {
-        "$value": "rgba(9, 116, 235, 0.2)",
         "$type": "color",
+        "$value": "rgba(9, 116, 235, 0.2)",
         "$description": "Selected state semi-transparent background (20% blue)"
       }
     },
     "text": {
-      "$value": "{color.black}",
       "$type": "color",
+      "$value": "{color.black}",
       "$description": "Default Mantine text color (black) for light theme."
     },
     "body": {
-      "$value": "{color.white}",
       "$type": "color",
+      "$value": "{color.white}",
       "$description": "Default Mantine body background color (white) for light theme."
     },
     "bright": {
-      "$value": "{color.black}",
       "$type": "color",
+      "$value": "{color.black}",
       "$description": "Default Mantine bright text color for maximum contrast."
     },
     "error": {
-      "$value": "{color.red.6}",
       "$type": "color",
+      "$value": "{color.red.6}",
       "$description": "Default Mantine error color (red.6)."
     },
     "placeholder": {
-      "$value": "{color.gray.5}",
       "$type": "color",
+      "$value": "{color.gray.5}",
       "$description": "Default Mantine placeholder text color."
     },
     "anchor": {
-      "$value": "{color.blue.6}",
       "$type": "color",
+      "$value": "{color.blue.6}",
       "$description": "Default Mantine anchor/link color (blue.6)."
     },
     "default": {
-      "$value": "{color.white}",
       "$type": "color",
+      "$value": "{color.white}",
       "$description": "Default Mantine component background color."
     },
     "default-hover": {
-      "$value": "{color.gray.0}",
       "$type": "color",
+      "$value": "{color.gray.0}",
       "$description": "Default Mantine hover background color."
     },
     "default-color": {
-      "$value": "{color.black}",
       "$type": "color",
+      "$value": "{color.black}",
       "$description": "Default Mantine text color on default backgrounds."
     },
     "default-border": {
-      "$value": "{color.gray.4}",
       "$type": "color",
+      "$value": "{color.gray.4}",
       "$description": "Default Mantine border color."
     },
     "dimmed": {
-      "$value": "{color.gray.6}",
       "$type": "color",
+      "$value": "{color.gray.6}",
       "$description": "Default Mantine dimmed/muted text color."
     },
     "disabled": {
-      "$value": "{color.gray.2}",
       "$type": "color",
+      "$value": "{color.gray.2}",
       "$description": "Default Mantine disabled background color."
     },
     "disabled-color": {
-      "$value": "{color.gray.5}",
       "$type": "color",
+      "$value": "{color.gray.5}",
       "$description": "Default Mantine disabled text color."
     },
     "disabled-border": {
-      "$value": "{color.gray.3}",
       "$type": "color",
+      "$value": "{color.gray.3}",
       "$description": "Default Mantine disabled border color."
     },
     "primary": {
       "0": {
-        "$value": "{color.blue.0}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.0}"
       },
       "1": {
-        "$value": "{color.blue.1}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.1}"
       },
       "2": {
-        "$value": "{color.blue.2}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.2}"
       },
       "3": {
-        "$value": "{color.blue.3}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.3}"
       },
       "4": {
-        "$value": "{color.blue.4}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.4}"
       },
       "5": {
-        "$value": "{color.blue.5}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.5}"
       },
       "6": {
-        "$value": "{color.blue.6}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.6}"
       },
       "7": {
-        "$value": "{color.blue.7}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.7}"
       },
       "8": {
-        "$value": "{color.blue.8}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.8}"
       },
       "9": {
-        "$value": "{color.blue.9}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{color.blue.9}"
       },
       "filled": {
-        "$value": "{colorPalette.blue.filled}",
         "$type": "color",
+        "$value": "{colorPalette.blue.filled}",
         "$description": "Primary filled background (blue.6)."
       },
       "filled-hover": {
-        "$value": "{colorPalette.blue.filled-hover}",
         "$type": "color",
+        "$value": "{colorPalette.blue.filled-hover}",
         "$description": "Primary filled hover state (blue.7)."
       },
       "light": {
-        "$value": "{colorPalette.blue.light}",
         "$type": "color",
+        "$value": "{colorPalette.blue.light}",
         "$description": "Primary light variant background."
       },
       "light-hover": {
-        "$value": "{colorPalette.blue.light-hover}",
         "$type": "color",
+        "$value": "{colorPalette.blue.light-hover}",
         "$description": "Primary light variant hover."
       },
       "light-color": {
-        "$value": "{colorPalette.blue.light-color}",
         "$type": "color",
+        "$value": "{colorPalette.blue.light-color}",
         "$description": "Text color on primary light backgrounds."
       },
       "contrast": {
-        "$value": "{color.white}",
         "$type": "color",
+        "$value": "{color.white}",
         "$description": "Contrast text color on primary filled backgrounds."
       }
     }
   },
   "opacity": {
     "0": {
-      "$value": 0,
       "$type": "number",
+      "$value": 0,
       "$description": "Fully transparent (0%). Use for: hidden elements, animation start states, invisible interactive areas. Element is invisible but may still be interactive. CSS: opacity: 0; visibility: hidden for truly hidden."
     },
     "5": {
-      "$value": 0.05,
       "$type": "number",
+      "$value": 0.05,
       "$description": "5% opacity - barely visible. Use for: extremely subtle hover states, ghost backgrounds, near-invisible separators. Only visible against high-contrast backgrounds."
     },
     "10": {
-      "$value": 0.1,
       "$type": "number",
+      "$value": 0.1,
       "$description": "10% opacity - subtle transparency. Use for: light hover backgrounds, subtle shadows, faint overlays. Minimally perceptible change."
     },
     "20": {
-      "$value": 0.2,
       "$type": "number",
+      "$value": 0.2,
       "$description": "20% opacity - light transparency. Use for: hover states, light overlays, muted backgrounds. Noticeable but unobtrusive."
     },
     "25": {
-      "$value": 0.25,
       "$type": "number",
+      "$value": 0.25,
       "$description": "25% opacity - quarter visible. Use for: skeleton loading states, light dimming, subtle backgrounds. Common for placeholder content."
     },
     "30": {
-      "$value": 0.3,
       "$type": "number",
+      "$value": 0.3,
       "$description": "30% opacity - moderate transparency. Use for: image overlays, text shadows, moderate dimming. Visible but allows content behind to show clearly."
     },
     "40": {
-      "$value": 0.4,
       "$type": "number",
+      "$value": 0.4,
       "$description": "40% opacity - semi-transparent. Use for: medium overlays, watermarks, partially hidden content. Balanced visibility."
     },
     "50": {
-      "$value": 0.5,
       "$type": "number",
+      "$value": 0.5,
       "$description": "50% opacity - half visible. Use for: disabled elements (semantic alias: 'disabled'), balanced overlays, de-emphasized content. CAUTION: May not meet contrast requirements for text."
     },
     "60": {
-      "$value": 0.6,
       "$type": "number",
+      "$value": 0.6,
       "$description": "60% opacity - mostly visible. Use for: modal backdrops (semantic alias: 'overlay'), dimmed backgrounds, focus-drawing overlays. Content behind is visible but de-emphasized."
     },
     "70": {
-      "$value": 0.7,
       "$type": "number",
+      "$value": 0.7,
       "$description": "70% opacity - high visibility. Use for: heavy overlays, strong dimming, de-emphasized backgrounds. Most content visible but clearly secondary."
     },
     "75": {
-      "$value": 0.75,
       "$type": "number",
+      "$value": 0.75,
       "$description": "75% opacity - three-quarters visible. Use for: dark overlays, strong backgrounds, significant dimming. Mostly solid with hint of transparency."
     },
     "80": {
-      "$value": 0.8,
       "$type": "number",
+      "$value": 0.8,
       "$description": "80% opacity - mostly solid. Use for: nearly-opaque overlays, frosted glass effects (with backdrop-filter), heavy backgrounds."
     },
     "90": {
-      "$value": 0.9,
       "$type": "number",
+      "$value": 0.9,
       "$description": "90% opacity - nearly solid. Use for: subtle transparency effects, slight see-through, glass-like surfaces. Almost indistinguishable from solid."
     },
     "100": {
-      "$value": 1,
       "$type": "number",
+      "$value": 1,
       "$description": "Fully opaque (100%). Use for: solid elements, removing inherited transparency, default element state. CSS: opacity: 1; (default browser value)."
     },
     "disabled": {
-      "$value": 0.5,
       "$type": "number",
+      "$value": 0.5,
       "$description": "Disabled element opacity (50%). SEMANTIC alias for opacity.50. Use for: disabled buttons, inactive controls, unavailable options. Universally recognized as 'inactive'. ACCESSIBILITY: Ensure disabled elements are still perceivable and their disabled state is communicated via aria-disabled."
     },
     "overlay": {
-      "$value": 0.6,
       "$type": "number",
+      "$value": 0.6,
       "$description": "Modal overlay opacity (60%). SEMANTIC alias for opacity.60. Use for: modal backdrops, lightbox backgrounds, focus-drawing overlays. Dims background while keeping it visible for context. Common in: Modal backdrop, Drawer overlay, image lightbox backgrounds."
     }
   },
   "mantine": {
     "scale": {
-      "$value": 1,
       "$type": "number",
+      "$value": 1,
       "$description": "Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size."
     },
     "cursorType": {
+      "$type": "other",
       "$value": "pointer",
       "$description": "Cursor style for interactive elements. 'pointer' for clickable, 'default' for standard."
     },
     "webkitFontSmoothing": {
+      "$type": "other",
       "$value": "antialiased",
       "$description": "WebKit font smoothing. 'antialiased' for crisp text on macOS/iOS."
     },
     "mozFontSmoothing": {
+      "$type": "other",
       "$value": "grayscale",
       "$description": "Mozilla font smoothing. 'grayscale' for crisp text on Firefox."
     },
     "headingFontWeight": {
-      "$value": 700,
       "$type": "number",
+      "$value": 700,
       "$description": "Default font weight for all headings (h1-h6)."
     },
     "headingTextWrap": {
+      "$type": "other",
       "$value": "wrap",
       "$description": "Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines."
     },
     "radiusDefault": {
-      "$value": "{radius.sm}",
       "$type": "dimension",
+      "$value": "{radius.sm}",
       "$description": "Default border radius when no size is specified. References radius.sm token."
     },
     "zIndex": {
       "app": {
-        "$value": 100,
         "$type": "number",
+        "$value": 100,
         "$description": "Base app layer z-index"
       },
       "modal": {
-        "$value": 200,
         "$type": "number",
+        "$value": 200,
         "$description": "Modal dialog z-index"
       },
       "popover": {
-        "$value": 300,
         "$type": "number",
+        "$value": 300,
         "$description": "Popover/dropdown z-index"
       },
       "overlay": {
-        "$value": 400,
         "$type": "number",
+        "$value": 400,
         "$description": "Overlay/backdrop z-index"
       },
       "max": {
-        "$value": 9999,
         "$type": "number",
+        "$value": 9999,
         "$description": "Maximum z-index for critical elements"
       }
     }
@@ -327,589 +331,589 @@
   "colorPalette": {
     "dark": {
       "text": {
-        "$value": "{color.dark.6}",
         "$type": "color",
+        "$value": "{color.dark.6}",
         "$description": "Text color for dark elements"
       },
       "filled": {
-        "$value": "{color.dark.6}",
         "$type": "color",
+        "$value": "{color.dark.6}",
         "$description": "Filled background for dark elements"
       },
       "filled-hover": {
-        "$value": "{color.dark.7}",
         "$type": "color",
+        "$value": "{color.dark.7}",
         "$description": "Hover state for dark filled elements"
       },
       "light": {
-        "$value": "rgba(46, 46, 46, 0.1)",
         "$type": "color",
+        "$value": "rgba(46, 46, 46, 0.1)",
         "$description": "Light variant of dark color"
       },
       "light-hover": {
-        "$value": "rgba(46, 46, 46, 0.12)",
         "$type": "color",
+        "$value": "rgba(46, 46, 46, 0.12)",
         "$description": "Hover state for dark light elements"
       },
       "light-color": {
-        "$value": "{color.dark.6}",
         "$type": "color",
+        "$value": "{color.dark.6}",
         "$description": "Text color for dark light elements"
       },
       "outline": {
-        "$value": "{color.dark.6}",
         "$type": "color",
+        "$value": "{color.dark.6}",
         "$description": "Outline color for dark elements"
       },
       "outline-hover": {
-        "$value": "rgba(46, 46, 46, 0.05)",
         "$type": "color",
+        "$value": "rgba(46, 46, 46, 0.05)",
         "$description": "Hover state for dark outline elements"
       }
     },
     "gray": {
       "text": {
-        "$value": "{color.gray.6}",
         "$type": "color",
+        "$value": "{color.gray.6}",
         "$description": "Text color for gray elements"
       },
       "filled": {
-        "$value": "{color.gray.6}",
         "$type": "color",
+        "$value": "{color.gray.6}",
         "$description": "Filled background for gray elements"
       },
       "filled-hover": {
-        "$value": "{color.gray.7}",
         "$type": "color",
+        "$value": "{color.gray.7}",
         "$description": "Hover state for gray filled elements"
       },
       "light": {
-        "$value": "rgba(134, 142, 150, 0.1)",
         "$type": "color",
+        "$value": "rgba(134, 142, 150, 0.1)",
         "$description": "Light variant of gray color"
       },
       "light-hover": {
-        "$value": "rgba(134, 142, 150, 0.12)",
         "$type": "color",
+        "$value": "rgba(134, 142, 150, 0.12)",
         "$description": "Hover state for gray light elements"
       },
       "light-color": {
-        "$value": "{color.gray.6}",
         "$type": "color",
+        "$value": "{color.gray.6}",
         "$description": "Text color for gray light elements"
       },
       "outline": {
-        "$value": "{color.gray.6}",
         "$type": "color",
+        "$value": "{color.gray.6}",
         "$description": "Outline color for gray elements"
       },
       "outline-hover": {
-        "$value": "rgba(134, 142, 150, 0.05)",
         "$type": "color",
+        "$value": "rgba(134, 142, 150, 0.05)",
         "$description": "Hover state for gray outline elements"
       }
     },
     "red": {
       "text": {
-        "$value": "{color.red.6}",
         "$type": "color",
+        "$value": "{color.red.6}",
         "$description": "Text color for red elements"
       },
       "filled": {
-        "$value": "{color.red.6}",
         "$type": "color",
+        "$value": "{color.red.6}",
         "$description": "Filled background for red elements"
       },
       "filled-hover": {
-        "$value": "{color.red.7}",
         "$type": "color",
+        "$value": "{color.red.7}",
         "$description": "Hover state for red filled elements"
       },
       "light": {
-        "$value": "rgba(250, 82, 82, 0.1)",
         "$type": "color",
+        "$value": "rgba(250, 82, 82, 0.1)",
         "$description": "Light variant of red color"
       },
       "light-hover": {
-        "$value": "rgba(250, 82, 82, 0.12)",
         "$type": "color",
+        "$value": "rgba(250, 82, 82, 0.12)",
         "$description": "Hover state for red light elements"
       },
       "light-color": {
-        "$value": "{color.red.6}",
         "$type": "color",
+        "$value": "{color.red.6}",
         "$description": "Text color for red light elements"
       },
       "outline": {
-        "$value": "{color.red.6}",
         "$type": "color",
+        "$value": "{color.red.6}",
         "$description": "Outline color for red elements"
       },
       "outline-hover": {
-        "$value": "rgba(250, 82, 82, 0.05)",
         "$type": "color",
+        "$value": "rgba(250, 82, 82, 0.05)",
         "$description": "Hover state for red outline elements"
       }
     },
     "pink": {
       "text": {
-        "$value": "{color.pink.6}",
         "$type": "color",
+        "$value": "{color.pink.6}",
         "$description": "Text color for pink elements"
       },
       "filled": {
-        "$value": "{color.pink.6}",
         "$type": "color",
+        "$value": "{color.pink.6}",
         "$description": "Filled background for pink elements"
       },
       "filled-hover": {
-        "$value": "{color.pink.7}",
         "$type": "color",
+        "$value": "{color.pink.7}",
         "$description": "Hover state for pink filled elements"
       },
       "light": {
-        "$value": "rgba(230, 73, 128, 0.1)",
         "$type": "color",
+        "$value": "rgba(230, 73, 128, 0.1)",
         "$description": "Light variant of pink color"
       },
       "light-hover": {
-        "$value": "rgba(230, 73, 128, 0.12)",
         "$type": "color",
+        "$value": "rgba(230, 73, 128, 0.12)",
         "$description": "Hover state for pink light elements"
       },
       "light-color": {
-        "$value": "{color.pink.6}",
         "$type": "color",
+        "$value": "{color.pink.6}",
         "$description": "Text color for pink light elements"
       },
       "outline": {
-        "$value": "{color.pink.6}",
         "$type": "color",
+        "$value": "{color.pink.6}",
         "$description": "Outline color for pink elements"
       },
       "outline-hover": {
-        "$value": "rgba(230, 73, 128, 0.05)",
         "$type": "color",
+        "$value": "rgba(230, 73, 128, 0.05)",
         "$description": "Hover state for pink outline elements"
       }
     },
     "grape": {
       "text": {
-        "$value": "{color.grape.6}",
         "$type": "color",
+        "$value": "{color.grape.6}",
         "$description": "Text color for grape elements"
       },
       "filled": {
-        "$value": "{color.grape.6}",
         "$type": "color",
+        "$value": "{color.grape.6}",
         "$description": "Filled background for grape elements"
       },
       "filled-hover": {
-        "$value": "{color.grape.7}",
         "$type": "color",
+        "$value": "{color.grape.7}",
         "$description": "Hover state for grape filled elements"
       },
       "light": {
-        "$value": "rgba(190, 75, 219, 0.1)",
         "$type": "color",
+        "$value": "rgba(190, 75, 219, 0.1)",
         "$description": "Light variant of grape color"
       },
       "light-hover": {
-        "$value": "rgba(190, 75, 219, 0.12)",
         "$type": "color",
+        "$value": "rgba(190, 75, 219, 0.12)",
         "$description": "Hover state for grape light elements"
       },
       "light-color": {
-        "$value": "{color.grape.6}",
         "$type": "color",
+        "$value": "{color.grape.6}",
         "$description": "Text color for grape light elements"
       },
       "outline": {
-        "$value": "{color.grape.6}",
         "$type": "color",
+        "$value": "{color.grape.6}",
         "$description": "Outline color for grape elements"
       },
       "outline-hover": {
-        "$value": "rgba(190, 75, 219, 0.05)",
         "$type": "color",
+        "$value": "rgba(190, 75, 219, 0.05)",
         "$description": "Hover state for grape outline elements"
       }
     },
     "violet": {
       "text": {
-        "$value": "{color.violet.6}",
         "$type": "color",
+        "$value": "{color.violet.6}",
         "$description": "Text color for violet elements"
       },
       "filled": {
-        "$value": "{color.violet.6}",
         "$type": "color",
+        "$value": "{color.violet.6}",
         "$description": "Filled background for violet elements"
       },
       "filled-hover": {
-        "$value": "{color.violet.7}",
         "$type": "color",
+        "$value": "{color.violet.7}",
         "$description": "Hover state for violet filled elements"
       },
       "light": {
-        "$value": "rgba(121, 80, 242, 0.1)",
         "$type": "color",
+        "$value": "rgba(121, 80, 242, 0.1)",
         "$description": "Light variant of violet color"
       },
       "light-hover": {
-        "$value": "rgba(121, 80, 242, 0.12)",
         "$type": "color",
+        "$value": "rgba(121, 80, 242, 0.12)",
         "$description": "Hover state for violet light elements"
       },
       "light-color": {
-        "$value": "{color.violet.6}",
         "$type": "color",
+        "$value": "{color.violet.6}",
         "$description": "Text color for violet light elements"
       },
       "outline": {
-        "$value": "{color.violet.6}",
         "$type": "color",
+        "$value": "{color.violet.6}",
         "$description": "Outline color for violet elements"
       },
       "outline-hover": {
-        "$value": "rgba(121, 80, 242, 0.05)",
         "$type": "color",
+        "$value": "rgba(121, 80, 242, 0.05)",
         "$description": "Hover state for violet outline elements"
       }
     },
     "indigo": {
       "text": {
-        "$value": "{color.indigo.6}",
         "$type": "color",
+        "$value": "{color.indigo.6}",
         "$description": "Text color for indigo elements"
       },
       "filled": {
-        "$value": "{color.indigo.6}",
         "$type": "color",
+        "$value": "{color.indigo.6}",
         "$description": "Filled background for indigo elements"
       },
       "filled-hover": {
-        "$value": "{color.indigo.7}",
         "$type": "color",
+        "$value": "{color.indigo.7}",
         "$description": "Hover state for indigo filled elements"
       },
       "light": {
-        "$value": "rgba(76, 110, 245, 0.1)",
         "$type": "color",
+        "$value": "rgba(76, 110, 245, 0.1)",
         "$description": "Light variant of indigo color"
       },
       "light-hover": {
-        "$value": "rgba(76, 110, 245, 0.12)",
         "$type": "color",
+        "$value": "rgba(76, 110, 245, 0.12)",
         "$description": "Hover state for indigo light elements"
       },
       "light-color": {
-        "$value": "{color.indigo.6}",
         "$type": "color",
+        "$value": "{color.indigo.6}",
         "$description": "Text color for indigo light elements"
       },
       "outline": {
-        "$value": "{color.indigo.6}",
         "$type": "color",
+        "$value": "{color.indigo.6}",
         "$description": "Outline color for indigo elements"
       },
       "outline-hover": {
-        "$value": "rgba(76, 110, 245, 0.05)",
         "$type": "color",
+        "$value": "rgba(76, 110, 245, 0.05)",
         "$description": "Hover state for indigo outline elements"
       }
     },
     "blue": {
       "text": {
-        "$value": "{color.blue.6}",
         "$type": "color",
+        "$value": "{color.blue.6}",
         "$description": "Text color for blue elements"
       },
       "filled": {
-        "$value": "{color.blue.6}",
         "$type": "color",
+        "$value": "{color.blue.6}",
         "$description": "Filled background for blue elements (default Mantine primary)"
       },
       "filled-hover": {
-        "$value": "{color.blue.7}",
         "$type": "color",
+        "$value": "{color.blue.7}",
         "$description": "Hover state for blue filled elements"
       },
       "light": {
-        "$value": "rgba(34, 139, 230, 0.1)",
         "$type": "color",
+        "$value": "rgba(34, 139, 230, 0.1)",
         "$description": "Light variant of blue color"
       },
       "light-hover": {
-        "$value": "rgba(34, 139, 230, 0.12)",
         "$type": "color",
+        "$value": "rgba(34, 139, 230, 0.12)",
         "$description": "Hover state for blue light elements"
       },
       "light-color": {
-        "$value": "{color.blue.6}",
         "$type": "color",
+        "$value": "{color.blue.6}",
         "$description": "Text color for blue light elements"
       },
       "outline": {
-        "$value": "{color.blue.6}",
         "$type": "color",
+        "$value": "{color.blue.6}",
         "$description": "Outline color for blue elements"
       },
       "outline-hover": {
-        "$value": "rgba(34, 139, 230, 0.05)",
         "$type": "color",
+        "$value": "rgba(34, 139, 230, 0.05)",
         "$description": "Hover state for blue outline elements"
       }
     },
     "cyan": {
       "text": {
-        "$value": "{color.cyan.6}",
         "$type": "color",
+        "$value": "{color.cyan.6}",
         "$description": "Text color for cyan elements"
       },
       "filled": {
-        "$value": "{color.cyan.6}",
         "$type": "color",
+        "$value": "{color.cyan.6}",
         "$description": "Filled background for cyan elements"
       },
       "filled-hover": {
-        "$value": "{color.cyan.7}",
         "$type": "color",
+        "$value": "{color.cyan.7}",
         "$description": "Hover state for cyan filled elements"
       },
       "light": {
-        "$value": "rgba(21, 170, 191, 0.1)",
         "$type": "color",
+        "$value": "rgba(21, 170, 191, 0.1)",
         "$description": "Light variant of cyan color"
       },
       "light-hover": {
-        "$value": "rgba(21, 170, 191, 0.12)",
         "$type": "color",
+        "$value": "rgba(21, 170, 191, 0.12)",
         "$description": "Hover state for cyan light elements"
       },
       "light-color": {
-        "$value": "{color.cyan.6}",
         "$type": "color",
+        "$value": "{color.cyan.6}",
         "$description": "Text color for cyan light elements"
       },
       "outline": {
-        "$value": "{color.cyan.6}",
         "$type": "color",
+        "$value": "{color.cyan.6}",
         "$description": "Outline color for cyan elements"
       },
       "outline-hover": {
-        "$value": "rgba(21, 170, 191, 0.05)",
         "$type": "color",
+        "$value": "rgba(21, 170, 191, 0.05)",
         "$description": "Hover state for cyan outline elements"
       }
     },
     "teal": {
       "text": {
-        "$value": "{color.teal.6}",
         "$type": "color",
+        "$value": "{color.teal.6}",
         "$description": "Text color for teal elements"
       },
       "filled": {
-        "$value": "{color.teal.6}",
         "$type": "color",
+        "$value": "{color.teal.6}",
         "$description": "Filled background for teal elements"
       },
       "filled-hover": {
-        "$value": "{color.teal.7}",
         "$type": "color",
+        "$value": "{color.teal.7}",
         "$description": "Hover state for teal filled elements"
       },
       "light": {
-        "$value": "rgba(18, 184, 134, 0.1)",
         "$type": "color",
+        "$value": "rgba(18, 184, 134, 0.1)",
         "$description": "Light variant of teal color"
       },
       "light-hover": {
-        "$value": "rgba(18, 184, 134, 0.12)",
         "$type": "color",
+        "$value": "rgba(18, 184, 134, 0.12)",
         "$description": "Hover state for teal light elements"
       },
       "light-color": {
-        "$value": "{color.teal.6}",
         "$type": "color",
+        "$value": "{color.teal.6}",
         "$description": "Text color for teal light elements"
       },
       "outline": {
-        "$value": "{color.teal.6}",
         "$type": "color",
+        "$value": "{color.teal.6}",
         "$description": "Outline color for teal elements"
       },
       "outline-hover": {
-        "$value": "rgba(18, 184, 134, 0.05)",
         "$type": "color",
+        "$value": "rgba(18, 184, 134, 0.05)",
         "$description": "Hover state for teal outline elements"
       }
     },
     "green": {
       "text": {
-        "$value": "{color.green.6}",
         "$type": "color",
+        "$value": "{color.green.6}",
         "$description": "Text color for green elements"
       },
       "filled": {
-        "$value": "{color.green.6}",
         "$type": "color",
+        "$value": "{color.green.6}",
         "$description": "Filled background for green elements"
       },
       "filled-hover": {
-        "$value": "{color.green.7}",
         "$type": "color",
+        "$value": "{color.green.7}",
         "$description": "Hover state for green filled elements"
       },
       "light": {
-        "$value": "rgba(64, 192, 87, 0.1)",
         "$type": "color",
+        "$value": "rgba(64, 192, 87, 0.1)",
         "$description": "Light variant of green color"
       },
       "light-hover": {
-        "$value": "rgba(64, 192, 87, 0.12)",
         "$type": "color",
+        "$value": "rgba(64, 192, 87, 0.12)",
         "$description": "Hover state for green light elements"
       },
       "light-color": {
-        "$value": "{color.green.6}",
         "$type": "color",
+        "$value": "{color.green.6}",
         "$description": "Text color for green light elements"
       },
       "outline": {
-        "$value": "{color.green.6}",
         "$type": "color",
+        "$value": "{color.green.6}",
         "$description": "Outline color for green elements"
       },
       "outline-hover": {
-        "$value": "rgba(64, 192, 87, 0.05)",
         "$type": "color",
+        "$value": "rgba(64, 192, 87, 0.05)",
         "$description": "Hover state for green outline elements"
       }
     },
     "lime": {
       "text": {
-        "$value": "{color.lime.6}",
         "$type": "color",
+        "$value": "{color.lime.6}",
         "$description": "Text color for lime elements"
       },
       "filled": {
-        "$value": "{color.lime.6}",
         "$type": "color",
+        "$value": "{color.lime.6}",
         "$description": "Filled background for lime elements"
       },
       "filled-hover": {
-        "$value": "{color.lime.7}",
         "$type": "color",
+        "$value": "{color.lime.7}",
         "$description": "Hover state for lime filled elements"
       },
       "light": {
-        "$value": "rgba(130, 201, 30, 0.1)",
         "$type": "color",
+        "$value": "rgba(130, 201, 30, 0.1)",
         "$description": "Light variant of lime color"
       },
       "light-hover": {
-        "$value": "rgba(130, 201, 30, 0.12)",
         "$type": "color",
+        "$value": "rgba(130, 201, 30, 0.12)",
         "$description": "Hover state for lime light elements"
       },
       "light-color": {
-        "$value": "{color.lime.6}",
         "$type": "color",
+        "$value": "{color.lime.6}",
         "$description": "Text color for lime light elements"
       },
       "outline": {
-        "$value": "{color.lime.6}",
         "$type": "color",
+        "$value": "{color.lime.6}",
         "$description": "Outline color for lime elements"
       },
       "outline-hover": {
-        "$value": "rgba(130, 201, 30, 0.05)",
         "$type": "color",
+        "$value": "rgba(130, 201, 30, 0.05)",
         "$description": "Hover state for lime outline elements"
       }
     },
     "yellow": {
       "text": {
-        "$value": "{color.yellow.6}",
         "$type": "color",
+        "$value": "{color.yellow.6}",
         "$description": "Text color for yellow elements"
       },
       "filled": {
-        "$value": "{color.yellow.6}",
         "$type": "color",
+        "$value": "{color.yellow.6}",
         "$description": "Filled background for yellow elements"
       },
       "filled-hover": {
-        "$value": "{color.yellow.7}",
         "$type": "color",
+        "$value": "{color.yellow.7}",
         "$description": "Hover state for yellow filled elements"
       },
       "light": {
-        "$value": "rgba(250, 176, 5, 0.1)",
         "$type": "color",
+        "$value": "rgba(250, 176, 5, 0.1)",
         "$description": "Light variant of yellow color"
       },
       "light-hover": {
-        "$value": "rgba(250, 176, 5, 0.12)",
         "$type": "color",
+        "$value": "rgba(250, 176, 5, 0.12)",
         "$description": "Hover state for yellow light elements"
       },
       "light-color": {
-        "$value": "{color.yellow.6}",
         "$type": "color",
+        "$value": "{color.yellow.6}",
         "$description": "Text color for yellow light elements"
       },
       "outline": {
-        "$value": "{color.yellow.6}",
         "$type": "color",
+        "$value": "{color.yellow.6}",
         "$description": "Outline color for yellow elements"
       },
       "outline-hover": {
-        "$value": "rgba(250, 176, 5, 0.05)",
         "$type": "color",
+        "$value": "rgba(250, 176, 5, 0.05)",
         "$description": "Hover state for yellow outline elements"
       }
     },
     "orange": {
       "text": {
-        "$value": "{color.orange.6}",
         "$type": "color",
+        "$value": "{color.orange.6}",
         "$description": "Text color for orange elements"
       },
       "filled": {
-        "$value": "{color.orange.6}",
         "$type": "color",
+        "$value": "{color.orange.6}",
         "$description": "Filled background for orange elements"
       },
       "filled-hover": {
-        "$value": "{color.orange.7}",
         "$type": "color",
+        "$value": "{color.orange.7}",
         "$description": "Hover state for orange filled elements"
       },
       "light": {
-        "$value": "rgba(253, 126, 20, 0.1)",
         "$type": "color",
+        "$value": "rgba(253, 126, 20, 0.1)",
         "$description": "Light variant of orange color"
       },
       "light-hover": {
-        "$value": "rgba(253, 126, 20, 0.12)",
         "$type": "color",
+        "$value": "rgba(253, 126, 20, 0.12)",
         "$description": "Hover state for orange light elements"
       },
       "light-color": {
-        "$value": "{color.orange.6}",
         "$type": "color",
+        "$value": "{color.orange.6}",
         "$description": "Text color for orange light elements"
       },
       "outline": {
-        "$value": "{color.orange.6}",
         "$type": "color",
+        "$value": "{color.orange.6}",
         "$description": "Outline color for orange elements"
       },
       "outline-hover": {
-        "$value": "rgba(253, 126, 20, 0.05)",
         "$type": "color",
+        "$value": "rgba(253, 126, 20, 0.05)",
         "$description": "Hover state for orange outline elements"
       }
     }
@@ -918,108 +922,108 @@
     "button": {
       "filled": {
         "backgroundColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Filled button background color. Uses primary color."
         },
         "textColor": {
-          "$value": "{color.primary.contrast}",
           "$type": "color",
+          "$value": "{color.primary.contrast}",
           "$description": "Filled button text color. White for contrast on primary."
         },
         "hoverBackgroundColor": {
-          "$value": "{color.primary.filled-hover}",
           "$type": "color",
+          "$value": "{color.primary.filled-hover}",
           "$description": "Filled button hover background color."
         }
       },
       "outline": {
         "borderColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Outline button border color. Uses primary color."
         },
         "textColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Outline button text color. Uses primary color."
         },
         "hoverBackgroundColor": {
-          "$value": "{color.primary.light}",
           "$type": "color",
+          "$value": "{color.primary.light}",
           "$description": "Outline button hover background color."
         }
       },
       "light": {
         "backgroundColor": {
-          "$value": "{color.primary.light}",
           "$type": "color",
+          "$value": "{color.primary.light}",
           "$description": "Light button background color."
         },
         "textColor": {
-          "$value": "{color.primary.light-color}",
           "$type": "color",
+          "$value": "{color.primary.light-color}",
           "$description": "Light button text color."
         },
         "hoverBackgroundColor": {
-          "$value": "{color.primary.light-hover}",
           "$type": "color",
+          "$value": "{color.primary.light-hover}",
           "$description": "Light button hover background color."
         }
       },
       "subtle": {
         "backgroundColor": {
-          "$value": "transparent",
           "$type": "color",
+          "$value": "transparent",
           "$description": "Subtle button background color. Transparent by default."
         },
         "textColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Subtle button text color."
         },
         "hoverBackgroundColor": {
-          "$value": "{color.primary.light}",
           "$type": "color",
+          "$value": "{color.primary.light}",
           "$description": "Subtle button hover background color."
         }
       },
       "default": {
         "backgroundColor": {
-          "$value": "{color.default}",
           "$type": "color",
+          "$value": "{color.default}",
           "$description": "Default button background color."
         },
         "textColor": {
-          "$value": "{color.default-color}",
           "$type": "color",
+          "$value": "{color.default-color}",
           "$description": "Default button text color."
         },
         "borderColor": {
-          "$value": "{color.default-border}",
           "$type": "color",
+          "$value": "{color.default-border}",
           "$description": "Default button border color."
         },
         "hoverBackgroundColor": {
-          "$value": "{color.default-hover}",
           "$type": "color",
+          "$value": "{color.default-hover}",
           "$description": "Default button hover background color."
         }
       },
       "disabled": {
         "backgroundColor": {
-          "$value": "{color.disabled}",
           "$type": "color",
+          "$value": "{color.disabled}",
           "$description": "Disabled button background color."
         },
         "textColor": {
-          "$value": "{color.disabled-color}",
           "$type": "color",
+          "$value": "{color.disabled-color}",
           "$description": "Disabled button text color."
         },
         "borderColor": {
-          "$value": "{color.disabled-border}",
           "$type": "color",
+          "$value": "{color.disabled-border}",
           "$description": "Disabled button border color."
         }
       }
@@ -1027,114 +1031,114 @@
     "input": {
       "default": {
         "backgroundColor": {
-          "$value": "{color.default}",
           "$type": "color",
+          "$value": "{color.default}",
           "$description": "Default input background color."
         },
         "textColor": {
-          "$value": "{color.text}",
           "$type": "color",
+          "$value": "{color.text}",
           "$description": "Input text color."
         },
         "borderColor": {
-          "$value": "{color.default-border}",
           "$type": "color",
+          "$value": "{color.default-border}",
           "$description": "Default input border color."
         },
         "placeholderColor": {
-          "$value": "{color.placeholder}",
           "$type": "color",
+          "$value": "{color.placeholder}",
           "$description": "Input placeholder text color."
         }
       },
       "focus": {
         "borderColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Focused input border color."
         },
         "ringColor": {
-          "$value": "{color.primary.light}",
           "$type": "color",
+          "$value": "{color.primary.light}",
           "$description": "Focus ring color around input."
         }
       },
       "error": {
         "borderColor": {
-          "$value": "{color.error}",
           "$type": "color",
+          "$value": "{color.error}",
           "$description": "Error state input border color."
         },
         "textColor": {
-          "$value": "{color.error}",
           "$type": "color",
+          "$value": "{color.error}",
           "$description": "Error message text color."
         }
       },
       "disabled": {
         "backgroundColor": {
-          "$value": "{color.disabled}",
           "$type": "color",
+          "$value": "{color.disabled}",
           "$description": "Disabled input background color."
         },
         "textColor": {
-          "$value": "{color.disabled-color}",
           "$type": "color",
+          "$value": "{color.disabled-color}",
           "$description": "Disabled input text color."
         },
         "borderColor": {
-          "$value": "{color.disabled-border}",
           "$type": "color",
+          "$value": "{color.disabled-border}",
           "$description": "Disabled input border color."
         }
       }
     },
     "card": {
       "backgroundColor": {
-        "$value": "{color.default}",
         "$type": "color",
+        "$value": "{color.default}",
         "$description": "Card background color."
       },
       "borderColor": {
-        "$value": "{color.default-border}",
         "$type": "color",
+        "$value": "{color.default-border}",
         "$description": "Card border color."
       }
     },
     "badge": {
       "filled": {
         "backgroundColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Filled badge background color."
         },
         "textColor": {
-          "$value": "{color.primary.contrast}",
           "$type": "color",
+          "$value": "{color.primary.contrast}",
           "$description": "Filled badge text color."
         }
       },
       "light": {
         "backgroundColor": {
-          "$value": "{color.primary.light}",
           "$type": "color",
+          "$value": "{color.primary.light}",
           "$description": "Light badge background color."
         },
         "textColor": {
-          "$value": "{color.primary.light-color}",
           "$type": "color",
+          "$value": "{color.primary.light-color}",
           "$description": "Light badge text color."
         }
       },
       "outline": {
         "borderColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Outline badge border color."
         },
         "textColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Outline badge text color."
         }
       }
@@ -1142,170 +1146,170 @@
     "alert": {
       "info": {
         "backgroundColor": {
-          "$value": "{component.info.background}",
           "$type": "color",
+          "$value": "{component.info.background}",
           "$description": "Info alert background color."
         },
         "borderColor": {
-          "$value": "{component.info.border}",
           "$type": "color",
+          "$value": "{component.info.border}",
           "$description": "Info alert border color."
         },
         "textColor": {
-          "$value": "{component.info.text}",
           "$type": "color",
+          "$value": "{component.info.text}",
           "$description": "Info alert text color."
         }
       },
       "success": {
         "backgroundColor": {
-          "$value": "{component.success.background}",
           "$type": "color",
+          "$value": "{component.success.background}",
           "$description": "Success alert background color."
         },
         "borderColor": {
-          "$value": "{component.success.border}",
           "$type": "color",
+          "$value": "{component.success.border}",
           "$description": "Success alert border color."
         },
         "textColor": {
-          "$value": "{component.success.text}",
           "$type": "color",
+          "$value": "{component.success.text}",
           "$description": "Success alert text color."
         }
       },
       "warning": {
         "backgroundColor": {
-          "$value": "{component.warning.background}",
           "$type": "color",
+          "$value": "{component.warning.background}",
           "$description": "Warning alert background color."
         },
         "borderColor": {
-          "$value": "{component.warning.border}",
           "$type": "color",
+          "$value": "{component.warning.border}",
           "$description": "Warning alert border color."
         },
         "textColor": {
-          "$value": "{component.warning.text}",
           "$type": "color",
+          "$value": "{component.warning.text}",
           "$description": "Warning alert text color."
         }
       },
       "error": {
         "backgroundColor": {
-          "$value": "{component.error.background}",
           "$type": "color",
+          "$value": "{component.error.background}",
           "$description": "Error alert background color."
         },
         "borderColor": {
-          "$value": "{component.error.border}",
           "$type": "color",
+          "$value": "{component.error.border}",
           "$description": "Error alert border color."
         },
         "textColor": {
-          "$value": "{component.error.text}",
           "$type": "color",
+          "$value": "{component.error.text}",
           "$description": "Error alert text color."
         }
       }
     },
     "table": {
       "headerBackgroundColor": {
-        "$value": "{color.gray.0}",
         "$type": "color",
+        "$value": "{color.gray.0}",
         "$description": "Table header background color."
       },
       "borderColor": {
-        "$value": "{color.default-border}",
         "$type": "color",
+        "$value": "{color.default-border}",
         "$description": "Table border color."
       },
       "stripedBackgroundColor": {
-        "$value": "{color.gray.0}",
         "$type": "color",
+        "$value": "{color.gray.0}",
         "$description": "Alternating row background color."
       },
       "hoverBackgroundColor": {
-        "$value": "{color.default-hover}",
         "$type": "color",
+        "$value": "{color.default-hover}",
         "$description": "Row hover background color."
       },
       "selectedBackgroundColor": {
-        "$value": "{component.selected.background}",
         "$type": "color",
+        "$value": "{component.selected.background}",
         "$description": "Selected row background color."
       }
     },
     "tabs": {
       "default": {
         "textColor": {
-          "$value": "{color.dimmed}",
           "$type": "color",
+          "$value": "{color.dimmed}",
           "$description": "Inactive tab text color."
         },
         "hoverTextColor": {
-          "$value": "{color.text}",
           "$type": "color",
+          "$value": "{color.text}",
           "$description": "Tab hover text color."
         }
       },
       "active": {
         "textColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Active tab text color."
         },
         "indicatorColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Active tab indicator color."
         }
       },
       "borderColor": {
-        "$value": "{color.default-border}",
         "$type": "color",
+        "$value": "{color.default-border}",
         "$description": "Tab list border color."
       }
     },
     "checkbox": {
       "unchecked": {
         "borderColor": {
-          "$value": "{color.default-border}",
           "$type": "color",
+          "$value": "{color.default-border}",
           "$description": "Unchecked checkbox border color."
         },
         "backgroundColor": {
-          "$value": "{color.default}",
           "$type": "color",
+          "$value": "{color.default}",
           "$description": "Unchecked checkbox background color."
         }
       },
       "checked": {
         "borderColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Checked checkbox border color."
         },
         "backgroundColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "Checked checkbox background color."
         },
         "checkmarkColor": {
-          "$value": "{color.primary.contrast}",
           "$type": "color",
+          "$value": "{color.primary.contrast}",
           "$description": "Checkmark icon color."
         }
       },
       "disabled": {
         "borderColor": {
-          "$value": "{color.disabled-border}",
           "$type": "color",
+          "$value": "{color.disabled-border}",
           "$description": "Disabled checkbox border color."
         },
         "backgroundColor": {
-          "$value": "{color.disabled}",
           "$type": "color",
+          "$value": "{color.disabled}",
           "$description": "Disabled checkbox background color."
         }
       }
@@ -1313,106 +1317,106 @@
     "switch": {
       "off": {
         "trackColor": {
-          "$value": "{color.gray.2}",
           "$type": "color",
+          "$value": "{color.gray.2}",
           "$description": "Off state track background color."
         },
         "thumbColor": {
-          "$value": "{color.white}",
           "$type": "color",
+          "$value": "{color.white}",
           "$description": "Switch thumb color."
         }
       },
       "on": {
         "trackColor": {
-          "$value": "{color.primary.filled}",
           "$type": "color",
+          "$value": "{color.primary.filled}",
           "$description": "On state track background color."
         },
         "thumbColor": {
-          "$value": "{color.white}",
           "$type": "color",
+          "$value": "{color.white}",
           "$description": "Switch thumb color when on."
         }
       },
       "disabled": {
         "trackColor": {
-          "$value": "{color.disabled}",
           "$type": "color",
+          "$value": "{color.disabled}",
           "$description": "Disabled switch track color."
         },
         "thumbColor": {
-          "$value": "{color.gray.3}",
           "$type": "color",
+          "$value": "{color.gray.3}",
           "$description": "Disabled switch thumb color."
         }
       }
     },
     "select": {
       "backgroundColor": {
-        "$value": "{color.default}",
         "$type": "color",
+        "$value": "{color.default}",
         "$description": "Select input background color."
       },
       "borderColor": {
-        "$value": "{color.default-border}",
         "$type": "color",
+        "$value": "{color.default-border}",
         "$description": "Select input border color."
       },
       "textColor": {
-        "$value": "{color.text}",
         "$type": "color",
+        "$value": "{color.text}",
         "$description": "Select input text color."
       },
       "dropdown": {
         "backgroundColor": {
-          "$value": "{color.default}",
           "$type": "color",
+          "$value": "{color.default}",
           "$description": "Dropdown menu background color."
         },
         "borderColor": {
-          "$value": "{color.default-border}",
           "$type": "color",
+          "$value": "{color.default-border}",
           "$description": "Dropdown menu border color."
         }
       },
       "option": {
         "hoverBackgroundColor": {
-          "$value": "{color.default-hover}",
           "$type": "color",
+          "$value": "{color.default-hover}",
           "$description": "Option hover background color."
         },
         "selectedBackgroundColor": {
-          "$value": "{color.primary.light}",
           "$type": "color",
+          "$value": "{color.primary.light}",
           "$description": "Selected option background color."
         },
         "selectedTextColor": {
-          "$value": "{color.primary.light-color}",
           "$type": "color",
+          "$value": "{color.primary.light-color}",
           "$description": "Selected option text color."
         }
       }
     },
     "modal": {
       "backgroundColor": {
-        "$value": "{color.default}",
         "$type": "color",
+        "$value": "{color.default}",
         "$description": "Modal background color."
       },
       "overlayColor": {
-        "$value": "{color.overlay.light}",
         "$type": "color",
+        "$value": "{color.overlay.light}",
         "$description": "Modal overlay/backdrop color."
       },
       "headerBorderColor": {
-        "$value": "{color.default-border}",
         "$type": "color",
+        "$value": "{color.default-border}",
         "$description": "Modal header bottom border color."
       },
       "footerBorderColor": {
-        "$value": "{color.default-border}",
         "$type": "color",
+        "$value": "{color.default-border}",
         "$description": "Modal footer top border color."
       }
     }
@@ -1420,184 +1424,184 @@
   "component": {
     "default": {
       "background": {
-        "$value": "{color.white}",
         "$type": "color",
+        "$value": "{color.white}",
         "$description": "Default component background color"
       },
       "border": {
-        "$value": "{color.gray.4}",
         "$type": "color",
+        "$value": "{color.gray.4}",
         "$description": "Default component border color"
       },
       "text": {
-        "$value": "{color.black}",
         "$type": "color",
+        "$value": "{color.black}",
         "$description": "Default component text color"
       }
     },
     "hover": {
       "background": {
-        "$value": "{color.gray.0}",
         "$type": "color",
+        "$value": "{color.gray.0}",
         "$description": "Hover state background color"
       },
       "border": {
-        "$value": "{color.gray.5}",
         "$type": "color",
+        "$value": "{color.gray.5}",
         "$description": "Hover state border color"
       }
     },
     "active": {
       "background": {
-        "$value": "{color.gray.1}",
         "$type": "color",
+        "$value": "{color.gray.1}",
         "$description": "Active/pressed state background color"
       },
       "border": {
-        "$value": "{color.gray.6}",
         "$type": "color",
+        "$value": "{color.gray.6}",
         "$description": "Active/pressed state border color"
       }
     },
     "focus": {
       "ring": {
-        "$value": "{color.blue.5}",
         "$type": "color",
+        "$value": "{color.blue.5}",
         "$description": "Focus ring color"
       },
       "border": {
-        "$value": "{color.blue.5}",
         "$type": "color",
+        "$value": "{color.blue.5}",
         "$description": "Focus state border color"
       }
     },
     "disabled": {
       "background": {
-        "$value": "{color.gray.1}",
         "$type": "color",
+        "$value": "{color.gray.1}",
         "$description": "Disabled state background color"
       },
       "text": {
-        "$value": "{color.gray.5}",
         "$type": "color",
+        "$value": "{color.gray.5}",
         "$description": "Disabled state text color"
       },
       "border": {
-        "$value": "{color.gray.3}",
         "$type": "color",
+        "$value": "{color.gray.3}",
         "$description": "Disabled state border color"
       }
     },
     "error": {
       "background": {
-        "$value": "{color.red.0}",
         "$type": "color",
+        "$value": "{color.red.0}",
         "$description": "Error state background color"
       },
       "text": {
-        "$value": "{color.red.7}",
         "$type": "color",
+        "$value": "{color.red.7}",
         "$description": "Error state text color"
       },
       "border": {
-        "$value": "{color.red.5}",
         "$type": "color",
+        "$value": "{color.red.5}",
         "$description": "Error state border color"
       }
     },
     "success": {
       "background": {
-        "$value": "{color.green.0}",
         "$type": "color",
+        "$value": "{color.green.0}",
         "$description": "Success state background color"
       },
       "text": {
-        "$value": "{color.green.7}",
         "$type": "color",
+        "$value": "{color.green.7}",
         "$description": "Success state text color"
       },
       "border": {
-        "$value": "{color.green.5}",
         "$type": "color",
+        "$value": "{color.green.5}",
         "$description": "Success state border color"
       }
     },
     "warning": {
       "background": {
-        "$value": "{color.yellow.0}",
         "$type": "color",
+        "$value": "{color.yellow.0}",
         "$description": "Warning state background color"
       },
       "text": {
-        "$value": "{color.yellow.8}",
         "$type": "color",
+        "$value": "{color.yellow.8}",
         "$description": "Warning state text color (darker for contrast)"
       },
       "border": {
-        "$value": "{color.yellow.5}",
         "$type": "color",
+        "$value": "{color.yellow.5}",
         "$description": "Warning state border color"
       }
     },
     "info": {
       "background": {
-        "$value": "{color.blue.0}",
         "$type": "color",
+        "$value": "{color.blue.0}",
         "$description": "Info state background color"
       },
       "text": {
-        "$value": "{color.blue.7}",
         "$type": "color",
+        "$value": "{color.blue.7}",
         "$description": "Info state text color"
       },
       "border": {
-        "$value": "{color.blue.5}",
         "$type": "color",
+        "$value": "{color.blue.5}",
         "$description": "Info state border color"
       }
     },
     "selected": {
       "background": {
-        "$value": "{color.blue.0}",
         "$type": "color",
+        "$value": "{color.blue.0}",
         "$description": "Selected state background color"
       },
       "text": {
-        "$value": "{color.blue.7}",
         "$type": "color",
+        "$value": "{color.blue.7}",
         "$description": "Selected state text color"
       },
       "border": {
-        "$value": "{color.blue.5}",
         "$type": "color",
+        "$value": "{color.blue.5}",
         "$description": "Selected state border color"
       }
     }
   },
   "shadows": {
     "xs": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1)",
       "$type": "shadow",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1)",
       "$description": "Default Mantine extra small shadow"
     },
     "sm": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem",
       "$type": "shadow",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem",
       "$description": "Default Mantine small shadow"
     },
     "md": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem",
       "$type": "shadow",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem",
       "$description": "Default Mantine medium shadow"
     },
     "lg": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem",
       "$type": "shadow",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem",
       "$description": "Default Mantine large shadow"
     },
     "xl": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem",
       "$type": "shadow",
+      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem",
       "$description": "Default Mantine extra large shadow"
     }
   }

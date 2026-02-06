@@ -1,36 +1,41 @@
 {
   "scale": {
-    "$value": 1,
     "$type": "number",
+    "$value": 1,
     "$description": "Global scale factor for UI components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size. Affects computed dimensions when frameworks support proportional scaling."
   },
   "cursor": {
     "interactive": {
+      "$type": "other",
       "$value": "pointer",
       "$description": "Cursor for clickable/interactive elements. Use 'pointer' for buttons, links, and actionable items."
     },
     "default": {
+      "$type": "other",
       "$value": "default",
       "$description": "Standard cursor for non-interactive content. Use for text, containers, and static elements."
     }
   },
   "fontSmoothing": {
     "webkit": {
+      "$type": "other",
       "$value": "antialiased",
       "$description": "WebKit font smoothing for macOS/iOS. Use for crisp, thin text in heading and body text. Apply to -webkit-font-smoothing CSS property."
     },
     "moz": {
+      "$type": "other",
       "$value": "grayscale",
       "$description": "Mozilla font smoothing for Firefox. Use for crisp text rendering in heading and body content. Apply to -moz-osx-font-smoothing CSS property."
     }
   },
   "heading": {
     "fontWeight": {
-      "$value": 700,
       "$type": "number",
+      "$value": 700,
       "$description": "Default font weight for all headings (h1-h6). Bold (700) provides strong visual hierarchy."
     },
     "textWrap": {
+      "$type": "other",
       "$value": "wrap",
       "$description": "Text wrapping behavior for headings. 'wrap' allows natural line breaks, 'balance' distributes text more evenly."
     }

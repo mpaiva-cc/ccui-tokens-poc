@@ -2,107 +2,108 @@
   "checkbox": {
     "size": {
       "xs": {
-        "$value": "{sizing.checkbox.size.xs}",
         "$type": "dimension",
+        "$value": "{sizing.checkbox.size.xs}",
         "$description": "Extra small checkbox size (14px). Use for: compact data tables, dense lists, space-constrained UIs. May not meet touch target guidelines (44px) - consider for mouse-only interfaces."
       },
       "sm": {
-        "$value": "{sizing.checkbox.size.sm}",
         "$type": "dimension",
+        "$value": "{sizing.checkbox.size.sm}",
         "$description": "Small checkbox size (16px). Use for: standard form density, inline options, filter panels. Common in desktop applications."
       },
       "md": {
-        "$value": "{sizing.checkbox.size.md}",
         "$type": "dimension",
+        "$value": "{sizing.checkbox.size.md}",
         "$description": "Medium checkbox size (20px). DEFAULT size. Use for: most forms, settings panels, standalone checkboxes. Good balance of visibility and space efficiency."
       },
       "lg": {
-        "$value": "{sizing.checkbox.size.lg}",
         "$type": "dimension",
+        "$value": "{sizing.checkbox.size.lg}",
         "$description": "Large checkbox size (24px). Use for: touch-optimized interfaces, accessibility-focused forms, prominent single options. Better for mobile devices."
       },
       "xl": {
-        "$value": "{sizing.checkbox.size.xl}",
         "$type": "dimension",
+        "$value": "{sizing.checkbox.size.xl}",
         "$description": "Extra large checkbox size (28px). Use for: high-emphasis standalone toggles, large touch targets, accessibility requirements. Maximum visibility and tap target size."
       }
     },
     "borderRadius": {
-      "$value": "{radius.xs}",
       "$type": "dimension",
+      "$value": "{radius.xs}",
       "$description": "Checkbox border radius (2px). Minimal rounding maintains the traditional square checkbox shape while softening hard corners. Distinguishes from radio buttons (which are circular)."
     },
     "borderWidth": {
-      "$value": "{borderWidth.thin}",
       "$type": "dimension",
+      "$value": "{borderWidth.thin}",
       "$description": "Checkbox border width (1px). Thin border provides clear boundary without visual heaviness. Thickens visually when checked due to fill color."
     },
     "icon": {
       "size": {
         "xs": {
-          "$value": "{sizing.checkbox.iconSize.xs}",
           "$type": "dimension",
+          "$value": "{sizing.checkbox.iconSize.xs}",
           "$description": "Extra small checkmark size (8px). Proportional to xs checkbox. Keep stroke weight consistent for visibility at small size."
         },
         "sm": {
-          "$value": "{sizing.checkbox.iconSize.sm}",
           "$type": "dimension",
+          "$value": "{sizing.checkbox.iconSize.sm}",
           "$description": "Small checkmark size (9px). Proportional to sm checkbox. Slightly larger than xs for better recognition."
         },
         "md": {
-          "$value": "{sizing.checkbox.iconSize.md}",
           "$type": "dimension",
+          "$value": "{sizing.checkbox.iconSize.md}",
           "$description": "Medium checkmark size (10px). DEFAULT. Proportional to md checkbox. Clear visual feedback for checked state."
         },
         "lg": {
-          "$value": "{sizing.checkbox.iconSize.lg}",
           "$type": "dimension",
+          "$value": "{sizing.checkbox.iconSize.lg}",
           "$description": "Large checkmark size (14px). Proportional to lg checkbox. More prominent check for better visibility."
         },
         "xl": {
-          "$value": "{sizing.checkbox.iconSize.xl}",
           "$type": "dimension",
+          "$value": "{sizing.checkbox.iconSize.xl}",
           "$description": "Extra large checkmark size (16px). Proportional to xl checkbox. Maximum visibility checkmark."
         }
       },
       "strokeWidth": {
-        "$value": "2.5",
         "$type": "number",
+        "$value": "2.5",
         "$description": "Checkmark stroke width (2.5px). Bold enough to be clearly visible at all sizes. Consistent thickness ensures recognition across the size scale."
       }
     },
     "label": {
       "gap": {
-        "$value": "{spacing.sm}",
         "$type": "dimension",
+        "$value": "{spacing.sm}",
         "$description": "Gap between checkbox and label (12px). Provides clear visual separation while maintaining association. Label click should toggle checkbox."
       },
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
         "$type": "dimension",
+        "$value": "{typography.fontSize.sm}",
         "$description": "Label font size (14px). Standard body text size for form labels. Readable alongside checkbox without overwhelming."
       }
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
         "$type": "duration",
+        "$value": "{motion.duration.fast}",
         "$description": "Checkbox transition duration (100ms). Fast transition for snappy feedback when toggling. Should feel instant but smooth."
       },
       "easing": {
+        "$type": "other",
         "$value": "{motion.easing.easeOut}",
         "$description": "Checkbox transition easing (ease-out). Decelerating motion feels natural for check/uncheck toggle actions."
       }
     },
     "focus": {
       "ringWidth": {
-        "$value": "{focus.ring.width}",
         "$type": "dimension",
+        "$value": "{focus.ring.width}",
         "$description": "Focus ring width (2px). Clearly visible ring around checkbox when focused via keyboard. Essential for accessibility compliance."
       },
       "ringOffset": {
-        "$value": "{focus.ring.offset}",
         "$type": "dimension",
+        "$value": "{focus.ring.offset}",
         "$description": "Focus ring offset (2px). Space between checkbox border and focus ring. Prevents ring from overlapping checkbox border."
       }
     }
