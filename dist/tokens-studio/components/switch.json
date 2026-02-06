@@ -107,7 +107,7 @@
         "$description": "Gap between switch and label (12px). Clear separation between control and label while maintaining visual association."
       },
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
+        "$value": "{fontSizes.sm}",
         "$type": "dimension",
         "$description": "Label font size (14px). Standard form label size. Readable without overwhelming the switch control itself."
       }

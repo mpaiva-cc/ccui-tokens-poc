@@ -84,17 +84,17 @@
     },
     "title": {
       "fontSize": {
-        "$value": "{typography.fontSize.lg}",
+        "$value": "{fontSizes.lg}",
         "$type": "dimension",
         "$description": "Modal title font size (18px). Large enough to be clearly visible as the primary heading, but not overwhelming in the confined modal space."
       },
       "fontWeight": {
-        "$value": "{typography.fontWeight.semibold}",
+        "$value": "{fontWeights.semibold}",
         "$type": "number",
         "$description": "Modal title font weight (600). Semibold provides strong visual hierarchy without the heaviness of bold, appropriate for dialog headings."
       },
       "lineHeight": {
-        "$value": "{typography.lineHeight.sm}",
+        "$value": "{lineHeights.sm}",
         "$type": "dimension",
         "$description": "Modal title line height (1.25). Tight line height for single-line titles. If titles wrap, this keeps them compact within the header area."
       }

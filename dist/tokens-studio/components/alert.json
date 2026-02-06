@@ -51,29 +51,29 @@
     },
     "title": {
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
+        "$value": "{fontSizes.sm}",
         "$type": "dimension",
         "$description": "Alert title font size (14px). Same as body text but distinguished by weight. Keeps alerts compact while remaining readable."
       },
       "fontWeight": {
-        "$value": "{typography.fontWeight.semibold}",
+        "$value": "{fontWeights.semibold}",
         "$type": "fontWeights",
         "$description": "Alert title font weight (600). Semibold provides clear hierarchy between title and message without being overly heavy."
       },
       "lineHeight": {
-        "$value": "{typography.lineHeight.sm}",
+        "$value": "{lineHeights.sm}",
         "$type": "dimension",
         "$description": "Alert title line height (1.25). Tighter line height for single-line titles. Keeps alert compact vertically."
       }
     },
     "message": {
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
+        "$value": "{fontSizes.sm}",
         "$type": "dimension",
         "$description": "Alert message font size (14px). Standard body text size for readability. Matches title size but lighter weight."
       },
       "lineHeight": {
-        "$value": "{typography.lineHeight.md}",
+        "$value": "{lineHeights.md}",
         "$type": "dimension",
         "$description": "Alert message line height (1.5). More generous line height for multi-line messages. Improves readability of longer alert text."
       }

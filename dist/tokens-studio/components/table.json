@@ -59,27 +59,27 @@
       },
       "fontSize": {
         "xs": {
-          "$value": "{typography.fontSize.xs}",
+          "$value": "{fontSizes.xs}",
           "$type": "dimension",
           "$description": "Extra small table font size (12px). Compact text for dense data tables. Use for admin panels or data-heavy views."
         },
         "sm": {
-          "$value": "{typography.fontSize.sm}",
+          "$value": "{fontSizes.sm}",
           "$type": "dimension",
           "$description": "Small table font size (14px). Standard data table text. Readable and space-efficient for most use cases."
         },
         "md": {
-          "$value": "{typography.fontSize.sm}",
+          "$value": "{fontSizes.sm}",
           "$type": "dimension",
           "$description": "Medium table font size (14px). DEFAULT. Same as sm - keeps data compact while maintaining readability."
         },
         "lg": {
-          "$value": "{typography.fontSize.md}",
+          "$value": "{fontSizes.md}",
           "$type": "dimension",
           "$description": "Large table font size (16px). Larger text for improved readability. Good for simple tables or accessibility needs."
         },
         "xl": {
-          "$value": "{typography.fontSize.md}",
+          "$value": "{fontSizes.md}",
           "$type": "dimension",
           "$description": "Extra large table font size (16px). Same as lg - body text size for maximum readability in spacious tables."
         }
@@ -87,12 +87,12 @@
     },
     "header": {
       "fontWeight": {
-        "$value": "{typography.fontWeight.semibold}",
+        "$value": "{fontWeights.semibold}",
         "$type": "fontWeights",
         "$description": "Table header font weight (600). Semibold headers clearly distinguish column labels from data. Important for scanability."
       },
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
+        "$value": "{fontSizes.sm}",
         "$type": "dimension",
         "$description": "Table header font size (14px). Same as cell text but distinguished by weight and color. Consistent sizing aids alignment."
       }

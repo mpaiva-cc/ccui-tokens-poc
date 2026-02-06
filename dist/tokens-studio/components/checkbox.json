@@ -77,7 +77,7 @@
         "$description": "Gap between checkbox and label (12px). Provides clear visual separation while maintaining association. Label click should toggle checkbox."
       },
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
+        "$value": "{fontSizes.sm}",
         "$type": "dimension",
         "$description": "Label font size (14px). Standard body text size for form labels. Readable alongside checkbox without overwhelming."
       }

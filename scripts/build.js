@@ -43,7 +43,13 @@ const SHARED_PRIMITIVE_CATEGORIES = [
     'gridSpacing',
     'verticalRhythm',
     'radius',
-    'typography',
+    // Typography flat categories
+    'fontFamilies',
+    'fontSizes',
+    'fontWeights',
+    'lineHeights',
+    'letterSpacing',
+    'typography',  // Composite typography styles
     'breakpoints',
     'contentWidth',
     'motion',
@@ -189,19 +195,26 @@ function isMantineOfficialToken(token) {
         return path.length === 2 && MANTINE_SIZES.includes(path[1]);
     }
 
+    // Flat typography categories
+    if (path[0] === 'fontFamilies') {
+        return path.length === 2 && ['sans', 'mono', 'heading'].includes(path[1]);
+    }
+
+    if (path[0] === 'fontSizes') {
+        return path.length === 2 && MANTINE_SIZES.includes(path[1]);
+    }
+
+    if (path[0] === 'lineHeights') {
+        return path.length === 2 && MANTINE_SIZES.includes(path[1]);
+    }
+
+    // Composite typography styles (not Mantine official)
     if (path[0] === 'typography') {
-        if (path[1] === 'fontFamily' && ['sans', 'mono', 'display'].includes(path[2])) {
-            return true;
-        }
-        if (path[1] === 'fontSize' && MANTINE_SIZES.includes(path[2])) {
-            return true;
-        }
-        if (path[1] === 'lineHeight' && MANTINE_SIZES.includes(path[2])) {
-            return true;
-        }
-        if (path[1] === 'headings' && /^h[1-6]$/.test(path[2])) {
-            return true;
-        }
+        return false;
+    }
+
+    // fontWeights and letterSpacing are not Mantine official
+    if (path[0] === 'fontWeights' || path[0] === 'letterSpacing') {
         return false;
     }
 
@@ -296,21 +309,33 @@ StyleDictionary.registerTransform({
         if (path[0] === 'spacing') return `mantine-spacing-${path[1]}`;
         if (path[0] === 'radius') return `mantine-radius-${path[1]}`;
 
+        // Flat typography categories
+        if (path[0] === 'fontFamilies') {
+            if (path[1] === 'sans') return 'mantine-font-family';
+            if (path[1] === 'mono') return 'mantine-font-family-monospace';
+            if (path[1] === 'heading') return 'mantine-font-family-headings';
+            return `mantine-font-family-${path[1]}`;
+        }
+
+        if (path[0] === 'fontSizes') {
+            return `mantine-font-size-${path[1]}`;
+        }
+
+        if (path[0] === 'fontWeights') {
+            return `mantine-font-weight-${path[1]}`;
+        }
+
+        if (path[0] === 'lineHeights') {
+            return `mantine-line-height-${path[1]}`;
+        }
+
+        if (path[0] === 'letterSpacing') {
+            return `mantine-letter-spacing-${path[1]}`;
+        }
+
+        // Composite typography styles
         if (path[0] === 'typography') {
-            if (path[1] === 'fontFamily') {
-                if (path[2] === 'sans') return 'mantine-font-family';
-                if (path[2] === 'mono') return 'mantine-font-family-monospace';
-                if (path[2] === 'heading') return 'mantine-font-family-headings';
-                return `mantine-font-family-${path[2]}`;
-            }
-            if (path[1] === 'fontSize') return `mantine-font-size-${path[2]}`;
-            if (path[1] === 'lineHeight') return `mantine-line-height-${path[2]}`;
-            if (path[1] === 'headings') {
-                if (path.length === 3) {
-                    return `mantine-headings-${path[2].replace(/([A-Z])/g, '-$1').toLowerCase()}`;
-                }
-                return `mantine-${path[2]}-${path[3].replace(/([A-Z])/g, '-$1').toLowerCase()}`;
-            }
+            return `mantine-${path.join('-').replace(/([A-Z])/g, '-$1').toLowerCase()}`;
         }
 
         if (path[0] === 'motion') {
@@ -544,16 +569,23 @@ function inferTokensStudioType(token) {
         return 'borderWidth';
     }
 
-    // Typography-related tokens
-    if (rootCategory === 'typography' || rootCategory === 'fontFamily') {
+    // Flat typography categories
+    if (rootCategory === 'fontFamilies') return 'fontFamilies';
+    if (rootCategory === 'fontWeights') return 'fontWeights';
+    if (rootCategory === 'fontSizes') return 'fontSizes';
+    if (rootCategory === 'lineHeights') return 'lineHeights';
+    if (rootCategory === 'letterSpacing') return 'letterSpacing';
+
+    // Composite typography styles
+    if (rootCategory === 'typography') {
+        if (originalType === 'typography') return 'typography';
+        // For nested typography values within composite tokens
         if (path.includes('fontFamily')) return 'fontFamilies';
         if (path.includes('fontWeight')) return 'fontWeights';
         if (path.includes('fontSize')) return 'fontSizes';
         if (path.includes('lineHeight')) return 'lineHeights';
         if (path.includes('letterSpacing')) return 'letterSpacing';
         if (path.includes('paragraphSpacing')) return 'paragraphSpacing';
-        // Composite typography token
-        if (originalType === 'typography') return 'typography';
     }
 
     // Motion tokens
@@ -593,7 +625,13 @@ const TOKENS_STUDIO_PRIMITIVE_SETS = {
     'gridSpacing': 'primitives/spacing',
     'verticalRhythm': 'primitives/spacing',
     'radius': 'primitives/radius',
-    'typography': 'primitives/typography',
+    // Flat typography categories all map to typography output
+    'fontFamilies': 'primitives/typography',
+    'fontSizes': 'primitives/typography',
+    'fontWeights': 'primitives/typography',
+    'lineHeights': 'primitives/typography',
+    'letterSpacing': 'primitives/typography',
+    'typography': 'primitives/typography',  // Composite styles
     'shadow': 'primitives/shadow',
     'shadows': 'primitives/shadow',
     'motion': 'primitives/motion',
@@ -1028,7 +1066,7 @@ async function buildThemes() {
                         }]
                     }
                 },
-                log: { verbosity: 'verbose' }
+                log: { verbosity: 'default' }
             });
             await sd.buildAllPlatforms();
             console.log(`${theme} theme built successfully`);

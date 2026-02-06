@@ -66,35 +66,35 @@
             "fontSize": {
                 "$description": "Tab text font sizes. Tab text should be readable but not overwhelming.",
                 "xs": {
-                    "$value": "{typography.fontSize.xs}",
+                    "$value": "{fontSizes.xs}",
                     "$description": "Extra small tab font size (12px). Compact text for xs tabs. Use for secondary or crowded navigation."
                 },
                 "sm": {
-                    "$value": "{typography.fontSize.sm}",
+                    "$value": "{fontSizes.sm}",
                     "$description": "Small tab font size (14px). Standard text size for most tab navigation. Readable and space-efficient."
                 },
                 "md": {
-                    "$value": "{typography.fontSize.sm}",
+                    "$value": "{fontSizes.sm}",
                     "$description": "Medium tab font size (14px). DEFAULT. Same as sm - keeps tabs subordinate to main content while remaining readable."
                 },
                 "lg": {
-                    "$value": "{typography.fontSize.md}",
+                    "$value": "{fontSizes.md}",
                     "$description": "Large tab font size (16px). Larger text for prominent tabs. Good for hero navigation or limited tab count."
                 },
                 "xl": {
-                    "$value": "{typography.fontSize.md}",
+                    "$value": "{fontSizes.md}",
                     "$description": "Extra large tab font size (16px). Same as lg - maintains readability without becoming oversized headers."
                 }
             },
             "fontWeight": {
                 "$description": "Tab text font weights. Weight changes indicate active state.",
                 "default": {
-                    "$value": "{typography.fontWeight.regular}",
+                    "$value": "{fontWeights.regular}",
                     "$type": "fontWeight",
                     "$description": "Default (inactive) tab font weight (400). Regular weight for inactive tabs keeps them visually subordinate."
                 },
                 "active": {
-                    "$value": "{typography.fontWeight.medium}",
+                    "$value": "{fontWeights.medium}",
                     "$type": "fontWeight",
                     "$description": "Active tab font weight (500). Medium weight provides subtle emphasis for the selected tab without being too heavy."
                 }

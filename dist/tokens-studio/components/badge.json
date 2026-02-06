@@ -96,12 +96,12 @@
       }
     },
     "fontWeight": {
-      "$value": "{typography.fontWeight.semibold}",
+      "$value": "{fontWeights.semibold}",
       "$type": "fontWeights",
       "$description": "Badge font weight (600). Semibold ensures badges stand out from surrounding body text. Provides emphasis without overwhelming."
     },
     "letterSpacing": {
-      "$value": "{typography.letterSpacing.wide}",
+      "$value": "{letterSpacing.wide}",
       "$type": "dimension",
       "$description": "Badge letter spacing (0.025em). Slightly wide tracking improves readability at small sizes, especially for uppercase text common in badges."
     }

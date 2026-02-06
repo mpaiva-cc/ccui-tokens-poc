@@ -57,28 +57,28 @@
         "fontSize": {
             "$description": "Button font sizes for each size variant.",
             "xs": {
-                "$value": "{typography.fontSize.xs}",
+                "$value": "{fontSizes.xs}",
                 "$description": "Extra small button font size."
             },
             "sm": {
-                "$value": "{typography.fontSize.sm}",
+                "$value": "{fontSizes.sm}",
                 "$description": "Small button font size."
             },
             "md": {
-                "$value": "{typography.fontSize.sm}",
+                "$value": "{fontSizes.sm}",
                 "$description": "Medium button font size. Uses sm for better proportions."
             },
             "lg": {
-                "$value": "{typography.fontSize.md}",
+                "$value": "{fontSizes.md}",
                 "$description": "Large button font size."
             },
             "xl": {
-                "$value": "{typography.fontSize.md}",
+                "$value": "{fontSizes.md}",
                 "$description": "Extra large button font size."
             }
         },
         "fontWeight": {
-            "$value": "{typography.fontWeight.semibold}",
+            "$value": "{fontWeights.semibold}",
             "$type": "fontWeight",
             "$description": "Button font weight. Semibold for clear affordance."
         },

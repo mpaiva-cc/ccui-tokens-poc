@@ -68,33 +68,33 @@
     },
     "fontSize": {
       "xs": {
-        "$value": "{typography.fontSize.xs}",
+        "$value": "{fontSizes.xs}",
         "$type": "dimension",
         "$description": "Extra small input font size."
       },
       "sm": {
-        "$value": "{typography.fontSize.sm}",
+        "$value": "{fontSizes.sm}",
         "$type": "dimension",
         "$description": "Small input font size."
       },
       "md": {
-        "$value": "{typography.fontSize.md}",
+        "$value": "{fontSizes.md}",
         "$type": "dimension",
         "$description": "Medium input font size. DEFAULT."
       },
       "lg": {
-        "$value": "{typography.fontSize.md}",
+        "$value": "{fontSizes.md}",
         "$type": "dimension",
         "$description": "Large input font size."
       },
       "xl": {
-        "$value": "{typography.fontSize.lg}",
+        "$value": "{fontSizes.lg}",
         "$type": "dimension",
         "$description": "Extra large input font size."
       }
     },
     "lineHeight": {
-      "$value": "{typography.lineHeight.md}",
+      "$value": "{lineHeights.md}",
       "$type": "dimension",
       "$description": "Input line height for proper text alignment."
     },

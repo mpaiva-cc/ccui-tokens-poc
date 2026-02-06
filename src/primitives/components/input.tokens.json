@@ -62,28 +62,28 @@
         "fontSize": {
             "$description": "Input font sizes for each size variant. Use md (16px) minimum for accessibility.",
             "xs": {
-                "$value": "{typography.fontSize.xs}",
+                "$value": "{fontSizes.xs}",
                 "$description": "Extra small input font size."
             },
             "sm": {
-                "$value": "{typography.fontSize.sm}",
+                "$value": "{fontSizes.sm}",
                 "$description": "Small input font size."
             },
             "md": {
-                "$value": "{typography.fontSize.md}",
+                "$value": "{fontSizes.md}",
                 "$description": "Medium input font size. DEFAULT."
             },
             "lg": {
-                "$value": "{typography.fontSize.md}",
+                "$value": "{fontSizes.md}",
                 "$description": "Large input font size."
             },
             "xl": {
-                "$value": "{typography.fontSize.lg}",
+                "$value": "{fontSizes.lg}",
                 "$description": "Extra large input font size."
             }
         },
         "lineHeight": {
-            "$value": "{typography.lineHeight.md}",
+            "$value": "{lineHeights.md}",
             "$type": "number",
             "$description": "Input line height for proper text alignment."
         },

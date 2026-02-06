@@ -1,272 +1,270 @@
 {
     "$description": "Composite typography styles for Tokens Studio. These bundle fontFamily, fontSize, fontWeight, lineHeight, and letterSpacing into single tokens that appear together under the 'Typography' type group in Tokens Studio. Use these in Figma to apply complete typography settings at once.",
     "typography": {
-        "styles": {
-            "$description": "Complete typography style definitions. Each style combines all typography properties for consistent application.",
+        "$description": "Complete typography style definitions. Each style combines all typography properties for consistent application.",
 
-            "body": {
-                "$description": "Body text styles for general content and paragraphs.",
-                "sm": {
-                    "$type": "typography",
-                    "$description": "Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.sans}",
-                        "fontSize": "{typography.fontSize.sm}",
-                        "fontWeight": "{typography.fontWeight.regular}",
-                        "lineHeight": "{typography.lineHeight.md}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                },
-                "md": {
-                    "$type": "typography",
-                    "$description": "Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.sans}",
-                        "fontSize": "{typography.fontSize.md}",
-                        "fontWeight": "{typography.fontWeight.regular}",
-                        "lineHeight": "{typography.lineHeight.md}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                },
-                "lg": {
-                    "$type": "typography",
-                    "$description": "Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.sans}",
-                        "fontSize": "{typography.fontSize.lg}",
-                        "fontWeight": "{typography.fontWeight.regular}",
-                        "lineHeight": "{typography.lineHeight.md}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                },
-                "xl": {
-                    "$type": "typography",
-                    "$description": "Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.sans}",
-                        "fontSize": "{typography.fontSize.xl}",
-                        "fontWeight": "{typography.fontWeight.regular}",
-                        "lineHeight": "{typography.lineHeight.md}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                }
-            },
-
-            "heading": {
-                "$description": "Heading styles with accessibility-focused Atkinson Hyperlegible font.",
-                "h1": {
-                    "$type": "typography",
-                    "$description": "Page title (34px bold). Use for: main page headings, hero titles, primary page headers.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.4xl}",
-                        "fontWeight": "{typography.fontWeight.bold}",
-                        "lineHeight": "{typography.lineHeight.xs}",
-                        "letterSpacing": "{typography.letterSpacing.tight}"
-                    }
-                },
-                "h2": {
-                    "$type": "typography",
-                    "$description": "Section heading (26px bold). Use for: major sections, content dividers, feature headers.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.3xl}",
-                        "fontWeight": "{typography.fontWeight.bold}",
-                        "lineHeight": "{typography.lineHeight.xs}",
-                        "letterSpacing": "{typography.letterSpacing.tight}"
-                    }
-                },
-                "h3": {
-                    "$type": "typography",
-                    "$description": "Subsection heading (22px semibold). Use for: subsections, panel headers, grouped content titles.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.2xl}",
-                        "fontWeight": "{typography.fontWeight.semibold}",
-                        "lineHeight": "{typography.lineHeight.sm}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                },
-                "h4": {
-                    "$type": "typography",
-                    "$description": "Card heading (20px semibold). Use for: card titles, modal headers, component titles.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.xl}",
-                        "fontWeight": "{typography.fontWeight.semibold}",
-                        "lineHeight": "{typography.lineHeight.sm}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                },
-                "h5": {
-                    "$type": "typography",
-                    "$description": "Small heading (18px semibold). Use for: minor sections, list group titles, compact headers.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.lg}",
-                        "fontWeight": "{typography.fontWeight.semibold}",
-                        "lineHeight": "{typography.lineHeight.sm}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                },
-                "h6": {
-                    "$type": "typography",
-                    "$description": "Label heading (16px semibold). Use for: label-like headings, form section titles, metadata headers.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.md}",
-                        "fontWeight": "{typography.fontWeight.semibold}",
-                        "lineHeight": "{typography.lineHeight.md}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                }
-            },
-
-            "display": {
-                "$description": "Large display text for hero sections and marketing content.",
-                "lg": {
-                    "$type": "typography",
-                    "$description": "Large display text (34px light). Use for: hero headlines, marketing banners, splash screens.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.4xl}",
-                        "fontWeight": "{typography.fontWeight.light}",
-                        "lineHeight": "{typography.lineHeight.xs}",
-                        "letterSpacing": "{typography.letterSpacing.tighter}"
-                    }
-                },
-                "md": {
-                    "$type": "typography",
-                    "$description": "Medium display text (26px light). Use for: secondary hero text, feature highlights, callouts.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.heading}",
-                        "fontSize": "{typography.fontSize.3xl}",
-                        "fontWeight": "{typography.fontWeight.light}",
-                        "lineHeight": "{typography.lineHeight.xs}",
-                        "letterSpacing": "{typography.letterSpacing.tight}"
-                    }
-                }
-            },
-
-            "label": {
-                "$description": "Label styles for form elements and UI controls.",
-                "sm": {
-                    "$type": "typography",
-                    "$description": "Small label (12px medium). Use for: compact form labels, helper text labels, dense UI.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.sans}",
-                        "fontSize": "{typography.fontSize.xs}",
-                        "fontWeight": "{typography.fontWeight.medium}",
-                        "lineHeight": "{typography.lineHeight.sm}",
-                        "letterSpacing": "{typography.letterSpacing.wide}"
-                    }
-                },
-                "md": {
-                    "$type": "typography",
-                    "$description": "Medium label (14px medium). DEFAULT for form labels, field labels, control labels.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.sans}",
-                        "fontSize": "{typography.fontSize.sm}",
-                        "fontWeight": "{typography.fontWeight.medium}",
-                        "lineHeight": "{typography.lineHeight.sm}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                },
-                "lg": {
-                    "$type": "typography",
-                    "$description": "Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields.",
-                    "$value": {
-                        "fontFamily": "{typography.fontFamily.sans}",
-                        "fontSize": "{typography.fontSize.md}",
-                        "fontWeight": "{typography.fontWeight.medium}",
-                        "lineHeight": "{typography.lineHeight.sm}",
-                        "letterSpacing": "{typography.letterSpacing.normal}"
-                    }
-                }
-            },
-
-            "button": {
+        "body": {
+            "$description": "Body text styles for general content and paragraphs.",
+            "sm": {
                 "$type": "typography",
-                "$description": "Button text (14px semibold). Use for: all button variants, CTAs, action triggers.",
+                "$description": "Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text.",
                 "$value": {
-                    "fontFamily": "{typography.fontFamily.sans}",
-                    "fontSize": "{typography.fontSize.sm}",
-                    "fontWeight": "{typography.fontWeight.semibold}",
-                    "lineHeight": "{typography.lineHeight.xs}",
-                    "letterSpacing": "{typography.letterSpacing.normal}"
+                    "fontFamily": "{fontFamilies.sans}",
+                    "fontSize": "{fontSizes.sm}",
+                    "fontWeight": "{fontWeights.regular}",
+                    "lineHeight": "{lineHeights.md}",
+                    "letterSpacing": "{letterSpacing.normal}"
                 }
             },
-
-            "input": {
+            "md": {
                 "$type": "typography",
-                "$description": "Input text (16px regular). Use for: form input values, textarea content, select values.",
+                "$description": "Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content.",
                 "$value": {
-                    "fontFamily": "{typography.fontFamily.sans}",
-                    "fontSize": "{typography.fontSize.md}",
-                    "fontWeight": "{typography.fontWeight.regular}",
-                    "lineHeight": "{typography.lineHeight.md}",
-                    "letterSpacing": "{typography.letterSpacing.normal}"
+                    "fontFamily": "{fontFamilies.sans}",
+                    "fontSize": "{fontSizes.md}",
+                    "fontWeight": "{fontWeights.regular}",
+                    "lineHeight": "{lineHeights.md}",
+                    "letterSpacing": "{letterSpacing.normal}"
                 }
             },
-
-            "caption": {
+            "lg": {
                 "$type": "typography",
-                "$description": "Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata.",
+                "$description": "Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions.",
                 "$value": {
-                    "fontFamily": "{typography.fontFamily.sans}",
-                    "fontSize": "{typography.fontSize.xs}",
-                    "fontWeight": "{typography.fontWeight.regular}",
-                    "lineHeight": "{typography.lineHeight.md}",
-                    "letterSpacing": "{typography.letterSpacing.wide}"
+                    "fontFamily": "{fontFamilies.sans}",
+                    "fontSize": "{fontSizes.lg}",
+                    "fontWeight": "{fontWeights.regular}",
+                    "lineHeight": "{lineHeights.md}",
+                    "letterSpacing": "{letterSpacing.normal}"
                 }
             },
-
-            "overline": {
+            "xl": {
                 "$type": "typography",
-                "$description": "Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Often used with text-transform: uppercase.",
+                "$description": "Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy.",
                 "$value": {
-                    "fontFamily": "{typography.fontFamily.sans}",
-                    "fontSize": "{typography.fontSize.xs}",
-                    "fontWeight": "{typography.fontWeight.medium}",
-                    "lineHeight": "{typography.lineHeight.sm}",
-                    "letterSpacing": "{typography.letterSpacing.wider}"
+                    "fontFamily": "{fontFamilies.sans}",
+                    "fontSize": "{fontSizes.xl}",
+                    "fontWeight": "{fontWeights.regular}",
+                    "lineHeight": "{lineHeights.md}",
+                    "letterSpacing": "{letterSpacing.normal}"
+                }
+            }
+        },
+
+        "heading": {
+            "$description": "Heading styles with accessibility-focused Atkinson Hyperlegible font.",
+            "h1": {
+                "$type": "typography",
+                "$description": "Page title (34px bold). Use for: main page headings, hero titles, primary page headers.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.4xl}",
+                    "fontWeight": "{fontWeights.bold}",
+                    "lineHeight": "{lineHeights.xs}",
+                    "letterSpacing": "{letterSpacing.tight}"
                 }
             },
-
-            "code": {
+            "h2": {
                 "$type": "typography",
-                "$description": "Code text (14px regular monospace). Use for: inline code, code blocks, technical content, API references.",
+                "$description": "Section heading (26px bold). Use for: major sections, content dividers, feature headers.",
                 "$value": {
-                    "fontFamily": "{typography.fontFamily.mono}",
-                    "fontSize": "{typography.fontSize.sm}",
-                    "fontWeight": "{typography.fontWeight.regular}",
-                    "lineHeight": "{typography.lineHeight.lg}",
-                    "letterSpacing": "{typography.letterSpacing.normal}"
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.3xl}",
+                    "fontWeight": "{fontWeights.bold}",
+                    "lineHeight": "{lineHeights.xs}",
+                    "letterSpacing": "{letterSpacing.tight}"
                 }
             },
-
-            "quote": {
+            "h3": {
                 "$type": "typography",
-                "$description": "Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes.",
+                "$description": "Subsection heading (22px semibold). Use for: subsections, panel headers, grouped content titles.",
                 "$value": {
-                    "fontFamily": "{typography.fontFamily.sans}",
-                    "fontSize": "{typography.fontSize.lg}",
-                    "fontWeight": "{typography.fontWeight.regular}",
-                    "lineHeight": "{typography.lineHeight.lg}",
-                    "letterSpacing": "{typography.letterSpacing.normal}"
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.2xl}",
+                    "fontWeight": "{fontWeights.semibold}",
+                    "lineHeight": "{lineHeights.sm}",
+                    "letterSpacing": "{letterSpacing.normal}"
                 }
             },
-
-            "blockquote": {
+            "h4": {
                 "$type": "typography",
-                "$description": "Blockquote text (20px light). Use for: prominent quotes, feature testimonials, highlighted citations.",
+                "$description": "Card heading (20px semibold). Use for: card titles, modal headers, component titles.",
                 "$value": {
-                    "fontFamily": "{typography.fontFamily.heading}",
-                    "fontSize": "{typography.fontSize.xl}",
-                    "fontWeight": "{typography.fontWeight.light}",
-                    "lineHeight": "{typography.lineHeight.lg}",
-                    "letterSpacing": "{typography.letterSpacing.normal}"
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.xl}",
+                    "fontWeight": "{fontWeights.semibold}",
+                    "lineHeight": "{lineHeights.sm}",
+                    "letterSpacing": "{letterSpacing.normal}"
                 }
+            },
+            "h5": {
+                "$type": "typography",
+                "$description": "Small heading (18px semibold). Use for: minor sections, list group titles, compact headers.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.lg}",
+                    "fontWeight": "{fontWeights.semibold}",
+                    "lineHeight": "{lineHeights.sm}",
+                    "letterSpacing": "{letterSpacing.normal}"
+                }
+            },
+            "h6": {
+                "$type": "typography",
+                "$description": "Label heading (16px semibold). Use for: label-like headings, form section titles, metadata headers.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.md}",
+                    "fontWeight": "{fontWeights.semibold}",
+                    "lineHeight": "{lineHeights.md}",
+                    "letterSpacing": "{letterSpacing.normal}"
+                }
+            }
+        },
+
+        "display": {
+            "$description": "Large display text for hero sections and marketing content.",
+            "lg": {
+                "$type": "typography",
+                "$description": "Large display text (34px light). Use for: hero headlines, marketing banners, splash screens.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.4xl}",
+                    "fontWeight": "{fontWeights.light}",
+                    "lineHeight": "{lineHeights.xs}",
+                    "letterSpacing": "{letterSpacing.tighter}"
+                }
+            },
+            "md": {
+                "$type": "typography",
+                "$description": "Medium display text (26px light). Use for: secondary hero text, feature highlights, callouts.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.3xl}",
+                    "fontWeight": "{fontWeights.light}",
+                    "lineHeight": "{lineHeights.xs}",
+                    "letterSpacing": "{letterSpacing.tight}"
+                }
+            }
+        },
+
+        "label": {
+            "$description": "Label styles for form elements and UI controls.",
+            "sm": {
+                "$type": "typography",
+                "$description": "Small label (12px medium). Use for: compact form labels, helper text labels, dense UI.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.sans}",
+                    "fontSize": "{fontSizes.xs}",
+                    "fontWeight": "{fontWeights.medium}",
+                    "lineHeight": "{lineHeights.sm}",
+                    "letterSpacing": "{letterSpacing.wide}"
+                }
+            },
+            "md": {
+                "$type": "typography",
+                "$description": "Medium label (14px medium). DEFAULT for form labels, field labels, control labels.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.sans}",
+                    "fontSize": "{fontSizes.sm}",
+                    "fontWeight": "{fontWeights.medium}",
+                    "lineHeight": "{lineHeights.sm}",
+                    "letterSpacing": "{letterSpacing.normal}"
+                }
+            },
+            "lg": {
+                "$type": "typography",
+                "$description": "Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.sans}",
+                    "fontSize": "{fontSizes.md}",
+                    "fontWeight": "{fontWeights.medium}",
+                    "lineHeight": "{lineHeights.sm}",
+                    "letterSpacing": "{letterSpacing.normal}"
+                }
+            }
+        },
+
+        "button": {
+            "$type": "typography",
+            "$description": "Button text (14px semibold). Use for: all button variants, CTAs, action triggers.",
+            "$value": {
+                "fontFamily": "{fontFamilies.sans}",
+                "fontSize": "{fontSizes.sm}",
+                "fontWeight": "{fontWeights.semibold}",
+                "lineHeight": "{lineHeights.xs}",
+                "letterSpacing": "{letterSpacing.normal}"
+            }
+        },
+
+        "input": {
+            "$type": "typography",
+            "$description": "Input text (16px regular). Use for: form input values, textarea content, select values.",
+            "$value": {
+                "fontFamily": "{fontFamilies.sans}",
+                "fontSize": "{fontSizes.md}",
+                "fontWeight": "{fontWeights.regular}",
+                "lineHeight": "{lineHeights.md}",
+                "letterSpacing": "{letterSpacing.normal}"
+            }
+        },
+
+        "caption": {
+            "$type": "typography",
+            "$description": "Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata.",
+            "$value": {
+                "fontFamily": "{fontFamilies.sans}",
+                "fontSize": "{fontSizes.xs}",
+                "fontWeight": "{fontWeights.regular}",
+                "lineHeight": "{lineHeights.md}",
+                "letterSpacing": "{letterSpacing.wide}"
+            }
+        },
+
+        "overline": {
+            "$type": "typography",
+            "$description": "Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Often used with text-transform: uppercase.",
+            "$value": {
+                "fontFamily": "{fontFamilies.sans}",
+                "fontSize": "{fontSizes.xs}",
+                "fontWeight": "{fontWeights.medium}",
+                "lineHeight": "{lineHeights.sm}",
+                "letterSpacing": "{letterSpacing.wider}"
+            }
+        },
+
+        "code": {
+            "$type": "typography",
+            "$description": "Code text (14px regular monospace). Use for: inline code, code blocks, technical content, API references.",
+            "$value": {
+                "fontFamily": "{fontFamilies.mono}",
+                "fontSize": "{fontSizes.sm}",
+                "fontWeight": "{fontWeights.regular}",
+                "lineHeight": "{lineHeights.lg}",
+                "letterSpacing": "{letterSpacing.normal}"
+            }
+        },
+
+        "quote": {
+            "$type": "typography",
+            "$description": "Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes.",
+            "$value": {
+                "fontFamily": "{fontFamilies.sans}",
+                "fontSize": "{fontSizes.lg}",
+                "fontWeight": "{fontWeights.regular}",
+                "lineHeight": "{lineHeights.lg}",
+                "letterSpacing": "{letterSpacing.normal}"
+            }
+        },
+
+        "blockquote": {
+            "$type": "typography",
+            "$description": "Blockquote text (20px light). Use for: prominent quotes, feature testimonials, highlighted citations.",
+            "$value": {
+                "fontFamily": "{fontFamilies.heading}",
+                "fontSize": "{fontSizes.xl}",
+                "fontWeight": "{fontWeights.light}",
+                "lineHeight": "{lineHeights.lg}",
+                "letterSpacing": "{letterSpacing.normal}"
             }
         }
     }

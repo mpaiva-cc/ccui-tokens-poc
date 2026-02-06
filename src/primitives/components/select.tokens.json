@@ -63,23 +63,23 @@
         "fontSize": {
             "$description": "Select text font sizes. Should match input field font sizes for form consistency.",
             "xs": {
-                "$value": "{typography.fontSize.xs}",
+                "$value": "{fontSizes.xs}",
                 "$description": "Extra small select font size (12px). Compact text for xs selects. Use for dense forms or secondary controls."
             },
             "sm": {
-                "$value": "{typography.fontSize.sm}",
+                "$value": "{fontSizes.sm}",
                 "$description": "Small select font size (14px). Standard text for most select inputs. Readable and space-efficient."
             },
             "md": {
-                "$value": "{typography.fontSize.md}",
+                "$value": "{fontSizes.md}",
                 "$description": "Medium select font size (16px). DEFAULT. Body text size for comfortable reading. Most common for primary forms."
             },
             "lg": {
-                "$value": "{typography.fontSize.md}",
+                "$value": "{fontSizes.md}",
                 "$description": "Large select font size (16px). Same as md - maintains readability without growing too large."
             },
             "xl": {
-                "$value": "{typography.fontSize.lg}",
+                "$value": "{fontSizes.lg}",
                 "$description": "Extra large select font size (18px). Larger text for prominent selects or accessibility focus."
             }
         },

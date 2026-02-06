@@ -54,23 +54,23 @@
             "fontSize": {
                 "$description": "Table cell font sizes. Slightly smaller than body text to fit more data while remaining readable.",
                 "xs": {
-                    "$value": "{typography.fontSize.xs}",
+                    "$value": "{fontSizes.xs}",
                     "$description": "Extra small table font size (12px). Compact text for dense data tables. Use for admin panels or data-heavy views."
                 },
                 "sm": {
-                    "$value": "{typography.fontSize.sm}",
+                    "$value": "{fontSizes.sm}",
                     "$description": "Small table font size (14px). Standard data table text. Readable and space-efficient for most use cases."
                 },
                 "md": {
-                    "$value": "{typography.fontSize.sm}",
+                    "$value": "{fontSizes.sm}",
                     "$description": "Medium table font size (14px). DEFAULT. Same as sm - keeps data compact while maintaining readability."
                 },
                 "lg": {
-                    "$value": "{typography.fontSize.md}",
+                    "$value": "{fontSizes.md}",
                     "$description": "Large table font size (16px). Larger text for improved readability. Good for simple tables or accessibility needs."
                 },
                 "xl": {
-                    "$value": "{typography.fontSize.md}",
+                    "$value": "{fontSizes.md}",
                     "$description": "Extra large table font size (16px). Same as lg - body text size for maximum readability in spacious tables."
                 }
             }
@@ -78,12 +78,12 @@
         "header": {
             "$description": "Table header row configuration. Headers label columns and typically have distinct styling.",
             "fontWeight": {
-                "$value": "{typography.fontWeight.semibold}",
+                "$value": "{fontWeights.semibold}",
                 "$type": "fontWeight",
                 "$description": "Table header font weight (600). Semibold headers clearly distinguish column labels from data. Important for scanability."
             },
             "fontSize": {
-                "$value": "{typography.fontSize.sm}",
+                "$value": "{fontSizes.sm}",
                 "$description": "Table header font size (14px). Same as cell text but distinguished by weight and color. Consistent sizing aids alignment."
             }
         },

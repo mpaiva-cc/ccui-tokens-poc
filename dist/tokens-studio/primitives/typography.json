@@ -1,445 +1,163 @@
 {
+  "fontFamilies": {
+    "sans": {
+      "$value": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "$type": "fontFamilies",
+      "$description": "Primary sans-serif font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support."
+    },
+    "heading": {
+      "$value": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "$type": "fontFamilies",
+      "$description": "Heading/display font stack optimized for accessibility. Atkinson Hyperlegible Next (by Braille Institute) is designed for maximum legibility, especially for users with low vision. Use for: page titles, section headings, hero text, marketing content. Distinct letterforms reduce character confusion. Falls back to Public Sans for consistency."
+    },
+    "mono": {
+      "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "$type": "fontFamilies",
+      "$description": "Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment."
+    }
+  },
+  "fontSizes": {
+    "xs": {
+      "$value": "0.75rem",
+      "$type": "fontSizes",
+      "$description": "Extra small font size (12px). MINIMUM readable size. Use for: helper text, timestamps, metadata, legal text, footnotes, badge content. Requires high contrast - use with strong foreground colors. Not recommended for primary content. Common in: timestamps, version numbers, copyright notices."
+    },
+    "sm": {
+      "$value": "0.875rem",
+      "$type": "fontSizes",
+      "$description": "Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons. Good balance of density and readability."
+    },
+    "md": {
+      "$value": "1rem",
+      "$type": "fontSizes",
+      "$description": "Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text."
+    },
+    "lg": {
+      "$value": "1.125rem",
+      "$type": "fontSizes",
+      "$description": "Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, card titles. Slightly larger for emphasis without being a heading. Common in: intro paragraphs, feature descriptions, prominent labels, large button text."
+    },
+    "xl": {
+      "$value": "1.25rem",
+      "$type": "fontSizes",
+      "$description": "Extra large font size (20px). Use for: small headings (h5-h6), subtitle text, section labels, prominent UI elements. Bridges gap between body and heading sizes. Common in: card headings, modal titles, section headers within content."
+    },
+    "2xl": {
+      "$value": "1.375rem",
+      "$type": "fontSizes",
+      "$description": "2x large font size (22px). Use for: medium headings (h4), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h4 headings, sidebar section titles, panel headers."
+    },
+    "3xl": {
+      "$value": "1.625rem",
+      "$type": "fontSizes",
+      "$description": "3x large font size (26px). Use for: prominent headings (h3), page section titles. Commands attention without overwhelming. Common in: h3 headings, dashboard section titles, feature section headers."
+    },
+    "4xl": {
+      "$value": "2.125rem",
+      "$type": "fontSizes",
+      "$description": "4x large font size (34px). Use for: major headings (h1-h2), page titles, hero text. Primary visual hierarchy anchor. Common in: page titles, h1/h2 headings, hero headlines. Pair with lineHeight.xs or lineHeight.sm for tighter leading."
+    }
+  },
+  "fontWeights": {
+    "light": {
+      "$value": 300,
+      "$type": "fontWeights",
+      "$description": "Light font weight (300). Use sparingly for: large display text, hero headlines, artistic/elegant contexts, stylized marketing content. CAUTION: Poor readability at small sizes or low contrast. Never use for body text or UI labels. Requires high contrast ratio. Common in: hero text, large quotes, stylized headings."
+    },
+    "regular": {
+      "$value": 400,
+      "$type": "fontWeights",
+      "$description": "Regular font weight (400). DEFAULT weight for all body text. Use for: paragraphs, descriptions, general content, form input values, most UI text. Optimized for extended reading. Most content should use this weight. Common in: body text, input values, descriptions, help text."
+    },
+    "medium": {
+      "$value": 500,
+      "$type": "fontWeights",
+      "$description": "Medium font weight (500). Use for: subtle emphasis, navigation items, form labels, table headers, slightly prominent UI text. Noticeable but not bold - professional emphasis. Common in: nav items, active states, form labels, table column headers, subheadings."
+    },
+    "semibold": {
+      "$value": 600,
+      "$type": "fontWeights",
+      "$description": "Semibold font weight (600). Use for: buttons, important labels, card titles, moderate emphasis headings. Strong emphasis without the heaviness of bold. Common in: button text, card titles, important labels, h4-h6 headings, badge text, tab labels."
+    },
+    "bold": {
+      "$value": 700,
+      "$type": "fontWeights",
+      "$description": "Bold font weight (700). Use for: headings (h1-h3), strong emphasis, critical information, maximum text prominence. Reserve for true emphasis - overuse dilutes impact. Common in: h1-h3 headings, alert titles, critical labels, strong inline emphasis (<strong>)."
+    }
+  },
+  "letterSpacing": {
+    "tighter": {
+      "$value": "-0.05em",
+      "$type": "letterSpacing",
+      "$description": "Tighter tracking (-0.05em). Use for: very large display text (48px+), hero headlines, logos. Brings characters closer for visual cohesion at large sizes. CAUTION: Can reduce readability if overused."
+    },
+    "tight": {
+      "$value": "-0.025em",
+      "$type": "letterSpacing",
+      "$description": "Slightly tight tracking (-0.025em). Use for: large headings (h1-h2), medium display text. Subtle tightening that improves visual density without sacrificing readability."
+    },
+    "normal": {
+      "$value": "0",
+      "$type": "letterSpacing",
+      "$description": "Default letter spacing (0). DEFAULT for all body text and most headings. Let the typeface's natural spacing work. Optimal for reading comprehension."
+    },
+    "wide": {
+      "$value": "0.025em",
+      "$type": "letterSpacing",
+      "$description": "Slightly wide tracking (0.025em). Use for: small text (12px or less), captions that need more breathing room. Improves legibility at small sizes."
+    },
+    "wider": {
+      "$value": "0.05em",
+      "$type": "letterSpacing",
+      "$description": "Wide tracking (0.05em). Use for: small caps, labels, overlines, all-caps text. Prevents all-caps text from feeling cramped. Common in: button text (sometimes), navigation labels, category headers."
+    },
+    "widest": {
+      "$value": "0.1em",
+      "$type": "letterSpacing",
+      "$description": "Maximum tracking (0.1em). Use for: stylistic emphasis, spaced-out headings, decorative typography. Very pronounced spacing for special typographic treatments. Use sparingly."
+    }
+  },
+  "lineHeights": {
+    "xs": {
+      "$value": "120%",
+      "$type": "lineHeights",
+      "$description": "Tight line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for headings 24px+ or single-line UI elements. Common in: h1, hero headlines, button text, badge labels."
+    },
+    "sm": {
+      "$value": "135%",
+      "$type": "lineHeights",
+      "$description": "Snug line height (135%). Use for: smaller headings (h3-h6), subheadings, short multi-line text, compact interfaces. Tighter than body but readable for short passages. Common in: h3-h6 headings, card titles, navigation items, form labels, compact UI text."
+    },
+    "md": {
+      "$value": "150%",
+      "$type": "lineHeights",
+      "$description": "Normal line height (150%). WCAG MINIMUM for body text. Use for: standard body text, paragraphs, UI descriptions, form inputs, most readable content. Baseline for accessibility compliance. Common in: body paragraphs, descriptions, form values, help text, table cells."
+    },
+    "lg": {
+      "$value": "165%",
+      "$type": "lineHeights",
+      "$description": "Relaxed line height (165%). Use for: longer paragraphs, improved readability, wide content areas, users who need more visual separation. Better for sustained reading. Common in: article content, documentation, expanded descriptions, accessibility-focused interfaces."
+    },
+    "xl": {
+      "$value": "180%",
+      "$type": "lineHeights",
+      "$description": "Loose line height (180%). Use for: long-form prose, documentation, maximum readability, accessibility accommodations. Very generous spacing between lines. Common in: blog posts, help documentation, legal text, content prioritizing readability over density."
+    }
+  },
   "typography": {
-    "fontFamily": {
-      "sans": {
-        "$value": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-        "$type": "fontFamilies",
-        "$description": "Primary sans-serif font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support."
-      },
-      "heading": {
-        "$value": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-        "$type": "fontFamilies",
-        "$description": "Heading/display font stack optimized for accessibility. Atkinson Hyperlegible Next (by Braille Institute) is designed for maximum legibility, especially for users with low vision. Use for: page titles, section headings, hero text, marketing content. Distinct letterforms reduce character confusion. Falls back to Public Sans for consistency."
-      },
-      "mono": {
-        "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-        "$type": "fontFamilies",
-        "$description": "Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment."
-      }
-    },
-    "fontSize": {
-      "xs": {
-        "$value": "0.75rem",
-        "$type": "fontSizes",
-        "$description": "Extra small font size (12px). MINIMUM readable size. Use for: helper text, timestamps, metadata, legal text, footnotes, badge content. Requires high contrast - use with strong foreground colors. Not recommended for primary content. Common in: timestamps, version numbers, copyright notices."
-      },
+    "body": {
       "sm": {
-        "$value": "0.875rem",
-        "$type": "fontSizes",
-        "$description": "Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons. Good balance of density and readability."
-      },
-      "md": {
-        "$value": "1rem",
-        "$type": "fontSizes",
-        "$description": "Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text."
-      },
-      "lg": {
-        "$value": "1.125rem",
-        "$type": "fontSizes",
-        "$description": "Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, card titles. Slightly larger for emphasis without being a heading. Common in: intro paragraphs, feature descriptions, prominent labels, large button text."
-      },
-      "xl": {
-        "$value": "1.25rem",
-        "$type": "fontSizes",
-        "$description": "Extra large font size (20px). Use for: small headings (h5-h6), subtitle text, section labels, prominent UI elements. Bridges gap between body and heading sizes. Common in: card headings, modal titles, section headers within content."
-      },
-      "2xl": {
-        "$value": "1.375rem",
-        "$type": "fontSizes",
-        "$description": "2x large font size (22px). Use for: medium headings (h4), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h4 headings, sidebar section titles, panel headers."
-      },
-      "3xl": {
-        "$value": "1.625rem",
-        "$type": "fontSizes",
-        "$description": "3x large font size (26px). Use for: prominent headings (h3), page section titles. Commands attention without overwhelming. Common in: h3 headings, dashboard section titles, feature section headers."
-      },
-      "4xl": {
-        "$value": "2.125rem",
-        "$type": "fontSizes",
-        "$description": "4x large font size (34px). Use for: major headings (h1-h2), page titles, hero text. Primary visual hierarchy anchor. Common in: page titles, h1/h2 headings, hero headlines. Pair with lineHeight.xs or lineHeight.sm for tighter leading."
-      }
-    },
-    "fontWeight": {
-      "light": {
-        "$value": 300,
-        "$type": "fontWeights",
-        "$description": "Light font weight (300). Use sparingly for: large display text, hero headlines, artistic/elegant contexts, stylized marketing content. CAUTION: Poor readability at small sizes or low contrast. Never use for body text or UI labels. Requires high contrast ratio. Common in: hero text, large quotes, stylized headings."
-      },
-      "regular": {
-        "$value": 400,
-        "$type": "fontWeights",
-        "$description": "Regular font weight (400). DEFAULT weight for all body text. Use for: paragraphs, descriptions, general content, form input values, most UI text. Optimized for extended reading. Most content should use this weight. Common in: body text, input values, descriptions, help text."
-      },
-      "medium": {
-        "$value": 500,
-        "$type": "fontWeights",
-        "$description": "Medium font weight (500). Use for: subtle emphasis, navigation items, form labels, table headers, slightly prominent UI text. Noticeable but not bold - professional emphasis. Common in: nav items, active states, form labels, table column headers, subheadings."
-      },
-      "semibold": {
-        "$value": 600,
-        "$type": "fontWeights",
-        "$description": "Semibold font weight (600). Use for: buttons, important labels, card titles, moderate emphasis headings. Strong emphasis without the heaviness of bold. Common in: button text, card titles, important labels, h4-h6 headings, badge text, tab labels."
-      },
-      "bold": {
-        "$value": 700,
-        "$type": "fontWeights",
-        "$description": "Bold font weight (700). Use for: headings (h1-h3), strong emphasis, critical information, maximum text prominence. Reserve for true emphasis - overuse dilutes impact. Common in: h1-h3 headings, alert titles, critical labels, strong inline emphasis (<strong>)."
-      }
-    },
-    "headings": {
-      "fontWeight": {
-        "$value": "{typography.fontWeight.bold}",
-        "$type": "fontWeights",
-        "$description": "Default font weight for all headings."
-      },
-      "h1": {
-        "fontSize": {
-          "$value": "{typography.fontSize.4xl}",
-          "$type": "fontSizes",
-          "$description": "H1 font size (34px). Use for page titles."
-        },
-        "fontWeight": {
-          "$value": "{typography.fontWeight.bold}",
-          "$type": "fontWeights",
-          "$description": "Bold weight (700) for maximum visual hierarchy on page titles."
-        },
-        "lineHeight": {
-          "$value": "{typography.lineHeight.xs}",
-          "$type": "lineHeights",
-          "$description": "Tight line height for large headings."
-        }
-      },
-      "h2": {
-        "fontSize": {
-          "$value": "{typography.fontSize.3xl}",
-          "$type": "fontSizes",
-          "$description": "H2 font size (26px). Use for section headings."
-        },
-        "fontWeight": {
-          "$value": "{typography.fontWeight.bold}",
-          "$type": "fontWeights",
-          "$description": "Bold weight (700) for strong section hierarchy."
-        },
-        "lineHeight": {
-          "$value": "{typography.lineHeight.xs}",
-          "$type": "lineHeights",
-          "$description": "Tight line height (1.2) for compact section headings."
-        }
-      },
-      "h3": {
-        "fontSize": {
-          "$value": "{typography.fontSize.2xl}",
-          "$type": "fontSizes",
-          "$description": "H3 font size (22px). Use for subsection headings."
-        },
-        "fontWeight": {
-          "$value": "{typography.fontWeight.semibold}",
-          "$type": "fontWeights",
-          "$description": "Semibold weight (600) for clear subsection emphasis."
-        },
-        "lineHeight": {
-          "$value": "{typography.lineHeight.sm}",
-          "$type": "lineHeights",
-          "$description": "Snug line height (1.35) for medium-sized headings."
-        }
-      },
-      "h4": {
-        "fontSize": {
-          "$value": "{typography.fontSize.xl}",
-          "$type": "fontSizes",
-          "$description": "H4 font size (20px). Use for card titles."
-        },
-        "fontWeight": {
-          "$value": "{typography.fontWeight.semibold}",
-          "$type": "fontWeights",
-          "$description": "Semibold weight (600) for card and component titles."
-        },
-        "lineHeight": {
-          "$value": "{typography.lineHeight.sm}",
-          "$type": "lineHeights",
-          "$description": "Snug line height (1.35) for card title readability."
-        }
-      },
-      "h5": {
-        "fontSize": {
-          "$value": "{typography.fontSize.lg}",
-          "$type": "fontSizes",
-          "$description": "H5 font size (18px). Use for small headings."
-        },
-        "fontWeight": {
-          "$value": "{typography.fontWeight.semibold}",
-          "$type": "fontWeights",
-          "$description": "Semibold weight (600) for minor section emphasis."
-        },
-        "lineHeight": {
-          "$value": "{typography.lineHeight.sm}",
-          "$type": "lineHeights",
-          "$description": "Snug line height (1.35) for compact minor headings."
-        }
-      },
-      "h6": {
-        "fontSize": {
-          "$value": "{typography.fontSize.md}",
-          "$type": "fontSizes",
-          "$description": "H6 font size (16px). Use for label-like headings."
-        },
-        "fontWeight": {
-          "$value": "{typography.fontWeight.semibold}",
-          "$type": "fontWeights",
-          "$description": "Semibold weight (600) for label-style heading emphasis."
-        },
-        "lineHeight": {
-          "$value": "{typography.lineHeight.md}",
-          "$type": "lineHeights",
-          "$description": "Normal line height (1.5) matching body text rhythm."
-        }
-      }
-    },
-    "letterSpacing": {
-      "tighter": {
-        "$value": "-0.05em",
-        "$type": "letterSpacing",
-        "$description": "Tighter tracking (-0.05em). Use for: very large display text (48px+), hero headlines, logos. Brings characters closer for visual cohesion at large sizes. CAUTION: Can reduce readability if overused."
-      },
-      "tight": {
-        "$value": "-0.025em",
-        "$type": "letterSpacing",
-        "$description": "Slightly tight tracking (-0.025em). Use for: large headings (h1-h2), medium display text. Subtle tightening that improves visual density without sacrificing readability."
-      },
-      "normal": {
-        "$value": "0",
-        "$type": "letterSpacing",
-        "$description": "Default letter spacing (0). DEFAULT for all body text and most headings. Let the typeface's natural spacing work. Optimal for reading comprehension."
-      },
-      "wide": {
-        "$value": "0.025em",
-        "$type": "letterSpacing",
-        "$description": "Slightly wide tracking (0.025em). Use for: small text (12px or less), captions that need more breathing room. Improves legibility at small sizes."
-      },
-      "wider": {
-        "$value": "0.05em",
-        "$type": "letterSpacing",
-        "$description": "Wide tracking (0.05em). Use for: small caps, labels, overlines, all-caps text. Prevents all-caps text from feeling cramped. Common in: button text (sometimes), navigation labels, category headers."
-      },
-      "widest": {
-        "$value": "0.1em",
-        "$type": "letterSpacing",
-        "$description": "Maximum tracking (0.1em). Use for: stylistic emphasis, spaced-out headings, decorative typography. Very pronounced spacing for special typographic treatments. Use sparingly."
-      }
-    },
-    "lineHeight": {
-      "xs": {
-        "$value": "120%",
-        "$type": "lineHeights",
-        "$description": "Tight line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for headings 24px+ or single-line UI elements. Common in: h1, hero headlines, button text, badge labels."
-      },
-      "sm": {
-        "$value": "135%",
-        "$type": "lineHeights",
-        "$description": "Snug line height (135%). Use for: smaller headings (h3-h6), subheadings, short multi-line text, compact interfaces. Tighter than body but readable for short passages. Common in: h3-h6 headings, card titles, navigation items, form labels, compact UI text."
-      },
-      "md": {
-        "$value": "150%",
-        "$type": "lineHeights",
-        "$description": "Normal line height (150%). WCAG MINIMUM for body text. Use for: standard body text, paragraphs, UI descriptions, form inputs, most readable content. Baseline for accessibility compliance. Common in: body paragraphs, descriptions, form values, help text, table cells."
-      },
-      "lg": {
-        "$value": "165%",
-        "$type": "lineHeights",
-        "$description": "Relaxed line height (165%). Use for: longer paragraphs, improved readability, wide content areas, users who need more visual separation. Better for sustained reading. Common in: article content, documentation, expanded descriptions, accessibility-focused interfaces."
-      },
-      "xl": {
-        "$value": "180%",
-        "$type": "lineHeights",
-        "$description": "Loose line height (180%). Use for: long-form prose, documentation, maximum readability, accessibility accommodations. Very generous spacing between lines. Common in: blog posts, help documentation, legal text, content prioritizing readability over density."
-      }
-    },
-    "styles": {
-      "body": {
-        "sm": {
-          "$value": {
-            "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "0.875rem",
-            "fontWeight": 400,
-            "lineHeight": "150%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text."
-        },
-        "md": {
-          "$value": {
-            "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-            "lineHeight": "150%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content."
-        },
-        "lg": {
-          "$value": {
-            "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1.125rem",
-            "fontWeight": 400,
-            "lineHeight": "150%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions."
-        },
-        "xl": {
-          "$value": {
-            "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1.25rem",
-            "fontWeight": 400,
-            "lineHeight": "150%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy."
-        }
-      },
-      "heading": {
-        "h1": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "2.125rem",
-            "fontWeight": 700,
-            "lineHeight": "120%",
-            "letterSpacing": "-0.025em"
-          },
-          "$type": "typography",
-          "$description": "Page title (34px bold). Use for: main page headings, hero titles, primary page headers."
-        },
-        "h2": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1.625rem",
-            "fontWeight": 700,
-            "lineHeight": "120%",
-            "letterSpacing": "-0.025em"
-          },
-          "$type": "typography",
-          "$description": "Section heading (26px bold). Use for: major sections, content dividers, feature headers."
-        },
-        "h3": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1.375rem",
-            "fontWeight": 600,
-            "lineHeight": "135%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Subsection heading (22px semibold). Use for: subsections, panel headers, grouped content titles."
-        },
-        "h4": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1.25rem",
-            "fontWeight": 600,
-            "lineHeight": "135%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Card heading (20px semibold). Use for: card titles, modal headers, component titles."
-        },
-        "h5": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1.125rem",
-            "fontWeight": 600,
-            "lineHeight": "135%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Small heading (18px semibold). Use for: minor sections, list group titles, compact headers."
-        },
-        "h6": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 600,
-            "lineHeight": "150%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Label heading (16px semibold). Use for: label-like headings, form section titles, metadata headers."
-        }
-      },
-      "display": {
-        "lg": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "2.125rem",
-            "fontWeight": 300,
-            "lineHeight": "120%",
-            "letterSpacing": "-0.05em"
-          },
-          "$type": "typography",
-          "$description": "Large display text (34px light). Use for: hero headlines, marketing banners, splash screens."
-        },
-        "md": {
-          "$value": {
-            "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1.625rem",
-            "fontWeight": 300,
-            "lineHeight": "120%",
-            "letterSpacing": "-0.025em"
-          },
-          "$type": "typography",
-          "$description": "Medium display text (26px light). Use for: secondary hero text, feature highlights, callouts."
-        }
-      },
-      "label": {
-        "sm": {
-          "$value": {
-            "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "0.75rem",
-            "fontWeight": 500,
-            "lineHeight": "135%",
-            "letterSpacing": "0.025em"
-          },
-          "$type": "typography",
-          "$description": "Small label (12px medium). Use for: compact form labels, helper text labels, dense UI."
-        },
-        "md": {
-          "$value": {
-            "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "0.875rem",
-            "fontWeight": 500,
-            "lineHeight": "135%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Medium label (14px medium). DEFAULT for form labels, field labels, control labels."
-        },
-        "lg": {
-          "$value": {
-            "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 500,
-            "lineHeight": "135%",
-            "letterSpacing": "0"
-          },
-          "$type": "typography",
-          "$description": "Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields."
-        }
-      },
-      "button": {
         "$value": {
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "0.875rem",
-          "fontWeight": 600,
-          "lineHeight": "120%",
+          "fontWeight": 400,
+          "lineHeight": "150%",
           "letterSpacing": "0"
         },
         "$type": "typography",
-        "$description": "Button text (14px semibold). Use for: all button variants, CTAs, action triggers."
+        "$description": "Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text."
       },
-      "input": {
+      "md": {
         "$value": {
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "1rem",
@@ -448,63 +166,234 @@
           "letterSpacing": "0"
         },
         "$type": "typography",
-        "$description": "Input text (16px regular). Use for: form input values, textarea content, select values."
+        "$description": "Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content."
       },
-      "caption": {
+      "lg": {
         "$value": {
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-          "fontSize": "0.75rem",
+          "fontSize": "1.125rem",
           "fontWeight": 400,
           "lineHeight": "150%",
-          "letterSpacing": "0.025em"
+          "letterSpacing": "0"
         },
         "$type": "typography",
-        "$description": "Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata."
+        "$description": "Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions."
       },
-      "overline": {
+      "xl": {
+        "$value": {
+          "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 400,
+          "lineHeight": "150%",
+          "letterSpacing": "0"
+        },
+        "$type": "typography",
+        "$description": "Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy."
+      }
+    },
+    "heading": {
+      "h1": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "2.125rem",
+          "fontWeight": 700,
+          "lineHeight": "120%",
+          "letterSpacing": "-0.025em"
+        },
+        "$type": "typography",
+        "$description": "Page title (34px bold). Use for: main page headings, hero titles, primary page headers."
+      },
+      "h2": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1.625rem",
+          "fontWeight": 700,
+          "lineHeight": "120%",
+          "letterSpacing": "-0.025em"
+        },
+        "$type": "typography",
+        "$description": "Section heading (26px bold). Use for: major sections, content dividers, feature headers."
+      },
+      "h3": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1.375rem",
+          "fontWeight": 600,
+          "lineHeight": "135%",
+          "letterSpacing": "0"
+        },
+        "$type": "typography",
+        "$description": "Subsection heading (22px semibold). Use for: subsections, panel headers, grouped content titles."
+      },
+      "h4": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 600,
+          "lineHeight": "135%",
+          "letterSpacing": "0"
+        },
+        "$type": "typography",
+        "$description": "Card heading (20px semibold). Use for: card titles, modal headers, component titles."
+      },
+      "h5": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1.125rem",
+          "fontWeight": 600,
+          "lineHeight": "135%",
+          "letterSpacing": "0"
+        },
+        "$type": "typography",
+        "$description": "Small heading (18px semibold). Use for: minor sections, list group titles, compact headers."
+      },
+      "h6": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "lineHeight": "150%",
+          "letterSpacing": "0"
+        },
+        "$type": "typography",
+        "$description": "Label heading (16px semibold). Use for: label-like headings, form section titles, metadata headers."
+      }
+    },
+    "display": {
+      "lg": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "2.125rem",
+          "fontWeight": 300,
+          "lineHeight": "120%",
+          "letterSpacing": "-0.05em"
+        },
+        "$type": "typography",
+        "$description": "Large display text (34px light). Use for: hero headlines, marketing banners, splash screens."
+      },
+      "md": {
+        "$value": {
+          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1.625rem",
+          "fontWeight": 300,
+          "lineHeight": "120%",
+          "letterSpacing": "-0.025em"
+        },
+        "$type": "typography",
+        "$description": "Medium display text (26px light). Use for: secondary hero text, feature highlights, callouts."
+      }
+    },
+    "label": {
+      "sm": {
         "$value": {
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 500,
           "lineHeight": "135%",
-          "letterSpacing": "0.05em"
+          "letterSpacing": "0.025em"
         },
         "$type": "typography",
-        "$description": "Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Often used with text-transform: uppercase."
+        "$description": "Small label (12px medium). Use for: compact form labels, helper text labels, dense UI."
       },
-      "code": {
-        "$value": {
-          "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-          "fontSize": "0.875rem",
-          "fontWeight": 400,
-          "lineHeight": "165%",
-          "letterSpacing": "0"
-        },
-        "$type": "typography",
-        "$description": "Code text (14px regular monospace). Use for: inline code, code blocks, technical content, API references."
-      },
-      "quote": {
+      "md": {
         "$value": {
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-          "fontSize": "1.125rem",
-          "fontWeight": 400,
-          "lineHeight": "165%",
+          "fontSize": "0.875rem",
+          "fontWeight": 500,
+          "lineHeight": "135%",
           "letterSpacing": "0"
         },
         "$type": "typography",
-        "$description": "Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes."
+        "$description": "Medium label (14px medium). DEFAULT for form labels, field labels, control labels."
       },
-      "blockquote": {
+      "lg": {
         "$value": {
-          "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-          "fontSize": "1.25rem",
-          "fontWeight": 300,
-          "lineHeight": "165%",
+          "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 500,
+          "lineHeight": "135%",
           "letterSpacing": "0"
         },
         "$type": "typography",
-        "$description": "Blockquote text (20px light). Use for: prominent quotes, feature testimonials, highlighted citations."
+        "$description": "Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields."
       }
+    },
+    "button": {
+      "$value": {
+        "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "0.875rem",
+        "fontWeight": 600,
+        "lineHeight": "120%",
+        "letterSpacing": "0"
+      },
+      "$type": "typography",
+      "$description": "Button text (14px semibold). Use for: all button variants, CTAs, action triggers."
+    },
+    "input": {
+      "$value": {
+        "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": "150%",
+        "letterSpacing": "0"
+      },
+      "$type": "typography",
+      "$description": "Input text (16px regular). Use for: form input values, textarea content, select values."
+    },
+    "caption": {
+      "$value": {
+        "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "0.75rem",
+        "fontWeight": 400,
+        "lineHeight": "150%",
+        "letterSpacing": "0.025em"
+      },
+      "$type": "typography",
+      "$description": "Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata."
+    },
+    "overline": {
+      "$value": {
+        "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "0.75rem",
+        "fontWeight": 500,
+        "lineHeight": "135%",
+        "letterSpacing": "0.05em"
+      },
+      "$type": "typography",
+      "$description": "Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Often used with text-transform: uppercase."
+    },
+    "code": {
+      "$value": {
+        "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": "165%",
+        "letterSpacing": "0"
+      },
+      "$type": "typography",
+      "$description": "Code text (14px regular monospace). Use for: inline code, code blocks, technical content, API references."
+    },
+    "quote": {
+      "$value": {
+        "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "1.125rem",
+        "fontWeight": 400,
+        "lineHeight": "165%",
+        "letterSpacing": "0"
+      },
+      "$type": "typography",
+      "$description": "Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes."
+    },
+    "blockquote": {
+      "$value": {
+        "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "fontSize": "1.25rem",
+        "fontWeight": 300,
+        "lineHeight": "165%",
+        "letterSpacing": "0"
+      },
+      "$type": "typography",
+      "$description": "Blockquote text (20px light). Use for: prominent quotes, feature testimonials, highlighted citations."
     }
   }
 }
