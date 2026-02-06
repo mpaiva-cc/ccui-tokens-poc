@@ -70,6 +70,65 @@ CCUI outputs tokens in **W3C DTCG format** (using `$value` and `$type` prefixes)
 
 If tokens appear without proper types in Figma, the plugin is likely set to Legacy format.
 
+#### Testing Tokens with Tokens Studio
+
+Follow these steps to import and test the design tokens in Figma:
+
+**1. Build the tokens**
+
+```bash
+npm run build
+```
+
+This generates the `dist/tokens-studio/` directory with all token files.
+
+**2. Import tokens into Tokens Studio**
+
+1. Open a Figma file and launch the **Tokens Studio** plugin
+2. Click the **Settings** icon (gear)
+3. Under **Sync providers**, choose your sync method:
+   - **Local**: Click "Load from file/folder" and select the `dist/tokens-studio/` directory
+   - **GitHub/GitLab/etc.**: Configure your repository and point to `dist/tokens-studio/`
+4. Ensure the format is set to **W3C DTCG** (not Legacy)
+5. Click **Sync** or **Pull** to load the tokens
+
+**3. Select a theme**
+
+1. In Tokens Studio, click the **Themes** dropdown (top of the panel)
+2. Select a theme to activate:
+   - `Mantine Light` / `Mantine Dark`
+   - `CCUI 2.1 Light`
+   - `CCUI 3.0 Light` / `CCUI 3.0 Dark`
+3. The token sets will update to show enabled/disabled status
+
+**4. Export styles to Figma**
+
+1. Click the **Export** button (or **Styles & Variables** in newer versions)
+2. In the export dialog, enable the style types to create:
+   - **Color Styles** - Creates color styles from `color`, `colorPalette`, `brand` tokens
+   - **Text Styles** - Creates text styles from `typography` composite tokens
+   - **Effect Styles** - Creates shadow styles from `boxShadow` tokens
+3. Click **Export** or **Create styles**
+
+**5. Verify exported styles**
+
+Open Figma's **Styles** panel (right sidebar) to verify:
+
+| Style Type | Expected Groups |
+|------------|-----------------|
+| Color styles | `color`, `colorPalette`, `componentColors`, `component`, `brand` |
+| Text styles | `typography/body`, `typography/heading`, `typography/display`, `typography/label`, etc. |
+| Effect styles | `boxShadow` |
+
+**Troubleshooting**
+
+| Issue | Solution |
+|-------|----------|
+| No text styles created | Ensure `primitives/typography` is set to `enabled` (not `source`) in the theme |
+| Tokens show without types | Switch plugin format from "Legacy" to "W3C DTCG" in Settings |
+| Missing token references | Check that all primitive token sets are included in the theme |
+| Styles not updating | Delete existing styles in Figma and re-export |
+
 ## Directory Structure
 
 ```
