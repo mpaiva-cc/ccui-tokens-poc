@@ -3,136 +3,137 @@
     "track": {
       "width": {
         "xs": {
-          "$value": "{sizing.switch.track.width.xs}",
-          "$type": "dimension",
-          "$description": "Extra small track width (28px). Use for: compact settings lists, inline toggles, space-constrained UIs. Maintains approximately 1.75:1 width-to-height ratio."
+          "value": "{sizing.switch.track.width.xs}",
+          "description": "Extra small track width (28px). Use for: compact settings lists, inline toggles, space-constrained UIs. Maintains approximately 1.75:1 width-to-height ratio.",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "{sizing.switch.track.width.sm}",
-          "$type": "dimension",
-          "$description": "Small track width (36px). Use for: standard density settings, secondary controls. Good for desktop interfaces."
+          "value": "{sizing.switch.track.width.sm}",
+          "description": "Small track width (36px). Use for: standard density settings, secondary controls. Good for desktop interfaces.",
+          "type": "dimension"
         },
         "md": {
-          "$value": "{sizing.switch.track.width.md}",
-          "$type": "dimension",
-          "$description": "Medium track width (44px). DEFAULT size. Use for: most settings toggles, preferences panels, feature controls. Comfortable interaction size."
+          "value": "{sizing.switch.track.width.md}",
+          "description": "Medium track width (44px). DEFAULT size. Use for: most settings toggles, preferences panels, feature controls. Comfortable interaction size.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "{sizing.switch.track.width.lg}",
-          "$type": "dimension",
-          "$description": "Large track width (52px). Use for: touch-optimized interfaces, prominent feature toggles, accessibility-focused UIs. Better for mobile."
+          "value": "{sizing.switch.track.width.lg}",
+          "description": "Large track width (52px). Use for: touch-optimized interfaces, prominent feature toggles, accessibility-focused UIs. Better for mobile.",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "{sizing.switch.track.width.xl}",
-          "$type": "dimension",
-          "$description": "Extra large track width (60px). Use for: high-emphasis standalone toggles, large touch targets, maximum accessibility. Most prominent option."
+          "value": "{sizing.switch.track.width.xl}",
+          "description": "Extra large track width (60px). Use for: high-emphasis standalone toggles, large touch targets, maximum accessibility. Most prominent option.",
+          "type": "dimension"
         }
       },
       "height": {
         "xs": {
-          "$value": "{sizing.switch.track.height.xs}",
-          "$type": "dimension",
-          "$description": "Extra small track height (16px). Slim track for compact layouts. Thumb will be proportionally smaller."
+          "value": "{sizing.switch.track.height.xs}",
+          "description": "Extra small track height (16px). Slim track for compact layouts. Thumb will be proportionally smaller.",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "{sizing.switch.track.height.sm}",
-          "$type": "dimension",
-          "$description": "Small track height (20px). Standard density track height for desktop applications."
+          "value": "{sizing.switch.track.height.sm}",
+          "description": "Small track height (20px). Standard density track height for desktop applications.",
+          "type": "dimension"
         },
         "md": {
-          "$value": "{sizing.switch.track.height.md}",
-          "$type": "dimension",
-          "$description": "Medium track height (24px). DEFAULT. Comfortable height for most use cases. Good thumb-to-track proportion."
+          "value": "{sizing.switch.track.height.md}",
+          "description": "Medium track height (24px). DEFAULT. Comfortable height for most use cases. Good thumb-to-track proportion.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "{sizing.switch.track.height.lg}",
-          "$type": "dimension",
-          "$description": "Large track height (30px). Taller track for better visibility and touch targets."
+          "value": "{sizing.switch.track.height.lg}",
+          "description": "Large track height (30px). Taller track for better visibility and touch targets.",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "{sizing.switch.track.height.xl}",
-          "$type": "dimension",
-          "$description": "Extra large track height (36px). Maximum height for high-visibility toggles and accessibility."
+          "value": "{sizing.switch.track.height.xl}",
+          "description": "Extra large track height (36px). Maximum height for high-visibility toggles and accessibility.",
+          "type": "dimension"
         }
       },
       "borderRadius": {
-        "$value": "{radius.full}",
-        "$type": "dimension",
-        "$description": "Track border radius (fully rounded/pill shape). Creates the characteristic pill shape of toggle switches. Value 9999px ensures full rounding at any height."
+        "value": "{radius.full}",
+        "description": "Track border radius (fully rounded/pill shape). Creates the characteristic pill shape of toggle switches. Value 9999px ensures full rounding at any height.",
+        "type": "dimension"
       }
     },
     "thumb": {
       "size": {
         "xs": {
-          "$value": "{sizing.switch.thumb.size.xs}",
-          "$type": "dimension",
-          "$description": "Extra small thumb size (12px). Circular handle for xs track. Sized to fit comfortably within track with offset padding."
+          "value": "{sizing.switch.thumb.size.xs}",
+          "description": "Extra small thumb size (12px). Circular handle for xs track. Sized to fit comfortably within track with offset padding.",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "{sizing.switch.thumb.size.sm}",
-          "$type": "dimension",
-          "$description": "Small thumb size (14px). Proportional to sm track. Maintains visual balance within track."
+          "value": "{sizing.switch.thumb.size.sm}",
+          "description": "Small thumb size (14px). Proportional to sm track. Maintains visual balance within track.",
+          "type": "dimension"
         },
         "md": {
-          "$value": "{sizing.switch.thumb.size.md}",
-          "$type": "dimension",
-          "$description": "Medium thumb size (18px). DEFAULT. Standard thumb for md track. Clear visual indicator of toggle position."
+          "value": "{sizing.switch.thumb.size.md}",
+          "description": "Medium thumb size (18px). DEFAULT. Standard thumb for md track. Clear visual indicator of toggle position.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "{sizing.switch.thumb.size.lg}",
-          "$type": "dimension",
-          "$description": "Large thumb size (22px). Larger handle for better visibility and touch interaction."
+          "value": "{sizing.switch.thumb.size.lg}",
+          "description": "Large thumb size (22px). Larger handle for better visibility and touch interaction.",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "{sizing.switch.thumb.size.xl}",
-          "$type": "dimension",
-          "$description": "Extra large thumb size (28px). Maximum handle size for high-visibility, touch-optimized toggles."
+          "value": "{sizing.switch.thumb.size.xl}",
+          "description": "Extra large thumb size (28px). Maximum handle size for high-visibility, touch-optimized toggles.",
+          "type": "dimension"
         }
       },
       "borderRadius": {
-        "$value": "{radius.full}",
-        "$type": "dimension",
-        "$description": "Thumb border radius (fully rounded/circular). Creates perfect circle for the sliding handle. Essential for the switch visual language."
+        "value": "{radius.full}",
+        "description": "Thumb border radius (fully rounded/circular). Creates perfect circle for the sliding handle. Essential for the switch visual language.",
+        "type": "dimension"
       },
       "offset": {
-        "$value": "{sizing.switch.thumb.offset}",
-        "$type": "dimension",
-        "$description": "Thumb offset from track edge (2px). Small gap between thumb and track edge creates visual breathing room and indicates interactive affordance."
+        "value": "{sizing.switch.thumb.offset}",
+        "description": "Thumb offset from track edge (2px). Small gap between thumb and track edge creates visual breathing room and indicates interactive affordance.",
+        "type": "dimension"
       }
     },
     "label": {
       "gap": {
-        "$value": "{spacing.sm}",
-        "$type": "dimension",
-        "$description": "Gap between switch and label (12px). Clear separation between control and label while maintaining visual association."
+        "value": "{spacing.sm}",
+        "description": "Gap between switch and label (12px). Clear separation between control and label while maintaining visual association.",
+        "type": "dimension"
       },
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
-        "$type": "dimension",
-        "$description": "Label font size (14px). Standard form label size. Readable without overwhelming the switch control itself."
+        "value": "{typography.fontSize.sm}",
+        "description": "Label font size (14px). Standard form label size. Readable without overwhelming the switch control itself.",
+        "type": "dimension"
       }
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
-        "$type": "duration",
-        "$description": "Switch transition duration (100ms). Fast, snappy animation for immediate feedback feel. Sliding motion should feel responsive."
+        "value": "{motion.duration.fast}",
+        "description": "Switch transition duration (100ms). Fast, snappy animation for immediate feedback feel. Sliding motion should feel responsive.",
+        "type": "duration"
       },
       "easing": {
-        "$value": "{motion.easing.easeOut}",
-        "$description": "Switch transition easing (ease-out). Thumb decelerates into final position for natural, satisfying toggle motion."
+        "value": "{motion.easing.easeOut}",
+        "description": "Switch transition easing (ease-out). Thumb decelerates into final position for natural, satisfying toggle motion.",
+        "type": "other"
       }
     },
     "focus": {
       "ringWidth": {
-        "$value": "{focus.ring.width}",
-        "$type": "dimension",
-        "$description": "Focus ring width (2px). Clearly visible ring around switch when focused via keyboard navigation."
+        "value": "{focus.ring.width}",
+        "description": "Focus ring width (2px). Clearly visible ring around switch when focused via keyboard navigation.",
+        "type": "dimension"
       },
       "ringOffset": {
-        "$value": "{focus.ring.offset}",
-        "$type": "dimension",
-        "$description": "Focus ring offset (2px). Space between switch track and focus ring for clear visual separation."
+        "value": "{focus.ring.offset}",
+        "description": "Focus ring offset (2px). Space between switch track and focus ring for clear visual separation.",
+        "type": "dimension"
       }
     }
   }

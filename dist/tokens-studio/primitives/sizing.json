@@ -2,250 +2,250 @@
   "sizing": {
     "input": {
       "xs": {
-        "$value": "1.875rem",
-        "$type": "dimension",
-        "$description": "Extra small input height (30px). Use for: compact forms, inline editing, space-constrained UIs."
+        "value": "1.875rem",
+        "description": "Extra small input height (30px). Use for: compact forms, inline editing, space-constrained UIs.",
+        "type": "dimension"
       },
       "sm": {
-        "$value": "2.25rem",
-        "$type": "dimension",
-        "$description": "Small input height (36px). Use for: secondary inputs, compact layouts, mobile-optimized forms."
+        "value": "2.25rem",
+        "description": "Small input height (36px). Use for: secondary inputs, compact layouts, mobile-optimized forms.",
+        "type": "dimension"
       },
       "md": {
-        "$value": "2.625rem",
-        "$type": "dimension",
-        "$description": "Medium input height (42px). DEFAULT size for most inputs. Use for: standard forms, primary data entry."
+        "value": "2.625rem",
+        "description": "Medium input height (42px). DEFAULT size for most inputs. Use for: standard forms, primary data entry.",
+        "type": "dimension"
       },
       "lg": {
-        "$value": "3rem",
-        "$type": "dimension",
-        "$description": "Large input height (48px). Use for: prominent inputs, touch-optimized UIs, hero forms."
+        "value": "3rem",
+        "description": "Large input height (48px). Use for: prominent inputs, touch-optimized UIs, hero forms.",
+        "type": "dimension"
       },
       "xl": {
-        "$value": "3.75rem",
-        "$type": "dimension",
-        "$description": "Extra large input height (60px). Use for: marketing forms, high-emphasis inputs, accessibility focus."
+        "value": "3.75rem",
+        "description": "Extra large input height (60px). Use for: marketing forms, high-emphasis inputs, accessibility focus.",
+        "type": "dimension"
       }
     },
     "button": {
       "xs": {
-        "$value": "1.875rem",
-        "$type": "dimension",
-        "$description": "Extra small button height (30px). Use for: inline actions, compact toolbars, icon-only buttons."
+        "value": "1.875rem",
+        "description": "Extra small button height (30px). Use for: inline actions, compact toolbars, icon-only buttons.",
+        "type": "dimension"
       },
       "sm": {
-        "$value": "2.25rem",
-        "$type": "dimension",
-        "$description": "Small button height (36px). Use for: secondary actions, compact layouts, less prominent CTAs."
+        "value": "2.25rem",
+        "description": "Small button height (36px). Use for: secondary actions, compact layouts, less prominent CTAs.",
+        "type": "dimension"
       },
       "md": {
-        "$value": "2.625rem",
-        "$type": "dimension",
-        "$description": "Medium button height (42px). DEFAULT size for most buttons. Use for: primary actions, form submits."
+        "value": "2.625rem",
+        "description": "Medium button height (42px). DEFAULT size for most buttons. Use for: primary actions, form submits.",
+        "type": "dimension"
       },
       "lg": {
-        "$value": "3rem",
-        "$type": "dimension",
-        "$description": "Large button height (48px). Use for: prominent CTAs, hero sections, touch-optimized UIs."
+        "value": "3rem",
+        "description": "Large button height (48px). Use for: prominent CTAs, hero sections, touch-optimized UIs.",
+        "type": "dimension"
       },
       "xl": {
-        "$value": "3.75rem",
-        "$type": "dimension",
-        "$description": "Extra large button height (60px). Use for: marketing CTAs, high-emphasis actions."
+        "value": "3.75rem",
+        "description": "Extra large button height (60px). Use for: marketing CTAs, high-emphasis actions.",
+        "type": "dimension"
       }
     },
     "icon": {
       "xs": {
-        "$value": "0.75rem",
-        "$type": "dimension",
-        "$description": "Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs."
+        "value": "0.75rem",
+        "description": "Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs.",
+        "type": "dimension"
       },
       "sm": {
-        "$value": "1rem",
-        "$type": "dimension",
-        "$description": "Small icon size (16px). Use for: inline icons, button icons with text, input icons."
+        "value": "1rem",
+        "description": "Small icon size (16px). Use for: inline icons, button icons with text, input icons.",
+        "type": "dimension"
       },
       "md": {
-        "$value": "1.25rem",
-        "$type": "dimension",
-        "$description": "Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons."
+        "value": "1.25rem",
+        "description": "Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons.",
+        "type": "dimension"
       },
       "lg": {
-        "$value": "1.5rem",
-        "$type": "dimension",
-        "$description": "Large icon size (24px). Use for: prominent icons, action icons, toolbar icons."
+        "value": "1.5rem",
+        "description": "Large icon size (24px). Use for: prominent icons, action icons, toolbar icons.",
+        "type": "dimension"
       },
       "xl": {
-        "$value": "2rem",
-        "$type": "dimension",
-        "$description": "Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons."
+        "value": "2rem",
+        "description": "Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons.",
+        "type": "dimension"
       }
     },
     "modal": {
       "width": {
         "xs": {
-          "$value": "20rem",
-          "$type": "dimension",
-          "$description": "Extra small modal width (320px). Use for: confirmations, alerts."
+          "value": "20rem",
+          "description": "Extra small modal width (320px). Use for: confirmations, alerts.",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "25rem",
-          "$type": "dimension",
-          "$description": "Small modal width (400px). Use for: simple dialogs, prompts."
+          "value": "25rem",
+          "description": "Small modal width (400px). Use for: simple dialogs, prompts.",
+          "type": "dimension"
         },
         "md": {
-          "$value": "32.5rem",
-          "$type": "dimension",
-          "$description": "Medium modal width (520px). DEFAULT for most modals."
+          "value": "32.5rem",
+          "description": "Medium modal width (520px). DEFAULT for most modals.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "45rem",
-          "$type": "dimension",
-          "$description": "Large modal width (720px). Use for: complex forms, detail views."
+          "value": "45rem",
+          "description": "Large modal width (720px). Use for: complex forms, detail views.",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "60rem",
-          "$type": "dimension",
-          "$description": "Extra large modal width (960px). Use for: data-heavy content, galleries."
+          "value": "60rem",
+          "description": "Extra large modal width (960px). Use for: data-heavy content, galleries.",
+          "type": "dimension"
         }
       }
     },
     "badge": {
       "height": {
         "xs": {
-          "$value": "1rem",
-          "$type": "dimension",
-          "$description": "Extra small badge height (16px)"
+          "value": "1rem",
+          "description": "Extra small badge height (16px)",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "1.125rem",
-          "$type": "dimension",
-          "$description": "Small badge height (18px)"
+          "value": "1.125rem",
+          "description": "Small badge height (18px)",
+          "type": "dimension"
         },
         "md": {
-          "$value": "1.25rem",
-          "$type": "dimension",
-          "$description": "Medium badge height (20px). DEFAULT."
+          "value": "1.25rem",
+          "description": "Medium badge height (20px). DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "1.625rem",
-          "$type": "dimension",
-          "$description": "Large badge height (26px)"
+          "value": "1.625rem",
+          "description": "Large badge height (26px)",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "2rem",
-          "$type": "dimension",
-          "$description": "Extra large badge height (32px)"
+          "value": "2rem",
+          "description": "Extra large badge height (32px)",
+          "type": "dimension"
         }
       },
       "paddingX": {
         "xs": {
-          "$value": "0.375rem",
-          "$type": "dimension",
-          "$description": "Extra small horizontal badge padding"
+          "value": "0.375rem",
+          "description": "Extra small horizontal badge padding",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "0.5rem",
-          "$type": "dimension",
-          "$description": "Small horizontal badge padding"
+          "value": "0.5rem",
+          "description": "Small horizontal badge padding",
+          "type": "dimension"
         },
         "md": {
-          "$value": "0.625rem",
-          "$type": "dimension",
-          "$description": "Medium horizontal badge padding. DEFAULT."
+          "value": "0.625rem",
+          "description": "Medium horizontal badge padding. DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "0.75rem",
-          "$type": "dimension",
-          "$description": "Large horizontal badge padding"
+          "value": "0.75rem",
+          "description": "Large horizontal badge padding",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "1rem",
-          "$type": "dimension",
-          "$description": "Extra large horizontal badge padding"
+          "value": "1rem",
+          "description": "Extra large horizontal badge padding",
+          "type": "dimension"
         }
       },
       "fontSize": {
         "xs": {
-          "$value": "0.5rem",
-          "$type": "dimension",
-          "$description": "Extra small badge font size (8px)"
+          "value": "0.5rem",
+          "description": "Extra small badge font size (8px)",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "0.5625rem",
-          "$type": "dimension",
-          "$description": "Small badge font size (9px)"
+          "value": "0.5625rem",
+          "description": "Small badge font size (9px)",
+          "type": "dimension"
         },
         "md": {
-          "$value": "0.6875rem",
-          "$type": "dimension",
-          "$description": "Medium badge font size (11px). DEFAULT."
+          "value": "0.6875rem",
+          "description": "Medium badge font size (11px). DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "0.75rem",
-          "$type": "dimension",
-          "$description": "Large badge font size (12px)"
+          "value": "0.75rem",
+          "description": "Large badge font size (12px)",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "0.875rem",
-          "$type": "dimension",
-          "$description": "Extra large badge font size (14px)"
+          "value": "0.875rem",
+          "description": "Extra large badge font size (14px)",
+          "type": "dimension"
         }
       }
     },
     "checkbox": {
       "size": {
         "xs": {
-          "$value": "0.875rem",
-          "$type": "dimension",
-          "$description": "Extra small checkbox size (14px)"
+          "value": "0.875rem",
+          "description": "Extra small checkbox size (14px)",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "1rem",
-          "$type": "dimension",
-          "$description": "Small checkbox size (16px)"
+          "value": "1rem",
+          "description": "Small checkbox size (16px)",
+          "type": "dimension"
         },
         "md": {
-          "$value": "1.25rem",
-          "$type": "dimension",
-          "$description": "Medium checkbox size (20px). DEFAULT."
+          "value": "1.25rem",
+          "description": "Medium checkbox size (20px). DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "1.5rem",
-          "$type": "dimension",
-          "$description": "Large checkbox size (24px)"
+          "value": "1.5rem",
+          "description": "Large checkbox size (24px)",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "1.75rem",
-          "$type": "dimension",
-          "$description": "Extra large checkbox size (28px)"
+          "value": "1.75rem",
+          "description": "Extra large checkbox size (28px)",
+          "type": "dimension"
         }
       },
       "iconSize": {
         "xs": {
-          "$value": "0.5rem",
-          "$type": "dimension",
-          "$description": "Extra small checkmark size"
+          "value": "0.5rem",
+          "description": "Extra small checkmark size",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "0.5625rem",
-          "$type": "dimension",
-          "$description": "Small checkmark size"
+          "value": "0.5625rem",
+          "description": "Small checkmark size",
+          "type": "dimension"
         },
         "md": {
-          "$value": "0.625rem",
-          "$type": "dimension",
-          "$description": "Medium checkmark size"
+          "value": "0.625rem",
+          "description": "Medium checkmark size",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "0.875rem",
-          "$type": "dimension",
-          "$description": "Large checkmark size"
+          "value": "0.875rem",
+          "description": "Large checkmark size",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "1rem",
-          "$type": "dimension",
-          "$description": "Extra large checkmark size"
+          "value": "1rem",
+          "description": "Extra large checkmark size",
+          "type": "dimension"
         }
       }
     },
@@ -253,179 +253,179 @@
       "track": {
         "width": {
           "xs": {
-            "$value": "1.75rem",
-            "$type": "dimension",
-            "$description": "Extra small track width (28px)"
+            "value": "1.75rem",
+            "description": "Extra small track width (28px)",
+            "type": "dimension"
           },
           "sm": {
-            "$value": "2.25rem",
-            "$type": "dimension",
-            "$description": "Small track width (36px)"
+            "value": "2.25rem",
+            "description": "Small track width (36px)",
+            "type": "dimension"
           },
           "md": {
-            "$value": "2.75rem",
-            "$type": "dimension",
-            "$description": "Medium track width (44px). DEFAULT."
+            "value": "2.75rem",
+            "description": "Medium track width (44px). DEFAULT.",
+            "type": "dimension"
           },
           "lg": {
-            "$value": "3.25rem",
-            "$type": "dimension",
-            "$description": "Large track width (52px)"
+            "value": "3.25rem",
+            "description": "Large track width (52px)",
+            "type": "dimension"
           },
           "xl": {
-            "$value": "3.75rem",
-            "$type": "dimension",
-            "$description": "Extra large track width (60px)"
+            "value": "3.75rem",
+            "description": "Extra large track width (60px)",
+            "type": "dimension"
           }
         },
         "height": {
           "xs": {
-            "$value": "1rem",
-            "$type": "dimension",
-            "$description": "Extra small track height (16px)"
+            "value": "1rem",
+            "description": "Extra small track height (16px)",
+            "type": "dimension"
           },
           "sm": {
-            "$value": "1.25rem",
-            "$type": "dimension",
-            "$description": "Small track height (20px)"
+            "value": "1.25rem",
+            "description": "Small track height (20px)",
+            "type": "dimension"
           },
           "md": {
-            "$value": "1.5rem",
-            "$type": "dimension",
-            "$description": "Medium track height (24px). DEFAULT."
+            "value": "1.5rem",
+            "description": "Medium track height (24px). DEFAULT.",
+            "type": "dimension"
           },
           "lg": {
-            "$value": "1.875rem",
-            "$type": "dimension",
-            "$description": "Large track height (30px)"
+            "value": "1.875rem",
+            "description": "Large track height (30px)",
+            "type": "dimension"
           },
           "xl": {
-            "$value": "2.25rem",
-            "$type": "dimension",
-            "$description": "Extra large track height (36px)"
+            "value": "2.25rem",
+            "description": "Extra large track height (36px)",
+            "type": "dimension"
           }
         }
       },
       "thumb": {
         "size": {
           "xs": {
-            "$value": "0.75rem",
-            "$type": "dimension",
-            "$description": "Extra small thumb size (12px)"
+            "value": "0.75rem",
+            "description": "Extra small thumb size (12px)",
+            "type": "dimension"
           },
           "sm": {
-            "$value": "0.875rem",
-            "$type": "dimension",
-            "$description": "Small thumb size (14px)"
+            "value": "0.875rem",
+            "description": "Small thumb size (14px)",
+            "type": "dimension"
           },
           "md": {
-            "$value": "1.125rem",
-            "$type": "dimension",
-            "$description": "Medium thumb size (18px). DEFAULT."
+            "value": "1.125rem",
+            "description": "Medium thumb size (18px). DEFAULT.",
+            "type": "dimension"
           },
           "lg": {
-            "$value": "1.375rem",
-            "$type": "dimension",
-            "$description": "Large thumb size (22px)"
+            "value": "1.375rem",
+            "description": "Large thumb size (22px)",
+            "type": "dimension"
           },
           "xl": {
-            "$value": "1.75rem",
-            "$type": "dimension",
-            "$description": "Extra large thumb size (28px)"
+            "value": "1.75rem",
+            "description": "Extra large thumb size (28px)",
+            "type": "dimension"
           }
         },
         "offset": {
-          "$value": "0.125rem",
-          "$type": "dimension",
-          "$description": "Thumb offset from track edge"
+          "value": "0.125rem",
+          "description": "Thumb offset from track edge",
+          "type": "dimension"
         }
       }
     },
     "tabs": {
       "height": {
         "xs": {
-          "$value": "1.75rem",
-          "$type": "dimension",
-          "$description": "Extra small tab height"
+          "value": "1.75rem",
+          "description": "Extra small tab height",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "2rem",
-          "$type": "dimension",
-          "$description": "Small tab height"
+          "value": "2rem",
+          "description": "Small tab height",
+          "type": "dimension"
         },
         "md": {
-          "$value": "2.25rem",
-          "$type": "dimension",
-          "$description": "Medium tab height. DEFAULT."
+          "value": "2.25rem",
+          "description": "Medium tab height. DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "2.5rem",
-          "$type": "dimension",
-          "$description": "Large tab height"
+          "value": "2.5rem",
+          "description": "Large tab height",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "3rem",
-          "$type": "dimension",
-          "$description": "Extra large tab height"
+          "value": "3rem",
+          "description": "Extra large tab height",
+          "type": "dimension"
         }
       },
       "indicatorHeight": {
-        "$value": "0.125rem",
-        "$type": "dimension",
-        "$description": "Active tab indicator height (2px)"
+        "value": "0.125rem",
+        "description": "Active tab indicator height (2px)",
+        "type": "dimension"
       }
     },
     "table": {
       "cellPaddingY": {
         "xs": {
-          "$value": "0.25rem",
-          "$type": "dimension",
-          "$description": "Extra small vertical cell padding"
+          "value": "0.25rem",
+          "description": "Extra small vertical cell padding",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "0.375rem",
-          "$type": "dimension",
-          "$description": "Small vertical cell padding"
+          "value": "0.375rem",
+          "description": "Small vertical cell padding",
+          "type": "dimension"
         },
         "md": {
-          "$value": "0.5rem",
-          "$type": "dimension",
-          "$description": "Medium vertical cell padding. DEFAULT."
+          "value": "0.5rem",
+          "description": "Medium vertical cell padding. DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "0.75rem",
-          "$type": "dimension",
-          "$description": "Large vertical cell padding"
+          "value": "0.75rem",
+          "description": "Large vertical cell padding",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "1rem",
-          "$type": "dimension",
-          "$description": "Extra large vertical cell padding"
+          "value": "1rem",
+          "description": "Extra large vertical cell padding",
+          "type": "dimension"
         }
       }
     },
     "select": {
       "dropdownMaxHeight": {
-        "$value": "18.75rem",
-        "$type": "dimension",
-        "$description": "Dropdown menu maximum height (300px)"
+        "value": "18.75rem",
+        "description": "Dropdown menu maximum height (300px)",
+        "type": "dimension"
       },
       "iconSize": {
-        "$value": "1rem",
-        "$type": "dimension",
-        "$description": "Select chevron icon size"
+        "value": "1rem",
+        "description": "Select chevron icon size",
+        "type": "dimension"
       }
     },
     "alert": {
       "iconSize": {
-        "$value": "1.25rem",
-        "$type": "dimension",
-        "$description": "Alert icon size"
+        "value": "1.25rem",
+        "description": "Alert icon size",
+        "type": "dimension"
       },
       "closeButtonSize": {
-        "$value": "1.125rem",
-        "$type": "dimension",
-        "$description": "Close button size"
+        "value": "1.125rem",
+        "description": "Close button size",
+        "type": "dimension"
       }
     }
   }

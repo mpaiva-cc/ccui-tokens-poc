@@ -4,114 +4,114 @@
       "padding": {
         "x": {
           "xs": {
-            "$value": "{spacing.xs}",
-            "$type": "dimension",
-            "$description": "Extra small horizontal cell padding (10px). Dense tables for compact data display. Use when horizontal space is limited."
+            "value": "{spacing.xs}",
+            "description": "Extra small horizontal cell padding (10px). Dense tables for compact data display. Use when horizontal space is limited.",
+            "type": "dimension"
           },
           "sm": {
-            "$value": "{spacing.sm}",
-            "$type": "dimension",
-            "$description": "Small horizontal cell padding (12px). Standard density for most data tables. Good balance of data and whitespace."
+            "value": "{spacing.sm}",
+            "description": "Small horizontal cell padding (12px). Standard density for most data tables. Good balance of data and whitespace.",
+            "type": "dimension"
           },
           "md": {
-            "$value": "{spacing.md}",
-            "$type": "dimension",
-            "$description": "Medium horizontal cell padding (16px). DEFAULT. Comfortable spacing for readable data. Recommended for most use cases."
+            "value": "{spacing.md}",
+            "description": "Medium horizontal cell padding (16px). DEFAULT. Comfortable spacing for readable data. Recommended for most use cases.",
+            "type": "dimension"
           },
           "lg": {
-            "$value": "{spacing.lg}",
-            "$type": "dimension",
-            "$description": "Large horizontal cell padding (20px). Spacious tables with generous breathing room. Good for simple data with few columns."
+            "value": "{spacing.lg}",
+            "description": "Large horizontal cell padding (20px). Spacious tables with generous breathing room. Good for simple data with few columns.",
+            "type": "dimension"
           },
           "xl": {
-            "$value": "{spacing.xl}",
-            "$type": "dimension",
-            "$description": "Extra large horizontal cell padding (32px). Very spacious tables for presentation or limited data. Maximum readability."
+            "value": "{spacing.xl}",
+            "description": "Extra large horizontal cell padding (32px). Very spacious tables for presentation or limited data. Maximum readability.",
+            "type": "dimension"
           }
         },
         "y": {
           "xs": {
-            "$value": "{sizing.table.cellPaddingY.xs}",
-            "$type": "dimension",
-            "$description": "Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views."
+            "value": "{sizing.table.cellPaddingY.xs}",
+            "description": "Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views.",
+            "type": "dimension"
           },
           "sm": {
-            "$value": "{sizing.table.cellPaddingY.sm}",
-            "$type": "dimension",
-            "$description": "Small vertical cell padding (6px). Standard density rows for most data tables. Efficient use of vertical space."
+            "value": "{sizing.table.cellPaddingY.sm}",
+            "description": "Small vertical cell padding (6px). Standard density rows for most data tables. Efficient use of vertical space.",
+            "type": "dimension"
           },
           "md": {
-            "$value": "{sizing.table.cellPaddingY.md}",
-            "$type": "dimension",
-            "$description": "Medium vertical cell padding (8px). DEFAULT. Comfortable row height for general use. Good for scanning and selecting rows."
+            "value": "{sizing.table.cellPaddingY.md}",
+            "description": "Medium vertical cell padding (8px). DEFAULT. Comfortable row height for general use. Good for scanning and selecting rows.",
+            "type": "dimension"
           },
           "lg": {
-            "$value": "{sizing.table.cellPaddingY.lg}",
-            "$type": "dimension",
-            "$description": "Large vertical cell padding (12px). Taller rows for better touch targets and readability. Good for mobile or complex cell content."
+            "value": "{sizing.table.cellPaddingY.lg}",
+            "description": "Large vertical cell padding (12px). Taller rows for better touch targets and readability. Good for mobile or complex cell content.",
+            "type": "dimension"
           },
           "xl": {
-            "$value": "{sizing.table.cellPaddingY.xl}",
-            "$type": "dimension",
-            "$description": "Extra large vertical cell padding (16px). Maximum row height for spacious tables. Use for rich cell content or presentation."
+            "value": "{sizing.table.cellPaddingY.xl}",
+            "description": "Extra large vertical cell padding (16px). Maximum row height for spacious tables. Use for rich cell content or presentation.",
+            "type": "dimension"
           }
         }
       },
       "fontSize": {
         "xs": {
-          "$value": "{typography.fontSize.xs}",
-          "$type": "dimension",
-          "$description": "Extra small table font size (12px). Compact text for dense data tables. Use for admin panels or data-heavy views."
+          "value": "{typography.fontSize.xs}",
+          "description": "Extra small table font size (12px). Compact text for dense data tables. Use for admin panels or data-heavy views.",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "{typography.fontSize.sm}",
-          "$type": "dimension",
-          "$description": "Small table font size (14px). Standard data table text. Readable and space-efficient for most use cases."
+          "value": "{typography.fontSize.sm}",
+          "description": "Small table font size (14px). Standard data table text. Readable and space-efficient for most use cases.",
+          "type": "dimension"
         },
         "md": {
-          "$value": "{typography.fontSize.sm}",
-          "$type": "dimension",
-          "$description": "Medium table font size (14px). DEFAULT. Same as sm - keeps data compact while maintaining readability."
+          "value": "{typography.fontSize.sm}",
+          "description": "Medium table font size (14px). DEFAULT. Same as sm - keeps data compact while maintaining readability.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "{typography.fontSize.md}",
-          "$type": "dimension",
-          "$description": "Large table font size (16px). Larger text for improved readability. Good for simple tables or accessibility needs."
+          "value": "{typography.fontSize.md}",
+          "description": "Large table font size (16px). Larger text for improved readability. Good for simple tables or accessibility needs.",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "{typography.fontSize.md}",
-          "$type": "dimension",
-          "$description": "Extra large table font size (16px). Same as lg - body text size for maximum readability in spacious tables."
+          "value": "{typography.fontSize.md}",
+          "description": "Extra large table font size (16px). Same as lg - body text size for maximum readability in spacious tables.",
+          "type": "dimension"
         }
       }
     },
     "header": {
       "fontWeight": {
-        "$value": "{typography.fontWeight.semibold}",
-        "$type": "fontWeight",
-        "$description": "Table header font weight (600). Semibold headers clearly distinguish column labels from data. Important for scanability."
+        "value": "{typography.fontWeight.semibold}",
+        "description": "Table header font weight (600). Semibold headers clearly distinguish column labels from data. Important for scanability.",
+        "type": "fontWeight"
       },
       "fontSize": {
-        "$value": "{typography.fontSize.sm}",
-        "$type": "dimension",
-        "$description": "Table header font size (14px). Same as cell text but distinguished by weight and color. Consistent sizing aids alignment."
+        "value": "{typography.fontSize.sm}",
+        "description": "Table header font size (14px). Same as cell text but distinguished by weight and color. Consistent sizing aids alignment.",
+        "type": "dimension"
       }
     },
     "borderWidth": {
-      "$value": "{borderWidth.thin}",
-      "$type": "dimension",
-      "$description": "Table border width (1px). Thin borders define cells without visual heaviness. Used for outer border and cell dividers."
+      "value": "{borderWidth.thin}",
+      "description": "Table border width (1px). Thin borders define cells without visual heaviness. Used for outer border and cell dividers.",
+      "type": "dimension"
     },
     "borderRadius": {
-      "$value": "{radius.sm}",
-      "$type": "dimension",
-      "$description": "Table container border radius (4px). Slight rounding softens the table container. Only applies to outer border, not individual cells."
+      "value": "{radius.sm}",
+      "description": "Table container border radius (4px). Slight rounding softens the table container. Only applies to outer border, not individual cells.",
+      "type": "dimension"
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
-        "$type": "duration",
-        "$description": "Table row hover transition duration (100ms). Fast transition for responsive hover feedback on rows."
+        "value": "{motion.duration.fast}",
+        "description": "Table row hover transition duration (100ms). Fast transition for responsive hover feedback on rows.",
+        "type": "duration"
       }
     }
   }

@@ -2,123 +2,124 @@
   "input": {
     "height": {
       "xs": {
-        "$value": "{sizing.input.xs}",
-        "$type": "dimension",
-        "$description": "Extra small input height. Use for compact forms."
+        "value": "{sizing.input.xs}",
+        "description": "Extra small input height. Use for compact forms.",
+        "type": "dimension"
       },
       "sm": {
-        "$value": "{sizing.input.sm}",
-        "$type": "dimension",
-        "$description": "Small input height. Use for secondary inputs."
+        "value": "{sizing.input.sm}",
+        "description": "Small input height. Use for secondary inputs.",
+        "type": "dimension"
       },
       "md": {
-        "$value": "{sizing.input.md}",
-        "$type": "dimension",
-        "$description": "Medium input height. DEFAULT for most inputs."
+        "value": "{sizing.input.md}",
+        "description": "Medium input height. DEFAULT for most inputs.",
+        "type": "dimension"
       },
       "lg": {
-        "$value": "{sizing.input.lg}",
-        "$type": "dimension",
-        "$description": "Large input height. Use for prominent inputs."
+        "value": "{sizing.input.lg}",
+        "description": "Large input height. Use for prominent inputs.",
+        "type": "dimension"
       },
       "xl": {
-        "$value": "{sizing.input.xl}",
-        "$type": "dimension",
-        "$description": "Extra large input height. Use for marketing forms."
+        "value": "{sizing.input.xl}",
+        "description": "Extra large input height. Use for marketing forms.",
+        "type": "dimension"
       }
     },
     "padding": {
       "x": {
         "xs": {
-          "$value": "{spacing.xs}",
-          "$type": "dimension",
-          "$description": "Extra small horizontal padding (8px). Use for compact form inputs."
+          "value": "{spacing.xs}",
+          "description": "Extra small horizontal padding (8px). Use for compact form inputs.",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "{spacing.sm}",
-          "$type": "dimension",
-          "$description": "Small horizontal padding (12px). Use for secondary form fields."
+          "value": "{spacing.sm}",
+          "description": "Small horizontal padding (12px). Use for secondary form fields.",
+          "type": "dimension"
         },
         "md": {
-          "$value": "{spacing.sm}",
-          "$type": "dimension",
-          "$description": "Medium horizontal padding (12px). Use for standard inputs. DEFAULT."
+          "value": "{spacing.sm}",
+          "description": "Medium horizontal padding (12px). Use for standard inputs. DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "{spacing.md}",
-          "$type": "dimension",
-          "$description": "Large horizontal padding (16px). Use for prominent form fields."
+          "value": "{spacing.md}",
+          "description": "Large horizontal padding (16px). Use for prominent form fields.",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "{spacing.md}",
-          "$type": "dimension",
-          "$description": "Extra large horizontal padding (16px). Use for marketing forms."
+          "value": "{spacing.md}",
+          "description": "Extra large horizontal padding (16px). Use for marketing forms.",
+          "type": "dimension"
         }
       }
     },
     "borderRadius": {
-      "$value": "{radius.sm}",
-      "$type": "dimension",
-      "$description": "Default input border radius (4px). Use for consistent alignment with buttons."
+      "value": "{radius.sm}",
+      "description": "Default input border radius (4px). Use for consistent alignment with buttons.",
+      "type": "dimension"
     },
     "borderWidth": {
-      "$value": "{borderWidth.thin}",
-      "$type": "dimension",
-      "$description": "Input border width (1px). Use for subtle borders; focus ring provides emphasis."
+      "value": "{borderWidth.thin}",
+      "description": "Input border width (1px). Use for subtle borders; focus ring provides emphasis.",
+      "type": "dimension"
     },
     "fontSize": {
       "xs": {
-        "$value": "{typography.fontSize.xs}",
-        "$type": "dimension",
-        "$description": "Extra small input font size."
+        "value": "{typography.fontSize.xs}",
+        "description": "Extra small input font size.",
+        "type": "dimension"
       },
       "sm": {
-        "$value": "{typography.fontSize.sm}",
-        "$type": "dimension",
-        "$description": "Small input font size."
+        "value": "{typography.fontSize.sm}",
+        "description": "Small input font size.",
+        "type": "dimension"
       },
       "md": {
-        "$value": "{typography.fontSize.md}",
-        "$type": "dimension",
-        "$description": "Medium input font size. DEFAULT."
+        "value": "{typography.fontSize.md}",
+        "description": "Medium input font size. DEFAULT.",
+        "type": "dimension"
       },
       "lg": {
-        "$value": "{typography.fontSize.md}",
-        "$type": "dimension",
-        "$description": "Large input font size."
+        "value": "{typography.fontSize.md}",
+        "description": "Large input font size.",
+        "type": "dimension"
       },
       "xl": {
-        "$value": "{typography.fontSize.lg}",
-        "$type": "dimension",
-        "$description": "Extra large input font size."
+        "value": "{typography.fontSize.lg}",
+        "description": "Extra large input font size.",
+        "type": "dimension"
       }
     },
     "lineHeight": {
-      "$value": "{typography.lineHeight.md}",
-      "$type": "number",
-      "$description": "Input line height for proper text alignment."
+      "value": "{typography.lineHeight.md}",
+      "description": "Input line height for proper text alignment.",
+      "type": "number"
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
-        "$type": "duration",
-        "$description": "Input transition duration for focus/hover states."
+        "value": "{motion.duration.fast}",
+        "description": "Input transition duration for focus/hover states.",
+        "type": "duration"
       },
       "easing": {
-        "$value": "{motion.easing.easeOut}",
-        "$description": "Input transition easing curve."
+        "value": "{motion.easing.easeOut}",
+        "description": "Input transition easing curve.",
+        "type": "other"
       }
     },
     "focus": {
       "ringWidth": {
-        "$value": "{focus.ring.width}",
-        "$type": "dimension",
-        "$description": "Focus ring width for inputs."
+        "value": "{focus.ring.width}",
+        "description": "Focus ring width for inputs.",
+        "type": "dimension"
       },
       "ringOffset": {
-        "$value": "{focus.ring.offset}",
-        "$type": "dimension",
-        "$description": "Focus ring offset from input border."
+        "value": "{focus.ring.offset}",
+        "description": "Focus ring offset from input border.",
+        "type": "dimension"
       }
     }
   }

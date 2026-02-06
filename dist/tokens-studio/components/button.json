@@ -2,106 +2,107 @@
   "button": {
     "height": {
       "xs": {
-        "$value": "{sizing.button.xs}",
-        "$type": "dimension",
-        "$description": "Extra small button height. Use for inline actions, compact toolbars."
+        "value": "{sizing.button.xs}",
+        "description": "Extra small button height. Use for inline actions, compact toolbars.",
+        "type": "dimension"
       },
       "sm": {
-        "$value": "{sizing.button.sm}",
-        "$type": "dimension",
-        "$description": "Small button height. Use for secondary actions, compact layouts."
+        "value": "{sizing.button.sm}",
+        "description": "Small button height. Use for secondary actions, compact layouts.",
+        "type": "dimension"
       },
       "md": {
-        "$value": "{sizing.button.md}",
-        "$type": "dimension",
-        "$description": "Medium button height. DEFAULT for most buttons."
+        "value": "{sizing.button.md}",
+        "description": "Medium button height. DEFAULT for most buttons.",
+        "type": "dimension"
       },
       "lg": {
-        "$value": "{sizing.button.lg}",
-        "$type": "dimension",
-        "$description": "Large button height. Use for prominent CTAs."
+        "value": "{sizing.button.lg}",
+        "description": "Large button height. Use for prominent CTAs.",
+        "type": "dimension"
       },
       "xl": {
-        "$value": "{sizing.button.xl}",
-        "$type": "dimension",
-        "$description": "Extra large button height. Use for marketing CTAs."
+        "value": "{sizing.button.xl}",
+        "description": "Extra large button height. Use for marketing CTAs.",
+        "type": "dimension"
       }
     },
     "padding": {
       "x": {
         "xs": {
-          "$value": "{spacing.xs}",
-          "$type": "dimension",
-          "$description": "Extra small horizontal padding (8px). Use for compact icon buttons."
+          "value": "{spacing.xs}",
+          "description": "Extra small horizontal padding (8px). Use for compact icon buttons.",
+          "type": "dimension"
         },
         "sm": {
-          "$value": "{spacing.sm}",
-          "$type": "dimension",
-          "$description": "Small horizontal padding (12px). Use for secondary action buttons."
+          "value": "{spacing.sm}",
+          "description": "Small horizontal padding (12px). Use for secondary action buttons.",
+          "type": "dimension"
         },
         "md": {
-          "$value": "{spacing.md}",
-          "$type": "dimension",
-          "$description": "Medium horizontal padding (16px). Use for standard buttons. DEFAULT."
+          "value": "{spacing.md}",
+          "description": "Medium horizontal padding (16px). Use for standard buttons. DEFAULT.",
+          "type": "dimension"
         },
         "lg": {
-          "$value": "{spacing.lg}",
-          "$type": "dimension",
-          "$description": "Large horizontal padding (24px). Use for prominent CTA buttons."
+          "value": "{spacing.lg}",
+          "description": "Large horizontal padding (24px). Use for prominent CTA buttons.",
+          "type": "dimension"
         },
         "xl": {
-          "$value": "{spacing.xl}",
-          "$type": "dimension",
-          "$description": "Extra large horizontal padding (32px). Use for marketing buttons."
+          "value": "{spacing.xl}",
+          "description": "Extra large horizontal padding (32px). Use for marketing buttons.",
+          "type": "dimension"
         }
       }
     },
     "borderRadius": {
-      "$value": "{radius.sm}",
-      "$type": "dimension",
-      "$description": "Default button border radius (4px). Use for consistent alignment with inputs."
+      "value": "{radius.sm}",
+      "description": "Default button border radius (4px). Use for consistent alignment with inputs.",
+      "type": "dimension"
     },
     "fontSize": {
       "xs": {
-        "$value": "{typography.fontSize.xs}",
-        "$type": "dimension",
-        "$description": "Extra small button font size."
+        "value": "{typography.fontSize.xs}",
+        "description": "Extra small button font size.",
+        "type": "dimension"
       },
       "sm": {
-        "$value": "{typography.fontSize.sm}",
-        "$type": "dimension",
-        "$description": "Small button font size."
+        "value": "{typography.fontSize.sm}",
+        "description": "Small button font size.",
+        "type": "dimension"
       },
       "md": {
-        "$value": "{typography.fontSize.sm}",
-        "$type": "dimension",
-        "$description": "Medium button font size. Uses sm for better proportions."
+        "value": "{typography.fontSize.sm}",
+        "description": "Medium button font size. Uses sm for better proportions.",
+        "type": "dimension"
       },
       "lg": {
-        "$value": "{typography.fontSize.md}",
-        "$type": "dimension",
-        "$description": "Large button font size."
+        "value": "{typography.fontSize.md}",
+        "description": "Large button font size.",
+        "type": "dimension"
       },
       "xl": {
-        "$value": "{typography.fontSize.md}",
-        "$type": "dimension",
-        "$description": "Extra large button font size."
+        "value": "{typography.fontSize.md}",
+        "description": "Extra large button font size.",
+        "type": "dimension"
       }
     },
     "fontWeight": {
-      "$value": "{typography.fontWeight.semibold}",
-      "$type": "fontWeight",
-      "$description": "Button font weight. Semibold for clear affordance."
+      "value": "{typography.fontWeight.semibold}",
+      "description": "Button font weight. Semibold for clear affordance.",
+      "type": "fontWeight"
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
-        "$type": "duration",
-        "$description": "Button transition duration for hover/active states."
+        "value": "{motion.duration.fast}",
+        "description": "Button transition duration for hover/active states.",
+        "type": "duration"
       },
       "easing": {
-        "$value": "{motion.easing.easeOut}",
-        "$description": "Button transition easing curve."
+        "value": "{motion.easing.easeOut}",
+        "description": "Button transition easing curve.",
+        "type": "other"
       }
     }
   }
