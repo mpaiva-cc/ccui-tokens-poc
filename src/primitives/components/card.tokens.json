@@ -41,15 +41,15 @@
                 "$description": "No shadow. Use for flat card variants or on dark backgrounds."
             },
             "sm": {
-                "$value": "{shadow.sm}",
+                "$value": "{boxShadow.sm}",
                 "$description": "Small card shadow for subtle elevation"
             },
             "md": {
-                "$value": "{shadow.md}",
+                "$value": "{boxShadow.md}",
                 "$description": "Medium card shadow. DEFAULT."
             },
             "lg": {
-                "$value": "{shadow.lg}",
+                "$value": "{boxShadow.lg}",
                 "$description": "Large card shadow for prominent elevation"
             }
         },

@@ -182,6 +182,199 @@
       }
     }
   },
+  "boxShadow": {
+    "xs": {
+      "$value": [
+        {
+          "x": "0",
+          "y": "0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "0.0625rem",
+          "blur": "0.125rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "type": "dropShadow"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "Default Mantine extra small shadow for dark theme"
+    },
+    "sm": {
+      "$value": [
+        {
+          "x": "0",
+          "y": "0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "0.625rem",
+          "blur": "0.9375rem",
+          "spread": "-0.3125rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "0.4375rem",
+          "blur": "0.4375rem",
+          "spread": "-0.3125rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "type": "dropShadow"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "Default Mantine small shadow for dark theme"
+    },
+    "md": {
+      "$value": [
+        {
+          "x": "0",
+          "y": "0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "1.25rem",
+          "blur": "1.5625rem",
+          "spread": "-0.3125rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "0.625rem",
+          "blur": "0.625rem",
+          "spread": "-0.3125rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "type": "dropShadow"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "Default Mantine medium shadow for dark theme"
+    },
+    "lg": {
+      "$value": [
+        {
+          "x": "0",
+          "y": "0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "1.75rem",
+          "blur": "1.4375rem",
+          "spread": "-0.4375rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "0.75rem",
+          "blur": "0.75rem",
+          "spread": "-0.4375rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "type": "dropShadow"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "Default Mantine large shadow for dark theme"
+    },
+    "xl": {
+      "$value": [
+        {
+          "x": "0",
+          "y": "0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "2.25rem",
+          "blur": "1.75rem",
+          "spread": "-0.4375rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "1.0625rem",
+          "blur": "1.0625rem",
+          "spread": "-0.4375rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "type": "dropShadow"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "Default Mantine extra large shadow for dark theme"
+    },
+    "inset": {
+      "$value": [
+        {
+          "x": "0",
+          "y": "0.125rem",
+          "blur": "0.25rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "type": "innerShadow"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "Inset shadow - pressed/recessed appearance. Use for: pressed button states, input:focus, toggle switches (off state), embedded content areas. Creates illusion of pressing INTO the surface. Common in: Button:active, pressed toggles, embedded wells, search input backgrounds."
+    },
+    "footer": {
+      "$value": [
+        {
+          "x": "0",
+          "y": "-0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "-0.625rem",
+          "blur": "0.9375rem",
+          "spread": "-0.3125rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "-0.4375rem",
+          "blur": "0.4375rem",
+          "spread": "-0.3125rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "type": "dropShadow"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "Footer shadow - upward-casting shadow for fixed footers. Use for: sticky footers, bottom navigation bars, action bars at bottom of screen. Shadow casts upward to show footer is above scrolling content. Common in: sticky page footers, bottom action bars, mobile bottom nav."
+    },
+    "none": {
+      "$value": "none",
+      "$type": "boxShadow",
+      "$description": "No shadow - flat appearance. Use for: flat design elements, removing inherited shadows, elements that should appear flush with background, focus states that use outline instead. CSS keyword. Common in: flat buttons, inline elements, focus states using outline."
+    }
+  },
   "opacity": {
     "0": {
       "$value": 0,
@@ -1572,33 +1765,6 @@
         "$type": "color",
         "$description": "Selected state border color"
       }
-    }
-  },
-  "shadows": {
-    "xs": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1)",
-      "$type": "shadow",
-      "$description": "Default Mantine extra small shadow for dark theme"
-    },
-    "sm": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem",
-      "$type": "shadow",
-      "$description": "Default Mantine small shadow for dark theme"
-    },
-    "md": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem",
-      "$type": "shadow",
-      "$description": "Default Mantine medium shadow for dark theme"
-    },
-    "lg": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem",
-      "$type": "shadow",
-      "$description": "Default Mantine large shadow for dark theme"
-    },
-    "xl": {
-      "$value": "0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem",
-      "$type": "shadow",
-      "$description": "Default Mantine extra large shadow for dark theme"
     }
   }
 }

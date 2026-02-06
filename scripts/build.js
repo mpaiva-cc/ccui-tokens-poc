@@ -76,8 +76,7 @@ const SHARED_PRIMITIVE_CATEGORIES = [
 const THEME_SPECIFIC_CATEGORIES = [
     'color',
     'colorPalette',
-    'shadow',
-    'shadows',
+    'boxShadow',
     'opacity',
     'typography',
     'mantine',
@@ -191,7 +190,7 @@ function isMantineOfficialToken(token) {
         return path.length === 2 && MANTINE_SIZES.includes(path[1]);
     }
 
-    if (path[0] === 'shadows' || path[0] === 'shadow') {
+    if (path[0] === 'boxShadow') {
         return path.length === 2 && MANTINE_SIZES.includes(path[1]);
     }
 
@@ -346,7 +345,7 @@ StyleDictionary.registerTransform({
             return `mantine-${path.join('-').replace(/([A-Z])/g, '-$1').toLowerCase()}`;
         }
 
-        if (path[0] === 'shadows' || path[0] === 'shadow') {
+        if (path[0] === 'boxShadow') {
             return `mantine-shadow-${path[1]}`;
         }
 
@@ -358,20 +357,45 @@ StyleDictionary.registerTransform({
     }
 });
 
+// Register boxShadow to CSS transform
+StyleDictionary.registerTransform({
+    name: 'boxShadow/css',
+    type: 'value',
+    filter: (token) => {
+        const type = token.$type || token.type;
+        return type === 'boxShadow';
+    },
+    transform: (token) => {
+        const value = token.$value ?? token.value;
+        // Handle "none" or other string values
+        if (!Array.isArray(value)) return value;
+
+        return value.map(shadow => {
+            const inset = shadow.type === 'innerShadow' ? 'inset ' : '';
+            const x = shadow.x || '0';
+            const y = shadow.y || '0';
+            const blur = shadow.blur || '0';
+            const spread = shadow.spread || '0';
+            const color = shadow.color || 'rgba(0, 0, 0, 0.1)';
+            return `${inset}${x} ${y} ${blur} ${spread} ${color}`;
+        }).join(', ');
+    }
+});
+
 // Register transform groups
 StyleDictionary.registerTransformGroup({
     name: 'neutral/css',
-    transforms: ['attribute/cti', 'name/neutral']
+    transforms: ['attribute/cti', 'name/neutral', 'boxShadow/css']
 });
 
 StyleDictionary.registerTransformGroup({
     name: 'ccui/css',
-    transforms: ['attribute/cti', 'name/ccui']
+    transforms: ['attribute/cti', 'name/ccui', 'boxShadow/css']
 });
 
 StyleDictionary.registerTransformGroup({
     name: 'mantine/css',
-    transforms: ['attribute/cti', 'name/mantine-theme']
+    transforms: ['attribute/cti', 'name/mantine-theme', 'boxShadow/css']
 });
 
 // ========================================
@@ -507,7 +531,7 @@ const TOKENS_STUDIO_TYPE_MAP = {
     'strokeStyle': 'strokeStyle',
     'border': 'border',
     'transition': 'transition',
-    'shadow': 'shadow',
+    'boxShadow': 'boxShadow',
     'gradient': 'gradient',
     'typography': 'typography',
     // Tokens Studio specific types (not in W3C DTCG)
@@ -595,7 +619,7 @@ function inferTokensStudioType(token) {
     }
 
     // Shadow tokens
-    if (rootCategory === 'shadow' || rootCategory === 'shadows') return 'shadow';
+    if (rootCategory === 'boxShadow') return 'boxShadow';
 
     // Opacity (Tokens Studio uses 'opacity' type)
     if (rootCategory === 'opacity') return 'opacity';
@@ -632,8 +656,7 @@ const TOKENS_STUDIO_PRIMITIVE_SETS = {
     'lineHeights': 'primitives/typography',
     'letterSpacing': 'primitives/typography',
     'typography': 'primitives/typography',  // Composite styles
-    'shadow': 'primitives/shadow',
-    'shadows': 'primitives/shadow',
+    'boxShadow': 'primitives/shadow',
     'motion': 'primitives/motion',
     'borderWidth': 'primitives/border',
     'borderStyle': 'primitives/border',
@@ -796,7 +819,7 @@ StyleDictionary.registerFormat({
         const semanticTokens = dictionary.allTokens.filter(token => {
             const category = token.path[0];
             // Include color-related semantic tokens and component color tokens from theme files
-            if (!['color', 'colorPalette', 'shadows', 'mantine', 'opacity', 'brand', 'component', 'componentColors'].includes(category)) {
+            if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'component', 'componentColors'].includes(category)) {
                 return false;
             }
             // Exclude primitive palette colors - they belong in core/color.json

@@ -91,7 +91,7 @@
                 "$description": "Dropdown menu border radius (4px). Matches select input radius. Creates consistent, connected feel when open."
             },
             "shadow": {
-                "$value": "{shadow.md}",
+                "$value": "{boxShadow.md}",
                 "$description": "Dropdown menu shadow. Medium shadow provides elevation and separation from page content. Indicates floating layer."
             },
             "padding": {

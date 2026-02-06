@@ -1,6 +1,6 @@
 /**
  * CCUI Design Tokens - Shared Primitives
- * Generated: 2026-02-06T00:43:52.786Z
+ * Generated: 2026-02-06T01:04:55.013Z
  *
  * This file contains theme-agnostic tokens (spacing, typography, radius, etc.)
  * Load this file first, then load ONE theme file.
@@ -94,9 +94,9 @@
   --card-borderRadius: 0.5rem;
   --card-borderWidth: 1px;
   --card-shadow-none: none;
-  --card-shadow-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --card-shadow-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --card-shadow-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
+  --card-shadow-sm: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --card-shadow-md: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --card-shadow-lg: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.75rem 1.4375rem -0.4375rem rgba(0, 0, 0, 0.05), 0 0.75rem 0.75rem -0.4375rem rgba(0, 0, 0, 0.04);
   --card-section-padding: 1rem;
   --card-section-gap: 1rem;
   --card-transition-duration: 200ms;
@@ -151,7 +151,7 @@
   --modal-width-md: 32.5rem;
   --modal-width-lg: 45rem;
   --modal-width-xl: 60rem;
-  --modal-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
+  --modal-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 2.25rem 1.75rem -0.4375rem rgba(0, 0, 0, 0.05), 0 1.0625rem 1.0625rem -0.4375rem rgba(0, 0, 0, 0.04);
   --modal-overlay-opacity: 0.6;
   --modal-transition-duration: 200ms;
   --modal-transition-easing-enter: 0,0,0.58,1;
@@ -178,7 +178,7 @@
   --select-fontSize-lg: 1rem;
   --select-fontSize-xl: 1.125rem;
   --select-dropdown-borderRadius: 0.25rem;
-  --select-dropdown-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
+  --select-dropdown-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
   --select-dropdown-padding: 0.625rem;
   --select-dropdown-maxHeight: 18.75rem;
   --select-dropdown-zIndex: 500;
@@ -508,9 +508,9 @@
   --ccui-card-borderRadius: 0.5rem;
   --ccui-card-borderWidth: 1px;
   --ccui-card-shadow-none: none;
-  --ccui-card-shadow-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --ccui-card-shadow-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --ccui-card-shadow-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
+  --ccui-card-shadow-sm: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --ccui-card-shadow-md: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --ccui-card-shadow-lg: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.75rem 1.4375rem -0.4375rem rgba(0, 0, 0, 0.05), 0 0.75rem 0.75rem -0.4375rem rgba(0, 0, 0, 0.04);
   --ccui-card-section-padding: 1rem;
   --ccui-card-section-gap: 1rem;
   --ccui-card-transition-duration: 200ms;
@@ -565,7 +565,7 @@
   --ccui-modal-width-md: 32.5rem;
   --ccui-modal-width-lg: 45rem;
   --ccui-modal-width-xl: 60rem;
-  --ccui-modal-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
+  --ccui-modal-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 2.25rem 1.75rem -0.4375rem rgba(0, 0, 0, 0.05), 0 1.0625rem 1.0625rem -0.4375rem rgba(0, 0, 0, 0.04);
   --ccui-modal-overlay-opacity: 0.6;
   --ccui-modal-transition-duration: 200ms;
   --ccui-modal-transition-easing-enter: 0,0,0.58,1;
@@ -592,7 +592,7 @@
   --ccui-select-fontSize-lg: 1rem;
   --ccui-select-fontSize-xl: 1.125rem;
   --ccui-select-dropdown-borderRadius: 0.25rem;
-  --ccui-select-dropdown-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
+  --ccui-select-dropdown-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
   --ccui-select-dropdown-padding: 0.625rem;
   --ccui-select-dropdown-maxHeight: 18.75rem;
   --ccui-select-dropdown-zIndex: 500;

@@ -47,7 +47,7 @@
             }
         },
         "shadow": {
-            "$value": "{shadow.xl}",
+            "$value": "{boxShadow.xl}",
             "$description": "Modal elevation shadow. Extra large shadow creates strong depth separation from the page content, reinforcing the modal's floating nature and focus-drawing purpose."
         },
         "overlay": {

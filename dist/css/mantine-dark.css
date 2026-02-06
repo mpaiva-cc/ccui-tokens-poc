@@ -1,7 +1,7 @@
 /**
  * CCUI Design Tokens - mantine-dark
  * Vanilla Mantine dark theme
- * Generated: 2026-02-06T00:43:52.787Z
+ * Generated: 2026-02-06T01:04:55.014Z
  *
  * Usage:
  *   1. Load primitives.css first
@@ -202,14 +202,14 @@
   --color-primary-light-hover: rgba(71, 145, 235, 0.2);
   --color-primary-light-color: #3c90f1;
   --color-primary-contrast: #ffffff;
-  --shadow-xs: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
-  --shadow-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --shadow-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --shadow-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
-  --shadow-xl: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
-  --shadow-inset: inset 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  --shadow-footer: 0 -0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
-  --shadow-none: none;
+  --boxShadow-xs: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.1);
+  --boxShadow-sm: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --boxShadow-md: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --boxShadow-lg: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.75rem 1.4375rem -0.4375rem rgba(0, 0, 0, 0.05), 0 0.75rem 0.75rem -0.4375rem rgba(0, 0, 0, 0.04);
+  --boxShadow-xl: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 2.25rem 1.75rem -0.4375rem rgba(0, 0, 0, 0.05), 0 1.0625rem 1.0625rem -0.4375rem rgba(0, 0, 0, 0.04);
+  --boxShadow-inset: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  --boxShadow-footer: 0 -0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --boxShadow-none: none;
   --opacity-0: 0;
   --opacity-5: 0.05;
   --opacity-10: 0.1;
@@ -462,11 +462,6 @@
   --component-selected-background: rgba(9, 116, 235, 0.2);
   --component-selected-text: #3c90f1;
   --component-selected-border: #0974eb;
-  --shadows-xs: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
-  --shadows-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --shadows-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --shadows-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
-  --shadows-xl: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
 }
 
 
@@ -660,14 +655,14 @@
   --ccui-color-primary-light-hover: rgba(71, 145, 235, 0.2);
   --ccui-color-primary-light-color: #3c90f1;
   --ccui-color-primary-contrast: #ffffff;
-  --ccui-shadow-xs: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
-  --ccui-shadow-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --ccui-shadow-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --ccui-shadow-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
-  --ccui-shadow-xl: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
-  --ccui-shadow-inset: inset 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  --ccui-shadow-footer: 0 -0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
-  --ccui-shadow-none: none;
+  --ccui-boxShadow-xs: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.1);
+  --ccui-boxShadow-sm: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --ccui-boxShadow-md: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --ccui-boxShadow-lg: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.75rem 1.4375rem -0.4375rem rgba(0, 0, 0, 0.05), 0 0.75rem 0.75rem -0.4375rem rgba(0, 0, 0, 0.04);
+  --ccui-boxShadow-xl: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 2.25rem 1.75rem -0.4375rem rgba(0, 0, 0, 0.05), 0 1.0625rem 1.0625rem -0.4375rem rgba(0, 0, 0, 0.04);
+  --ccui-boxShadow-inset: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  --ccui-boxShadow-footer: 0 -0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --ccui-boxShadow-none: none;
   --ccui-opacity-0: 0;
   --ccui-opacity-5: 0.05;
   --ccui-opacity-10: 0.1;
@@ -920,11 +915,6 @@
   --ccui-component-selected-background: rgba(9, 116, 235, 0.2);
   --ccui-component-selected-text: #3c90f1;
   --ccui-component-selected-border: #0974eb;
-  --ccui-shadows-xs: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
-  --ccui-shadows-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --ccui-shadows-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --ccui-shadows-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
-  --ccui-shadows-xl: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
 }
 
 
@@ -1110,11 +1100,11 @@
   --mantine-primary-color-light-hover: rgba(71, 145, 235, 0.2);
   --mantine-primary-color-light-color: #3c90f1;
   --mantine-primary-color-contrast: #ffffff;
-  --mantine-shadow-xs: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
-  --mantine-shadow-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --mantine-shadow-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --mantine-shadow-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
-  --mantine-shadow-xl: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
+  --mantine-shadow-xs: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.1);
+  --mantine-shadow-sm: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --mantine-shadow-md: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.05), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
+  --mantine-shadow-lg: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 1.75rem 1.4375rem -0.4375rem rgba(0, 0, 0, 0.05), 0 0.75rem 0.75rem -0.4375rem rgba(0, 0, 0, 0.04);
+  --mantine-shadow-xl: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 2.25rem 1.75rem -0.4375rem rgba(0, 0, 0, 0.05), 0 1.0625rem 1.0625rem -0.4375rem rgba(0, 0, 0, 0.04);
   --mantine-scale: 1;
   --mantine-cursor-type: pointer;
   --mantine-webkit-font-smoothing: antialiased;
@@ -1239,10 +1229,5 @@
   --mantine-color-orange-light-color: #ed7621;
   --mantine-color-orange-outline: #ed7621;
   --mantine-color-orange-outline-hover: rgba(255, 169, 77, 0.1);
-  --mantine-shadow-xs: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
-  --mantine-shadow-sm: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 0.625rem 0.9375rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.4375rem 0.4375rem -0.3125rem;
-  --mantine-shadow-md: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.25rem 1.5625rem -0.3125rem, rgba(0, 0, 0, 0.04) 0 0.625rem 0.625rem -0.3125rem;
-  --mantine-shadow-lg: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 1.75rem 1.4375rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 0.75rem 0.75rem -0.4375rem;
-  --mantine-shadow-xl: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 2.25rem 1.75rem -0.4375rem, rgba(0, 0, 0, 0.04) 0 1.0625rem 1.0625rem -0.4375rem;
 }
 
