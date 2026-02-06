@@ -153,10 +153,7 @@
           "fontWeight": "{fontWeights.regular}",
           "lineHeight": "{lineHeights.md}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text."
@@ -168,10 +165,7 @@
           "fontWeight": "{fontWeights.regular}",
           "lineHeight": "{lineHeights.md}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content."
@@ -183,10 +177,7 @@
           "fontWeight": "{fontWeights.regular}",
           "lineHeight": "{lineHeights.md}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions."
@@ -198,10 +189,7 @@
           "fontWeight": "{fontWeights.regular}",
           "lineHeight": "{lineHeights.md}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy."
@@ -215,10 +203,7 @@
           "fontWeight": "{fontWeights.bold}",
           "lineHeight": "{lineHeights.xs}",
           "letterSpacing": "{letterSpacing.tight}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Page title (34px bold). Use for: main page headings, hero titles, primary page headers."
@@ -230,10 +215,7 @@
           "fontWeight": "{fontWeights.bold}",
           "lineHeight": "{lineHeights.xs}",
           "letterSpacing": "{letterSpacing.tight}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Section heading (26px bold). Use for: major sections, content dividers, feature headers."
@@ -245,10 +227,7 @@
           "fontWeight": "{fontWeights.semibold}",
           "lineHeight": "{lineHeights.sm}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Subsection heading (22px semibold). Use for: subsections, panel headers, grouped content titles."
@@ -260,10 +239,7 @@
           "fontWeight": "{fontWeights.semibold}",
           "lineHeight": "{lineHeights.sm}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Card heading (20px semibold). Use for: card titles, modal headers, component titles."
@@ -275,10 +251,7 @@
           "fontWeight": "{fontWeights.semibold}",
           "lineHeight": "{lineHeights.sm}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Small heading (18px semibold). Use for: minor sections, list group titles, compact headers."
@@ -290,10 +263,7 @@
           "fontWeight": "{fontWeights.semibold}",
           "lineHeight": "{lineHeights.md}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Label heading (16px semibold). Use for: label-like headings, form section titles, metadata headers."
@@ -307,10 +277,7 @@
           "fontWeight": "{fontWeights.light}",
           "lineHeight": "{lineHeights.xs}",
           "letterSpacing": "{letterSpacing.tighter}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Large display text (34px light). Use for: hero headlines, marketing banners, splash screens."
@@ -322,10 +289,7 @@
           "fontWeight": "{fontWeights.light}",
           "lineHeight": "{lineHeights.xs}",
           "letterSpacing": "{letterSpacing.tight}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Medium display text (26px light). Use for: secondary hero text, feature highlights, callouts."
@@ -339,10 +303,7 @@
           "fontWeight": "{fontWeights.medium}",
           "lineHeight": "{lineHeights.sm}",
           "letterSpacing": "{letterSpacing.wide}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Small label (12px medium). Use for: compact form labels, helper text labels, dense UI."
@@ -354,10 +315,7 @@
           "fontWeight": "{fontWeights.medium}",
           "lineHeight": "{lineHeights.sm}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Medium label (14px medium). DEFAULT for form labels, field labels, control labels."
@@ -369,10 +327,7 @@
           "fontWeight": "{fontWeights.medium}",
           "lineHeight": "{lineHeights.sm}",
           "letterSpacing": "{letterSpacing.normal}",
-          "paragraphIndent": "{paragraphIndent.none}",
-          "paragraphSpacing": "{paragraphSpacing.none}",
-          "textDecoration": "{textDecoration.none}",
-          "textCase": "{textCase.none}"
+          "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
         "$description": "Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields."
@@ -385,10 +340,7 @@
         "fontWeight": "{fontWeights.semibold}",
         "lineHeight": "{lineHeights.xs}",
         "letterSpacing": "{letterSpacing.normal}",
-        "paragraphIndent": "{paragraphIndent.none}",
-        "paragraphSpacing": "{paragraphSpacing.none}",
-        "textDecoration": "{textDecoration.none}",
-        "textCase": "{textCase.none}"
+        "paragraphSpacing": "{paragraphSpacing.none}"
       },
       "$type": "typography",
       "$description": "Button text (14px semibold). Use for: all button variants, CTAs, action triggers."
@@ -400,10 +352,7 @@
         "fontWeight": "{fontWeights.regular}",
         "lineHeight": "{lineHeights.md}",
         "letterSpacing": "{letterSpacing.normal}",
-        "paragraphIndent": "{paragraphIndent.none}",
-        "paragraphSpacing": "{paragraphSpacing.none}",
-        "textDecoration": "{textDecoration.none}",
-        "textCase": "{textCase.none}"
+        "paragraphSpacing": "{paragraphSpacing.none}"
       },
       "$type": "typography",
       "$description": "Input text (16px regular). Use for: form input values, textarea content, select values."
@@ -415,10 +364,7 @@
         "fontWeight": "{fontWeights.regular}",
         "lineHeight": "{lineHeights.md}",
         "letterSpacing": "{letterSpacing.wide}",
-        "paragraphIndent": "{paragraphIndent.none}",
-        "paragraphSpacing": "{paragraphSpacing.none}",
-        "textDecoration": "{textDecoration.none}",
-        "textCase": "{textCase.none}"
+        "paragraphSpacing": "{paragraphSpacing.none}"
       },
       "$type": "typography",
       "$description": "Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata."
@@ -430,10 +376,7 @@
         "fontWeight": "{fontWeights.medium}",
         "lineHeight": "{lineHeights.sm}",
         "letterSpacing": "{letterSpacing.wider}",
-        "paragraphIndent": "{paragraphIndent.none}",
-        "paragraphSpacing": "{paragraphSpacing.none}",
-        "textDecoration": "{textDecoration.none}",
-        "textCase": "{textCase.uppercase}"
+        "paragraphSpacing": "{paragraphSpacing.none}"
       },
       "$type": "typography",
       "$description": "Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Typically uppercase."
@@ -445,10 +388,7 @@
         "fontWeight": "{fontWeights.regular}",
         "lineHeight": "{lineHeights.lg}",
         "letterSpacing": "{letterSpacing.normal}",
-        "paragraphIndent": "{paragraphIndent.none}",
-        "paragraphSpacing": "{paragraphSpacing.none}",
-        "textDecoration": "{textDecoration.none}",
-        "textCase": "{textCase.none}"
+        "paragraphSpacing": "{paragraphSpacing.none}"
       },
       "$type": "typography",
       "$description": "Code text (14px regular monospace). Use for: inline code, code blocks, technical content, API references."
@@ -460,10 +400,7 @@
         "fontWeight": "{fontWeights.regular}",
         "lineHeight": "{lineHeights.lg}",
         "letterSpacing": "{letterSpacing.normal}",
-        "paragraphIndent": "{paragraphIndent.none}",
-        "paragraphSpacing": "{paragraphSpacing.none}",
-        "textDecoration": "{textDecoration.none}",
-        "textCase": "{textCase.none}"
+        "paragraphSpacing": "{paragraphSpacing.none}"
       },
       "$type": "typography",
       "$description": "Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes."
@@ -475,10 +412,7 @@
         "fontWeight": "{fontWeights.light}",
         "lineHeight": "{lineHeights.lg}",
         "letterSpacing": "{letterSpacing.normal}",
-        "paragraphIndent": "{paragraphIndent.none}",
-        "paragraphSpacing": "{paragraphSpacing.none}",
-        "textDecoration": "{textDecoration.none}",
-        "textCase": "{textCase.none}"
+        "paragraphSpacing": "{paragraphSpacing.none}"
       },
       "$type": "typography",
       "$description": "Blockquote text (20px light). Use for: prominent quotes, feature testimonials, highlighted citations."
