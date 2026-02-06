@@ -62,7 +62,7 @@
       },
       "lineHeight": {
         "$value": "{typography.lineHeight.sm}",
-        "$type": "number",
+        "$type": "dimension",
         "$description": "Alert title line height (1.25). Tighter line height for single-line titles. Keeps alert compact vertically."
       }
     },
@@ -74,7 +74,7 @@
       },
       "lineHeight": {
         "$value": "{typography.lineHeight.md}",
-        "$type": "number",
+        "$type": "dimension",
         "$description": "Alert message line height (1.5). More generous line height for multi-line messages. Improves readability of longer alert text."
       }
     },

@@ -20,7 +20,7 @@
                 },
                 "lineHeight": {
                     "$value": "{typography.lineHeight.xs}",
-                    "$type": "number",
+                    "$type": "lineHeights",
                     "$description": "Tight line height for large headings."
                 }
             },
@@ -37,7 +37,7 @@
                 },
                 "lineHeight": {
                     "$value": "{typography.lineHeight.xs}",
-                    "$type": "number",
+                    "$type": "lineHeights",
                     "$description": "Tight line height (1.2) for compact section headings."
                 }
             },
@@ -54,7 +54,7 @@
                 },
                 "lineHeight": {
                     "$value": "{typography.lineHeight.sm}",
-                    "$type": "number",
+                    "$type": "lineHeights",
                     "$description": "Snug line height (1.35) for medium-sized headings."
                 }
             },
@@ -71,7 +71,7 @@
                 },
                 "lineHeight": {
                     "$value": "{typography.lineHeight.sm}",
-                    "$type": "number",
+                    "$type": "lineHeights",
                     "$description": "Snug line height (1.35) for card title readability."
                 }
             },
@@ -88,7 +88,7 @@
                 },
                 "lineHeight": {
                     "$value": "{typography.lineHeight.sm}",
-                    "$type": "number",
+                    "$type": "lineHeights",
                     "$description": "Snug line height (1.35) for compact minor headings."
                 }
             },
@@ -105,7 +105,7 @@
                 },
                 "lineHeight": {
                     "$value": "{typography.lineHeight.md}",
-                    "$type": "number",
+                    "$type": "lineHeights",
                     "$description": "Normal line height (1.5) matching body text rhythm."
                 }
             }

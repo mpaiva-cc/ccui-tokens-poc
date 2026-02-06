@@ -95,7 +95,7 @@
       },
       "lineHeight": {
         "$value": "{typography.lineHeight.sm}",
-        "$type": "number",
+        "$type": "dimension",
         "$description": "Modal title line height (1.25). Tight line height for single-line titles. If titles wrap, this keeps them compact within the header area."
       }
     }

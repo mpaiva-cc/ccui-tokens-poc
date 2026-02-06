@@ -95,7 +95,7 @@
     },
     "lineHeight": {
       "$value": "{typography.lineHeight.md}",
-      "$type": "number",
+      "$type": "dimension",
       "$description": "Input line height for proper text alignment."
     },
     "transition": {

@@ -1,6 +1,6 @@
 /**
  * CCUI Design Tokens - Shared Primitives
- * Generated: 2026-02-05T23:17:23.722Z
+ * Generated: 2026-02-06T00:21:26.678Z
  *
  * This file contains theme-agnostic tokens (spacing, typography, radius, etc.)
  * Load this file first, then load ONE theme file.
@@ -40,9 +40,9 @@
   --alert-icon-gap: 0.75rem;
   --alert-title-fontSize: 0.875rem;
   --alert-title-fontWeight: 600;
-  --alert-title-lineHeight: 1.35;
+  --alert-title-lineHeight: 135%;
   --alert-message-fontSize: 0.875rem;
-  --alert-message-lineHeight: 1.5;
+  --alert-message-lineHeight: 150%;
   --alert-closeButton-size: 1.125rem;
   --alert-closeButton-offset: 0.75rem;
   --alert-transition-duration: 200ms;
@@ -137,7 +137,7 @@
   --input-fontSize-md: 1rem;
   --input-fontSize-lg: 1rem;
   --input-fontSize-xl: 1.125rem;
-  --input-lineHeight: 1.5;
+  --input-lineHeight: 150%;
   --input-transition-duration: 100ms;
   --input-transition-easing: 0,0,0.58,1;
   --input-focus-ringWidth: 3px;
@@ -159,7 +159,7 @@
   --modal-zIndex: 400;
   --modal-title-fontSize: 1.125rem;
   --modal-title-fontWeight: 600;
-  --modal-title-lineHeight: 1.35;
+  --modal-title-lineHeight: 135%;
   --select-height-xs: 1.875rem;
   --select-height-sm: 2.25rem;
   --select-height-md: 2.625rem;
@@ -414,33 +414,33 @@
   --typography-headings-fontWeight: 700;
   --typography-headings-h1-fontSize: 2.125rem;
   --typography-headings-h1-fontWeight: 700;
-  --typography-headings-h1-lineHeight: 1.2;
+  --typography-headings-h1-lineHeight: 120%;
   --typography-headings-h2-fontSize: 1.625rem;
   --typography-headings-h2-fontWeight: 700;
-  --typography-headings-h2-lineHeight: 1.2;
+  --typography-headings-h2-lineHeight: 120%;
   --typography-headings-h3-fontSize: 1.375rem;
   --typography-headings-h3-fontWeight: 600;
-  --typography-headings-h3-lineHeight: 1.35;
+  --typography-headings-h3-lineHeight: 135%;
   --typography-headings-h4-fontSize: 1.25rem;
   --typography-headings-h4-fontWeight: 600;
-  --typography-headings-h4-lineHeight: 1.35;
+  --typography-headings-h4-lineHeight: 135%;
   --typography-headings-h5-fontSize: 1.125rem;
   --typography-headings-h5-fontWeight: 600;
-  --typography-headings-h5-lineHeight: 1.35;
+  --typography-headings-h5-lineHeight: 135%;
   --typography-headings-h6-fontSize: 1rem;
   --typography-headings-h6-fontWeight: 600;
-  --typography-headings-h6-lineHeight: 1.5;
+  --typography-headings-h6-lineHeight: 150%;
   --typography-letterSpacing-tighter: -0.05em;
   --typography-letterSpacing-tight: -0.025em;
   --typography-letterSpacing-normal: 0;
   --typography-letterSpacing-wide: 0.025em;
   --typography-letterSpacing-wider: 0.05em;
   --typography-letterSpacing-widest: 0.1em;
-  --typography-lineHeight-xs: 1.2;
-  --typography-lineHeight-sm: 1.35;
-  --typography-lineHeight-md: 1.5;
-  --typography-lineHeight-lg: 1.65;
-  --typography-lineHeight-xl: 1.8;
+  --typography-lineHeight-xs: 120%;
+  --typography-lineHeight-sm: 135%;
+  --typography-lineHeight-md: 150%;
+  --typography-lineHeight-lg: 165%;
+  --typography-lineHeight-xl: 180%;
 }
 
 
@@ -473,9 +473,9 @@
   --ccui-alert-icon-gap: 0.75rem;
   --ccui-alert-title-fontSize: 0.875rem;
   --ccui-alert-title-fontWeight: 600;
-  --ccui-alert-title-lineHeight: 1.35;
+  --ccui-alert-title-lineHeight: 135%;
   --ccui-alert-message-fontSize: 0.875rem;
-  --ccui-alert-message-lineHeight: 1.5;
+  --ccui-alert-message-lineHeight: 150%;
   --ccui-alert-closeButton-size: 1.125rem;
   --ccui-alert-closeButton-offset: 0.75rem;
   --ccui-alert-transition-duration: 200ms;
@@ -570,7 +570,7 @@
   --ccui-input-fontSize-md: 1rem;
   --ccui-input-fontSize-lg: 1rem;
   --ccui-input-fontSize-xl: 1.125rem;
-  --ccui-input-lineHeight: 1.5;
+  --ccui-input-lineHeight: 150%;
   --ccui-input-transition-duration: 100ms;
   --ccui-input-transition-easing: 0,0,0.58,1;
   --ccui-input-focus-ringWidth: 3px;
@@ -592,7 +592,7 @@
   --ccui-modal-zIndex: 400;
   --ccui-modal-title-fontSize: 1.125rem;
   --ccui-modal-title-fontWeight: 600;
-  --ccui-modal-title-lineHeight: 1.35;
+  --ccui-modal-title-lineHeight: 135%;
   --ccui-select-height-xs: 1.875rem;
   --ccui-select-height-sm: 2.25rem;
   --ccui-select-height-md: 2.625rem;
@@ -847,33 +847,33 @@
   --ccui-typography-headings-fontWeight: 700;
   --ccui-typography-headings-h1-fontSize: 2.125rem;
   --ccui-typography-headings-h1-fontWeight: 700;
-  --ccui-typography-headings-h1-lineHeight: 1.2;
+  --ccui-typography-headings-h1-lineHeight: 120%;
   --ccui-typography-headings-h2-fontSize: 1.625rem;
   --ccui-typography-headings-h2-fontWeight: 700;
-  --ccui-typography-headings-h2-lineHeight: 1.2;
+  --ccui-typography-headings-h2-lineHeight: 120%;
   --ccui-typography-headings-h3-fontSize: 1.375rem;
   --ccui-typography-headings-h3-fontWeight: 600;
-  --ccui-typography-headings-h3-lineHeight: 1.35;
+  --ccui-typography-headings-h3-lineHeight: 135%;
   --ccui-typography-headings-h4-fontSize: 1.25rem;
   --ccui-typography-headings-h4-fontWeight: 600;
-  --ccui-typography-headings-h4-lineHeight: 1.35;
+  --ccui-typography-headings-h4-lineHeight: 135%;
   --ccui-typography-headings-h5-fontSize: 1.125rem;
   --ccui-typography-headings-h5-fontWeight: 600;
-  --ccui-typography-headings-h5-lineHeight: 1.35;
+  --ccui-typography-headings-h5-lineHeight: 135%;
   --ccui-typography-headings-h6-fontSize: 1rem;
   --ccui-typography-headings-h6-fontWeight: 600;
-  --ccui-typography-headings-h6-lineHeight: 1.5;
+  --ccui-typography-headings-h6-lineHeight: 150%;
   --ccui-typography-letterSpacing-tighter: -0.05em;
   --ccui-typography-letterSpacing-tight: -0.025em;
   --ccui-typography-letterSpacing-normal: 0;
   --ccui-typography-letterSpacing-wide: 0.025em;
   --ccui-typography-letterSpacing-wider: 0.05em;
   --ccui-typography-letterSpacing-widest: 0.1em;
-  --ccui-typography-lineHeight-xs: 1.2;
-  --ccui-typography-lineHeight-sm: 1.35;
-  --ccui-typography-lineHeight-md: 1.5;
-  --ccui-typography-lineHeight-lg: 1.65;
-  --ccui-typography-lineHeight-xl: 1.8;
+  --ccui-typography-lineHeight-xs: 120%;
+  --ccui-typography-lineHeight-sm: 135%;
+  --ccui-typography-lineHeight-md: 150%;
+  --ccui-typography-lineHeight-lg: 165%;
+  --ccui-typography-lineHeight-xl: 180%;
 }
 
 
@@ -911,26 +911,26 @@
   --mantine-font-size-xl: 1.25rem;
   --mantine-h1-font-size: 2.125rem;
   --mantine-h1-font-weight: 700;
-  --mantine-h1-line-height: 1.2;
+  --mantine-h1-line-height: 120%;
   --mantine-h2-font-size: 1.625rem;
   --mantine-h2-font-weight: 700;
-  --mantine-h2-line-height: 1.2;
+  --mantine-h2-line-height: 120%;
   --mantine-h3-font-size: 1.375rem;
   --mantine-h3-font-weight: 600;
-  --mantine-h3-line-height: 1.35;
+  --mantine-h3-line-height: 135%;
   --mantine-h4-font-size: 1.25rem;
   --mantine-h4-font-weight: 600;
-  --mantine-h4-line-height: 1.35;
+  --mantine-h4-line-height: 135%;
   --mantine-h5-font-size: 1.125rem;
   --mantine-h5-font-weight: 600;
-  --mantine-h5-line-height: 1.35;
+  --mantine-h5-line-height: 135%;
   --mantine-h6-font-size: 1rem;
   --mantine-h6-font-weight: 600;
-  --mantine-h6-line-height: 1.5;
-  --mantine-line-height-xs: 1.2;
-  --mantine-line-height-sm: 1.35;
-  --mantine-line-height-md: 1.5;
-  --mantine-line-height-lg: 1.65;
-  --mantine-line-height-xl: 1.8;
+  --mantine-h6-line-height: 150%;
+  --mantine-line-height-xs: 120%;
+  --mantine-line-height-sm: 135%;
+  --mantine-line-height-md: 150%;
+  --mantine-line-height-lg: 165%;
+  --mantine-line-height-xl: 180%;
 }
 

@@ -229,29 +229,29 @@
     },
     "lineHeight": {
       "xs": {
-        "$value": 1.2,
+        "$value": "120%",
         "$type": "lineHeights",
-        "$description": "Tight line height (1.2 / 120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for headings 24px+ or single-line UI elements. Common in: h1, hero headlines, button text, badge labels."
+        "$description": "Tight line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for headings 24px+ or single-line UI elements. Common in: h1, hero headlines, button text, badge labels."
       },
       "sm": {
-        "$value": 1.35,
+        "$value": "135%",
         "$type": "lineHeights",
-        "$description": "Snug line height (1.35 / 135%). Use for: smaller headings (h3-h6), subheadings, short multi-line text, compact interfaces. Tighter than body but readable for short passages. Common in: h3-h6 headings, card titles, navigation items, form labels, compact UI text."
+        "$description": "Snug line height (135%). Use for: smaller headings (h3-h6), subheadings, short multi-line text, compact interfaces. Tighter than body but readable for short passages. Common in: h3-h6 headings, card titles, navigation items, form labels, compact UI text."
       },
       "md": {
-        "$value": 1.5,
+        "$value": "150%",
         "$type": "lineHeights",
-        "$description": "Normal line height (1.5 / 150%). WCAG MINIMUM for body text. Use for: standard body text, paragraphs, UI descriptions, form inputs, most readable content. Baseline for accessibility compliance. Common in: body paragraphs, descriptions, form values, help text, table cells."
+        "$description": "Normal line height (150%). WCAG MINIMUM for body text. Use for: standard body text, paragraphs, UI descriptions, form inputs, most readable content. Baseline for accessibility compliance. Common in: body paragraphs, descriptions, form values, help text, table cells."
       },
       "lg": {
-        "$value": 1.65,
+        "$value": "165%",
         "$type": "lineHeights",
-        "$description": "Relaxed line height (1.65 / 165%). Use for: longer paragraphs, improved readability, wide content areas, users who need more visual separation. Better for sustained reading. Common in: article content, documentation, expanded descriptions, accessibility-focused interfaces."
+        "$description": "Relaxed line height (165%). Use for: longer paragraphs, improved readability, wide content areas, users who need more visual separation. Better for sustained reading. Common in: article content, documentation, expanded descriptions, accessibility-focused interfaces."
       },
       "xl": {
-        "$value": 1.8,
+        "$value": "180%",
         "$type": "lineHeights",
-        "$description": "Loose line height (1.8 / 180%). Use for: long-form prose, documentation, maximum readability, accessibility accommodations. Very generous spacing between lines. Common in: blog posts, help documentation, legal text, content prioritizing readability over density."
+        "$description": "Loose line height (180%). Use for: long-form prose, documentation, maximum readability, accessibility accommodations. Very generous spacing between lines. Common in: blog posts, help documentation, legal text, content prioritizing readability over density."
       }
     },
     "styles": {
@@ -261,7 +261,7 @@
             "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": 1.5,
+            "lineHeight": "150%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -272,7 +272,7 @@
             "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1rem",
             "fontWeight": 400,
-            "lineHeight": 1.5,
+            "lineHeight": "150%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -283,7 +283,7 @@
             "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1.125rem",
             "fontWeight": 400,
-            "lineHeight": 1.5,
+            "lineHeight": "150%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -294,7 +294,7 @@
             "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1.25rem",
             "fontWeight": 400,
-            "lineHeight": 1.5,
+            "lineHeight": "150%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -307,7 +307,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "2.125rem",
             "fontWeight": 700,
-            "lineHeight": 1.2,
+            "lineHeight": "120%",
             "letterSpacing": "-0.025em"
           },
           "$type": "typography",
@@ -318,7 +318,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1.625rem",
             "fontWeight": 700,
-            "lineHeight": 1.2,
+            "lineHeight": "120%",
             "letterSpacing": "-0.025em"
           },
           "$type": "typography",
@@ -329,7 +329,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1.375rem",
             "fontWeight": 600,
-            "lineHeight": 1.35,
+            "lineHeight": "135%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -340,7 +340,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1.25rem",
             "fontWeight": 600,
-            "lineHeight": 1.35,
+            "lineHeight": "135%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -351,7 +351,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1.125rem",
             "fontWeight": 600,
-            "lineHeight": 1.35,
+            "lineHeight": "135%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -362,7 +362,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1rem",
             "fontWeight": 600,
-            "lineHeight": 1.5,
+            "lineHeight": "150%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -375,7 +375,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "2.125rem",
             "fontWeight": 300,
-            "lineHeight": 1.2,
+            "lineHeight": "120%",
             "letterSpacing": "-0.05em"
           },
           "$type": "typography",
@@ -386,7 +386,7 @@
             "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1.625rem",
             "fontWeight": 300,
-            "lineHeight": 1.2,
+            "lineHeight": "120%",
             "letterSpacing": "-0.025em"
           },
           "$type": "typography",
@@ -399,7 +399,7 @@
             "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "0.75rem",
             "fontWeight": 500,
-            "lineHeight": 1.35,
+            "lineHeight": "135%",
             "letterSpacing": "0.025em"
           },
           "$type": "typography",
@@ -410,7 +410,7 @@
             "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "0.875rem",
             "fontWeight": 500,
-            "lineHeight": 1.35,
+            "lineHeight": "135%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -421,7 +421,7 @@
             "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
             "fontSize": "1rem",
             "fontWeight": 500,
-            "lineHeight": 1.35,
+            "lineHeight": "135%",
             "letterSpacing": "0"
           },
           "$type": "typography",
@@ -433,7 +433,7 @@
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "0.875rem",
           "fontWeight": 600,
-          "lineHeight": 1.2,
+          "lineHeight": "120%",
           "letterSpacing": "0"
         },
         "$type": "typography",
@@ -444,7 +444,7 @@
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "1rem",
           "fontWeight": 400,
-          "lineHeight": 1.5,
+          "lineHeight": "150%",
           "letterSpacing": "0"
         },
         "$type": "typography",
@@ -455,7 +455,7 @@
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
-          "lineHeight": 1.5,
+          "lineHeight": "150%",
           "letterSpacing": "0.025em"
         },
         "$type": "typography",
@@ -466,7 +466,7 @@
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 500,
-          "lineHeight": 1.35,
+          "lineHeight": "135%",
           "letterSpacing": "0.05em"
         },
         "$type": "typography",
@@ -477,7 +477,7 @@
           "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
           "fontSize": "0.875rem",
           "fontWeight": 400,
-          "lineHeight": 1.65,
+          "lineHeight": "165%",
           "letterSpacing": "0"
         },
         "$type": "typography",
@@ -488,7 +488,7 @@
           "fontFamily": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "1.125rem",
           "fontWeight": 400,
-          "lineHeight": 1.65,
+          "lineHeight": "165%",
           "letterSpacing": "0"
         },
         "$type": "typography",
@@ -499,7 +499,7 @@
           "fontFamily": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 300,
-          "lineHeight": 1.65,
+          "lineHeight": "165%",
           "letterSpacing": "0"
         },
         "$type": "typography",
