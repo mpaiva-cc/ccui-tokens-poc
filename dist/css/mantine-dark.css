@@ -1,7 +1,7 @@
 /**
  * CCUI Design Tokens - mantine-dark
  * Vanilla Mantine dark theme
- * Generated: 2026-02-06T17:40:53.926Z
+ * Generated: 2026-02-06T17:41:54.267Z
  *
  * Usage:
  *   1. Load primitives.css first
@@ -230,7 +230,7 @@
   --boxShadow-footer: 0 -0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
   --boxShadow-none: none;
   --fontFamilies-body: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --fontFamilies-heading: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --fontFamilies-heading: LobsterTwo, Helvetica Neue, Helvetica, Arial, sans-serif;
   --fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --opacity-0: 0;
   --opacity-5: 0.05;
@@ -705,7 +705,7 @@
   --ccui-boxShadow-footer: 0 -0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
   --ccui-boxShadow-none: none;
   --ccui-fontFamilies-body: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --ccui-fontFamilies-heading: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --ccui-fontFamilies-heading: LobsterTwo, Helvetica Neue, Helvetica, Arial, sans-serif;
   --ccui-fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --ccui-opacity-0: 0;
   --ccui-opacity-5: 0.05;
