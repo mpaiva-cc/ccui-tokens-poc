@@ -9,7 +9,7 @@
                 "$type": "typography",
                 "$description": "Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text.",
                 "$value": {
-                    "fontFamily": "{fontFamilies.sans}",
+                    "fontFamily": "{fontFamilies.body}",
                     "fontSize": "{fontSizes.sm}",
                     "fontWeight": "{fontWeights.regular}",
                     "lineHeight": "{lineHeights.md}",
@@ -20,7 +20,7 @@
                 "$type": "typography",
                 "$description": "Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content.",
                 "$value": {
-                    "fontFamily": "{fontFamilies.sans}",
+                    "fontFamily": "{fontFamilies.body}",
                     "fontSize": "{fontSizes.md}",
                     "fontWeight": "{fontWeights.regular}",
                     "lineHeight": "{lineHeights.md}",
@@ -31,7 +31,7 @@
                 "$type": "typography",
                 "$description": "Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions.",
                 "$value": {
-                    "fontFamily": "{fontFamilies.sans}",
+                    "fontFamily": "{fontFamilies.body}",
                     "fontSize": "{fontSizes.lg}",
                     "fontWeight": "{fontWeights.regular}",
                     "lineHeight": "{lineHeights.md}",
@@ -42,7 +42,7 @@
                 "$type": "typography",
                 "$description": "Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy.",
                 "$value": {
-                    "fontFamily": "{fontFamilies.sans}",
+                    "fontFamily": "{fontFamilies.body}",
                     "fontSize": "{fontSizes.xl}",
                     "fontWeight": "{fontWeights.regular}",
                     "lineHeight": "{lineHeights.md}",
@@ -153,7 +153,7 @@
                 "$type": "typography",
                 "$description": "Small label (12px medium). Use for: compact form labels, helper text labels, dense UI.",
                 "$value": {
-                    "fontFamily": "{fontFamilies.sans}",
+                    "fontFamily": "{fontFamilies.body}",
                     "fontSize": "{fontSizes.xs}",
                     "fontWeight": "{fontWeights.medium}",
                     "lineHeight": "{lineHeights.sm}",
@@ -164,7 +164,7 @@
                 "$type": "typography",
                 "$description": "Medium label (14px medium). DEFAULT for form labels, field labels, control labels.",
                 "$value": {
-                    "fontFamily": "{fontFamilies.sans}",
+                    "fontFamily": "{fontFamilies.body}",
                     "fontSize": "{fontSizes.sm}",
                     "fontWeight": "{fontWeights.medium}",
                     "lineHeight": "{lineHeights.sm}",
@@ -175,7 +175,7 @@
                 "$type": "typography",
                 "$description": "Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields.",
                 "$value": {
-                    "fontFamily": "{fontFamilies.sans}",
+                    "fontFamily": "{fontFamilies.body}",
                     "fontSize": "{fontSizes.md}",
                     "fontWeight": "{fontWeights.medium}",
                     "lineHeight": "{lineHeights.sm}",
@@ -188,7 +188,7 @@
             "$type": "typography",
             "$description": "Button text (14px semibold). Use for: all button variants, CTAs, action triggers.",
             "$value": {
-                "fontFamily": "{fontFamilies.sans}",
+                "fontFamily": "{fontFamilies.body}",
                 "fontSize": "{fontSizes.sm}",
                 "fontWeight": "{fontWeights.semibold}",
                 "lineHeight": "{lineHeights.xs}",
@@ -200,7 +200,7 @@
             "$type": "typography",
             "$description": "Input text (16px regular). Use for: form input values, textarea content, select values.",
             "$value": {
-                "fontFamily": "{fontFamilies.sans}",
+                "fontFamily": "{fontFamilies.body}",
                 "fontSize": "{fontSizes.md}",
                 "fontWeight": "{fontWeights.regular}",
                 "lineHeight": "{lineHeights.md}",
@@ -212,7 +212,7 @@
             "$type": "typography",
             "$description": "Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata.",
             "$value": {
-                "fontFamily": "{fontFamilies.sans}",
+                "fontFamily": "{fontFamilies.body}",
                 "fontSize": "{fontSizes.xs}",
                 "fontWeight": "{fontWeights.regular}",
                 "lineHeight": "{lineHeights.md}",
@@ -224,7 +224,7 @@
             "$type": "typography",
             "$description": "Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Often used with text-transform: uppercase.",
             "$value": {
-                "fontFamily": "{fontFamilies.sans}",
+                "fontFamily": "{fontFamilies.body}",
                 "fontSize": "{fontSizes.xs}",
                 "fontWeight": "{fontWeights.medium}",
                 "lineHeight": "{lineHeights.sm}",
@@ -248,7 +248,7 @@
             "$type": "typography",
             "$description": "Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes.",
             "$value": {
-                "fontFamily": "{fontFamilies.sans}",
+                "fontFamily": "{fontFamilies.body}",
                 "fontSize": "{fontSizes.lg}",
                 "fontWeight": "{fontWeights.regular}",
                 "lineHeight": "{lineHeights.lg}",

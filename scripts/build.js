@@ -197,7 +197,7 @@ function isMantineOfficialToken(token) {
 
     // Flat typography categories
     if (path[0] === 'fontFamilies') {
-        return path.length === 2 && ['sans', 'mono', 'heading'].includes(path[1]);
+        return path.length === 2 && ['body', 'mono', 'heading'].includes(path[1]);
     }
 
     if (path[0] === 'fontSizes') {
@@ -311,7 +311,7 @@ StyleDictionary.registerTransform({
 
         // Flat typography categories
         if (path[0] === 'fontFamilies') {
-            if (path[1] === 'sans') return 'mantine-font-family';
+            if (path[1] === 'body') return 'mantine-font-family';
             if (path[1] === 'mono') return 'mantine-font-family-monospace';
             if (path[1] === 'heading') return 'mantine-font-family-headings';
             return `mantine-font-family-${path[1]}`;

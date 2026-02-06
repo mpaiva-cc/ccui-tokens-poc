@@ -2,9 +2,9 @@
     "$description": "Core font family primitives defining the typographic voice of the design system. Font stacks include fallbacks for system fonts to ensure consistent rendering across platforms. Public Sans is the primary UI font, Atkinson Hyperlegible Next is used for display/headings for improved accessibility.",
     "fontFamilies": {
         "$type": "fontFamilies",
-        "sans": {
+        "body": {
             "$value": "'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-            "$description": "Primary sans-serif font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support."
+            "$description": "Primary body font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support."
         },
         "heading": {
             "$value": "'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",

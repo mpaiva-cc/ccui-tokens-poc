@@ -1,6 +1,6 @@
 /**
  * CCUI Design Tokens - Shared Primitives
- * Generated: 2026-02-06T00:34:50.076Z
+ * Generated: 2026-02-06T00:43:52.786Z
  *
  * This file contains theme-agnostic tokens (spacing, typography, radius, etc.)
  * Load this file first, then load ONE theme file.
@@ -395,7 +395,7 @@
   --fontSmoothing-moz: grayscale;
   --heading-fontWeight: 700;
   --heading-textWrap: wrap;
-  --fontFamilies-sans: 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --fontFamilies-body: 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --fontFamilies-heading: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --fontSizes-xs: 0.75rem;
@@ -809,7 +809,7 @@
   --ccui-fontSmoothing-moz: grayscale;
   --ccui-heading-fontWeight: 700;
   --ccui-heading-textWrap: wrap;
-  --ccui-fontFamilies-sans: 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --ccui-fontFamilies-body: 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --ccui-fontFamilies-heading: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --ccui-fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --ccui-fontSizes-xs: 0.75rem;
