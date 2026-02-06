@@ -490,6 +490,23 @@
       "$description": "No shadow - flat appearance. Use for: flat design elements, removing inherited shadows, elements that should appear flush with background, focus states that use outline instead. CSS keyword. Common in: flat buttons, inline elements, focus states using outline."
     }
   },
+  "fontFamilies": {
+    "body": {
+      "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
+      "$type": "fontFamilies",
+      "$description": "Body font stack for CCUI 3.0 theme. Public Sans is a neutral, open-source typeface optimized for UI and web."
+    },
+    "heading": {
+      "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
+      "$type": "fontFamilies",
+      "$description": "Heading font stack for CCUI 3.0 theme. Atkinson Hyperlegible Next is designed for maximum legibility, especially for users with low vision."
+    },
+    "mono": {
+      "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+      "$type": "fontFamilies",
+      "$description": "Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment."
+    }
+  },
   "opacity": {
     "0": {
       "$value": 0,
