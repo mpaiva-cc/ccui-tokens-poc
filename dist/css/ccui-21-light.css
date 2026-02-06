@@ -1,7 +1,7 @@
 /**
  * CCUI Design Tokens - ccui-21-light
  * CCUI 2.1 brand theme
- * Generated: 2026-02-06T14:34:25.717Z
+ * Generated: 2026-02-06T14:52:30.336Z
  *
  * Usage:
  *   1. Load primitives.css first
@@ -229,6 +229,9 @@
   --boxShadow-inset: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
   --boxShadow-footer: 0 -0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
   --boxShadow-none: none;
+  --fontFamilies-body: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --fontFamilies-heading: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --opacity-0: 0;
   --opacity-5: 0.05;
   --opacity-10: 0.1;
@@ -701,6 +704,9 @@
   --ccui-boxShadow-inset: inset 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
   --ccui-boxShadow-footer: 0 -0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05), 0 -0.625rem 0.9375rem -0.3125rem rgba(0, 0, 0, 0.04), 0 -0.4375rem 0.4375rem -0.3125rem rgba(0, 0, 0, 0.04);
   --ccui-boxShadow-none: none;
+  --ccui-fontFamilies-body: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --ccui-fontFamilies-heading: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --ccui-fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --ccui-opacity-0: 0;
   --ccui-opacity-5: 0.05;
   --ccui-opacity-10: 0.1;
@@ -1144,6 +1150,9 @@
   --mantine-shadow-md: var(--ccui-boxShadow-md);
   --mantine-shadow-lg: var(--ccui-boxShadow-lg);
   --mantine-shadow-xl: var(--ccui-boxShadow-xl);
+  --mantine-font-family: var(--ccui-fontFamilies-body);
+  --mantine-font-family-headings: var(--ccui-fontFamilies-heading);
+  --mantine-font-family-monospace: var(--ccui-fontFamilies-mono);
   --mantine-scale: var(--ccui-mantine-scale);
   --mantine-cursor-type: var(--ccui-mantine-cursorType);
   --mantine-webkit-font-smoothing: var(--ccui-mantine-webkitFontSmoothing);

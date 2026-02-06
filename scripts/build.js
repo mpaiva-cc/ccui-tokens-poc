@@ -43,8 +43,7 @@ const SHARED_PRIMITIVE_CATEGORIES = [
     'gridSpacing',
     'verticalRhythm',
     'radius',
-    // Typography flat categories
-    'fontFamilies',
+    // Typography flat categories (fontFamilies moved to theme-specific)
     'fontSizes',
     'fontWeights',
     'lineHeights',
@@ -78,6 +77,7 @@ const THEME_SPECIFIC_CATEGORIES = [
     'colorPalette',
     'boxShadow',
     'opacity',
+    'fontFamilies',  // Font families vary per theme
     'typography',
     'mantine',
     'brand',

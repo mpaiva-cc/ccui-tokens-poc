@@ -1,6 +1,6 @@
 /**
  * CCUI Design Tokens - Shared Primitives
- * Generated: 2026-02-06T14:34:25.716Z
+ * Generated: 2026-02-06T14:52:30.335Z
  *
  * This file contains theme-agnostic tokens (spacing, typography, radius, etc.)
  * Load this file first, then load ONE theme file.
@@ -395,9 +395,6 @@
   --fontSmoothing-moz: grayscale;
   --heading-fontWeight: 700;
   --heading-textWrap: wrap;
-  --fontFamilies-body: Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --fontFamilies-heading: Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --fontSizes-xs: 0.75rem;
   --fontSizes-sm: 0.875rem;
   --fontSizes-md: 1rem;
@@ -809,9 +806,6 @@
   --ccui-fontSmoothing-moz: grayscale;
   --ccui-heading-fontWeight: 700;
   --ccui-heading-textWrap: wrap;
-  --ccui-fontFamilies-body: Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --ccui-fontFamilies-heading: Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --ccui-fontFamilies-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --ccui-fontSizes-xs: 0.75rem;
   --ccui-fontSizes-sm: 0.875rem;
   --ccui-fontSizes-md: 1rem;
@@ -865,9 +859,6 @@
   --mantine-spacing-md: var(--ccui-spacing-md);
   --mantine-spacing-lg: var(--ccui-spacing-lg);
   --mantine-spacing-xl: var(--ccui-spacing-xl);
-  --mantine-font-family: var(--ccui-fontFamilies-body);
-  --mantine-font-family-headings: var(--ccui-fontFamilies-heading);
-  --mantine-font-family-monospace: var(--ccui-fontFamilies-mono);
   --mantine-font-size-xs: var(--ccui-fontSizes-xs);
   --mantine-font-size-sm: var(--ccui-fontSizes-sm);
   --mantine-font-size-md: var(--ccui-fontSizes-md);
