@@ -377,7 +377,7 @@ function generateTokensStudioThemes() {
     const semanticThemes = Object.entries(THEME_CONFIG).map(([themeName, config]) => ({
         id: `semantic-${themeName}`,
         name: config.description,
-        group: "Semantic",
+        group: "Themes",
         selectedTokenSets: {
             ...toStatus(allPrimitiveSets, "source"),
             ...toStatus(allSemanticSetNames, "disabled"),
