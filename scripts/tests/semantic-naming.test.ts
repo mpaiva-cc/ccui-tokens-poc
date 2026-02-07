@@ -4,35 +4,21 @@ import path from 'path';
 
 const distFolder = 'dist/tokens-studio';
 
-// Legacy Mantine-compatible patterns (kept for backward compatibility)
-const LEGACY_SEMANTIC_PATTERNS = [
-    /^color\.text$/,
-    /^color\.body$/,
-    /^color\.bright$/,
-    /^color\.error$/,
-    /^color\.placeholder$/,
-    /^color\.anchor$/,
-    /^color\.default$/,
-    /^color\.default-hover$/,
-    /^color\.default-color$/,
-    /^color\.default-border$/,
-    /^color\.dimmed$/,
-    /^color\.disabled$/,
-    /^color\.disabled-color$/,
-    /^color\.disabled-border$/,
-    /^color\.primary\.(filled|light|contrast|filled-hover|light-hover|light-color)$/,
-];
+// Legacy semantic patterns - no longer used (legacy tokens have been removed)
+const LEGACY_SEMANTIC_PATTERNS: RegExp[] = [];
 
-// Spec-compliant semantic patterns (category.concept.property.variant.state)
+// Spec-compliant semantic patterns (new naming convention)
 const SPEC_COMPLIANT_PATTERNS = [
-    /^color\.content\.text\.\w+$/,           // color.content.text.default
-    /^color\.surface\.bg\.\w+$/,             // color.surface.bg.canvas
-    /^color\.surface\.border\.\w+$/,         // color.surface.border.default
-    /^color\.action\.bg\.\w+(-\w+)?$/,       // color.action.bg.primary-hover
-    /^color\.action\.text\.\w+(-\w+)?$/,     // color.action.text.primary-light
-    /^color\.feedback\.text\.\w+$/,          // color.feedback.text.error
-    /^color\.feedback\.bg\.\w+$/,            // color.feedback.bg.error
-    /^color\.feedback\.border\.\w+$/,        // color.feedback.border.error
+    /^color\.text\.\w+(-\w+)?$/,              // color.text.default, color.text.on-default
+    /^color\.bg\.\w+\.\w+(-\w+)?$/,           // color.bg.surface.default, color.bg.interactive.disabled
+    /^color\.border\.\w+\.\w+(-\w+)?$/,       // color.border.surface.default, color.border.interactive.focus
+    /^color\.action\.bg\.\w+(-\w+)*$/,         // color.action.bg.primary-hover, primary-light-hover
+    /^color\.action\.text\.\w+(-\w+)?$/,      // color.action.text.primary-light
+    /^color\.action\.border\.\w+(-\w+)?$/,    // color.action.border.primary
+    /^color\.feedback\.\w+\.\w+$/,            // color.feedback.text.error, color.feedback.bg.error
+    /^color\.overlay\.\w+$/,                  // color.overlay.default
+    /^color\.focus\.\w+$/,                    // color.focus.ring
+    /^color\.primary\.(filled|light|contrast|filled-hover|light-hover|light-color)$/,  // color.primary.* variants
 ];
 
 // Patterns to skip (primitive colors, scales, etc.)
@@ -40,7 +26,6 @@ const SKIP_PATTERNS = [
     /^color\.(white|black|transparent)$/,
     /^color\.(dark|gray|red|pink|grape|violet|indigo|blue|cyan|teal|green|lime|yellow|orange)\.\d+$/,
     /^color\.primary\.\d+$/,
-    /^color\.overlay\./,
     /^color\.alpha\./,
     /^colorPalette\./,
 ];
@@ -118,24 +103,24 @@ describe('Semantic Token Naming Validation', () => {
                     console.log(`${theme}: ${compliant.length} compliant, ${legacy.length} legacy semantic tokens`);
                 });
 
-                it('should have content.text semantic tokens', () => {
+                it('should have text semantic tokens', () => {
                     const content = JSON.parse(fs.readFileSync(semanticFilePath, 'utf8'));
                     const tokenPaths = extractTokenPaths(content);
 
-                    const contentTextTokens = tokenPaths.filter(p => p.startsWith('color.content.text.'));
-                    expect(contentTextTokens.length).toBeGreaterThan(0);
-                    expect(contentTextTokens).toContain('color.content.text.default');
-                    expect(contentTextTokens).toContain('color.content.text.muted');
+                    const textTokens = tokenPaths.filter(p => p.startsWith('color.text.'));
+                    expect(textTokens.length).toBeGreaterThan(0);
+                    expect(textTokens).toContain('color.text.default');
+                    expect(textTokens).toContain('color.text.secondary');
                 });
 
-                it('should have surface semantic tokens', () => {
+                it('should have background semantic tokens', () => {
                     const content = JSON.parse(fs.readFileSync(semanticFilePath, 'utf8'));
                     const tokenPaths = extractTokenPaths(content);
 
-                    const surfaceTokens = tokenPaths.filter(p => p.startsWith('color.surface.'));
-                    expect(surfaceTokens.length).toBeGreaterThan(0);
-                    expect(surfaceTokens).toContain('color.surface.bg.canvas');
-                    expect(surfaceTokens).toContain('color.surface.bg.default');
+                    const bgTokens = tokenPaths.filter(p => p.startsWith('color.bg.'));
+                    expect(bgTokens.length).toBeGreaterThan(0);
+                    expect(bgTokens).toContain('color.bg.surface.canvas');
+                    expect(bgTokens).toContain('color.bg.surface.default');
                 });
 
                 it('should have action semantic tokens', () => {

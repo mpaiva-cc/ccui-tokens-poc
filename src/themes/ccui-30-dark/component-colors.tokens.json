@@ -79,22 +79,22 @@
         "default": {
             "$description": "Default button variant colors",
             "background-color": {
-                "$value": "{color.default}",
+                "$value": "{color.bg.surface.default}",
                 "$type": "color",
                 "$description": "Default button background color."
             },
             "text-color": {
-                "$value": "{color.default-color}",
+                "$value": "{color.text.on-default}",
                 "$type": "color",
                 "$description": "Default button text color."
             },
             "border-color": {
-                "$value": "{color.default-border}",
+                "$value": "{color.border.surface.default}",
                 "$type": "color",
                 "$description": "Default button border color."
             },
             "hover-background-color": {
-                "$value": "{color.default-hover}",
+                "$value": "{color.bg.surface.elevated}",
                 "$type": "color",
                 "$description": "Default button hover background color."
             }
@@ -102,17 +102,17 @@
         "disabled": {
             "$description": "Disabled button state colors",
             "background-color": {
-                "$value": "{color.disabled}",
+                "$value": "{color.bg.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled button background color."
             },
             "text-color": {
-                "$value": "{color.disabled-color}",
+                "$value": "{color.text.disabled}",
                 "$type": "color",
                 "$description": "Disabled button text color."
             },
             "border-color": {
-                "$value": "{color.disabled-border}",
+                "$value": "{color.border.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled button border color."
             }
@@ -123,22 +123,22 @@
         "default": {
             "$description": "Default input state colors",
             "background-color": {
-                "$value": "{color.default}",
+                "$value": "{color.bg.surface.default}",
                 "$type": "color",
                 "$description": "Default input background color."
             },
             "text-color": {
-                "$value": "{color.text}",
+                "$value": "{color.text.default}",
                 "$type": "color",
                 "$description": "Input text color."
             },
             "border-color": {
-                "$value": "{color.default-border}",
+                "$value": "{color.border.surface.default}",
                 "$type": "color",
                 "$description": "Default input border color."
             },
             "placeholder-color": {
-                "$value": "{color.placeholder}",
+                "$value": "{color.text.placeholder}",
                 "$type": "color",
                 "$description": "Input placeholder text color."
             }
@@ -159,12 +159,12 @@
         "error": {
             "$description": "Error state input colors",
             "border-color": {
-                "$value": "{color.error}",
+                "$value": "{color.feedback.text.error}",
                 "$type": "color",
                 "$description": "Error state input border color."
             },
             "text-color": {
-                "$value": "{color.error}",
+                "$value": "{color.feedback.text.error}",
                 "$type": "color",
                 "$description": "Error message text color."
             }
@@ -172,17 +172,17 @@
         "disabled": {
             "$description": "Disabled input state colors",
             "background-color": {
-                "$value": "{color.disabled}",
+                "$value": "{color.bg.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled input background color."
             },
             "text-color": {
-                "$value": "{color.disabled-color}",
+                "$value": "{color.text.disabled}",
                 "$type": "color",
                 "$description": "Disabled input text color."
             },
             "border-color": {
-                "$value": "{color.disabled-border}",
+                "$value": "{color.border.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled input border color."
             }
@@ -191,12 +191,12 @@
     "card": {
         "$description": "Card component color tokens",
         "background-color": {
-            "$value": "{color.default}",
+            "$value": "{color.bg.surface.default}",
             "$type": "color",
             "$description": "Card background color."
         },
         "border-color": {
-            "$value": "{color.default-border}",
+            "$value": "{color.border.surface.default}",
             "$type": "color",
             "$description": "Card border color."
         }
@@ -319,7 +319,7 @@
             "$description": "Table header background color."
         },
         "border-color": {
-            "$value": "{color.default-border}",
+            "$value": "{color.border.surface.default}",
             "$type": "color",
             "$description": "Table border color."
         },
@@ -329,7 +329,7 @@
             "$description": "Alternating row background color."
         },
         "hover-background-color": {
-            "$value": "{color.default-hover}",
+            "$value": "{color.bg.surface.elevated}",
             "$type": "color",
             "$description": "Row hover background color."
         },
@@ -343,12 +343,12 @@
         "$description": "Tabs component color tokens",
         "default": {
             "text-color": {
-                "$value": "{color.dimmed}",
+                "$value": "{color.text.secondary}",
                 "$type": "color",
                 "$description": "Inactive tab text color."
             },
             "hover-text-color": {
-                "$value": "{color.text}",
+                "$value": "{color.text.default}",
                 "$type": "color",
                 "$description": "Tab hover text color."
             }
@@ -366,7 +366,7 @@
             }
         },
         "border-color": {
-            "$value": "{color.default-border}",
+            "$value": "{color.border.surface.default}",
             "$type": "color",
             "$description": "Tab list border color."
         }
@@ -375,12 +375,12 @@
         "$description": "Checkbox component color tokens",
         "unchecked": {
             "border-color": {
-                "$value": "{color.default-border}",
+                "$value": "{color.border.surface.default}",
                 "$type": "color",
                 "$description": "Unchecked checkbox border color."
             },
             "background-color": {
-                "$value": "{color.default}",
+                "$value": "{color.bg.surface.default}",
                 "$type": "color",
                 "$description": "Unchecked checkbox background color."
             }
@@ -404,12 +404,12 @@
         },
         "disabled": {
             "border-color": {
-                "$value": "{color.disabled-border}",
+                "$value": "{color.border.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled checkbox border color."
             },
             "background-color": {
-                "$value": "{color.disabled}",
+                "$value": "{color.bg.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled checkbox background color."
             }
@@ -443,7 +443,7 @@
         },
         "disabled": {
             "track-color": {
-                "$value": "{color.disabled}",
+                "$value": "{color.bg.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled switch track color."
             },
@@ -457,17 +457,17 @@
     "select": {
         "$description": "Select component color tokens",
         "background-color": {
-            "$value": "{color.default}",
+            "$value": "{color.bg.surface.default}",
             "$type": "color",
             "$description": "Select input background color."
         },
         "border-color": {
-            "$value": "{color.default-border}",
+            "$value": "{color.border.surface.default}",
             "$type": "color",
             "$description": "Select input border color."
         },
         "text-color": {
-            "$value": "{color.text}",
+            "$value": "{color.text.default}",
             "$type": "color",
             "$description": "Select input text color."
         },
@@ -478,14 +478,14 @@
                 "$description": "Dropdown menu background color."
             },
             "border-color": {
-                "$value": "{color.default-border}",
+                "$value": "{color.border.surface.default}",
                 "$type": "color",
                 "$description": "Dropdown menu border color."
             }
         },
         "option": {
             "hover-background-color": {
-                "$value": "{color.default-hover}",
+                "$value": "{color.bg.surface.elevated}",
                 "$type": "color",
                 "$description": "Option hover background color."
             },
@@ -509,17 +509,17 @@
             "$description": "Modal background color."
         },
         "overlay-color": {
-            "$value": "{color.overlay.dark}",
+            "$value": "{color.overlay.default}",
             "$type": "color",
             "$description": "Modal overlay/backdrop color. Darker for dark theme."
         },
         "header-border-color": {
-            "$value": "{color.default-border}",
+            "$value": "{color.border.surface.default}",
             "$type": "color",
             "$description": "Modal header bottom border color."
         },
         "footer-border-color": {
-            "$value": "{color.default-border}",
+            "$value": "{color.border.surface.default}",
             "$type": "color",
             "$description": "Modal footer top border color."
         }

@@ -10,6 +10,11 @@
         "$value": "rgba(0, 0, 0, 0.75)",
         "$type": "color",
         "$description": "Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
+      },
+      "default": {
+        "$value": "{color.overlay.light}",
+        "$type": "color",
+        "$description": "Default overlay/backdrop color."
       }
     },
     "alpha": {
@@ -40,74 +45,298 @@
       }
     },
     "text": {
-      "$value": "{color.black}",
-      "$type": "color",
-      "$description": "Primary text color (Mantine-compatible). Prefer: color.content.text.default"
+      "default": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "Primary text color. Use for: headings, body text, labels."
+      },
+      "secondary": {
+        "$value": "{color.gray.6}",
+        "$type": "color",
+        "$description": "Secondary/muted text. Use for: helper text, captions, descriptions."
+      },
+      "placeholder": {
+        "$value": "{color.gray.6}",
+        "$type": "color",
+        "$description": "Placeholder text in form inputs."
+      },
+      "disabled": {
+        "$value": "{color.gray.5}",
+        "$type": "color",
+        "$description": "Text color for disabled elements."
+      },
+      "inverse": {
+        "$value": "{color.white}",
+        "$type": "color",
+        "$description": "Inverse text for dark backgrounds."
+      },
+      "link": {
+        "$value": "{color.blue.6}",
+        "$type": "color",
+        "$description": "Link/anchor text color."
+      },
+      "bright": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "Maximum contrast text."
+      },
+      "on-default": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "Text on default component backgrounds."
+      },
+      "error": {
+        "$value": "{color.red.7}",
+        "$type": "color",
+        "$description": "Error text color."
+      },
+      "success": {
+        "$value": "{color.green.7}",
+        "$type": "color",
+        "$description": "Success text color."
+      },
+      "warning": {
+        "$value": "{color.yellow.8}",
+        "$type": "color",
+        "$description": "Warning text color."
+      },
+      "info": {
+        "$value": "{color.blue.7}",
+        "$type": "color",
+        "$description": "Informational text color."
+      }
     },
-    "body": {
-      "$value": "{color.white}",
-      "$type": "color",
-      "$description": "Body background color (Mantine-compatible). Prefer: color.surface.bg.canvas"
+    "bg": {
+      "surface": {
+        "default": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "Default component background."
+        },
+        "canvas": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "Page canvas/body background."
+        },
+        "elevated": {
+          "$value": "{color.gray.0}",
+          "$type": "color",
+          "$description": "Elevated surface background (hover states, raised panels)."
+        },
+        "muted": {
+          "$value": "{color.gray.1}",
+          "$type": "color",
+          "$description": "Muted/subdued surface background."
+        }
+      },
+      "interactive": {
+        "disabled": {
+          "$value": "{color.gray.2}",
+          "$type": "color",
+          "$description": "Disabled element background."
+        },
+        "selected": {
+          "$value": "{color.blue.0}",
+          "$type": "color",
+          "$description": "Selected element background."
+        }
+      }
     },
-    "bright": {
-      "$value": "{color.black}",
-      "$type": "color",
-      "$description": "Bright text color for maximum contrast."
+    "border": {
+      "surface": {
+        "default": {
+          "$value": "{color.gray.4}",
+          "$type": "color",
+          "$description": "Default border color."
+        },
+        "subtle": {
+          "$value": "{color.gray.3}",
+          "$type": "color",
+          "$description": "Subtle/light border color."
+        },
+        "strong": {
+          "$value": "{color.gray.6}",
+          "$type": "color",
+          "$description": "Strong/emphasized border color."
+        }
+      },
+      "interactive": {
+        "disabled": {
+          "$value": "{color.gray.3}",
+          "$type": "color",
+          "$description": "Disabled border color."
+        },
+        "hover": {
+          "$value": "{color.gray.5}",
+          "$type": "color",
+          "$description": "Hover state border color."
+        },
+        "selected": {
+          "$value": "{color.blue.5}",
+          "$type": "color",
+          "$description": "Selected state border color."
+        },
+        "focus": {
+          "$value": "{color.blue.5}",
+          "$type": "color",
+          "$description": "Focus state border color."
+        }
+      }
     },
-    "error": {
-      "$value": "{color.red.7}",
-      "$type": "color",
-      "$description": "Error color (Mantine-compatible). Prefer: color.feedback.text.error"
+    "action": {
+      "bg": {
+        "primary": {
+          "$value": "{colorPalette.blue.filled}",
+          "$type": "color",
+          "$description": "Primary action background."
+        },
+        "primary-hover": {
+          "$value": "{colorPalette.blue.filled-hover}",
+          "$type": "color",
+          "$description": "Primary action hover state."
+        },
+        "primary-active": {
+          "$value": "{color.blue.8}",
+          "$type": "color",
+          "$description": "Primary action active/pressed state."
+        },
+        "primary-disabled": {
+          "$value": "{color.bg.interactive.disabled}",
+          "$type": "color",
+          "$description": "Primary action disabled state."
+        },
+        "primary-light": {
+          "$value": "{colorPalette.blue.light}",
+          "$type": "color",
+          "$description": "Primary light variant background."
+        },
+        "primary-light-hover": {
+          "$value": "{colorPalette.blue.light-hover}",
+          "$type": "color",
+          "$description": "Primary light variant hover."
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "Text on primary action backgrounds."
+        },
+        "primary-light": {
+          "$value": "{colorPalette.blue.light-color}",
+          "$type": "color",
+          "$description": "Text on primary light backgrounds."
+        }
+      },
+      "border": {
+        "primary": {
+          "$value": "{colorPalette.blue.filled}",
+          "$type": "color",
+          "$description": "Primary action border color."
+        },
+        "primary-hover": {
+          "$value": "{colorPalette.blue.filled-hover}",
+          "$type": "color",
+          "$description": "Primary action hover border color."
+        }
+      }
     },
-    "placeholder": {
-      "$value": "{color.gray.6}",
-      "$type": "color",
-      "$description": "Placeholder text color."
+    "feedback": {
+      "bg": {
+        "error": {
+          "$value": "{color.red.0}",
+          "$type": "color",
+          "$description": "Error feedback background."
+        },
+        "success": {
+          "$value": "{color.green.0}",
+          "$type": "color",
+          "$description": "Success feedback background."
+        },
+        "warning": {
+          "$value": "{color.yellow.0}",
+          "$type": "color",
+          "$description": "Warning feedback background."
+        },
+        "info": {
+          "$value": "{color.blue.0}",
+          "$type": "color",
+          "$description": "Info feedback background."
+        }
+      },
+      "text": {
+        "error": {
+          "$value": "{color.red.7}",
+          "$type": "color",
+          "$description": "Error feedback text."
+        },
+        "success": {
+          "$value": "{color.green.7}",
+          "$type": "color",
+          "$description": "Success feedback text."
+        },
+        "warning": {
+          "$value": "{color.yellow.8}",
+          "$type": "color",
+          "$description": "Warning feedback text."
+        },
+        "info": {
+          "$value": "{color.blue.7}",
+          "$type": "color",
+          "$description": "Info feedback text."
+        }
+      },
+      "border": {
+        "error": {
+          "$value": "{color.red.5}",
+          "$type": "color",
+          "$description": "Error feedback border."
+        },
+        "success": {
+          "$value": "{color.green.5}",
+          "$type": "color",
+          "$description": "Success feedback border."
+        },
+        "warning": {
+          "$value": "{color.yellow.5}",
+          "$type": "color",
+          "$description": "Warning feedback border."
+        },
+        "info": {
+          "$value": "{color.blue.5}",
+          "$type": "color",
+          "$description": "Info feedback border."
+        }
+      },
+      "icon": {
+        "error": {
+          "$value": "{color.red.6}",
+          "$type": "color",
+          "$description": "Error feedback icon."
+        },
+        "success": {
+          "$value": "{color.green.6}",
+          "$type": "color",
+          "$description": "Success feedback icon."
+        },
+        "warning": {
+          "$value": "{color.yellow.6}",
+          "$type": "color",
+          "$description": "Warning feedback icon."
+        },
+        "info": {
+          "$value": "{color.blue.6}",
+          "$type": "color",
+          "$description": "Info feedback icon."
+        }
+      }
     },
-    "anchor": {
-      "$value": "{color.blue.6}",
-      "$type": "color",
-      "$description": "Anchor/link color (Mantine-compatible). Prefer: color.content.text.link"
-    },
-    "default": {
-      "$value": "{color.white}",
-      "$type": "color",
-      "$description": "Default component background (Mantine-compatible). Prefer: color.surface.bg.default"
-    },
-    "default-hover": {
-      "$value": "{color.gray.0}",
-      "$type": "color",
-      "$description": "Default hover background (Mantine-compatible). Prefer: color.surface.bg.subtle"
-    },
-    "default-color": {
-      "$value": "{color.black}",
-      "$type": "color",
-      "$description": "Text on default backgrounds."
-    },
-    "default-border": {
-      "$value": "{color.gray.4}",
-      "$type": "color",
-      "$description": "Default border color (Mantine-compatible). Prefer: color.surface.border.default"
-    },
-    "dimmed": {
-      "$value": "{color.gray.6}",
-      "$type": "color",
-      "$description": "Dimmed/muted text (Mantine-compatible). Prefer: color.content.text.muted"
-    },
-    "disabled": {
-      "$value": "{color.gray.2}",
-      "$type": "color",
-      "$description": "Disabled background (Mantine-compatible). Prefer: color.surface.bg.disabled"
-    },
-    "disabled-color": {
-      "$value": "{color.gray.5}",
-      "$type": "color",
-      "$description": "Disabled text color."
-    },
-    "disabled-border": {
-      "$value": "{color.gray.3}",
-      "$type": "color",
-      "$description": "Disabled border color."
+    "focus": {
+      "ring": {
+        "$value": "{color.blue.5}",
+        "$type": "color",
+        "$description": "Focus ring color."
+      }
     },
     "primary": {
       "0": {
@@ -153,17 +382,17 @@
       "filled": {
         "$value": "{colorPalette.blue.filled}",
         "$type": "color",
-        "$description": "Primary filled background. Prefer: color.action.bg.primary"
+        "$description": "Primary filled background."
       },
       "filled-hover": {
         "$value": "{colorPalette.blue.filled-hover}",
         "$type": "color",
-        "$description": "Primary filled hover. Prefer: color.action.bg.primary-hover"
+        "$description": "Primary filled hover."
       },
       "light": {
         "$value": "{colorPalette.blue.light}",
         "$type": "color",
-        "$description": "Primary light background. Prefer: color.action.bg.primary-light"
+        "$description": "Primary light background."
       },
       "light-hover": {
         "$value": "{colorPalette.blue.light-hover}",
@@ -173,127 +402,12 @@
       "light-color": {
         "$value": "{colorPalette.blue.light-color}",
         "$type": "color",
-        "$description": "Text on primary light. Prefer: color.action.text.primary-light"
+        "$description": "Text on primary light."
       },
       "contrast": {
         "$value": "{color.white}",
         "$type": "color",
-        "$description": "Text on primary filled. Prefer: color.action.text.primary"
-      }
-    },
-    "content": {
-      "text": {
-        "default": {
-          "$value": "{color.text}",
-          "$type": "color",
-          "$description": "Primary text color. Use for: headings, body text, labels."
-        },
-        "muted": {
-          "$value": "{color.dimmed}",
-          "$type": "color",
-          "$description": "Secondary/muted text. Use for: helper text, captions."
-        },
-        "placeholder": {
-          "$value": "{color.placeholder}",
-          "$type": "color",
-          "$description": "Placeholder text color."
-        },
-        "disabled": {
-          "$value": "{color.disabled-color}",
-          "$type": "color",
-          "$description": "Disabled text color."
-        },
-        "inverse": {
-          "$value": "{color.white}",
-          "$type": "color",
-          "$description": "Inverse text for dark backgrounds."
-        },
-        "link": {
-          "$value": "{color.anchor}",
-          "$type": "color",
-          "$description": "Link/anchor text color."
-        }
-      }
-    },
-    "surface": {
-      "bg": {
-        "canvas": {
-          "$value": "{color.body}",
-          "$type": "color",
-          "$description": "Page canvas/body background."
-        },
-        "default": {
-          "$value": "{color.default}",
-          "$type": "color",
-          "$description": "Default component background."
-        },
-        "subtle": {
-          "$value": "{color.default-hover}",
-          "$type": "color",
-          "$description": "Subtle background for hover states."
-        },
-        "disabled": {
-          "$value": "{color.disabled}",
-          "$type": "color",
-          "$description": "Disabled element background."
-        }
-      },
-      "border": {
-        "default": {
-          "$value": "{color.default-border}",
-          "$type": "color",
-          "$description": "Default border color."
-        },
-        "disabled": {
-          "$value": "{color.disabled-border}",
-          "$type": "color",
-          "$description": "Disabled border color."
-        }
-      }
-    },
-    "action": {
-      "bg": {
-        "primary": {
-          "$value": "{color.primary.filled}",
-          "$type": "color",
-          "$description": "Primary action background."
-        },
-        "primary-hover": {
-          "$value": "{color.primary.filled-hover}",
-          "$type": "color",
-          "$description": "Primary action hover state."
-        },
-        "primary-light": {
-          "$value": "{color.primary.light}",
-          "$type": "color",
-          "$description": "Primary light variant background."
-        },
-        "primary-light-hover": {
-          "$value": "{color.primary.light-hover}",
-          "$type": "color",
-          "$description": "Primary light variant hover."
-        }
-      },
-      "text": {
-        "primary": {
-          "$value": "{color.primary.contrast}",
-          "$type": "color",
-          "$description": "Text on primary backgrounds."
-        },
-        "primary-light": {
-          "$value": "{color.primary.light-color}",
-          "$type": "color",
-          "$description": "Text on primary light backgrounds."
-        }
-      }
-    },
-    "feedback": {
-      "text": {
-        "error": {
-          "$value": "{color.error}",
-          "$type": "color",
-          "$description": "Error text color."
-        }
+        "$description": "Text on primary filled."
       }
     }
   },
@@ -1311,39 +1425,39 @@
       },
       "default": {
         "background-color": {
-          "$value": "{color.default}",
+          "$value": "{color.bg.surface.default}",
           "$type": "color",
           "$description": "Default button background color."
         },
         "text-color": {
-          "$value": "{color.default-color}",
+          "$value": "{color.text.on-default}",
           "$type": "color",
           "$description": "Default button text color."
         },
         "border-color": {
-          "$value": "{color.default-border}",
+          "$value": "{color.border.surface.default}",
           "$type": "color",
           "$description": "Default button border color."
         },
         "hover-background-color": {
-          "$value": "{color.default-hover}",
+          "$value": "{color.bg.surface.elevated}",
           "$type": "color",
           "$description": "Default button hover background color."
         }
       },
       "disabled": {
         "background-color": {
-          "$value": "{color.disabled}",
+          "$value": "{color.bg.interactive.disabled}",
           "$type": "color",
           "$description": "Disabled button background color."
         },
         "text-color": {
-          "$value": "{color.disabled-color}",
+          "$value": "{color.text.disabled}",
           "$type": "color",
           "$description": "Disabled button text color."
         },
         "border-color": {
-          "$value": "{color.disabled-border}",
+          "$value": "{color.border.interactive.disabled}",
           "$type": "color",
           "$description": "Disabled button border color."
         }
@@ -1352,22 +1466,22 @@
     "input": {
       "default": {
         "background-color": {
-          "$value": "{color.default}",
+          "$value": "{color.bg.surface.default}",
           "$type": "color",
           "$description": "Default input background color."
         },
         "text-color": {
-          "$value": "{color.text}",
+          "$value": "{color.text.default}",
           "$type": "color",
           "$description": "Input text color."
         },
         "border-color": {
-          "$value": "{color.default-border}",
+          "$value": "{color.border.surface.default}",
           "$type": "color",
           "$description": "Default input border color."
         },
         "placeholder-color": {
-          "$value": "{color.placeholder}",
+          "$value": "{color.text.placeholder}",
           "$type": "color",
           "$description": "Input placeholder text color."
         }
@@ -1386,29 +1500,29 @@
       },
       "error": {
         "border-color": {
-          "$value": "{color.error}",
+          "$value": "{color.feedback.text.error}",
           "$type": "color",
           "$description": "Error state input border color."
         },
         "text-color": {
-          "$value": "{color.error}",
+          "$value": "{color.feedback.text.error}",
           "$type": "color",
           "$description": "Error message text color."
         }
       },
       "disabled": {
         "background-color": {
-          "$value": "{color.disabled}",
+          "$value": "{color.bg.interactive.disabled}",
           "$type": "color",
           "$description": "Disabled input background color."
         },
         "text-color": {
-          "$value": "{color.disabled-color}",
+          "$value": "{color.text.disabled}",
           "$type": "color",
           "$description": "Disabled input text color."
         },
         "border-color": {
-          "$value": "{color.disabled-border}",
+          "$value": "{color.border.interactive.disabled}",
           "$type": "color",
           "$description": "Disabled input border color."
         }
@@ -1416,12 +1530,12 @@
     },
     "card": {
       "background-color": {
-        "$value": "{color.default}",
+        "$value": "{color.bg.surface.default}",
         "$type": "color",
         "$description": "Card background color."
       },
       "border-color": {
-        "$value": "{color.default-border}",
+        "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "Card border color."
       }
@@ -1541,7 +1655,7 @@
         "$description": "Table header background color."
       },
       "border-color": {
-        "$value": "{color.default-border}",
+        "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "Table border color."
       },
@@ -1551,7 +1665,7 @@
         "$description": "Alternating row background color."
       },
       "hover-background-color": {
-        "$value": "{color.default-hover}",
+        "$value": "{color.bg.surface.elevated}",
         "$type": "color",
         "$description": "Row hover background color."
       },
@@ -1564,12 +1678,12 @@
     "tabs": {
       "default": {
         "text-color": {
-          "$value": "{color.dimmed}",
+          "$value": "{color.text.secondary}",
           "$type": "color",
           "$description": "Inactive tab text color."
         },
         "hover-text-color": {
-          "$value": "{color.text}",
+          "$value": "{color.text.default}",
           "$type": "color",
           "$description": "Tab hover text color."
         }
@@ -1587,7 +1701,7 @@
         }
       },
       "border-color": {
-        "$value": "{color.default-border}",
+        "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "Tab list border color."
       }
@@ -1595,12 +1709,12 @@
     "checkbox": {
       "unchecked": {
         "border-color": {
-          "$value": "{color.default-border}",
+          "$value": "{color.border.surface.default}",
           "$type": "color",
           "$description": "Unchecked checkbox border color."
         },
         "background-color": {
-          "$value": "{color.default}",
+          "$value": "{color.bg.surface.default}",
           "$type": "color",
           "$description": "Unchecked checkbox background color."
         }
@@ -1624,12 +1738,12 @@
       },
       "disabled": {
         "border-color": {
-          "$value": "{color.disabled-border}",
+          "$value": "{color.border.interactive.disabled}",
           "$type": "color",
           "$description": "Disabled checkbox border color."
         },
         "background-color": {
-          "$value": "{color.disabled}",
+          "$value": "{color.bg.interactive.disabled}",
           "$type": "color",
           "$description": "Disabled checkbox background color."
         }
@@ -1662,7 +1776,7 @@
       },
       "disabled": {
         "track-color": {
-          "$value": "{color.disabled}",
+          "$value": "{color.bg.interactive.disabled}",
           "$type": "color",
           "$description": "Disabled switch track color."
         },
@@ -1675,35 +1789,35 @@
     },
     "select": {
       "background-color": {
-        "$value": "{color.default}",
+        "$value": "{color.bg.surface.default}",
         "$type": "color",
         "$description": "Select input background color."
       },
       "border-color": {
-        "$value": "{color.default-border}",
+        "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "Select input border color."
       },
       "text-color": {
-        "$value": "{color.text}",
+        "$value": "{color.text.default}",
         "$type": "color",
         "$description": "Select input text color."
       },
       "dropdown": {
         "background-color": {
-          "$value": "{color.default}",
+          "$value": "{color.bg.surface.default}",
           "$type": "color",
           "$description": "Dropdown menu background color."
         },
         "border-color": {
-          "$value": "{color.default-border}",
+          "$value": "{color.border.surface.default}",
           "$type": "color",
           "$description": "Dropdown menu border color."
         }
       },
       "option": {
         "hover-background-color": {
-          "$value": "{color.default-hover}",
+          "$value": "{color.bg.surface.elevated}",
           "$type": "color",
           "$description": "Option hover background color."
         },
@@ -1721,22 +1835,22 @@
     },
     "modal": {
       "background-color": {
-        "$value": "{color.default}",
+        "$value": "{color.bg.surface.default}",
         "$type": "color",
         "$description": "Modal background color."
       },
       "overlay-color": {
-        "$value": "{color.overlay.light}",
+        "$value": "{color.overlay.default}",
         "$type": "color",
         "$description": "Modal overlay/backdrop color."
       },
       "header-border-color": {
-        "$value": "{color.default-border}",
+        "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "Modal header bottom border color."
       },
       "footer-border-color": {
-        "$value": "{color.default-border}",
+        "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "Modal footer top border color."
       }

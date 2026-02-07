@@ -1,11 +1,10 @@
 {
   "name": "ccui-tokens",
   "version": "1.0.0",
-  "description": "CCUI Design Tokens - DTCG-compliant design tokens with CSS and Tokens Studio output",
+  "description": "CCUI Design Tokens - DTCG-compliant design tokens with Tokens Studio output",
   "main": "dist/tokens-studio/semantic/light.json",
   "exports": {
     ".": "./dist/tokens-studio/semantic/light.json",
-    "./css": "./dist/css/ccui-tokens.css",
     "./tokens-studio/*": "./dist/tokens-studio/*"
   },
   "type": "module",

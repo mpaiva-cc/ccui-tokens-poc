@@ -10,7 +10,7 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import {
-  getThemeNames,
+  ALL_THEME_NAMES,
   isValidColor,
   isValidDimension,
   isValidFontWeight,
@@ -131,7 +131,7 @@ function inferTokenType(path: string, value: string): string | null {
 }
 
 describe('Token Value Validation', () => {
-  const themes = getThemeNames();
+  const themes = [...ALL_THEME_NAMES];
 
   describe.each(themes)('Semantic Theme: %s', (themeName) => {
     const filePath = join(TOKENS_STUDIO_DIR, 'semantic', `${themeName}.json`);

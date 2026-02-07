@@ -5,20 +5,12 @@
  * with valid syntax and non-empty content.
  *
  * Build structure (multi-theme):
- * - CSS: dist/css/primitives.css + dist/css/{theme}.css per theme
  * - Tokens Studio JSON: dist/tokens-studio/primitives/*.json, semantic/*.json, components/*.json
  */
 import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import {
-  getThemeNames,
-  hasSharedPrimitives,
-  hasPrimitivesCSS,
-  hasThemeCSS,
-  loadPrimitivesCSS,
-  loadThemeCSSFile,
-  loadAllCSS,
   ALL_THEME_NAMES,
   getDistPath,
 } from './test-utils';
@@ -27,110 +19,6 @@ const DIST_DIR = getDistPath();
 const TOKENS_STUDIO_DIR = join(DIST_DIR, 'tokens-studio');
 
 describe('Build Output Validation', () => {
-  const themes = getThemeNames();
-
-  describe('CSS Output - Primitives', () => {
-    it('should have primitives.css file', () => {
-      expect(hasPrimitivesCSS()).toBe(true);
-    });
-
-    it('should have non-empty primitives CSS', () => {
-      const content = loadPrimitivesCSS();
-      expect(content.length).toBeGreaterThan(0);
-    });
-
-    it('primitives.css should have valid CSS syntax', () => {
-      const content = loadPrimitivesCSS();
-
-      // Check for balanced braces
-      const openBraces = (content.match(/{/g) || []).length;
-      const closeBraces = (content.match(/}/g) || []).length;
-      expect(openBraces).toBe(closeBraces);
-
-      // Check for :root selector
-      expect(content).toContain(':root');
-
-      // Check for CSS custom properties
-      expect(content).toMatch(/--[\w-]+\s*:/);
-    });
-
-    it('primitives should include neutral format (no prefix)', () => {
-      const content = loadPrimitivesCSS();
-      // Neutral format uses no prefix: --spacing-md, --color-blue-5
-      expect(content).toMatch(/--spacing-md:/);
-      expect(content).toMatch(/--radius-sm:/);
-    });
-
-    it('primitives should include CCUI format (--ccui-* prefix)', () => {
-      const content = loadPrimitivesCSS();
-      expect(content).toMatch(/--ccui-spacing-md:/);
-      expect(content).toMatch(/--ccui-radius-sm:/);
-    });
-
-    it('primitives should include Mantine format (--mantine-* prefix)', () => {
-      const content = loadPrimitivesCSS();
-      expect(content).toMatch(/--mantine-spacing-md:/);
-      expect(content).toMatch(/--mantine-radius-sm:/);
-    });
-
-    it('primitives should include system tokens', () => {
-      const content = loadPrimitivesCSS();
-      // Check for framework-agnostic system tokens
-      expect(content).toMatch(/--scale:/);
-      expect(content).toMatch(/--cursor-interactive:/);
-      expect(content).toMatch(/--cursor-default:/);
-      expect(content).toMatch(/--fontSmoothing-webkit:/);
-      expect(content).toMatch(/--fontSmoothing-moz:/);
-      expect(content).toMatch(/--heading-fontWeight:/);
-    });
-
-    it('primitives should include z-index tokens', () => {
-      const content = loadPrimitivesCSS();
-      expect(content).toMatch(/--zIndex-app:/);
-      expect(content).toMatch(/--zIndex-max:/);
-      expect(content).toMatch(/--zIndex-dropdown:/);
-    });
-
-    it('primitives should include radius.default token', () => {
-      const content = loadPrimitivesCSS();
-      expect(content).toMatch(/--radius-default:/);
-    });
-  });
-
-  describe('CSS Output - Theme Files', () => {
-    it.each(ALL_THEME_NAMES)('should have %s.css file', (themeName) => {
-      expect(hasThemeCSS(themeName)).toBe(true);
-    });
-
-    it.each(ALL_THEME_NAMES)('%s.css should have valid CSS syntax', (themeName) => {
-      if (!hasThemeCSS(themeName)) return;
-
-      const content = loadThemeCSSFile(themeName);
-
-      // Check for balanced braces
-      const openBraces = (content.match(/{/g) || []).length;
-      const closeBraces = (content.match(/}/g) || []).length;
-      expect(openBraces).toBe(closeBraces);
-
-      // Check for CSS custom properties
-      expect(content).toMatch(/--[\w-]+\s*:/);
-    });
-
-    it.each(ALL_THEME_NAMES)('%s.css should use data-theme selector', (themeName) => {
-      if (!hasThemeCSS(themeName)) return;
-
-      const content = loadThemeCSSFile(themeName);
-      expect(content).toContain(`[data-theme="${themeName}"]`);
-    });
-
-    it('mantine-light should be default (:root)', () => {
-      if (!hasThemeCSS('mantine-light')) return;
-
-      const content = loadThemeCSSFile('mantine-light');
-      expect(content).toContain(':root');
-    });
-  });
-
   describe('Tokens Studio Output', () => {
     const expectedPrimitiveSets = [
       'color.json',
@@ -236,27 +124,15 @@ describe('Build Output Validation', () => {
   });
 
   describe('Theme Detection', () => {
-    it('should have at least one theme', () => {
-      expect(themes.length).toBeGreaterThan(0);
-    });
-
-    it('should detect all expected themes', () => {
-      expect(themes).toContain('mantine-light');
-      expect(themes).toContain('mantine-dark');
-      expect(themes).toContain('ccui-21-light');
-      expect(themes).toContain('ccui-30-light');
-      expect(themes).toContain('ccui-30-dark');
+    it('should have all expected themes', () => {
+      for (const themeName of ALL_THEME_NAMES) {
+        const filePath = join(TOKENS_STUDIO_DIR, 'semantic', `${themeName}.json`);
+        expect(existsSync(filePath), `Missing semantic/${themeName}.json`).toBe(true);
+      }
     });
 
     it('should have exactly 5 themes', () => {
-      expect(themes.length).toBe(5);
-    });
-  });
-
-  describe('Backwards Compatibility', () => {
-    it('hasSharedPrimitives should return true', () => {
-      // This should return true with combined CSS
-      expect(hasSharedPrimitives()).toBe(true);
+      expect(ALL_THEME_NAMES.length).toBe(5);
     });
   });
 });

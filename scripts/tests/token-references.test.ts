@@ -5,17 +5,13 @@
  * and there are no unresolved references in the output.
  *
  * Build structure (multi-theme):
- * - CSS: dist/css/primitives.css + dist/css/{theme}.css per theme
  * - Tokens Studio JSON: dist/tokens-studio/primitives/*.json, semantic/*.json
  */
 import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import {
-  getThemeNames,
-  hasPrimitivesCSS,
-  loadAllCSS,
-  parseCSSVariables,
+  ALL_THEME_NAMES,
   getDistPath,
 } from './test-utils';
 
@@ -23,93 +19,8 @@ const DIST_DIR = getDistPath();
 const TOKENS_STUDIO_DIR = join(DIST_DIR, 'tokens-studio');
 
 describe('Token Reference Resolution', () => {
-  const themes = getThemeNames();
-
-  describe('Combined CSS Output', () => {
-    it('should have no unresolved {references}', () => {
-      const css = loadAllCSS();
-
-      // Look for unresolved Style Dictionary references like {color.primary}
-      const unresolvedRefs = css.match(/\{[a-zA-Z][a-zA-Z0-9.]+\}/g) || [];
-
-      expect(
-        unresolvedRefs,
-        `Unresolved references in ccui-tokens.css:\n${unresolvedRefs.join('\n')}`
-      ).toHaveLength(0);
-    });
-
-    it('should have no undefined values', () => {
-      const css = loadAllCSS();
-      const variables = parseCSSVariables(css);
-
-      const undefinedVars: string[] = [];
-
-      for (const [name, value] of variables) {
-        if (
-          value === 'undefined' ||
-          value === 'null' ||
-          value === '[object Object]'
-        ) {
-          undefinedVars.push(`${name}: ${value}`);
-        }
-      }
-
-      expect(
-        undefinedVars,
-        `Undefined values in ccui-tokens.css:\n${undefinedVars.join('\n')}`
-      ).toHaveLength(0);
-    });
-
-    it('should have no empty values', () => {
-      const css = loadAllCSS();
-      const variables = parseCSSVariables(css);
-
-      const emptyVars: string[] = [];
-
-      for (const [name, value] of variables) {
-        if (value === '' || value.trim() === '') {
-          emptyVars.push(name);
-        }
-      }
-
-      expect(
-        emptyVars,
-        `Empty values in ccui-tokens.css:\n${emptyVars.join('\n')}`
-      ).toHaveLength(0);
-    });
-
-    it('all var() references should reference existing variables', () => {
-      const css = loadAllCSS();
-      const allVariables = parseCSSVariables(css);
-
-      // Find all var() references in the CSS
-      const varRefRegex = /var\(\s*(--[a-zA-Z0-9-_]+)\s*(?:,\s*([^)]+))?\)/g;
-
-      const missingRefs: string[] = [];
-      let match;
-
-      while ((match = varRefRegex.exec(css)) !== null) {
-        const referencedVar = match[1];
-        // Skip if it has a fallback value
-        const hasFallback = match[2] !== undefined;
-
-        if (!hasFallback && !allVariables.has(referencedVar)) {
-          missingRefs.push(referencedVar);
-        }
-      }
-
-      // Remove duplicates
-      const uniqueMissing = [...new Set(missingRefs)];
-
-      expect(
-        uniqueMissing,
-        `Missing referenced variables:\n${uniqueMissing.join('\n')}`
-      ).toHaveLength(0);
-    });
-  });
-
   describe('Tokens Studio JSON Output', () => {
-    describe.each(themes)('Theme: %s', (themeName) => {
+    describe.each([...ALL_THEME_NAMES])('Theme: %s', (themeName) => {
       const semanticFilePath = join(TOKENS_STUDIO_DIR, 'semantic', `${themeName}.json`);
 
       it('semantic tokens should have valid structure', () => {
@@ -214,8 +125,8 @@ describe('Token Reference Resolution', () => {
   });
 
   describe('Cross-Theme Reference Consistency', () => {
-    it('both themes should have semantic JSON files', () => {
-      for (const theme of themes) {
+    it('all themes should have semantic JSON files', () => {
+      for (const theme of ALL_THEME_NAMES) {
         const filePath = join(TOKENS_STUDIO_DIR, 'semantic', `${theme}.json`);
         expect(existsSync(filePath), `Missing semantic/${theme}.json`).toBe(true);
       }

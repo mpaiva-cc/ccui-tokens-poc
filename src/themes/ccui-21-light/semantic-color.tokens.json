@@ -1,94 +1,343 @@
 {
-    "$description": "Semantic color tokens for the light theme. Includes both Mantine-compatible tokens and CCUI spec-compliant semantic aliases.",
+    "$description": "CCUI 2.1 light theme semantic colors. Spec-compliant naming with direct primitive references.",
     "color": {
-        "$description": "Semantic color assignments. Legacy Mantine tokens and new CCUI spec-compliant aliases.",
+        "$description": "Semantic color tokens following the CCUI Semantic Token Spec.",
 
         "text": {
-            "$value": "{color.black}",
-            "$type": "color",
-            "$description": "Primary text color (Mantine-compatible). Prefer: color.content.text.default"
+            "$description": "Text color tokens for readable content.",
+            "default": {
+                "$value": "{color.black}",
+                "$type": "color",
+                "$description": "Primary text color. Use for: headings, body text, labels."
+            },
+            "secondary": {
+                "$value": "{color.gray.6}",
+                "$type": "color",
+                "$description": "Secondary/muted text. Use for: helper text, captions, descriptions."
+            },
+            "placeholder": {
+                "$value": "{color.gray.6}",
+                "$type": "color",
+                "$description": "Placeholder text in form inputs."
+            },
+            "disabled": {
+                "$value": "{color.gray.5}",
+                "$type": "color",
+                "$description": "Text color for disabled elements."
+            },
+            "inverse": {
+                "$value": "{color.white}",
+                "$type": "color",
+                "$description": "Inverse text for dark backgrounds."
+            },
+            "link": {
+                "$value": "{color.blue.6}",
+                "$type": "color",
+                "$description": "Link/anchor text color."
+            },
+            "bright": {
+                "$value": "{color.black}",
+                "$type": "color",
+                "$description": "Maximum contrast text."
+            },
+            "on-default": {
+                "$value": "{color.black}",
+                "$type": "color",
+                "$description": "Text on default component backgrounds."
+            },
+            "error": {
+                "$value": "{color.red.7}",
+                "$type": "color",
+                "$description": "Error text color."
+            },
+            "success": {
+                "$value": "{color.green.7}",
+                "$type": "color",
+                "$description": "Success text color."
+            },
+            "warning": {
+                "$value": "{color.yellow.8}",
+                "$type": "color",
+                "$description": "Warning text color."
+            },
+            "info": {
+                "$value": "{color.blue.7}",
+                "$type": "color",
+                "$description": "Informational text color."
+            }
         },
-        "body": {
-            "$value": "{color.white}",
-            "$type": "color",
-            "$description": "Body background color (Mantine-compatible). Prefer: color.surface.bg.canvas"
+
+        "bg": {
+            "$description": "Background color tokens.",
+            "surface": {
+                "$description": "Static surface backgrounds.",
+                "default": {
+                    "$value": "{color.white}",
+                    "$type": "color",
+                    "$description": "Default component background."
+                },
+                "canvas": {
+                    "$value": "{color.white}",
+                    "$type": "color",
+                    "$description": "Page canvas/body background."
+                },
+                "elevated": {
+                    "$value": "{color.gray.0}",
+                    "$type": "color",
+                    "$description": "Elevated surface background (hover states, raised panels)."
+                },
+                "muted": {
+                    "$value": "{color.gray.1}",
+                    "$type": "color",
+                    "$description": "Muted/subdued surface background."
+                }
+            },
+            "interactive": {
+                "$description": "Interactive state backgrounds.",
+                "disabled": {
+                    "$value": "{color.gray.2}",
+                    "$type": "color",
+                    "$description": "Disabled element background."
+                },
+                "selected": {
+                    "$value": "{color.blue.0}",
+                    "$type": "color",
+                    "$description": "Selected element background."
+                }
+            }
         },
-        "bright": {
-            "$value": "{color.black}",
-            "$type": "color",
-            "$description": "Bright text color for maximum contrast."
+
+        "border": {
+            "$description": "Border color tokens.",
+            "surface": {
+                "$description": "Static border colors.",
+                "default": {
+                    "$value": "{color.gray.4}",
+                    "$type": "color",
+                    "$description": "Default border color."
+                },
+                "subtle": {
+                    "$value": "{color.gray.3}",
+                    "$type": "color",
+                    "$description": "Subtle/light border color."
+                },
+                "strong": {
+                    "$value": "{color.gray.6}",
+                    "$type": "color",
+                    "$description": "Strong/emphasized border color."
+                }
+            },
+            "interactive": {
+                "$description": "Interactive state border colors.",
+                "disabled": {
+                    "$value": "{color.gray.3}",
+                    "$type": "color",
+                    "$description": "Disabled border color."
+                },
+                "hover": {
+                    "$value": "{color.gray.5}",
+                    "$type": "color",
+                    "$description": "Hover state border color."
+                },
+                "selected": {
+                    "$value": "{color.blue.5}",
+                    "$type": "color",
+                    "$description": "Selected state border color."
+                },
+                "focus": {
+                    "$value": "{color.blue.5}",
+                    "$type": "color",
+                    "$description": "Focus state border color."
+                }
+            }
         },
-        "error": {
-            "$value": "{color.red.7}",
-            "$type": "color",
-            "$description": "Error color (Mantine-compatible). Prefer: color.feedback.text.error"
+
+        "action": {
+            "$description": "Action/button color tokens.",
+            "bg": {
+                "primary": {
+                    "$value": "{colorPalette.blue.filled}",
+                    "$type": "color",
+                    "$description": "Primary action background."
+                },
+                "primary-hover": {
+                    "$value": "{colorPalette.blue.filled-hover}",
+                    "$type": "color",
+                    "$description": "Primary action hover state."
+                },
+                "primary-active": {
+                    "$value": "{color.blue.8}",
+                    "$type": "color",
+                    "$description": "Primary action active/pressed state."
+                },
+                "primary-disabled": {
+                    "$value": "{color.bg.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Primary action disabled state."
+                },
+                "primary-light": {
+                    "$value": "{colorPalette.blue.light}",
+                    "$type": "color",
+                    "$description": "Primary light variant background."
+                },
+                "primary-light-hover": {
+                    "$value": "{colorPalette.blue.light-hover}",
+                    "$type": "color",
+                    "$description": "Primary light variant hover."
+                }
+            },
+            "text": {
+                "primary": {
+                    "$value": "{color.white}",
+                    "$type": "color",
+                    "$description": "Text on primary action backgrounds."
+                },
+                "primary-light": {
+                    "$value": "{colorPalette.blue.light-color}",
+                    "$type": "color",
+                    "$description": "Text on primary light backgrounds."
+                }
+            },
+            "border": {
+                "primary": {
+                    "$value": "{colorPalette.blue.filled}",
+                    "$type": "color",
+                    "$description": "Primary action border color."
+                },
+                "primary-hover": {
+                    "$value": "{colorPalette.blue.filled-hover}",
+                    "$type": "color",
+                    "$description": "Primary action hover border color."
+                }
+            }
         },
-        "placeholder": {
-            "$value": "{color.gray.6}",
-            "$type": "color",
-            "$description": "Placeholder text color."
+
+        "feedback": {
+            "$description": "Feedback/status color tokens.",
+            "bg": {
+                "error": {
+                    "$value": "{color.red.0}",
+                    "$type": "color",
+                    "$description": "Error feedback background."
+                },
+                "success": {
+                    "$value": "{color.green.0}",
+                    "$type": "color",
+                    "$description": "Success feedback background."
+                },
+                "warning": {
+                    "$value": "{color.yellow.0}",
+                    "$type": "color",
+                    "$description": "Warning feedback background."
+                },
+                "info": {
+                    "$value": "{color.blue.0}",
+                    "$type": "color",
+                    "$description": "Info feedback background."
+                }
+            },
+            "text": {
+                "error": {
+                    "$value": "{color.red.7}",
+                    "$type": "color",
+                    "$description": "Error feedback text."
+                },
+                "success": {
+                    "$value": "{color.green.7}",
+                    "$type": "color",
+                    "$description": "Success feedback text."
+                },
+                "warning": {
+                    "$value": "{color.yellow.8}",
+                    "$type": "color",
+                    "$description": "Warning feedback text."
+                },
+                "info": {
+                    "$value": "{color.blue.7}",
+                    "$type": "color",
+                    "$description": "Info feedback text."
+                }
+            },
+            "border": {
+                "error": {
+                    "$value": "{color.red.5}",
+                    "$type": "color",
+                    "$description": "Error feedback border."
+                },
+                "success": {
+                    "$value": "{color.green.5}",
+                    "$type": "color",
+                    "$description": "Success feedback border."
+                },
+                "warning": {
+                    "$value": "{color.yellow.5}",
+                    "$type": "color",
+                    "$description": "Warning feedback border."
+                },
+                "info": {
+                    "$value": "{color.blue.5}",
+                    "$type": "color",
+                    "$description": "Info feedback border."
+                }
+            },
+            "icon": {
+                "error": {
+                    "$value": "{color.red.6}",
+                    "$type": "color",
+                    "$description": "Error feedback icon."
+                },
+                "success": {
+                    "$value": "{color.green.6}",
+                    "$type": "color",
+                    "$description": "Success feedback icon."
+                },
+                "warning": {
+                    "$value": "{color.yellow.6}",
+                    "$type": "color",
+                    "$description": "Warning feedback icon."
+                },
+                "info": {
+                    "$value": "{color.blue.6}",
+                    "$type": "color",
+                    "$description": "Info feedback icon."
+                }
+            }
         },
-        "anchor": {
-            "$value": "{color.blue.6}",
-            "$type": "color",
-            "$description": "Anchor/link color (Mantine-compatible). Prefer: color.content.text.link"
+
+        "overlay": {
+            "$description": "Overlay color tokens.",
+            "default": {
+                "$value": "{color.overlay.light}",
+                "$type": "color",
+                "$description": "Default overlay/backdrop color."
+            }
         },
-        "default": {
-            "$value": "{color.white}",
-            "$type": "color",
-            "$description": "Default component background (Mantine-compatible). Prefer: color.surface.bg.default"
+
+        "focus": {
+            "$description": "Focus indicator color tokens.",
+            "ring": {
+                "$value": "{color.blue.5}",
+                "$type": "color",
+                "$description": "Focus ring color."
+            }
         },
-        "default-hover": {
-            "$value": "{color.gray.0}",
-            "$type": "color",
-            "$description": "Default hover background (Mantine-compatible). Prefer: color.surface.bg.subtle"
-        },
-        "default-color": {
-            "$value": "{color.black}",
-            "$type": "color",
-            "$description": "Text on default backgrounds."
-        },
-        "default-border": {
-            "$value": "{color.gray.4}",
-            "$type": "color",
-            "$description": "Default border color (Mantine-compatible). Prefer: color.surface.border.default"
-        },
-        "dimmed": {
-            "$value": "{color.gray.6}",
-            "$type": "color",
-            "$description": "Dimmed/muted text (Mantine-compatible). Prefer: color.content.text.muted"
-        },
-        "disabled": {
-            "$value": "{color.gray.2}",
-            "$type": "color",
-            "$description": "Disabled background (Mantine-compatible). Prefer: color.surface.bg.disabled"
-        },
-        "disabled-color": {
-            "$value": "{color.gray.5}",
-            "$type": "color",
-            "$description": "Disabled text color."
-        },
-        "disabled-border": {
-            "$value": "{color.gray.3}",
-            "$type": "color",
-            "$description": "Disabled border color."
-        },
+
         "primary": {
-            "$description": "Primary color variants (Mantine-compatible).",
+            "$description": "Primary color scale. WARNING: Prefer semantic action tokens (color.action.*) for new code. These exist for Mantine compatibility.",
             "filled": {
                 "$value": "{colorPalette.blue.filled}",
                 "$type": "color",
-                "$description": "Primary filled background. Prefer: color.action.bg.primary"
+                "$description": "Primary filled background."
             },
             "filled-hover": {
                 "$value": "{colorPalette.blue.filled-hover}",
                 "$type": "color",
-                "$description": "Primary filled hover. Prefer: color.action.bg.primary-hover"
+                "$description": "Primary filled hover."
             },
             "light": {
                 "$value": "{colorPalette.blue.light}",
                 "$type": "color",
-                "$description": "Primary light background. Prefer: color.action.bg.primary-light"
+                "$description": "Primary light background."
             },
             "light-hover": {
                 "$value": "{colorPalette.blue.light-hover}",
@@ -98,12 +347,12 @@
             "light-color": {
                 "$value": "{colorPalette.blue.light-color}",
                 "$type": "color",
-                "$description": "Text on primary light. Prefer: color.action.text.primary-light"
+                "$description": "Text on primary light."
             },
             "contrast": {
                 "$value": "{color.white}",
                 "$type": "color",
-                "$description": "Text on primary filled. Prefer: color.action.text.primary"
+                "$description": "Text on primary filled."
             },
             "0": { "$value": "{color.blue.0}", "$type": "color" },
             "1": { "$value": "{color.blue.1}", "$type": "color" },
@@ -115,129 +364,6 @@
             "7": { "$value": "{color.blue.7}", "$type": "color" },
             "8": { "$value": "{color.blue.8}", "$type": "color" },
             "9": { "$value": "{color.blue.9}", "$type": "color" }
-        },
-
-        "content": {
-            "$description": "CCUI spec-compliant content colors (aliases to Mantine tokens)",
-            "text": {
-                "default": {
-                    "$value": "{color.text}",
-                    "$type": "color",
-                    "$description": "Primary text color. Use for: headings, body text, labels."
-                },
-                "muted": {
-                    "$value": "{color.dimmed}",
-                    "$type": "color",
-                    "$description": "Secondary/muted text. Use for: helper text, captions."
-                },
-                "placeholder": {
-                    "$value": "{color.placeholder}",
-                    "$type": "color",
-                    "$description": "Placeholder text color."
-                },
-                "disabled": {
-                    "$value": "{color.disabled-color}",
-                    "$type": "color",
-                    "$description": "Disabled text color."
-                },
-                "inverse": {
-                    "$value": "{color.white}",
-                    "$type": "color",
-                    "$description": "Inverse text for dark backgrounds."
-                },
-                "link": {
-                    "$value": "{color.anchor}",
-                    "$type": "color",
-                    "$description": "Link/anchor text color."
-                }
-            }
-        },
-
-        "surface": {
-            "$description": "CCUI spec-compliant surface colors (aliases to Mantine tokens)",
-            "bg": {
-                "canvas": {
-                    "$value": "{color.body}",
-                    "$type": "color",
-                    "$description": "Page canvas/body background."
-                },
-                "default": {
-                    "$value": "{color.default}",
-                    "$type": "color",
-                    "$description": "Default component background."
-                },
-                "subtle": {
-                    "$value": "{color.default-hover}",
-                    "$type": "color",
-                    "$description": "Subtle background for hover states."
-                },
-                "disabled": {
-                    "$value": "{color.disabled}",
-                    "$type": "color",
-                    "$description": "Disabled element background."
-                }
-            },
-            "border": {
-                "default": {
-                    "$value": "{color.default-border}",
-                    "$type": "color",
-                    "$description": "Default border color."
-                },
-                "disabled": {
-                    "$value": "{color.disabled-border}",
-                    "$type": "color",
-                    "$description": "Disabled border color."
-                }
-            }
-        },
-
-        "action": {
-            "$description": "CCUI spec-compliant action colors (aliases to Mantine tokens)",
-            "bg": {
-                "primary": {
-                    "$value": "{color.primary.filled}",
-                    "$type": "color",
-                    "$description": "Primary action background."
-                },
-                "primary-hover": {
-                    "$value": "{color.primary.filled-hover}",
-                    "$type": "color",
-                    "$description": "Primary action hover state."
-                },
-                "primary-light": {
-                    "$value": "{color.primary.light}",
-                    "$type": "color",
-                    "$description": "Primary light variant background."
-                },
-                "primary-light-hover": {
-                    "$value": "{color.primary.light-hover}",
-                    "$type": "color",
-                    "$description": "Primary light variant hover."
-                }
-            },
-            "text": {
-                "primary": {
-                    "$value": "{color.primary.contrast}",
-                    "$type": "color",
-                    "$description": "Text on primary backgrounds."
-                },
-                "primary-light": {
-                    "$value": "{color.primary.light-color}",
-                    "$type": "color",
-                    "$description": "Text on primary light backgrounds."
-                }
-            }
-        },
-
-        "feedback": {
-            "$description": "CCUI spec-compliant feedback colors",
-            "text": {
-                "error": {
-                    "$value": "{color.error}",
-                    "$type": "color",
-                    "$description": "Error text color."
-                }
-            }
         }
     }
 }
