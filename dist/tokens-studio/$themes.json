@@ -22,7 +22,7 @@
   {
     "id": "semantic-mantine-light",
     "name": "Vanilla Mantine light theme",
-    "group": "Themes",
+    "group": "Semantic",
     "selectedTokenSets": {
       "primitives/color": "source",
       "primitives/spacing": "source",
@@ -47,7 +47,7 @@
   {
     "id": "semantic-mantine-dark",
     "name": "Vanilla Mantine dark theme",
-    "group": "Themes",
+    "group": "Semantic",
     "selectedTokenSets": {
       "primitives/color": "source",
       "primitives/spacing": "source",
@@ -72,7 +72,7 @@
   {
     "id": "semantic-ccui-21-light",
     "name": "CCUI 2.1 brand theme",
-    "group": "Themes",
+    "group": "Semantic",
     "selectedTokenSets": {
       "primitives/color": "source",
       "primitives/spacing": "source",
@@ -97,7 +97,7 @@
   {
     "id": "semantic-ccui-30-light",
     "name": "CCUI 3.0 rebranding light",
-    "group": "Themes",
+    "group": "Semantic",
     "selectedTokenSets": {
       "primitives/color": "source",
       "primitives/spacing": "source",
@@ -122,7 +122,7 @@
   {
     "id": "semantic-ccui-30-dark",
     "name": "CCUI 3.0 rebranding dark",
-    "group": "Themes",
+    "group": "Semantic",
     "selectedTokenSets": {
       "primitives/color": "source",
       "primitives/spacing": "source",
