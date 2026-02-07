@@ -342,58 +342,61 @@ function generateTokensStudioMetadata() {
 }
 
 function generateTokensStudioThemes() {
-    const primitiveSetStatus = {
-        "primitives/color": "source", "primitives/spacing": "source", "primitives/radius": "source",
-        "primitives/typography": "enabled", "primitives/shadow": "source", "primitives/motion": "source",
-        "primitives/border": "source", "primitives/breakpoints": "source", "primitives/z-index": "source",
-        "primitives/opacity": "source", "primitives/sizing": "source", "primitives/focus": "source",
-        "primitives/system": "source"
-    };
-
-    const componentSetStatus = {
-        "components/button": "enabled",
-        "components/input": "enabled",
-        "components/modal": "enabled",
-        "components/table": "enabled",
-        "components/card": "enabled",
-        "components/badge": "enabled",
-        "components/select": "enabled",
-        "components/checkbox": "enabled",
-        "components/switch": "enabled",
-        "components/alert": "enabled",
-        "components/tabs": "enabled"
-    };
-
-    const allSemanticSets = {
-        "semantic/mantine-light": "disabled",
-        "semantic/mantine-dark": "disabled",
-        "semantic/ccui-21-light": "disabled",
-        "semantic/ccui-30-light": "disabled",
-        "semantic/ccui-30-dark": "disabled"
-    };
-
-    return [
-        {
-            id: "mantine-light", name: "Mantine Light", group: "theme",
-            selectedTokenSets: { ...primitiveSetStatus, ...allSemanticSets, "semantic/mantine-light": "enabled", ...componentSetStatus }
-        },
-        {
-            id: "mantine-dark", name: "Mantine Dark", group: "theme",
-            selectedTokenSets: { ...primitiveSetStatus, ...allSemanticSets, "semantic/mantine-dark": "enabled", ...componentSetStatus }
-        },
-        {
-            id: "ccui-21-light", name: "CCUI 2.1 Light", group: "theme",
-            selectedTokenSets: { ...primitiveSetStatus, ...allSemanticSets, "semantic/ccui-21-light": "enabled", ...componentSetStatus }
-        },
-        {
-            id: "ccui-30-light", name: "CCUI 3.0 Light", group: "theme",
-            selectedTokenSets: { ...primitiveSetStatus, ...allSemanticSets, "semantic/ccui-30-light": "enabled", ...componentSetStatus }
-        },
-        {
-            id: "ccui-30-dark", name: "CCUI 3.0 Dark", group: "theme",
-            selectedTokenSets: { ...primitiveSetStatus, ...allSemanticSets, "semantic/ccui-30-dark": "enabled", ...componentSetStatus }
-        }
+    const allPrimitiveSets = [
+        "primitives/color", "primitives/spacing", "primitives/radius",
+        "primitives/typography", "primitives/shadow", "primitives/motion",
+        "primitives/border", "primitives/breakpoints", "primitives/z-index",
+        "primitives/opacity", "primitives/sizing", "primitives/focus",
+        "primitives/system"
     ];
+
+    const allComponentSets = [
+        "components/button", "components/input", "components/modal",
+        "components/table", "components/card", "components/badge",
+        "components/select", "components/checkbox", "components/switch",
+        "components/alert", "components/tabs"
+    ];
+
+    const allSemanticSetNames = [
+        "semantic/mantine-light", "semantic/mantine-dark",
+        "semantic/ccui-21-light", "semantic/ccui-30-light", "semantic/ccui-30-dark"
+    ];
+
+    const toStatus = (sets, status) =>
+        Object.fromEntries(sets.map(s => [s, status]));
+
+    // Group 1: Primitives — 1 mode, all primitives enabled
+    const primitivesTheme = {
+        id: "primitives-default",
+        name: "Default",
+        group: "Primitives",
+        selectedTokenSets: toStatus(allPrimitiveSets, "enabled")
+    };
+
+    // Group 2: Semantic — 5 modes, one per theme
+    const semanticThemes = Object.entries(THEME_CONFIG).map(([themeName, config]) => ({
+        id: `semantic-${themeName}`,
+        name: config.description,
+        group: "Semantic",
+        selectedTokenSets: {
+            ...toStatus(allPrimitiveSets, "source"),
+            ...toStatus(allSemanticSetNames, "disabled"),
+            [`semantic/${themeName}`]: "enabled"
+        }
+    }));
+
+    // Group 3: Components — 1 mode, all components enabled
+    const componentsTheme = {
+        id: "components-default",
+        name: "Default",
+        group: "Components",
+        selectedTokenSets: {
+            ...toStatus(allPrimitiveSets, "source"),
+            ...toStatus(allComponentSets, "enabled")
+        }
+    };
+
+    return [primitivesTheme, ...semanticThemes, componentsTheme];
 }
 
 StyleDictionary.registerFormat({
