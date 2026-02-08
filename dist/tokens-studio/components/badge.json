@@ -28,31 +28,31 @@
       }
     },
     "padding": {
-      "x": {
+      "horizontal": {
         "xs": {
           "$value": "{sizing.badge.paddingX.xs}",
           "$type": "dimension",
-          "$description": "badge.padding.x.xs — Extra small horizontal badge padding (6px). Tight padding for xs badges. Keeps badge compact for short text like counts or single letters."
+          "$description": "badge.padding.horizontal.xs — Extra small horizontal badge padding (6px). Tight padding for xs badges. Keeps badge compact for short text like counts or single letters."
         },
         "sm": {
           "$value": "{sizing.badge.paddingX.sm}",
           "$type": "dimension",
-          "$description": "badge.padding.x.sm — Small horizontal badge padding (8px). Use for: sm badges, short labels (2-4 characters). Minimal breathing room."
+          "$description": "badge.padding.horizontal.sm — Small horizontal badge padding (8px). Use for: sm badges, short labels (2-4 characters). Minimal breathing room."
         },
         "md": {
           "$value": "{sizing.badge.paddingX.md}",
           "$type": "dimension",
-          "$description": "badge.padding.x.md — Medium horizontal badge padding (10px). DEFAULT. Use for: standard text badges, status labels, category tags. Comfortable text spacing."
+          "$description": "badge.padding.horizontal.md — Medium horizontal badge padding (10px). DEFAULT. Use for: standard text badges, status labels, category tags. Comfortable text spacing."
         },
         "lg": {
           "$value": "{sizing.badge.paddingX.lg}",
           "$type": "dimension",
-          "$description": "badge.padding.x.lg — Large horizontal badge padding (12px). Use for: lg badges, longer text, more generous spacing for readability."
+          "$description": "badge.padding.horizontal.lg — Large horizontal badge padding (12px). Use for: lg badges, longer text, more generous spacing for readability."
         },
         "xl": {
           "$value": "{sizing.badge.paddingX.xl}",
           "$type": "dimension",
-          "$description": "badge.padding.x.xl — Extra large horizontal badge padding (16px). Use for: xl badges, prominent labels, maximum text breathing room."
+          "$description": "badge.padding.horizontal.xl — Extra large horizontal badge padding (16px). Use for: xl badges, prominent labels, maximum text breathing room."
         }
       }
     },

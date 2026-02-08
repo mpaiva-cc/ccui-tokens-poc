@@ -40,31 +40,31 @@
         }
       },
       "padding": {
-        "x": {
+        "horizontal": {
           "xs": {
             "$value": "{spacing.xs}",
             "$type": "dimension",
-            "$description": "tabs.tab.padding.x.xs — Extra small horizontal tab padding (10px). Compact spacing for xs tabs and dense navigation."
+            "$description": "tabs.tab.padding.horizontal.xs — Extra small horizontal tab padding (10px). Compact spacing for xs tabs and dense navigation."
           },
           "sm": {
             "$value": "{spacing.sm}",
             "$type": "dimension",
-            "$description": "tabs.tab.padding.x.sm — Small horizontal tab padding (12px). Standard padding for sm tabs and efficient layouts."
+            "$description": "tabs.tab.padding.horizontal.sm — Small horizontal tab padding (12px). Standard padding for sm tabs and efficient layouts."
           },
           "md": {
             "$value": "{spacing.md}",
             "$type": "dimension",
-            "$description": "tabs.tab.padding.x.md — Medium horizontal tab padding (16px). DEFAULT. Comfortable padding for most tab navigation."
+            "$description": "tabs.tab.padding.horizontal.md — Medium horizontal tab padding (16px). DEFAULT. Comfortable padding for most tab navigation."
           },
           "lg": {
             "$value": "{spacing.lg}",
             "$type": "dimension",
-            "$description": "tabs.tab.padding.x.lg — Large horizontal tab padding (20px). Generous padding for prominent tabs with breathing room."
+            "$description": "tabs.tab.padding.horizontal.lg — Large horizontal tab padding (20px). Generous padding for prominent tabs with breathing room."
           },
           "xl": {
             "$value": "{spacing.xl}",
             "$type": "dimension",
-            "$description": "tabs.tab.padding.x.xl — Extra large horizontal tab padding (32px). Maximum padding for high-emphasis, spacious tabs."
+            "$description": "tabs.tab.padding.horizontal.xl — Extra large horizontal tab padding (32px). Maximum padding for high-emphasis, spacious tabs."
           }
         }
       },

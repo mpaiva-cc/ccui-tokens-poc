@@ -27,7 +27,7 @@
         "padding": {
             "$type": "dimension",
             "$description": "Select input horizontal padding. Controls spacing between text and borders/icon.",
-            "x": {
+            "horizontal": {
                 "xs": {
                     "$value": "{spacing.xs}",
                     "$description": "Extra small horizontal select padding (10px). Compact padding for xs selects. Leaves room for dropdown icon."
@@ -112,12 +112,12 @@
         "option": {
             "$description": "Select option (menu item) configuration. Options are clickable items in the dropdown list.",
             "padding": {
-                "x": {
+                "horizontal": {
                     "$value": "{spacing.sm}",
                     "$type": "dimension",
                     "$description": "Option horizontal padding (12px). Comfortable padding for option text. Wider click/tap target than text alone."
                 },
-                "y": {
+                "vertical": {
                     "$value": "{spacing.xs}",
                     "$type": "dimension",
                     "$description": "Option vertical padding (10px). Creates comfortable row height for options. Good for keyboard navigation and touch."

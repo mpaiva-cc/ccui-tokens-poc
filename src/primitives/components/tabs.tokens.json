@@ -40,7 +40,7 @@
             },
             "padding": {
                 "$description": "Tab horizontal padding. Controls spacing around tab text/icons.",
-                "x": {
+                "horizontal": {
                     "xs": {
                         "$value": "{spacing.xs}",
                         "$description": "Extra small horizontal tab padding (10px). Compact spacing for xs tabs and dense navigation."

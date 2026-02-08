@@ -2,58 +2,58 @@
   "table": {
     "cell": {
       "padding": {
-        "x": {
+        "horizontal": {
           "xs": {
             "$value": "{spacing.xs}",
             "$type": "dimension",
-            "$description": "table.cell.padding.x.xs — Extra small horizontal cell padding (10px). Dense tables for compact data display. Use when horizontal space is limited."
+            "$description": "table.cell.padding.horizontal.xs — Extra small horizontal cell padding (10px). Dense tables for compact data display. Use when horizontal space is limited."
           },
           "sm": {
             "$value": "{spacing.sm}",
             "$type": "dimension",
-            "$description": "table.cell.padding.x.sm — Small horizontal cell padding (12px). Standard density for most data tables. Good balance of data and whitespace."
+            "$description": "table.cell.padding.horizontal.sm — Small horizontal cell padding (12px). Standard density for most data tables. Good balance of data and whitespace."
           },
           "md": {
             "$value": "{spacing.md}",
             "$type": "dimension",
-            "$description": "table.cell.padding.x.md — Medium horizontal cell padding (16px). DEFAULT. Comfortable spacing for readable data. Recommended for most use cases."
+            "$description": "table.cell.padding.horizontal.md — Medium horizontal cell padding (16px). DEFAULT. Comfortable spacing for readable data. Recommended for most use cases."
           },
           "lg": {
             "$value": "{spacing.lg}",
             "$type": "dimension",
-            "$description": "table.cell.padding.x.lg — Large horizontal cell padding (20px). Spacious tables with generous breathing room. Good for simple data with few columns."
+            "$description": "table.cell.padding.horizontal.lg — Large horizontal cell padding (20px). Spacious tables with generous breathing room. Good for simple data with few columns."
           },
           "xl": {
             "$value": "{spacing.xl}",
             "$type": "dimension",
-            "$description": "table.cell.padding.x.xl — Extra large horizontal cell padding (32px). Very spacious tables for presentation or limited data. Maximum readability."
+            "$description": "table.cell.padding.horizontal.xl — Extra large horizontal cell padding (32px). Very spacious tables for presentation or limited data. Maximum readability."
           }
         },
-        "y": {
+        "vertical": {
           "xs": {
             "$value": "{sizing.table.cellPaddingY.xs}",
             "$type": "dimension",
-            "$description": "table.cell.padding.y.xs — Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views."
+            "$description": "table.cell.padding.vertical.xs — Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views."
           },
           "sm": {
             "$value": "{sizing.table.cellPaddingY.sm}",
             "$type": "dimension",
-            "$description": "table.cell.padding.y.sm — Small vertical cell padding (6px). Standard density rows for most data tables. Efficient use of vertical space."
+            "$description": "table.cell.padding.vertical.sm — Small vertical cell padding (6px). Standard density rows for most data tables. Efficient use of vertical space."
           },
           "md": {
             "$value": "{sizing.table.cellPaddingY.md}",
             "$type": "dimension",
-            "$description": "table.cell.padding.y.md — Medium vertical cell padding (8px). DEFAULT. Comfortable row height for general use. Good for scanning and selecting rows."
+            "$description": "table.cell.padding.vertical.md — Medium vertical cell padding (8px). DEFAULT. Comfortable row height for general use. Good for scanning and selecting rows."
           },
           "lg": {
             "$value": "{sizing.table.cellPaddingY.lg}",
             "$type": "dimension",
-            "$description": "table.cell.padding.y.lg — Large vertical cell padding (12px). Taller rows for better touch targets and readability. Good for mobile or complex cell content."
+            "$description": "table.cell.padding.vertical.lg — Large vertical cell padding (12px). Taller rows for better touch targets and readability. Good for mobile or complex cell content."
           },
           "xl": {
             "$value": "{sizing.table.cellPaddingY.xl}",
             "$type": "dimension",
-            "$description": "table.cell.padding.y.xl — Extra large vertical cell padding (16px). Maximum row height for spacious tables. Use for rich cell content or presentation."
+            "$description": "table.cell.padding.vertical.xl — Extra large vertical cell padding (16px). Maximum row height for spacious tables. Use for rich cell content or presentation."
           }
         }
       },

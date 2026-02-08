@@ -28,31 +28,31 @@
       }
     },
     "padding": {
-      "x": {
+      "horizontal": {
         "xs": {
           "$value": "{spacing.xs}",
           "$type": "dimension",
-          "$description": "input.padding.x.xs — Extra small horizontal padding (8px). Use for compact form inputs."
+          "$description": "input.padding.horizontal.xs — Extra small horizontal padding (8px). Use for compact form inputs."
         },
         "sm": {
           "$value": "{spacing.sm}",
           "$type": "dimension",
-          "$description": "input.padding.x.sm — Small horizontal padding (12px). Use for secondary form fields."
+          "$description": "input.padding.horizontal.sm — Small horizontal padding (12px). Use for secondary form fields."
         },
         "md": {
           "$value": "{spacing.sm}",
           "$type": "dimension",
-          "$description": "input.padding.x.md — Medium horizontal padding (12px). Use for standard inputs. DEFAULT."
+          "$description": "input.padding.horizontal.md — Medium horizontal padding (12px). Use for standard inputs. DEFAULT."
         },
         "lg": {
           "$value": "{spacing.md}",
           "$type": "dimension",
-          "$description": "input.padding.x.lg — Large horizontal padding (16px). Use for prominent form fields."
+          "$description": "input.padding.horizontal.lg — Large horizontal padding (16px). Use for prominent form fields."
         },
         "xl": {
           "$value": "{spacing.md}",
           "$type": "dimension",
-          "$description": "input.padding.x.xl — Extra large horizontal padding (16px). Use for marketing forms."
+          "$description": "input.padding.horizontal.xl — Extra large horizontal padding (16px). Use for marketing forms."
         }
       }
     },

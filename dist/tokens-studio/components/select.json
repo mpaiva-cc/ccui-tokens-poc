@@ -28,31 +28,31 @@
       }
     },
     "padding": {
-      "x": {
+      "horizontal": {
         "xs": {
           "$value": "{spacing.xs}",
           "$type": "dimension",
-          "$description": "select.padding.x.xs — Extra small horizontal select padding (10px). Compact padding for xs selects. Leaves room for dropdown icon."
+          "$description": "select.padding.horizontal.xs — Extra small horizontal select padding (10px). Compact padding for xs selects. Leaves room for dropdown icon."
         },
         "sm": {
           "$value": "{spacing.sm}",
           "$type": "dimension",
-          "$description": "select.padding.x.sm — Small horizontal select padding (12px). Standard padding for sm selects and efficient layouts."
+          "$description": "select.padding.horizontal.sm — Small horizontal select padding (12px). Standard padding for sm selects and efficient layouts."
         },
         "md": {
           "$value": "{spacing.sm}",
           "$type": "dimension",
-          "$description": "select.padding.x.md — Medium horizontal select padding (12px). DEFAULT. Same as sm - compact but comfortable for most use cases."
+          "$description": "select.padding.horizontal.md — Medium horizontal select padding (12px). DEFAULT. Same as sm - compact but comfortable for most use cases."
         },
         "lg": {
           "$value": "{spacing.md}",
           "$type": "dimension",
-          "$description": "select.padding.x.lg — Large horizontal select padding (16px). More generous padding for lg selects with better text breathing room."
+          "$description": "select.padding.horizontal.lg — Large horizontal select padding (16px). More generous padding for lg selects with better text breathing room."
         },
         "xl": {
           "$value": "{spacing.md}",
           "$type": "dimension",
-          "$description": "select.padding.x.xl — Extra large horizontal select padding (16px). Same as lg - comfortable padding for xl selects."
+          "$description": "select.padding.horizontal.xl — Extra large horizontal select padding (16px). Same as lg - comfortable padding for xl selects."
         }
       }
     },
@@ -121,15 +121,15 @@
     },
     "option": {
       "padding": {
-        "x": {
+        "horizontal": {
           "$value": "{spacing.sm}",
           "$type": "dimension",
-          "$description": "select.option.padding.x — Option horizontal padding (12px). Comfortable padding for option text. Wider click/tap target than text alone."
+          "$description": "select.option.padding.horizontal — Option horizontal padding (12px). Comfortable padding for option text. Wider click/tap target than text alone."
         },
-        "y": {
+        "vertical": {
           "$value": "{spacing.xs}",
           "$type": "dimension",
-          "$description": "select.option.padding.y — Option vertical padding (10px). Creates comfortable row height for options. Good for keyboard navigation and touch."
+          "$description": "select.option.padding.vertical — Option vertical padding (10px). Creates comfortable row height for options. Good for keyboard navigation and touch."
         }
       },
       "borderRadius": {
