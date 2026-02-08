@@ -4,782 +4,782 @@
       "light": {
         "$value": "rgba(0, 0, 0, 0.5)",
         "$type": "color",
-        "$description": "Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds."
+        "$description": "color.overlay.light — Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds."
       },
       "dark": {
         "$value": "rgba(0, 0, 0, 0.75)",
         "$type": "color",
-        "$description": "Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
+        "$description": "color.overlay.dark — Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
       }
     },
     "alpha": {
       "error": {
         "$value": "rgba(207, 39, 32, 0.15)",
         "$type": "color",
-        "$description": "Error state semi-transparent background (15% red)"
+        "$description": "color.alpha.error — Error state semi-transparent background (15% red)"
       },
       "success": {
         "$value": "rgba(29, 148, 72, 0.15)",
         "$type": "color",
-        "$description": "Success state semi-transparent background (15% green)"
+        "$description": "color.alpha.success — Success state semi-transparent background (15% green)"
       },
       "warning": {
         "$value": "rgba(218, 167, 17, 0.15)",
         "$type": "color",
-        "$description": "Warning state semi-transparent background (15% yellow)"
+        "$description": "color.alpha.warning — Warning state semi-transparent background (15% yellow)"
       },
       "info": {
         "$value": "rgba(9, 116, 235, 0.15)",
         "$type": "color",
-        "$description": "Info state semi-transparent background (15% blue)"
+        "$description": "color.alpha.info — Info state semi-transparent background (15% blue)"
       },
       "selected": {
         "$value": "rgba(9, 116, 235, 0.2)",
         "$type": "color",
-        "$description": "Selected state semi-transparent background (20% blue)"
+        "$description": "color.alpha.selected — Selected state semi-transparent background (20% blue)"
       }
     },
     "white": {
       "$value": "#ffffff",
       "$type": "color",
-      "$description": "Pure white. Use for: light theme backgrounds, text on dark backgrounds, card surfaces. Contrast ratio with black: 21:1 (WCAG AAA). Avoid using directly - prefer semantic tokens like color.body or color.default."
+      "$description": "color.white — Pure white. Use for: light theme backgrounds, text on dark backgrounds, card surfaces. Contrast ratio with black: 21:1 (WCAG AAA). Avoid using directly - prefer semantic tokens like color.body or color.default."
     },
     "black": {
       "$value": "#000000",
       "$type": "color",
-      "$description": "Pure black. Use for: dark theme text emphasis, high-contrast borders. Contrast ratio with white: 21:1 (WCAG AAA). Rarely used directly - prefer dark.9 for softer blacks or semantic color.text token."
+      "$description": "color.black — Pure black. Use for: dark theme text emphasis, high-contrast borders. Contrast ratio with white: 21:1 (WCAG AAA). Rarely used directly - prefer dark.9 for softer blacks or semantic color.text token."
     },
     "transparent": {
       "$value": "transparent",
       "$type": "color",
-      "$description": "Fully transparent. Use for: invisible interactive areas, overlay starting states, clearfix backgrounds. CSS keyword value - works in all color contexts."
+      "$description": "color.transparent — Fully transparent. Use for: invisible interactive areas, overlay starting states, clearfix backgrounds. CSS keyword value - works in all color contexts."
     },
     "dark": {
       "0": {
         "$value": "#d5d7d9",
         "$type": "color",
-        "$description": "Lightest dark - text color on dark backgrounds, disabled states on dark theme"
+        "$description": "color.dark.0 — Lightest dark - text color on dark backgrounds, disabled states on dark theme"
       },
       "1": {
         "$value": "#b4b7bb",
         "$type": "color",
-        "$description": "Light dark - secondary text on dark theme, subtle borders"
+        "$description": "color.dark.1 — Light dark - secondary text on dark theme, subtle borders"
       },
       "2": {
         "$value": "#93979c",
         "$type": "color",
-        "$description": "Mid-light dark - placeholder text on dark theme, icons"
+        "$description": "color.dark.2 — Mid-light dark - placeholder text on dark theme, icons"
       },
       "3": {
         "$value": "#74787e",
         "$type": "color",
-        "$description": "Medium dark - dimmed text, decorative elements"
+        "$description": "color.dark.3 — Medium dark - dimmed text, decorative elements"
       },
       "4": {
         "$value": "#565b61",
         "$type": "color",
-        "$description": "Mid dark - borders on dark theme, dividers"
+        "$description": "color.dark.4 — Mid dark - borders on dark theme, dividers"
       },
       "5": {
         "$value": "#3a3f46",
         "$type": "color",
-        "$description": "Base dark - elevated surfaces on dark theme, cards"
+        "$description": "color.dark.5 — Base dark - elevated surfaces on dark theme, cards"
       },
       "6": {
         "$value": "#21262d",
         "$type": "color",
-        "$description": "Dark base - primary dark theme background, app shells"
+        "$description": "color.dark.6 — Dark base - primary dark theme background, app shells"
       },
       "7": {
         "$value": "#181c22",
         "$type": "color",
-        "$description": "Darker - alternative dark background, sidebar backgrounds"
+        "$description": "color.dark.7 — Darker - alternative dark background, sidebar backgrounds"
       },
       "8": {
         "$value": "#13161b",
         "$type": "color",
-        "$description": "Very dark - modal overlays on dark theme, deep shadows"
+        "$description": "color.dark.8 — Very dark - modal overlays on dark theme, deep shadows"
       },
       "9": {
         "$value": "#0e1014",
         "$type": "color",
-        "$description": "Darkest - near-black for maximum contrast elements"
+        "$description": "color.dark.9 — Darkest - near-black for maximum contrast elements"
       }
     },
     "gray": {
       "0": {
         "$value": "#f3f4f5",
         "$type": "color",
-        "$description": "Lightest gray - subtle backgrounds, hover states on white, zebra striping"
+        "$description": "color.gray.0 — Lightest gray - subtle backgrounds, hover states on white, zebra striping"
       },
       "1": {
         "$value": "#e4e6e8",
         "$type": "color",
-        "$description": "Light gray - input backgrounds, disabled backgrounds, table headers"
+        "$description": "color.gray.1 — Light gray - input backgrounds, disabled backgrounds, table headers"
       },
       "2": {
         "$value": "#c8cbce",
         "$type": "color",
-        "$description": "Mid-light gray - borders, dividers, inactive tabs"
+        "$description": "color.gray.2 — Mid-light gray - borders, dividers, inactive tabs"
       },
       "3": {
         "$value": "#adb1b5",
         "$type": "color",
-        "$description": "Medium gray - placeholder text (use carefully - check contrast), icons"
+        "$description": "color.gray.3 — Medium gray - placeholder text (use carefully - check contrast), icons"
       },
       "4": {
         "$value": "#92979d",
         "$type": "color",
-        "$description": "Mid gray - secondary icons, chart gridlines"
+        "$description": "color.gray.4 — Mid gray - secondary icons, chart gridlines"
       },
       "5": {
         "$value": "#787e85",
         "$type": "color",
-        "$description": "Base gray - dimmed text, help text (4.5:1 on white = AA)"
+        "$description": "color.gray.5 — Base gray - dimmed text, help text (4.5:1 on white = AA)"
       },
       "6": {
         "$value": "#5f656d",
         "$type": "color",
-        "$description": "Dark gray - secondary text (7:1 on white = AAA), labels"
+        "$description": "color.gray.6 — Dark gray - secondary text (7:1 on white = AAA), labels"
       },
       "7": {
         "$value": "#474d55",
         "$type": "color",
-        "$description": "Darker gray - primary text alternative, emphasis"
+        "$description": "color.gray.7 — Darker gray - primary text alternative, emphasis"
       },
       "8": {
         "$value": "#31363d",
         "$type": "color",
-        "$description": "Very dark gray - high-emphasis text on light backgrounds"
+        "$description": "color.gray.8 — Very dark gray - high-emphasis text on light backgrounds"
       },
       "9": {
         "$value": "#1c2026",
         "$type": "color",
-        "$description": "Darkest gray - headings, maximum emphasis text"
+        "$description": "color.gray.9 — Darkest gray - headings, maximum emphasis text"
       }
     },
     "red": {
       "0": {
         "$value": "#fef1f0",
         "$type": "color",
-        "$description": "Lightest red - error alert backgrounds, validation field backgrounds"
+        "$description": "color.red.0 — Lightest red - error alert backgrounds, validation field backgrounds"
       },
       "1": {
         "$value": "#fcdcda",
         "$type": "color",
-        "$description": "Light red - hover state for error backgrounds"
+        "$description": "color.red.1 — Light red - hover state for error backgrounds"
       },
       "2": {
         "$value": "#f9b8b4",
         "$type": "color",
-        "$description": "Mid-light red - progress indicators, decorative"
+        "$description": "color.red.2 — Mid-light red - progress indicators, decorative"
       },
       "3": {
         "$value": "#f4928c",
         "$type": "color",
-        "$description": "Medium red - icons on error backgrounds"
+        "$description": "color.red.3 — Medium red - icons on error backgrounds"
       },
       "4": {
         "$value": "#ed6a63",
         "$type": "color",
-        "$description": "Mid red - error icons on white backgrounds"
+        "$description": "color.red.4 — Mid red - error icons on white backgrounds"
       },
       "5": {
         "$value": "#e5413a",
         "$type": "color",
-        "$description": "Base red - primary destructive buttons, critical alerts"
+        "$description": "color.red.5 — Base red - primary destructive buttons, critical alerts"
       },
       "6": {
         "$value": "#cf2720",
         "$type": "color",
-        "$description": "Dark red - error text on white (6:1 contrast = AA), danger buttons"
+        "$description": "color.red.6 — Dark red - error text on white (6:1 contrast = AA), danger buttons"
       },
       "7": {
         "$value": "#a01d18",
         "$type": "color",
-        "$description": "Darker red - error text with maximum contrast (8:1 = AAA)"
+        "$description": "color.red.7 — Darker red - error text with maximum contrast (8:1 = AAA)"
       },
       "8": {
         "$value": "#731511",
         "$type": "color",
-        "$description": "Very dark red - text on light red backgrounds"
+        "$description": "color.red.8 — Very dark red - text on light red backgrounds"
       },
       "9": {
         "$value": "#480d0b",
         "$type": "color",
-        "$description": "Darkest red - reserved for extreme emphasis"
+        "$description": "color.red.9 — Darkest red - reserved for extreme emphasis"
       }
     },
     "pink": {
       "0": {
         "$value": "#fdeef5",
         "$type": "color",
-        "$description": "Lightest pink - subtle highlights, badge backgrounds"
+        "$description": "color.pink.0 — Lightest pink - subtle highlights, badge backgrounds"
       },
       "1": {
         "$value": "#fad7e7",
         "$type": "color",
-        "$description": "Light pink - hover states, selected rows"
+        "$description": "color.pink.1 — Light pink - hover states, selected rows"
       },
       "2": {
         "$value": "#f5afcf",
         "$type": "color",
-        "$description": "Mid-light pink - decorative borders"
+        "$description": "color.pink.2 — Mid-light pink - decorative borders"
       },
       "3": {
         "$value": "#ee85b5",
         "$type": "color",
-        "$description": "Medium pink - icons, illustrations"
+        "$description": "color.pink.3 — Medium pink - icons, illustrations"
       },
       "4": {
         "$value": "#e55a9b",
         "$type": "color",
-        "$description": "Mid pink - interactive elements"
+        "$description": "color.pink.4 — Mid pink - interactive elements"
       },
       "5": {
         "$value": "#da2d80",
         "$type": "color",
-        "$description": "Base pink - primary accent applications"
+        "$description": "color.pink.5 — Base pink - primary accent applications"
       },
       "6": {
         "$value": "#b91f69",
         "$type": "color",
-        "$description": "Dark pink - text on light pink backgrounds (AA compliant)"
+        "$description": "color.pink.6 — Dark pink - text on light pink backgrounds (AA compliant)"
       },
       "7": {
         "$value": "#8e1851",
         "$type": "color",
-        "$description": "Darker pink - high contrast applications"
+        "$description": "color.pink.7 — Darker pink - high contrast applications"
       },
       "8": {
         "$value": "#65113a",
         "$type": "color",
-        "$description": "Very dark pink - text on light backgrounds"
+        "$description": "color.pink.8 — Very dark pink - text on light backgrounds"
       },
       "9": {
         "$value": "#3f0b24",
         "$type": "color",
-        "$description": "Darkest pink - maximum emphasis"
+        "$description": "color.pink.9 — Darkest pink - maximum emphasis"
       }
     },
     "grape": {
       "0": {
         "$value": "#fbeff9",
         "$type": "color",
-        "$description": "Lightest grape - premium feature backgrounds"
+        "$description": "color.grape.0 — Lightest grape - premium feature backgrounds"
       },
       "1": {
         "$value": "#f5d9f1",
         "$type": "color",
-        "$description": "Light grape - hover states"
+        "$description": "color.grape.1 — Light grape - hover states"
       },
       "2": {
         "$value": "#ebb3e3",
         "$type": "color",
-        "$description": "Mid-light grape - decorative elements"
+        "$description": "color.grape.2 — Mid-light grape - decorative elements"
       },
       "3": {
         "$value": "#df8bd3",
         "$type": "color",
-        "$description": "Medium grape - icons, illustrations"
+        "$description": "color.grape.3 — Medium grape - icons, illustrations"
       },
       "4": {
         "$value": "#d262c2",
         "$type": "color",
-        "$description": "Mid grape - interactive accents"
+        "$description": "color.grape.4 — Mid grape - interactive accents"
       },
       "5": {
         "$value": "#c338b0",
         "$type": "color",
-        "$description": "Base grape - primary grape applications"
+        "$description": "color.grape.5 — Base grape - primary grape applications"
       },
       "6": {
         "$value": "#a22993",
         "$type": "color",
-        "$description": "Dark grape - text on light grape backgrounds"
+        "$description": "color.grape.6 — Dark grape - text on light grape backgrounds"
       },
       "7": {
         "$value": "#7c2071",
         "$type": "color",
-        "$description": "Darker grape - high contrast"
+        "$description": "color.grape.7 — Darker grape - high contrast"
       },
       "8": {
         "$value": "#581750",
         "$type": "color",
-        "$description": "Very dark grape - text applications"
+        "$description": "color.grape.8 — Very dark grape - text applications"
       },
       "9": {
         "$value": "#370e32",
         "$type": "color",
-        "$description": "Darkest grape - maximum emphasis"
+        "$description": "color.grape.9 — Darkest grape - maximum emphasis"
       }
     },
     "violet": {
       "0": {
         "$value": "#f5f1fd",
         "$type": "color",
-        "$description": "Lightest violet - feature highlight backgrounds"
+        "$description": "color.violet.0 — Lightest violet - feature highlight backgrounds"
       },
       "1": {
         "$value": "#e6dcfa",
         "$type": "color",
-        "$description": "Light violet - hover states"
+        "$description": "color.violet.1 — Light violet - hover states"
       },
       "2": {
         "$value": "#cdb9f5",
         "$type": "color",
-        "$description": "Mid-light violet - decorative"
+        "$description": "color.violet.2 — Mid-light violet - decorative"
       },
       "3": {
         "$value": "#b396ef",
         "$type": "color",
-        "$description": "Medium violet - icons"
+        "$description": "color.violet.3 — Medium violet - icons"
       },
       "4": {
         "$value": "#9872e8",
         "$type": "color",
-        "$description": "Mid violet - interactive elements"
+        "$description": "color.violet.4 — Mid violet - interactive elements"
       },
       "5": {
         "$value": "#7c4ee0",
         "$type": "color",
-        "$description": "Base violet - primary applications"
+        "$description": "color.violet.5 — Base violet - primary applications"
       },
       "6": {
         "$value": "#6536c7",
         "$type": "color",
-        "$description": "Dark violet - text on light backgrounds"
+        "$description": "color.violet.6 — Dark violet - text on light backgrounds"
       },
       "7": {
         "$value": "#4e2a99",
         "$type": "color",
-        "$description": "Darker violet - high contrast"
+        "$description": "color.violet.7 — Darker violet - high contrast"
       },
       "8": {
         "$value": "#381e6d",
         "$type": "color",
-        "$description": "Very dark violet - text"
+        "$description": "color.violet.8 — Very dark violet - text"
       },
       "9": {
         "$value": "#231344",
         "$type": "color",
-        "$description": "Darkest violet - maximum emphasis"
+        "$description": "color.violet.9 — Darkest violet - maximum emphasis"
       }
     },
     "indigo": {
       "0": {
         "$value": "#f0f2fe",
         "$type": "color",
-        "$description": "Lightest indigo - subtle backgrounds"
+        "$description": "color.indigo.0 — Lightest indigo - subtle backgrounds"
       },
       "1": {
         "$value": "#dce0fc",
         "$type": "color",
-        "$description": "Light indigo - hover states"
+        "$description": "color.indigo.1 — Light indigo - hover states"
       },
       "2": {
         "$value": "#b9c2f9",
         "$type": "color",
-        "$description": "Mid-light indigo - decorative"
+        "$description": "color.indigo.2 — Mid-light indigo - decorative"
       },
       "3": {
         "$value": "#96a3f5",
         "$type": "color",
-        "$description": "Medium indigo - icons"
+        "$description": "color.indigo.3 — Medium indigo - icons"
       },
       "4": {
         "$value": "#7284f0",
         "$type": "color",
-        "$description": "Mid indigo - interactive elements"
+        "$description": "color.indigo.4 — Mid indigo - interactive elements"
       },
       "5": {
         "$value": "#4e65ea",
         "$type": "color",
-        "$description": "Base indigo - primary applications"
+        "$description": "color.indigo.5 — Base indigo - primary applications"
       },
       "6": {
         "$value": "#364fd0",
         "$type": "color",
-        "$description": "Dark indigo - text on light backgrounds"
+        "$description": "color.indigo.6 — Dark indigo - text on light backgrounds"
       },
       "7": {
         "$value": "#2a3da0",
         "$type": "color",
-        "$description": "Darker indigo - high contrast"
+        "$description": "color.indigo.7 — Darker indigo - high contrast"
       },
       "8": {
         "$value": "#1e2c72",
         "$type": "color",
-        "$description": "Very dark indigo - text"
+        "$description": "color.indigo.8 — Very dark indigo - text"
       },
       "9": {
         "$value": "#ff6600",
         "$type": "color",
-        "$description": "Darkest indigo - maximum emphasis 131c47"
+        "$description": "color.indigo.9 — Darkest indigo - maximum emphasis 131c47"
       }
     },
     "blue": {
       "0": {
         "$value": "#eaf3fe",
         "$type": "color",
-        "$description": "Lightest blue - primary light backgrounds, selected row highlights"
+        "$description": "color.blue.0 — Lightest blue - primary light backgrounds, selected row highlights"
       },
       "1": {
         "$value": "#cfe3fc",
         "$type": "color",
-        "$description": "Light blue - hover backgrounds, info alert backgrounds"
+        "$description": "color.blue.1 — Light blue - hover backgrounds, info alert backgrounds"
       },
       "2": {
         "$value": "#9fc8fa",
         "$type": "color",
-        "$description": "Mid-light blue - progress bars, decorative"
+        "$description": "color.blue.2 — Mid-light blue - progress bars, decorative"
       },
       "3": {
         "$value": "#6eacf6",
         "$type": "color",
-        "$description": "Medium blue - icons on light backgrounds"
+        "$description": "color.blue.3 — Medium blue - icons on light backgrounds"
       },
       "4": {
         "$value": "#3c90f1",
         "$type": "color",
-        "$description": "Mid blue - primary buttons on dark theme, links on dark"
+        "$description": "color.blue.4 — Mid blue - primary buttons on dark theme, links on dark"
       },
       "5": {
         "$value": "#0974eb",
         "$type": "color",
-        "$description": "Base blue - primary buttons, links (light theme)"
+        "$description": "color.blue.5 — Base blue - primary buttons, links (light theme)"
       },
       "6": {
         "$value": "#0760c6",
         "$type": "color",
-        "$description": "Dark blue - primary brand color, main CTAs, navigation active states"
+        "$description": "color.blue.6 — Dark blue - primary brand color, main CTAs, navigation active states"
       },
       "7": {
         "$value": "#064a98",
         "$type": "color",
-        "$description": "Darker blue - pressed states, text on light blue backgrounds"
+        "$description": "color.blue.7 — Darker blue - pressed states, text on light blue backgrounds"
       },
       "8": {
         "$value": "#04356c",
         "$type": "color",
-        "$description": "Very dark blue - high contrast text"
+        "$description": "color.blue.8 — Very dark blue - high contrast text"
       },
       "9": {
         "$value": "#032142",
         "$type": "color",
-        "$description": "Darkest blue - maximum emphasis, dark accents"
+        "$description": "color.blue.9 — Darkest blue - maximum emphasis, dark accents"
       }
     },
     "cyan": {
       "0": {
         "$value": "#e5f6fa",
         "$type": "color",
-        "$description": "Lightest cyan - info backgrounds"
+        "$description": "color.cyan.0 — Lightest cyan - info backgrounds"
       },
       "1": {
         "$value": "#c5eaf3",
         "$type": "color",
-        "$description": "Light cyan - hover states"
+        "$description": "color.cyan.1 — Light cyan - hover states"
       },
       "2": {
         "$value": "#8cd6e7",
         "$type": "color",
-        "$description": "Mid-light cyan - decorative"
+        "$description": "color.cyan.2 — Mid-light cyan - decorative"
       },
       "3": {
         "$value": "#52c1da",
         "$type": "color",
-        "$description": "Medium cyan - icons"
+        "$description": "color.cyan.3 — Medium cyan - icons"
       },
       "4": {
         "$value": "#17accc",
         "$type": "color",
-        "$description": "Mid cyan - interactive elements"
+        "$description": "color.cyan.4 — Mid cyan - interactive elements"
       },
       "5": {
         "$value": "#0d95b3",
         "$type": "color",
-        "$description": "Base cyan - primary applications"
+        "$description": "color.cyan.5 — Base cyan - primary applications"
       },
       "6": {
         "$value": "#0b7d96",
         "$type": "color",
-        "$description": "Dark cyan - text on light backgrounds"
+        "$description": "color.cyan.6 — Dark cyan - text on light backgrounds"
       },
       "7": {
         "$value": "#086073",
         "$type": "color",
-        "$description": "Darker cyan - high contrast"
+        "$description": "color.cyan.7 — Darker cyan - high contrast"
       },
       "8": {
         "$value": "#064552",
         "$type": "color",
-        "$description": "Very dark cyan - text"
+        "$description": "color.cyan.8 — Very dark cyan - text"
       },
       "9": {
         "$value": "#042b33",
         "$type": "color",
-        "$description": "Darkest cyan - maximum emphasis"
+        "$description": "color.cyan.9 — Darkest cyan - maximum emphasis"
       }
     },
     "teal": {
       "0": {
         "$value": "#e3f7f3",
         "$type": "color",
-        "$description": "Lightest teal - subtle success backgrounds"
+        "$description": "color.teal.0 — Lightest teal - subtle success backgrounds"
       },
       "1": {
         "$value": "#c0ede4",
         "$type": "color",
-        "$description": "Light teal - hover states"
+        "$description": "color.teal.1 — Light teal - hover states"
       },
       "2": {
         "$value": "#83dcc9",
         "$type": "color",
-        "$description": "Mid-light teal - decorative"
+        "$description": "color.teal.2 — Mid-light teal - decorative"
       },
       "3": {
         "$value": "#46caae",
         "$type": "color",
-        "$description": "Medium teal - icons"
+        "$description": "color.teal.3 — Medium teal - icons"
       },
       "4": {
         "$value": "#10b794",
         "$type": "color",
-        "$description": "Mid teal - interactive elements"
+        "$description": "color.teal.4 — Mid teal - interactive elements"
       },
       "5": {
         "$value": "#0e9e80",
         "$type": "color",
-        "$description": "Base teal - primary applications"
+        "$description": "color.teal.5 — Base teal - primary applications"
       },
       "6": {
         "$value": "#0c846b",
         "$type": "color",
-        "$description": "Dark teal - text on light backgrounds"
+        "$description": "color.teal.6 — Dark teal - text on light backgrounds"
       },
       "7": {
         "$value": "#096552",
         "$type": "color",
-        "$description": "Darker teal - high contrast"
+        "$description": "color.teal.7 — Darker teal - high contrast"
       },
       "8": {
         "$value": "#06483b",
         "$type": "color",
-        "$description": "Very dark teal - text"
+        "$description": "color.teal.8 — Very dark teal - text"
       },
       "9": {
         "$value": "#042d25",
         "$type": "color",
-        "$description": "Darkest teal - maximum emphasis"
+        "$description": "color.teal.9 — Darkest teal - maximum emphasis"
       }
     },
     "green": {
       "0": {
         "$value": "#e7f6ec",
         "$type": "color",
-        "$description": "Lightest green - success alert backgrounds, positive feedback areas"
+        "$description": "color.green.0 — Lightest green - success alert backgrounds, positive feedback areas"
       },
       "1": {
         "$value": "#c9ead4",
         "$type": "color",
-        "$description": "Light green - hover state for success backgrounds"
+        "$description": "color.green.1 — Light green - hover state for success backgrounds"
       },
       "2": {
         "$value": "#94d6aa",
         "$type": "color",
-        "$description": "Mid-light green - progress indicators, completion bars"
+        "$description": "color.green.2 — Mid-light green - progress indicators, completion bars"
       },
       "3": {
         "$value": "#5fc180",
         "$type": "color",
-        "$description": "Medium green - success icons on light backgrounds"
+        "$description": "color.green.3 — Medium green - success icons on light backgrounds"
       },
       "4": {
         "$value": "#2aab58",
         "$type": "color",
-        "$description": "Mid green - success badges, online indicators"
+        "$description": "color.green.4 — Mid green - success badges, online indicators"
       },
       "5": {
         "$value": "#1d9448",
         "$type": "color",
-        "$description": "Base green - primary success buttons, checkmarks"
+        "$description": "color.green.5 — Base green - primary success buttons, checkmarks"
       },
       "6": {
         "$value": "#187c3c",
         "$type": "color",
-        "$description": "Dark green - success text on white (5:1 contrast = AA)"
+        "$description": "color.green.6 — Dark green - success text on white (5:1 contrast = AA)"
       },
       "7": {
         "$value": "#125f2e",
         "$type": "color",
-        "$description": "Darker green - success text with maximum contrast"
+        "$description": "color.green.7 — Darker green - success text with maximum contrast"
       },
       "8": {
         "$value": "#0d4421",
         "$type": "color",
-        "$description": "Very dark green - text on light green backgrounds"
+        "$description": "color.green.8 — Very dark green - text on light green backgrounds"
       },
       "9": {
         "$value": "#082a15",
         "$type": "color",
-        "$description": "Darkest green - extreme emphasis"
+        "$description": "color.green.9 — Darkest green - extreme emphasis"
       }
     },
     "lime": {
       "0": {
         "$value": "#eef6dc",
         "$type": "color",
-        "$description": "Lightest lime - subtle backgrounds"
+        "$description": "color.lime.0 — Lightest lime - subtle backgrounds"
       },
       "1": {
         "$value": "#daedb4",
         "$type": "color",
-        "$description": "Light lime - hover states"
+        "$description": "color.lime.1 — Light lime - hover states"
       },
       "2": {
         "$value": "#b6db6e",
         "$type": "color",
-        "$description": "Mid-light lime - decorative"
+        "$description": "color.lime.2 — Mid-light lime - decorative"
       },
       "3": {
         "$value": "#93c82d",
         "$type": "color",
-        "$description": "Medium lime - icons, highlights"
+        "$description": "color.lime.3 — Medium lime - icons, highlights"
       },
       "4": {
         "$value": "#7eb11c",
         "$type": "color",
-        "$description": "Mid lime - interactive elements"
+        "$description": "color.lime.4 — Mid lime - interactive elements"
       },
       "5": {
         "$value": "#6d9918",
         "$type": "color",
-        "$description": "Base lime - primary applications"
+        "$description": "color.lime.5 — Base lime - primary applications"
       },
       "6": {
         "$value": "#5b8014",
         "$type": "color",
-        "$description": "Dark lime - text on light backgrounds"
+        "$description": "color.lime.6 — Dark lime - text on light backgrounds"
       },
       "7": {
         "$value": "#466210",
         "$type": "color",
-        "$description": "Darker lime - high contrast"
+        "$description": "color.lime.7 — Darker lime - high contrast"
       },
       "8": {
         "$value": "#32460b",
         "$type": "color",
-        "$description": "Very dark lime - text"
+        "$description": "color.lime.8 — Very dark lime - text"
       },
       "9": {
         "$value": "#1f2b07",
         "$type": "color",
-        "$description": "Darkest lime - maximum emphasis"
+        "$description": "color.lime.9 — Darkest lime - maximum emphasis"
       }
     },
     "yellow": {
       "0": {
         "$value": "#fef6dc",
         "$type": "color",
-        "$description": "Lightest yellow - warning backgrounds (must use dark text)"
+        "$description": "color.yellow.0 — Lightest yellow - warning backgrounds (must use dark text)"
       },
       "1": {
         "$value": "#fceab3",
         "$type": "color",
-        "$description": "Light yellow - hover state for warning backgrounds"
+        "$description": "color.yellow.1 — Light yellow - hover state for warning backgrounds"
       },
       "2": {
         "$value": "#f9d56a",
         "$type": "color",
-        "$description": "Mid-light yellow - caution icons with dark stroke"
+        "$description": "color.yellow.2 — Mid-light yellow - caution icons with dark stroke"
       },
       "3": {
         "$value": "#f5c023",
         "$type": "color",
-        "$description": "Medium yellow - warning badges (ensure dark text)"
+        "$description": "color.yellow.3 — Medium yellow - warning badges (ensure dark text)"
       },
       "4": {
         "$value": "#daa711",
         "$type": "color",
-        "$description": "Mid yellow - decorative, charts"
+        "$description": "color.yellow.4 — Mid yellow - decorative, charts"
       },
       "5": {
         "$value": "#bc900f",
         "$type": "color",
-        "$description": "Base yellow - rarely used for text"
+        "$description": "color.yellow.5 — Base yellow - rarely used for text"
       },
       "6": {
         "$value": "#9d780c",
         "$type": "color",
-        "$description": "Dark yellow - minimum for text (check contrast)"
+        "$description": "color.yellow.6 — Dark yellow - minimum for text (check contrast)"
       },
       "7": {
         "$value": "#795c0a",
         "$type": "color",
-        "$description": "Darker yellow - warning text on light backgrounds (4.5:1)"
+        "$description": "color.yellow.7 — Darker yellow - warning text on light backgrounds (4.5:1)"
       },
       "8": {
         "$value": "#564207",
         "$type": "color",
-        "$description": "Very dark yellow - safe for body text on white"
+        "$description": "color.yellow.8 — Very dark yellow - safe for body text on white"
       },
       "9": {
         "$value": "#352904",
         "$type": "color",
-        "$description": "Darkest yellow - high contrast text"
+        "$description": "color.yellow.9 — Darkest yellow - high contrast text"
       }
     },
     "orange": {
       "0": {
         "$value": "#fef1e6",
         "$type": "color",
-        "$description": "Lightest orange - promotional backgrounds"
+        "$description": "color.orange.0 — Lightest orange - promotional backgrounds"
       },
       "1": {
         "$value": "#fcddc6",
         "$type": "color",
-        "$description": "Light orange - hover states"
+        "$description": "color.orange.1 — Light orange - hover states"
       },
       "2": {
         "$value": "#f9bb8f",
         "$type": "color",
-        "$description": "Mid-light orange - decorative"
+        "$description": "color.orange.2 — Mid-light orange - decorative"
       },
       "3": {
         "$value": "#f49857",
         "$type": "color",
-        "$description": "Medium orange - icons, highlights"
+        "$description": "color.orange.3 — Medium orange - icons, highlights"
       },
       "4": {
         "$value": "#ed7621",
         "$type": "color",
-        "$description": "Mid orange - interactive elements"
+        "$description": "color.orange.4 — Mid orange - interactive elements"
       },
       "5": {
         "$value": "#d2620f",
         "$type": "color",
-        "$description": "Base orange - primary applications"
+        "$description": "color.orange.5 — Base orange - primary applications"
       },
       "6": {
         "$value": "#af520c",
         "$type": "color",
-        "$description": "Dark orange - text on light backgrounds"
+        "$description": "color.orange.6 — Dark orange - text on light backgrounds"
       },
       "7": {
         "$value": "#873f0a",
         "$type": "color",
-        "$description": "Darker orange - high contrast"
+        "$description": "color.orange.7 — Darker orange - high contrast"
       },
       "8": {
         "$value": "#612d07",
         "$type": "color",
-        "$description": "Very dark orange - text"
+        "$description": "color.orange.8 — Very dark orange - text"
       },
       "9": {
         "$value": "#3c1c04",
         "$type": "color",
-        "$description": "Darkest orange - maximum emphasis"
+        "$description": "color.orange.9 — Darkest orange - maximum emphasis"
       }
     }
   }

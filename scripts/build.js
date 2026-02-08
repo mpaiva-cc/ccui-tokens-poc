@@ -308,7 +308,10 @@ function buildTokensStudioStructure(tokens) {
         if (tsType) tokenObj["$type"] = tsType;
 
         const description = token.$description ?? token.description ?? token.comment;
-        if (description) tokenObj["$description"] = description;
+        if (description) {
+            const tokenPath = path.join('.');
+            tokenObj["$description"] = `${tokenPath} — ${description}`;
+        }
 
         current[finalKey] = tokenObj;
     });

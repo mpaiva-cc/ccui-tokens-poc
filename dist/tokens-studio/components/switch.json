@@ -5,60 +5,60 @@
         "xs": {
           "$value": "{sizing.switch.track.width.xs}",
           "$type": "dimension",
-          "$description": "Extra small track width (28px). Use for: compact settings lists, inline toggles, space-constrained UIs. Maintains approximately 1.75:1 width-to-height ratio."
+          "$description": "switch.track.width.xs — Extra small track width (28px). Use for: compact settings lists, inline toggles, space-constrained UIs. Maintains approximately 1.75:1 width-to-height ratio."
         },
         "sm": {
           "$value": "{sizing.switch.track.width.sm}",
           "$type": "dimension",
-          "$description": "Small track width (36px). Use for: standard density settings, secondary controls. Good for desktop interfaces."
+          "$description": "switch.track.width.sm — Small track width (36px). Use for: standard density settings, secondary controls. Good for desktop interfaces."
         },
         "md": {
           "$value": "{sizing.switch.track.width.md}",
           "$type": "dimension",
-          "$description": "Medium track width (44px). DEFAULT size. Use for: most settings toggles, preferences panels, feature controls. Comfortable interaction size."
+          "$description": "switch.track.width.md — Medium track width (44px). DEFAULT size. Use for: most settings toggles, preferences panels, feature controls. Comfortable interaction size."
         },
         "lg": {
           "$value": "{sizing.switch.track.width.lg}",
           "$type": "dimension",
-          "$description": "Large track width (52px). Use for: touch-optimized interfaces, prominent feature toggles, accessibility-focused UIs. Better for mobile."
+          "$description": "switch.track.width.lg — Large track width (52px). Use for: touch-optimized interfaces, prominent feature toggles, accessibility-focused UIs. Better for mobile."
         },
         "xl": {
           "$value": "{sizing.switch.track.width.xl}",
           "$type": "dimension",
-          "$description": "Extra large track width (60px). Use for: high-emphasis standalone toggles, large touch targets, maximum accessibility. Most prominent option."
+          "$description": "switch.track.width.xl — Extra large track width (60px). Use for: high-emphasis standalone toggles, large touch targets, maximum accessibility. Most prominent option."
         }
       },
       "height": {
         "xs": {
           "$value": "{sizing.switch.track.height.xs}",
           "$type": "dimension",
-          "$description": "Extra small track height (16px). Slim track for compact layouts. Thumb will be proportionally smaller."
+          "$description": "switch.track.height.xs — Extra small track height (16px). Slim track for compact layouts. Thumb will be proportionally smaller."
         },
         "sm": {
           "$value": "{sizing.switch.track.height.sm}",
           "$type": "dimension",
-          "$description": "Small track height (20px). Standard density track height for desktop applications."
+          "$description": "switch.track.height.sm — Small track height (20px). Standard density track height for desktop applications."
         },
         "md": {
           "$value": "{sizing.switch.track.height.md}",
           "$type": "dimension",
-          "$description": "Medium track height (24px). DEFAULT. Comfortable height for most use cases. Good thumb-to-track proportion."
+          "$description": "switch.track.height.md — Medium track height (24px). DEFAULT. Comfortable height for most use cases. Good thumb-to-track proportion."
         },
         "lg": {
           "$value": "{sizing.switch.track.height.lg}",
           "$type": "dimension",
-          "$description": "Large track height (30px). Taller track for better visibility and touch targets."
+          "$description": "switch.track.height.lg — Large track height (30px). Taller track for better visibility and touch targets."
         },
         "xl": {
           "$value": "{sizing.switch.track.height.xl}",
           "$type": "dimension",
-          "$description": "Extra large track height (36px). Maximum height for high-visibility toggles and accessibility."
+          "$description": "switch.track.height.xl — Extra large track height (36px). Maximum height for high-visibility toggles and accessibility."
         }
       },
       "borderRadius": {
         "$value": "{radius.full}",
         "$type": "dimension",
-        "$description": "Track border radius (fully rounded/pill shape). Creates the characteristic pill shape of toggle switches. Value 9999px ensures full rounding at any height."
+        "$description": "switch.track.borderRadius — Track border radius (fully rounded/pill shape). Creates the characteristic pill shape of toggle switches. Value 9999px ensures full rounding at any height."
       }
     },
     "thumb": {
@@ -66,73 +66,73 @@
         "xs": {
           "$value": "{sizing.switch.thumb.size.xs}",
           "$type": "dimension",
-          "$description": "Extra small thumb size (12px). Circular handle for xs track. Sized to fit comfortably within track with offset padding."
+          "$description": "switch.thumb.size.xs — Extra small thumb size (12px). Circular handle for xs track. Sized to fit comfortably within track with offset padding."
         },
         "sm": {
           "$value": "{sizing.switch.thumb.size.sm}",
           "$type": "dimension",
-          "$description": "Small thumb size (14px). Proportional to sm track. Maintains visual balance within track."
+          "$description": "switch.thumb.size.sm — Small thumb size (14px). Proportional to sm track. Maintains visual balance within track."
         },
         "md": {
           "$value": "{sizing.switch.thumb.size.md}",
           "$type": "dimension",
-          "$description": "Medium thumb size (18px). DEFAULT. Standard thumb for md track. Clear visual indicator of toggle position."
+          "$description": "switch.thumb.size.md — Medium thumb size (18px). DEFAULT. Standard thumb for md track. Clear visual indicator of toggle position."
         },
         "lg": {
           "$value": "{sizing.switch.thumb.size.lg}",
           "$type": "dimension",
-          "$description": "Large thumb size (22px). Larger handle for better visibility and touch interaction."
+          "$description": "switch.thumb.size.lg — Large thumb size (22px). Larger handle for better visibility and touch interaction."
         },
         "xl": {
           "$value": "{sizing.switch.thumb.size.xl}",
           "$type": "dimension",
-          "$description": "Extra large thumb size (28px). Maximum handle size for high-visibility, touch-optimized toggles."
+          "$description": "switch.thumb.size.xl — Extra large thumb size (28px). Maximum handle size for high-visibility, touch-optimized toggles."
         }
       },
       "borderRadius": {
         "$value": "{radius.full}",
         "$type": "dimension",
-        "$description": "Thumb border radius (fully rounded/circular). Creates perfect circle for the sliding handle. Essential for the switch visual language."
+        "$description": "switch.thumb.borderRadius — Thumb border radius (fully rounded/circular). Creates perfect circle for the sliding handle. Essential for the switch visual language."
       },
       "offset": {
         "$value": "{sizing.switch.thumb.offset}",
         "$type": "dimension",
-        "$description": "Thumb offset from track edge (2px). Small gap between thumb and track edge creates visual breathing room and indicates interactive affordance."
+        "$description": "switch.thumb.offset — Thumb offset from track edge (2px). Small gap between thumb and track edge creates visual breathing room and indicates interactive affordance."
       }
     },
     "label": {
       "gap": {
         "$value": "{spacing.sm}",
         "$type": "dimension",
-        "$description": "Gap between switch and label (12px). Clear separation between control and label while maintaining visual association."
+        "$description": "switch.label.gap — Gap between switch and label (12px). Clear separation between control and label while maintaining visual association."
       },
       "fontSize": {
         "$value": "{fontSizes.sm}",
         "$type": "dimension",
-        "$description": "Label font size (14px). Standard form label size. Readable without overwhelming the switch control itself."
+        "$description": "switch.label.fontSize — Label font size (14px). Standard form label size. Readable without overwhelming the switch control itself."
       }
     },
     "transition": {
       "duration": {
         "$value": "{motion.duration.fast}",
         "$type": "duration",
-        "$description": "Switch transition duration (100ms). Fast, snappy animation for immediate feedback feel. Sliding motion should feel responsive."
+        "$description": "switch.transition.duration — Switch transition duration (100ms). Fast, snappy animation for immediate feedback feel. Sliding motion should feel responsive."
       },
       "easing": {
         "$value": "{motion.easing.easeOut}",
-        "$description": "Switch transition easing (ease-out). Thumb decelerates into final position for natural, satisfying toggle motion."
+        "$description": "switch.transition.easing — Switch transition easing (ease-out). Thumb decelerates into final position for natural, satisfying toggle motion."
       }
     },
     "focus": {
       "ringWidth": {
         "$value": "{focus.ring.width}",
         "$type": "dimension",
-        "$description": "Focus ring width (2px). Clearly visible ring around switch when focused via keyboard navigation."
+        "$description": "switch.focus.ringWidth — Focus ring width (2px). Clearly visible ring around switch when focused via keyboard navigation."
       },
       "ringOffset": {
         "$value": "{focus.ring.offset}",
         "$type": "dimension",
-        "$description": "Focus ring offset (2px). Space between switch track and focus ring for clear visual separation."
+        "$description": "switch.focus.ringOffset — Focus ring offset (2px). Space between switch track and focus ring for clear visual separation."
       }
     }
   }
