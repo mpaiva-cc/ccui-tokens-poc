@@ -29,7 +29,7 @@ const THEMES = {
   'ccui-30': {
     outputDirs: ['src/themes/ccui-30-light', 'src/themes/ccui-30-dark'],
     colors: {
-      whiteGold:  { hex: '#F4EBD7', label: 'White Gold — warm cream neutral' },
+      whiteGold:  { hex: '#F4EBD7', label: 'White Gold — warm cream neutral', pinStep: 4 },
       brass:      { hex: '#C3B497', label: 'Brass — muted warm accent' },
       alloy:      { hex: '#FFA680', label: 'Alloy — warm highlight, lighter companion to Copper' },
       copper:     { hex: '#FF7A52', label: 'Copper — signature accent' },
@@ -89,16 +89,42 @@ function gamutMap(l, c, h) {
 }
 
 /**
+ * Build a custom L curve that pins baseL at the given step.
+ * Steps 0 → pinStep interpolate from REF_L[0] down to baseL.
+ * Steps pinStep → 9 interpolate from baseL down to REF_L[9].
+ */
+function buildCustomLCurve(baseL, pinStep) {
+  const curve = new Array(10);
+  const topL = REF_L[0];   // 0.97
+  const botL = REF_L[9];   // 0.22
+
+  for (let i = 0; i <= pinStep; i++) {
+    const t = pinStep === 0 ? 0 : i / pinStep;
+    curve[i] = topL + t * (baseL - topL);
+  }
+  for (let i = pinStep + 1; i < 10; i++) {
+    const t = (i - pinStep) / (9 - pinStep);
+    curve[i] = baseL + t * (botL - baseL);
+  }
+
+  return curve;
+}
+
+/**
  * Generate a 10-step palette for a single brand color.
  * Returns an array of 10 hex strings, index 0 = lightest.
+ *
+ * @param {string} hex - Brand color hex
+ * @param {number} [pinStep] - Optional override to pin the base at a specific step
  */
-function generatePalette(hex) {
+function generatePalette(hex, pinStep) {
   const oklch = toOklch(parse(hex));
   const baseL = oklch.l;
   const baseC = oklch.c;
   const baseH = oklch.h ?? 0; // achromatic colors have undefined hue
 
-  const pinnedStep = closestStep(baseL);
+  const pinnedStep = pinStep != null ? pinStep : closestStep(baseL);
+  const lCurve = pinStep != null ? buildCustomLCurve(baseL, pinStep) : REF_L;
   const palette = new Array(10);
 
   for (let step = 0; step < 10; step++) {
@@ -106,7 +132,7 @@ function generatePalette(hex) {
       // Pin the exact brand color at this step
       palette[step] = hex.toUpperCase();
     } else {
-      const targetL = REF_L[step];
+      const targetL = lCurve[step];
       const mapped = gamutMap(targetL, baseC, baseH);
       palette[step] = formatHex(mapped).toUpperCase();
     }
@@ -123,7 +149,7 @@ function buildTokensJson(colorEntries, themeLabel) {
   const paletteObj = {};
 
   for (const [key, config] of Object.entries(colorEntries)) {
-    const { palette, pinnedStep } = generatePalette(config.hex);
+    const { palette, pinnedStep } = generatePalette(config.hex, config.pinStep);
 
     paletteObj[key] = {};
     for (let step = 0; step < 10; step++) {
@@ -168,7 +194,7 @@ function main() {
     console.log('Color'.padEnd(14), 'Pinned', 'Steps 0–9');
     console.log('-'.repeat(90));
     for (const [key, config] of Object.entries(themeConfig.colors)) {
-      const { palette, pinnedStep } = generatePalette(config.hex);
+      const { palette, pinnedStep } = generatePalette(config.hex, config.pinStep);
       const swatches = palette.map((h, i) => i === pinnedStep ? `[${h}]` : h).join(' ');
       console.log(key.padEnd(14), String(pinnedStep).padEnd(6), swatches);
     }

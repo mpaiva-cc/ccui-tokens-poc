@@ -757,47 +757,47 @@
     "palette": {
       "whiteGold": {
         "0": {
-          "$value": "#F4EBD7",
+          "$value": "#FDF4E0",
           "$type": "color",
-          "$description": "brand.palette.whiteGold.0 — White Gold — warm cream neutral — base color (step 0, pinned to official brand hex)."
+          "$description": "brand.palette.whiteGold.0 — White Gold — warm cream neutral — tint step 0."
         },
         "1": {
-          "$value": "#E9E1CD",
+          "$value": "#FBF2DE",
           "$type": "color",
           "$description": "brand.palette.whiteGold.1 — White Gold — warm cream neutral — tint step 1."
         },
         "2": {
-          "$value": "#CCC3B0",
+          "$value": "#F9F0DC",
           "$type": "color",
           "$description": "brand.palette.whiteGold.2 — White Gold — warm cream neutral — tint step 2."
         },
         "3": {
-          "$value": "#ACA491",
+          "$value": "#F6EDD9",
           "$type": "color",
           "$description": "brand.palette.whiteGold.3 — White Gold — warm cream neutral — tint step 3."
         },
         "4": {
-          "$value": "#8B8270",
+          "$value": "#F4EBD7",
           "$type": "color",
-          "$description": "brand.palette.whiteGold.4 — White Gold — warm cream neutral — tint step 4."
+          "$description": "brand.palette.whiteGold.4 — White Gold — warm cream neutral — base color (step 4, pinned to official brand hex)."
         },
         "5": {
-          "$value": "#706857",
+          "$value": "#C5BCA9",
           "$type": "color",
           "$description": "brand.palette.whiteGold.5 — White Gold — warm cream neutral — tint step 5."
         },
         "6": {
-          "$value": "#5C5444",
+          "$value": "#988F7D",
           "$type": "color",
           "$description": "brand.palette.whiteGold.6 — White Gold — warm cream neutral — tint step 6."
         },
         "7": {
-          "$value": "#463F2F",
+          "$value": "#6D6554",
           "$type": "color",
           "$description": "brand.palette.whiteGold.7 — White Gold — warm cream neutral — tint step 7."
         },
         "8": {
-          "$value": "#312B1B",
+          "$value": "#453D2D",
           "$type": "color",
           "$description": "brand.palette.whiteGold.8 — White Gold — warm cream neutral — tint step 8."
         },
