@@ -753,6 +753,258 @@
       }
     }
   },
+  "brand": {
+    "palette": {
+      "navyBlue": {
+        "0": {
+          "$value": "#EFF6FF",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.0 — Navy Blue — primary logo color — tint step 0."
+        },
+        "1": {
+          "$value": "#D0E3FF",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.1 — Navy Blue — primary logo color — tint step 1."
+        },
+        "2": {
+          "$value": "#A0C6FF",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.2 — Navy Blue — primary logo color — tint step 2."
+        },
+        "3": {
+          "$value": "#81A6DE",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.3 — Navy Blue — primary logo color — tint step 3."
+        },
+        "4": {
+          "$value": "#6084BA",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.4 — Navy Blue — primary logo color — tint step 4."
+        },
+        "5": {
+          "$value": "#476A9D",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.5 — Navy Blue — primary logo color — tint step 5."
+        },
+        "6": {
+          "$value": "#345588",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.6 — Navy Blue — primary logo color — tint step 6."
+        },
+        "7": {
+          "$value": "#254677",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.7 — Navy Blue — primary logo color — base color (step 7, pinned to official brand hex)."
+        },
+        "8": {
+          "$value": "#092958",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.8 — Navy Blue — primary logo color — tint step 8."
+        },
+        "9": {
+          "$value": "#001840",
+          "$type": "color",
+          "$description": "brand.palette.navyBlue.9 — Navy Blue — primary logo color — tint step 9."
+        }
+      },
+      "skyBlue": {
+        "0": {
+          "$value": "#EAF8FF",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.0 — Sky Blue — secondary logo color — tint step 0."
+        },
+        "1": {
+          "$value": "#BFE8FF",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.1 — Sky Blue — secondary logo color — tint step 1."
+        },
+        "2": {
+          "$value": "#74D1FF",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.2 — Sky Blue — secondary logo color — tint step 2."
+        },
+        "3": {
+          "$value": "#55BAEA",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.3 — Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex)."
+        },
+        "4": {
+          "$value": "#1E8EBC",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.4 — Sky Blue — secondary logo color — tint step 4."
+        },
+        "5": {
+          "$value": "#00729B",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.5 — Sky Blue — secondary logo color — tint step 5."
+        },
+        "6": {
+          "$value": "#005D7F",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.6 — Sky Blue — secondary logo color — tint step 6."
+        },
+        "7": {
+          "$value": "#004660",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.7 — Sky Blue — secondary logo color — tint step 7."
+        },
+        "8": {
+          "$value": "#003043",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.8 — Sky Blue — secondary logo color — tint step 8."
+        },
+        "9": {
+          "$value": "#001E2C",
+          "$type": "color",
+          "$description": "brand.palette.skyBlue.9 — Sky Blue — secondary logo color — tint step 9."
+        }
+      },
+      "purple": {
+        "0": {
+          "$value": "#FFF0FB",
+          "$type": "color",
+          "$description": "brand.palette.purple.0 — Purple — typography accent — tint step 0."
+        },
+        "1": {
+          "$value": "#FFD1F5",
+          "$type": "color",
+          "$description": "brand.palette.purple.1 — Purple — typography accent — tint step 1."
+        },
+        "2": {
+          "$value": "#FF9DED",
+          "$type": "color",
+          "$description": "brand.palette.purple.2 — Purple — typography accent — tint step 2."
+        },
+        "3": {
+          "$value": "#DF7BCE",
+          "$type": "color",
+          "$description": "brand.palette.purple.3 — Purple — typography accent — tint step 3."
+        },
+        "4": {
+          "$value": "#BA59AA",
+          "$type": "color",
+          "$description": "brand.palette.purple.4 — Purple — typography accent — tint step 4."
+        },
+        "5": {
+          "$value": "#9D3D8E",
+          "$type": "color",
+          "$description": "brand.palette.purple.5 — Purple — typography accent — tint step 5."
+        },
+        "6": {
+          "$value": "#822275",
+          "$type": "color",
+          "$description": "brand.palette.purple.6 — Purple — typography accent — base color (step 6, pinned to official brand hex)."
+        },
+        "7": {
+          "$value": "#6D0561",
+          "$type": "color",
+          "$description": "brand.palette.purple.7 — Purple — typography accent — tint step 7."
+        },
+        "8": {
+          "$value": "#4D0045",
+          "$type": "color",
+          "$description": "brand.palette.purple.8 — Purple — typography accent — tint step 8."
+        },
+        "9": {
+          "$value": "#33002D",
+          "$type": "color",
+          "$description": "brand.palette.purple.9 — Purple — typography accent — tint step 9."
+        }
+      },
+      "yellow": {
+        "0": {
+          "$value": "#FEFE6C",
+          "$type": "color",
+          "$description": "brand.palette.yellow.0 — Yellow — decorative highlight — tint step 0."
+        },
+        "1": {
+          "$value": "#E6E651",
+          "$type": "color",
+          "$description": "brand.palette.yellow.1 — Yellow — decorative highlight — base color (step 1, pinned to official brand hex)."
+        },
+        "2": {
+          "$value": "#CDCC2E",
+          "$type": "color",
+          "$description": "brand.palette.yellow.2 — Yellow — decorative highlight — tint step 2."
+        },
+        "3": {
+          "$value": "#ADAC00",
+          "$type": "color",
+          "$description": "brand.palette.yellow.3 — Yellow — decorative highlight — tint step 3."
+        },
+        "4": {
+          "$value": "#8A8900",
+          "$type": "color",
+          "$description": "brand.palette.yellow.4 — Yellow — decorative highlight — tint step 4."
+        },
+        "5": {
+          "$value": "#6E6E00",
+          "$type": "color",
+          "$description": "brand.palette.yellow.5 — Yellow — decorative highlight — tint step 5."
+        },
+        "6": {
+          "$value": "#5A5900",
+          "$type": "color",
+          "$description": "brand.palette.yellow.6 — Yellow — decorative highlight — tint step 6."
+        },
+        "7": {
+          "$value": "#434300",
+          "$type": "color",
+          "$description": "brand.palette.yellow.7 — Yellow — decorative highlight — tint step 7."
+        },
+        "8": {
+          "$value": "#2E2E00",
+          "$type": "color",
+          "$description": "brand.palette.yellow.8 — Yellow — decorative highlight — tint step 8."
+        },
+        "9": {
+          "$value": "#1C1C00",
+          "$type": "color",
+          "$description": "brand.palette.yellow.9 — Yellow — decorative highlight — tint step 9."
+        }
+      }
+    },
+    "primary": {
+      "$value": "{brand.palette.navyBlue.7}",
+      "$type": "color",
+      "$description": "brand.primary — Primary brand color. Navy Blue used in logo 'Clear' letterforms and headings."
+    },
+    "secondary": {
+      "$value": "{brand.palette.skyBlue.3}",
+      "$type": "color",
+      "$description": "brand.secondary — Secondary brand color. Sky Blue used in logo 'Co.' letterforms and subheadings."
+    },
+    "tertiary": {
+      "$value": "{brand.palette.purple.6}",
+      "$type": "color",
+      "$description": "brand.tertiary — Tertiary brand color. Purple for typography accents and supporting elements."
+    },
+    "accent": {
+      "$value": "{brand.palette.yellow.1}",
+      "$type": "color",
+      "$description": "brand.accent — Accent color. Yellow for decorative highlights only — never as main color or text."
+    },
+    "onPrimary": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "brand.onPrimary — Text/foreground on primary (Navy Blue) background."
+    },
+    "onSecondary": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "brand.onSecondary — Text/foreground on secondary (Sky Blue) background."
+    },
+    "onTertiary": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "brand.onTertiary — Text/foreground on tertiary (Purple) background."
+    },
+    "onAccent": {
+      "$value": "{brand.palette.navyBlue.7}",
+      "$type": "color",
+      "$description": "brand.onAccent — Text/foreground on accent (Yellow) background. Uses Navy Blue for contrast."
+    }
+  },
   "colorPalette": {
     "dark": {
       "text": {

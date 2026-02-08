@@ -21,6 +21,7 @@
     "clean": "rm -rf ./dist",
     "watch": "nodemon --watch src --ext json --exec npm run build",
     "catalog": "node ./scripts/catalog.js",
+    "generate:brand-palettes": "node scripts/generate-brand-palettes.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "postinstall": "npm run build",
@@ -30,6 +31,7 @@
     "style-dictionary": "4.3.3"
   },
   "devDependencies": {
+    "culori": "^4.0.2",
     "nodemon": "^3.1.0",
     "vitest": "^4.0.18"
   },

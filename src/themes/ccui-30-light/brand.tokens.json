@@ -1,21 +1,46 @@
 {
-    "$description": "CCUI 3.0 Brand Identity Tokens - PLACEHOLDER VALUES. Update these with final brand colors when brand guidelines are finalized.",
+    "$description": "CCUI 3.0 Brand Identity Tokens. Colors sourced from the official ClearCo 3.0 Brand Style Guidelines.",
     "brand": {
-        "$description": "Core brand identity colors for CCUI 3.0 rebranding. These are placeholders.",
+        "$description": "Core brand identity colors for CCUI 3.0. Earth-tone palette with Copper as the signature accent.",
         "primary": {
-            "$value": "#0974eb",
+            "$value": "{brand.palette.copper.3}",
             "$type": "color",
-            "$description": "PLACEHOLDER - Primary brand color. Update when brand guidelines finalized."
+            "$description": "Primary brand color. Copper — signature accent for hero visuals and brand moments."
         },
         "secondary": {
-            "$value": "#6536c7",
+            "$value": "{brand.palette.castIron.8}",
             "$type": "color",
-            "$description": "PLACEHOLDER - Secondary brand color. Update when brand guidelines finalized."
+            "$description": "Secondary brand color. Cast Iron — primary dark neutral for text and contrast."
+        },
+        "tertiary": {
+            "$value": "{brand.palette.verdigris.3}",
+            "$type": "color",
+            "$description": "Tertiary brand color. Verdigris — nature-inspired supporting color."
         },
         "accent": {
-            "$value": "#0c846b",
+            "$value": "{brand.palette.alloy.2}",
             "$type": "color",
-            "$description": "PLACEHOLDER - Accent brand color. Update when brand guidelines finalized."
+            "$description": "Accent color. Alloy — warm highlight, lighter companion to Copper."
+        },
+        "onPrimary": {
+            "$value": "{brand.palette.castIron.8}",
+            "$type": "color",
+            "$description": "Text/foreground on primary (Copper) background. Cast Iron for WCAG AAA contrast."
+        },
+        "onSecondary": {
+            "$value": "#FFFFFF",
+            "$type": "color",
+            "$description": "Text/foreground on secondary (Cast Iron) background. White for WCAG AAA contrast."
+        },
+        "onTertiary": {
+            "$value": "{brand.palette.castIron.8}",
+            "$type": "color",
+            "$description": "Text/foreground on tertiary (Verdigris) background. Cast Iron for WCAG AAA contrast."
+        },
+        "onAccent": {
+            "$value": "{brand.palette.castIron.8}",
+            "$type": "color",
+            "$description": "Text/foreground on accent (Alloy) background. Cast Iron for WCAG AAA contrast."
         }
     }
 }
