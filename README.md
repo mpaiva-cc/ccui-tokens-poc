@@ -12,39 +12,6 @@ The `dist/` folder is automatically generated on install via postinstall hook.
 
 ## Usage
 
-### CSS Variables
-
-Import the single CSS file containing all tokens and themes:
-
-```tsx
-import 'ccui-tokens/css';
-```
-
-This includes:
-- Shared primitives (`:root`)
-- Light theme as default (`:root` + `[data-mantine-color-scheme="light"]`)
-- Dark theme (`[data-mantine-color-scheme="dark"]`)
-
-Theme switching works automatically with Mantine:
-
-```tsx
-import { MantineProvider, useMantineColorScheme } from '@mantine/core';
-import 'ccui-tokens/css';
-
-function App() {
-  return (
-    <MantineProvider defaultColorScheme="light">
-      <YourApp />
-    </MantineProvider>
-  );
-}
-
-function ThemeToggle() {
-  const { toggleColorScheme } = useMantineColorScheme();
-  return <button onClick={toggleColorScheme}>Toggle Theme</button>;
-}
-```
-
 ### Tokens Studio
 
 Compatible with the [Tokens Studio Figma plugin](https://tokens.studio/):
@@ -54,7 +21,7 @@ dist/tokens-studio/
 ├── $metadata.json
 ├── $themes.json
 ├── primitives/         # Color, spacing, typography, motion, etc.
-├── semantic/           # Theme-specific tokens (light/dark variants)
+├── semantic/           # Theme-specific tokens (5 theme variants)
 └── components/         # Component tokens (button, input, modal, etc.)
 ```
 
@@ -135,15 +102,14 @@ Open Figma's **Styles** panel (right sidebar) to verify:
 ccui-tokens/
 ├── src/
 │   ├── primitives/     # Primitive tokens (color, spacing, typography, etc.)
-│   └── themes/         # Semantic tokens (light/dark theme variants)
+│   └── themes/         # Semantic tokens (5 theme variants)
 ├── dist/               # Generated (not committed)
-│   ├── css/
-│   │   └── ccui-tokens.css
 │   └── tokens-studio/
 │       ├── $metadata.json
 │       ├── $themes.json
 │       ├── primitives/
-│       ├── semantic/
+│       ├── semantic/   # mantine-light, mantine-dark, ccui-21-light,
+│       │               # ccui-30-light, ccui-30-dark
 │       └── components/
 └── scripts/
     └── build.js
@@ -186,7 +152,7 @@ CCUI uses the Tokens Studio format with `$value` and `$type` prefixes:
 ## Development
 
 ```bash
-npm run build    # Build all tokens
+npm run build    # Build all tokens (Tokens Studio JSON)
 npm run clean    # Remove dist/
 npm run watch    # Rebuild on changes
 npm test         # Run tests

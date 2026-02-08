@@ -26,7 +26,7 @@
         },
         "padding": {
             "$type": "dimension",
-            "x": {
+            "horizontal": {
                 "xs": {
                     "$value": "{spacing.xs}",
                     "$description": "Extra small horizontal padding (8px). Use for compact icon buttons."

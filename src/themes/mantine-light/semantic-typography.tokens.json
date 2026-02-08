@@ -1,0 +1,14 @@
+{
+    "$description": "Mantine light theme typography tokens. Uses Roboto for both headings and body text.",
+    "fontFamilies": {
+        "$type": "fontFamilies",
+        "body": {
+            "$value": "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "Body font stack for Mantine theme. Roboto is Google's signature typeface, optimized for readability on screens."
+        },
+        "heading": {
+            "$value": "LobsterTwo, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "Heading font stack for Mantine theme. Uses Roboto for consistent typography across headings and body."
+        }
+    }
+}

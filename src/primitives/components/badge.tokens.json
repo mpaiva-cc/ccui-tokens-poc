@@ -27,7 +27,7 @@
         "padding": {
             "$type": "dimension",
             "$description": "Badge horizontal padding. Vertical padding is typically 0 since height is fixed. Padding affects text breathing room.",
-            "x": {
+            "horizontal": {
                 "xs": {
                     "$value": "{sizing.badge.paddingX.xs}",
                     "$description": "Extra small horizontal badge padding (6px). Tight padding for xs badges. Keeps badge compact for short text like counts or single letters."

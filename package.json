@@ -1,11 +1,10 @@
 {
   "name": "ccui-tokens",
   "version": "1.0.0",
-  "description": "CCUI Design Tokens - DTCG-compliant design tokens with CSS and Tokens Studio output",
+  "description": "CCUI Design Tokens - DTCG-compliant design tokens with Tokens Studio output",
   "main": "dist/tokens-studio/semantic/light.json",
   "exports": {
     ".": "./dist/tokens-studio/semantic/light.json",
-    "./css": "./dist/css/ccui-tokens.css",
     "./tokens-studio/*": "./dist/tokens-studio/*"
   },
   "type": "module",
@@ -21,6 +20,7 @@
     "build": "node ./scripts/build.js",
     "clean": "rm -rf ./dist",
     "watch": "nodemon --watch src --ext json --exec npm run build",
+    "catalog": "node ./scripts/catalog.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "postinstall": "npm run build",
@@ -37,7 +37,6 @@
     "design-tokens",
     "dtcg",
     "style-dictionary",
-    "css-variables",
     "mantine",
     "tokens-studio"
   ],

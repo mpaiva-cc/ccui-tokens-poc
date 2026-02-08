@@ -6,7 +6,7 @@
             "padding": {
                 "$type": "dimension",
                 "$description": "Cell padding controls data density. Horizontal padding affects column separation; vertical padding affects row height.",
-                "x": {
+                "horizontal": {
                     "xs": {
                         "$value": "{spacing.xs}",
                         "$description": "Extra small horizontal cell padding (10px). Dense tables for compact data display. Use when horizontal space is limited."
@@ -28,7 +28,7 @@
                         "$description": "Extra large horizontal cell padding (32px). Very spacious tables for presentation or limited data. Maximum readability."
                     }
                 },
-                "y": {
+                "vertical": {
                     "xs": {
                         "$value": "{sizing.table.cellPaddingY.xs}",
                         "$description": "Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views."

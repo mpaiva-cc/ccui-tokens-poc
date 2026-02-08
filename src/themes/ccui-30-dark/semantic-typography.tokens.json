@@ -1,0 +1,14 @@
+{
+    "$description": "CCUI 3.0 dark theme typography tokens. Uses Atkinson Hyperlegible Next for headings and Public Sans for body text.",
+    "fontFamilies": {
+        "$type": "fontFamilies",
+        "body": {
+            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "Body font stack for CCUI 3.0 theme. Public Sans is a neutral, open-source typeface optimized for UI and web."
+        },
+        "heading": {
+            "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "Heading font stack for CCUI 3.0 theme. Atkinson Hyperlegible Next is designed for maximum legibility, especially for users with low vision."
+        }
+    }
+}
