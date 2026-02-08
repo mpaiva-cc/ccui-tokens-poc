@@ -20,6 +20,7 @@
     "build": "node ./scripts/build.js",
     "clean": "rm -rf ./dist",
     "watch": "nodemon --watch src --ext json --exec npm run build",
+    "catalog": "node ./scripts/catalog.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "postinstall": "npm run build",
