@@ -2,7 +2,7 @@
  * Token Catalog Generator
  *
  * Reads built token JSON from dist/tokens-studio/ and generates
- * a markdown catalog at dist/token-catalog.md.
+ * a markdown catalog at dist/README.md.
  *
  * Usage: npm run catalog (after npm run build)
  */
@@ -10,7 +10,7 @@ import fs from 'fs';
 import path from 'path';
 
 const distDir = 'dist/tokens-studio';
-const outputFile = 'dist/token-catalog.md';
+const outputFile = 'dist/README.md';
 
 // Reference semantic theme shown in full detail
 const REFERENCE_THEME = 'mantine-light';
