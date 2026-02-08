@@ -3,9 +3,13 @@
     "lineHeights": {
         "$type": "lineHeights",
         "$description": "Line height scale from tight (display) to loose (prose). Match line height to content type: tighter for headings, looser for body text. RULE: Longer line lengths need more line height. Use xs-sm only for headings/buttons, md-xl for readable content.",
+        "2xs": {
+            "$value": "130%",
+            "$description": "Extra tight line height (130%). Use for: large headings (h1) where text needs slightly more breathing room than xs but remains compact. Matches Mantine v8 h1 lineHeight (1.3). Common in: h1 page titles, primary headings."
+        },
         "xs": {
             "$value": "120%",
-            "$description": "Tight line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for headings 24px+ or single-line UI elements. Common in: h1, hero headlines, button text, badge labels."
+            "$description": "Tightest line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for display text 24px+ or single-line UI elements. Common in: display headlines, hero text, button text, badge labels."
         },
         "sm": {
             "$value": "135%",

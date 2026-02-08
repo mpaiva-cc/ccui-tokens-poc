@@ -2,27 +2,27 @@
   "select": {
     "height": {
       "xs": {
-        "$value": "{sizing.input.xs}",
+        "$value": "{sizing.controlHeight.xs}",
         "$type": "dimension",
         "$description": "select.height.xs — Extra small select height (30px). Use for: compact forms, inline selects, space-constrained UIs. Matches xs input height."
       },
       "sm": {
-        "$value": "{sizing.input.sm}",
+        "$value": "{sizing.controlHeight.sm}",
         "$type": "dimension",
         "$description": "select.height.sm — Small select height (36px). Use for: standard density forms, filter bars, secondary selects. Matches sm input height."
       },
       "md": {
-        "$value": "{sizing.input.md}",
+        "$value": "{sizing.controlHeight.md}",
         "$type": "dimension",
         "$description": "select.height.md — Medium select height (42px). DEFAULT. Use for: most form selects, settings, primary data entry. Matches md input height."
       },
       "lg": {
-        "$value": "{sizing.input.lg}",
+        "$value": "{sizing.controlHeight.lg}",
         "$type": "dimension",
         "$description": "select.height.lg — Large select height (48px). Use for: touch-optimized forms, prominent selects, hero sections. Matches lg input height."
       },
       "xl": {
-        "$value": "{sizing.input.xl}",
+        "$value": "{sizing.controlHeight.xl}",
         "$type": "dimension",
         "$description": "select.height.xl — Extra large select height (60px). Use for: high-emphasis selects, marketing forms, maximum touch targets. Matches xl input height."
       }
@@ -109,7 +109,7 @@
         "$description": "select.dropdown.padding — Dropdown menu inner padding (10px). Small padding around the options list. Options have their own padding."
       },
       "maxHeight": {
-        "$value": "{sizing.select.dropdownMaxHeight}",
+        "$value": "18.75rem",
         "$type": "dimension",
         "$description": "select.dropdown.maxHeight — Dropdown menu maximum height (300px). Limits dropdown size for long option lists. Enables scrolling when exceeded."
       },
@@ -151,7 +151,7 @@
     },
     "icon": {
       "size": {
-        "$value": "{sizing.select.iconSize}",
+        "$value": "1rem",
         "$type": "dimension",
         "$description": "select.icon.size — Select chevron icon size (16px). Dropdown indicator arrow. Sized to be visible but not dominant."
       },

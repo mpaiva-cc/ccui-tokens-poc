@@ -47,9 +47,9 @@
             "$value": "40px",
             "$description": "Extra large grid gap (40px). Use for: hero grids, feature showcases, landing page layouts. Creates clear separation between grid items."
         },
-        "xxl": {
+        "2xl": {
             "$value": "48px",
-            "$description": "Double extra large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts. Rarely needed - consider if layout needs restructuring."
+            "$description": "2x large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts. Rarely needed - consider if layout needs restructuring."
         }
     },
     "verticalRhythm": {

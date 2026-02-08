@@ -39,7 +39,7 @@
     },
     "icon": {
       "size": {
-        "$value": "{sizing.alert.iconSize}",
+        "$value": "1.25rem",
         "$type": "dimension",
         "$description": "alert.icon.size — Alert icon size (20px). Sized to be clearly visible alongside title/message text without dominating. Proportional to typical alert padding."
       },
@@ -80,7 +80,7 @@
     },
     "closeButton": {
       "size": {
-        "$value": "{sizing.alert.closeButtonSize}",
+        "$value": "1.125rem",
         "$type": "dimension",
         "$description": "alert.closeButton.size — Close button size (18px). Clickable/tappable close icon. Sized for adequate touch target while not competing with alert content."
       },

@@ -4,23 +4,23 @@
         "size": {
             "$description": "Checkbox box size (width and height are equal). Size should match surrounding UI density. Larger sizes improve touch targets and accessibility.",
             "xs": {
-                "$value": "{sizing.checkbox.size.xs}",
+                "$value": "0.875rem",
                 "$description": "Extra small checkbox size (14px). Use for: compact data tables, dense lists, space-constrained UIs. May not meet touch target guidelines (44px) - consider for mouse-only interfaces."
             },
             "sm": {
-                "$value": "{sizing.checkbox.size.sm}",
+                "$value": "1rem",
                 "$description": "Small checkbox size (16px). Use for: standard form density, inline options, filter panels. Common in desktop applications."
             },
             "md": {
-                "$value": "{sizing.checkbox.size.md}",
+                "$value": "1.25rem",
                 "$description": "Medium checkbox size (20px). DEFAULT size. Use for: most forms, settings panels, standalone checkboxes. Good balance of visibility and space efficiency."
             },
             "lg": {
-                "$value": "{sizing.checkbox.size.lg}",
+                "$value": "1.5rem",
                 "$description": "Large checkbox size (24px). Use for: touch-optimized interfaces, accessibility-focused forms, prominent single options. Better for mobile devices."
             },
             "xl": {
-                "$value": "{sizing.checkbox.size.xl}",
+                "$value": "1.75rem",
                 "$description": "Extra large checkbox size (28px). Use for: high-emphasis standalone toggles, large touch targets, accessibility requirements. Maximum visibility and tap target size."
             }
         },
@@ -38,23 +38,23 @@
             "$description": "Checkmark icon configuration. The checkmark should be proportional to the checkbox size and clearly visible.",
             "size": {
                 "xs": {
-                    "$value": "{sizing.checkbox.iconSize.xs}",
+                    "$value": "0.5rem",
                     "$description": "Extra small checkmark size (8px). Proportional to xs checkbox. Keep stroke weight consistent for visibility at small size."
                 },
                 "sm": {
-                    "$value": "{sizing.checkbox.iconSize.sm}",
+                    "$value": "0.5625rem",
                     "$description": "Small checkmark size (9px). Proportional to sm checkbox. Slightly larger than xs for better recognition."
                 },
                 "md": {
-                    "$value": "{sizing.checkbox.iconSize.md}",
+                    "$value": "0.625rem",
                     "$description": "Medium checkmark size (10px). DEFAULT. Proportional to md checkbox. Clear visual feedback for checked state."
                 },
                 "lg": {
-                    "$value": "{sizing.checkbox.iconSize.lg}",
+                    "$value": "0.875rem",
                     "$description": "Large checkmark size (14px). Proportional to lg checkbox. More prominent check for better visibility."
                 },
                 "xl": {
-                    "$value": "{sizing.checkbox.iconSize.xl}",
+                    "$value": "1rem",
                     "$description": "Extra large checkmark size (16px). Proportional to xl checkbox. Maximum visibility checkmark."
                 }
             },

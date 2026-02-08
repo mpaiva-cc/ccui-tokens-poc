@@ -2,27 +2,27 @@
   "button": {
     "height": {
       "xs": {
-        "$value": "{sizing.button.xs}",
+        "$value": "{sizing.controlHeight.xs}",
         "$type": "dimension",
         "$description": "button.height.xs — Extra small button height. Use for inline actions, compact toolbars."
       },
       "sm": {
-        "$value": "{sizing.button.sm}",
+        "$value": "{sizing.controlHeight.sm}",
         "$type": "dimension",
         "$description": "button.height.sm — Small button height. Use for secondary actions, compact layouts."
       },
       "md": {
-        "$value": "{sizing.button.md}",
+        "$value": "{sizing.controlHeight.md}",
         "$type": "dimension",
         "$description": "button.height.md — Medium button height. DEFAULT for most buttons."
       },
       "lg": {
-        "$value": "{sizing.button.lg}",
+        "$value": "{sizing.controlHeight.lg}",
         "$type": "dimension",
         "$description": "button.height.lg — Large button height. Use for prominent CTAs."
       },
       "xl": {
-        "$value": "{sizing.button.xl}",
+        "$value": "{sizing.controlHeight.xl}",
         "$type": "dimension",
         "$description": "button.height.xl — Extra large button height. Use for marketing CTAs."
       }

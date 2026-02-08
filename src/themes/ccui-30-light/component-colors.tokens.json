@@ -7,17 +7,17 @@
         "filled": {
             "$description": "Filled button variant colors",
             "background-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.bg.primary}",
                 "$type": "color",
-                "$description": "Filled button background color. Uses primary color."
+                "$description": "Filled button background color."
             },
             "text-color": {
-                "$value": "{color.primary.contrast}",
+                "$value": "{color.action.text.primary}",
                 "$type": "color",
-                "$description": "Filled button text color. White for contrast on primary."
+                "$description": "Filled button text color for contrast on action background."
             },
             "hover-background-color": {
-                "$value": "{color.primary.filled-hover}",
+                "$value": "{color.action.bg.primary-hover}",
                 "$type": "color",
                 "$description": "Filled button hover background color."
             }
@@ -25,17 +25,17 @@
         "outline": {
             "$description": "Outline button variant colors",
             "border-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.border.primary}",
                 "$type": "color",
-                "$description": "Outline button border color. Uses primary color."
+                "$description": "Outline button border color."
             },
             "text-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.text.on-surface}",
                 "$type": "color",
-                "$description": "Outline button text color. Uses primary color."
+                "$description": "Outline button text color."
             },
             "hover-background-color": {
-                "$value": "{color.primary.light}",
+                "$value": "{color.action.bg.primary-light}",
                 "$type": "color",
                 "$description": "Outline button hover background color."
             }
@@ -43,17 +43,17 @@
         "light": {
             "$description": "Light button variant colors",
             "background-color": {
-                "$value": "{color.primary.light}",
+                "$value": "{color.action.bg.primary-light}",
                 "$type": "color",
                 "$description": "Light button background color."
             },
             "text-color": {
-                "$value": "{color.primary.light-color}",
+                "$value": "{color.action.text.primary-light}",
                 "$type": "color",
                 "$description": "Light button text color."
             },
             "hover-background-color": {
-                "$value": "{color.primary.light-hover}",
+                "$value": "{color.action.bg.primary-light-hover}",
                 "$type": "color",
                 "$description": "Light button hover background color."
             }
@@ -66,12 +66,12 @@
                 "$description": "Subtle button background color. Transparent by default."
             },
             "text-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.text.on-surface}",
                 "$type": "color",
                 "$description": "Subtle button text color."
             },
             "hover-background-color": {
-                "$value": "{color.primary.light}",
+                "$value": "{color.action.bg.primary-light}",
                 "$type": "color",
                 "$description": "Subtle button hover background color."
             }
@@ -146,14 +146,14 @@
         "focus": {
             "$description": "Focus state input colors",
             "border-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.border.interactive.focus}",
                 "$type": "color",
                 "$description": "Focused input border color."
             },
             "ring-color": {
-                "$value": "{color.primary.light}",
+                "$value": "{color.focus.glow}",
                 "$type": "color",
-                "$description": "Focus ring color around input."
+                "$description": "Focus ring glow color around input."
             }
         },
         "error": {
@@ -205,36 +205,36 @@
         "$description": "Badge component color tokens",
         "filled": {
             "background-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.bg.primary}",
                 "$type": "color",
                 "$description": "Filled badge background color."
             },
             "text-color": {
-                "$value": "{color.primary.contrast}",
+                "$value": "{color.action.text.primary}",
                 "$type": "color",
                 "$description": "Filled badge text color."
             }
         },
         "light": {
             "background-color": {
-                "$value": "{color.primary.light}",
+                "$value": "{color.action.bg.primary-light}",
                 "$type": "color",
                 "$description": "Light badge background color."
             },
             "text-color": {
-                "$value": "{color.primary.light-color}",
+                "$value": "{color.action.text.primary-light}",
                 "$type": "color",
                 "$description": "Light badge text color."
             }
         },
         "outline": {
             "border-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.border.primary}",
                 "$type": "color",
                 "$description": "Outline badge border color."
             },
             "text-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.text.on-surface}",
                 "$type": "color",
                 "$description": "Outline badge text color."
             }
@@ -244,68 +244,68 @@
         "$description": "Alert component color tokens",
         "info": {
             "background-color": {
-                "$value": "{component.info.background}",
+                "$value": "{color.feedback.bg.info}",
                 "$type": "color",
                 "$description": "Info alert background color."
             },
             "border-color": {
-                "$value": "{component.info.border}",
+                "$value": "{color.feedback.border.info}",
                 "$type": "color",
                 "$description": "Info alert border color."
             },
             "text-color": {
-                "$value": "{component.info.text}",
+                "$value": "{color.feedback.text.info}",
                 "$type": "color",
                 "$description": "Info alert text color."
             }
         },
         "success": {
             "background-color": {
-                "$value": "{component.success.background}",
+                "$value": "{color.feedback.bg.success}",
                 "$type": "color",
                 "$description": "Success alert background color."
             },
             "border-color": {
-                "$value": "{component.success.border}",
+                "$value": "{color.feedback.border.success}",
                 "$type": "color",
                 "$description": "Success alert border color."
             },
             "text-color": {
-                "$value": "{component.success.text}",
+                "$value": "{color.feedback.text.success}",
                 "$type": "color",
                 "$description": "Success alert text color."
             }
         },
         "warning": {
             "background-color": {
-                "$value": "{component.warning.background}",
+                "$value": "{color.feedback.bg.warning}",
                 "$type": "color",
                 "$description": "Warning alert background color."
             },
             "border-color": {
-                "$value": "{component.warning.border}",
+                "$value": "{color.feedback.border.warning}",
                 "$type": "color",
                 "$description": "Warning alert border color."
             },
             "text-color": {
-                "$value": "{component.warning.text}",
+                "$value": "{color.feedback.text.warning}",
                 "$type": "color",
                 "$description": "Warning alert text color."
             }
         },
         "error": {
             "background-color": {
-                "$value": "{component.error.background}",
+                "$value": "{color.feedback.bg.error}",
                 "$type": "color",
                 "$description": "Error alert background color."
             },
             "border-color": {
-                "$value": "{component.error.border}",
+                "$value": "{color.feedback.border.error}",
                 "$type": "color",
                 "$description": "Error alert border color."
             },
             "text-color": {
-                "$value": "{component.error.text}",
+                "$value": "{color.feedback.text.error}",
                 "$type": "color",
                 "$description": "Error alert text color."
             }
@@ -314,7 +314,7 @@
     "table": {
         "$description": "Table component color tokens",
         "header-background-color": {
-            "$value": "{color.gray.0}",
+            "$value": "{color.bg.surface.elevated}",
             "$type": "color",
             "$description": "Table header background color."
         },
@@ -324,7 +324,7 @@
             "$description": "Table border color."
         },
         "striped-background-color": {
-            "$value": "{color.gray.0}",
+            "$value": "{color.bg.surface.elevated}",
             "$type": "color",
             "$description": "Alternating row background color."
         },
@@ -334,7 +334,7 @@
             "$description": "Row hover background color."
         },
         "selected-background-color": {
-            "$value": "{component.selected.background}",
+            "$value": "{color.bg.interactive.selected}",
             "$type": "color",
             "$description": "Selected row background color."
         }
@@ -355,12 +355,12 @@
         },
         "active": {
             "text-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.text.on-surface}",
                 "$type": "color",
                 "$description": "Active tab text color."
             },
             "indicator-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.border.primary}",
                 "$type": "color",
                 "$description": "Active tab indicator color."
             }
@@ -387,17 +387,17 @@
         },
         "checked": {
             "border-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.bg.primary}",
                 "$type": "color",
                 "$description": "Checked checkbox border color."
             },
             "background-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.bg.primary}",
                 "$type": "color",
                 "$description": "Checked checkbox background color."
             },
             "checkmark-color": {
-                "$value": "{color.primary.contrast}",
+                "$value": "{color.action.text.primary}",
                 "$type": "color",
                 "$description": "Checkmark icon color."
             }
@@ -419,24 +419,24 @@
         "$description": "Switch component color tokens",
         "off": {
             "track-color": {
-                "$value": "{color.gray.2}",
+                "$value": "{color.bg.interactive.disabled}",
                 "$type": "color",
                 "$description": "Off state track background color."
             },
             "thumb-color": {
-                "$value": "{color.white}",
+                "$value": "{color.bg.surface.default}",
                 "$type": "color",
                 "$description": "Switch thumb color."
             }
         },
         "on": {
             "track-color": {
-                "$value": "{color.primary.filled}",
+                "$value": "{color.action.bg.primary}",
                 "$type": "color",
                 "$description": "On state track background color."
             },
             "thumb-color": {
-                "$value": "{color.white}",
+                "$value": "{color.bg.surface.default}",
                 "$type": "color",
                 "$description": "Switch thumb color when on."
             }
@@ -448,7 +448,7 @@
                 "$description": "Disabled switch track color."
             },
             "thumb-color": {
-                "$value": "{color.gray.3}",
+                "$value": "{color.border.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled switch thumb color."
             }
@@ -490,12 +490,12 @@
                 "$description": "Option hover background color."
             },
             "selected-background-color": {
-                "$value": "{color.primary.light}",
+                "$value": "{color.action.bg.primary-light}",
                 "$type": "color",
                 "$description": "Selected option background color."
             },
             "selected-text-color": {
-                "$value": "{color.primary.light-color}",
+                "$value": "{color.action.text.primary-light}",
                 "$type": "color",
                 "$description": "Selected option text color."
             }

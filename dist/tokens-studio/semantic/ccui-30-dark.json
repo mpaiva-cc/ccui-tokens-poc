@@ -75,6 +75,11 @@
         "$type": "color",
         "$description": "color.text.link — Link/anchor text color."
       },
+      "selected": {
+        "$value": "{color.blue.4}",
+        "$type": "color",
+        "$description": "color.text.selected — Text color for selected state."
+      },
       "bright": {
         "$value": "{color.white}",
         "$type": "color",
@@ -139,6 +144,16 @@
           "$value": "{color.blue.9}",
           "$type": "color",
           "$description": "color.bg.interactive.selected — Selected element background."
+        },
+        "hover": {
+          "$value": "{color.dark.5}",
+          "$type": "color",
+          "$description": "color.bg.interactive.hover — Neutral hover background for interactive elements."
+        },
+        "active": {
+          "$value": "{color.dark.4}",
+          "$type": "color",
+          "$description": "color.bg.interactive.active — Neutral active/pressed background."
         }
       }
     },
@@ -180,6 +195,11 @@
           "$value": "{color.blue.4}",
           "$type": "color",
           "$description": "color.border.interactive.focus — Focus state border color."
+        },
+        "active": {
+          "$value": "{color.dark.2}",
+          "$type": "color",
+          "$description": "color.border.interactive.active — Active/pressed border color."
         }
       }
     },
@@ -226,6 +246,11 @@
           "$value": "{colorPalette.blue.light-color}",
           "$type": "color",
           "$description": "color.action.text.primary-light — Text on primary light backgrounds."
+        },
+        "on-surface": {
+          "$value": "{colorPalette.blue.filled}",
+          "$type": "color",
+          "$description": "color.action.text.on-surface — Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
         }
       },
       "border": {
@@ -266,7 +291,7 @@
       },
       "text": {
         "error": {
-          "$value": "{color.red.6}",
+          "$value": "{color.red.4}",
           "$type": "color",
           "$description": "color.feedback.text.error — Error feedback text."
         },
@@ -276,7 +301,7 @@
           "$description": "color.feedback.text.success — Success feedback text."
         },
         "warning": {
-          "$value": "{color.yellow.4}",
+          "$value": "{color.yellow.3}",
           "$type": "color",
           "$description": "color.feedback.text.warning — Warning feedback text."
         },
@@ -336,6 +361,11 @@
         "$value": "{color.blue.4}",
         "$type": "color",
         "$description": "color.focus.ring — Focus ring color."
+      },
+      "glow": {
+        "$value": "{colorPalette.blue.light}",
+        "$type": "color",
+        "$description": "color.focus.glow — Focus ring glow/background color. Use for: input focus ring."
       }
     },
     "primary": {
@@ -1374,51 +1404,51 @@
     "button": {
       "filled": {
         "background-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.bg.primary}",
           "$type": "color",
-          "$description": "componentColors.button.filled.background-color — Filled button background color. Uses primary color."
+          "$description": "componentColors.button.filled.background-color — Filled button background color."
         },
         "text-color": {
-          "$value": "{color.primary.contrast}",
+          "$value": "{color.action.text.primary}",
           "$type": "color",
-          "$description": "componentColors.button.filled.text-color — Filled button text color."
+          "$description": "componentColors.button.filled.text-color — Filled button text color for contrast on action background."
         },
         "hover-background-color": {
-          "$value": "{color.primary.filled-hover}",
+          "$value": "{color.action.bg.primary-hover}",
           "$type": "color",
           "$description": "componentColors.button.filled.hover-background-color — Filled button hover background color."
         }
       },
       "outline": {
         "border-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.border.primary}",
           "$type": "color",
-          "$description": "componentColors.button.outline.border-color — Outline button border color. Uses primary color."
+          "$description": "componentColors.button.outline.border-color — Outline button border color."
         },
         "text-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.text.on-surface}",
           "$type": "color",
-          "$description": "componentColors.button.outline.text-color — Outline button text color. Uses primary color."
+          "$description": "componentColors.button.outline.text-color — Outline button text color."
         },
         "hover-background-color": {
-          "$value": "{color.primary.light}",
+          "$value": "{color.action.bg.primary-light}",
           "$type": "color",
           "$description": "componentColors.button.outline.hover-background-color — Outline button hover background color."
         }
       },
       "light": {
         "background-color": {
-          "$value": "{color.primary.light}",
+          "$value": "{color.action.bg.primary-light}",
           "$type": "color",
           "$description": "componentColors.button.light.background-color — Light button background color."
         },
         "text-color": {
-          "$value": "{color.primary.light-color}",
+          "$value": "{color.action.text.primary-light}",
           "$type": "color",
           "$description": "componentColors.button.light.text-color — Light button text color."
         },
         "hover-background-color": {
-          "$value": "{color.primary.light-hover}",
+          "$value": "{color.action.bg.primary-light-hover}",
           "$type": "color",
           "$description": "componentColors.button.light.hover-background-color — Light button hover background color."
         }
@@ -1430,12 +1460,12 @@
           "$description": "componentColors.button.subtle.background-color — Subtle button background color. Transparent by default."
         },
         "text-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.text.on-surface}",
           "$type": "color",
           "$description": "componentColors.button.subtle.text-color — Subtle button text color."
         },
         "hover-background-color": {
-          "$value": "{color.primary.light}",
+          "$value": "{color.action.bg.primary-light}",
           "$type": "color",
           "$description": "componentColors.button.subtle.hover-background-color — Subtle button hover background color."
         }
@@ -1505,14 +1535,14 @@
       },
       "focus": {
         "border-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.border.interactive.focus}",
           "$type": "color",
           "$description": "componentColors.input.focus.border-color — Focused input border color."
         },
         "ring-color": {
-          "$value": "{color.primary.light}",
+          "$value": "{color.focus.glow}",
           "$type": "color",
-          "$description": "componentColors.input.focus.ring-color — Focus ring color around input."
+          "$description": "componentColors.input.focus.ring-color — Focus ring glow color around input."
         }
       },
       "error": {
@@ -1560,36 +1590,36 @@
     "badge": {
       "filled": {
         "background-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.bg.primary}",
           "$type": "color",
           "$description": "componentColors.badge.filled.background-color — Filled badge background color."
         },
         "text-color": {
-          "$value": "{color.primary.contrast}",
+          "$value": "{color.action.text.primary}",
           "$type": "color",
           "$description": "componentColors.badge.filled.text-color — Filled badge text color."
         }
       },
       "light": {
         "background-color": {
-          "$value": "{color.primary.light}",
+          "$value": "{color.action.bg.primary-light}",
           "$type": "color",
           "$description": "componentColors.badge.light.background-color — Light badge background color."
         },
         "text-color": {
-          "$value": "{color.primary.light-color}",
+          "$value": "{color.action.text.primary-light}",
           "$type": "color",
           "$description": "componentColors.badge.light.text-color — Light badge text color."
         }
       },
       "outline": {
         "border-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.border.primary}",
           "$type": "color",
           "$description": "componentColors.badge.outline.border-color — Outline badge border color."
         },
         "text-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.text.on-surface}",
           "$type": "color",
           "$description": "componentColors.badge.outline.text-color — Outline badge text color."
         }
@@ -1598,68 +1628,68 @@
     "alert": {
       "info": {
         "background-color": {
-          "$value": "{component.info.background}",
+          "$value": "{color.feedback.bg.info}",
           "$type": "color",
           "$description": "componentColors.alert.info.background-color — Info alert background color."
         },
         "border-color": {
-          "$value": "{component.info.border}",
+          "$value": "{color.feedback.border.info}",
           "$type": "color",
           "$description": "componentColors.alert.info.border-color — Info alert border color."
         },
         "text-color": {
-          "$value": "{component.info.text}",
+          "$value": "{color.feedback.text.info}",
           "$type": "color",
           "$description": "componentColors.alert.info.text-color — Info alert text color."
         }
       },
       "success": {
         "background-color": {
-          "$value": "{component.success.background}",
+          "$value": "{color.feedback.bg.success}",
           "$type": "color",
           "$description": "componentColors.alert.success.background-color — Success alert background color."
         },
         "border-color": {
-          "$value": "{component.success.border}",
+          "$value": "{color.feedback.border.success}",
           "$type": "color",
           "$description": "componentColors.alert.success.border-color — Success alert border color."
         },
         "text-color": {
-          "$value": "{component.success.text}",
+          "$value": "{color.feedback.text.success}",
           "$type": "color",
           "$description": "componentColors.alert.success.text-color — Success alert text color."
         }
       },
       "warning": {
         "background-color": {
-          "$value": "{component.warning.background}",
+          "$value": "{color.feedback.bg.warning}",
           "$type": "color",
           "$description": "componentColors.alert.warning.background-color — Warning alert background color."
         },
         "border-color": {
-          "$value": "{component.warning.border}",
+          "$value": "{color.feedback.border.warning}",
           "$type": "color",
           "$description": "componentColors.alert.warning.border-color — Warning alert border color."
         },
         "text-color": {
-          "$value": "{component.warning.text}",
+          "$value": "{color.feedback.text.warning}",
           "$type": "color",
           "$description": "componentColors.alert.warning.text-color — Warning alert text color."
         }
       },
       "error": {
         "background-color": {
-          "$value": "{component.error.background}",
+          "$value": "{color.feedback.bg.error}",
           "$type": "color",
           "$description": "componentColors.alert.error.background-color — Error alert background color."
         },
         "border-color": {
-          "$value": "{component.error.border}",
+          "$value": "{color.feedback.border.error}",
           "$type": "color",
           "$description": "componentColors.alert.error.border-color — Error alert border color."
         },
         "text-color": {
-          "$value": "{component.error.text}",
+          "$value": "{color.feedback.text.error}",
           "$type": "color",
           "$description": "componentColors.alert.error.text-color — Error alert text color."
         }
@@ -1667,7 +1697,7 @@
     },
     "table": {
       "header-background-color": {
-        "$value": "{color.dark.5}",
+        "$value": "{color.bg.surface.elevated}",
         "$type": "color",
         "$description": "componentColors.table.header-background-color — Table header background color."
       },
@@ -1677,7 +1707,7 @@
         "$description": "componentColors.table.border-color — Table border color."
       },
       "striped-background-color": {
-        "$value": "{color.dark.5}",
+        "$value": "{color.bg.surface.elevated}",
         "$type": "color",
         "$description": "componentColors.table.striped-background-color — Alternating row background color."
       },
@@ -1687,7 +1717,7 @@
         "$description": "componentColors.table.hover-background-color — Row hover background color."
       },
       "selected-background-color": {
-        "$value": "{component.selected.background}",
+        "$value": "{color.bg.interactive.selected}",
         "$type": "color",
         "$description": "componentColors.table.selected-background-color — Selected row background color."
       }
@@ -1707,12 +1737,12 @@
       },
       "active": {
         "text-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.text.on-surface}",
           "$type": "color",
           "$description": "componentColors.tabs.active.text-color — Active tab text color."
         },
         "indicator-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.border.primary}",
           "$type": "color",
           "$description": "componentColors.tabs.active.indicator-color — Active tab indicator color."
         }
@@ -1738,17 +1768,17 @@
       },
       "checked": {
         "border-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.bg.primary}",
           "$type": "color",
           "$description": "componentColors.checkbox.checked.border-color — Checked checkbox border color."
         },
         "background-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.bg.primary}",
           "$type": "color",
           "$description": "componentColors.checkbox.checked.background-color — Checked checkbox background color."
         },
         "checkmark-color": {
-          "$value": "{color.primary.contrast}",
+          "$value": "{color.action.text.primary}",
           "$type": "color",
           "$description": "componentColors.checkbox.checked.checkmark-color — Checkmark icon color."
         }
@@ -1769,19 +1799,19 @@
     "switch": {
       "off": {
         "track-color": {
-          "$value": "{color.dark.4}",
+          "$value": "{color.bg.surface.muted}",
           "$type": "color",
           "$description": "componentColors.switch.off.track-color — Off state track background color."
         },
         "thumb-color": {
-          "$value": "{color.dark.0}",
+          "$value": "{color.text.default}",
           "$type": "color",
           "$description": "componentColors.switch.off.thumb-color — Switch thumb color."
         }
       },
       "on": {
         "track-color": {
-          "$value": "{color.primary.filled}",
+          "$value": "{color.action.bg.primary}",
           "$type": "color",
           "$description": "componentColors.switch.on.track-color — On state track background color."
         },
@@ -1798,7 +1828,7 @@
           "$description": "componentColors.switch.disabled.track-color — Disabled switch track color."
         },
         "thumb-color": {
-          "$value": "{color.dark.3}",
+          "$value": "{color.text.disabled}",
           "$type": "color",
           "$description": "componentColors.switch.disabled.thumb-color — Disabled switch thumb color."
         }
@@ -1822,7 +1852,7 @@
       },
       "dropdown": {
         "background-color": {
-          "$value": "{color.dark.5}",
+          "$value": "{color.bg.surface.elevated}",
           "$type": "color",
           "$description": "componentColors.select.dropdown.background-color — Dropdown menu background color."
         },
@@ -1839,12 +1869,12 @@
           "$description": "componentColors.select.option.hover-background-color — Option hover background color."
         },
         "selected-background-color": {
-          "$value": "{color.primary.light}",
+          "$value": "{color.action.bg.primary-light}",
           "$type": "color",
           "$description": "componentColors.select.option.selected-background-color — Selected option background color."
         },
         "selected-text-color": {
-          "$value": "{color.primary.light-color}",
+          "$value": "{color.action.text.primary-light}",
           "$type": "color",
           "$description": "componentColors.select.option.selected-text-color — Selected option text color."
         }
@@ -1852,7 +1882,7 @@
     },
     "modal": {
       "background-color": {
-        "$value": "{color.dark.6}",
+        "$value": "{color.bg.surface.default}",
         "$type": "color",
         "$description": "componentColors.modal.background-color — Modal background color."
       },
@@ -1870,163 +1900,6 @@
         "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "componentColors.modal.footer-border-color — Modal footer top border color."
-      }
-    }
-  },
-  "component": {
-    "default": {
-      "background": {
-        "$value": "{color.dark.6}",
-        "$type": "color",
-        "$description": "component.default.background — Default component background color"
-      },
-      "border": {
-        "$value": "{color.dark.4}",
-        "$type": "color",
-        "$description": "component.default.border — Default component border color"
-      },
-      "text": {
-        "$value": "{color.dark.0}",
-        "$type": "color",
-        "$description": "component.default.text — Default component text color"
-      }
-    },
-    "hover": {
-      "background": {
-        "$value": "{color.dark.5}",
-        "$type": "color",
-        "$description": "component.hover.background — Hover state background color"
-      },
-      "border": {
-        "$value": "{color.dark.3}",
-        "$type": "color",
-        "$description": "component.hover.border — Hover state border color"
-      }
-    },
-    "active": {
-      "background": {
-        "$value": "{color.dark.4}",
-        "$type": "color",
-        "$description": "component.active.background — Active/pressed state background color"
-      },
-      "border": {
-        "$value": "{color.dark.2}",
-        "$type": "color",
-        "$description": "component.active.border — Active/pressed state border color"
-      }
-    },
-    "focus": {
-      "ring": {
-        "$value": "{color.blue.4}",
-        "$type": "color",
-        "$description": "component.focus.ring — Focus ring color"
-      },
-      "border": {
-        "$value": "{color.blue.4}",
-        "$type": "color",
-        "$description": "component.focus.border — Focus state border color"
-      }
-    },
-    "disabled": {
-      "background": {
-        "$value": "{color.dark.5}",
-        "$type": "color",
-        "$description": "component.disabled.background — Disabled state background color"
-      },
-      "text": {
-        "$value": "{color.dark.3}",
-        "$type": "color",
-        "$description": "component.disabled.text — Disabled state text color"
-      },
-      "border": {
-        "$value": "{color.dark.4}",
-        "$type": "color",
-        "$description": "component.disabled.border — Disabled state border color"
-      }
-    },
-    "error": {
-      "background": {
-        "$value": "{color.alpha.error}",
-        "$type": "color",
-        "$description": "component.error.background — Error state background color (semi-transparent)"
-      },
-      "text": {
-        "$value": "{color.red.4}",
-        "$type": "color",
-        "$description": "component.error.text — Error state text color"
-      },
-      "border": {
-        "$value": "{color.red.5}",
-        "$type": "color",
-        "$description": "component.error.border — Error state border color"
-      }
-    },
-    "success": {
-      "background": {
-        "$value": "{color.alpha.success}",
-        "$type": "color",
-        "$description": "component.success.background — Success state background color (semi-transparent)"
-      },
-      "text": {
-        "$value": "{color.green.4}",
-        "$type": "color",
-        "$description": "component.success.text — Success state text color"
-      },
-      "border": {
-        "$value": "{color.green.5}",
-        "$type": "color",
-        "$description": "component.success.border — Success state border color"
-      }
-    },
-    "warning": {
-      "background": {
-        "$value": "{color.alpha.warning}",
-        "$type": "color",
-        "$description": "component.warning.background — Warning state background color (semi-transparent)"
-      },
-      "text": {
-        "$value": "{color.yellow.3}",
-        "$type": "color",
-        "$description": "component.warning.text — Warning state text color"
-      },
-      "border": {
-        "$value": "{color.yellow.5}",
-        "$type": "color",
-        "$description": "component.warning.border — Warning state border color"
-      }
-    },
-    "info": {
-      "background": {
-        "$value": "{color.alpha.info}",
-        "$type": "color",
-        "$description": "component.info.background — Info state background color (semi-transparent)"
-      },
-      "text": {
-        "$value": "{color.blue.4}",
-        "$type": "color",
-        "$description": "component.info.text — Info state text color"
-      },
-      "border": {
-        "$value": "{color.blue.5}",
-        "$type": "color",
-        "$description": "component.info.border — Info state border color"
-      }
-    },
-    "selected": {
-      "background": {
-        "$value": "{color.alpha.selected}",
-        "$type": "color",
-        "$description": "component.selected.background — Selected state background color (semi-transparent)"
-      },
-      "text": {
-        "$value": "{color.blue.4}",
-        "$type": "color",
-        "$description": "component.selected.text — Selected state text color"
-      },
-      "border": {
-        "$value": "{color.blue.5}",
-        "$type": "color",
-        "$description": "component.selected.border — Selected state border color"
       }
     }
   }

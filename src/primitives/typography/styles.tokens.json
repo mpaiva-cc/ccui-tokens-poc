@@ -64,7 +64,7 @@
                     "fontFamily": "{fontFamilies.heading}",
                     "fontSize": "{fontSizes.4xl}",
                     "fontWeight": "{fontWeights.bold}",
-                    "lineHeight": "{lineHeights.xs}",
+                    "lineHeight": "{lineHeights.2xs}",
                     "letterSpacing": "{letterSpacing.tight}",
                     "paragraphSpacing": "{paragraphSpacing.none}"
                 }
@@ -76,7 +76,7 @@
                     "fontFamily": "{fontFamilies.heading}",
                     "fontSize": "{fontSizes.3xl}",
                     "fontWeight": "{fontWeights.bold}",
-                    "lineHeight": "{lineHeights.xs}",
+                    "lineHeight": "{lineHeights.sm}",
                     "letterSpacing": "{letterSpacing.tight}",
                     "paragraphSpacing": "{paragraphSpacing.none}"
                 }
@@ -95,19 +95,7 @@
             },
             "h4": {
                 "$type": "typography",
-                "$description": "Card heading (20px semibold). Use for: card titles, modal headers, component titles.",
-                "$value": {
-                    "fontFamily": "{fontFamilies.heading}",
-                    "fontSize": "{fontSizes.xl}",
-                    "fontWeight": "{fontWeights.semibold}",
-                    "lineHeight": "{lineHeights.sm}",
-                    "letterSpacing": "{letterSpacing.normal}",
-                    "paragraphSpacing": "{paragraphSpacing.none}"
-                }
-            },
-            "h5": {
-                "$type": "typography",
-                "$description": "Small heading (18px semibold). Use for: minor sections, list group titles, compact headers.",
+                "$description": "Card heading (18px semibold). Use for: card titles, modal headers, component titles.",
                 "$value": {
                     "fontFamily": "{fontFamilies.heading}",
                     "fontSize": "{fontSizes.lg}",
@@ -117,12 +105,24 @@
                     "paragraphSpacing": "{paragraphSpacing.none}"
                 }
             },
-            "h6": {
+            "h5": {
                 "$type": "typography",
-                "$description": "Label heading (16px semibold). Use for: label-like headings, form section titles, metadata headers.",
+                "$description": "Small heading (16px semibold). Use for: minor sections, list group titles, compact headers.",
                 "$value": {
                     "fontFamily": "{fontFamilies.heading}",
                     "fontSize": "{fontSizes.md}",
+                    "fontWeight": "{fontWeights.semibold}",
+                    "lineHeight": "{lineHeights.md}",
+                    "letterSpacing": "{letterSpacing.normal}",
+                    "paragraphSpacing": "{paragraphSpacing.none}"
+                }
+            },
+            "h6": {
+                "$type": "typography",
+                "$description": "Label heading (14px semibold). Use for: label-like headings, form section titles, metadata headers.",
+                "$value": {
+                    "fontFamily": "{fontFamilies.heading}",
+                    "fontSize": "{fontSizes.sm}",
                     "fontWeight": "{fontWeights.semibold}",
                     "lineHeight": "{lineHeights.md}",
                     "letterSpacing": "{letterSpacing.normal}",

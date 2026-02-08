@@ -9,23 +9,23 @@
         },
         "sm": {
             "$value": "0.875rem",
-            "$description": "Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons. Good balance of density and readability."
+            "$description": "Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content, h6 headings. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons, h6. Good balance of density and readability."
         },
         "md": {
             "$value": "1rem",
-            "$description": "Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text."
+            "$description": "Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content, h5 headings. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text, h5."
         },
         "lg": {
             "$value": "1.125rem",
-            "$description": "Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, card titles. Slightly larger for emphasis without being a heading. Common in: intro paragraphs, feature descriptions, prominent labels, large button text."
+            "$description": "Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, h4 headings. Bridges body and heading sizes. Common in: intro paragraphs, feature descriptions, prominent labels, h4, large button text."
         },
         "xl": {
             "$value": "1.25rem",
-            "$description": "Extra large font size (20px). Use for: small headings (h5-h6), subtitle text, section labels, prominent UI elements. Bridges gap between body and heading sizes. Common in: card headings, modal titles, section headers within content."
+            "$description": "Extra large font size (20px). Use for: subtitle text, section labels, prominent UI elements, blockquotes. Between body and heading scale. Common in: modal titles, section headers within content, blockquotes."
         },
         "2xl": {
             "$value": "1.375rem",
-            "$description": "2x large font size (22px). Use for: medium headings (h4), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h4 headings, sidebar section titles, panel headers."
+            "$description": "2x large font size (22px). Use for: medium headings (h3), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h3 headings, sidebar section titles, panel headers."
         },
         "3xl": {
             "$value": "1.625rem",

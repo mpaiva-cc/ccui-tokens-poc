@@ -5,45 +5,45 @@
             "$description": "Switch track (background pill) configuration. The track contains the sliding thumb and indicates the on/off state through color.",
             "width": {
                 "xs": {
-                    "$value": "{sizing.switch.track.width.xs}",
+                    "$value": "1.75rem",
                     "$description": "Extra small track width (28px). Use for: compact settings lists, inline toggles, space-constrained UIs. Maintains approximately 1.75:1 width-to-height ratio."
                 },
                 "sm": {
-                    "$value": "{sizing.switch.track.width.sm}",
+                    "$value": "2.25rem",
                     "$description": "Small track width (36px). Use for: standard density settings, secondary controls. Good for desktop interfaces."
                 },
                 "md": {
-                    "$value": "{sizing.switch.track.width.md}",
+                    "$value": "2.75rem",
                     "$description": "Medium track width (44px). DEFAULT size. Use for: most settings toggles, preferences panels, feature controls. Comfortable interaction size."
                 },
                 "lg": {
-                    "$value": "{sizing.switch.track.width.lg}",
+                    "$value": "3.25rem",
                     "$description": "Large track width (52px). Use for: touch-optimized interfaces, prominent feature toggles, accessibility-focused UIs. Better for mobile."
                 },
                 "xl": {
-                    "$value": "{sizing.switch.track.width.xl}",
+                    "$value": "3.75rem",
                     "$description": "Extra large track width (60px). Use for: high-emphasis standalone toggles, large touch targets, maximum accessibility. Most prominent option."
                 }
             },
             "height": {
                 "xs": {
-                    "$value": "{sizing.switch.track.height.xs}",
+                    "$value": "1rem",
                     "$description": "Extra small track height (16px). Slim track for compact layouts. Thumb will be proportionally smaller."
                 },
                 "sm": {
-                    "$value": "{sizing.switch.track.height.sm}",
+                    "$value": "1.25rem",
                     "$description": "Small track height (20px). Standard density track height for desktop applications."
                 },
                 "md": {
-                    "$value": "{sizing.switch.track.height.md}",
+                    "$value": "1.5rem",
                     "$description": "Medium track height (24px). DEFAULT. Comfortable height for most use cases. Good thumb-to-track proportion."
                 },
                 "lg": {
-                    "$value": "{sizing.switch.track.height.lg}",
+                    "$value": "1.875rem",
                     "$description": "Large track height (30px). Taller track for better visibility and touch targets."
                 },
                 "xl": {
-                    "$value": "{sizing.switch.track.height.xl}",
+                    "$value": "2.25rem",
                     "$description": "Extra large track height (36px). Maximum height for high-visibility toggles and accessibility."
                 }
             },
@@ -57,23 +57,23 @@
             "$description": "Switch thumb (sliding handle) configuration. The thumb slides within the track to indicate and change state.",
             "size": {
                 "xs": {
-                    "$value": "{sizing.switch.thumb.size.xs}",
+                    "$value": "0.75rem",
                     "$description": "Extra small thumb size (12px). Circular handle for xs track. Sized to fit comfortably within track with offset padding."
                 },
                 "sm": {
-                    "$value": "{sizing.switch.thumb.size.sm}",
+                    "$value": "0.875rem",
                     "$description": "Small thumb size (14px). Proportional to sm track. Maintains visual balance within track."
                 },
                 "md": {
-                    "$value": "{sizing.switch.thumb.size.md}",
+                    "$value": "1.125rem",
                     "$description": "Medium thumb size (18px). DEFAULT. Standard thumb for md track. Clear visual indicator of toggle position."
                 },
                 "lg": {
-                    "$value": "{sizing.switch.thumb.size.lg}",
+                    "$value": "1.375rem",
                     "$description": "Large thumb size (22px). Larger handle for better visibility and touch interaction."
                 },
                 "xl": {
-                    "$value": "{sizing.switch.thumb.size.xl}",
+                    "$value": "1.75rem",
                     "$description": "Extra large thumb size (28px). Maximum handle size for high-visibility, touch-optimized toggles."
                 }
             },
@@ -83,7 +83,7 @@
                 "$description": "Thumb border radius (fully rounded/circular). Creates perfect circle for the sliding handle. Essential for the switch visual language."
             },
             "offset": {
-                "$value": "{sizing.switch.thumb.offset}",
+                "$value": "0.125rem",
                 "$type": "dimension",
                 "$description": "Thumb offset from track edge (2px). Small gap between thumb and track edge creates visual breathing room and indicates interactive affordance."
             }

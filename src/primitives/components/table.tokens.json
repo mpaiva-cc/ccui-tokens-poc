@@ -30,23 +30,23 @@
                 },
                 "vertical": {
                     "xs": {
-                        "$value": "{sizing.table.cellPaddingY.xs}",
+                        "$value": "0.25rem",
                         "$description": "Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views."
                     },
                     "sm": {
-                        "$value": "{sizing.table.cellPaddingY.sm}",
+                        "$value": "0.375rem",
                         "$description": "Small vertical cell padding (6px). Standard density rows for most data tables. Efficient use of vertical space."
                     },
                     "md": {
-                        "$value": "{sizing.table.cellPaddingY.md}",
+                        "$value": "0.5rem",
                         "$description": "Medium vertical cell padding (8px). DEFAULT. Comfortable row height for general use. Good for scanning and selecting rows."
                     },
                     "lg": {
-                        "$value": "{sizing.table.cellPaddingY.lg}",
+                        "$value": "0.75rem",
                         "$description": "Large vertical cell padding (12px). Taller rows for better touch targets and readability. Good for mobile or complex cell content."
                     },
                     "xl": {
-                        "$value": "{sizing.table.cellPaddingY.xl}",
+                        "$value": "1rem",
                         "$description": "Extra large vertical cell padding (16px). Maximum row height for spacious tables. Use for rich cell content or presentation."
                     }
                 }

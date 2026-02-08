@@ -38,7 +38,7 @@
         "icon": {
             "$description": "Alert icon configuration. Icons provide immediate visual identification of alert type (error, warning, success, info). ACCESSIBILITY: Icons supplement but don't replace text - essential for users who can't perceive color.",
             "size": {
-                "$value": "{sizing.alert.iconSize}",
+                "$value": "1.25rem",
                 "$type": "dimension",
                 "$description": "Alert icon size (20px). Sized to be clearly visible alongside title/message text without dominating. Proportional to typical alert padding."
             },
@@ -78,7 +78,7 @@
         "closeButton": {
             "$description": "Alert close button (dismiss) configuration. Allows users to dismiss alerts. ACCESSIBILITY: Must be keyboard accessible and have visible focus state. Not all alerts should be dismissible - critical errors may need to persist.",
             "size": {
-                "$value": "{sizing.alert.closeButtonSize}",
+                "$value": "1.125rem",
                 "$type": "dimension",
                 "$description": "Close button size (18px). Clickable/tappable close icon. Sized for adequate touch target while not competing with alert content."
             },

@@ -24,27 +24,27 @@
     },
     "width": {
       "xs": {
-        "$value": "{sizing.modal.width.xs}",
+        "$value": "20rem",
         "$type": "dimension",
         "$description": "modal.width.xs — Extra small modal width (320px). Use for: simple confirmations, yes/no dialogs, brief alerts, delete confirmations. Minimal content, quick decisions."
       },
       "sm": {
-        "$value": "{sizing.modal.width.sm}",
+        "$value": "25rem",
         "$type": "dimension",
         "$description": "modal.width.sm — Small modal width (400px). Use for: simple forms (1-3 fields), prompts with brief input, login dialogs, share dialogs. Limited content that doesn't need much horizontal space."
       },
       "md": {
-        "$value": "{sizing.modal.width.md}",
+        "$value": "32.5rem",
         "$type": "dimension",
         "$description": "modal.width.md — Medium modal width (520px). DEFAULT for most modals. Use for: standard forms, settings panels, detail views, most CRUD operations. Balanced width for typical content."
       },
       "lg": {
-        "$value": "{sizing.modal.width.lg}",
+        "$value": "45rem",
         "$type": "dimension",
         "$description": "modal.width.lg — Large modal width (720px). Use for: complex multi-section forms, comparison views, detailed information display, wizards with multiple columns. Content that benefits from horizontal space."
       },
       "xl": {
-        "$value": "{sizing.modal.width.xl}",
+        "$value": "60rem",
         "$type": "dimension",
         "$description": "modal.width.xl — Extra large modal width (960px). Use for: data-heavy content like tables/grids, image galleries, full document previews, complex configuration panels. Near full-width for maximum content area."
       }

@@ -35,6 +35,11 @@
                 "$type": "color",
                 "$description": "Link/anchor text color."
             },
+            "selected": {
+                "$value": "{color.blue.7}",
+                "$type": "color",
+                "$description": "Text color for selected state."
+            },
             "bright": {
                 "$value": "{color.black}",
                 "$type": "color",
@@ -103,6 +108,16 @@
                     "$value": "{color.blue.0}",
                     "$type": "color",
                     "$description": "Selected element background."
+                },
+                "hover": {
+                    "$value": "{color.gray.0}",
+                    "$type": "color",
+                    "$description": "Neutral hover background for interactive elements."
+                },
+                "active": {
+                    "$value": "{color.gray.1}",
+                    "$type": "color",
+                    "$description": "Neutral active/pressed background."
                 }
             }
         },
@@ -148,6 +163,11 @@
                     "$value": "{color.blue.5}",
                     "$type": "color",
                     "$description": "Focus state border color."
+                },
+                "active": {
+                    "$value": "{color.gray.6}",
+                    "$type": "color",
+                    "$description": "Active/pressed border color."
                 }
             }
         },
@@ -196,6 +216,11 @@
                     "$value": "{colorPalette.blue.light-color}",
                     "$type": "color",
                     "$description": "Text on primary light backgrounds."
+                },
+                "on-surface": {
+                    "$value": "{colorPalette.blue.filled}",
+                    "$type": "color",
+                    "$description": "Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
                 }
             },
             "border": {
@@ -319,6 +344,11 @@
                 "$value": "{color.blue.5}",
                 "$type": "color",
                 "$description": "Focus ring color."
+            },
+            "glow": {
+                "$value": "{colorPalette.blue.light}",
+                "$type": "color",
+                "$description": "Focus ring glow/background color. Use for: input focus ring."
             }
         },
 

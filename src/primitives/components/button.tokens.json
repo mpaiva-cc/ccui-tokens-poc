@@ -4,23 +4,23 @@
         "height": {
             "$description": "Button height values mapped from sizing primitives.",
             "xs": {
-                "$value": "{sizing.button.xs}",
+                "$value": "{sizing.controlHeight.xs}",
                 "$description": "Extra small button height. Use for inline actions, compact toolbars."
             },
             "sm": {
-                "$value": "{sizing.button.sm}",
+                "$value": "{sizing.controlHeight.sm}",
                 "$description": "Small button height. Use for secondary actions, compact layouts."
             },
             "md": {
-                "$value": "{sizing.button.md}",
+                "$value": "{sizing.controlHeight.md}",
                 "$description": "Medium button height. DEFAULT for most buttons."
             },
             "lg": {
-                "$value": "{sizing.button.lg}",
+                "$value": "{sizing.controlHeight.lg}",
                 "$description": "Large button height. Use for prominent CTAs."
             },
             "xl": {
-                "$value": "{sizing.button.xl}",
+                "$value": "{sizing.controlHeight.xl}",
                 "$description": "Extra large button height. Use for marketing CTAs."
             }
         },

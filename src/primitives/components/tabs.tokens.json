@@ -18,23 +18,23 @@
             "$description": "Individual tab button configuration. Tabs should have consistent sizing and clear active/inactive states.",
             "height": {
                 "xs": {
-                    "$value": "{sizing.tabs.height.xs}",
+                    "$value": "1.75rem",
                     "$description": "Extra small tab height (28px). Use for: compact navigation, secondary tab sets, dense admin interfaces. Minimal vertical space."
                 },
                 "sm": {
-                    "$value": "{sizing.tabs.height.sm}",
+                    "$value": "2rem",
                     "$description": "Small tab height (32px). Use for: standard-density navigation, sidebar tabs, space-efficient layouts."
                 },
                 "md": {
-                    "$value": "{sizing.tabs.height.md}",
+                    "$value": "2.25rem",
                     "$description": "Medium tab height (36px). DEFAULT. Use for: most tab navigation, main content tabs, settings panels. Comfortable click/tap target."
                 },
                 "lg": {
-                    "$value": "{sizing.tabs.height.lg}",
+                    "$value": "2.5rem",
                     "$description": "Large tab height (40px). Use for: prominent navigation tabs, touch-optimized interfaces, hero section tabs."
                 },
                 "xl": {
-                    "$value": "{sizing.tabs.height.xl}",
+                    "$value": "3rem",
                     "$description": "Extra large tab height (48px). Use for: high-emphasis navigation, full-width primary tabs, maximum touch target size."
                 }
             },
@@ -108,7 +108,7 @@
         "indicator": {
             "$description": "Active tab indicator configuration. The indicator shows which tab is currently selected, typically as an underline.",
             "height": {
-                "$value": "{sizing.tabs.indicatorHeight}",
+                "$value": "0.125rem",
                 "$type": "dimension",
                 "$description": "Indicator height (2px). Thin underline below active tab. Visible enough to clearly indicate selection without being heavy."
             },

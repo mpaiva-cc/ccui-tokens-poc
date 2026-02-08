@@ -424,7 +424,7 @@ StyleDictionary.registerFormat({
         const semanticTokens = dictionary.allTokens.filter(token => {
             const category = token.path[0];
             // Include color-related semantic tokens and component color tokens from theme files
-            if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'component', 'componentColors', 'fontFamilies'].includes(category)) {
+            if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'componentColors', 'fontFamilies'].includes(category)) {
                 return false;
             }
             // Exclude primitive palette colors - they belong in core/color.json

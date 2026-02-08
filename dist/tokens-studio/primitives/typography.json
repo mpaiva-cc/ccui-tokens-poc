@@ -8,27 +8,27 @@
     "sm": {
       "$value": "0.875rem",
       "$type": "fontSizes",
-      "$description": "fontSizes.sm — Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons. Good balance of density and readability."
+      "$description": "fontSizes.sm — Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content, h6 headings. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons, h6. Good balance of density and readability."
     },
     "md": {
       "$value": "1rem",
       "$type": "fontSizes",
-      "$description": "fontSizes.md — Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text."
+      "$description": "fontSizes.md — Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content, h5 headings. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text, h5."
     },
     "lg": {
       "$value": "1.125rem",
       "$type": "fontSizes",
-      "$description": "fontSizes.lg — Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, card titles. Slightly larger for emphasis without being a heading. Common in: intro paragraphs, feature descriptions, prominent labels, large button text."
+      "$description": "fontSizes.lg — Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, h4 headings. Bridges body and heading sizes. Common in: intro paragraphs, feature descriptions, prominent labels, h4, large button text."
     },
     "xl": {
       "$value": "1.25rem",
       "$type": "fontSizes",
-      "$description": "fontSizes.xl — Extra large font size (20px). Use for: small headings (h5-h6), subtitle text, section labels, prominent UI elements. Bridges gap between body and heading sizes. Common in: card headings, modal titles, section headers within content."
+      "$description": "fontSizes.xl — Extra large font size (20px). Use for: subtitle text, section labels, prominent UI elements, blockquotes. Between body and heading scale. Common in: modal titles, section headers within content, blockquotes."
     },
     "2xl": {
       "$value": "1.375rem",
       "$type": "fontSizes",
-      "$description": "fontSizes.2xl — 2x large font size (22px). Use for: medium headings (h4), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h4 headings, sidebar section titles, panel headers."
+      "$description": "fontSizes.2xl — 2x large font size (22px). Use for: medium headings (h3), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h3 headings, sidebar section titles, panel headers."
     },
     "3xl": {
       "$value": "1.625rem",
@@ -101,10 +101,15 @@
     }
   },
   "lineHeights": {
+    "2xs": {
+      "$value": "130%",
+      "$type": "lineHeights",
+      "$description": "lineHeights.2xs — Extra tight line height (130%). Use for: large headings (h1) where text needs slightly more breathing room than xs but remains compact. Matches Mantine v8 h1 lineHeight (1.3). Common in: h1 page titles, primary headings."
+    },
     "xs": {
       "$value": "120%",
       "$type": "lineHeights",
-      "$description": "lineHeights.xs — Tight line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for headings 24px+ or single-line UI elements. Common in: h1, hero headlines, button text, badge labels."
+      "$description": "lineHeights.xs — Tightest line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for display text 24px+ or single-line UI elements. Common in: display headlines, hero text, button text, badge labels."
     },
     "sm": {
       "$value": "135%",
@@ -184,7 +189,7 @@
           "fontFamily": "{fontFamilies.heading}",
           "fontSize": "{fontSizes.4xl}",
           "fontWeight": "{fontWeights.bold}",
-          "lineHeight": "{lineHeights.xs}",
+          "lineHeight": "{lineHeights.2xs}",
           "letterSpacing": "{letterSpacing.tight}",
           "paragraphSpacing": "{paragraphSpacing.none}"
         },
@@ -196,7 +201,7 @@
           "fontFamily": "{fontFamilies.heading}",
           "fontSize": "{fontSizes.3xl}",
           "fontWeight": "{fontWeights.bold}",
-          "lineHeight": "{lineHeights.xs}",
+          "lineHeight": "{lineHeights.sm}",
           "letterSpacing": "{letterSpacing.tight}",
           "paragraphSpacing": "{paragraphSpacing.none}"
         },
@@ -218,18 +223,6 @@
       "h4": {
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
-          "fontSize": "{fontSizes.xl}",
-          "fontWeight": "{fontWeights.semibold}",
-          "lineHeight": "{lineHeights.sm}",
-          "letterSpacing": "{letterSpacing.normal}",
-          "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$type": "typography",
-        "$description": "typography.heading.h4 — Card heading (20px semibold). Use for: card titles, modal headers, component titles."
-      },
-      "h5": {
-        "$value": {
-          "fontFamily": "{fontFamilies.heading}",
           "fontSize": "{fontSizes.lg}",
           "fontWeight": "{fontWeights.semibold}",
           "lineHeight": "{lineHeights.sm}",
@@ -237,9 +230,9 @@
           "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
-        "$description": "typography.heading.h5 — Small heading (18px semibold). Use for: minor sections, list group titles, compact headers."
+        "$description": "typography.heading.h4 — Card heading (18px semibold). Use for: card titles, modal headers, component titles."
       },
-      "h6": {
+      "h5": {
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
           "fontSize": "{fontSizes.md}",
@@ -249,7 +242,19 @@
           "paragraphSpacing": "{paragraphSpacing.none}"
         },
         "$type": "typography",
-        "$description": "typography.heading.h6 — Label heading (16px semibold). Use for: label-like headings, form section titles, metadata headers."
+        "$description": "typography.heading.h5 — Small heading (16px semibold). Use for: minor sections, list group titles, compact headers."
+      },
+      "h6": {
+        "$value": {
+          "fontFamily": "{fontFamilies.heading}",
+          "fontSize": "{fontSizes.sm}",
+          "fontWeight": "{fontWeights.semibold}",
+          "lineHeight": "{lineHeights.md}",
+          "letterSpacing": "{letterSpacing.normal}",
+          "paragraphSpacing": "{paragraphSpacing.none}"
+        },
+        "$type": "typography",
+        "$description": "typography.heading.h6 — Label heading (14px semibold). Use for: label-like headings, form section titles, metadata headers."
       }
     },
     "display": {

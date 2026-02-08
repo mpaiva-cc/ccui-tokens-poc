@@ -2,27 +2,27 @@
   "input": {
     "height": {
       "xs": {
-        "$value": "{sizing.input.xs}",
+        "$value": "{sizing.controlHeight.xs}",
         "$type": "dimension",
         "$description": "input.height.xs — Extra small input height. Use for compact forms."
       },
       "sm": {
-        "$value": "{sizing.input.sm}",
+        "$value": "{sizing.controlHeight.sm}",
         "$type": "dimension",
         "$description": "input.height.sm — Small input height. Use for secondary inputs."
       },
       "md": {
-        "$value": "{sizing.input.md}",
+        "$value": "{sizing.controlHeight.md}",
         "$type": "dimension",
         "$description": "input.height.md — Medium input height. DEFAULT for most inputs."
       },
       "lg": {
-        "$value": "{sizing.input.lg}",
+        "$value": "{sizing.controlHeight.lg}",
         "$type": "dimension",
         "$description": "input.height.lg — Large input height. Use for prominent inputs."
       },
       "xl": {
-        "$value": "{sizing.input.xl}",
+        "$value": "{sizing.controlHeight.xl}",
         "$type": "dimension",
         "$description": "input.height.xl — Extra large input height. Use for marketing forms."
       }
