@@ -25,7 +25,6 @@ const SPEC_COMPLIANT_PATTERNS = [
 const SKIP_PATTERNS = [
     /^color\.(white|black|transparent)$/,
     /^color\.(dark|gray|red|pink|grape|violet|indigo|blue|cyan|teal|green|lime|yellow|orange)\.\d+$/,
-    /^color\.primary\.\d+$/,
     /^color\.alpha\./,
     /^colorPalette\./,
 ];

@@ -345,47 +345,7 @@
             }
         },
         "primary": {
-            "0": {
-                "$value": "{color.blue.0}",
-                "$type": "color"
-            },
-            "1": {
-                "$value": "{color.blue.1}",
-                "$type": "color"
-            },
-            "2": {
-                "$value": "{color.blue.2}",
-                "$type": "color"
-            },
-            "3": {
-                "$value": "{color.blue.3}",
-                "$type": "color"
-            },
-            "4": {
-                "$value": "{color.blue.4}",
-                "$type": "color"
-            },
-            "5": {
-                "$value": "{color.blue.5}",
-                "$type": "color"
-            },
-            "6": {
-                "$value": "{color.blue.6}",
-                "$type": "color"
-            },
-            "7": {
-                "$value": "{color.blue.7}",
-                "$type": "color"
-            },
-            "8": {
-                "$value": "{color.blue.8}",
-                "$type": "color"
-            },
-            "9": {
-                "$value": "{color.blue.9}",
-                "$type": "color"
-            },
-            "$description": "Primary color scale. WARNING: Prefer semantic action tokens (color.action.*) for new code. These exist for Mantine compatibility. PLACEHOLDER - uses blue, update for rebranding.",
+            "$description": "Primary color semantic variants. PLACEHOLDER - uses blue, update for rebranding.",
             "filled": {
                 "$value": "{colorPalette.blue.filled}",
                 "$type": "color",
