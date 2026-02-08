@@ -38,7 +38,7 @@
       "$description": "Default border radius when no size is specified. References radius.sm token."
     },
     "zIndex": {
-      "$description": "Mantine z-index layers using kebab-case naming convention",
+      "$description": "Mantine z-index layers",
       "app": {
         "$value": 100,
         "$type": "number",

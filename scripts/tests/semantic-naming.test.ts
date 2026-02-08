@@ -9,16 +9,16 @@ const LEGACY_SEMANTIC_PATTERNS: RegExp[] = [];
 
 // Spec-compliant semantic patterns (new naming convention)
 const SPEC_COMPLIANT_PATTERNS = [
-    /^color\.text\.\w+(-\w+)?$/,              // color.text.default, color.text.on-default
-    /^color\.bg\.\w+\.\w+(-\w+)?$/,           // color.bg.surface.default, color.bg.interactive.disabled
-    /^color\.border\.\w+\.\w+(-\w+)?$/,       // color.border.surface.default, color.border.interactive.focus
-    /^color\.action\.bg\.\w+(-\w+)*$/,         // color.action.bg.primary-hover, primary-light-hover
-    /^color\.action\.text\.\w+(-\w+)?$/,      // color.action.text.primary-light
-    /^color\.action\.border\.\w+(-\w+)?$/,    // color.action.border.primary
+    /^color\.text\.\w+$/,                     // color.text.default, color.text.onDefault
+    /^color\.bg\.\w+\.\w+$/,                  // color.bg.surface.default, color.bg.interactive.disabled
+    /^color\.border\.\w+\.\w+$/,              // color.border.surface.default, color.border.interactive.focus
+    /^color\.action\.bg\.\w+$/,               // color.action.bg.primaryHover, primaryLightHover
+    /^color\.action\.text\.\w+$/,             // color.action.text.primaryLight
+    /^color\.action\.border\.\w+$/,           // color.action.border.primary
     /^color\.feedback\.\w+\.\w+$/,            // color.feedback.text.error, color.feedback.bg.error
     /^color\.overlay\.\w+$/,                  // color.overlay.default
     /^color\.focus\.\w+$/,                    // color.focus.ring
-    /^color\.primary\.(filled|light|contrast|filled-hover|light-hover|light-color)$/,  // color.primary.* variants
+    /^color\.primary\.(filled|light|contrast|filledHover|lightHover|lightColor)$/,  // color.primary.* variants
 ];
 
 // Patterns to skip (primitive colors, scales, etc.)

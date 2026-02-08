@@ -13,7 +13,7 @@
                 "$type": "color",
                 "$description": "Filled background for dark elements."
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.dark.7}",
                 "$type": "color",
                 "$description": "Hover state for dark filled elements"
@@ -23,12 +23,12 @@
                 "$type": "color",
                 "$description": "Light variant of dark color, equal to applying 0.1 opacity to colorPalette.dark.6"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(46, 46, 46, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for dark light elements, equal to applying 0.12 opacity to colorPalette.dark.6"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.dark.6}",
                 "$type": "color",
                 "$description": "Text color for dark light elements"
@@ -38,7 +38,7 @@
                 "$type": "color",
                 "$description": "Outline color for dark elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(46, 46, 46, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for dark outline elements"
@@ -55,7 +55,7 @@
                 "$type": "color",
                 "$description": "Filled background for gray elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.gray.7}",
                 "$type": "color",
                 "$description": "Hover state for gray filled elements"
@@ -65,12 +65,12 @@
                 "$type": "color",
                 "$description": "Light variant of gray color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(134, 142, 150, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for gray light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.gray.6}",
                 "$type": "color",
                 "$description": "Text color for gray light elements"
@@ -80,7 +80,7 @@
                 "$type": "color",
                 "$description": "Outline color for gray elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(134, 142, 150, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for gray outline elements"
@@ -97,7 +97,7 @@
                 "$type": "color",
                 "$description": "Filled background for red elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.red.7}",
                 "$type": "color",
                 "$description": "Hover state for red filled elements"
@@ -107,12 +107,12 @@
                 "$type": "color",
                 "$description": "Light variant of red color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(250, 82, 82, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for red light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.red.6}",
                 "$type": "color",
                 "$description": "Text color for red light elements"
@@ -122,7 +122,7 @@
                 "$type": "color",
                 "$description": "Outline color for red elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(250, 82, 82, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for red outline elements"
@@ -139,7 +139,7 @@
                 "$type": "color",
                 "$description": "Filled background for pink elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.pink.7}",
                 "$type": "color",
                 "$description": "Hover state for pink filled elements"
@@ -149,12 +149,12 @@
                 "$type": "color",
                 "$description": "Light variant of pink color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(230, 73, 128, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for pink light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.pink.6}",
                 "$type": "color",
                 "$description": "Text color for pink light elements"
@@ -164,7 +164,7 @@
                 "$type": "color",
                 "$description": "Outline color for pink elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(230, 73, 128, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for pink outline elements"
@@ -181,7 +181,7 @@
                 "$type": "color",
                 "$description": "Filled background for grape elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.grape.7}",
                 "$type": "color",
                 "$description": "Hover state for grape filled elements"
@@ -191,12 +191,12 @@
                 "$type": "color",
                 "$description": "Light variant of grape color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(190, 75, 219, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for grape light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.grape.6}",
                 "$type": "color",
                 "$description": "Text color for grape light elements"
@@ -206,7 +206,7 @@
                 "$type": "color",
                 "$description": "Outline color for grape elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(190, 75, 219, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for grape outline elements"
@@ -223,7 +223,7 @@
                 "$type": "color",
                 "$description": "Filled background for violet elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.violet.7}",
                 "$type": "color",
                 "$description": "Hover state for violet filled elements"
@@ -233,12 +233,12 @@
                 "$type": "color",
                 "$description": "Light variant of violet color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(121, 80, 242, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for violet light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.violet.6}",
                 "$type": "color",
                 "$description": "Text color for violet light elements"
@@ -248,7 +248,7 @@
                 "$type": "color",
                 "$description": "Outline color for violet elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(121, 80, 242, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for violet outline elements"
@@ -265,7 +265,7 @@
                 "$type": "color",
                 "$description": "Filled background for indigo elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.indigo.7}",
                 "$type": "color",
                 "$description": "Hover state for indigo filled elements"
@@ -275,12 +275,12 @@
                 "$type": "color",
                 "$description": "Light variant of indigo color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(76, 110, 245, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for indigo light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.indigo.6}",
                 "$type": "color",
                 "$description": "Text color for indigo light elements"
@@ -290,7 +290,7 @@
                 "$type": "color",
                 "$description": "Outline color for indigo elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(76, 110, 245, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for indigo outline elements"
@@ -307,7 +307,7 @@
                 "$type": "color",
                 "$description": "Filled background for blue elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.blue.8}",
                 "$type": "color",
                 "$description": "Hover state for blue filled elements"
@@ -317,12 +317,12 @@
                 "$type": "color",
                 "$description": "Light variant of blue color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(20, 94, 184, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for blue light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.blue.6}",
                 "$type": "color",
                 "$description": "Text color for blue light elements"
@@ -332,7 +332,7 @@
                 "$type": "color",
                 "$description": "Outline color for blue elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(20, 94, 184, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for blue outline elements"
@@ -349,7 +349,7 @@
                 "$type": "color",
                 "$description": "Filled background for cyan elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.cyan.7}",
                 "$type": "color",
                 "$description": "Hover state for cyan filled elements"
@@ -359,12 +359,12 @@
                 "$type": "color",
                 "$description": "Light variant of cyan color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(21, 170, 191, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for cyan light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.cyan.6}",
                 "$type": "color",
                 "$description": "Text color for cyan light elements"
@@ -374,7 +374,7 @@
                 "$type": "color",
                 "$description": "Outline color for cyan elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(21, 170, 191, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for cyan outline elements"
@@ -391,7 +391,7 @@
                 "$type": "color",
                 "$description": "Filled background for teal elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.teal.7}",
                 "$type": "color",
                 "$description": "Hover state for teal filled elements"
@@ -401,12 +401,12 @@
                 "$type": "color",
                 "$description": "Light variant of teal color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(18, 184, 134, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for teal light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.teal.6}",
                 "$type": "color",
                 "$description": "Text color for teal light elements"
@@ -416,7 +416,7 @@
                 "$type": "color",
                 "$description": "Outline color for teal elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(18, 184, 134, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for teal outline elements"
@@ -433,7 +433,7 @@
                 "$type": "color",
                 "$description": "Filled background for green elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.green.7}",
                 "$type": "color",
                 "$description": "Hover state for green filled elements"
@@ -443,12 +443,12 @@
                 "$type": "color",
                 "$description": "Light variant of green color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(64, 192, 87, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for green light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.green.6}",
                 "$type": "color",
                 "$description": "Text color for green light elements"
@@ -458,7 +458,7 @@
                 "$type": "color",
                 "$description": "Outline color for green elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(64, 192, 87, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for green outline elements"
@@ -475,7 +475,7 @@
                 "$type": "color",
                 "$description": "Filled background for lime elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.lime.7}",
                 "$type": "color",
                 "$description": "Hover state for lime filled elements"
@@ -485,12 +485,12 @@
                 "$type": "color",
                 "$description": "Light variant of lime color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(130, 201, 30, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for lime light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.lime.6}",
                 "$type": "color",
                 "$description": "Text color for lime light elements"
@@ -500,7 +500,7 @@
                 "$type": "color",
                 "$description": "Outline color for lime elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(130, 201, 30, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for lime outline elements"
@@ -517,7 +517,7 @@
                 "$type": "color",
                 "$description": "Filled background for yellow elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.yellow.7}",
                 "$type": "color",
                 "$description": "Hover state for yellow filled elements"
@@ -527,12 +527,12 @@
                 "$type": "color",
                 "$description": "Light variant of yellow color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(250, 176, 5, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for yellow light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.yellow.6}",
                 "$type": "color",
                 "$description": "Text color for yellow light elements"
@@ -542,7 +542,7 @@
                 "$type": "color",
                 "$description": "Outline color for yellow elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(250, 176, 5, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for yellow outline elements"
@@ -559,7 +559,7 @@
                 "$type": "color",
                 "$description": "Filled background for orange elements"
             },
-            "filled-hover": {
+            "filledHover": {
                 "$value": "{color.orange.7}",
                 "$type": "color",
                 "$description": "Hover state for orange filled elements"
@@ -569,12 +569,12 @@
                 "$type": "color",
                 "$description": "Light variant of orange color"
             },
-            "light-hover": {
+            "lightHover": {
                 "$value": "rgba(253, 126, 20, 0.12)",
                 "$type": "color",
                 "$description": "Hover state for orange light elements"
             },
-            "light-color": {
+            "lightColor": {
                 "$value": "{color.orange.6}",
                 "$type": "color",
                 "$description": "Text color for orange light elements"
@@ -584,7 +584,7 @@
                 "$type": "color",
                 "$description": "Outline color for orange elements"
             },
-            "outline-hover": {
+            "outlineHover": {
                 "$value": "rgba(253, 126, 20, 0.05)",
                 "$type": "color",
                 "$description": "Hover state for orange outline elements"

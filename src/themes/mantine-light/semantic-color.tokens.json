@@ -2,7 +2,6 @@
     "$description": "Vanilla Mantine light theme semantic colors. Spec-compliant naming with direct primitive references.",
     "color": {
         "$description": "Semantic color tokens following the CCUI Semantic Token Spec.",
-
         "text": {
             "$description": "Text color tokens for readable content.",
             "default": {
@@ -45,7 +44,7 @@
                 "$type": "color",
                 "$description": "Maximum contrast text."
             },
-            "on-default": {
+            "onDefault": {
                 "$value": "{color.black}",
                 "$type": "color",
                 "$description": "Text on default component backgrounds."
@@ -71,7 +70,6 @@
                 "$description": "Informational text color."
             }
         },
-
         "bg": {
             "$description": "Background color tokens.",
             "surface": {
@@ -121,7 +119,6 @@
                 }
             }
         },
-
         "border": {
             "$description": "Border color tokens.",
             "surface": {
@@ -171,7 +168,6 @@
                 }
             }
         },
-
         "action": {
             "$description": "Action/button color tokens.",
             "bg": {
@@ -180,28 +176,28 @@
                     "$type": "color",
                     "$description": "Primary action background."
                 },
-                "primary-hover": {
-                    "$value": "{colorPalette.blue.filled-hover}",
+                "primaryHover": {
+                    "$value": "{colorPalette.blue.filledHover}",
                     "$type": "color",
                     "$description": "Primary action hover state."
                 },
-                "primary-active": {
+                "primaryActive": {
                     "$value": "{color.blue.8}",
                     "$type": "color",
                     "$description": "Primary action active/pressed state."
                 },
-                "primary-disabled": {
+                "primaryDisabled": {
                     "$value": "{color.bg.interactive.disabled}",
                     "$type": "color",
                     "$description": "Primary action disabled state."
                 },
-                "primary-light": {
+                "primaryLight": {
                     "$value": "{colorPalette.blue.light}",
                     "$type": "color",
                     "$description": "Primary light variant background."
                 },
-                "primary-light-hover": {
-                    "$value": "{colorPalette.blue.light-hover}",
+                "primaryLightHover": {
+                    "$value": "{colorPalette.blue.lightHover}",
                     "$type": "color",
                     "$description": "Primary light variant hover."
                 }
@@ -212,12 +208,12 @@
                     "$type": "color",
                     "$description": "Text on primary action backgrounds."
                 },
-                "primary-light": {
-                    "$value": "{colorPalette.blue.light-color}",
+                "primaryLight": {
+                    "$value": "{colorPalette.blue.lightColor}",
                     "$type": "color",
                     "$description": "Text on primary light backgrounds."
                 },
-                "on-surface": {
+                "onSurface": {
                     "$value": "{colorPalette.blue.filled}",
                     "$type": "color",
                     "$description": "Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
@@ -229,14 +225,13 @@
                     "$type": "color",
                     "$description": "Primary action border color."
                 },
-                "primary-hover": {
-                    "$value": "{colorPalette.blue.filled-hover}",
+                "primaryHover": {
+                    "$value": "{colorPalette.blue.filledHover}",
                     "$type": "color",
                     "$description": "Primary action hover border color."
                 }
             }
         },
-
         "feedback": {
             "$description": "Feedback/status color tokens.",
             "bg": {
@@ -328,7 +323,6 @@
                 }
             }
         },
-
         "overlay": {
             "$description": "Overlay color tokens.",
             "default": {
@@ -337,7 +331,6 @@
                 "$description": "Default overlay/backdrop color."
             }
         },
-
         "focus": {
             "$description": "Focus indicator color tokens.",
             "ring": {
@@ -351,16 +344,55 @@
                 "$description": "Focus ring glow/background color. Use for: input focus ring."
             }
         },
-
         "primary": {
+            "0": {
+                "$value": "{color.blue.0}",
+                "$type": "color"
+            },
+            "1": {
+                "$value": "{color.blue.1}",
+                "$type": "color"
+            },
+            "2": {
+                "$value": "{color.blue.2}",
+                "$type": "color"
+            },
+            "3": {
+                "$value": "{color.blue.3}",
+                "$type": "color"
+            },
+            "4": {
+                "$value": "{color.blue.4}",
+                "$type": "color"
+            },
+            "5": {
+                "$value": "{color.blue.5}",
+                "$type": "color"
+            },
+            "6": {
+                "$value": "{color.blue.6}",
+                "$type": "color"
+            },
+            "7": {
+                "$value": "{color.blue.7}",
+                "$type": "color"
+            },
+            "8": {
+                "$value": "{color.blue.8}",
+                "$type": "color"
+            },
+            "9": {
+                "$value": "{color.blue.9}",
+                "$type": "color"
+            },
             "$description": "Primary color scale. WARNING: Prefer semantic action tokens (color.action.*) for new code. These exist for Mantine compatibility.",
             "filled": {
                 "$value": "{colorPalette.blue.filled}",
                 "$type": "color",
                 "$description": "Primary filled background."
             },
-            "filled-hover": {
-                "$value": "{colorPalette.blue.filled-hover}",
+            "filledHover": {
+                "$value": "{colorPalette.blue.filledHover}",
                 "$type": "color",
                 "$description": "Primary filled hover."
             },
@@ -369,13 +401,13 @@
                 "$type": "color",
                 "$description": "Primary light background."
             },
-            "light-hover": {
-                "$value": "{colorPalette.blue.light-hover}",
+            "lightHover": {
+                "$value": "{colorPalette.blue.lightHover}",
                 "$type": "color",
                 "$description": "Primary light hover."
             },
-            "light-color": {
-                "$value": "{colorPalette.blue.light-color}",
+            "lightColor": {
+                "$value": "{colorPalette.blue.lightColor}",
                 "$type": "color",
                 "$description": "Text on primary light."
             },
@@ -383,17 +415,7 @@
                 "$value": "{color.white}",
                 "$type": "color",
                 "$description": "Text on primary filled."
-            },
-            "0": { "$value": "{color.blue.0}", "$type": "color" },
-            "1": { "$value": "{color.blue.1}", "$type": "color" },
-            "2": { "$value": "{color.blue.2}", "$type": "color" },
-            "3": { "$value": "{color.blue.3}", "$type": "color" },
-            "4": { "$value": "{color.blue.4}", "$type": "color" },
-            "5": { "$value": "{color.blue.5}", "$type": "color" },
-            "6": { "$value": "{color.blue.6}", "$type": "color" },
-            "7": { "$value": "{color.blue.7}", "$type": "color" },
-            "8": { "$value": "{color.blue.8}", "$type": "color" },
-            "9": { "$value": "{color.blue.9}", "$type": "color" }
+            }
         }
     }
 }
