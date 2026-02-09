@@ -1,69 +1,69 @@
 {
-  "$description": "Mantine-specific core settings that are required by Mantine components but don't exist in CCUI's token system. These are added for 1:1 Mantine compatibility.",
-  "mantine": {
-    "$description": "Mantine core configuration variables",
-    "scale": {
-      "$value": 1,
-      "$type": "number",
-      "$description": "Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size."
-    },
-    "cursorType": {
-      "$value": "pointer",
-      "$type": "string",
-      "$description": "Cursor style for interactive elements. 'pointer' for clickable, 'default' for standard."
-    },
-    "webkitFontSmoothing": {
-      "$value": "antialiased",
-      "$type": "string",
-      "$description": "WebKit font smoothing. 'antialiased' for crisp text on macOS/iOS."
-    },
-    "mozFontSmoothing": {
-      "$value": "grayscale",
-      "$type": "string",
-      "$description": "Mozilla font smoothing. 'grayscale' for crisp text on Firefox."
-    },
-    "headingFontWeight": {
-      "$value": 700,
-      "$type": "number",
-      "$description": "Default font weight for all headings (h1-h6)."
-    },
-    "headingTextWrap": {
-      "$value": "wrap",
-      "$type": "string",
-      "$description": "Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines."
-    },
-    "radiusDefault": {
-      "$value": "{radius.sm}",
-      "$type": "dimension",
-      "$description": "Default border radius when no size is specified. References radius.sm token."
-    },
-    "zIndex": {
-      "$description": "Mantine z-index layers",
-      "app": {
-        "$value": 100,
-        "$type": "number",
-        "$description": "Base app layer z-index"
-      },
-      "modal": {
-        "$value": 200,
-        "$type": "number",
-        "$description": "Modal dialog z-index"
-      },
-      "popover": {
-        "$value": 300,
-        "$type": "number",
-        "$description": "Popover/dropdown z-index"
-      },
-      "overlay": {
-        "$value": 400,
-        "$type": "number",
-        "$description": "Overlay/backdrop z-index"
-      },
-      "max": {
-        "$value": 9999,
-        "$type": "number",
-        "$description": "Maximum z-index for critical elements"
-      }
+    "$description": "Mantine-specific core settings that are required by Mantine components but don't exist in CCUI's token system. These are added for 1:1 Mantine compatibility.",
+    "mantine": {
+        "$description": "Mantine core configuration variables",
+        "cursorType": {
+            "$description": "Cursor style for interactive elements. 'pointer' for clickable, 'default' for standard.",
+            "$type": "string",
+            "$value": "pointer"
+        },
+        "headingFontWeight": {
+            "$description": "Default font weight for all headings (h1-h6).",
+            "$type": "number",
+            "$value": 700
+        },
+        "headingTextWrap": {
+            "$description": "Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines.",
+            "$type": "string",
+            "$value": "wrap"
+        },
+        "mozFontSmoothing": {
+            "$description": "Mozilla font smoothing. 'grayscale' for crisp text on Firefox.",
+            "$type": "string",
+            "$value": "grayscale"
+        },
+        "radiusDefault": {
+            "$description": "Default border radius when no size is specified. References radius.sm token.",
+            "$type": "dimension",
+            "$value": "{radius.sm}"
+        },
+        "scale": {
+            "$description": "Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size.",
+            "$type": "number",
+            "$value": 1
+        },
+        "webkitFontSmoothing": {
+            "$description": "WebKit font smoothing. 'antialiased' for crisp text on macOS/iOS.",
+            "$type": "string",
+            "$value": "antialiased"
+        },
+        "zIndex": {
+            "$description": "Mantine z-index layers",
+            "app": {
+                "$description": "Base app layer z-index",
+                "$type": "number",
+                "$value": 100
+            },
+            "max": {
+                "$description": "Maximum z-index for critical elements",
+                "$type": "number",
+                "$value": 9999
+            },
+            "modal": {
+                "$description": "Modal dialog z-index",
+                "$type": "number",
+                "$value": 200
+            },
+            "overlay": {
+                "$description": "Overlay/backdrop z-index",
+                "$type": "number",
+                "$value": 400
+            },
+            "popover": {
+                "$description": "Popover/dropdown z-index",
+                "$type": "number",
+                "$value": 300
+            }
+        }
     }
-  }
 }

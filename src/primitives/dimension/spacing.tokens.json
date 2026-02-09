@@ -1,83 +1,83 @@
 {
     "$description": "Core spacing primitives defining the spatial system. Based on a 4px/0.25rem base unit for consistency. Use spacing tokens for margins, paddings, and gaps. RULE: Always use spacing tokens instead of arbitrary values to maintain visual rhythm and consistency across the UI.",
-    "spacing": {
+    "gridSpacing": {
+        "$description": "Grid and layout gutter spacing based on 8px grid. Use for CSS Grid gap, Flexbox gap, and multi-column layout gutters. Pixel values for precise grid alignment. All values are multiples of 8px.",
         "$type": "dimension",
-        "$description": "Component-level spacing scale for padding, margins, and gaps. Follows a non-linear scale optimized for common UI patterns. Use xs-sm for tight/compact UIs, md for default spacing, lg-xl for breathing room and section separation.",
-        "xs": {
-            "$value": "0.625rem",
-            "$description": "Extra small spacing (10px). Use for: tight padding in compact components, icon-to-text gaps, inline element spacing, dense data tables. Common in: badges, tags, compact buttons, chip components."
-        },
-        "sm": {
-            "$value": "0.75rem",
-            "$description": "Small spacing (12px). Use for: standard component internal padding, form field padding, list item padding, card content padding. Common in: buttons, inputs, dropdowns, list items."
-        },
-        "md": {
-            "$value": "1rem",
-            "$description": "Medium spacing (16px). DEFAULT spacing value. Use for: standard gaps between elements, modal padding, card padding, section padding within components. Most common spacing value in the system."
+        "2xl": {
+            "$description": "2x large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts. Rarely needed - consider if layout needs restructuring.",
+            "$value": "48px"
         },
         "lg": {
-            "$value": "1.25rem",
-            "$description": "Large spacing (20px). Use for: generous padding, separation between related groups, dialog/modal padding, card spacing. Creates breathing room without excessive whitespace."
+            "$description": "Large grid gap (32px). Use for: spacious card layouts, content grids, marketing pages. Good for layouts with larger cards or content blocks.",
+            "$value": "32px"
+        },
+        "md": {
+            "$description": "Medium grid gap (24px). Use for: default content grids, spacious card layouts, comfortable dashboard grids. Balances density with readability.",
+            "$value": "24px"
+        },
+        "sm": {
+            "$description": "Small grid gap (16px). Use for: standard card grids, form layouts, compact dashboard grids. Good default for most grid layouts.",
+            "$value": "16px"
         },
         "xl": {
-            "$value": "2rem",
-            "$description": "Extra large spacing (32px). Use for: major section separation, page-level margins, large component padding, hero sections. Creates significant visual separation between unrelated content areas."
+            "$description": "Extra large grid gap (40px). Use for: hero grids, feature showcases, landing page layouts. Creates clear separation between grid items.",
+            "$value": "40px"
+        },
+        "xs": {
+            "$description": "Extra small grid gap (8px). Use for: compact card grids, dense dashboard layouts, mobile-optimized grids, icon grids. Minimum comfortable gap for touch targets.",
+            "$value": "8px"
         }
     },
-    "gridSpacing": {
+    "spacing": {
+        "$description": "Component-level spacing scale for padding, margins, and gaps. Follows a non-linear scale optimized for common UI patterns. Use xs-sm for tight/compact UIs, md for default spacing, lg-xl for breathing room and section separation.",
         "$type": "dimension",
-        "$description": "Grid and layout gutter spacing based on 8px grid. Use for CSS Grid gap, Flexbox gap, and multi-column layout gutters. Pixel values for precise grid alignment. All values are multiples of 8px.",
-        "xs": {
-            "$value": "8px",
-            "$description": "Extra small grid gap (8px). Use for: compact card grids, dense dashboard layouts, mobile-optimized grids, icon grids. Minimum comfortable gap for touch targets."
-        },
-        "sm": {
-            "$value": "16px",
-            "$description": "Small grid gap (16px). Use for: standard card grids, form layouts, compact dashboard grids. Good default for most grid layouts."
+        "lg": {
+            "$description": "Large spacing (20px). Use for: generous padding, separation between related groups, dialog/modal padding, card spacing. Creates breathing room without excessive whitespace.",
+            "$value": "1.25rem"
         },
         "md": {
-            "$value": "24px",
-            "$description": "Medium grid gap (24px). Use for: default content grids, spacious card layouts, comfortable dashboard grids. Balances density with readability."
+            "$description": "Medium spacing (16px). DEFAULT spacing value. Use for: standard gaps between elements, modal padding, card padding, section padding within components. Most common spacing value in the system.",
+            "$value": "1rem"
         },
-        "lg": {
-            "$value": "32px",
-            "$description": "Large grid gap (32px). Use for: spacious card layouts, content grids, marketing pages. Good for layouts with larger cards or content blocks."
+        "sm": {
+            "$description": "Small spacing (12px). Use for: standard component internal padding, form field padding, list item padding, card content padding. Common in: buttons, inputs, dropdowns, list items.",
+            "$value": "0.75rem"
         },
         "xl": {
-            "$value": "40px",
-            "$description": "Extra large grid gap (40px). Use for: hero grids, feature showcases, landing page layouts. Creates clear separation between grid items."
+            "$description": "Extra large spacing (32px). Use for: major section separation, page-level margins, large component padding, hero sections. Creates significant visual separation between unrelated content areas.",
+            "$value": "2rem"
         },
-        "2xl": {
-            "$value": "48px",
-            "$description": "2x large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts. Rarely needed - consider if layout needs restructuring."
+        "xs": {
+            "$description": "Extra small spacing (10px). Use for: tight padding in compact components, icon-to-text gaps, inline element spacing, dense data tables. Common in: badges, tags, compact buttons, chip components.",
+            "$value": "0.625rem"
         }
     },
     "verticalRhythm": {
-        "$type": "dimension",
         "$description": "Baseline-aligned spacing for vertical rhythm in typography-heavy layouts. Based on 1.6rem (25.6px) baseline. Use for consistent vertical spacing in prose content, documentation, and text-heavy interfaces. Maintains readable flow in long-form content.",
-        "xs": {
-            "$value": "0.4rem",
-            "$description": "Quarter baseline (6.4px). Use for: list item spacing within tight lists, line spacing adjustments, micro-spacing in prose. Minimal vertical separation."
-        },
-        "sm": {
-            "$value": "0.8rem",
-            "$description": "Half baseline (12.8px). Use for: heading bottom margins, spacing after inline elements, paragraph-adjacent element spacing. Creates subtle but noticeable separation."
-        },
-        "md": {
-            "$value": "1.6rem",
-            "$description": "Single baseline (25.6px). DEFAULT prose spacing. Use for: paragraph margins, standard content block spacing, default vertical rhythm. One full line height of separation."
+        "$type": "dimension",
+        "2xl": {
+            "$description": "Triple baseline (76.8px). Use for: page section breaks, major content area separations, hero-to-content transitions. Maximum prose spacing - use sparingly.",
+            "$value": "4.8rem"
         },
         "lg": {
-            "$value": "2.4rem",
-            "$description": "1.5 baselines (38.4px). Use for: heading top margins, spacing before new sections within content, emphasis breaks. Creates clear topic transitions."
+            "$description": "1.5 baselines (38.4px). Use for: heading top margins, spacing before new sections within content, emphasis breaks. Creates clear topic transitions.",
+            "$value": "2.4rem"
+        },
+        "md": {
+            "$description": "Single baseline (25.6px). DEFAULT prose spacing. Use for: paragraph margins, standard content block spacing, default vertical rhythm. One full line height of separation.",
+            "$value": "1.6rem"
+        },
+        "sm": {
+            "$description": "Half baseline (12.8px). Use for: heading bottom margins, spacing after inline elements, paragraph-adjacent element spacing. Creates subtle but noticeable separation.",
+            "$value": "0.8rem"
         },
         "xl": {
-            "$value": "3.2rem",
-            "$description": "Double baseline (51.2px). Use for: major section breaks in prose, chapter-level separations, significant content divisions. Two full line heights of separation."
+            "$description": "Double baseline (51.2px). Use for: major section breaks in prose, chapter-level separations, significant content divisions. Two full line heights of separation.",
+            "$value": "3.2rem"
         },
-        "2xl": {
-            "$value": "4.8rem",
-            "$description": "Triple baseline (76.8px). Use for: page section breaks, major content area separations, hero-to-content transitions. Maximum prose spacing - use sparingly."
+        "xs": {
+            "$description": "Quarter baseline (6.4px). Use for: list item spacing within tight lists, line spacing adjustments, micro-spacing in prose. Minimal vertical separation.",
+            "$value": "0.4rem"
         }
     }
 }

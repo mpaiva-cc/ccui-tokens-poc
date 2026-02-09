@@ -1,7 +1,7 @@
 {
-  "name": "mantine-dark",
-  "extends": "base",
-  "colorScheme": "dark",
-  "description": "Vanilla Mantine dark theme - baseline default with no customizations",
-  "version": "1.0.0"
+    "colorScheme": "dark",
+    "description": "Vanilla Mantine dark theme - baseline default with no customizations",
+    "extends": "base",
+    "name": "mantine-dark",
+    "version": "1.0.0"
 }

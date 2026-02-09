@@ -4,20 +4,20 @@
         "$description": "Focus ring configuration for consistent, accessible focus indicators across all interactive elements.",
         "ring": {
             "$description": "Focus ring appearance. Uses outline (not border) to avoid layout shifts. Combines width, offset, and color for visibility against any background.",
-            "width": {
-                "$value": "3px",
-                "$type": "dimension",
-                "$description": "Focus ring width (3px). Thick enough to be clearly visible per WCAG 2.4.11 (Focus Appearance). Use for: outline-width property. 3px provides clear visibility without being obtrusive. Consistent across all focusable elements."
+            "color": {
+                "$description": "Focus ring color (primary blue). High-visibility color that works on most backgrounds. Reference to color.blue.5 for consistency with primary brand color. ACCESSIBILITY: Ensure 3:1 contrast ratio against adjacent colors. May need adjustment for dark theme.",
+                "$type": "color",
+                "$value": "{color.blue.5}"
             },
             "offset": {
-                "$value": "2px",
+                "$description": "Focus ring offset from element (2px). Creates gap between element and focus ring for clarity. Use for: outline-offset property. Prevents focus ring from overlapping element borders. Ensures ring is visible on both light and dark backgrounds.",
                 "$type": "dimension",
-                "$description": "Focus ring offset from element (2px). Creates gap between element and focus ring for clarity. Use for: outline-offset property. Prevents focus ring from overlapping element borders. Ensures ring is visible on both light and dark backgrounds."
+                "$value": "2px"
             },
-            "color": {
-                "$value": "{color.blue.5}",
-                "$type": "color",
-                "$description": "Focus ring color (primary blue). High-visibility color that works on most backgrounds. Reference to color.blue.5 for consistency with primary brand color. ACCESSIBILITY: Ensure 3:1 contrast ratio against adjacent colors. May need adjustment for dark theme."
+            "width": {
+                "$description": "Focus ring width (3px). Thick enough to be clearly visible per WCAG 2.4.11 (Focus Appearance). Use for: outline-width property. 3px provides clear visibility without being obtrusive. Consistent across all focusable elements.",
+                "$type": "dimension",
+                "$value": "3px"
             }
         }
     }

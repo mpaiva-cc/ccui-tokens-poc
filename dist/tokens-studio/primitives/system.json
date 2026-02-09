@@ -1,27 +1,22 @@
 {
-  "scale": {
-    "$value": 1,
-    "$type": "number",
-    "$description": "scale — Global scale factor for UI components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size. Affects computed dimensions when frameworks support proportional scaling."
-  },
   "cursor": {
-    "interactive": {
-      "$value": "pointer",
-      "$description": "cursor.interactive — Cursor for clickable/interactive elements. Use 'pointer' for buttons, links, and actionable items."
-    },
     "default": {
       "$value": "default",
       "$description": "cursor.default — Standard cursor for non-interactive content. Use for text, containers, and static elements."
+    },
+    "interactive": {
+      "$value": "pointer",
+      "$description": "cursor.interactive — Cursor for clickable/interactive elements. Use 'pointer' for buttons, links, and actionable items."
     }
   },
   "fontSmoothing": {
-    "webkit": {
-      "$value": "antialiased",
-      "$description": "fontSmoothing.webkit — WebKit font smoothing for macOS/iOS. Use for crisp, thin text in heading and body text. Apply to -webkit-font-smoothing CSS property."
-    },
     "moz": {
       "$value": "grayscale",
       "$description": "fontSmoothing.moz — Mozilla font smoothing for Firefox. Use for crisp text rendering in heading and body content. Apply to -moz-osx-font-smoothing CSS property."
+    },
+    "webkit": {
+      "$value": "antialiased",
+      "$description": "fontSmoothing.webkit — WebKit font smoothing for macOS/iOS. Use for crisp, thin text in heading and body text. Apply to -webkit-font-smoothing CSS property."
     }
   },
   "heading": {
@@ -34,5 +29,10 @@
       "$value": "wrap",
       "$description": "heading.textWrap — Text wrapping behavior for headings. 'wrap' allows natural line breaks, 'balance' distributes text more evenly."
     }
+  },
+  "scale": {
+    "$value": 1,
+    "$type": "number",
+    "$description": "scale — Global scale factor for UI components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size. Affects computed dimensions when frameworks support proportional scaling."
   }
 }

@@ -2,38 +2,38 @@
     "$description": "Overlay and alpha color primitives for semi-transparent UI elements like modal backdrops and state backgrounds.",
     "color": {
         "$type": "color",
-        "overlay": {
-            "$description": "Overlay colors for modal backdrops and similar semi-transparent backgrounds.",
-            "light": {
-                "$value": "rgba(0, 0, 0, 0.5)",
-                "$description": "Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds."
-            },
-            "dark": {
-                "$value": "rgba(0, 0, 0, 0.75)",
-                "$description": "Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
-            }
-        },
         "alpha": {
             "$description": "Semi-transparent state colors for component backgrounds. These are theme-agnostic base values - use semantic tokens for theme-aware colors.",
             "error": {
-                "$value": "rgba(207, 39, 32, 0.15)",
-                "$description": "Error state semi-transparent background (15% red)"
-            },
-            "success": {
-                "$value": "rgba(29, 148, 72, 0.15)",
-                "$description": "Success state semi-transparent background (15% green)"
-            },
-            "warning": {
-                "$value": "rgba(218, 167, 17, 0.15)",
-                "$description": "Warning state semi-transparent background (15% yellow)"
+                "$description": "Error state semi-transparent background (15% red)",
+                "$value": "rgba(207, 39, 32, 0.15)"
             },
             "info": {
-                "$value": "rgba(9, 116, 235, 0.15)",
-                "$description": "Info state semi-transparent background (15% blue)"
+                "$description": "Info state semi-transparent background (15% blue)",
+                "$value": "rgba(9, 116, 235, 0.15)"
             },
             "selected": {
-                "$value": "rgba(9, 116, 235, 0.2)",
-                "$description": "Selected state semi-transparent background (20% blue)"
+                "$description": "Selected state semi-transparent background (20% blue)",
+                "$value": "rgba(9, 116, 235, 0.2)"
+            },
+            "success": {
+                "$description": "Success state semi-transparent background (15% green)",
+                "$value": "rgba(29, 148, 72, 0.15)"
+            },
+            "warning": {
+                "$description": "Warning state semi-transparent background (15% yellow)",
+                "$value": "rgba(218, 167, 17, 0.15)"
+            }
+        },
+        "overlay": {
+            "$description": "Overlay colors for modal backdrops and similar semi-transparent backgrounds.",
+            "dark": {
+                "$description": "Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays.",
+                "$value": "rgba(0, 0, 0, 0.75)"
+            },
+            "light": {
+                "$description": "Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds.",
+                "$value": "rgba(0, 0, 0, 0.5)"
             }
         }
     }

@@ -3,12 +3,12 @@
     "fontFamilies": {
         "$type": "fontFamilies",
         "body": {
-            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Body font stack for CCUI 3.0 theme. Public Sans is a neutral, open-source typeface optimized for UI and web."
+            "$description": "Body font stack for CCUI 3.0 theme. Public Sans is a neutral, open-source typeface optimized for UI and web.",
+            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
         },
         "heading": {
-            "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Heading font stack for CCUI 3.0 theme. Atkinson Hyperlegible Next is designed for maximum legibility, especially for users with low vision."
+            "$description": "Heading font stack for CCUI 3.0 theme. Atkinson Hyperlegible Next is designed for maximum legibility, especially for users with low vision.",
+            "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
         }
     }
 }

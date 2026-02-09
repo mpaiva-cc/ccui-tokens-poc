@@ -2,45 +2,45 @@
     "$description": "CCUI 2.1 Brand Identity Tokens. Colors sourced from the official ClearCo 2.1 Brand Guidelines.",
     "brand": {
         "$description": "Core brand identity colors for CCUI 2.1. Navy Blue and Sky Blue define the logo; Purple and Yellow provide accent options.",
-        "primary": {
-            "$value": "{brand.palette.navyBlue.7}",
-            "$type": "color",
-            "$description": "Primary brand color. Navy Blue used in logo 'Clear' letterforms and headings."
-        },
-        "secondary": {
-            "$value": "{brand.palette.skyBlue.3}",
-            "$type": "color",
-            "$description": "Secondary brand color. Sky Blue used in logo 'Co.' letterforms and subheadings."
-        },
-        "tertiary": {
-            "$value": "{brand.palette.purple.6}",
-            "$type": "color",
-            "$description": "Tertiary brand color. Purple for typography accents and supporting elements."
-        },
         "accent": {
-            "$value": "{brand.palette.yellow.1}",
+            "$description": "Accent color. Yellow for decorative highlights only — never as main color or text.",
             "$type": "color",
-            "$description": "Accent color. Yellow for decorative highlights only — never as main color or text."
-        },
-        "onPrimary": {
-            "$value": "#FFFFFF",
-            "$type": "color",
-            "$description": "Text/foreground on primary (Navy Blue) background."
-        },
-        "onSecondary": {
-            "$value": "#FFFFFF",
-            "$type": "color",
-            "$description": "Text/foreground on secondary (Sky Blue) background."
-        },
-        "onTertiary": {
-            "$value": "#FFFFFF",
-            "$type": "color",
-            "$description": "Text/foreground on tertiary (Purple) background."
+            "$value": "{brand.palette.yellow.1}"
         },
         "onAccent": {
-            "$value": "{brand.palette.navyBlue.7}",
+            "$description": "Text/foreground on accent (Yellow) background. Uses Navy Blue for contrast.",
             "$type": "color",
-            "$description": "Text/foreground on accent (Yellow) background. Uses Navy Blue for contrast."
+            "$value": "{brand.palette.navyBlue.7}"
+        },
+        "onPrimary": {
+            "$description": "Text/foreground on primary (Navy Blue) background.",
+            "$type": "color",
+            "$value": "#FFFFFF"
+        },
+        "onSecondary": {
+            "$description": "Text/foreground on secondary (Sky Blue) background.",
+            "$type": "color",
+            "$value": "#FFFFFF"
+        },
+        "onTertiary": {
+            "$description": "Text/foreground on tertiary (Purple) background.",
+            "$type": "color",
+            "$value": "#FFFFFF"
+        },
+        "primary": {
+            "$description": "Primary brand color. Navy Blue used in logo 'Clear' letterforms and headings.",
+            "$type": "color",
+            "$value": "{brand.palette.navyBlue.7}"
+        },
+        "secondary": {
+            "$description": "Secondary brand color. Sky Blue used in logo 'Co.' letterforms and subheadings.",
+            "$type": "color",
+            "$value": "{brand.palette.skyBlue.3}"
+        },
+        "tertiary": {
+            "$description": "Tertiary brand color. Purple for typography accents and supporting elements.",
+            "$type": "color",
+            "$value": "{brand.palette.purple.6}"
         }
     }
 }

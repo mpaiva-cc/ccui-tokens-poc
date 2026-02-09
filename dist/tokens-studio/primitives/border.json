@@ -1,32 +1,5 @@
 {
-  "borderWidth": {
-    "none": {
-      "$value": "0",
-      "$type": "borderWidth",
-      "$description": "borderWidth.none — No border (0px). Use for: removing inherited borders, borderless variants, flat designs. CSS: border-width: 0; Common in: ghost buttons, flat cards, seamless containers."
-    },
-    "thin": {
-      "$value": "1px",
-      "$type": "borderWidth",
-      "$description": "borderWidth.thin — Thin border (1px). DEFAULT for most UI borders. Use for: input fields, cards, tables, subtle containment, dividers. Provides structure without visual weight. Common in: Input, Select, Card, Table, dividers, most bordered elements."
-    },
-    "medium": {
-      "$value": "2px",
-      "$type": "borderWidth",
-      "$description": "borderWidth.medium — Medium border (2px). Use for: emphasis, active/selected states, focus indicators, section dividers. More prominent than thin - draws attention. Common in: active tab indicators, selected items, heavy dividers, emphasized cards."
-    },
-    "thick": {
-      "$value": "4px",
-      "$type": "borderWidth",
-      "$description": "borderWidth.thick — Thick border (4px). Use for: strong emphasis, decorative elements, major section dividers, brand accents. Very prominent - use sparingly. Common in: hero sections, brand elements, major visual accents, side indicators."
-    }
-  },
   "borderStyle": {
-    "solid": {
-      "$value": "solid",
-      "$type": "strokeStyle",
-      "$description": "borderStyle.solid — Solid border style. DEFAULT for all standard borders. Use for: inputs, cards, buttons, tables, containers. Continuous line - clean and professional. CSS keyword."
-    },
     "dashed": {
       "$value": "dashed",
       "$type": "strokeStyle",
@@ -41,6 +14,33 @@
       "$value": "none",
       "$type": "strokeStyle",
       "$description": "borderStyle.none — No border style. Use for: removing inherited borders, clean/minimal designs, when using other separation methods. CSS keyword. Equivalent to border-style: none;."
+    },
+    "solid": {
+      "$value": "solid",
+      "$type": "strokeStyle",
+      "$description": "borderStyle.solid — Solid border style. DEFAULT for all standard borders. Use for: inputs, cards, buttons, tables, containers. Continuous line - clean and professional. CSS keyword."
+    }
+  },
+  "borderWidth": {
+    "medium": {
+      "$value": "2px",
+      "$type": "borderWidth",
+      "$description": "borderWidth.medium — Medium border (2px). Use for: emphasis, active/selected states, focus indicators, section dividers. More prominent than thin - draws attention. Common in: active tab indicators, selected items, heavy dividers, emphasized cards."
+    },
+    "none": {
+      "$value": "0",
+      "$type": "borderWidth",
+      "$description": "borderWidth.none — No border (0px). Use for: removing inherited borders, borderless variants, flat designs. CSS: border-width: 0; Common in: ghost buttons, flat cards, seamless containers."
+    },
+    "thick": {
+      "$value": "4px",
+      "$type": "borderWidth",
+      "$description": "borderWidth.thick — Thick border (4px). Use for: strong emphasis, decorative elements, major section dividers, brand accents. Very prominent - use sparingly. Common in: hero sections, brand elements, major visual accents, side indicators."
+    },
+    "thin": {
+      "$value": "1px",
+      "$type": "borderWidth",
+      "$description": "borderWidth.thin — Thin border (1px). DEFAULT for most UI borders. Use for: input fields, cards, tables, subtle containment, dividers. Provides structure without visual weight. Common in: Input, Select, Card, Table, dividers, most bordered elements."
     }
   }
 }

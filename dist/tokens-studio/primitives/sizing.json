@@ -1,57 +1,57 @@
 {
   "sizing": {
     "controlHeight": {
-      "xs": {
-        "$value": "1.875rem",
+      "lg": {
+        "$value": "3rem",
         "$type": "sizing",
-        "$description": "sizing.controlHeight.xs — Extra small control height (30px). Use for: compact forms, inline actions, space-constrained UIs."
-      },
-      "sm": {
-        "$value": "2.25rem",
-        "$type": "sizing",
-        "$description": "sizing.controlHeight.sm — Small control height (36px). Use for: secondary controls, compact layouts."
+        "$description": "sizing.controlHeight.lg — Large control height (48px). Use for: prominent controls, touch-optimized UIs."
       },
       "md": {
         "$value": "2.625rem",
         "$type": "sizing",
         "$description": "sizing.controlHeight.md — Medium control height (42px). DEFAULT size for most controls."
       },
-      "lg": {
-        "$value": "3rem",
+      "sm": {
+        "$value": "2.25rem",
         "$type": "sizing",
-        "$description": "sizing.controlHeight.lg — Large control height (48px). Use for: prominent controls, touch-optimized UIs."
+        "$description": "sizing.controlHeight.sm — Small control height (36px). Use for: secondary controls, compact layouts."
       },
       "xl": {
         "$value": "3.75rem",
         "$type": "sizing",
         "$description": "sizing.controlHeight.xl — Extra large control height (60px). Use for: marketing forms, high-emphasis controls."
+      },
+      "xs": {
+        "$value": "1.875rem",
+        "$type": "sizing",
+        "$description": "sizing.controlHeight.xs — Extra small control height (30px). Use for: compact forms, inline actions, space-constrained UIs."
       }
     },
     "icon": {
-      "xs": {
-        "$value": "0.75rem",
+      "lg": {
+        "$value": "1.5rem",
         "$type": "sizing",
-        "$description": "sizing.icon.xs — Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs."
-      },
-      "sm": {
-        "$value": "1rem",
-        "$type": "sizing",
-        "$description": "sizing.icon.sm — Small icon size (16px). Use for: inline icons, button icons with text, input icons."
+        "$description": "sizing.icon.lg — Large icon size (24px). Use for: prominent icons, action icons, toolbar icons."
       },
       "md": {
         "$value": "1.25rem",
         "$type": "sizing",
         "$description": "sizing.icon.md — Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons."
       },
-      "lg": {
-        "$value": "1.5rem",
+      "sm": {
+        "$value": "1rem",
         "$type": "sizing",
-        "$description": "sizing.icon.lg — Large icon size (24px). Use for: prominent icons, action icons, toolbar icons."
+        "$description": "sizing.icon.sm — Small icon size (16px). Use for: inline icons, button icons with text, input icons."
       },
       "xl": {
         "$value": "2rem",
         "$type": "sizing",
         "$description": "sizing.icon.xl — Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons."
+      },
+      "xs": {
+        "$value": "0.75rem",
+        "$type": "sizing",
+        "$description": "sizing.icon.xs — Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs."
       }
     }
   }

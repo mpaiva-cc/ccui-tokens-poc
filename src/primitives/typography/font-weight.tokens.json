@@ -1,27 +1,27 @@
 {
     "$description": "Core font weight primitives for typographic emphasis hierarchy. Open Sans supports all these weights natively. RULE: Use weight for emphasis within text, not for semantic importance (use headings for that). Limit weight variations per page to maintain visual consistency - typically 2-3 weights maximum.",
     "fontWeights": {
-        "$type": "fontWeights",
         "$description": "Font weight scale from light to bold. Numeric values follow CSS font-weight specification (100-900). Ensure the font family supports the weight - unsupported weights will be approximated by the browser, often poorly. Open Sans includes all weights below.",
-        "light": {
-            "$value": 300,
-            "$description": "Light font weight (300). Use sparingly for: large display text, hero headlines, artistic/elegant contexts, stylized marketing content. CAUTION: Poor readability at small sizes or low contrast. Never use for body text or UI labels. Requires high contrast ratio. Common in: hero text, large quotes, stylized headings."
+        "$type": "fontWeights",
+        "bold": {
+            "$description": "Bold font weight (700). Use for: headings (h1-h3), strong emphasis, critical information, maximum text prominence. Reserve for true emphasis - overuse dilutes impact. Common in: h1-h3 headings, alert titles, critical labels, strong inline emphasis (<strong>).",
+            "$value": 700
         },
-        "regular": {
-            "$value": 400,
-            "$description": "Regular font weight (400). DEFAULT weight for all body text. Use for: paragraphs, descriptions, general content, form input values, most UI text. Optimized for extended reading. Most content should use this weight. Common in: body text, input values, descriptions, help text."
+        "light": {
+            "$description": "Light font weight (300). Use sparingly for: large display text, hero headlines, artistic/elegant contexts, stylized marketing content. CAUTION: Poor readability at small sizes or low contrast. Never use for body text or UI labels. Requires high contrast ratio. Common in: hero text, large quotes, stylized headings.",
+            "$value": 300
         },
         "medium": {
-            "$value": 500,
-            "$description": "Medium font weight (500). Use for: subtle emphasis, navigation items, form labels, table headers, slightly prominent UI text. Noticeable but not bold - professional emphasis. Common in: nav items, active states, form labels, table column headers, subheadings."
+            "$description": "Medium font weight (500). Use for: subtle emphasis, navigation items, form labels, table headers, slightly prominent UI text. Noticeable but not bold - professional emphasis. Common in: nav items, active states, form labels, table column headers, subheadings.",
+            "$value": 500
+        },
+        "regular": {
+            "$description": "Regular font weight (400). DEFAULT weight for all body text. Use for: paragraphs, descriptions, general content, form input values, most UI text. Optimized for extended reading. Most content should use this weight. Common in: body text, input values, descriptions, help text.",
+            "$value": 400
         },
         "semibold": {
-            "$value": 600,
-            "$description": "Semibold font weight (600). Use for: buttons, important labels, card titles, moderate emphasis headings. Strong emphasis without the heaviness of bold. Common in: button text, card titles, important labels, h4-h6 headings, badge text, tab labels."
-        },
-        "bold": {
-            "$value": 700,
-            "$description": "Bold font weight (700). Use for: headings (h1-h3), strong emphasis, critical information, maximum text prominence. Reserve for true emphasis - overuse dilutes impact. Common in: h1-h3 headings, alert titles, critical labels, strong inline emphasis (<strong>)."
+            "$description": "Semibold font weight (600). Use for: buttons, important labels, card titles, moderate emphasis headings. Strong emphasis without the heaviness of bold. Common in: button text, card titles, important labels, h4-h6 headings, badge text, tab labels.",
+            "$value": 600
         }
     }
 }

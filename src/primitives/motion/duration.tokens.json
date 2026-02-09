@@ -2,27 +2,27 @@
     "$description": "Core animation duration primitives for consistent motion timing across the UI. Durations are calibrated for perceived responsiveness - faster for small elements, slower for larger movements. ACCESSIBILITY: Respect prefers-reduced-motion media query - use duration.instant as fallback. All animations should complete within 500ms for usability.",
     "motion": {
         "duration": {
-            "$type": "duration",
             "$description": "Animation timing scale from instant to slow. Match duration to element size and travel distance: small/close = fast, large/far = slow. User perception: <100ms feels instant, 100-300ms feels responsive, >500ms feels sluggish. Always combine with appropriate easing.",
-            "instant": {
-                "$value": "0ms",
-                "$description": "Instant/no duration (0ms). Use for: prefers-reduced-motion fallback, immediate state changes, disabled animations, no-transition scenarios. CSS: transition-duration: 0ms; effectively disables transitions. ACCESSIBILITY: Use this as fallback for users who prefer reduced motion."
-            },
+            "$type": "duration",
             "fast": {
-                "$value": "100ms",
-                "$description": "Fast transitions (100ms). Use for: micro-interactions, hover states, button presses, checkbox toggles, small element transitions, focus rings. Feels instantaneous but smooth. Anything faster is imperceptible. Common in: hover color changes, button active states, toggle switches, icon transitions."
+                "$description": "Fast transitions (100ms). Use for: micro-interactions, hover states, button presses, checkbox toggles, small element transitions, focus rings. Feels instantaneous but smooth. Anything faster is imperceptible. Common in: hover color changes, button active states, toggle switches, icon transitions.",
+                "$value": "100ms"
+            },
+            "instant": {
+                "$description": "Instant/no duration (0ms). Use for: prefers-reduced-motion fallback, immediate state changes, disabled animations, no-transition scenarios. CSS: transition-duration: 0ms; effectively disables transitions. ACCESSIBILITY: Use this as fallback for users who prefer reduced motion.",
+                "$value": "0ms"
             },
             "normal": {
-                "$value": "200ms",
-                "$description": "Normal transitions (200ms). DEFAULT duration for most UI transitions. Use for: dropdown menus, tooltips, tab switches, sidebar toggles, modal fade-ins, standard UI feedback. Balanced: noticeable but not slow. Common in: Dropdown, Tooltip, Tab panels, collapsible sections."
+                "$description": "Normal transitions (200ms). DEFAULT duration for most UI transitions. Use for: dropdown menus, tooltips, tab switches, sidebar toggles, modal fade-ins, standard UI feedback. Balanced: noticeable but not slow. Common in: Dropdown, Tooltip, Tab panels, collapsible sections.",
+                "$value": "200ms"
             },
             "slow": {
-                "$value": "300ms",
-                "$description": "Slow transitions (300ms). Use for: larger element transitions, slide-in panels, accordion expansions, page section reveals, image transitions. Gives eye time to track larger movements. Common in: sidebar slide, accordion panels, card reveals, hero image transitions."
+                "$description": "Slow transitions (300ms). Use for: larger element transitions, slide-in panels, accordion expansions, page section reveals, image transitions. Gives eye time to track larger movements. Common in: sidebar slide, accordion panels, card reveals, hero image transitions.",
+                "$value": "300ms"
             },
             "slower": {
-                "$value": "500ms",
-                "$description": "Slower transitions (500ms). MAXIMUM recommended duration. Use for: full-page transitions, dramatic reveals, onboarding animations, marketing flourishes. Any longer feels unresponsive. Use sparingly - only for intentional dramatic effect. Common in: page transitions, hero animations, loading sequences."
+                "$description": "Slower transitions (500ms). MAXIMUM recommended duration. Use for: full-page transitions, dramatic reveals, onboarding animations, marketing flourishes. Any longer feels unresponsive. Use sparingly - only for intentional dramatic effect. Common in: page transitions, hero animations, loading sequences.",
+                "$value": "500ms"
             }
         }
     }

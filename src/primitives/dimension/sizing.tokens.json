@@ -4,48 +4,48 @@
         "$type": "dimension",
         "controlHeight": {
             "$description": "Standard heights for interactive controls (buttons, inputs, selects). Shared scale ensures form elements align vertically.",
-            "xs": {
-                "$value": "1.875rem",
-                "$description": "Extra small control height (30px). Use for: compact forms, inline actions, space-constrained UIs."
-            },
-            "sm": {
-                "$value": "2.25rem",
-                "$description": "Small control height (36px). Use for: secondary controls, compact layouts."
+            "lg": {
+                "$description": "Large control height (48px). Use for: prominent controls, touch-optimized UIs.",
+                "$value": "3rem"
             },
             "md": {
-                "$value": "2.625rem",
-                "$description": "Medium control height (42px). DEFAULT size for most controls."
+                "$description": "Medium control height (42px). DEFAULT size for most controls.",
+                "$value": "2.625rem"
             },
-            "lg": {
-                "$value": "3rem",
-                "$description": "Large control height (48px). Use for: prominent controls, touch-optimized UIs."
+            "sm": {
+                "$description": "Small control height (36px). Use for: secondary controls, compact layouts.",
+                "$value": "2.25rem"
             },
             "xl": {
-                "$value": "3.75rem",
-                "$description": "Extra large control height (60px). Use for: marketing forms, high-emphasis controls."
+                "$description": "Extra large control height (60px). Use for: marketing forms, high-emphasis controls.",
+                "$value": "3.75rem"
+            },
+            "xs": {
+                "$description": "Extra small control height (30px). Use for: compact forms, inline actions, space-constrained UIs.",
+                "$value": "1.875rem"
             }
         },
         "icon": {
             "$description": "Standard sizes for icon elements. Use these to ensure icons are appropriately sized relative to text and other elements.",
-            "xs": {
-                "$value": "0.75rem",
-                "$description": "Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs."
-            },
-            "sm": {
-                "$value": "1rem",
-                "$description": "Small icon size (16px). Use for: inline icons, button icons with text, input icons."
+            "lg": {
+                "$description": "Large icon size (24px). Use for: prominent icons, action icons, toolbar icons.",
+                "$value": "1.5rem"
             },
             "md": {
-                "$value": "1.25rem",
-                "$description": "Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons."
+                "$description": "Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons.",
+                "$value": "1.25rem"
             },
-            "lg": {
-                "$value": "1.5rem",
-                "$description": "Large icon size (24px). Use for: prominent icons, action icons, toolbar icons."
+            "sm": {
+                "$description": "Small icon size (16px). Use for: inline icons, button icons with text, input icons.",
+                "$value": "1rem"
             },
             "xl": {
-                "$value": "2rem",
-                "$description": "Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons."
+                "$description": "Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons.",
+                "$value": "2rem"
+            },
+            "xs": {
+                "$description": "Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs.",
+                "$value": "0.75rem"
             }
         }
     }

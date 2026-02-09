@@ -1,47 +1,47 @@
 {
-  "$description": "System-level configuration tokens that control global UI behavior. These are framework-agnostic primitives that can be transformed to any framework's naming convention during build.",
-  "scale": {
-    "$value": 1,
-    "$type": "number",
-    "$description": "Global scale factor for UI components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size. Affects computed dimensions when frameworks support proportional scaling."
-  },
-  "cursor": {
-    "$description": "Cursor styles for different interaction states",
-    "interactive": {
-      "$value": "pointer",
-      "$type": "string",
-      "$description": "Cursor for clickable/interactive elements. Use 'pointer' for buttons, links, and actionable items."
+    "$description": "System-level configuration tokens that control global UI behavior. These are framework-agnostic primitives that can be transformed to any framework's naming convention during build.",
+    "cursor": {
+        "$description": "Cursor styles for different interaction states",
+        "default": {
+            "$description": "Standard cursor for non-interactive content. Use for text, containers, and static elements.",
+            "$type": "string",
+            "$value": "default"
+        },
+        "interactive": {
+            "$description": "Cursor for clickable/interactive elements. Use 'pointer' for buttons, links, and actionable items.",
+            "$type": "string",
+            "$value": "pointer"
+        }
     },
-    "default": {
-      "$value": "default",
-      "$type": "string",
-      "$description": "Standard cursor for non-interactive content. Use for text, containers, and static elements."
-    }
-  },
-  "fontSmoothing": {
-    "$description": "Font rendering optimization settings for different browsers/platforms. Use for consistent text rendering across operating systems.",
-    "webkit": {
-      "$value": "antialiased",
-      "$type": "string",
-      "$description": "WebKit font smoothing for macOS/iOS. Use for crisp, thin text in heading and body text. Apply to -webkit-font-smoothing CSS property."
+    "fontSmoothing": {
+        "$description": "Font rendering optimization settings for different browsers/platforms. Use for consistent text rendering across operating systems.",
+        "moz": {
+            "$description": "Mozilla font smoothing for Firefox. Use for crisp text rendering in heading and body content. Apply to -moz-osx-font-smoothing CSS property.",
+            "$type": "string",
+            "$value": "grayscale"
+        },
+        "webkit": {
+            "$description": "WebKit font smoothing for macOS/iOS. Use for crisp, thin text in heading and body text. Apply to -webkit-font-smoothing CSS property.",
+            "$type": "string",
+            "$value": "antialiased"
+        }
     },
-    "moz": {
-      "$value": "grayscale",
-      "$type": "string",
-      "$description": "Mozilla font smoothing for Firefox. Use for crisp text rendering in heading and body content. Apply to -moz-osx-font-smoothing CSS property."
-    }
-  },
-  "heading": {
-    "$description": "Global heading (h1-h6) typography configuration tokens for consistent visual hierarchy",
-    "fontWeight": {
-      "$value": 700,
-      "$type": "number",
-      "$description": "Default font weight for all headings (h1-h6). Bold (700) provides strong visual hierarchy."
+    "heading": {
+        "$description": "Global heading (h1-h6) typography configuration tokens for consistent visual hierarchy",
+        "fontWeight": {
+            "$description": "Default font weight for all headings (h1-h6). Bold (700) provides strong visual hierarchy.",
+            "$type": "number",
+            "$value": 700
+        },
+        "textWrap": {
+            "$description": "Text wrapping behavior for headings. 'wrap' allows natural line breaks, 'balance' distributes text more evenly.",
+            "$type": "string",
+            "$value": "wrap"
+        }
     },
-    "textWrap": {
-      "$value": "wrap",
-      "$type": "string",
-      "$description": "Text wrapping behavior for headings. 'wrap' allows natural line breaks, 'balance' distributes text more evenly."
+    "scale": {
+        "$description": "Global scale factor for UI components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size. Affects computed dimensions when frameworks support proportional scaling.",
+        "$type": "number",
+        "$value": 1
     }
-  }
 }

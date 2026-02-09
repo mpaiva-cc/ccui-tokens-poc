@@ -1,40 +1,40 @@
 {
     "$description": "Dark theme component color overrides. Only tokens that differ from the light theme defaults defined in src/primitives/components/ are listed here.",
-    "switch": {
-        "color": {
-            "track": {
-                "off": {
-                    "$value": "{color.bg.surface.muted}",
-                    "$type": "color",
-                    "$description": "Off state track background color."
-                }
-            },
-            "thumb": {
-                "off": {
-                    "$value": "{color.text.default}",
-                    "$type": "color",
-                    "$description": "Switch thumb color."
-                },
-                "on": {
-                    "$value": "{color.white}",
-                    "$type": "color",
-                    "$description": "Switch thumb color when on."
-                },
-                "disabled": {
-                    "$value": "{color.text.disabled}",
-                    "$type": "color",
-                    "$description": "Disabled switch thumb color."
-                }
-            }
-        }
-    },
     "select": {
         "color": {
             "dropdown": {
                 "bg": {
-                    "$value": "{color.bg.surface.elevated}",
+                    "$description": "Dropdown menu background color.",
                     "$type": "color",
-                    "$description": "Dropdown menu background color."
+                    "$value": "{color.bg.surface.elevated}"
+                }
+            }
+        }
+    },
+    "switch": {
+        "color": {
+            "thumb": {
+                "disabled": {
+                    "$description": "Disabled switch thumb color.",
+                    "$type": "color",
+                    "$value": "{color.text.disabled}"
+                },
+                "off": {
+                    "$description": "Switch thumb color.",
+                    "$type": "color",
+                    "$value": "{color.text.default}"
+                },
+                "on": {
+                    "$description": "Switch thumb color when on.",
+                    "$type": "color",
+                    "$value": "{color.white}"
+                }
+            },
+            "track": {
+                "off": {
+                    "$description": "Off state track background color.",
+                    "$type": "color",
+                    "$value": "{color.bg.surface.muted}"
                 }
             }
         }

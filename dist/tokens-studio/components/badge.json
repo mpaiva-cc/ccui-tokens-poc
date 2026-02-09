@@ -1,61 +1,5 @@
 {
   "badge": {
-    "height": {
-      "xs": {
-        "$value": "1rem",
-        "$type": "dimension",
-        "$description": "badge.height.xs — Extra small badge height (16px). Use for: inline status dots, minimal notification counts, compact table status indicators. Least intrusive size."
-      },
-      "sm": {
-        "$value": "1.125rem",
-        "$type": "dimension",
-        "$description": "badge.height.sm — Small badge height (18px). Use for: tight layouts, dense data tables, secondary status indicators. Subtle but readable."
-      },
-      "md": {
-        "$value": "1.25rem",
-        "$type": "dimension",
-        "$description": "badge.height.md — Medium badge height (20px). DEFAULT size. Use for: most status badges, category tags, standard notification counts. Balanced visibility and space efficiency."
-      },
-      "lg": {
-        "$value": "1.625rem",
-        "$type": "dimension",
-        "$description": "badge.height.lg — Large badge height (26px). Use for: prominent status indicators, hero section badges, featured tags, marketing callouts. More visual weight."
-      },
-      "xl": {
-        "$value": "2rem",
-        "$type": "dimension",
-        "$description": "badge.height.xl — Extra large badge height (32px). Use for: high-emphasis badges, promotional tags, standalone status indicators, onboarding highlights. Maximum prominence."
-      }
-    },
-    "padding": {
-      "horizontal": {
-        "xs": {
-          "$value": "0.375rem",
-          "$type": "dimension",
-          "$description": "badge.padding.horizontal.xs — Extra small horizontal badge padding (6px). Tight padding for xs badges. Keeps badge compact for short text like counts or single letters."
-        },
-        "sm": {
-          "$value": "0.5rem",
-          "$type": "dimension",
-          "$description": "badge.padding.horizontal.sm — Small horizontal badge padding (8px). Use for: sm badges, short labels (2-4 characters). Minimal breathing room."
-        },
-        "md": {
-          "$value": "0.625rem",
-          "$type": "dimension",
-          "$description": "badge.padding.horizontal.md — Medium horizontal badge padding (10px). DEFAULT. Use for: standard text badges, status labels, category tags. Comfortable text spacing."
-        },
-        "lg": {
-          "$value": "0.75rem",
-          "$type": "dimension",
-          "$description": "badge.padding.horizontal.lg — Large horizontal badge padding (12px). Use for: lg badges, longer text, more generous spacing for readability."
-        },
-        "xl": {
-          "$value": "1rem",
-          "$type": "dimension",
-          "$description": "badge.padding.horizontal.xl — Extra large horizontal badge padding (16px). Use for: xl badges, prominent labels, maximum text breathing room."
-        }
-      }
-    },
     "borderRadius": {
       "default": {
         "$value": "{radius.xl}",
@@ -68,43 +12,6 @@
         "$description": "badge.borderRadius.square — Square badge border radius (4px). Slightly rounded corners for a more formal, technical appearance. Use for: code version tags, technical identifiers, formal status badges."
       }
     },
-    "fontSize": {
-      "xs": {
-        "$value": "0.5rem",
-        "$type": "dimension",
-        "$description": "badge.fontSize.xs — Extra small badge font size (8px). Use for: xs badges, minimal count indicators. Very compact, may have reduced readability - use sparingly."
-      },
-      "sm": {
-        "$value": "0.5625rem",
-        "$type": "dimension",
-        "$description": "badge.fontSize.sm — Small badge font size (9px). Use for: sm badges, short labels in tight spaces. Compact but still readable."
-      },
-      "md": {
-        "$value": "0.6875rem",
-        "$type": "dimension",
-        "$description": "badge.fontSize.md — Medium badge font size (11px). DEFAULT. Use for: standard badges, most status and category labels. Optimal balance of compactness and readability."
-      },
-      "lg": {
-        "$value": "0.75rem",
-        "$type": "dimension",
-        "$description": "badge.fontSize.lg — Large badge font size (12px). Use for: lg badges, better readability for longer text, accessibility-focused implementations."
-      },
-      "xl": {
-        "$value": "0.875rem",
-        "$type": "dimension",
-        "$description": "badge.fontSize.xl — Extra large badge font size (14px). Use for: xl badges, maximum readability, prominent promotional badges."
-      }
-    },
-    "fontWeight": {
-      "$value": "{fontWeights.semibold}",
-      "$type": "fontWeights",
-      "$description": "badge.fontWeight — Badge font weight (600). Semibold ensures badges stand out from surrounding body text. Provides emphasis without overwhelming."
-    },
-    "letterSpacing": {
-      "$value": "{letterSpacing.wide}",
-      "$type": "dimension",
-      "$description": "badge.letterSpacing — Badge letter spacing (0.025em). Slightly wide tracking improves readability at small sizes, especially for uppercase text common in badges."
-    },
     "color": {
       "bg": {
         "filled": {
@@ -116,6 +23,13 @@
           "$value": "{color.action.bg.light.default}",
           "$type": "color",
           "$description": "badge.color.bg.light — Light badge background color."
+        }
+      },
+      "border": {
+        "outline": {
+          "$value": "{color.action.border.primary.default}",
+          "$type": "color",
+          "$description": "badge.color.border.outline — Outline badge border color."
         }
       },
       "text": {
@@ -134,12 +48,98 @@
           "$type": "color",
           "$description": "badge.color.text.outline — Outline badge text color."
         }
+      }
+    },
+    "fontSize": {
+      "lg": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$description": "badge.fontSize.lg — Large badge font size (12px). Use for: lg badges, better readability for longer text, accessibility-focused implementations."
       },
-      "border": {
-        "outline": {
-          "$value": "{color.action.border.primary.default}",
-          "$type": "color",
-          "$description": "badge.color.border.outline — Outline badge border color."
+      "md": {
+        "$value": "0.6875rem",
+        "$type": "dimension",
+        "$description": "badge.fontSize.md — Medium badge font size (11px). DEFAULT. Use for: standard badges, most status and category labels. Optimal balance of compactness and readability."
+      },
+      "sm": {
+        "$value": "0.5625rem",
+        "$type": "dimension",
+        "$description": "badge.fontSize.sm — Small badge font size (9px). Use for: sm badges, short labels in tight spaces. Compact but still readable."
+      },
+      "xl": {
+        "$value": "0.875rem",
+        "$type": "dimension",
+        "$description": "badge.fontSize.xl — Extra large badge font size (14px). Use for: xl badges, maximum readability, prominent promotional badges."
+      },
+      "xs": {
+        "$value": "0.5rem",
+        "$type": "dimension",
+        "$description": "badge.fontSize.xs — Extra small badge font size (8px). Use for: xs badges, minimal count indicators. Very compact, may have reduced readability - use sparingly."
+      }
+    },
+    "fontWeight": {
+      "$value": "{fontWeights.semibold}",
+      "$type": "fontWeights",
+      "$description": "badge.fontWeight — Badge font weight (600). Semibold ensures badges stand out from surrounding body text. Provides emphasis without overwhelming."
+    },
+    "height": {
+      "lg": {
+        "$value": "1.625rem",
+        "$type": "dimension",
+        "$description": "badge.height.lg — Large badge height (26px). Use for: prominent status indicators, hero section badges, featured tags, marketing callouts. More visual weight."
+      },
+      "md": {
+        "$value": "1.25rem",
+        "$type": "dimension",
+        "$description": "badge.height.md — Medium badge height (20px). DEFAULT size. Use for: most status badges, category tags, standard notification counts. Balanced visibility and space efficiency."
+      },
+      "sm": {
+        "$value": "1.125rem",
+        "$type": "dimension",
+        "$description": "badge.height.sm — Small badge height (18px). Use for: tight layouts, dense data tables, secondary status indicators. Subtle but readable."
+      },
+      "xl": {
+        "$value": "2rem",
+        "$type": "dimension",
+        "$description": "badge.height.xl — Extra large badge height (32px). Use for: high-emphasis badges, promotional tags, standalone status indicators, onboarding highlights. Maximum prominence."
+      },
+      "xs": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "badge.height.xs — Extra small badge height (16px). Use for: inline status dots, minimal notification counts, compact table status indicators. Least intrusive size."
+      }
+    },
+    "letterSpacing": {
+      "$value": "{letterSpacing.wide}",
+      "$type": "dimension",
+      "$description": "badge.letterSpacing — Badge letter spacing (0.025em). Slightly wide tracking improves readability at small sizes, especially for uppercase text common in badges."
+    },
+    "padding": {
+      "horizontal": {
+        "lg": {
+          "$value": "0.75rem",
+          "$type": "dimension",
+          "$description": "badge.padding.horizontal.lg — Large horizontal badge padding (12px). Use for: lg badges, longer text, more generous spacing for readability."
+        },
+        "md": {
+          "$value": "0.625rem",
+          "$type": "dimension",
+          "$description": "badge.padding.horizontal.md — Medium horizontal badge padding (10px). DEFAULT. Use for: standard text badges, status labels, category tags. Comfortable text spacing."
+        },
+        "sm": {
+          "$value": "0.5rem",
+          "$type": "dimension",
+          "$description": "badge.padding.horizontal.sm — Small horizontal badge padding (8px). Use for: sm badges, short labels (2-4 characters). Minimal breathing room."
+        },
+        "xl": {
+          "$value": "1rem",
+          "$type": "dimension",
+          "$description": "badge.padding.horizontal.xl — Extra large horizontal badge padding (16px). Use for: xl badges, prominent labels, maximum text breathing room."
+        },
+        "xs": {
+          "$value": "0.375rem",
+          "$type": "dimension",
+          "$description": "badge.padding.horizontal.xs — Extra small horizontal badge padding (6px). Tight padding for xs badges. Keeps badge compact for short text like counts or single letters."
         }
       }
     }

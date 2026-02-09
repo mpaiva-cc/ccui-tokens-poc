@@ -1,32 +1,5 @@
 {
   "checkbox": {
-    "size": {
-      "xs": {
-        "$value": "0.875rem",
-        "$type": "dimension",
-        "$description": "checkbox.size.xs — Extra small checkbox size (14px). Use for: compact data tables, dense lists, space-constrained UIs. May not meet touch target guidelines (44px) - consider for mouse-only interfaces."
-      },
-      "sm": {
-        "$value": "1rem",
-        "$type": "dimension",
-        "$description": "checkbox.size.sm — Small checkbox size (16px). Use for: standard form density, inline options, filter panels. Common in desktop applications."
-      },
-      "md": {
-        "$value": "1.25rem",
-        "$type": "dimension",
-        "$description": "checkbox.size.md — Medium checkbox size (20px). DEFAULT size. Use for: most forms, settings panels, standalone checkboxes. Good balance of visibility and space efficiency."
-      },
-      "lg": {
-        "$value": "1.5rem",
-        "$type": "dimension",
-        "$description": "checkbox.size.lg — Large checkbox size (24px). Use for: touch-optimized interfaces, accessibility-focused forms, prominent single options. Better for mobile devices."
-      },
-      "xl": {
-        "$value": "1.75rem",
-        "$type": "dimension",
-        "$description": "checkbox.size.xl — Extra large checkbox size (28px). Use for: high-emphasis standalone toggles, large touch targets, accessibility requirements. Maximum visibility and tap target size."
-      }
-    },
     "borderRadius": {
       "$value": "{radius.xs}",
       "$type": "dimension",
@@ -37,32 +10,87 @@
       "$type": "dimension",
       "$description": "checkbox.borderWidth — Checkbox border width (1px). Thin border provides clear boundary without visual heaviness. Thickens visually when checked due to fill color."
     },
+    "color": {
+      "bg": {
+        "checked": {
+          "$value": "{color.action.bg.primary.default}",
+          "$type": "color",
+          "$description": "checkbox.color.bg.checked — Checked checkbox background color."
+        },
+        "disabled": {
+          "$value": "{color.bg.interactive.disabled}",
+          "$type": "color",
+          "$description": "checkbox.color.bg.disabled — Disabled checkbox background color."
+        },
+        "unchecked": {
+          "$value": "{color.bg.surface.default}",
+          "$type": "color",
+          "$description": "checkbox.color.bg.unchecked — Unchecked checkbox background color."
+        }
+      },
+      "border": {
+        "checked": {
+          "$value": "{color.action.bg.primary.default}",
+          "$type": "color",
+          "$description": "checkbox.color.border.checked — Checked checkbox border color."
+        },
+        "disabled": {
+          "$value": "{color.border.interactive.disabled}",
+          "$type": "color",
+          "$description": "checkbox.color.border.disabled — Disabled checkbox border color."
+        },
+        "unchecked": {
+          "$value": "{color.border.surface.default}",
+          "$type": "color",
+          "$description": "checkbox.color.border.unchecked — Unchecked checkbox border color."
+        }
+      },
+      "icon": {
+        "checked": {
+          "$value": "{color.action.text.primary}",
+          "$type": "color",
+          "$description": "checkbox.color.icon.checked — Checkmark icon color."
+        }
+      }
+    },
+    "focus": {
+      "ringOffset": {
+        "$value": "{focus.ring.offset}",
+        "$type": "dimension",
+        "$description": "checkbox.focus.ringOffset — Focus ring offset (2px). Space between checkbox border and focus ring. Prevents ring from overlapping checkbox border."
+      },
+      "ringWidth": {
+        "$value": "{focus.ring.width}",
+        "$type": "dimension",
+        "$description": "checkbox.focus.ringWidth — Focus ring width (2px). Clearly visible ring around checkbox when focused via keyboard. Essential for accessibility compliance."
+      }
+    },
     "icon": {
       "size": {
-        "xs": {
-          "$value": "0.5rem",
+        "lg": {
+          "$value": "0.875rem",
           "$type": "dimension",
-          "$description": "checkbox.icon.size.xs — Extra small checkmark size (8px). Proportional to xs checkbox. Keep stroke weight consistent for visibility at small size."
-        },
-        "sm": {
-          "$value": "0.5625rem",
-          "$type": "dimension",
-          "$description": "checkbox.icon.size.sm — Small checkmark size (9px). Proportional to sm checkbox. Slightly larger than xs for better recognition."
+          "$description": "checkbox.icon.size.lg — Large checkmark size (14px). Proportional to lg checkbox. More prominent check for better visibility."
         },
         "md": {
           "$value": "0.625rem",
           "$type": "dimension",
           "$description": "checkbox.icon.size.md — Medium checkmark size (10px). DEFAULT. Proportional to md checkbox. Clear visual feedback for checked state."
         },
-        "lg": {
-          "$value": "0.875rem",
+        "sm": {
+          "$value": "0.5625rem",
           "$type": "dimension",
-          "$description": "checkbox.icon.size.lg — Large checkmark size (14px). Proportional to lg checkbox. More prominent check for better visibility."
+          "$description": "checkbox.icon.size.sm — Small checkmark size (9px). Proportional to sm checkbox. Slightly larger than xs for better recognition."
         },
         "xl": {
           "$value": "1rem",
           "$type": "dimension",
           "$description": "checkbox.icon.size.xl — Extra large checkmark size (16px). Proportional to xl checkbox. Maximum visibility checkmark."
+        },
+        "xs": {
+          "$value": "0.5rem",
+          "$type": "dimension",
+          "$description": "checkbox.icon.size.xs — Extra small checkmark size (8px). Proportional to xs checkbox. Keep stroke weight consistent for visibility at small size."
         }
       },
       "strokeWidth": {
@@ -71,15 +99,42 @@
       }
     },
     "label": {
-      "gap": {
-        "$value": "{spacing.sm}",
-        "$type": "dimension",
-        "$description": "checkbox.label.gap — Gap between checkbox and label (12px). Provides clear visual separation while maintaining association. Label click should toggle checkbox."
-      },
       "fontSize": {
         "$value": "{fontSizes.sm}",
         "$type": "dimension",
         "$description": "checkbox.label.fontSize — Label font size (14px). Standard body text size for form labels. Readable alongside checkbox without overwhelming."
+      },
+      "gap": {
+        "$value": "{spacing.sm}",
+        "$type": "dimension",
+        "$description": "checkbox.label.gap — Gap between checkbox and label (12px). Provides clear visual separation while maintaining association. Label click should toggle checkbox."
+      }
+    },
+    "size": {
+      "lg": {
+        "$value": "1.5rem",
+        "$type": "dimension",
+        "$description": "checkbox.size.lg — Large checkbox size (24px). Use for: touch-optimized interfaces, accessibility-focused forms, prominent single options. Better for mobile devices."
+      },
+      "md": {
+        "$value": "1.25rem",
+        "$type": "dimension",
+        "$description": "checkbox.size.md — Medium checkbox size (20px). DEFAULT size. Use for: most forms, settings panels, standalone checkboxes. Good balance of visibility and space efficiency."
+      },
+      "sm": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "checkbox.size.sm — Small checkbox size (16px). Use for: standard form density, inline options, filter panels. Common in desktop applications."
+      },
+      "xl": {
+        "$value": "1.75rem",
+        "$type": "dimension",
+        "$description": "checkbox.size.xl — Extra large checkbox size (28px). Use for: high-emphasis standalone toggles, large touch targets, accessibility requirements. Maximum visibility and tap target size."
+      },
+      "xs": {
+        "$value": "0.875rem",
+        "$type": "dimension",
+        "$description": "checkbox.size.xs — Extra small checkbox size (14px). Use for: compact data tables, dense lists, space-constrained UIs. May not meet touch target guidelines (44px) - consider for mouse-only interfaces."
       }
     },
     "transition": {
@@ -91,61 +146,6 @@
       "easing": {
         "$value": "{motion.easing.easeOut}",
         "$description": "checkbox.transition.easing — Checkbox transition easing (ease-out). Decelerating motion feels natural for check/uncheck toggle actions."
-      }
-    },
-    "focus": {
-      "ringWidth": {
-        "$value": "{focus.ring.width}",
-        "$type": "dimension",
-        "$description": "checkbox.focus.ringWidth — Focus ring width (2px). Clearly visible ring around checkbox when focused via keyboard. Essential for accessibility compliance."
-      },
-      "ringOffset": {
-        "$value": "{focus.ring.offset}",
-        "$type": "dimension",
-        "$description": "checkbox.focus.ringOffset — Focus ring offset (2px). Space between checkbox border and focus ring. Prevents ring from overlapping checkbox border."
-      }
-    },
-    "color": {
-      "bg": {
-        "unchecked": {
-          "$value": "{color.bg.surface.default}",
-          "$type": "color",
-          "$description": "checkbox.color.bg.unchecked — Unchecked checkbox background color."
-        },
-        "checked": {
-          "$value": "{color.action.bg.primary.default}",
-          "$type": "color",
-          "$description": "checkbox.color.bg.checked — Checked checkbox background color."
-        },
-        "disabled": {
-          "$value": "{color.bg.interactive.disabled}",
-          "$type": "color",
-          "$description": "checkbox.color.bg.disabled — Disabled checkbox background color."
-        }
-      },
-      "border": {
-        "unchecked": {
-          "$value": "{color.border.surface.default}",
-          "$type": "color",
-          "$description": "checkbox.color.border.unchecked — Unchecked checkbox border color."
-        },
-        "checked": {
-          "$value": "{color.action.bg.primary.default}",
-          "$type": "color",
-          "$description": "checkbox.color.border.checked — Checked checkbox border color."
-        },
-        "disabled": {
-          "$value": "{color.border.interactive.disabled}",
-          "$type": "color",
-          "$description": "checkbox.color.border.disabled — Disabled checkbox border color."
-        }
-      },
-      "icon": {
-        "checked": {
-          "$value": "{color.action.text.primary}",
-          "$type": "color",
-          "$description": "checkbox.color.icon.checked — Checkmark icon color."
-        }
       }
     }
   }

@@ -1,209 +1,209 @@
 {
     "$description": "Button component tokens. These tokens compose primitive tokens into button-specific configurations for consistent button styling across the design system.",
     "button": {
-        "height": {
-            "$description": "Button height values mapped from sizing primitives.",
-            "xs": {
-                "$value": "{sizing.controlHeight.xs}",
-                "$description": "Extra small button height. Use for inline actions, compact toolbars."
+        "borderRadius": {
+            "$description": "Default button border radius (4px). Use for consistent alignment with inputs.",
+            "$type": "dimension",
+            "$value": "{radius.sm}"
+        },
+        "color": {
+            "$description": "Button component color tokens. These reference semantic color tokens for theme-aware styling.",
+            "bg": {
+                "default": {
+                    "default": {
+                        "$description": "Default button background color.",
+                        "$type": "color",
+                        "$value": "{color.bg.surface.default}"
+                    },
+                    "hover": {
+                        "$description": "Default button hover background color.",
+                        "$type": "color",
+                        "$value": "{color.bg.surface.elevated}"
+                    }
+                },
+                "disabled": {
+                    "$description": "Disabled button background color.",
+                    "$type": "color",
+                    "$value": "{color.bg.interactive.disabled}"
+                },
+                "filled": {
+                    "default": {
+                        "$description": "Filled button background color.",
+                        "$type": "color",
+                        "$value": "{color.action.bg.primary.default}"
+                    },
+                    "hover": {
+                        "$description": "Filled button hover background color.",
+                        "$type": "color",
+                        "$value": "{color.action.bg.primary.hover}"
+                    }
+                },
+                "light": {
+                    "default": {
+                        "$description": "Light button background color.",
+                        "$type": "color",
+                        "$value": "{color.action.bg.light.default}"
+                    },
+                    "hover": {
+                        "$description": "Light button hover background color.",
+                        "$type": "color",
+                        "$value": "{color.action.bg.light.hover}"
+                    }
+                },
+                "outline": {
+                    "hover": {
+                        "$description": "Outline button hover background color.",
+                        "$type": "color",
+                        "$value": "{color.action.bg.light.default}"
+                    }
+                },
+                "subtle": {
+                    "default": {
+                        "$description": "Subtle button background color. Transparent by default.",
+                        "$type": "color",
+                        "$value": "transparent"
+                    },
+                    "hover": {
+                        "$description": "Subtle button hover background color.",
+                        "$type": "color",
+                        "$value": "{color.action.bg.light.default}"
+                    }
+                }
             },
-            "sm": {
-                "$value": "{sizing.controlHeight.sm}",
-                "$description": "Small button height. Use for secondary actions, compact layouts."
+            "border": {
+                "default": {
+                    "$description": "Default button border color.",
+                    "$type": "color",
+                    "$value": "{color.border.surface.default}"
+                },
+                "disabled": {
+                    "$description": "Disabled button border color.",
+                    "$type": "color",
+                    "$value": "{color.border.interactive.disabled}"
+                },
+                "outline": {
+                    "$description": "Outline button border color.",
+                    "$type": "color",
+                    "$value": "{color.action.border.primary.default}"
+                }
+            },
+            "text": {
+                "default": {
+                    "$description": "Default button text color.",
+                    "$type": "color",
+                    "$value": "{color.text.onDefault}"
+                },
+                "disabled": {
+                    "$description": "Disabled button text color.",
+                    "$type": "color",
+                    "$value": "{color.text.disabled}"
+                },
+                "filled": {
+                    "$description": "Filled button text color for contrast on action background.",
+                    "$type": "color",
+                    "$value": "{color.action.text.primary}"
+                },
+                "light": {
+                    "$description": "Light button text color.",
+                    "$type": "color",
+                    "$value": "{color.action.text.light}"
+                },
+                "outline": {
+                    "$description": "Outline button text color.",
+                    "$type": "color",
+                    "$value": "{color.action.text.onSurface}"
+                },
+                "subtle": {
+                    "$description": "Subtle button text color.",
+                    "$type": "color",
+                    "$value": "{color.action.text.onSurface}"
+                }
+            }
+        },
+        "fontSize": {
+            "$description": "Button font sizes for each size variant.",
+            "lg": {
+                "$description": "Large button font size.",
+                "$value": "{fontSizes.md}"
             },
             "md": {
-                "$value": "{sizing.controlHeight.md}",
-                "$description": "Medium button height. DEFAULT for most buttons."
+                "$description": "Medium button font size. Uses sm for better proportions.",
+                "$value": "{fontSizes.sm}"
             },
-            "lg": {
-                "$value": "{sizing.controlHeight.lg}",
-                "$description": "Large button height. Use for prominent CTAs."
+            "sm": {
+                "$description": "Small button font size.",
+                "$value": "{fontSizes.sm}"
             },
             "xl": {
-                "$value": "{sizing.controlHeight.xl}",
-                "$description": "Extra large button height. Use for marketing CTAs."
+                "$description": "Extra large button font size.",
+                "$value": "{fontSizes.md}"
+            },
+            "xs": {
+                "$description": "Extra small button font size.",
+                "$value": "{fontSizes.xs}"
+            }
+        },
+        "fontWeight": {
+            "$description": "Button font weight. Semibold for clear affordance.",
+            "$type": "fontWeight",
+            "$value": "{fontWeights.semibold}"
+        },
+        "height": {
+            "$description": "Button height values mapped from sizing primitives.",
+            "lg": {
+                "$description": "Large button height. Use for prominent CTAs.",
+                "$value": "{sizing.controlHeight.lg}"
+            },
+            "md": {
+                "$description": "Medium button height. DEFAULT for most buttons.",
+                "$value": "{sizing.controlHeight.md}"
+            },
+            "sm": {
+                "$description": "Small button height. Use for secondary actions, compact layouts.",
+                "$value": "{sizing.controlHeight.sm}"
+            },
+            "xl": {
+                "$description": "Extra large button height. Use for marketing CTAs.",
+                "$value": "{sizing.controlHeight.xl}"
+            },
+            "xs": {
+                "$description": "Extra small button height. Use for inline actions, compact toolbars.",
+                "$value": "{sizing.controlHeight.xs}"
             }
         },
         "padding": {
             "$type": "dimension",
             "horizontal": {
-                "xs": {
-                    "$value": "{spacing.xs}",
-                    "$description": "Extra small horizontal padding (8px). Use for compact icon buttons."
-                },
-                "sm": {
-                    "$value": "{spacing.sm}",
-                    "$description": "Small horizontal padding (12px). Use for secondary action buttons."
+                "lg": {
+                    "$description": "Large horizontal padding (24px). Use for prominent CTA buttons.",
+                    "$value": "{spacing.lg}"
                 },
                 "md": {
-                    "$value": "{spacing.md}",
-                    "$description": "Medium horizontal padding (16px). Use for standard buttons. DEFAULT."
+                    "$description": "Medium horizontal padding (16px). Use for standard buttons. DEFAULT.",
+                    "$value": "{spacing.md}"
                 },
-                "lg": {
-                    "$value": "{spacing.lg}",
-                    "$description": "Large horizontal padding (24px). Use for prominent CTA buttons."
+                "sm": {
+                    "$description": "Small horizontal padding (12px). Use for secondary action buttons.",
+                    "$value": "{spacing.sm}"
                 },
                 "xl": {
-                    "$value": "{spacing.xl}",
-                    "$description": "Extra large horizontal padding (32px). Use for marketing buttons."
+                    "$description": "Extra large horizontal padding (32px). Use for marketing buttons.",
+                    "$value": "{spacing.xl}"
+                },
+                "xs": {
+                    "$description": "Extra small horizontal padding (8px). Use for compact icon buttons.",
+                    "$value": "{spacing.xs}"
                 }
             }
-        },
-        "borderRadius": {
-            "$value": "{radius.sm}",
-            "$type": "dimension",
-            "$description": "Default button border radius (4px). Use for consistent alignment with inputs."
-        },
-        "fontSize": {
-            "$description": "Button font sizes for each size variant.",
-            "xs": {
-                "$value": "{fontSizes.xs}",
-                "$description": "Extra small button font size."
-            },
-            "sm": {
-                "$value": "{fontSizes.sm}",
-                "$description": "Small button font size."
-            },
-            "md": {
-                "$value": "{fontSizes.sm}",
-                "$description": "Medium button font size. Uses sm for better proportions."
-            },
-            "lg": {
-                "$value": "{fontSizes.md}",
-                "$description": "Large button font size."
-            },
-            "xl": {
-                "$value": "{fontSizes.md}",
-                "$description": "Extra large button font size."
-            }
-        },
-        "fontWeight": {
-            "$value": "{fontWeights.semibold}",
-            "$type": "fontWeight",
-            "$description": "Button font weight. Semibold for clear affordance."
         },
         "transition": {
             "duration": {
-                "$value": "{motion.duration.fast}",
-                "$description": "Button transition duration for hover/active states."
+                "$description": "Button transition duration for hover/active states.",
+                "$value": "{motion.duration.fast}"
             },
             "easing": {
-                "$value": "{motion.easing.easeOut}",
-                "$description": "Button transition easing curve."
-            }
-        },
-        "color": {
-            "$description": "Button component color tokens. These reference semantic color tokens for theme-aware styling.",
-            "bg": {
-                "filled": {
-                    "default": {
-                        "$value": "{color.action.bg.primary.default}",
-                        "$type": "color",
-                        "$description": "Filled button background color."
-                    },
-                    "hover": {
-                        "$value": "{color.action.bg.primary.hover}",
-                        "$type": "color",
-                        "$description": "Filled button hover background color."
-                    }
-                },
-                "outline": {
-                    "hover": {
-                        "$value": "{color.action.bg.light.default}",
-                        "$type": "color",
-                        "$description": "Outline button hover background color."
-                    }
-                },
-                "light": {
-                    "default": {
-                        "$value": "{color.action.bg.light.default}",
-                        "$type": "color",
-                        "$description": "Light button background color."
-                    },
-                    "hover": {
-                        "$value": "{color.action.bg.light.hover}",
-                        "$type": "color",
-                        "$description": "Light button hover background color."
-                    }
-                },
-                "subtle": {
-                    "default": {
-                        "$value": "transparent",
-                        "$type": "color",
-                        "$description": "Subtle button background color. Transparent by default."
-                    },
-                    "hover": {
-                        "$value": "{color.action.bg.light.default}",
-                        "$type": "color",
-                        "$description": "Subtle button hover background color."
-                    }
-                },
-                "default": {
-                    "default": {
-                        "$value": "{color.bg.surface.default}",
-                        "$type": "color",
-                        "$description": "Default button background color."
-                    },
-                    "hover": {
-                        "$value": "{color.bg.surface.elevated}",
-                        "$type": "color",
-                        "$description": "Default button hover background color."
-                    }
-                },
-                "disabled": {
-                    "$value": "{color.bg.interactive.disabled}",
-                    "$type": "color",
-                    "$description": "Disabled button background color."
-                }
-            },
-            "text": {
-                "filled": {
-                    "$value": "{color.action.text.primary}",
-                    "$type": "color",
-                    "$description": "Filled button text color for contrast on action background."
-                },
-                "outline": {
-                    "$value": "{color.action.text.onSurface}",
-                    "$type": "color",
-                    "$description": "Outline button text color."
-                },
-                "light": {
-                    "$value": "{color.action.text.light}",
-                    "$type": "color",
-                    "$description": "Light button text color."
-                },
-                "subtle": {
-                    "$value": "{color.action.text.onSurface}",
-                    "$type": "color",
-                    "$description": "Subtle button text color."
-                },
-                "default": {
-                    "$value": "{color.text.onDefault}",
-                    "$type": "color",
-                    "$description": "Default button text color."
-                },
-                "disabled": {
-                    "$value": "{color.text.disabled}",
-                    "$type": "color",
-                    "$description": "Disabled button text color."
-                }
-            },
-            "border": {
-                "outline": {
-                    "$value": "{color.action.border.primary.default}",
-                    "$type": "color",
-                    "$description": "Outline button border color."
-                },
-                "default": {
-                    "$value": "{color.border.surface.default}",
-                    "$type": "color",
-                    "$description": "Default button border color."
-                },
-                "disabled": {
-                    "$value": "{color.border.interactive.disabled}",
-                    "$type": "color",
-                    "$description": "Disabled button border color."
-                }
+                "$description": "Button transition easing curve.",
+                "$value": "{motion.easing.easeOut}"
             }
         }
     }

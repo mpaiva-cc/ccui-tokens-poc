@@ -1,61 +1,5 @@
 {
   "select": {
-    "height": {
-      "xs": {
-        "$value": "{sizing.controlHeight.xs}",
-        "$type": "dimension",
-        "$description": "select.height.xs — Extra small select height (30px). Use for: compact forms, inline selects, space-constrained UIs. Matches xs input height."
-      },
-      "sm": {
-        "$value": "{sizing.controlHeight.sm}",
-        "$type": "dimension",
-        "$description": "select.height.sm — Small select height (36px). Use for: standard density forms, filter bars, secondary selects. Matches sm input height."
-      },
-      "md": {
-        "$value": "{sizing.controlHeight.md}",
-        "$type": "dimension",
-        "$description": "select.height.md — Medium select height (42px). DEFAULT. Use for: most form selects, settings, primary data entry. Matches md input height."
-      },
-      "lg": {
-        "$value": "{sizing.controlHeight.lg}",
-        "$type": "dimension",
-        "$description": "select.height.lg — Large select height (48px). Use for: touch-optimized forms, prominent selects, hero sections. Matches lg input height."
-      },
-      "xl": {
-        "$value": "{sizing.controlHeight.xl}",
-        "$type": "dimension",
-        "$description": "select.height.xl — Extra large select height (60px). Use for: high-emphasis selects, marketing forms, maximum touch targets. Matches xl input height."
-      }
-    },
-    "padding": {
-      "horizontal": {
-        "xs": {
-          "$value": "{spacing.xs}",
-          "$type": "dimension",
-          "$description": "select.padding.horizontal.xs — Extra small horizontal select padding (10px). Compact padding for xs selects. Leaves room for dropdown icon."
-        },
-        "sm": {
-          "$value": "{spacing.sm}",
-          "$type": "dimension",
-          "$description": "select.padding.horizontal.sm — Small horizontal select padding (12px). Standard padding for sm selects and efficient layouts."
-        },
-        "md": {
-          "$value": "{spacing.sm}",
-          "$type": "dimension",
-          "$description": "select.padding.horizontal.md — Medium horizontal select padding (12px). DEFAULT. Same as sm - compact but comfortable for most use cases."
-        },
-        "lg": {
-          "$value": "{spacing.md}",
-          "$type": "dimension",
-          "$description": "select.padding.horizontal.lg — Large horizontal select padding (16px). More generous padding for lg selects with better text breathing room."
-        },
-        "xl": {
-          "$value": "{spacing.md}",
-          "$type": "dimension",
-          "$description": "select.padding.horizontal.xl — Extra large horizontal select padding (16px). Same as lg - comfortable padding for xl selects."
-        }
-      }
-    },
     "borderRadius": {
       "$value": "{radius.sm}",
       "$type": "dimension",
@@ -65,101 +9,6 @@
       "$value": "{borderWidth.thin}",
       "$type": "dimension",
       "$description": "select.borderWidth — Select input border width (1px). Standard form control border. Clear boundary without visual heaviness."
-    },
-    "fontSize": {
-      "xs": {
-        "$value": "{fontSizes.xs}",
-        "$type": "dimension",
-        "$description": "select.fontSize.xs — Extra small select font size (12px). Compact text for xs selects. Use for dense forms or secondary controls."
-      },
-      "sm": {
-        "$value": "{fontSizes.sm}",
-        "$type": "dimension",
-        "$description": "select.fontSize.sm — Small select font size (14px). Standard text for most select inputs. Readable and space-efficient."
-      },
-      "md": {
-        "$value": "{fontSizes.md}",
-        "$type": "dimension",
-        "$description": "select.fontSize.md — Medium select font size (16px). DEFAULT. Body text size for comfortable reading. Most common for primary forms."
-      },
-      "lg": {
-        "$value": "{fontSizes.md}",
-        "$type": "dimension",
-        "$description": "select.fontSize.lg — Large select font size (16px). Same as md - maintains readability without growing too large."
-      },
-      "xl": {
-        "$value": "{fontSizes.lg}",
-        "$type": "dimension",
-        "$description": "select.fontSize.xl — Extra large select font size (18px). Larger text for prominent selects or accessibility focus."
-      }
-    },
-    "dropdown": {
-      "borderRadius": {
-        "$value": "{radius.sm}",
-        "$type": "dimension",
-        "$description": "select.dropdown.borderRadius — Dropdown menu border radius (4px). Matches select input radius. Creates consistent, connected feel when open."
-      },
-      "shadow": {
-        "$value": "{boxShadow.md}",
-        "$description": "select.dropdown.shadow — Dropdown menu shadow. Medium shadow provides elevation and separation from page content. Indicates floating layer."
-      },
-      "padding": {
-        "$value": "{spacing.xs}",
-        "$type": "dimension",
-        "$description": "select.dropdown.padding — Dropdown menu inner padding (10px). Small padding around the options list. Options have their own padding."
-      },
-      "maxHeight": {
-        "$value": "18.75rem",
-        "$type": "dimension",
-        "$description": "select.dropdown.maxHeight — Dropdown menu maximum height (300px). Limits dropdown size for long option lists. Enables scrolling when exceeded."
-      },
-      "zIndex": {
-        "$value": "{zIndex.popover}",
-        "$type": "number",
-        "$description": "select.dropdown.zIndex — Dropdown z-index stacking level (200). Above most page content but below modals. Standard popover layer."
-      }
-    },
-    "option": {
-      "padding": {
-        "horizontal": {
-          "$value": "{spacing.sm}",
-          "$type": "dimension",
-          "$description": "select.option.padding.horizontal — Option horizontal padding (12px). Comfortable padding for option text. Wider click/tap target than text alone."
-        },
-        "vertical": {
-          "$value": "{spacing.xs}",
-          "$type": "dimension",
-          "$description": "select.option.padding.vertical — Option vertical padding (10px). Creates comfortable row height for options. Good for keyboard navigation and touch."
-        }
-      },
-      "borderRadius": {
-        "$value": "{radius.xs}",
-        "$type": "dimension",
-        "$description": "select.option.borderRadius — Option border radius (2px). Subtle rounding for hover/selected state backgrounds. Creates soft highlight effect."
-      }
-    },
-    "transition": {
-      "duration": {
-        "$value": "{motion.duration.fast}",
-        "$type": "duration",
-        "$description": "select.transition.duration — Select transition duration (100ms). Fast transitions for dropdown open/close and option hover states."
-      },
-      "easing": {
-        "$value": "{motion.easing.easeOut}",
-        "$description": "select.transition.easing — Select transition easing (ease-out). Smooth deceleration for dropdown appearance and state changes."
-      }
-    },
-    "icon": {
-      "size": {
-        "$value": "1rem",
-        "$type": "dimension",
-        "$description": "select.icon.size — Select chevron icon size (16px). Dropdown indicator arrow. Sized to be visible but not dominant."
-      },
-      "spacing": {
-        "$value": "{spacing.xs}",
-        "$type": "dimension",
-        "$description": "select.icon.spacing — Spacing between text and icon (10px). Separates selected text from chevron indicator."
-      }
     },
     "color": {
       "bg": {
@@ -171,11 +20,6 @@
         "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "select.color.border — Select input border color."
-      },
-      "text": {
-        "$value": "{color.text.default}",
-        "$type": "color",
-        "$description": "select.color.text — Select input text color."
       },
       "dropdown": {
         "bg": {
@@ -209,6 +53,162 @@
             "$description": "select.color.option.text.selected — Selected option text color."
           }
         }
+      },
+      "text": {
+        "$value": "{color.text.default}",
+        "$type": "color",
+        "$description": "select.color.text — Select input text color."
+      }
+    },
+    "dropdown": {
+      "borderRadius": {
+        "$value": "{radius.sm}",
+        "$type": "dimension",
+        "$description": "select.dropdown.borderRadius — Dropdown menu border radius (4px). Matches select input radius. Creates consistent, connected feel when open."
+      },
+      "maxHeight": {
+        "$value": "18.75rem",
+        "$type": "dimension",
+        "$description": "select.dropdown.maxHeight — Dropdown menu maximum height (300px). Limits dropdown size for long option lists. Enables scrolling when exceeded."
+      },
+      "padding": {
+        "$value": "{spacing.xs}",
+        "$type": "dimension",
+        "$description": "select.dropdown.padding — Dropdown menu inner padding (10px). Small padding around the options list. Options have their own padding."
+      },
+      "shadow": {
+        "$value": "{boxShadow.md}",
+        "$description": "select.dropdown.shadow — Dropdown menu shadow. Medium shadow provides elevation and separation from page content. Indicates floating layer."
+      },
+      "zIndex": {
+        "$value": "{zIndex.popover}",
+        "$type": "number",
+        "$description": "select.dropdown.zIndex — Dropdown z-index stacking level (200). Above most page content but below modals. Standard popover layer."
+      }
+    },
+    "fontSize": {
+      "lg": {
+        "$value": "{fontSizes.md}",
+        "$type": "dimension",
+        "$description": "select.fontSize.lg — Large select font size (16px). Same as md - maintains readability without growing too large."
+      },
+      "md": {
+        "$value": "{fontSizes.md}",
+        "$type": "dimension",
+        "$description": "select.fontSize.md — Medium select font size (16px). DEFAULT. Body text size for comfortable reading. Most common for primary forms."
+      },
+      "sm": {
+        "$value": "{fontSizes.sm}",
+        "$type": "dimension",
+        "$description": "select.fontSize.sm — Small select font size (14px). Standard text for most select inputs. Readable and space-efficient."
+      },
+      "xl": {
+        "$value": "{fontSizes.lg}",
+        "$type": "dimension",
+        "$description": "select.fontSize.xl — Extra large select font size (18px). Larger text for prominent selects or accessibility focus."
+      },
+      "xs": {
+        "$value": "{fontSizes.xs}",
+        "$type": "dimension",
+        "$description": "select.fontSize.xs — Extra small select font size (12px). Compact text for xs selects. Use for dense forms or secondary controls."
+      }
+    },
+    "height": {
+      "lg": {
+        "$value": "{sizing.controlHeight.lg}",
+        "$type": "dimension",
+        "$description": "select.height.lg — Large select height (48px). Use for: touch-optimized forms, prominent selects, hero sections. Matches lg input height."
+      },
+      "md": {
+        "$value": "{sizing.controlHeight.md}",
+        "$type": "dimension",
+        "$description": "select.height.md — Medium select height (42px). DEFAULT. Use for: most form selects, settings, primary data entry. Matches md input height."
+      },
+      "sm": {
+        "$value": "{sizing.controlHeight.sm}",
+        "$type": "dimension",
+        "$description": "select.height.sm — Small select height (36px). Use for: standard density forms, filter bars, secondary selects. Matches sm input height."
+      },
+      "xl": {
+        "$value": "{sizing.controlHeight.xl}",
+        "$type": "dimension",
+        "$description": "select.height.xl — Extra large select height (60px). Use for: high-emphasis selects, marketing forms, maximum touch targets. Matches xl input height."
+      },
+      "xs": {
+        "$value": "{sizing.controlHeight.xs}",
+        "$type": "dimension",
+        "$description": "select.height.xs — Extra small select height (30px). Use for: compact forms, inline selects, space-constrained UIs. Matches xs input height."
+      }
+    },
+    "icon": {
+      "size": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "select.icon.size — Select chevron icon size (16px). Dropdown indicator arrow. Sized to be visible but not dominant."
+      },
+      "spacing": {
+        "$value": "{spacing.xs}",
+        "$type": "dimension",
+        "$description": "select.icon.spacing — Spacing between text and icon (10px). Separates selected text from chevron indicator."
+      }
+    },
+    "option": {
+      "borderRadius": {
+        "$value": "{radius.xs}",
+        "$type": "dimension",
+        "$description": "select.option.borderRadius — Option border radius (2px). Subtle rounding for hover/selected state backgrounds. Creates soft highlight effect."
+      },
+      "padding": {
+        "horizontal": {
+          "$value": "{spacing.sm}",
+          "$type": "dimension",
+          "$description": "select.option.padding.horizontal — Option horizontal padding (12px). Comfortable padding for option text. Wider click/tap target than text alone."
+        },
+        "vertical": {
+          "$value": "{spacing.xs}",
+          "$type": "dimension",
+          "$description": "select.option.padding.vertical — Option vertical padding (10px). Creates comfortable row height for options. Good for keyboard navigation and touch."
+        }
+      }
+    },
+    "padding": {
+      "horizontal": {
+        "lg": {
+          "$value": "{spacing.md}",
+          "$type": "dimension",
+          "$description": "select.padding.horizontal.lg — Large horizontal select padding (16px). More generous padding for lg selects with better text breathing room."
+        },
+        "md": {
+          "$value": "{spacing.sm}",
+          "$type": "dimension",
+          "$description": "select.padding.horizontal.md — Medium horizontal select padding (12px). DEFAULT. Same as sm - compact but comfortable for most use cases."
+        },
+        "sm": {
+          "$value": "{spacing.sm}",
+          "$type": "dimension",
+          "$description": "select.padding.horizontal.sm — Small horizontal select padding (12px). Standard padding for sm selects and efficient layouts."
+        },
+        "xl": {
+          "$value": "{spacing.md}",
+          "$type": "dimension",
+          "$description": "select.padding.horizontal.xl — Extra large horizontal select padding (16px). Same as lg - comfortable padding for xl selects."
+        },
+        "xs": {
+          "$value": "{spacing.xs}",
+          "$type": "dimension",
+          "$description": "select.padding.horizontal.xs — Extra small horizontal select padding (10px). Compact padding for xs selects. Leaves room for dropdown icon."
+        }
+      }
+    },
+    "transition": {
+      "duration": {
+        "$value": "{motion.duration.fast}",
+        "$type": "duration",
+        "$description": "select.transition.duration — Select transition duration (100ms). Fast transitions for dropdown open/close and option hover states."
+      },
+      "easing": {
+        "$value": "{motion.easing.easeOut}",
+        "$description": "select.transition.easing — Select transition easing (ease-out). Smooth deceleration for dropdown appearance and state changes."
       }
     }
   }

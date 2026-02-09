@@ -4,210 +4,210 @@
         "palette": {
             "navyBlue": {
                 "0": {
-                    "$value": "#EFF6FF",
+                    "$description": "Navy Blue — primary logo color — tint step 0.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 0."
+                    "$value": "#EFF6FF"
                 },
                 "1": {
-                    "$value": "#D0E3FF",
+                    "$description": "Navy Blue — primary logo color — tint step 1.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 1."
+                    "$value": "#D0E3FF"
                 },
                 "2": {
-                    "$value": "#A0C6FF",
+                    "$description": "Navy Blue — primary logo color — tint step 2.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 2."
+                    "$value": "#A0C6FF"
                 },
                 "3": {
-                    "$value": "#81A6DE",
+                    "$description": "Navy Blue — primary logo color — tint step 3.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 3."
+                    "$value": "#81A6DE"
                 },
                 "4": {
-                    "$value": "#6084BA",
+                    "$description": "Navy Blue — primary logo color — tint step 4.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 4."
+                    "$value": "#6084BA"
                 },
                 "5": {
-                    "$value": "#476A9D",
+                    "$description": "Navy Blue — primary logo color — tint step 5.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 5."
+                    "$value": "#476A9D"
                 },
                 "6": {
-                    "$value": "#345588",
+                    "$description": "Navy Blue — primary logo color — tint step 6.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 6."
+                    "$value": "#345588"
                 },
                 "7": {
-                    "$value": "#254677",
+                    "$description": "Navy Blue — primary logo color — base color (step 7, pinned to official brand hex).",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — base color (step 7, pinned to official brand hex)."
+                    "$value": "#254677"
                 },
                 "8": {
-                    "$value": "#092958",
+                    "$description": "Navy Blue — primary logo color — tint step 8.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 8."
+                    "$value": "#092958"
                 },
                 "9": {
-                    "$value": "#001840",
+                    "$description": "Navy Blue — primary logo color — tint step 9.",
                     "$type": "color",
-                    "$description": "Navy Blue — primary logo color — tint step 9."
-                }
-            },
-            "skyBlue": {
-                "0": {
-                    "$value": "#EAF8FF",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 0."
-                },
-                "1": {
-                    "$value": "#BFE8FF",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 1."
-                },
-                "2": {
-                    "$value": "#74D1FF",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 2."
-                },
-                "3": {
-                    "$value": "#55BAEA",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex)."
-                },
-                "4": {
-                    "$value": "#1E8EBC",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 4."
-                },
-                "5": {
-                    "$value": "#00729B",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 5."
-                },
-                "6": {
-                    "$value": "#005D7F",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 6."
-                },
-                "7": {
-                    "$value": "#004660",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 7."
-                },
-                "8": {
-                    "$value": "#003043",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 8."
-                },
-                "9": {
-                    "$value": "#001E2C",
-                    "$type": "color",
-                    "$description": "Sky Blue — secondary logo color — tint step 9."
+                    "$value": "#001840"
                 }
             },
             "purple": {
                 "0": {
-                    "$value": "#FFF0FB",
+                    "$description": "Purple — typography accent — tint step 0.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 0."
+                    "$value": "#FFF0FB"
                 },
                 "1": {
-                    "$value": "#FFD1F5",
+                    "$description": "Purple — typography accent — tint step 1.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 1."
+                    "$value": "#FFD1F5"
                 },
                 "2": {
-                    "$value": "#FF9DED",
+                    "$description": "Purple — typography accent — tint step 2.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 2."
+                    "$value": "#FF9DED"
                 },
                 "3": {
-                    "$value": "#DF7BCE",
+                    "$description": "Purple — typography accent — tint step 3.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 3."
+                    "$value": "#DF7BCE"
                 },
                 "4": {
-                    "$value": "#BA59AA",
+                    "$description": "Purple — typography accent — tint step 4.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 4."
+                    "$value": "#BA59AA"
                 },
                 "5": {
-                    "$value": "#9D3D8E",
+                    "$description": "Purple — typography accent — tint step 5.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 5."
+                    "$value": "#9D3D8E"
                 },
                 "6": {
-                    "$value": "#822275",
+                    "$description": "Purple — typography accent — base color (step 6, pinned to official brand hex).",
                     "$type": "color",
-                    "$description": "Purple — typography accent — base color (step 6, pinned to official brand hex)."
+                    "$value": "#822275"
                 },
                 "7": {
-                    "$value": "#6D0561",
+                    "$description": "Purple — typography accent — tint step 7.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 7."
+                    "$value": "#6D0561"
                 },
                 "8": {
-                    "$value": "#4D0045",
+                    "$description": "Purple — typography accent — tint step 8.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 8."
+                    "$value": "#4D0045"
                 },
                 "9": {
-                    "$value": "#33002D",
+                    "$description": "Purple — typography accent — tint step 9.",
                     "$type": "color",
-                    "$description": "Purple — typography accent — tint step 9."
+                    "$value": "#33002D"
+                }
+            },
+            "skyBlue": {
+                "0": {
+                    "$description": "Sky Blue — secondary logo color — tint step 0.",
+                    "$type": "color",
+                    "$value": "#EAF8FF"
+                },
+                "1": {
+                    "$description": "Sky Blue — secondary logo color — tint step 1.",
+                    "$type": "color",
+                    "$value": "#BFE8FF"
+                },
+                "2": {
+                    "$description": "Sky Blue — secondary logo color — tint step 2.",
+                    "$type": "color",
+                    "$value": "#74D1FF"
+                },
+                "3": {
+                    "$description": "Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex).",
+                    "$type": "color",
+                    "$value": "#55BAEA"
+                },
+                "4": {
+                    "$description": "Sky Blue — secondary logo color — tint step 4.",
+                    "$type": "color",
+                    "$value": "#1E8EBC"
+                },
+                "5": {
+                    "$description": "Sky Blue — secondary logo color — tint step 5.",
+                    "$type": "color",
+                    "$value": "#00729B"
+                },
+                "6": {
+                    "$description": "Sky Blue — secondary logo color — tint step 6.",
+                    "$type": "color",
+                    "$value": "#005D7F"
+                },
+                "7": {
+                    "$description": "Sky Blue — secondary logo color — tint step 7.",
+                    "$type": "color",
+                    "$value": "#004660"
+                },
+                "8": {
+                    "$description": "Sky Blue — secondary logo color — tint step 8.",
+                    "$type": "color",
+                    "$value": "#003043"
+                },
+                "9": {
+                    "$description": "Sky Blue — secondary logo color — tint step 9.",
+                    "$type": "color",
+                    "$value": "#001E2C"
                 }
             },
             "yellow": {
                 "0": {
-                    "$value": "#FEFE6C",
+                    "$description": "Yellow — decorative highlight — tint step 0.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 0."
+                    "$value": "#FEFE6C"
                 },
                 "1": {
-                    "$value": "#E6E651",
+                    "$description": "Yellow — decorative highlight — base color (step 1, pinned to official brand hex).",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — base color (step 1, pinned to official brand hex)."
+                    "$value": "#E6E651"
                 },
                 "2": {
-                    "$value": "#CDCC2E",
+                    "$description": "Yellow — decorative highlight — tint step 2.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 2."
+                    "$value": "#CDCC2E"
                 },
                 "3": {
-                    "$value": "#ADAC00",
+                    "$description": "Yellow — decorative highlight — tint step 3.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 3."
+                    "$value": "#ADAC00"
                 },
                 "4": {
-                    "$value": "#8A8900",
+                    "$description": "Yellow — decorative highlight — tint step 4.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 4."
+                    "$value": "#8A8900"
                 },
                 "5": {
-                    "$value": "#6E6E00",
+                    "$description": "Yellow — decorative highlight — tint step 5.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 5."
+                    "$value": "#6E6E00"
                 },
                 "6": {
-                    "$value": "#5A5900",
+                    "$description": "Yellow — decorative highlight — tint step 6.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 6."
+                    "$value": "#5A5900"
                 },
                 "7": {
-                    "$value": "#434300",
+                    "$description": "Yellow — decorative highlight — tint step 7.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 7."
+                    "$value": "#434300"
                 },
                 "8": {
-                    "$value": "#2E2E00",
+                    "$description": "Yellow — decorative highlight — tint step 8.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 8."
+                    "$value": "#2E2E00"
                 },
                 "9": {
-                    "$value": "#1C1C00",
+                    "$description": "Yellow — decorative highlight — tint step 9.",
                     "$type": "color",
-                    "$description": "Yellow — decorative highlight — tint step 9."
+                    "$value": "#1C1C00"
                 }
             }
         }

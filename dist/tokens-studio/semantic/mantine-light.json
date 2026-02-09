@@ -1,37 +1,10 @@
 {
   "color": {
-    "overlay": {
-      "light": {
-        "$value": "rgba(0, 0, 0, 0.5)",
-        "$type": "color",
-        "$description": "color.overlay.light — Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds."
-      },
-      "dark": {
-        "$value": "rgba(0, 0, 0, 0.75)",
-        "$type": "color",
-        "$description": "color.overlay.dark — Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
-      },
-      "default": {
-        "$value": "{color.overlay.light}",
-        "$type": "color",
-        "$description": "color.overlay.default — Default overlay/backdrop color."
-      }
-    },
     "alpha": {
       "error": {
         "$value": "rgba(207, 39, 32, 0.15)",
         "$type": "color",
         "$description": "color.alpha.error — Error state semi-transparent background (15% red)"
-      },
-      "success": {
-        "$value": "rgba(29, 148, 72, 0.15)",
-        "$type": "color",
-        "$description": "color.alpha.success — Success state semi-transparent background (15% green)"
-      },
-      "warning": {
-        "$value": "rgba(218, 167, 17, 0.15)",
-        "$type": "color",
-        "$description": "color.alpha.warning — Warning state semi-transparent background (15% yellow)"
       },
       "info": {
         "$value": "rgba(9, 116, 235, 0.15)",
@@ -42,191 +15,37 @@
         "$value": "rgba(9, 116, 235, 0.2)",
         "$type": "color",
         "$description": "color.alpha.selected — Selected state semi-transparent background (20% blue)"
-      }
-    },
-    "text": {
-      "default": {
-        "$value": "{color.black}",
-        "$type": "color",
-        "$description": "color.text.default — Primary text color. Use for: headings, body text, labels."
-      },
-      "secondary": {
-        "$value": "{color.gray.6}",
-        "$type": "color",
-        "$description": "color.text.secondary — Secondary/muted text. Use for: helper text, captions, descriptions."
-      },
-      "placeholder": {
-        "$value": "{color.gray.5}",
-        "$type": "color",
-        "$description": "color.text.placeholder — Placeholder text in form inputs."
-      },
-      "disabled": {
-        "$value": "{color.gray.5}",
-        "$type": "color",
-        "$description": "color.text.disabled — Text color for disabled elements."
-      },
-      "inverse": {
-        "$value": "{color.white}",
-        "$type": "color",
-        "$description": "color.text.inverse — Inverse text for dark backgrounds."
-      },
-      "link": {
-        "$value": "{color.blue.6}",
-        "$type": "color",
-        "$description": "color.text.link — Link/anchor text color."
-      },
-      "selected": {
-        "$value": "{color.blue.7}",
-        "$type": "color",
-        "$description": "color.text.selected — Text color for selected state."
-      },
-      "bright": {
-        "$value": "{color.black}",
-        "$type": "color",
-        "$description": "color.text.bright — Maximum contrast text."
-      },
-      "onDefault": {
-        "$value": "{color.black}",
-        "$type": "color",
-        "$description": "color.text.onDefault — Text on default component backgrounds."
-      },
-      "error": {
-        "$value": "{color.red.6}",
-        "$type": "color",
-        "$description": "color.text.error — Error text color."
       },
       "success": {
-        "$value": "{color.green.7}",
+        "$value": "rgba(29, 148, 72, 0.15)",
         "$type": "color",
-        "$description": "color.text.success — Success text color."
+        "$description": "color.alpha.success — Success state semi-transparent background (15% green)"
       },
       "warning": {
-        "$value": "{color.yellow.8}",
+        "$value": "rgba(218, 167, 17, 0.15)",
         "$type": "color",
-        "$description": "color.text.warning — Warning text color."
-      },
-      "info": {
-        "$value": "{color.blue.7}",
-        "$type": "color",
-        "$description": "color.text.info — Informational text color."
+        "$description": "color.alpha.warning — Warning state semi-transparent background (15% yellow)"
       }
     },
-    "bg": {
-      "surface": {
-        "default": {
-          "$value": "{color.white}",
-          "$type": "color",
-          "$description": "color.bg.surface.default — Default component background."
-        },
-        "canvas": {
-          "$value": "{color.white}",
-          "$type": "color",
-          "$description": "color.bg.surface.canvas — Page canvas/body background."
-        },
-        "elevated": {
-          "$value": "{color.gray.0}",
-          "$type": "color",
-          "$description": "color.bg.surface.elevated — Elevated surface background (hover states, raised panels)."
-        },
-        "muted": {
-          "$value": "{color.gray.1}",
-          "$type": "color",
-          "$description": "color.bg.surface.muted — Muted/subdued surface background."
-        }
+    "overlay": {
+      "dark": {
+        "$value": "rgba(0, 0, 0, 0.75)",
+        "$type": "color",
+        "$description": "color.overlay.dark — Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
       },
-      "interactive": {
-        "disabled": {
-          "$value": "{color.gray.2}",
-          "$type": "color",
-          "$description": "color.bg.interactive.disabled — Disabled element background."
-        },
-        "selected": {
-          "$value": "{color.blue.0}",
-          "$type": "color",
-          "$description": "color.bg.interactive.selected — Selected element background."
-        },
-        "hover": {
-          "$value": "{color.gray.0}",
-          "$type": "color",
-          "$description": "color.bg.interactive.hover — Neutral hover background for interactive elements."
-        },
-        "active": {
-          "$value": "{color.gray.1}",
-          "$type": "color",
-          "$description": "color.bg.interactive.active — Neutral active/pressed background."
-        }
-      }
-    },
-    "border": {
-      "surface": {
-        "default": {
-          "$value": "{color.gray.4}",
-          "$type": "color",
-          "$description": "color.border.surface.default — Default border color."
-        },
-        "subtle": {
-          "$value": "{color.gray.3}",
-          "$type": "color",
-          "$description": "color.border.surface.subtle — Subtle/light border color."
-        },
-        "strong": {
-          "$value": "{color.gray.6}",
-          "$type": "color",
-          "$description": "color.border.surface.strong — Strong/emphasized border color."
-        }
+      "light": {
+        "$value": "rgba(0, 0, 0, 0.5)",
+        "$type": "color",
+        "$description": "color.overlay.light — Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds."
       },
-      "interactive": {
-        "disabled": {
-          "$value": "{color.gray.3}",
-          "$type": "color",
-          "$description": "color.border.interactive.disabled — Disabled border color."
-        },
-        "hover": {
-          "$value": "{color.gray.5}",
-          "$type": "color",
-          "$description": "color.border.interactive.hover — Hover state border color."
-        },
-        "selected": {
-          "$value": "{color.blue.5}",
-          "$type": "color",
-          "$description": "color.border.interactive.selected — Selected state border color."
-        },
-        "focus": {
-          "$value": "{color.blue.5}",
-          "$type": "color",
-          "$description": "color.border.interactive.focus — Focus state border color."
-        },
-        "active": {
-          "$value": "{color.gray.6}",
-          "$type": "color",
-          "$description": "color.border.interactive.active — Active/pressed border color."
-        }
+      "default": {
+        "$value": "{color.overlay.light}",
+        "$type": "color",
+        "$description": "color.overlay.default — Default overlay/backdrop color."
       }
     },
     "action": {
       "bg": {
-        "primary": {
-          "default": {
-            "$value": "{colorPalette.blue.filled.default}",
-            "$type": "color",
-            "$description": "color.action.bg.primary.default — Primary action background."
-          },
-          "hover": {
-            "$value": "{colorPalette.blue.filled.hover}",
-            "$type": "color",
-            "$description": "color.action.bg.primary.hover — Primary action hover state."
-          },
-          "active": {
-            "$value": "{color.blue.8}",
-            "$type": "color",
-            "$description": "color.action.bg.primary.active — Primary action active/pressed state."
-          },
-          "disabled": {
-            "$value": "{color.bg.interactive.disabled}",
-            "$type": "color",
-            "$description": "color.action.bg.primary.disabled — Primary action disabled state."
-          }
-        },
         "light": {
           "default": {
             "$value": "{colorPalette.blue.light.default}",
@@ -238,23 +57,28 @@
             "$type": "color",
             "$description": "color.action.bg.light.hover — Primary light variant hover."
           }
-        }
-      },
-      "text": {
+        },
         "primary": {
-          "$value": "{color.white}",
-          "$type": "color",
-          "$description": "color.action.text.primary — Text on primary action backgrounds."
-        },
-        "onSurface": {
-          "$value": "{colorPalette.blue.filled.default}",
-          "$type": "color",
-          "$description": "color.action.text.onSurface — Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
-        },
-        "light": {
-          "$value": "{colorPalette.blue.light.text}",
-          "$type": "color",
-          "$description": "color.action.text.light — Text on primary light backgrounds."
+          "active": {
+            "$value": "{color.blue.8}",
+            "$type": "color",
+            "$description": "color.action.bg.primary.active — Primary action active/pressed state."
+          },
+          "default": {
+            "$value": "{colorPalette.blue.filled.default}",
+            "$type": "color",
+            "$description": "color.action.bg.primary.default — Primary action background."
+          },
+          "disabled": {
+            "$value": "{color.bg.interactive.disabled}",
+            "$type": "color",
+            "$description": "color.action.bg.primary.disabled — Primary action disabled state."
+          },
+          "hover": {
+            "$value": "{colorPalette.blue.filled.hover}",
+            "$type": "color",
+            "$description": "color.action.bg.primary.hover — Primary action hover state."
+          }
         }
       },
       "border": {
@@ -270,6 +94,115 @@
             "$description": "color.action.border.primary.hover — Primary action hover border color."
           }
         }
+      },
+      "text": {
+        "light": {
+          "$value": "{colorPalette.blue.light.text}",
+          "$type": "color",
+          "$description": "color.action.text.light — Text on primary light backgrounds."
+        },
+        "onSurface": {
+          "$value": "{colorPalette.blue.filled.default}",
+          "$type": "color",
+          "$description": "color.action.text.onSurface — Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
+        },
+        "primary": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "color.action.text.primary — Text on primary action backgrounds."
+        }
+      }
+    },
+    "bg": {
+      "interactive": {
+        "active": {
+          "$value": "{color.gray.1}",
+          "$type": "color",
+          "$description": "color.bg.interactive.active — Neutral active/pressed background."
+        },
+        "disabled": {
+          "$value": "{color.gray.2}",
+          "$type": "color",
+          "$description": "color.bg.interactive.disabled — Disabled element background."
+        },
+        "hover": {
+          "$value": "{color.gray.0}",
+          "$type": "color",
+          "$description": "color.bg.interactive.hover — Neutral hover background for interactive elements."
+        },
+        "selected": {
+          "$value": "{color.blue.0}",
+          "$type": "color",
+          "$description": "color.bg.interactive.selected — Selected element background."
+        }
+      },
+      "surface": {
+        "canvas": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "color.bg.surface.canvas — Page canvas/body background."
+        },
+        "default": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "$description": "color.bg.surface.default — Default component background."
+        },
+        "elevated": {
+          "$value": "{color.gray.0}",
+          "$type": "color",
+          "$description": "color.bg.surface.elevated — Elevated surface background (hover states, raised panels)."
+        },
+        "muted": {
+          "$value": "{color.gray.1}",
+          "$type": "color",
+          "$description": "color.bg.surface.muted — Muted/subdued surface background."
+        }
+      }
+    },
+    "border": {
+      "interactive": {
+        "active": {
+          "$value": "{color.gray.6}",
+          "$type": "color",
+          "$description": "color.border.interactive.active — Active/pressed border color."
+        },
+        "disabled": {
+          "$value": "{color.gray.3}",
+          "$type": "color",
+          "$description": "color.border.interactive.disabled — Disabled border color."
+        },
+        "focus": {
+          "$value": "{color.blue.5}",
+          "$type": "color",
+          "$description": "color.border.interactive.focus — Focus state border color."
+        },
+        "hover": {
+          "$value": "{color.gray.5}",
+          "$type": "color",
+          "$description": "color.border.interactive.hover — Hover state border color."
+        },
+        "selected": {
+          "$value": "{color.blue.5}",
+          "$type": "color",
+          "$description": "color.border.interactive.selected — Selected state border color."
+        }
+      },
+      "surface": {
+        "default": {
+          "$value": "{color.gray.4}",
+          "$type": "color",
+          "$description": "color.border.surface.default — Default border color."
+        },
+        "strong": {
+          "$value": "{color.gray.6}",
+          "$type": "color",
+          "$description": "color.border.surface.strong — Strong/emphasized border color."
+        },
+        "subtle": {
+          "$value": "{color.gray.3}",
+          "$type": "color",
+          "$description": "color.border.surface.subtle — Subtle/light border color."
+        }
       }
     },
     "feedback": {
@@ -278,6 +211,11 @@
           "$value": "{color.red.0}",
           "$type": "color",
           "$description": "color.feedback.bg.error — Error feedback background."
+        },
+        "info": {
+          "$value": "{color.blue.0}",
+          "$type": "color",
+          "$description": "color.feedback.bg.info — Info feedback background."
         },
         "success": {
           "$value": "{color.green.0}",
@@ -288,33 +226,6 @@
           "$value": "{color.yellow.0}",
           "$type": "color",
           "$description": "color.feedback.bg.warning — Warning feedback background."
-        },
-        "info": {
-          "$value": "{color.blue.0}",
-          "$type": "color",
-          "$description": "color.feedback.bg.info — Info feedback background."
-        }
-      },
-      "text": {
-        "error": {
-          "$value": "{color.red.6}",
-          "$type": "color",
-          "$description": "color.feedback.text.error — Error feedback text."
-        },
-        "success": {
-          "$value": "{color.green.7}",
-          "$type": "color",
-          "$description": "color.feedback.text.success — Success feedback text."
-        },
-        "warning": {
-          "$value": "{color.yellow.8}",
-          "$type": "color",
-          "$description": "color.feedback.text.warning — Warning feedback text."
-        },
-        "info": {
-          "$value": "{color.blue.7}",
-          "$type": "color",
-          "$description": "color.feedback.text.info — Info feedback text."
         }
       },
       "border": {
@@ -322,6 +233,11 @@
           "$value": "{color.red.5}",
           "$type": "color",
           "$description": "color.feedback.border.error — Error feedback border."
+        },
+        "info": {
+          "$value": "{color.blue.5}",
+          "$type": "color",
+          "$description": "color.feedback.border.info — Info feedback border."
         },
         "success": {
           "$value": "{color.green.5}",
@@ -332,11 +248,6 @@
           "$value": "{color.yellow.5}",
           "$type": "color",
           "$description": "color.feedback.border.warning — Warning feedback border."
-        },
-        "info": {
-          "$value": "{color.blue.5}",
-          "$type": "color",
-          "$description": "color.feedback.border.info — Info feedback border."
         }
       },
       "icon": {
@@ -344,6 +255,11 @@
           "$value": "{color.red.6}",
           "$type": "color",
           "$description": "color.feedback.icon.error — Error feedback icon."
+        },
+        "info": {
+          "$value": "{color.blue.6}",
+          "$type": "color",
+          "$description": "color.feedback.icon.info — Info feedback icon."
         },
         "success": {
           "$value": "{color.green.6}",
@@ -354,27 +270,49 @@
           "$value": "{color.yellow.6}",
           "$type": "color",
           "$description": "color.feedback.icon.warning — Warning feedback icon."
+        }
+      },
+      "text": {
+        "error": {
+          "$value": "{color.red.6}",
+          "$type": "color",
+          "$description": "color.feedback.text.error — Error feedback text."
         },
         "info": {
-          "$value": "{color.blue.6}",
+          "$value": "{color.blue.7}",
           "$type": "color",
-          "$description": "color.feedback.icon.info — Info feedback icon."
+          "$description": "color.feedback.text.info — Info feedback text."
+        },
+        "success": {
+          "$value": "{color.green.7}",
+          "$type": "color",
+          "$description": "color.feedback.text.success — Success feedback text."
+        },
+        "warning": {
+          "$value": "{color.yellow.8}",
+          "$type": "color",
+          "$description": "color.feedback.text.warning — Warning feedback text."
         }
       }
     },
     "focus": {
-      "ring": {
-        "$value": "{color.blue.5}",
-        "$type": "color",
-        "$description": "color.focus.ring — Focus ring color."
-      },
       "glow": {
         "$value": "{colorPalette.blue.light.default}",
         "$type": "color",
         "$description": "color.focus.glow — Focus ring glow/background color. Use for: input focus ring."
+      },
+      "ring": {
+        "$value": "{color.blue.5}",
+        "$type": "color",
+        "$description": "color.focus.ring — Focus ring color."
       }
     },
     "primary": {
+      "contrast": {
+        "$value": "{color.white}",
+        "$type": "color",
+        "$description": "color.primary.contrast — Text on primary filled."
+      },
       "filled": {
         "default": {
           "$value": "{colorPalette.blue.filled.default}",
@@ -403,205 +341,267 @@
           "$type": "color",
           "$description": "color.primary.light.text — Text on primary light."
         }
+      }
+    },
+    "text": {
+      "bright": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "color.text.bright — Maximum contrast text."
       },
-      "contrast": {
+      "default": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "color.text.default — Primary text color. Use for: headings, body text, labels."
+      },
+      "disabled": {
+        "$value": "{color.gray.5}",
+        "$type": "color",
+        "$description": "color.text.disabled — Text color for disabled elements."
+      },
+      "error": {
+        "$value": "{color.red.6}",
+        "$type": "color",
+        "$description": "color.text.error — Error text color."
+      },
+      "info": {
+        "$value": "{color.blue.7}",
+        "$type": "color",
+        "$description": "color.text.info — Informational text color."
+      },
+      "inverse": {
         "$value": "{color.white}",
         "$type": "color",
-        "$description": "color.primary.contrast — Text on primary filled."
+        "$description": "color.text.inverse — Inverse text for dark backgrounds."
+      },
+      "link": {
+        "$value": "{color.blue.6}",
+        "$type": "color",
+        "$description": "color.text.link — Link/anchor text color."
+      },
+      "onDefault": {
+        "$value": "{color.black}",
+        "$type": "color",
+        "$description": "color.text.onDefault — Text on default component backgrounds."
+      },
+      "placeholder": {
+        "$value": "{color.gray.5}",
+        "$type": "color",
+        "$description": "color.text.placeholder — Placeholder text in form inputs."
+      },
+      "secondary": {
+        "$value": "{color.gray.6}",
+        "$type": "color",
+        "$description": "color.text.secondary — Secondary/muted text. Use for: helper text, captions, descriptions."
+      },
+      "selected": {
+        "$value": "{color.blue.7}",
+        "$type": "color",
+        "$description": "color.text.selected — Text color for selected state."
+      },
+      "success": {
+        "$value": "{color.green.7}",
+        "$type": "color",
+        "$description": "color.text.success — Success text color."
+      },
+      "warning": {
+        "$value": "{color.yellow.8}",
+        "$type": "color",
+        "$description": "color.text.warning — Warning text color."
       }
     }
   },
   "boxShadow": {
-    "xs": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.125rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.1)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.xs — Default Mantine extra small shadow"
-    },
-    "sm": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.625rem",
-          "blur": "0.9375rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.4375rem",
-          "blur": "0.4375rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.sm — Default Mantine small shadow"
-    },
-    "md": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "1.25rem",
-          "blur": "1.5625rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.625rem",
-          "blur": "0.625rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.md — Default Mantine medium shadow"
-    },
-    "lg": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "1.75rem",
-          "blur": "1.4375rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.75rem",
-          "blur": "0.75rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.lg — Default Mantine large shadow"
-    },
-    "xl": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "2.25rem",
-          "blur": "1.75rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "1.0625rem",
-          "blur": "1.0625rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.xl — Default Mantine extra large shadow"
-    },
-    "inset": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.125rem",
-          "blur": "0.25rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.1)",
-          "type": "innerShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.inset — Inset shadow - pressed/recessed appearance. Use for: pressed button states, input:focus, toggle switches (off state), embedded content areas. Creates illusion of pressing INTO the surface. Common in: Button:active, pressed toggles, embedded wells, search input backgrounds."
-    },
     "footer": {
       "$value": [
         {
-          "x": "0",
-          "y": "-0.0625rem",
           "blur": "0.1875rem",
-          "spread": "0",
           "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "-0.0625rem"
         },
         {
-          "x": "0",
-          "y": "-0.625rem",
           "blur": "0.9375rem",
-          "spread": "-0.3125rem",
           "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "-0.625rem"
         },
         {
-          "x": "0",
-          "y": "-0.4375rem",
           "blur": "0.4375rem",
-          "spread": "-0.3125rem",
           "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "-0.4375rem"
         }
       ],
       "$type": "boxShadow",
       "$description": "boxShadow.footer — Footer shadow - upward-casting shadow for fixed footers. Use for: sticky footers, bottom navigation bars, action bars at bottom of screen. Shadow casts upward to show footer is above scrolling content. Common in: sticky page footers, bottom action bars, mobile bottom nav."
     },
+    "inset": {
+      "$value": [
+        {
+          "blur": "0.25rem",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "spread": "0",
+          "type": "innerShadow",
+          "x": "0",
+          "y": "0.125rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.inset — Inset shadow - pressed/recessed appearance. Use for: pressed button states, input:focus, toggle switches (off state), embedded content areas. Creates illusion of pressing INTO the surface. Common in: Button:active, pressed toggles, embedded wells, search input backgrounds."
+    },
+    "lg": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "1.4375rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.75rem"
+        },
+        {
+          "blur": "0.75rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.75rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.lg — Default Mantine large shadow"
+    },
+    "md": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "1.5625rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.25rem"
+        },
+        {
+          "blur": "0.625rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.625rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.md — Default Mantine medium shadow"
+    },
     "none": {
       "$value": "none",
       "$type": "boxShadow",
       "$description": "boxShadow.none — No shadow - flat appearance. Use for: flat design elements, removing inherited shadows, elements that should appear flush with background, focus states that use outline instead. CSS keyword. Common in: flat buttons, inline elements, focus states using outline."
+    },
+    "sm": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "0.9375rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.625rem"
+        },
+        {
+          "blur": "0.4375rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.4375rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.sm — Default Mantine small shadow"
+    },
+    "xl": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "1.75rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "2.25rem"
+        },
+        {
+          "blur": "1.0625rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.0625rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.xl — Default Mantine extra large shadow"
+    },
+    "xs": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "0.125rem",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.xs — Default Mantine extra small shadow"
     }
   },
   "fontFamilies": {
@@ -704,22 +704,9 @@
     }
   },
   "mantine": {
-    "scale": {
-      "$value": 1,
-      "$type": "number",
-      "$description": "mantine.scale — Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size."
-    },
     "cursorType": {
       "$value": "pointer",
       "$description": "mantine.cursorType — Cursor style for interactive elements. 'pointer' for clickable, 'default' for standard."
-    },
-    "webkitFontSmoothing": {
-      "$value": "antialiased",
-      "$description": "mantine.webkitFontSmoothing — WebKit font smoothing. 'antialiased' for crisp text on macOS/iOS."
-    },
-    "mozFontSmoothing": {
-      "$value": "grayscale",
-      "$description": "mantine.mozFontSmoothing — Mozilla font smoothing. 'grayscale' for crisp text on Firefox."
     },
     "headingFontWeight": {
       "$value": 700,
@@ -730,10 +717,23 @@
       "$value": "wrap",
       "$description": "mantine.headingTextWrap — Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines."
     },
+    "mozFontSmoothing": {
+      "$value": "grayscale",
+      "$description": "mantine.mozFontSmoothing — Mozilla font smoothing. 'grayscale' for crisp text on Firefox."
+    },
     "radiusDefault": {
       "$value": "{radius.sm}",
       "$type": "dimension",
       "$description": "mantine.radiusDefault — Default border radius when no size is specified. References radius.sm token."
+    },
+    "scale": {
+      "$value": 1,
+      "$type": "number",
+      "$description": "mantine.scale — Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size."
+    },
+    "webkitFontSmoothing": {
+      "$value": "antialiased",
+      "$description": "mantine.webkitFontSmoothing — WebKit font smoothing. 'antialiased' for crisp text on macOS/iOS."
     },
     "zIndex": {
       "app": {
@@ -741,371 +741,30 @@
         "$type": "number",
         "$description": "mantine.zIndex.app — Base app layer z-index"
       },
+      "max": {
+        "$value": 9999,
+        "$type": "number",
+        "$description": "mantine.zIndex.max — Maximum z-index for critical elements"
+      },
       "modal": {
         "$value": 200,
         "$type": "number",
         "$description": "mantine.zIndex.modal — Modal dialog z-index"
-      },
-      "popover": {
-        "$value": 300,
-        "$type": "number",
-        "$description": "mantine.zIndex.popover — Popover/dropdown z-index"
       },
       "overlay": {
         "$value": 400,
         "$type": "number",
         "$description": "mantine.zIndex.overlay — Overlay/backdrop z-index"
       },
-      "max": {
-        "$value": 9999,
+      "popover": {
+        "$value": 300,
         "$type": "number",
-        "$description": "mantine.zIndex.max — Maximum z-index for critical elements"
+        "$description": "mantine.zIndex.popover — Popover/dropdown z-index"
       }
     }
   },
   "colorPalette": {
-    "dark": {
-      "text": {
-        "$value": "{color.dark.6}",
-        "$type": "color",
-        "$description": "colorPalette.dark.text — Text color for dark elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.dark.6}",
-          "$type": "color",
-          "$description": "colorPalette.dark.filled.default — Filled background for dark elements"
-        },
-        "hover": {
-          "$value": "{color.dark.7}",
-          "$type": "color",
-          "$description": "colorPalette.dark.filled.hover — Hover state for dark filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(46, 46, 46, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.dark.light.default — Light variant of dark color"
-        },
-        "hover": {
-          "$value": "rgba(46, 46, 46, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.dark.light.hover — Hover state for dark light elements"
-        },
-        "text": {
-          "$value": "{color.dark.6}",
-          "$type": "color",
-          "$description": "colorPalette.dark.light.text — Text color for dark light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.dark.6}",
-          "$type": "color",
-          "$description": "colorPalette.dark.outline.default — Outline color for dark elements"
-        },
-        "hover": {
-          "$value": "rgba(46, 46, 46, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.dark.outline.hover — Hover state for dark outline elements"
-        }
-      }
-    },
-    "gray": {
-      "text": {
-        "$value": "{color.gray.6}",
-        "$type": "color",
-        "$description": "colorPalette.gray.text — Text color for gray elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.gray.6}",
-          "$type": "color",
-          "$description": "colorPalette.gray.filled.default — Filled background for gray elements"
-        },
-        "hover": {
-          "$value": "{color.gray.7}",
-          "$type": "color",
-          "$description": "colorPalette.gray.filled.hover — Hover state for gray filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(134, 142, 150, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.gray.light.default — Light variant of gray color"
-        },
-        "hover": {
-          "$value": "rgba(134, 142, 150, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.gray.light.hover — Hover state for gray light elements"
-        },
-        "text": {
-          "$value": "{color.gray.6}",
-          "$type": "color",
-          "$description": "colorPalette.gray.light.text — Text color for gray light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.gray.6}",
-          "$type": "color",
-          "$description": "colorPalette.gray.outline.default — Outline color for gray elements"
-        },
-        "hover": {
-          "$value": "rgba(134, 142, 150, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.gray.outline.hover — Hover state for gray outline elements"
-        }
-      }
-    },
-    "red": {
-      "text": {
-        "$value": "{color.red.6}",
-        "$type": "color",
-        "$description": "colorPalette.red.text — Text color for red elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.red.6}",
-          "$type": "color",
-          "$description": "colorPalette.red.filled.default — Filled background for red elements"
-        },
-        "hover": {
-          "$value": "{color.red.7}",
-          "$type": "color",
-          "$description": "colorPalette.red.filled.hover — Hover state for red filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(250, 82, 82, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.red.light.default — Light variant of red color"
-        },
-        "hover": {
-          "$value": "rgba(250, 82, 82, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.red.light.hover — Hover state for red light elements"
-        },
-        "text": {
-          "$value": "{color.red.6}",
-          "$type": "color",
-          "$description": "colorPalette.red.light.text — Text color for red light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.red.6}",
-          "$type": "color",
-          "$description": "colorPalette.red.outline.default — Outline color for red elements"
-        },
-        "hover": {
-          "$value": "rgba(250, 82, 82, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.red.outline.hover — Hover state for red outline elements"
-        }
-      }
-    },
-    "pink": {
-      "text": {
-        "$value": "{color.pink.6}",
-        "$type": "color",
-        "$description": "colorPalette.pink.text — Text color for pink elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.pink.6}",
-          "$type": "color",
-          "$description": "colorPalette.pink.filled.default — Filled background for pink elements"
-        },
-        "hover": {
-          "$value": "{color.pink.7}",
-          "$type": "color",
-          "$description": "colorPalette.pink.filled.hover — Hover state for pink filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(230, 73, 128, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.pink.light.default — Light variant of pink color"
-        },
-        "hover": {
-          "$value": "rgba(230, 73, 128, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.pink.light.hover — Hover state for pink light elements"
-        },
-        "text": {
-          "$value": "{color.pink.6}",
-          "$type": "color",
-          "$description": "colorPalette.pink.light.text — Text color for pink light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.pink.6}",
-          "$type": "color",
-          "$description": "colorPalette.pink.outline.default — Outline color for pink elements"
-        },
-        "hover": {
-          "$value": "rgba(230, 73, 128, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.pink.outline.hover — Hover state for pink outline elements"
-        }
-      }
-    },
-    "grape": {
-      "text": {
-        "$value": "{color.grape.6}",
-        "$type": "color",
-        "$description": "colorPalette.grape.text — Text color for grape elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.grape.6}",
-          "$type": "color",
-          "$description": "colorPalette.grape.filled.default — Filled background for grape elements"
-        },
-        "hover": {
-          "$value": "{color.grape.7}",
-          "$type": "color",
-          "$description": "colorPalette.grape.filled.hover — Hover state for grape filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(190, 75, 219, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.grape.light.default — Light variant of grape color"
-        },
-        "hover": {
-          "$value": "rgba(190, 75, 219, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.grape.light.hover — Hover state for grape light elements"
-        },
-        "text": {
-          "$value": "{color.grape.6}",
-          "$type": "color",
-          "$description": "colorPalette.grape.light.text — Text color for grape light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.grape.6}",
-          "$type": "color",
-          "$description": "colorPalette.grape.outline.default — Outline color for grape elements"
-        },
-        "hover": {
-          "$value": "rgba(190, 75, 219, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.grape.outline.hover — Hover state for grape outline elements"
-        }
-      }
-    },
-    "violet": {
-      "text": {
-        "$value": "{color.violet.6}",
-        "$type": "color",
-        "$description": "colorPalette.violet.text — Text color for violet elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.violet.6}",
-          "$type": "color",
-          "$description": "colorPalette.violet.filled.default — Filled background for violet elements"
-        },
-        "hover": {
-          "$value": "{color.violet.7}",
-          "$type": "color",
-          "$description": "colorPalette.violet.filled.hover — Hover state for violet filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(121, 80, 242, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.violet.light.default — Light variant of violet color"
-        },
-        "hover": {
-          "$value": "rgba(121, 80, 242, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.violet.light.hover — Hover state for violet light elements"
-        },
-        "text": {
-          "$value": "{color.violet.6}",
-          "$type": "color",
-          "$description": "colorPalette.violet.light.text — Text color for violet light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.violet.6}",
-          "$type": "color",
-          "$description": "colorPalette.violet.outline.default — Outline color for violet elements"
-        },
-        "hover": {
-          "$value": "rgba(121, 80, 242, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.violet.outline.hover — Hover state for violet outline elements"
-        }
-      }
-    },
-    "indigo": {
-      "text": {
-        "$value": "{color.indigo.6}",
-        "$type": "color",
-        "$description": "colorPalette.indigo.text — Text color for indigo elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.indigo.6}",
-          "$type": "color",
-          "$description": "colorPalette.indigo.filled.default — Filled background for indigo elements"
-        },
-        "hover": {
-          "$value": "{color.indigo.7}",
-          "$type": "color",
-          "$description": "colorPalette.indigo.filled.hover — Hover state for indigo filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(76, 110, 245, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.indigo.light.default — Light variant of indigo color"
-        },
-        "hover": {
-          "$value": "rgba(76, 110, 245, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.indigo.light.hover — Hover state for indigo light elements"
-        },
-        "text": {
-          "$value": "{color.indigo.6}",
-          "$type": "color",
-          "$description": "colorPalette.indigo.light.text — Text color for indigo light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.indigo.6}",
-          "$type": "color",
-          "$description": "colorPalette.indigo.outline.default — Outline color for indigo elements"
-        },
-        "hover": {
-          "$value": "rgba(76, 110, 245, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.indigo.outline.hover — Hover state for indigo outline elements"
-        }
-      }
-    },
     "blue": {
-      "text": {
-        "$value": "{color.blue.6}",
-        "$type": "color",
-        "$description": "colorPalette.blue.text — Text color for blue elements"
-      },
       "filled": {
         "default": {
           "$value": "{color.blue.6}",
@@ -1146,14 +805,14 @@
           "$type": "color",
           "$description": "colorPalette.blue.outline.hover — Hover state for blue outline elements"
         }
+      },
+      "text": {
+        "$value": "{color.blue.6}",
+        "$type": "color",
+        "$description": "colorPalette.blue.text — Text color for blue elements"
       }
     },
     "cyan": {
-      "text": {
-        "$value": "{color.cyan.6}",
-        "$type": "color",
-        "$description": "colorPalette.cyan.text — Text color for cyan elements"
-      },
       "filled": {
         "default": {
           "$value": "{color.cyan.6}",
@@ -1194,62 +853,158 @@
           "$type": "color",
           "$description": "colorPalette.cyan.outline.hover — Hover state for cyan outline elements"
         }
+      },
+      "text": {
+        "$value": "{color.cyan.6}",
+        "$type": "color",
+        "$description": "colorPalette.cyan.text — Text color for cyan elements"
       }
     },
-    "teal": {
-      "text": {
-        "$value": "{color.teal.6}",
-        "$type": "color",
-        "$description": "colorPalette.teal.text — Text color for teal elements"
-      },
+    "dark": {
       "filled": {
         "default": {
-          "$value": "{color.teal.6}",
+          "$value": "{color.dark.6}",
           "$type": "color",
-          "$description": "colorPalette.teal.filled.default — Filled background for teal elements"
+          "$description": "colorPalette.dark.filled.default — Filled background for dark elements"
         },
         "hover": {
-          "$value": "{color.teal.7}",
+          "$value": "{color.dark.7}",
           "$type": "color",
-          "$description": "colorPalette.teal.filled.hover — Hover state for teal filled elements"
+          "$description": "colorPalette.dark.filled.hover — Hover state for dark filled elements"
         }
       },
       "light": {
         "default": {
-          "$value": "rgba(18, 184, 134, 0.1)",
+          "$value": "rgba(46, 46, 46, 0.1)",
           "$type": "color",
-          "$description": "colorPalette.teal.light.default — Light variant of teal color"
+          "$description": "colorPalette.dark.light.default — Light variant of dark color"
         },
         "hover": {
-          "$value": "rgba(18, 184, 134, 0.12)",
+          "$value": "rgba(46, 46, 46, 0.12)",
           "$type": "color",
-          "$description": "colorPalette.teal.light.hover — Hover state for teal light elements"
+          "$description": "colorPalette.dark.light.hover — Hover state for dark light elements"
         },
         "text": {
-          "$value": "{color.teal.6}",
+          "$value": "{color.dark.6}",
           "$type": "color",
-          "$description": "colorPalette.teal.light.text — Text color for teal light elements"
+          "$description": "colorPalette.dark.light.text — Text color for dark light elements"
         }
       },
       "outline": {
         "default": {
-          "$value": "{color.teal.6}",
+          "$value": "{color.dark.6}",
           "$type": "color",
-          "$description": "colorPalette.teal.outline.default — Outline color for teal elements"
+          "$description": "colorPalette.dark.outline.default — Outline color for dark elements"
         },
         "hover": {
-          "$value": "rgba(18, 184, 134, 0.05)",
+          "$value": "rgba(46, 46, 46, 0.05)",
           "$type": "color",
-          "$description": "colorPalette.teal.outline.hover — Hover state for teal outline elements"
+          "$description": "colorPalette.dark.outline.hover — Hover state for dark outline elements"
         }
+      },
+      "text": {
+        "$value": "{color.dark.6}",
+        "$type": "color",
+        "$description": "colorPalette.dark.text — Text color for dark elements"
+      }
+    },
+    "grape": {
+      "filled": {
+        "default": {
+          "$value": "{color.grape.6}",
+          "$type": "color",
+          "$description": "colorPalette.grape.filled.default — Filled background for grape elements"
+        },
+        "hover": {
+          "$value": "{color.grape.7}",
+          "$type": "color",
+          "$description": "colorPalette.grape.filled.hover — Hover state for grape filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(190, 75, 219, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.grape.light.default — Light variant of grape color"
+        },
+        "hover": {
+          "$value": "rgba(190, 75, 219, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.grape.light.hover — Hover state for grape light elements"
+        },
+        "text": {
+          "$value": "{color.grape.6}",
+          "$type": "color",
+          "$description": "colorPalette.grape.light.text — Text color for grape light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.grape.6}",
+          "$type": "color",
+          "$description": "colorPalette.grape.outline.default — Outline color for grape elements"
+        },
+        "hover": {
+          "$value": "rgba(190, 75, 219, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.grape.outline.hover — Hover state for grape outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.grape.6}",
+        "$type": "color",
+        "$description": "colorPalette.grape.text — Text color for grape elements"
+      }
+    },
+    "gray": {
+      "filled": {
+        "default": {
+          "$value": "{color.gray.6}",
+          "$type": "color",
+          "$description": "colorPalette.gray.filled.default — Filled background for gray elements"
+        },
+        "hover": {
+          "$value": "{color.gray.7}",
+          "$type": "color",
+          "$description": "colorPalette.gray.filled.hover — Hover state for gray filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(134, 142, 150, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.gray.light.default — Light variant of gray color"
+        },
+        "hover": {
+          "$value": "rgba(134, 142, 150, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.gray.light.hover — Hover state for gray light elements"
+        },
+        "text": {
+          "$value": "{color.gray.6}",
+          "$type": "color",
+          "$description": "colorPalette.gray.light.text — Text color for gray light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.gray.6}",
+          "$type": "color",
+          "$description": "colorPalette.gray.outline.default — Outline color for gray elements"
+        },
+        "hover": {
+          "$value": "rgba(134, 142, 150, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.gray.outline.hover — Hover state for gray outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.gray.6}",
+        "$type": "color",
+        "$description": "colorPalette.gray.text — Text color for gray elements"
       }
     },
     "green": {
-      "text": {
-        "$value": "{color.green.6}",
-        "$type": "color",
-        "$description": "colorPalette.green.text — Text color for green elements"
-      },
       "filled": {
         "default": {
           "$value": "{color.green.6}",
@@ -1290,14 +1045,62 @@
           "$type": "color",
           "$description": "colorPalette.green.outline.hover — Hover state for green outline elements"
         }
+      },
+      "text": {
+        "$value": "{color.green.6}",
+        "$type": "color",
+        "$description": "colorPalette.green.text — Text color for green elements"
+      }
+    },
+    "indigo": {
+      "filled": {
+        "default": {
+          "$value": "{color.indigo.6}",
+          "$type": "color",
+          "$description": "colorPalette.indigo.filled.default — Filled background for indigo elements"
+        },
+        "hover": {
+          "$value": "{color.indigo.7}",
+          "$type": "color",
+          "$description": "colorPalette.indigo.filled.hover — Hover state for indigo filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(76, 110, 245, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.indigo.light.default — Light variant of indigo color"
+        },
+        "hover": {
+          "$value": "rgba(76, 110, 245, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.indigo.light.hover — Hover state for indigo light elements"
+        },
+        "text": {
+          "$value": "{color.indigo.6}",
+          "$type": "color",
+          "$description": "colorPalette.indigo.light.text — Text color for indigo light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.indigo.6}",
+          "$type": "color",
+          "$description": "colorPalette.indigo.outline.default — Outline color for indigo elements"
+        },
+        "hover": {
+          "$value": "rgba(76, 110, 245, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.indigo.outline.hover — Hover state for indigo outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.indigo.6}",
+        "$type": "color",
+        "$description": "colorPalette.indigo.text — Text color for indigo elements"
       }
     },
     "lime": {
-      "text": {
-        "$value": "{color.lime.6}",
-        "$type": "color",
-        "$description": "colorPalette.lime.text — Text color for lime elements"
-      },
       "filled": {
         "default": {
           "$value": "{color.lime.6}",
@@ -1338,62 +1141,14 @@
           "$type": "color",
           "$description": "colorPalette.lime.outline.hover — Hover state for lime outline elements"
         }
-      }
-    },
-    "yellow": {
+      },
       "text": {
-        "$value": "{color.yellow.6}",
+        "$value": "{color.lime.6}",
         "$type": "color",
-        "$description": "colorPalette.yellow.text — Text color for yellow elements"
-      },
-      "filled": {
-        "default": {
-          "$value": "{color.yellow.6}",
-          "$type": "color",
-          "$description": "colorPalette.yellow.filled.default — Filled background for yellow elements"
-        },
-        "hover": {
-          "$value": "{color.yellow.7}",
-          "$type": "color",
-          "$description": "colorPalette.yellow.filled.hover — Hover state for yellow filled elements"
-        }
-      },
-      "light": {
-        "default": {
-          "$value": "rgba(250, 176, 5, 0.1)",
-          "$type": "color",
-          "$description": "colorPalette.yellow.light.default — Light variant of yellow color"
-        },
-        "hover": {
-          "$value": "rgba(250, 176, 5, 0.12)",
-          "$type": "color",
-          "$description": "colorPalette.yellow.light.hover — Hover state for yellow light elements"
-        },
-        "text": {
-          "$value": "{color.yellow.6}",
-          "$type": "color",
-          "$description": "colorPalette.yellow.light.text — Text color for yellow light elements"
-        }
-      },
-      "outline": {
-        "default": {
-          "$value": "{color.yellow.6}",
-          "$type": "color",
-          "$description": "colorPalette.yellow.outline.default — Outline color for yellow elements"
-        },
-        "hover": {
-          "$value": "rgba(250, 176, 5, 0.05)",
-          "$type": "color",
-          "$description": "colorPalette.yellow.outline.hover — Hover state for yellow outline elements"
-        }
+        "$description": "colorPalette.lime.text — Text color for lime elements"
       }
     },
     "orange": {
-      "text": {
-        "$value": "{color.orange.6}",
-        "$type": "color",
-        "$description": "colorPalette.orange.text — Text color for orange elements"
-      },
       "filled": {
         "default": {
           "$value": "{color.orange.6}",
@@ -1434,6 +1189,251 @@
           "$type": "color",
           "$description": "colorPalette.orange.outline.hover — Hover state for orange outline elements"
         }
+      },
+      "text": {
+        "$value": "{color.orange.6}",
+        "$type": "color",
+        "$description": "colorPalette.orange.text — Text color for orange elements"
+      }
+    },
+    "pink": {
+      "filled": {
+        "default": {
+          "$value": "{color.pink.6}",
+          "$type": "color",
+          "$description": "colorPalette.pink.filled.default — Filled background for pink elements"
+        },
+        "hover": {
+          "$value": "{color.pink.7}",
+          "$type": "color",
+          "$description": "colorPalette.pink.filled.hover — Hover state for pink filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(230, 73, 128, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.pink.light.default — Light variant of pink color"
+        },
+        "hover": {
+          "$value": "rgba(230, 73, 128, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.pink.light.hover — Hover state for pink light elements"
+        },
+        "text": {
+          "$value": "{color.pink.6}",
+          "$type": "color",
+          "$description": "colorPalette.pink.light.text — Text color for pink light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.pink.6}",
+          "$type": "color",
+          "$description": "colorPalette.pink.outline.default — Outline color for pink elements"
+        },
+        "hover": {
+          "$value": "rgba(230, 73, 128, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.pink.outline.hover — Hover state for pink outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.pink.6}",
+        "$type": "color",
+        "$description": "colorPalette.pink.text — Text color for pink elements"
+      }
+    },
+    "red": {
+      "filled": {
+        "default": {
+          "$value": "{color.red.6}",
+          "$type": "color",
+          "$description": "colorPalette.red.filled.default — Filled background for red elements"
+        },
+        "hover": {
+          "$value": "{color.red.7}",
+          "$type": "color",
+          "$description": "colorPalette.red.filled.hover — Hover state for red filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(250, 82, 82, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.red.light.default — Light variant of red color"
+        },
+        "hover": {
+          "$value": "rgba(250, 82, 82, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.red.light.hover — Hover state for red light elements"
+        },
+        "text": {
+          "$value": "{color.red.6}",
+          "$type": "color",
+          "$description": "colorPalette.red.light.text — Text color for red light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.red.6}",
+          "$type": "color",
+          "$description": "colorPalette.red.outline.default — Outline color for red elements"
+        },
+        "hover": {
+          "$value": "rgba(250, 82, 82, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.red.outline.hover — Hover state for red outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.red.6}",
+        "$type": "color",
+        "$description": "colorPalette.red.text — Text color for red elements"
+      }
+    },
+    "teal": {
+      "filled": {
+        "default": {
+          "$value": "{color.teal.6}",
+          "$type": "color",
+          "$description": "colorPalette.teal.filled.default — Filled background for teal elements"
+        },
+        "hover": {
+          "$value": "{color.teal.7}",
+          "$type": "color",
+          "$description": "colorPalette.teal.filled.hover — Hover state for teal filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(18, 184, 134, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.teal.light.default — Light variant of teal color"
+        },
+        "hover": {
+          "$value": "rgba(18, 184, 134, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.teal.light.hover — Hover state for teal light elements"
+        },
+        "text": {
+          "$value": "{color.teal.6}",
+          "$type": "color",
+          "$description": "colorPalette.teal.light.text — Text color for teal light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.teal.6}",
+          "$type": "color",
+          "$description": "colorPalette.teal.outline.default — Outline color for teal elements"
+        },
+        "hover": {
+          "$value": "rgba(18, 184, 134, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.teal.outline.hover — Hover state for teal outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.teal.6}",
+        "$type": "color",
+        "$description": "colorPalette.teal.text — Text color for teal elements"
+      }
+    },
+    "violet": {
+      "filled": {
+        "default": {
+          "$value": "{color.violet.6}",
+          "$type": "color",
+          "$description": "colorPalette.violet.filled.default — Filled background for violet elements"
+        },
+        "hover": {
+          "$value": "{color.violet.7}",
+          "$type": "color",
+          "$description": "colorPalette.violet.filled.hover — Hover state for violet filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(121, 80, 242, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.violet.light.default — Light variant of violet color"
+        },
+        "hover": {
+          "$value": "rgba(121, 80, 242, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.violet.light.hover — Hover state for violet light elements"
+        },
+        "text": {
+          "$value": "{color.violet.6}",
+          "$type": "color",
+          "$description": "colorPalette.violet.light.text — Text color for violet light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.violet.6}",
+          "$type": "color",
+          "$description": "colorPalette.violet.outline.default — Outline color for violet elements"
+        },
+        "hover": {
+          "$value": "rgba(121, 80, 242, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.violet.outline.hover — Hover state for violet outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.violet.6}",
+        "$type": "color",
+        "$description": "colorPalette.violet.text — Text color for violet elements"
+      }
+    },
+    "yellow": {
+      "filled": {
+        "default": {
+          "$value": "{color.yellow.6}",
+          "$type": "color",
+          "$description": "colorPalette.yellow.filled.default — Filled background for yellow elements"
+        },
+        "hover": {
+          "$value": "{color.yellow.7}",
+          "$type": "color",
+          "$description": "colorPalette.yellow.filled.hover — Hover state for yellow filled elements"
+        }
+      },
+      "light": {
+        "default": {
+          "$value": "rgba(250, 176, 5, 0.1)",
+          "$type": "color",
+          "$description": "colorPalette.yellow.light.default — Light variant of yellow color"
+        },
+        "hover": {
+          "$value": "rgba(250, 176, 5, 0.12)",
+          "$type": "color",
+          "$description": "colorPalette.yellow.light.hover — Hover state for yellow light elements"
+        },
+        "text": {
+          "$value": "{color.yellow.6}",
+          "$type": "color",
+          "$description": "colorPalette.yellow.light.text — Text color for yellow light elements"
+        }
+      },
+      "outline": {
+        "default": {
+          "$value": "{color.yellow.6}",
+          "$type": "color",
+          "$description": "colorPalette.yellow.outline.default — Outline color for yellow elements"
+        },
+        "hover": {
+          "$value": "rgba(250, 176, 5, 0.05)",
+          "$type": "color",
+          "$description": "colorPalette.yellow.outline.hover — Hover state for yellow outline elements"
+        }
+      },
+      "text": {
+        "$value": "{color.yellow.6}",
+        "$type": "color",
+        "$description": "colorPalette.yellow.text — Text color for yellow elements"
       }
     }
   }

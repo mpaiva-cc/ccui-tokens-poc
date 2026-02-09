@@ -1,7 +1,7 @@
 {
-  "name": "mantine-light",
-  "extends": "base",
-  "colorScheme": "light",
-  "description": "Vanilla Mantine light theme - baseline default with no customizations",
-  "version": "1.0.0"
+    "colorScheme": "light",
+    "description": "Vanilla Mantine light theme - baseline default with no customizations",
+    "extends": "base",
+    "name": "mantine-light",
+    "version": "1.0.0"
 }

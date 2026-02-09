@@ -3,12 +3,12 @@
     "fontFamilies": {
         "$type": "fontFamilies",
         "body": {
-            "$value": "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Body font stack for CCUI 2.1 theme. Open Sans is a humanist sans-serif typeface with excellent legibility."
+            "$description": "Body font stack for CCUI 2.1 theme. Open Sans is a humanist sans-serif typeface with excellent legibility.",
+            "$value": "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
         },
         "heading": {
-            "$value": "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Heading font stack for CCUI 2.1 theme. Uses Open Sans for consistent typography across headings and body."
+            "$description": "Heading font stack for CCUI 2.1 theme. Uses Open Sans for consistent typography across headings and body.",
+            "$value": "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
         }
     }
 }

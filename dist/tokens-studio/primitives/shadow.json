@@ -1,195 +1,195 @@
 {
   "boxShadow": {
-    "xs": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.125rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.1)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.xs — Extra small shadow - minimal elevation (1-2dp). Use for: subtle depth on cards at rest, input fields, low-emphasis containers, elements that could be flat. Barely noticeable - adds dimension without prominence. Common in: Card default state, Input fields, Table rows, subtle separation."
-    },
-    "sm": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.625rem",
-          "blur": "0.9375rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.4375rem",
-          "blur": "0.4375rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.sm — Small shadow - low elevation (4-6dp). Use for: card hover states, raised buttons, navigation elements, slightly prominent containers. Noticeable but not dramatic elevation. Common in: Card:hover, Button:raised, Dropdown trigger, Navigation bar, elevated sections."
-    },
-    "md": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "1.25rem",
-          "blur": "1.5625rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.625rem",
-          "blur": "0.625rem",
-          "spread": "-0.3125rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.md — Medium shadow - moderate elevation (8-12dp). DEFAULT for floating elements. Use for: dropdown menus, popovers, tooltips, floating action buttons, autocomplete lists. Clearly floating above content. Common in: Dropdown menu, Popover, Select options, Autocomplete, FAB."
-    },
-    "lg": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "1.75rem",
-          "blur": "1.4375rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "0.75rem",
-          "blur": "0.75rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.lg — Large shadow - high elevation (16-24dp). Use for: dialogs, modals, drawers, notification toasts, temporary UI surfaces. Significantly elevated - demands attention. Common in: Modal dialogs, side Drawer, Toast notifications, contextual menus requiring focus."
-    },
-    "xl": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.0625rem",
-          "blur": "0.1875rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "2.25rem",
-          "blur": "1.75rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
-        },
-        {
-          "x": "0",
-          "y": "1.0625rem",
-          "blur": "1.0625rem",
-          "spread": "-0.4375rem",
-          "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.xl — Extra large shadow - maximum elevation (24dp+). Use for: critical modals, full-screen overlays, maximum prominence elements. Dramatic elevation - use sparingly. Common in: Full-screen modals, critical dialogs, onboarding overlays, image lightboxes."
-    },
-    "inset": {
-      "$value": [
-        {
-          "x": "0",
-          "y": "0.125rem",
-          "blur": "0.25rem",
-          "spread": "0",
-          "color": "rgba(0, 0, 0, 0.1)",
-          "type": "innerShadow"
-        }
-      ],
-      "$type": "boxShadow",
-      "$description": "boxShadow.inset — Inset shadow - pressed/recessed appearance. Use for: pressed button states, input:focus, toggle switches (off state), embedded content areas. Creates illusion of pressing INTO the surface. Common in: Button:active, pressed toggles, embedded wells, search input backgrounds."
-    },
     "footer": {
       "$value": [
         {
-          "x": "0",
-          "y": "-0.0625rem",
           "blur": "0.1875rem",
-          "spread": "0",
           "color": "rgba(0, 0, 0, 0.05)",
-          "type": "dropShadow"
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "-0.0625rem"
         },
         {
-          "x": "0",
-          "y": "-0.625rem",
           "blur": "0.9375rem",
-          "spread": "-0.3125rem",
           "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "-0.625rem"
         },
         {
-          "x": "0",
-          "y": "-0.4375rem",
           "blur": "0.4375rem",
-          "spread": "-0.3125rem",
           "color": "rgba(0, 0, 0, 0.04)",
-          "type": "dropShadow"
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "-0.4375rem"
         }
       ],
       "$type": "boxShadow",
       "$description": "boxShadow.footer — Footer shadow - upward-casting shadow for fixed footers. Use for: sticky footers, bottom navigation bars, action bars at bottom of screen. Shadow casts upward to show footer is above scrolling content. Common in: sticky page footers, bottom action bars, mobile bottom nav."
     },
+    "inset": {
+      "$value": [
+        {
+          "blur": "0.25rem",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "spread": "0",
+          "type": "innerShadow",
+          "x": "0",
+          "y": "0.125rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.inset — Inset shadow - pressed/recessed appearance. Use for: pressed button states, input:focus, toggle switches (off state), embedded content areas. Creates illusion of pressing INTO the surface. Common in: Button:active, pressed toggles, embedded wells, search input backgrounds."
+    },
+    "lg": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "1.4375rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.75rem"
+        },
+        {
+          "blur": "0.75rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.75rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.lg — Large shadow - high elevation (16-24dp). Use for: dialogs, modals, drawers, notification toasts, temporary UI surfaces. Significantly elevated - demands attention. Common in: Modal dialogs, side Drawer, Toast notifications, contextual menus requiring focus."
+    },
+    "md": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "1.5625rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.25rem"
+        },
+        {
+          "blur": "0.625rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.625rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.md — Medium shadow - moderate elevation (8-12dp). DEFAULT for floating elements. Use for: dropdown menus, popovers, tooltips, floating action buttons, autocomplete lists. Clearly floating above content. Common in: Dropdown menu, Popover, Select options, Autocomplete, FAB."
+    },
     "none": {
       "$value": "none",
       "$type": "boxShadow",
       "$description": "boxShadow.none — No shadow - flat appearance. Use for: flat design elements, removing inherited shadows, elements that should appear flush with background, focus states that use outline instead. CSS keyword. Common in: flat buttons, inline elements, focus states using outline."
+    },
+    "sm": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "0.9375rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.625rem"
+        },
+        {
+          "blur": "0.4375rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.3125rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.4375rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.sm — Small shadow - low elevation (4-6dp). Use for: card hover states, raised buttons, navigation elements, slightly prominent containers. Noticeable but not dramatic elevation. Common in: Card:hover, Button:raised, Dropdown trigger, Navigation bar, elevated sections."
+    },
+    "xl": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "1.75rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "2.25rem"
+        },
+        {
+          "blur": "1.0625rem",
+          "color": "rgba(0, 0, 0, 0.04)",
+          "spread": "-0.4375rem",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.0625rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.xl — Extra large shadow - maximum elevation (24dp+). Use for: critical modals, full-screen overlays, maximum prominence elements. Dramatic elevation - use sparingly. Common in: Full-screen modals, critical dialogs, onboarding overlays, image lightboxes."
+    },
+    "xs": {
+      "$value": [
+        {
+          "blur": "0.1875rem",
+          "color": "rgba(0, 0, 0, 0.05)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        },
+        {
+          "blur": "0.125rem",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "spread": "0",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.0625rem"
+        }
+      ],
+      "$type": "boxShadow",
+      "$description": "boxShadow.xs — Extra small shadow - minimal elevation (1-2dp). Use for: subtle depth on cards at rest, input fields, low-emphasis containers, elements that could be flat. Barely noticeable - adds dimension without prominence. Common in: Card default state, Input fields, Table rows, subtle separation."
     }
   }
 }

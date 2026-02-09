@@ -1,117 +1,98 @@
 {
   "table": {
-    "cell": {
-      "padding": {
-        "horizontal": {
-          "xs": {
-            "$value": "{spacing.xs}",
-            "$type": "dimension",
-            "$description": "table.cell.padding.horizontal.xs — Extra small horizontal cell padding (10px). Dense tables for compact data display. Use when horizontal space is limited."
-          },
-          "sm": {
-            "$value": "{spacing.sm}",
-            "$type": "dimension",
-            "$description": "table.cell.padding.horizontal.sm — Small horizontal cell padding (12px). Standard density for most data tables. Good balance of data and whitespace."
-          },
-          "md": {
-            "$value": "{spacing.md}",
-            "$type": "dimension",
-            "$description": "table.cell.padding.horizontal.md — Medium horizontal cell padding (16px). DEFAULT. Comfortable spacing for readable data. Recommended for most use cases."
-          },
-          "lg": {
-            "$value": "{spacing.lg}",
-            "$type": "dimension",
-            "$description": "table.cell.padding.horizontal.lg — Large horizontal cell padding (20px). Spacious tables with generous breathing room. Good for simple data with few columns."
-          },
-          "xl": {
-            "$value": "{spacing.xl}",
-            "$type": "dimension",
-            "$description": "table.cell.padding.horizontal.xl — Extra large horizontal cell padding (32px). Very spacious tables for presentation or limited data. Maximum readability."
-          }
-        },
-        "vertical": {
-          "xs": {
-            "$value": "0.25rem",
-            "$type": "dimension",
-            "$description": "table.cell.padding.vertical.xs — Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views."
-          },
-          "sm": {
-            "$value": "0.375rem",
-            "$type": "dimension",
-            "$description": "table.cell.padding.vertical.sm — Small vertical cell padding (6px). Standard density rows for most data tables. Efficient use of vertical space."
-          },
-          "md": {
-            "$value": "0.5rem",
-            "$type": "dimension",
-            "$description": "table.cell.padding.vertical.md — Medium vertical cell padding (8px). DEFAULT. Comfortable row height for general use. Good for scanning and selecting rows."
-          },
-          "lg": {
-            "$value": "0.75rem",
-            "$type": "dimension",
-            "$description": "table.cell.padding.vertical.lg — Large vertical cell padding (12px). Taller rows for better touch targets and readability. Good for mobile or complex cell content."
-          },
-          "xl": {
-            "$value": "1rem",
-            "$type": "dimension",
-            "$description": "table.cell.padding.vertical.xl — Extra large vertical cell padding (16px). Maximum row height for spacious tables. Use for rich cell content or presentation."
-          }
-        }
-      },
-      "fontSize": {
-        "xs": {
-          "$value": "{fontSizes.xs}",
-          "$type": "dimension",
-          "$description": "table.cell.fontSize.xs — Extra small table font size (12px). Compact text for dense data tables. Use for admin panels or data-heavy views."
-        },
-        "sm": {
-          "$value": "{fontSizes.sm}",
-          "$type": "dimension",
-          "$description": "table.cell.fontSize.sm — Small table font size (14px). Standard data table text. Readable and space-efficient for most use cases."
-        },
-        "md": {
-          "$value": "{fontSizes.sm}",
-          "$type": "dimension",
-          "$description": "table.cell.fontSize.md — Medium table font size (14px). DEFAULT. Same as sm - keeps data compact while maintaining readability."
-        },
-        "lg": {
-          "$value": "{fontSizes.md}",
-          "$type": "dimension",
-          "$description": "table.cell.fontSize.lg — Large table font size (16px). Larger text for improved readability. Good for simple tables or accessibility needs."
-        },
-        "xl": {
-          "$value": "{fontSizes.md}",
-          "$type": "dimension",
-          "$description": "table.cell.fontSize.xl — Extra large table font size (16px). Same as lg - body text size for maximum readability in spacious tables."
-        }
-      }
-    },
-    "header": {
-      "fontWeight": {
-        "$value": "{fontWeights.semibold}",
-        "$type": "fontWeights",
-        "$description": "table.header.fontWeight — Table header font weight (600). Semibold headers clearly distinguish column labels from data. Important for scanability."
-      },
-      "fontSize": {
-        "$value": "{fontSizes.sm}",
-        "$type": "dimension",
-        "$description": "table.header.fontSize — Table header font size (14px). Same as cell text but distinguished by weight and color. Consistent sizing aids alignment."
-      }
+    "borderRadius": {
+      "$value": "{radius.sm}",
+      "$type": "dimension",
+      "$description": "table.borderRadius — Table container border radius (4px). Slight rounding softens the table container. Only applies to outer border, not individual cells."
     },
     "borderWidth": {
       "$value": "{borderWidth.thin}",
       "$type": "dimension",
       "$description": "table.borderWidth — Table border width (1px). Thin borders define cells without visual heaviness. Used for outer border and cell dividers."
     },
-    "borderRadius": {
-      "$value": "{radius.sm}",
-      "$type": "dimension",
-      "$description": "table.borderRadius — Table container border radius (4px). Slight rounding softens the table container. Only applies to outer border, not individual cells."
-    },
-    "transition": {
-      "duration": {
-        "$value": "{motion.duration.fast}",
-        "$type": "duration",
-        "$description": "table.transition.duration — Table row hover transition duration (100ms). Fast transition for responsive hover feedback on rows."
+    "cell": {
+      "fontSize": {
+        "lg": {
+          "$value": "{fontSizes.md}",
+          "$type": "dimension",
+          "$description": "table.cell.fontSize.lg — Large table font size (16px). Larger text for improved readability. Good for simple tables or accessibility needs."
+        },
+        "md": {
+          "$value": "{fontSizes.sm}",
+          "$type": "dimension",
+          "$description": "table.cell.fontSize.md — Medium table font size (14px). DEFAULT. Same as sm - keeps data compact while maintaining readability."
+        },
+        "sm": {
+          "$value": "{fontSizes.sm}",
+          "$type": "dimension",
+          "$description": "table.cell.fontSize.sm — Small table font size (14px). Standard data table text. Readable and space-efficient for most use cases."
+        },
+        "xl": {
+          "$value": "{fontSizes.md}",
+          "$type": "dimension",
+          "$description": "table.cell.fontSize.xl — Extra large table font size (16px). Same as lg - body text size for maximum readability in spacious tables."
+        },
+        "xs": {
+          "$value": "{fontSizes.xs}",
+          "$type": "dimension",
+          "$description": "table.cell.fontSize.xs — Extra small table font size (12px). Compact text for dense data tables. Use for admin panels or data-heavy views."
+        }
+      },
+      "padding": {
+        "horizontal": {
+          "lg": {
+            "$value": "{spacing.lg}",
+            "$type": "dimension",
+            "$description": "table.cell.padding.horizontal.lg — Large horizontal cell padding (20px). Spacious tables with generous breathing room. Good for simple data with few columns."
+          },
+          "md": {
+            "$value": "{spacing.md}",
+            "$type": "dimension",
+            "$description": "table.cell.padding.horizontal.md — Medium horizontal cell padding (16px). DEFAULT. Comfortable spacing for readable data. Recommended for most use cases."
+          },
+          "sm": {
+            "$value": "{spacing.sm}",
+            "$type": "dimension",
+            "$description": "table.cell.padding.horizontal.sm — Small horizontal cell padding (12px). Standard density for most data tables. Good balance of data and whitespace."
+          },
+          "xl": {
+            "$value": "{spacing.xl}",
+            "$type": "dimension",
+            "$description": "table.cell.padding.horizontal.xl — Extra large horizontal cell padding (32px). Very spacious tables for presentation or limited data. Maximum readability."
+          },
+          "xs": {
+            "$value": "{spacing.xs}",
+            "$type": "dimension",
+            "$description": "table.cell.padding.horizontal.xs — Extra small horizontal cell padding (10px). Dense tables for compact data display. Use when horizontal space is limited."
+          }
+        },
+        "vertical": {
+          "lg": {
+            "$value": "0.75rem",
+            "$type": "dimension",
+            "$description": "table.cell.padding.vertical.lg — Large vertical cell padding (12px). Taller rows for better touch targets and readability. Good for mobile or complex cell content."
+          },
+          "md": {
+            "$value": "0.5rem",
+            "$type": "dimension",
+            "$description": "table.cell.padding.vertical.md — Medium vertical cell padding (8px). DEFAULT. Comfortable row height for general use. Good for scanning and selecting rows."
+          },
+          "sm": {
+            "$value": "0.375rem",
+            "$type": "dimension",
+            "$description": "table.cell.padding.vertical.sm — Small vertical cell padding (6px). Standard density rows for most data tables. Efficient use of vertical space."
+          },
+          "xl": {
+            "$value": "1rem",
+            "$type": "dimension",
+            "$description": "table.cell.padding.vertical.xl — Extra large vertical cell padding (16px). Maximum row height for spacious tables. Use for rich cell content or presentation."
+          },
+          "xs": {
+            "$value": "0.25rem",
+            "$type": "dimension",
+            "$description": "table.cell.padding.vertical.xs — Extra small vertical cell padding (4px). Compact rows for dense data display like logs or detailed admin views."
+          }
+        }
       }
     },
     "color": {
@@ -120,11 +101,6 @@
           "$value": "{color.bg.surface.elevated}",
           "$type": "color",
           "$description": "table.color.bg.header — Table header background color."
-        },
-        "striped": {
-          "$value": "{color.bg.surface.elevated}",
-          "$type": "color",
-          "$description": "table.color.bg.striped — Alternating row background color."
         },
         "hover": {
           "$value": "{color.bg.surface.elevated}",
@@ -135,12 +111,36 @@
           "$value": "{color.bg.interactive.selected}",
           "$type": "color",
           "$description": "table.color.bg.selected — Selected row background color."
+        },
+        "striped": {
+          "$value": "{color.bg.surface.elevated}",
+          "$type": "color",
+          "$description": "table.color.bg.striped — Alternating row background color."
         }
       },
       "border": {
         "$value": "{color.border.surface.default}",
         "$type": "color",
         "$description": "table.color.border — Table border color."
+      }
+    },
+    "header": {
+      "fontSize": {
+        "$value": "{fontSizes.sm}",
+        "$type": "dimension",
+        "$description": "table.header.fontSize — Table header font size (14px). Same as cell text but distinguished by weight and color. Consistent sizing aids alignment."
+      },
+      "fontWeight": {
+        "$value": "{fontWeights.semibold}",
+        "$type": "fontWeights",
+        "$description": "table.header.fontWeight — Table header font weight (600). Semibold headers clearly distinguish column labels from data. Important for scanability."
+      }
+    },
+    "transition": {
+      "duration": {
+        "$value": "{motion.duration.fast}",
+        "$type": "duration",
+        "$description": "table.transition.duration — Table row hover transition duration (100ms). Fast transition for responsive hover feedback on rows."
       }
     }
   }

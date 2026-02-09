@@ -3,12 +3,12 @@
     "fontFamilies": {
         "$type": "fontFamilies",
         "body": {
-            "$value": "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Body font stack for Mantine theme. Roboto is Google's signature typeface, optimized for readability on screens."
+            "$description": "Body font stack for Mantine theme. Roboto is Google's signature typeface, optimized for readability on screens.",
+            "$value": "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif"
         },
         "heading": {
-            "$value": "LobsterTwo, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Heading font stack for Mantine theme. Uses Roboto for consistent typography across headings and body."
+            "$description": "Heading font stack for Mantine theme. Uses Roboto for consistent typography across headings and body.",
+            "$value": "LobsterTwo, Helvetica Neue, Helvetica, Arial, sans-serif"
         }
     }
 }

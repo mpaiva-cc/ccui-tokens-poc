@@ -2,44 +2,142 @@
     "$description": "Vanilla Mantine light theme shadows. Default Mantine shadow values using rem units.",
     "boxShadow": {
         "$type": "boxShadow",
-        "xs": {
+        "lg": {
+            "$description": "Default Mantine large shadow",
             "$value": [
-                { "x": "0", "y": "0.0625rem", "blur": "0.1875rem", "spread": "0", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "0.0625rem", "blur": "0.125rem", "spread": "0", "color": "rgba(0, 0, 0, 0.1)", "type": "dropShadow" }
-            ],
-            "$description": "Default Mantine extra small shadow"
-        },
-        "sm": {
-            "$value": [
-                { "x": "0", "y": "0.0625rem", "blur": "0.1875rem", "spread": "0", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "0.625rem", "blur": "0.9375rem", "spread": "-0.3125rem", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "0.4375rem", "blur": "0.4375rem", "spread": "-0.3125rem", "color": "rgba(0, 0, 0, 0.04)", "type": "dropShadow" }
-            ],
-            "$description": "Default Mantine small shadow"
+                {
+                    "blur": "0.1875rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "0",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.0625rem"
+                },
+                {
+                    "blur": "1.4375rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "-0.4375rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "1.75rem"
+                },
+                {
+                    "blur": "0.75rem",
+                    "color": "rgba(0, 0, 0, 0.04)",
+                    "spread": "-0.4375rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.75rem"
+                }
+            ]
         },
         "md": {
+            "$description": "Default Mantine medium shadow",
             "$value": [
-                { "x": "0", "y": "0.0625rem", "blur": "0.1875rem", "spread": "0", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "1.25rem", "blur": "1.5625rem", "spread": "-0.3125rem", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "0.625rem", "blur": "0.625rem", "spread": "-0.3125rem", "color": "rgba(0, 0, 0, 0.04)", "type": "dropShadow" }
-            ],
-            "$description": "Default Mantine medium shadow"
+                {
+                    "blur": "0.1875rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "0",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.0625rem"
+                },
+                {
+                    "blur": "1.5625rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "-0.3125rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "1.25rem"
+                },
+                {
+                    "blur": "0.625rem",
+                    "color": "rgba(0, 0, 0, 0.04)",
+                    "spread": "-0.3125rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.625rem"
+                }
+            ]
         },
-        "lg": {
+        "sm": {
+            "$description": "Default Mantine small shadow",
             "$value": [
-                { "x": "0", "y": "0.0625rem", "blur": "0.1875rem", "spread": "0", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "1.75rem", "blur": "1.4375rem", "spread": "-0.4375rem", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "0.75rem", "blur": "0.75rem", "spread": "-0.4375rem", "color": "rgba(0, 0, 0, 0.04)", "type": "dropShadow" }
-            ],
-            "$description": "Default Mantine large shadow"
+                {
+                    "blur": "0.1875rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "0",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.0625rem"
+                },
+                {
+                    "blur": "0.9375rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "-0.3125rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.625rem"
+                },
+                {
+                    "blur": "0.4375rem",
+                    "color": "rgba(0, 0, 0, 0.04)",
+                    "spread": "-0.3125rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.4375rem"
+                }
+            ]
         },
         "xl": {
+            "$description": "Default Mantine extra large shadow",
             "$value": [
-                { "x": "0", "y": "0.0625rem", "blur": "0.1875rem", "spread": "0", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "2.25rem", "blur": "1.75rem", "spread": "-0.4375rem", "color": "rgba(0, 0, 0, 0.05)", "type": "dropShadow" },
-                { "x": "0", "y": "1.0625rem", "blur": "1.0625rem", "spread": "-0.4375rem", "color": "rgba(0, 0, 0, 0.04)", "type": "dropShadow" }
-            ],
-            "$description": "Default Mantine extra large shadow"
+                {
+                    "blur": "0.1875rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "0",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.0625rem"
+                },
+                {
+                    "blur": "1.75rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "-0.4375rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "2.25rem"
+                },
+                {
+                    "blur": "1.0625rem",
+                    "color": "rgba(0, 0, 0, 0.04)",
+                    "spread": "-0.4375rem",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "1.0625rem"
+                }
+            ]
+        },
+        "xs": {
+            "$description": "Default Mantine extra small shadow",
+            "$value": [
+                {
+                    "blur": "0.1875rem",
+                    "color": "rgba(0, 0, 0, 0.05)",
+                    "spread": "0",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.0625rem"
+                },
+                {
+                    "blur": "0.125rem",
+                    "color": "rgba(0, 0, 0, 0.1)",
+                    "spread": "0",
+                    "type": "dropShadow",
+                    "x": "0",
+                    "y": "0.0625rem"
+                }
+            ]
         }
     }
 }

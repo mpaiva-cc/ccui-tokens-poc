@@ -1,128 +1,59 @@
 {
   "tabs": {
-    "list": {
-      "gap": {
-        "$value": "0",
-        "$description": "tabs.list.gap — Gap between tabs (0px). Zero gap creates connected tabs that appear as a unified navigation bar. Individual tabs handle their own spacing via padding."
+    "color": {
+      "border": {
+        "$value": "{color.border.surface.default}",
+        "$type": "color",
+        "$description": "tabs.color.border — Tab list border color."
       },
-      "borderWidth": {
-        "$value": "{borderWidth.thin}",
-        "$type": "dimension",
-        "$description": "tabs.list.borderWidth — Tab list bottom border width (1px). Subtle line separating tabs from content. The active indicator overlays this border."
-      }
-    },
-    "tab": {
-      "height": {
-        "xs": {
-          "$value": "1.75rem",
-          "$type": "dimension",
-          "$description": "tabs.tab.height.xs — Extra small tab height (28px). Use for: compact navigation, secondary tab sets, dense admin interfaces. Minimal vertical space."
-        },
-        "sm": {
-          "$value": "2rem",
-          "$type": "dimension",
-          "$description": "tabs.tab.height.sm — Small tab height (32px). Use for: standard-density navigation, sidebar tabs, space-efficient layouts."
-        },
-        "md": {
-          "$value": "2.25rem",
-          "$type": "dimension",
-          "$description": "tabs.tab.height.md — Medium tab height (36px). DEFAULT. Use for: most tab navigation, main content tabs, settings panels. Comfortable click/tap target."
-        },
-        "lg": {
-          "$value": "2.5rem",
-          "$type": "dimension",
-          "$description": "tabs.tab.height.lg — Large tab height (40px). Use for: prominent navigation tabs, touch-optimized interfaces, hero section tabs."
-        },
-        "xl": {
-          "$value": "3rem",
-          "$type": "dimension",
-          "$description": "tabs.tab.height.xl — Extra large tab height (48px). Use for: high-emphasis navigation, full-width primary tabs, maximum touch target size."
+      "indicator": {
+        "active": {
+          "$value": "{color.action.border.primary.default}",
+          "$type": "color",
+          "$description": "tabs.color.indicator.active — Active tab indicator color."
         }
       },
-      "padding": {
-        "horizontal": {
-          "xs": {
-            "$value": "{spacing.xs}",
-            "$type": "dimension",
-            "$description": "tabs.tab.padding.horizontal.xs — Extra small horizontal tab padding (10px). Compact spacing for xs tabs and dense navigation."
+      "text": {
+        "active": {
+          "$value": "{color.action.text.onSurface}",
+          "$type": "color",
+          "$description": "tabs.color.text.active — Active tab text color."
+        },
+        "default": {
+          "default": {
+            "$value": "{color.text.secondary}",
+            "$type": "color",
+            "$description": "tabs.color.text.default.default — Inactive tab text color."
           },
-          "sm": {
-            "$value": "{spacing.sm}",
-            "$type": "dimension",
-            "$description": "tabs.tab.padding.horizontal.sm — Small horizontal tab padding (12px). Standard padding for sm tabs and efficient layouts."
-          },
-          "md": {
-            "$value": "{spacing.md}",
-            "$type": "dimension",
-            "$description": "tabs.tab.padding.horizontal.md — Medium horizontal tab padding (16px). DEFAULT. Comfortable padding for most tab navigation."
-          },
-          "lg": {
-            "$value": "{spacing.lg}",
-            "$type": "dimension",
-            "$description": "tabs.tab.padding.horizontal.lg — Large horizontal tab padding (20px). Generous padding for prominent tabs with breathing room."
-          },
-          "xl": {
-            "$value": "{spacing.xl}",
-            "$type": "dimension",
-            "$description": "tabs.tab.padding.horizontal.xl — Extra large horizontal tab padding (32px). Maximum padding for high-emphasis, spacious tabs."
+          "hover": {
+            "$value": "{color.text.default}",
+            "$type": "color",
+            "$description": "tabs.color.text.default.hover — Tab hover text color."
           }
         }
-      },
-      "fontSize": {
-        "xs": {
-          "$value": "{fontSizes.xs}",
-          "$type": "dimension",
-          "$description": "tabs.tab.fontSize.xs — Extra small tab font size (12px). Compact text for xs tabs. Use for secondary or crowded navigation."
-        },
-        "sm": {
-          "$value": "{fontSizes.sm}",
-          "$type": "dimension",
-          "$description": "tabs.tab.fontSize.sm — Small tab font size (14px). Standard text size for most tab navigation. Readable and space-efficient."
-        },
-        "md": {
-          "$value": "{fontSizes.sm}",
-          "$type": "dimension",
-          "$description": "tabs.tab.fontSize.md — Medium tab font size (14px). DEFAULT. Same as sm - keeps tabs subordinate to main content while remaining readable."
-        },
-        "lg": {
-          "$value": "{fontSizes.md}",
-          "$type": "dimension",
-          "$description": "tabs.tab.fontSize.lg — Large tab font size (16px). Larger text for prominent tabs. Good for hero navigation or limited tab count."
-        },
-        "xl": {
-          "$value": "{fontSizes.md}",
-          "$type": "dimension",
-          "$description": "tabs.tab.fontSize.xl — Extra large tab font size (16px). Same as lg - maintains readability without becoming oversized headers."
-        }
-      },
-      "fontWeight": {
-        "default": {
-          "$value": "{fontWeights.regular}",
-          "$type": "fontWeights",
-          "$description": "tabs.tab.fontWeight.default — Default (inactive) tab font weight (400). Regular weight for inactive tabs keeps them visually subordinate."
-        },
-        "active": {
-          "$value": "{fontWeights.medium}",
-          "$type": "fontWeights",
-          "$description": "tabs.tab.fontWeight.active — Active tab font weight (500). Medium weight provides subtle emphasis for the selected tab without being too heavy."
-        }
-      },
-      "borderRadius": {
-        "$value": "{radius.sm}",
-        "$type": "dimension",
-        "$description": "tabs.tab.borderRadius — Tab border radius (4px). Used for 'pills' variant tabs where each tab has a rounded background. Not visible in default underlined tabs."
       }
     },
     "indicator": {
-      "height": {
-        "$value": "0.125rem",
-        "$type": "dimension",
-        "$description": "tabs.indicator.height — Indicator height (2px). Thin underline below active tab. Visible enough to clearly indicate selection without being heavy."
-      },
       "borderRadius": {
         "$value": "{radius.xs}",
         "$type": "dimension",
         "$description": "tabs.indicator.borderRadius — Indicator border radius (2px). Slightly rounded ends soften the indicator line. Barely perceptible but adds polish."
+      },
+      "height": {
+        "$value": "0.125rem",
+        "$type": "dimension",
+        "$description": "tabs.indicator.height — Indicator height (2px). Thin underline below active tab. Visible enough to clearly indicate selection without being heavy."
+      }
+    },
+    "list": {
+      "borderWidth": {
+        "$value": "{borderWidth.thin}",
+        "$type": "dimension",
+        "$description": "tabs.list.borderWidth — Tab list bottom border width (1px). Subtle line separating tabs from content. The active indicator overlays this border."
+      },
+      "gap": {
+        "$value": "0",
+        "$description": "tabs.list.gap — Gap between tabs (0px). Zero gap creates connected tabs that appear as a unified navigation bar. Individual tabs handle their own spacing via padding."
       }
     },
     "panel": {
@@ -131,6 +62,108 @@
           "$value": "{spacing.md}",
           "$type": "dimension",
           "$description": "tabs.panel.padding.top — Panel top padding (16px). Space between tab bar and panel content. Provides visual separation without excessive gap."
+        }
+      }
+    },
+    "tab": {
+      "borderRadius": {
+        "$value": "{radius.sm}",
+        "$type": "dimension",
+        "$description": "tabs.tab.borderRadius — Tab border radius (4px). Used for 'pills' variant tabs where each tab has a rounded background. Not visible in default underlined tabs."
+      },
+      "fontSize": {
+        "lg": {
+          "$value": "{fontSizes.md}",
+          "$type": "dimension",
+          "$description": "tabs.tab.fontSize.lg — Large tab font size (16px). Larger text for prominent tabs. Good for hero navigation or limited tab count."
+        },
+        "md": {
+          "$value": "{fontSizes.sm}",
+          "$type": "dimension",
+          "$description": "tabs.tab.fontSize.md — Medium tab font size (14px). DEFAULT. Same as sm - keeps tabs subordinate to main content while remaining readable."
+        },
+        "sm": {
+          "$value": "{fontSizes.sm}",
+          "$type": "dimension",
+          "$description": "tabs.tab.fontSize.sm — Small tab font size (14px). Standard text size for most tab navigation. Readable and space-efficient."
+        },
+        "xl": {
+          "$value": "{fontSizes.md}",
+          "$type": "dimension",
+          "$description": "tabs.tab.fontSize.xl — Extra large tab font size (16px). Same as lg - maintains readability without becoming oversized headers."
+        },
+        "xs": {
+          "$value": "{fontSizes.xs}",
+          "$type": "dimension",
+          "$description": "tabs.tab.fontSize.xs — Extra small tab font size (12px). Compact text for xs tabs. Use for secondary or crowded navigation."
+        }
+      },
+      "fontWeight": {
+        "active": {
+          "$value": "{fontWeights.medium}",
+          "$type": "fontWeights",
+          "$description": "tabs.tab.fontWeight.active — Active tab font weight (500). Medium weight provides subtle emphasis for the selected tab without being too heavy."
+        },
+        "default": {
+          "$value": "{fontWeights.regular}",
+          "$type": "fontWeights",
+          "$description": "tabs.tab.fontWeight.default — Default (inactive) tab font weight (400). Regular weight for inactive tabs keeps them visually subordinate."
+        }
+      },
+      "height": {
+        "lg": {
+          "$value": "2.5rem",
+          "$type": "dimension",
+          "$description": "tabs.tab.height.lg — Large tab height (40px). Use for: prominent navigation tabs, touch-optimized interfaces, hero section tabs."
+        },
+        "md": {
+          "$value": "2.25rem",
+          "$type": "dimension",
+          "$description": "tabs.tab.height.md — Medium tab height (36px). DEFAULT. Use for: most tab navigation, main content tabs, settings panels. Comfortable click/tap target."
+        },
+        "sm": {
+          "$value": "2rem",
+          "$type": "dimension",
+          "$description": "tabs.tab.height.sm — Small tab height (32px). Use for: standard-density navigation, sidebar tabs, space-efficient layouts."
+        },
+        "xl": {
+          "$value": "3rem",
+          "$type": "dimension",
+          "$description": "tabs.tab.height.xl — Extra large tab height (48px). Use for: high-emphasis navigation, full-width primary tabs, maximum touch target size."
+        },
+        "xs": {
+          "$value": "1.75rem",
+          "$type": "dimension",
+          "$description": "tabs.tab.height.xs — Extra small tab height (28px). Use for: compact navigation, secondary tab sets, dense admin interfaces. Minimal vertical space."
+        }
+      },
+      "padding": {
+        "horizontal": {
+          "lg": {
+            "$value": "{spacing.lg}",
+            "$type": "dimension",
+            "$description": "tabs.tab.padding.horizontal.lg — Large horizontal tab padding (20px). Generous padding for prominent tabs with breathing room."
+          },
+          "md": {
+            "$value": "{spacing.md}",
+            "$type": "dimension",
+            "$description": "tabs.tab.padding.horizontal.md — Medium horizontal tab padding (16px). DEFAULT. Comfortable padding for most tab navigation."
+          },
+          "sm": {
+            "$value": "{spacing.sm}",
+            "$type": "dimension",
+            "$description": "tabs.tab.padding.horizontal.sm — Small horizontal tab padding (12px). Standard padding for sm tabs and efficient layouts."
+          },
+          "xl": {
+            "$value": "{spacing.xl}",
+            "$type": "dimension",
+            "$description": "tabs.tab.padding.horizontal.xl — Extra large horizontal tab padding (32px). Maximum padding for high-emphasis, spacious tabs."
+          },
+          "xs": {
+            "$value": "{spacing.xs}",
+            "$type": "dimension",
+            "$description": "tabs.tab.padding.horizontal.xs — Extra small horizontal tab padding (10px). Compact spacing for xs tabs and dense navigation."
+          }
         }
       }
     },
@@ -143,39 +176,6 @@
       "easing": {
         "$value": "{motion.easing.easeOut}",
         "$description": "tabs.transition.easing — Tab transition easing (ease-out). Smooth deceleration for indicator movement and state changes."
-      }
-    },
-    "color": {
-      "indicator": {
-        "active": {
-          "$value": "{color.action.border.primary.default}",
-          "$type": "color",
-          "$description": "tabs.color.indicator.active — Active tab indicator color."
-        }
-      },
-      "text": {
-        "default": {
-          "default": {
-            "$value": "{color.text.secondary}",
-            "$type": "color",
-            "$description": "tabs.color.text.default.default — Inactive tab text color."
-          },
-          "hover": {
-            "$value": "{color.text.default}",
-            "$type": "color",
-            "$description": "tabs.color.text.default.hover — Tab hover text color."
-          }
-        },
-        "active": {
-          "$value": "{color.action.text.onSurface}",
-          "$type": "color",
-          "$description": "tabs.color.text.active — Active tab text color."
-        }
-      },
-      "border": {
-        "$value": "{color.border.surface.default}",
-        "$type": "color",
-        "$description": "tabs.color.border — Tab list border color."
       }
     }
   }

@@ -1,92 +1,92 @@
 {
     "$description": "Card component tokens. These tokens compose primitive tokens into card-specific configurations for consistent card styling across the design system.",
     "card": {
-        "padding": {
-            "$type": "dimension",
-            "xs": {
-                "$value": "{spacing.xs}",
-                "$description": "Extra small card padding"
-            },
-            "sm": {
-                "$value": "{spacing.sm}",
-                "$description": "Small card padding"
-            },
-            "md": {
-                "$value": "{spacing.md}",
-                "$description": "Medium card padding. DEFAULT."
-            },
-            "lg": {
-                "$value": "{spacing.lg}",
-                "$description": "Large card padding"
-            },
-            "xl": {
-                "$value": "{spacing.xl}",
-                "$description": "Extra large card padding"
-            }
-        },
         "borderRadius": {
-            "$value": "{radius.md}",
+            "$description": "Card border radius",
             "$type": "dimension",
-            "$description": "Card border radius"
+            "$value": "{radius.md}"
         },
         "borderWidth": {
-            "$value": "{borderWidth.thin}",
+            "$description": "Card border width",
             "$type": "dimension",
-            "$description": "Card border width"
-        },
-        "shadow": {
-            "$description": "Card shadow variants",
-            "none": {
-                "$value": "none",
-                "$description": "No shadow. Use for flat card variants or on dark backgrounds."
-            },
-            "sm": {
-                "$value": "{boxShadow.sm}",
-                "$description": "Small card shadow for subtle elevation"
-            },
-            "md": {
-                "$value": "{boxShadow.md}",
-                "$description": "Medium card shadow. DEFAULT."
-            },
-            "lg": {
-                "$value": "{boxShadow.lg}",
-                "$description": "Large card shadow for prominent elevation"
-            }
-        },
-        "section": {
-            "$description": "Card section configuration",
-            "padding": {
-                "$value": "{spacing.md}",
-                "$type": "dimension",
-                "$description": "Card section padding"
-            },
-            "gap": {
-                "$value": "{spacing.md}",
-                "$type": "dimension",
-                "$description": "Gap between card sections"
-            }
-        },
-        "transition": {
-            "duration": {
-                "$value": "{motion.duration.normal}",
-                "$description": "Card hover/interaction transition duration"
-            },
-            "easing": {
-                "$value": "{motion.easing.easeOut}",
-                "$description": "Card transition easing"
-            }
+            "$value": "{borderWidth.thin}"
         },
         "color": {
             "$description": "Card component color tokens. These reference semantic color tokens for theme-aware styling.",
             "bg": {
-                "$value": "{color.bg.surface.default}",
+                "$description": "Card background color.",
                 "$type": "color",
-                "$description": "Card background color."
+                "$value": "{color.bg.surface.default}"
             },
             "border": {
-                "$value": "{color.border.surface.default}",
+                "$description": "Card border color.",
                 "$type": "color",
-                "$description": "Card border color."
+                "$value": "{color.border.surface.default}"
+            }
+        },
+        "padding": {
+            "$type": "dimension",
+            "lg": {
+                "$description": "Large card padding",
+                "$value": "{spacing.lg}"
+            },
+            "md": {
+                "$description": "Medium card padding. DEFAULT.",
+                "$value": "{spacing.md}"
+            },
+            "sm": {
+                "$description": "Small card padding",
+                "$value": "{spacing.sm}"
+            },
+            "xl": {
+                "$description": "Extra large card padding",
+                "$value": "{spacing.xl}"
+            },
+            "xs": {
+                "$description": "Extra small card padding",
+                "$value": "{spacing.xs}"
+            }
+        },
+        "section": {
+            "$description": "Card section configuration",
+            "gap": {
+                "$description": "Gap between card sections",
+                "$type": "dimension",
+                "$value": "{spacing.md}"
+            },
+            "padding": {
+                "$description": "Card section padding",
+                "$type": "dimension",
+                "$value": "{spacing.md}"
+            }
+        },
+        "shadow": {
+            "$description": "Card shadow variants",
+            "lg": {
+                "$description": "Large card shadow for prominent elevation",
+                "$value": "{boxShadow.lg}"
+            },
+            "md": {
+                "$description": "Medium card shadow. DEFAULT.",
+                "$value": "{boxShadow.md}"
+            },
+            "none": {
+                "$description": "No shadow. Use for flat card variants or on dark backgrounds.",
+                "$value": "none"
+            },
+            "sm": {
+                "$description": "Small card shadow for subtle elevation",
+                "$value": "{boxShadow.sm}"
+            }
+        },
+        "transition": {
+            "duration": {
+                "$description": "Card hover/interaction transition duration",
+                "$value": "{motion.duration.normal}"
+            },
+            "easing": {
+                "$description": "Card transition easing",
+                "$value": "{motion.easing.easeOut}"
             }
         }
     }

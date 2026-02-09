@@ -3,16 +3,16 @@
     "fontFamilies": {
         "$type": "fontFamilies",
         "body": {
-            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Primary body font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support."
+            "$description": "Primary body font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support.",
+            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
         },
         "heading": {
-            "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Heading/display font stack optimized for accessibility. Atkinson Hyperlegible Next (by Braille Institute) is designed for maximum legibility, especially for users with low vision. Use for: page titles, section headings, hero text, marketing content. Distinct letterforms reduce character confusion. Falls back to Public Sans for consistency."
+            "$description": "Heading/display font stack optimized for accessibility. Atkinson Hyperlegible Next (by Braille Institute) is designed for maximum legibility, especially for users with low vision. Use for: page titles, section headings, hero text, marketing content. Distinct letterforms reduce character confusion. Falls back to Public Sans for consistency.",
+            "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
         },
         "mono": {
-            "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-            "$description": "Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment."
+            "$description": "Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment.",
+            "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
         }
     }
 }
