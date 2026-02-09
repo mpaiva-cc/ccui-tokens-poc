@@ -35,13 +35,13 @@ function isPrimitiveColorToken(token) {
     const path = token.path;
     if (path[0] !== 'color') return false;
 
-    // color.white, color.black, color.transparent
-    if (path.length === 2 && ['white', 'black', 'transparent'].includes(path[1])) {
+    // color.base.white, color.base.black, color.base.transparent
+    if (path[1] === 'base' && path.length === 3 && ['white', 'black', 'transparent'].includes(path[2])) {
         return true;
     }
 
-    // color.{palette}.{0-9} - primitive palette shades
-    if (path.length === 3 && MANTINE_PALETTES.includes(path[1]) && /^[0-9]$/.test(path[2])) {
+    // color.base.{palette}.{0-9} - primitive palette shades
+    if (path[1] === 'base' && path.length === 4 && MANTINE_PALETTES.includes(path[2]) && /^[0-9]$/.test(path[3])) {
         return true;
     }
 

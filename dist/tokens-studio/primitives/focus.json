@@ -12,7 +12,7 @@
         "$description": "focus.ring.offset — Focus ring offset from element (2px). Creates gap between element and focus ring for clarity. Use for: outline-offset property. Prevents focus ring from overlapping element borders. Ensures ring is visible on both light and dark backgrounds."
       },
       "color": {
-        "$value": "{color.blue.5}",
+        "$value": "{color.base.blue.5}",
         "$type": "color",
         "$description": "focus.ring.color — Focus ring color (primary blue). High-visibility color that works on most backgrounds. Reference to color.blue.5 for consistency with primary brand color. ACCESSIBILITY: Ensure 3:1 contrast ratio against adjacent colors. May need adjustment for dark theme."
       }

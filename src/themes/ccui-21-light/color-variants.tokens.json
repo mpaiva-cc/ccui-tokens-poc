@@ -4,18 +4,18 @@
         "$type": "color",
         "dark": {
             "text": {
-                "$value": "{color.dark.6}",
+                "$value": "{color.base.dark.6}",
                 "$type": "color",
                 "$description": "Text color for dark theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.dark.6}",
+                    "$value": "{color.base.dark.6}",
                     "$type": "color",
                     "$description": "Filled background for dark elements."
                 },
                 "hover": {
-                    "$value": "{color.dark.7}",
+                    "$value": "{color.base.dark.7}",
                     "$type": "color",
                     "$description": "Hover state for dark filled elements"
                 }
@@ -32,14 +32,14 @@
                     "$description": "Hover state for dark light elements, equal to applying 0.12 opacity to colorPalette.dark.6"
                 },
                 "text": {
-                    "$value": "{color.dark.6}",
+                    "$value": "{color.base.dark.6}",
                     "$type": "color",
                     "$description": "Text color for dark light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.dark.6}",
+                    "$value": "{color.base.dark.6}",
                     "$type": "color",
                     "$description": "Outline color for dark elements"
                 },
@@ -52,18 +52,18 @@
         },
         "gray": {
             "text": {
-                "$value": "{color.gray.6}",
+                "$value": "{color.base.gray.6}",
                 "$type": "color",
                 "$description": "Text color for gray theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.gray.6}",
+                    "$value": "{color.base.gray.6}",
                     "$type": "color",
                     "$description": "Filled background for gray elements"
                 },
                 "hover": {
-                    "$value": "{color.gray.7}",
+                    "$value": "{color.base.gray.7}",
                     "$type": "color",
                     "$description": "Hover state for gray filled elements"
                 }
@@ -80,14 +80,14 @@
                     "$description": "Hover state for gray light elements"
                 },
                 "text": {
-                    "$value": "{color.gray.6}",
+                    "$value": "{color.base.gray.6}",
                     "$type": "color",
                     "$description": "Text color for gray light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.gray.6}",
+                    "$value": "{color.base.gray.6}",
                     "$type": "color",
                     "$description": "Outline color for gray elements"
                 },
@@ -100,18 +100,18 @@
         },
         "red": {
             "text": {
-                "$value": "{color.red.6}",
+                "$value": "{color.base.red.6}",
                 "$type": "color",
                 "$description": "Text color for red theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.red.6}",
+                    "$value": "{color.base.red.6}",
                     "$type": "color",
                     "$description": "Filled background for red elements"
                 },
                 "hover": {
-                    "$value": "{color.red.7}",
+                    "$value": "{color.base.red.7}",
                     "$type": "color",
                     "$description": "Hover state for red filled elements"
                 }
@@ -128,14 +128,14 @@
                     "$description": "Hover state for red light elements"
                 },
                 "text": {
-                    "$value": "{color.red.6}",
+                    "$value": "{color.base.red.6}",
                     "$type": "color",
                     "$description": "Text color for red light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.red.6}",
+                    "$value": "{color.base.red.6}",
                     "$type": "color",
                     "$description": "Outline color for red elements"
                 },
@@ -148,18 +148,18 @@
         },
         "pink": {
             "text": {
-                "$value": "{color.pink.6}",
+                "$value": "{color.base.pink.6}",
                 "$type": "color",
                 "$description": "Text color for pink theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.pink.6}",
+                    "$value": "{color.base.pink.6}",
                     "$type": "color",
                     "$description": "Filled background for pink elements"
                 },
                 "hover": {
-                    "$value": "{color.pink.7}",
+                    "$value": "{color.base.pink.7}",
                     "$type": "color",
                     "$description": "Hover state for pink filled elements"
                 }
@@ -176,14 +176,14 @@
                     "$description": "Hover state for pink light elements"
                 },
                 "text": {
-                    "$value": "{color.pink.6}",
+                    "$value": "{color.base.pink.6}",
                     "$type": "color",
                     "$description": "Text color for pink light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.pink.6}",
+                    "$value": "{color.base.pink.6}",
                     "$type": "color",
                     "$description": "Outline color for pink elements"
                 },
@@ -196,18 +196,18 @@
         },
         "grape": {
             "text": {
-                "$value": "{color.grape.6}",
+                "$value": "{color.base.grape.6}",
                 "$type": "color",
                 "$description": "Text color for grape theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.grape.6}",
+                    "$value": "{color.base.grape.6}",
                     "$type": "color",
                     "$description": "Filled background for grape elements"
                 },
                 "hover": {
-                    "$value": "{color.grape.7}",
+                    "$value": "{color.base.grape.7}",
                     "$type": "color",
                     "$description": "Hover state for grape filled elements"
                 }
@@ -224,14 +224,14 @@
                     "$description": "Hover state for grape light elements"
                 },
                 "text": {
-                    "$value": "{color.grape.6}",
+                    "$value": "{color.base.grape.6}",
                     "$type": "color",
                     "$description": "Text color for grape light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.grape.6}",
+                    "$value": "{color.base.grape.6}",
                     "$type": "color",
                     "$description": "Outline color for grape elements"
                 },
@@ -244,18 +244,18 @@
         },
         "violet": {
             "text": {
-                "$value": "{color.violet.6}",
+                "$value": "{color.base.violet.6}",
                 "$type": "color",
                 "$description": "Text color for violet theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.violet.6}",
+                    "$value": "{color.base.violet.6}",
                     "$type": "color",
                     "$description": "Filled background for violet elements"
                 },
                 "hover": {
-                    "$value": "{color.violet.7}",
+                    "$value": "{color.base.violet.7}",
                     "$type": "color",
                     "$description": "Hover state for violet filled elements"
                 }
@@ -272,14 +272,14 @@
                     "$description": "Hover state for violet light elements"
                 },
                 "text": {
-                    "$value": "{color.violet.6}",
+                    "$value": "{color.base.violet.6}",
                     "$type": "color",
                     "$description": "Text color for violet light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.violet.6}",
+                    "$value": "{color.base.violet.6}",
                     "$type": "color",
                     "$description": "Outline color for violet elements"
                 },
@@ -292,18 +292,18 @@
         },
         "indigo": {
             "text": {
-                "$value": "{color.indigo.6}",
+                "$value": "{color.base.indigo.6}",
                 "$type": "color",
                 "$description": "Text color for indigo theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.indigo.6}",
+                    "$value": "{color.base.indigo.6}",
                     "$type": "color",
                     "$description": "Filled background for indigo elements"
                 },
                 "hover": {
-                    "$value": "{color.indigo.7}",
+                    "$value": "{color.base.indigo.7}",
                     "$type": "color",
                     "$description": "Hover state for indigo filled elements"
                 }
@@ -320,14 +320,14 @@
                     "$description": "Hover state for indigo light elements"
                 },
                 "text": {
-                    "$value": "{color.indigo.6}",
+                    "$value": "{color.base.indigo.6}",
                     "$type": "color",
                     "$description": "Text color for indigo light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.indigo.6}",
+                    "$value": "{color.base.indigo.6}",
                     "$type": "color",
                     "$description": "Outline color for indigo elements"
                 },
@@ -340,18 +340,18 @@
         },
         "blue": {
             "text": {
-                "$value": "{color.blue.6}",
+                "$value": "{color.base.blue.6}",
                 "$type": "color",
                 "$description": "Text color for blue theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.blue.7}",
+                    "$value": "{color.base.blue.7}",
                     "$type": "color",
                     "$description": "Filled background for blue elements"
                 },
                 "hover": {
-                    "$value": "{color.blue.8}",
+                    "$value": "{color.base.blue.8}",
                     "$type": "color",
                     "$description": "Hover state for blue filled elements"
                 }
@@ -368,14 +368,14 @@
                     "$description": "Hover state for blue light elements"
                 },
                 "text": {
-                    "$value": "{color.blue.6}",
+                    "$value": "{color.base.blue.6}",
                     "$type": "color",
                     "$description": "Text color for blue light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.blue.7}",
+                    "$value": "{color.base.blue.7}",
                     "$type": "color",
                     "$description": "Outline color for blue elements"
                 },
@@ -388,18 +388,18 @@
         },
         "cyan": {
             "text": {
-                "$value": "{color.cyan.6}",
+                "$value": "{color.base.cyan.6}",
                 "$type": "color",
                 "$description": "Text color for cyan theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.cyan.6}",
+                    "$value": "{color.base.cyan.6}",
                     "$type": "color",
                     "$description": "Filled background for cyan elements"
                 },
                 "hover": {
-                    "$value": "{color.cyan.7}",
+                    "$value": "{color.base.cyan.7}",
                     "$type": "color",
                     "$description": "Hover state for cyan filled elements"
                 }
@@ -416,14 +416,14 @@
                     "$description": "Hover state for cyan light elements"
                 },
                 "text": {
-                    "$value": "{color.cyan.6}",
+                    "$value": "{color.base.cyan.6}",
                     "$type": "color",
                     "$description": "Text color for cyan light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.cyan.6}",
+                    "$value": "{color.base.cyan.6}",
                     "$type": "color",
                     "$description": "Outline color for cyan elements"
                 },
@@ -436,18 +436,18 @@
         },
         "teal": {
             "text": {
-                "$value": "{color.teal.6}",
+                "$value": "{color.base.teal.6}",
                 "$type": "color",
                 "$description": "Text color for teal theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.teal.6}",
+                    "$value": "{color.base.teal.6}",
                     "$type": "color",
                     "$description": "Filled background for teal elements"
                 },
                 "hover": {
-                    "$value": "{color.teal.7}",
+                    "$value": "{color.base.teal.7}",
                     "$type": "color",
                     "$description": "Hover state for teal filled elements"
                 }
@@ -464,14 +464,14 @@
                     "$description": "Hover state for teal light elements"
                 },
                 "text": {
-                    "$value": "{color.teal.6}",
+                    "$value": "{color.base.teal.6}",
                     "$type": "color",
                     "$description": "Text color for teal light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.teal.6}",
+                    "$value": "{color.base.teal.6}",
                     "$type": "color",
                     "$description": "Outline color for teal elements"
                 },
@@ -484,18 +484,18 @@
         },
         "green": {
             "text": {
-                "$value": "{color.green.6}",
+                "$value": "{color.base.green.6}",
                 "$type": "color",
                 "$description": "Text color for green theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.green.6}",
+                    "$value": "{color.base.green.6}",
                     "$type": "color",
                     "$description": "Filled background for green elements"
                 },
                 "hover": {
-                    "$value": "{color.green.7}",
+                    "$value": "{color.base.green.7}",
                     "$type": "color",
                     "$description": "Hover state for green filled elements"
                 }
@@ -512,14 +512,14 @@
                     "$description": "Hover state for green light elements"
                 },
                 "text": {
-                    "$value": "{color.green.6}",
+                    "$value": "{color.base.green.6}",
                     "$type": "color",
                     "$description": "Text color for green light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.green.6}",
+                    "$value": "{color.base.green.6}",
                     "$type": "color",
                     "$description": "Outline color for green elements"
                 },
@@ -532,18 +532,18 @@
         },
         "lime": {
             "text": {
-                "$value": "{color.lime.6}",
+                "$value": "{color.base.lime.6}",
                 "$type": "color",
                 "$description": "Text color for lime theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.lime.6}",
+                    "$value": "{color.base.lime.6}",
                     "$type": "color",
                     "$description": "Filled background for lime elements"
                 },
                 "hover": {
-                    "$value": "{color.lime.7}",
+                    "$value": "{color.base.lime.7}",
                     "$type": "color",
                     "$description": "Hover state for lime filled elements"
                 }
@@ -560,14 +560,14 @@
                     "$description": "Hover state for lime light elements"
                 },
                 "text": {
-                    "$value": "{color.lime.6}",
+                    "$value": "{color.base.lime.6}",
                     "$type": "color",
                     "$description": "Text color for lime light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.lime.6}",
+                    "$value": "{color.base.lime.6}",
                     "$type": "color",
                     "$description": "Outline color for lime elements"
                 },
@@ -580,18 +580,18 @@
         },
         "yellow": {
             "text": {
-                "$value": "{color.yellow.6}",
+                "$value": "{color.base.yellow.6}",
                 "$type": "color",
                 "$description": "Text color for yellow theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.yellow.6}",
+                    "$value": "{color.base.yellow.6}",
                     "$type": "color",
                     "$description": "Filled background for yellow elements"
                 },
                 "hover": {
-                    "$value": "{color.yellow.7}",
+                    "$value": "{color.base.yellow.7}",
                     "$type": "color",
                     "$description": "Hover state for yellow filled elements"
                 }
@@ -608,14 +608,14 @@
                     "$description": "Hover state for yellow light elements"
                 },
                 "text": {
-                    "$value": "{color.yellow.6}",
+                    "$value": "{color.base.yellow.6}",
                     "$type": "color",
                     "$description": "Text color for yellow light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.yellow.6}",
+                    "$value": "{color.base.yellow.6}",
                     "$type": "color",
                     "$description": "Outline color for yellow elements"
                 },
@@ -628,18 +628,18 @@
         },
         "orange": {
             "text": {
-                "$value": "{color.orange.6}",
+                "$value": "{color.base.orange.6}",
                 "$type": "color",
                 "$description": "Text color for orange theme elements"
             },
             "filled": {
                 "default": {
-                    "$value": "{color.orange.6}",
+                    "$value": "{color.base.orange.6}",
                     "$type": "color",
                     "$description": "Filled background for orange elements"
                 },
                 "hover": {
-                    "$value": "{color.orange.7}",
+                    "$value": "{color.base.orange.7}",
                     "$type": "color",
                     "$description": "Hover state for orange filled elements"
                 }
@@ -656,14 +656,14 @@
                     "$description": "Hover state for orange light elements"
                 },
                 "text": {
-                    "$value": "{color.orange.6}",
+                    "$value": "{color.base.orange.6}",
                     "$type": "color",
                     "$description": "Text color for orange light elements"
                 }
             },
             "outline": {
                 "default": {
-                    "$value": "{color.orange.6}",
+                    "$value": "{color.base.orange.6}",
                     "$type": "color",
                     "$description": "Outline color for orange elements"
                 },

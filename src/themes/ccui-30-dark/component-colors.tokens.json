@@ -246,7 +246,7 @@
         },
         "thumb": {
             "off": { "$value": "{color.text.default}", "$type": "color", "$description": "Switch thumb color when off. Uses light text color for contrast on dark muted track." },
-            "on": { "$value": "{color.white}", "$type": "color", "$description": "Switch thumb color when on. White for contrast on brand-colored track." },
+            "on": { "$value": "{color.base.white}", "$type": "color", "$description": "Switch thumb color when on. White for contrast on brand-colored track." },
             "disabled": { "$value": "{color.text.disabled}", "$type": "color", "$description": "Disabled switch thumb color. Muted to indicate non-interactive state." }
         }
     },

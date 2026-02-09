@@ -1,8 +1,9 @@
 {
     "$description": "Core color palette primitives using OKLCH-optimized values for perceptual uniformity. These are raw color values - use semantic tokens (color.text, color.error, etc.) in components rather than referencing palette colors directly. Palette colors are organized in 10-shade scales (0-9) where 0 is lightest and 9 is darkest. Shades 5-6 are typically the 'base' shade for each color.",
     "color": {
-        "$type": "color",
-        "white": {
+        "base": {
+            "$type": "color",
+            "white": {
             "$value": "#ffffff",
             "$description": "Pure white. Use for: light theme backgrounds, text on dark backgrounds, card surfaces. Contrast ratio with black: 21:1 (WCAG AAA). Avoid using directly - prefer semantic tokens like color.body or color.default."
         },
@@ -195,6 +196,7 @@
             "7": { "$value": "#873f0a", "$description": "Darker orange - high contrast" },
             "8": { "$value": "#612d07", "$description": "Very dark orange - text" },
             "9": { "$value": "#3c1c04", "$description": "Darkest orange - maximum emphasis" }
+        }
         }
     }
 }
