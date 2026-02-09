@@ -1561,7 +1561,7 @@
     "heading": {
       "$description": "fontFamilies.heading — Heading font stack for Mantine theme. Uses Roboto for consistent typography across headings and body.",
       "$type": "fontFamilies",
-      "$value": "Lobster, Helvetica Neue, Helvetica, Arial, sans-serif"
+      "$value": "LobsterTwo, Helvetica Neue, Helvetica, Arial, sans-serif"
     },
     "mono": {
       "$description": "fontFamilies.mono — Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment.",
