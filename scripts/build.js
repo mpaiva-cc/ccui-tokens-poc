@@ -299,6 +299,16 @@ function getOriginalValue(token) {
     return resolvedValue;
 }
 
+/** Recursively sort object keys alphabetically. Leaf values pass through unchanged. */
+function sortKeysDeep(obj) {
+    if (obj === null || typeof obj !== 'object' || Array.isArray(obj)) return obj;
+    const sorted = {};
+    for (const key of Object.keys(obj).sort()) {
+        sorted[key] = sortKeysDeep(obj[key]);
+    }
+    return sorted;
+}
+
 function buildTokensStudioStructure(tokens) {
     const result = {};
 
@@ -333,7 +343,7 @@ function buildTokensStudioStructure(tokens) {
         }
     });
 
-    return result;
+    return sortKeysDeep(result);
 }
 
 function filterTokensBySet(tokens, setName) {
@@ -348,38 +358,41 @@ function filterTokensBySet(tokens, setName) {
 function generateTokensStudioMetadata() {
     return {
         tokenSetOrder: [
-            "primitives/color", "primitives/spacing", "primitives/radius", "primitives/typography",
-            "primitives/shadow", "primitives/motion", "primitives/border", "primitives/breakpoints",
-            "primitives/z-index", "primitives/opacity", "primitives/sizing", "primitives/focus", "primitives/system",
-            "semantic/mantine-light", "semantic/mantine-dark",
+            "primitives/border", "primitives/breakpoints", "primitives/color",
+            "primitives/focus", "primitives/motion", "primitives/opacity",
+            "primitives/radius", "primitives/shadow", "primitives/sizing",
+            "primitives/spacing", "primitives/system", "primitives/typography",
+            "primitives/z-index",
             "semantic/ccui-21-light",
-            "semantic/ccui-30-light", "semantic/ccui-30-dark",
-            "components/button", "components/input", "components/modal",
-            "components/table", "components/card", "components/badge", "components/select",
-            "components/checkbox", "components/switch", "components/alert", "components/tabs"
+            "semantic/ccui-30-dark", "semantic/ccui-30-light",
+            "semantic/mantine-dark", "semantic/mantine-light",
+            "components/alert", "components/badge", "components/button",
+            "components/card", "components/checkbox", "components/input",
+            "components/modal", "components/select", "components/switch",
+            "components/table", "components/tabs"
         ]
     };
 }
 
 function generateTokensStudioThemes() {
     const allPrimitiveSets = [
-        "primitives/color", "primitives/spacing", "primitives/radius",
-        "primitives/typography", "primitives/shadow", "primitives/motion",
-        "primitives/border", "primitives/breakpoints", "primitives/z-index",
-        "primitives/opacity", "primitives/sizing", "primitives/focus",
-        "primitives/system"
+        "primitives/border", "primitives/breakpoints", "primitives/color",
+        "primitives/focus", "primitives/motion", "primitives/opacity",
+        "primitives/radius", "primitives/shadow", "primitives/sizing",
+        "primitives/spacing", "primitives/system", "primitives/typography",
+        "primitives/z-index"
     ];
 
     const allComponentSets = [
-        "components/button", "components/input", "components/modal",
-        "components/table", "components/card", "components/badge",
-        "components/select", "components/checkbox", "components/switch",
-        "components/alert", "components/tabs"
+        "components/alert", "components/badge", "components/button",
+        "components/card", "components/checkbox", "components/input",
+        "components/modal", "components/select", "components/switch",
+        "components/table", "components/tabs"
     ];
 
     const allSemanticSetNames = [
-        "semantic/mantine-light", "semantic/mantine-dark",
-        "semantic/ccui-21-light", "semantic/ccui-30-light", "semantic/ccui-30-dark"
+        "semantic/ccui-21-light", "semantic/ccui-30-dark", "semantic/ccui-30-light",
+        "semantic/mantine-dark", "semantic/mantine-light"
     ];
 
     const toStatus = (sets, status) =>

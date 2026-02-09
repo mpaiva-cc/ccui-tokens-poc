@@ -1,109 +1,109 @@
 {
   "alert": {
-    "padding": {
-      "xs": {
-        "$value": "{spacing.xs}",
-        "$type": "dimension",
-        "$description": "alert.padding.xs — Extra small alert padding (10px). Use for: compact inline alerts, form field errors, dense notification lists. Minimal visual footprint."
-      },
-      "sm": {
-        "$value": "{spacing.sm}",
-        "$type": "dimension",
-        "$description": "alert.padding.sm — Small alert padding (12px). Use for: standard form validation, secondary notifications, space-efficient layouts."
-      },
-      "md": {
-        "$value": "{spacing.md}",
-        "$type": "dimension",
-        "$description": "alert.padding.md — Medium alert padding (16px). DEFAULT. Use for: most alerts, system notifications, prominent user feedback. Good balance of prominence and space."
-      },
-      "lg": {
-        "$value": "{spacing.lg}",
-        "$type": "dimension",
-        "$description": "alert.padding.lg — Large alert padding (20px). Use for: important system alerts, featured notifications, alerts with more content. More breathing room."
-      },
-      "xl": {
-        "$value": "{spacing.xl}",
-        "$type": "dimension",
-        "$description": "alert.padding.xl — Extra large alert padding (32px). Use for: high-emphasis critical alerts, full-width banners, alerts with rich content or actions."
-      }
-    },
     "borderRadius": {
-      "$value": "{radius.sm}",
+      "$description": "alert.borderRadius — Alert border radius (4px). Slight rounding softens the alert container. Matches other form/content containers for visual consistency.",
       "$type": "dimension",
-      "$description": "alert.borderRadius — Alert border radius (4px). Slight rounding softens the alert container. Matches other form/content containers for visual consistency."
+      "$value": "{radius.sm}"
     },
     "borderWidth": {
-      "$value": "{borderWidth.thin}",
+      "$description": "alert.borderWidth — Alert border width (1px). Thin border provides subtle container definition. Border color varies by alert variant (error, warning, success, info).",
       "$type": "dimension",
-      "$description": "alert.borderWidth — Alert border width (1px). Thin border provides subtle container definition. Border color varies by alert variant (error, warning, success, info)."
+      "$value": "{borderWidth.thin}"
     },
-    "icon": {
-      "size": {
-        "$value": "1.25rem",
+    "closeButton": {
+      "offset": {
+        "$description": "alert.closeButton.offset — Close button offset from edge (12px). Positions close button away from container edge for comfortable interaction and visual balance.",
         "$type": "dimension",
-        "$description": "alert.icon.size — Alert icon size (20px). Sized to be clearly visible alongside title/message text without dominating. Proportional to typical alert padding."
+        "$value": "{spacing.sm}"
       },
-      "gap": {
-        "$value": "{spacing.sm}",
+      "size": {
+        "$description": "alert.closeButton.size — Close button size (18px). Clickable/tappable close icon. Sized for adequate touch target while not competing with alert content.",
         "$type": "dimension",
-        "$description": "alert.icon.gap — Gap between icon and content (12px). Provides clear separation between status icon and alert text. Maintains visual association."
+        "$value": "1.125rem"
       }
     },
-    "title": {
-      "fontSize": {
-        "$value": "{fontSizes.sm}",
+    "icon": {
+      "gap": {
+        "$description": "alert.icon.gap — Gap between icon and content (12px). Provides clear separation between status icon and alert text. Maintains visual association.",
         "$type": "dimension",
-        "$description": "alert.title.fontSize — Alert title font size (14px). Same as body text but distinguished by weight. Keeps alerts compact while remaining readable."
+        "$value": "{spacing.sm}"
       },
-      "fontWeight": {
-        "$value": "{fontWeights.semibold}",
-        "$type": "fontWeights",
-        "$description": "alert.title.fontWeight — Alert title font weight (600). Semibold provides clear hierarchy between title and message without being overly heavy."
-      },
-      "lineHeight": {
-        "$value": "{lineHeights.sm}",
+      "size": {
+        "$description": "alert.icon.size — Alert icon size (20px). Sized to be clearly visible alongside title/message text without dominating. Proportional to typical alert padding.",
         "$type": "dimension",
-        "$description": "alert.title.lineHeight — Alert title line height (1.25). Tighter line height for single-line titles. Keeps alert compact vertically."
+        "$value": "1.25rem"
       }
     },
     "message": {
       "fontSize": {
-        "$value": "{fontSizes.sm}",
+        "$description": "alert.message.fontSize — Alert message font size (14px). Standard body text size for readability. Matches title size but lighter weight.",
         "$type": "dimension",
-        "$description": "alert.message.fontSize — Alert message font size (14px). Standard body text size for readability. Matches title size but lighter weight."
+        "$value": "{fontSizes.sm}"
       },
       "lineHeight": {
-        "$value": "{lineHeights.md}",
+        "$description": "alert.message.lineHeight — Alert message line height (1.5). More generous line height for multi-line messages. Improves readability of longer alert text.",
         "$type": "dimension",
-        "$description": "alert.message.lineHeight — Alert message line height (1.5). More generous line height for multi-line messages. Improves readability of longer alert text."
+        "$value": "{lineHeights.md}"
       }
     },
-    "closeButton": {
-      "size": {
-        "$value": "1.125rem",
+    "padding": {
+      "lg": {
+        "$description": "alert.padding.lg — Large alert padding (20px). Use for: important system alerts, featured notifications, alerts with more content. More breathing room.",
         "$type": "dimension",
-        "$description": "alert.closeButton.size — Close button size (18px). Clickable/tappable close icon. Sized for adequate touch target while not competing with alert content."
+        "$value": "{spacing.lg}"
       },
-      "offset": {
-        "$value": "{spacing.sm}",
+      "md": {
+        "$description": "alert.padding.md — Medium alert padding (16px). DEFAULT. Use for: most alerts, system notifications, prominent user feedback. Good balance of prominence and space.",
         "$type": "dimension",
-        "$description": "alert.closeButton.offset — Close button offset from edge (12px). Positions close button away from container edge for comfortable interaction and visual balance."
+        "$value": "{spacing.md}"
+      },
+      "sm": {
+        "$description": "alert.padding.sm — Small alert padding (12px). Use for: standard form validation, secondary notifications, space-efficient layouts.",
+        "$type": "dimension",
+        "$value": "{spacing.sm}"
+      },
+      "xl": {
+        "$description": "alert.padding.xl — Extra large alert padding (32px). Use for: high-emphasis critical alerts, full-width banners, alerts with rich content or actions.",
+        "$type": "dimension",
+        "$value": "{spacing.xl}"
+      },
+      "xs": {
+        "$description": "alert.padding.xs — Extra small alert padding (10px). Use for: compact inline alerts, form field errors, dense notification lists. Minimal visual footprint.",
+        "$type": "dimension",
+        "$value": "{spacing.xs}"
+      }
+    },
+    "title": {
+      "fontSize": {
+        "$description": "alert.title.fontSize — Alert title font size (14px). Same as body text but distinguished by weight. Keeps alerts compact while remaining readable.",
+        "$type": "dimension",
+        "$value": "{fontSizes.sm}"
+      },
+      "fontWeight": {
+        "$description": "alert.title.fontWeight — Alert title font weight (600). Semibold provides clear hierarchy between title and message without being overly heavy.",
+        "$type": "fontWeights",
+        "$value": "{fontWeights.semibold}"
+      },
+      "lineHeight": {
+        "$description": "alert.title.lineHeight — Alert title line height (1.25). Tighter line height for single-line titles. Keeps alert compact vertically.",
+        "$type": "dimension",
+        "$value": "{lineHeights.sm}"
       }
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.normal}",
+        "$description": "alert.transition.duration — Alert transition duration (200ms). Moderate duration allows the animation to be perceived without feeling slow. Balances awareness and efficiency.",
         "$type": "duration",
-        "$description": "alert.transition.duration — Alert transition duration (200ms). Moderate duration allows the animation to be perceived without feeling slow. Balances awareness and efficiency."
+        "$value": "{motion.duration.normal}"
       },
       "easing": {
         "enter": {
-          "$value": "{motion.easing.easeOut}",
-          "$description": "alert.transition.easing.enter — Alert entrance easing (ease-out). Decelerating motion - alert arrives quickly and settles into place. Feels like it's sliding in."
+          "$description": "alert.transition.easing.enter — Alert entrance easing (ease-out). Decelerating motion - alert arrives quickly and settles into place. Feels like it's sliding in.",
+          "$value": "{motion.easing.easeOut}"
         },
         "exit": {
-          "$value": "{motion.easing.easeIn}",
-          "$description": "alert.transition.easing.exit — Alert exit easing (ease-in). Accelerating motion - alert starts slow and speeds up as it leaves. Feels like it's sliding away."
+          "$description": "alert.transition.easing.exit — Alert exit easing (ease-in). Accelerating motion - alert starts slow and speeds up as it leaves. Feels like it's sliding away.",
+          "$value": "{motion.easing.easeIn}"
         }
       }
     }

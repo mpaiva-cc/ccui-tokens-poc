@@ -1,103 +1,103 @@
 {
   "modal": {
-    "padding": {
-      "header": {
-        "$value": "{spacing.lg}",
-        "$type": "dimension",
-        "$description": "modal.padding.header — Modal header padding (20px). Use for: title area containing heading and close button. Provides generous spacing for the most prominent section."
-      },
-      "body": {
-        "$value": "{spacing.lg}",
-        "$type": "dimension",
-        "$description": "modal.padding.body — Modal body content padding (20px). Use for: main dialog content area. Matches header padding for visual consistency."
-      },
-      "footer": {
-        "$value": "{spacing.md}",
-        "$type": "dimension",
-        "$description": "modal.padding.footer — Modal footer padding (16px). Use for: action button container. Slightly tighter than body to visually separate actions from content."
-      }
-    },
     "borderRadius": {
-      "$value": "{radius.lg}",
+      "$description": "modal.borderRadius — Modal container border radius (16px). Large radius creates a friendly, approachable feel for elevated floating elements. Consistent with card and popover radii.",
       "$type": "dimension",
-      "$description": "modal.borderRadius — Modal container border radius (16px). Large radius creates a friendly, approachable feel for elevated floating elements. Consistent with card and popover radii."
-    },
-    "width": {
-      "xs": {
-        "$value": "20rem",
-        "$type": "dimension",
-        "$description": "modal.width.xs — Extra small modal width (320px). Use for: simple confirmations, yes/no dialogs, brief alerts, delete confirmations. Minimal content, quick decisions."
-      },
-      "sm": {
-        "$value": "25rem",
-        "$type": "dimension",
-        "$description": "modal.width.sm — Small modal width (400px). Use for: simple forms (1-3 fields), prompts with brief input, login dialogs, share dialogs. Limited content that doesn't need much horizontal space."
-      },
-      "md": {
-        "$value": "32.5rem",
-        "$type": "dimension",
-        "$description": "modal.width.md — Medium modal width (520px). DEFAULT for most modals. Use for: standard forms, settings panels, detail views, most CRUD operations. Balanced width for typical content."
-      },
-      "lg": {
-        "$value": "45rem",
-        "$type": "dimension",
-        "$description": "modal.width.lg — Large modal width (720px). Use for: complex multi-section forms, comparison views, detailed information display, wizards with multiple columns. Content that benefits from horizontal space."
-      },
-      "xl": {
-        "$value": "60rem",
-        "$type": "dimension",
-        "$description": "modal.width.xl — Extra large modal width (960px). Use for: data-heavy content like tables/grids, image galleries, full document previews, complex configuration panels. Near full-width for maximum content area."
-      }
-    },
-    "shadow": {
-      "$value": "{boxShadow.xl}",
-      "$description": "modal.shadow — Modal elevation shadow. Extra large shadow creates strong depth separation from the page content, reinforcing the modal's floating nature and focus-drawing purpose."
+      "$value": "{radius.lg}"
     },
     "overlay": {
       "opacity": {
-        "$value": "{opacity.overlay}",
+        "$description": "modal.overlay.opacity — Modal backdrop opacity (60%). Semi-transparent to dim background while keeping it visible for context. Helps users understand the modal is temporary and the main content is still there.",
         "$type": "number",
-        "$description": "modal.overlay.opacity — Modal backdrop opacity (60%). Semi-transparent to dim background while keeping it visible for context. Helps users understand the modal is temporary and the main content is still there."
+        "$value": "{opacity.overlay}"
+      }
+    },
+    "padding": {
+      "body": {
+        "$description": "modal.padding.body — Modal body content padding (20px). Use for: main dialog content area. Matches header padding for visual consistency.",
+        "$type": "dimension",
+        "$value": "{spacing.lg}"
+      },
+      "footer": {
+        "$description": "modal.padding.footer — Modal footer padding (16px). Use for: action button container. Slightly tighter than body to visually separate actions from content.",
+        "$type": "dimension",
+        "$value": "{spacing.md}"
+      },
+      "header": {
+        "$description": "modal.padding.header — Modal header padding (20px). Use for: title area containing heading and close button. Provides generous spacing for the most prominent section.",
+        "$type": "dimension",
+        "$value": "{spacing.lg}"
+      }
+    },
+    "shadow": {
+      "$description": "modal.shadow — Modal elevation shadow. Extra large shadow creates strong depth separation from the page content, reinforcing the modal's floating nature and focus-drawing purpose.",
+      "$value": "{boxShadow.xl}"
+    },
+    "title": {
+      "fontSize": {
+        "$description": "modal.title.fontSize — Modal title font size (18px). Large enough to be clearly visible as the primary heading, but not overwhelming in the confined modal space.",
+        "$type": "dimension",
+        "$value": "{fontSizes.lg}"
+      },
+      "fontWeight": {
+        "$description": "modal.title.fontWeight — Modal title font weight (600). Semibold provides strong visual hierarchy without the heaviness of bold, appropriate for dialog headings.",
+        "$type": "number",
+        "$value": "{fontWeights.semibold}"
+      },
+      "lineHeight": {
+        "$description": "modal.title.lineHeight — Modal title line height (1.25). Tight line height for single-line titles. If titles wrap, this keeps them compact within the header area.",
+        "$type": "dimension",
+        "$value": "{lineHeights.sm}"
       }
     },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.normal}",
+        "$description": "modal.transition.duration — Modal open/close transition duration (200ms). Normal duration provides smooth animation without feeling slow. Fast enough for frequent use, slow enough to be perceived.",
         "$type": "duration",
-        "$description": "modal.transition.duration — Modal open/close transition duration (200ms). Normal duration provides smooth animation without feeling slow. Fast enough for frequent use, slow enough to be perceived."
+        "$value": "{motion.duration.normal}"
       },
       "easing": {
         "enter": {
-          "$value": "{motion.easing.easeOut}",
-          "$description": "modal.transition.easing.enter — Modal entrance easing (ease-out). Decelerates into view - starts fast, slows at end. Creates feeling of the modal 'settling' into place."
+          "$description": "modal.transition.easing.enter — Modal entrance easing (ease-out). Decelerates into view - starts fast, slows at end. Creates feeling of the modal 'settling' into place.",
+          "$value": "{motion.easing.easeOut}"
         },
         "exit": {
-          "$value": "{motion.easing.easeIn}",
-          "$description": "modal.transition.easing.exit — Modal exit easing (ease-in). Accelerates out - starts slow, speeds up at end. Creates feeling of the modal being 'dismissed' away."
+          "$description": "modal.transition.easing.exit — Modal exit easing (ease-in). Accelerates out - starts slow, speeds up at end. Creates feeling of the modal being 'dismissed' away.",
+          "$value": "{motion.easing.easeIn}"
         }
       }
     },
-    "zIndex": {
-      "$value": "{zIndex.modal}",
-      "$type": "number",
-      "$description": "modal.zIndex — Modal z-index stacking level (400). Higher than most UI elements to ensure modal appears above page content, dropdowns, and tooltips. Below only toast notifications."
-    },
-    "title": {
-      "fontSize": {
-        "$value": "{fontSizes.lg}",
+    "width": {
+      "lg": {
+        "$description": "modal.width.lg — Large modal width (720px). Use for: complex multi-section forms, comparison views, detailed information display, wizards with multiple columns. Content that benefits from horizontal space.",
         "$type": "dimension",
-        "$description": "modal.title.fontSize — Modal title font size (18px). Large enough to be clearly visible as the primary heading, but not overwhelming in the confined modal space."
+        "$value": "45rem"
       },
-      "fontWeight": {
-        "$value": "{fontWeights.semibold}",
-        "$type": "number",
-        "$description": "modal.title.fontWeight — Modal title font weight (600). Semibold provides strong visual hierarchy without the heaviness of bold, appropriate for dialog headings."
-      },
-      "lineHeight": {
-        "$value": "{lineHeights.sm}",
+      "md": {
+        "$description": "modal.width.md — Medium modal width (520px). DEFAULT for most modals. Use for: standard forms, settings panels, detail views, most CRUD operations. Balanced width for typical content.",
         "$type": "dimension",
-        "$description": "modal.title.lineHeight — Modal title line height (1.25). Tight line height for single-line titles. If titles wrap, this keeps them compact within the header area."
+        "$value": "32.5rem"
+      },
+      "sm": {
+        "$description": "modal.width.sm — Small modal width (400px). Use for: simple forms (1-3 fields), prompts with brief input, login dialogs, share dialogs. Limited content that doesn't need much horizontal space.",
+        "$type": "dimension",
+        "$value": "25rem"
+      },
+      "xl": {
+        "$description": "modal.width.xl — Extra large modal width (960px). Use for: data-heavy content like tables/grids, image galleries, full document previews, complex configuration panels. Near full-width for maximum content area.",
+        "$type": "dimension",
+        "$value": "60rem"
+      },
+      "xs": {
+        "$description": "modal.width.xs — Extra small modal width (320px). Use for: simple confirmations, yes/no dialogs, brief alerts, delete confirmations. Minimal content, quick decisions.",
+        "$type": "dimension",
+        "$value": "20rem"
       }
+    },
+    "zIndex": {
+      "$description": "modal.zIndex — Modal z-index stacking level (400). Higher than most UI elements to ensure modal appears above page content, dropdowns, and tooltips. Below only toast notifications.",
+      "$type": "number",
+      "$value": "{zIndex.modal}"
     }
   }
 }

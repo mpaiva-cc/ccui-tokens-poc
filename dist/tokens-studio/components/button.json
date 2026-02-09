@@ -1,107 +1,107 @@
 {
   "button": {
-    "height": {
-      "xs": {
-        "$value": "{sizing.controlHeight.xs}",
+    "borderRadius": {
+      "$description": "button.borderRadius — Default button border radius (4px). Use for consistent alignment with inputs.",
+      "$type": "dimension",
+      "$value": "{radius.sm}"
+    },
+    "fontSize": {
+      "lg": {
+        "$description": "button.fontSize.lg — Large button font size.",
         "$type": "dimension",
-        "$description": "button.height.xs — Extra small button height. Use for inline actions, compact toolbars."
-      },
-      "sm": {
-        "$value": "{sizing.controlHeight.sm}",
-        "$type": "dimension",
-        "$description": "button.height.sm — Small button height. Use for secondary actions, compact layouts."
+        "$value": "{fontSizes.md}"
       },
       "md": {
-        "$value": "{sizing.controlHeight.md}",
+        "$description": "button.fontSize.md — Medium button font size. Uses sm for better proportions.",
         "$type": "dimension",
-        "$description": "button.height.md — Medium button height. DEFAULT for most buttons."
+        "$value": "{fontSizes.sm}"
       },
-      "lg": {
-        "$value": "{sizing.controlHeight.lg}",
+      "sm": {
+        "$description": "button.fontSize.sm — Small button font size.",
         "$type": "dimension",
-        "$description": "button.height.lg — Large button height. Use for prominent CTAs."
+        "$value": "{fontSizes.sm}"
       },
       "xl": {
-        "$value": "{sizing.controlHeight.xl}",
+        "$description": "button.fontSize.xl — Extra large button font size.",
         "$type": "dimension",
-        "$description": "button.height.xl — Extra large button height. Use for marketing CTAs."
+        "$value": "{fontSizes.md}"
+      },
+      "xs": {
+        "$description": "button.fontSize.xs — Extra small button font size.",
+        "$type": "dimension",
+        "$value": "{fontSizes.xs}"
+      }
+    },
+    "fontWeight": {
+      "$description": "button.fontWeight — Button font weight. Semibold for clear affordance.",
+      "$type": "fontWeights",
+      "$value": "{fontWeights.semibold}"
+    },
+    "height": {
+      "lg": {
+        "$description": "button.height.lg — Large button height. Use for prominent CTAs.",
+        "$type": "dimension",
+        "$value": "{sizing.controlHeight.lg}"
+      },
+      "md": {
+        "$description": "button.height.md — Medium button height. DEFAULT for most buttons.",
+        "$type": "dimension",
+        "$value": "{sizing.controlHeight.md}"
+      },
+      "sm": {
+        "$description": "button.height.sm — Small button height. Use for secondary actions, compact layouts.",
+        "$type": "dimension",
+        "$value": "{sizing.controlHeight.sm}"
+      },
+      "xl": {
+        "$description": "button.height.xl — Extra large button height. Use for marketing CTAs.",
+        "$type": "dimension",
+        "$value": "{sizing.controlHeight.xl}"
+      },
+      "xs": {
+        "$description": "button.height.xs — Extra small button height. Use for inline actions, compact toolbars.",
+        "$type": "dimension",
+        "$value": "{sizing.controlHeight.xs}"
       }
     },
     "padding": {
       "horizontal": {
-        "xs": {
-          "$value": "{spacing.xs}",
+        "lg": {
+          "$description": "button.padding.horizontal.lg — Large horizontal padding (24px). Use for prominent CTA buttons.",
           "$type": "dimension",
-          "$description": "button.padding.horizontal.xs — Extra small horizontal padding (8px). Use for compact icon buttons."
-        },
-        "sm": {
-          "$value": "{spacing.sm}",
-          "$type": "dimension",
-          "$description": "button.padding.horizontal.sm — Small horizontal padding (12px). Use for secondary action buttons."
+          "$value": "{spacing.lg}"
         },
         "md": {
-          "$value": "{spacing.md}",
+          "$description": "button.padding.horizontal.md — Medium horizontal padding (16px). Use for standard buttons. DEFAULT.",
           "$type": "dimension",
-          "$description": "button.padding.horizontal.md — Medium horizontal padding (16px). Use for standard buttons. DEFAULT."
+          "$value": "{spacing.md}"
         },
-        "lg": {
-          "$value": "{spacing.lg}",
+        "sm": {
+          "$description": "button.padding.horizontal.sm — Small horizontal padding (12px). Use for secondary action buttons.",
           "$type": "dimension",
-          "$description": "button.padding.horizontal.lg — Large horizontal padding (24px). Use for prominent CTA buttons."
+          "$value": "{spacing.sm}"
         },
         "xl": {
-          "$value": "{spacing.xl}",
+          "$description": "button.padding.horizontal.xl — Extra large horizontal padding (32px). Use for marketing buttons.",
           "$type": "dimension",
-          "$description": "button.padding.horizontal.xl — Extra large horizontal padding (32px). Use for marketing buttons."
+          "$value": "{spacing.xl}"
+        },
+        "xs": {
+          "$description": "button.padding.horizontal.xs — Extra small horizontal padding (8px). Use for compact icon buttons.",
+          "$type": "dimension",
+          "$value": "{spacing.xs}"
         }
       }
     },
-    "borderRadius": {
-      "$value": "{radius.sm}",
-      "$type": "dimension",
-      "$description": "button.borderRadius — Default button border radius (4px). Use for consistent alignment with inputs."
-    },
-    "fontSize": {
-      "xs": {
-        "$value": "{fontSizes.xs}",
-        "$type": "dimension",
-        "$description": "button.fontSize.xs — Extra small button font size."
-      },
-      "sm": {
-        "$value": "{fontSizes.sm}",
-        "$type": "dimension",
-        "$description": "button.fontSize.sm — Small button font size."
-      },
-      "md": {
-        "$value": "{fontSizes.sm}",
-        "$type": "dimension",
-        "$description": "button.fontSize.md — Medium button font size. Uses sm for better proportions."
-      },
-      "lg": {
-        "$value": "{fontSizes.md}",
-        "$type": "dimension",
-        "$description": "button.fontSize.lg — Large button font size."
-      },
-      "xl": {
-        "$value": "{fontSizes.md}",
-        "$type": "dimension",
-        "$description": "button.fontSize.xl — Extra large button font size."
-      }
-    },
-    "fontWeight": {
-      "$value": "{fontWeights.semibold}",
-      "$type": "fontWeights",
-      "$description": "button.fontWeight — Button font weight. Semibold for clear affordance."
-    },
     "transition": {
       "duration": {
-        "$value": "{motion.duration.fast}",
+        "$description": "button.transition.duration — Button transition duration for hover/active states.",
         "$type": "duration",
-        "$description": "button.transition.duration — Button transition duration for hover/active states."
+        "$value": "{motion.duration.fast}"
       },
       "easing": {
-        "$value": "{motion.easing.easeOut}",
-        "$description": "button.transition.easing — Button transition easing curve."
+        "$description": "button.transition.easing — Button transition easing curve.",
+        "$value": "{motion.easing.easeOut}"
       }
     }
   }
