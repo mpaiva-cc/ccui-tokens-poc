@@ -172,34 +172,38 @@
             "$description": "Action/button color tokens.",
             "bg": {
                 "primary": {
-                    "$value": "{colorPalette.blue.filled}",
-                    "$type": "color",
-                    "$description": "Primary action background."
+                    "default": {
+                        "$value": "{colorPalette.blue.filled.default}",
+                        "$type": "color",
+                        "$description": "Primary action background."
+                    },
+                    "hover": {
+                        "$value": "{colorPalette.blue.filled.hover}",
+                        "$type": "color",
+                        "$description": "Primary action hover state."
+                    },
+                    "active": {
+                        "$value": "{color.blue.8}",
+                        "$type": "color",
+                        "$description": "Primary action active/pressed state."
+                    },
+                    "disabled": {
+                        "$value": "{color.bg.interactive.disabled}",
+                        "$type": "color",
+                        "$description": "Primary action disabled state."
+                    }
                 },
-                "primaryHover": {
-                    "$value": "{colorPalette.blue.filledHover}",
-                    "$type": "color",
-                    "$description": "Primary action hover state."
-                },
-                "primaryActive": {
-                    "$value": "{color.blue.8}",
-                    "$type": "color",
-                    "$description": "Primary action active/pressed state."
-                },
-                "primaryDisabled": {
-                    "$value": "{color.bg.interactive.disabled}",
-                    "$type": "color",
-                    "$description": "Primary action disabled state."
-                },
-                "primaryLight": {
-                    "$value": "{colorPalette.blue.light}",
-                    "$type": "color",
-                    "$description": "Primary light variant background."
-                },
-                "primaryLightHover": {
-                    "$value": "{colorPalette.blue.lightHover}",
-                    "$type": "color",
-                    "$description": "Primary light variant hover."
+                "light": {
+                    "default": {
+                        "$value": "{colorPalette.blue.light.default}",
+                        "$type": "color",
+                        "$description": "Primary light variant background."
+                    },
+                    "hover": {
+                        "$value": "{colorPalette.blue.light.hover}",
+                        "$type": "color",
+                        "$description": "Primary light variant hover."
+                    }
                 }
             },
             "text": {
@@ -208,27 +212,29 @@
                     "$type": "color",
                     "$description": "Text on primary action backgrounds."
                 },
-                "primaryLight": {
-                    "$value": "{colorPalette.blue.lightColor}",
-                    "$type": "color",
-                    "$description": "Text on primary light backgrounds."
-                },
                 "onSurface": {
-                    "$value": "{colorPalette.blue.filled}",
+                    "$value": "{colorPalette.blue.filled.default}",
                     "$type": "color",
                     "$description": "Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
+                },
+                "light": {
+                    "$value": "{colorPalette.blue.light.text}",
+                    "$type": "color",
+                    "$description": "Text on primary light backgrounds."
                 }
             },
             "border": {
                 "primary": {
-                    "$value": "{colorPalette.blue.filled}",
-                    "$type": "color",
-                    "$description": "Primary action border color."
-                },
-                "primaryHover": {
-                    "$value": "{colorPalette.blue.filledHover}",
-                    "$type": "color",
-                    "$description": "Primary action hover border color."
+                    "default": {
+                        "$value": "{colorPalette.blue.filled.default}",
+                        "$type": "color",
+                        "$description": "Primary action border color."
+                    },
+                    "hover": {
+                        "$value": "{colorPalette.blue.filled.hover}",
+                        "$type": "color",
+                        "$description": "Primary action hover border color."
+                    }
                 }
             }
         },
@@ -339,7 +345,7 @@
                 "$description": "Focus ring color."
             },
             "glow": {
-                "$value": "{colorPalette.blue.light}",
+                "$value": "{colorPalette.blue.light.default}",
                 "$type": "color",
                 "$description": "Focus ring glow/background color. Use for: input focus ring."
             }
@@ -347,29 +353,33 @@
         "primary": {
             "$description": "Primary color semantic variants.",
             "filled": {
-                "$value": "{colorPalette.blue.filled}",
-                "$type": "color",
-                "$description": "Primary filled background."
-            },
-            "filledHover": {
-                "$value": "{colorPalette.blue.filledHover}",
-                "$type": "color",
-                "$description": "Primary filled hover."
+                "default": {
+                    "$value": "{colorPalette.blue.filled.default}",
+                    "$type": "color",
+                    "$description": "Primary filled background."
+                },
+                "hover": {
+                    "$value": "{colorPalette.blue.filled.hover}",
+                    "$type": "color",
+                    "$description": "Primary filled hover."
+                }
             },
             "light": {
-                "$value": "{colorPalette.blue.light}",
-                "$type": "color",
-                "$description": "Primary light background."
-            },
-            "lightHover": {
-                "$value": "{colorPalette.blue.lightHover}",
-                "$type": "color",
-                "$description": "Primary light hover."
-            },
-            "lightColor": {
-                "$value": "{colorPalette.blue.lightColor}",
-                "$type": "color",
-                "$description": "Text on primary light."
+                "default": {
+                    "$value": "{colorPalette.blue.light.default}",
+                    "$type": "color",
+                    "$description": "Primary light background."
+                },
+                "hover": {
+                    "$value": "{colorPalette.blue.light.hover}",
+                    "$type": "color",
+                    "$description": "Primary light hover."
+                },
+                "text": {
+                    "$value": "{colorPalette.blue.light.text}",
+                    "$type": "color",
+                    "$description": "Text on primary light."
+                }
             },
             "contrast": {
                 "$value": "{color.white}",
