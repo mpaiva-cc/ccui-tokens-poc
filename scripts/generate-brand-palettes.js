@@ -27,7 +27,7 @@ const REF_L = [0.97, 0.91, 0.82, 0.72, 0.61, 0.52, 0.45, 0.37, 0.29, 0.22];
 // ---------------------------------------------------------------------------
 const THEMES = {
   'ccui-30': {
-    outputDirs: ['src/themes/ccui-30-light', 'src/themes/ccui-30-dark'],
+    output: 'src/primitives/color/brand-30.tokens.json',
     colors: {
       whiteGold:  { hex: '#F4EBD7', label: 'White Gold — warm cream neutral', pinStep: 4 },
       brass:      { hex: '#C3B497', label: 'Brass — muted warm accent' },
@@ -41,7 +41,7 @@ const THEMES = {
     }
   },
   'ccui-21': {
-    outputDirs: ['src/themes/ccui-21-light'],
+    output: 'src/primitives/color/brand-21.tokens.json',
     colors: {
       navyBlue:   { hex: '#254677', label: 'Navy Blue — primary logo color' },
       skyBlue:    { hex: '#55BAEA', label: 'Sky Blue — secondary logo color' },
@@ -182,12 +182,10 @@ function main() {
     const tokensJson = buildTokensJson(themeConfig.colors, themeLabel);
     const content = JSON.stringify(tokensJson, null, 4) + '\n';
 
-    for (const dir of themeConfig.outputDirs) {
-      const outPath = path.join(dir, 'brand-palette.tokens.json');
-      fs.mkdirSync(dir, { recursive: true });
-      fs.writeFileSync(outPath, content, 'utf-8');
-      console.log(`Wrote ${outPath}`);
-    }
+    const outPath = themeConfig.output;
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, content, 'utf-8');
+    console.log(`Wrote ${outPath}`);
 
     // Print a summary table
     console.log(`\n${themeLabel} palette summary:`);

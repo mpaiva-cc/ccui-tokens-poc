@@ -13,6 +13,8 @@
     "primitives/sizing",
     "primitives/focus",
     "primitives/system",
+    "primitives/brand-21",
+    "primitives/brand-30",
     "semantic/mantine-light",
     "semantic/mantine-dark",
     "semantic/ccui-21-light",

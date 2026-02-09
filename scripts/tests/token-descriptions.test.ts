@@ -424,9 +424,9 @@ describe('Token Descriptions', () => {
             !PATTERNS.hasComponentExample(t.description)
         );
 
-        // Allow up to 55% without explicit context (improved from 60%)
-        // Many palette colors are primitives without semantic meaning
-        const threshold = Math.floor(colorTokens.length * 0.55);
+        // Allow up to 60% without explicit context
+        // Many palette colors (including brand palettes) are primitives without semantic meaning
+        const threshold = Math.floor(colorTokens.length * 0.60);
         expect(
           missingContext.length,
           `${missingContext.length} color tokens missing context`

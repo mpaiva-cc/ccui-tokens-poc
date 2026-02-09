@@ -21,12 +21,13 @@ const SPEC_COMPLIANT_PATTERNS = [
     /^color\.primary\.\w+(\.\w+)?$/,          // color.primary.filled.default, color.primary.light.hover, color.primary.contrast
 ];
 
-// Patterns to skip (primitive colors, scales, etc.)
+// Patterns to skip (primitive colors, scales, brand tokens, etc.)
 const SKIP_PATTERNS = [
     /^color\.(white|black|transparent)$/,
     /^color\.(dark|gray|red|pink|grape|violet|indigo|blue|cyan|teal|green|lime|yellow|orange)\.\d+$/,
     /^color\.alpha\./,
     /^colorPalette\./,
+    /^brand\./,
 ];
 
 function extractTokenPaths(obj: any, prefix = ''): string[] {

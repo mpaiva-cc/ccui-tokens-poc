@@ -336,6 +336,8 @@ function filterTokensBySet(tokens, setName) {
         const category = token.path[0];
         if (TOKENS_STUDIO_COMPONENT_SETS[category] === setName) return true;
         if (TOKENS_STUDIO_PRIMITIVE_SETS[category] === setName) return true;
+        // Brand palette primitives: brand.palette.* tokens route to their brand set
+        if (category === 'brand' && token.path[1] === 'palette' && setName.startsWith('primitives/brand-')) return true;
         return false;
     });
 }
@@ -346,6 +348,7 @@ function generateTokensStudioMetadata() {
             "primitives/color", "primitives/spacing", "primitives/radius", "primitives/typography",
             "primitives/shadow", "primitives/motion", "primitives/border", "primitives/breakpoints",
             "primitives/z-index", "primitives/opacity", "primitives/sizing", "primitives/focus", "primitives/system",
+            "primitives/brand-21", "primitives/brand-30",
             "semantic/mantine-light", "semantic/mantine-dark",
             "semantic/ccui-21-light",
             "semantic/ccui-30-light", "semantic/ccui-30-dark",
@@ -362,8 +365,16 @@ function generateTokensStudioThemes() {
         "primitives/typography", "primitives/shadow", "primitives/motion",
         "primitives/border", "primitives/breakpoints", "primitives/z-index",
         "primitives/opacity", "primitives/sizing", "primitives/focus",
-        "primitives/system"
+        "primitives/system",
+        "primitives/brand-21", "primitives/brand-30"
     ];
+
+    const brandSets = ["primitives/brand-21", "primitives/brand-30"];
+    const brandSetForTheme = {
+        'ccui-21-light': 'primitives/brand-21',
+        'ccui-30-light': 'primitives/brand-30',
+        'ccui-30-dark': 'primitives/brand-30'
+    };
 
     const allComponentSets = [
         "components/button", "components/input", "components/modal",
@@ -380,25 +391,39 @@ function generateTokensStudioThemes() {
     const toStatus = (sets, status) =>
         Object.fromEntries(sets.map(s => [s, status]));
 
-    // Group 1: Primitives — 1 mode, all primitives enabled
+    // Non-brand primitives (shared across all themes)
+    const sharedPrimitiveSets = allPrimitiveSets.filter(s => !brandSets.includes(s));
+
+    // Group 1: Primitives — 1 mode, shared primitives enabled, brand sets disabled
     const primitivesTheme = {
         id: "primitives-default",
         name: "Default",
         group: "Primitives",
-        selectedTokenSets: toStatus(allPrimitiveSets, "enabled")
+        selectedTokenSets: {
+            ...toStatus(sharedPrimitiveSets, "enabled"),
+            ...toStatus(brandSets, "disabled")
+        }
     };
 
     // Group 2: Semantic — 5 modes, one per theme
-    const semanticThemes = Object.entries(THEME_CONFIG).map(([themeName, config]) => ({
-        id: `semantic-${themeName}`,
-        name: config.description,
-        group: "Semantic",
-        selectedTokenSets: {
-            ...toStatus(allPrimitiveSets, "source"),
-            ...toStatus(allSemanticSetNames, "disabled"),
-            [`semantic/${themeName}`]: "enabled"
+    const semanticThemes = Object.entries(THEME_CONFIG).map(([themeName, config]) => {
+        // Brand set wiring: matching brand = "source", others = "disabled"
+        const brandStatuses = {};
+        for (const bs of brandSets) {
+            brandStatuses[bs] = brandSetForTheme[themeName] === bs ? "source" : "disabled";
         }
-    }));
+        return {
+            id: `semantic-${themeName}`,
+            name: config.description,
+            group: "Semantic",
+            selectedTokenSets: {
+                ...toStatus(sharedPrimitiveSets, "source"),
+                ...brandStatuses,
+                ...toStatus(allSemanticSetNames, "disabled"),
+                [`semantic/${themeName}`]: "enabled"
+            }
+        };
+    });
 
     // Group 3: Components — 1 mode, all components enabled
     const componentsTheme = {
@@ -406,7 +431,8 @@ function generateTokensStudioThemes() {
         name: "Default",
         group: "Components",
         selectedTokenSets: {
-            ...toStatus(allPrimitiveSets, "source"),
+            ...toStatus(sharedPrimitiveSets, "source"),
+            ...toStatus(brandSets, "disabled"),
             ...toStatus(allComponentSets, "enabled")
         }
     };
@@ -444,6 +470,10 @@ StyleDictionary.registerFormat({
             }
             // Exclude primitive palette colors - they belong in core/color.json
             if (isPrimitiveColorToken(token)) {
+                return false;
+            }
+            // Exclude brand palette tokens - they're now in primitives/brand-*.json
+            if (category === 'brand' && token.path[1] === 'palette') {
                 return false;
             }
             // For component categories, only include color tokens (not dimension/duration primitives)
@@ -635,6 +665,43 @@ async function buildSharedPrimitives() {
     }
 }
 
+async function buildBrandPrimitives() {
+    console.log('\nBuilding brand primitives...');
+
+    const brandConfigs = [
+        { name: 'brand-21', source: `${primitivesFolder}/color/brand-21.tokens.json` },
+        { name: 'brand-30', source: `${primitivesFolder}/color/brand-30.tokens.json` }
+    ];
+
+    for (const brand of brandConfigs) {
+        try {
+            const sd = new StyleDictionary({
+                source: [brand.source],
+                usesDtcg: true,
+                platforms: {
+                    [`tokens-studio-primitives-${brand.name}`]: {
+                        "transformGroup": transformGroups.json,
+                        "buildPath": `${distFolder}/tokens-studio/primitives/`,
+                        "files": [{
+                            "destination": `${brand.name}.json`,
+                            "format": "json/tokens-studio-set",
+                            "options": { "setName": `primitives/${brand.name}` }
+                        }]
+                    }
+                },
+                log: { verbosity: 'default' }
+            });
+            await sd.buildAllPlatforms();
+            console.log(`${brand.name} brand primitives built successfully`);
+        } catch (error) {
+            console.error(`Error building ${brand.name} brand primitives:`, error.message);
+            return false;
+        }
+    }
+
+    return true;
+}
+
 async function buildThemes() {
     const builtThemes = [];
 
@@ -684,6 +751,10 @@ async function validateBuild() {
         `${distFolder}/tokens-studio/$themes.json`
     ];
 
+    // Brand primitive files
+    tokensStudioFiles.push(`${distFolder}/tokens-studio/primitives/brand-21.json`);
+    tokensStudioFiles.push(`${distFolder}/tokens-studio/primitives/brand-30.json`);
+
     for (const theme of themesToBuild) {
         tokensStudioFiles.push(`${distFolder}/tokens-studio/semantic/${theme}.json`);
     }
@@ -732,6 +803,12 @@ async function build() {
     const sharedSuccess = await buildSharedPrimitives();
     if (!sharedSuccess) {
         console.error('Failed to build shared primitives');
+        process.exit(1);
+    }
+
+    const brandSuccess = await buildBrandPrimitives();
+    if (!brandSuccess) {
+        console.error('Failed to build brand primitives');
         process.exit(1);
     }
 
