@@ -658,8 +658,52 @@ async function buildTokensStudioConfig() {
         fs.mkdirSync(tokensStudioDir, { recursive: true });
     }
 
+    const newThemes = generateTokensStudioThemes();
+
+    // Preserve Figma metadata from existing $themes.json
+    const themesPath = `${tokensStudioDir}/$themes.json`;
+    let existingThemes = [];
+    if (fs.existsSync(themesPath)) {
+        try {
+            const parsed = JSON.parse(fs.readFileSync(themesPath, 'utf-8'));
+            if (Array.isArray(parsed)) existingThemes = parsed;
+        } catch (err) {
+            console.warn('  Could not parse existing $themes.json, skipping merge:', err.message);
+        }
+    }
+
+    // Index existing themes by id for O(1) lookup
+    const existingById = {};
+    for (const theme of existingThemes) {
+        if (theme.id) existingById[theme.id] = theme;
+    }
+
+    // Merge Figma metadata and sort reference keys
+    const figmaFields = ['$figmaCollectionId', '$figmaModeId', '$figmaVariableReferences', '$figmaStyleReferences'];
+    const mergedThemes = newThemes.map(newTheme => {
+        const existing = existingById[newTheme.id];
+        if (!existing) return newTheme;
+
+        const merged = { ...newTheme };
+        for (const field of figmaFields) {
+            if (existing[field] !== undefined) {
+                merged[field] = existing[field];
+            }
+        }
+
+        // Sort reference keys alphabetically
+        if (merged.$figmaVariableReferences) {
+            merged.$figmaVariableReferences = sortKeysDeep(merged.$figmaVariableReferences);
+        }
+        if (merged.$figmaStyleReferences) {
+            merged.$figmaStyleReferences = sortKeysDeep(merged.$figmaStyleReferences);
+        }
+
+        return merged;
+    });
+
     fs.writeFileSync(`${tokensStudioDir}/$metadata.json`, JSON.stringify(generateTokensStudioMetadata(), null, 2));
-    fs.writeFileSync(`${tokensStudioDir}/$themes.json`, JSON.stringify(generateTokensStudioThemes(), null, 2));
+    fs.writeFileSync(themesPath, JSON.stringify(mergedThemes, null, 2));
     console.log('Tokens Studio config built');
     return true;
 }
