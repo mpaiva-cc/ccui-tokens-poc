@@ -34,8 +34,6 @@ describe('Build Output Validation', () => {
       'sizing.json',
       'focus.json',
       'system.json',
-      'brand-21.json',
-      'brand-30.json',
     ];
 
     it('should have $metadata.json', () => {

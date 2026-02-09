@@ -91,8 +91,6 @@ describe('Token Count Regression', () => {
       'radius.json',
       'typography.json',
       'system.json',
-      'brand-21.json',
-      'brand-30.json',
     ];
 
     it.each(primitiveSets)('primitives/%s should have tokens', (fileName) => {

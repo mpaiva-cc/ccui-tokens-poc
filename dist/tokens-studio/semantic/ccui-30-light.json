@@ -1,46 +1,4 @@
 {
-  "brand": {
-    "primary": {
-      "$value": "{brand.palette.copper.3}",
-      "$type": "color",
-      "$description": "brand.primary — Primary brand color. Copper — signature accent for hero visuals and brand moments."
-    },
-    "secondary": {
-      "$value": "{brand.palette.castIron.8}",
-      "$type": "color",
-      "$description": "brand.secondary — Secondary brand color. Cast Iron — primary dark neutral for text and contrast."
-    },
-    "tertiary": {
-      "$value": "{brand.palette.verdigris.3}",
-      "$type": "color",
-      "$description": "brand.tertiary — Tertiary brand color. Verdigris — nature-inspired supporting color."
-    },
-    "accent": {
-      "$value": "{brand.palette.alloy.2}",
-      "$type": "color",
-      "$description": "brand.accent — Accent color. Alloy — warm highlight, lighter companion to Copper."
-    },
-    "onPrimary": {
-      "$value": "{brand.palette.castIron.8}",
-      "$type": "color",
-      "$description": "brand.onPrimary — Text/foreground on primary (Copper) background. Cast Iron for WCAG AAA contrast."
-    },
-    "onSecondary": {
-      "$value": "#FFFFFF",
-      "$type": "color",
-      "$description": "brand.onSecondary — Text/foreground on secondary (Cast Iron) background. White for WCAG AAA contrast."
-    },
-    "onTertiary": {
-      "$value": "{brand.palette.castIron.8}",
-      "$type": "color",
-      "$description": "brand.onTertiary — Text/foreground on tertiary (Verdigris) background. Cast Iron for WCAG AAA contrast."
-    },
-    "onAccent": {
-      "$value": "{brand.palette.castIron.8}",
-      "$type": "color",
-      "$description": "brand.onAccent — Text/foreground on accent (Alloy) background. Cast Iron for WCAG AAA contrast."
-    }
-  },
   "color": {
     "overlay": {
       "light": {
@@ -1314,6 +1272,48 @@
         "$type": "number",
         "$description": "mantine.zIndex.max — Maximum z-index for critical elements"
       }
+    }
+  },
+  "brand": {
+    "primary": {
+      "$value": "{color.brand.clearco-30.copper.3}",
+      "$type": "color",
+      "$description": "brand.primary — Primary brand color. Copper — signature accent for hero visuals and brand moments."
+    },
+    "secondary": {
+      "$value": "{color.brand.clearco-30.castIron.8}",
+      "$type": "color",
+      "$description": "brand.secondary — Secondary brand color. Cast Iron — primary dark neutral for text and contrast."
+    },
+    "tertiary": {
+      "$value": "{color.brand.clearco-30.verdigris.3}",
+      "$type": "color",
+      "$description": "brand.tertiary — Tertiary brand color. Verdigris — nature-inspired supporting color."
+    },
+    "accent": {
+      "$value": "{color.brand.clearco-30.alloy.2}",
+      "$type": "color",
+      "$description": "brand.accent — Accent color. Alloy — warm highlight, lighter companion to Copper."
+    },
+    "onPrimary": {
+      "$value": "{color.brand.clearco-30.castIron.8}",
+      "$type": "color",
+      "$description": "brand.onPrimary — Text/foreground on primary (Copper) background. Cast Iron for WCAG AAA contrast."
+    },
+    "onSecondary": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "brand.onSecondary — Text/foreground on secondary (Cast Iron) background. White for WCAG AAA contrast."
+    },
+    "onTertiary": {
+      "$value": "{color.brand.clearco-30.castIron.8}",
+      "$type": "color",
+      "$description": "brand.onTertiary — Text/foreground on tertiary (Verdigris) background. Cast Iron for WCAG AAA contrast."
+    },
+    "onAccent": {
+      "$value": "{color.brand.clearco-30.castIron.8}",
+      "$type": "color",
+      "$description": "brand.onAccent — Text/foreground on accent (Alloy) background. Cast Iron for WCAG AAA contrast."
     }
   },
   "colorPalette": {

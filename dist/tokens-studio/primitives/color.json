@@ -1,5 +1,687 @@
 {
   "color": {
+    "brand": {
+      "clearco-21": {
+        "navyBlue": {
+          "0": {
+            "$value": "#EFF6FF",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.0 — Navy Blue — primary logo color — tint step 0."
+          },
+          "1": {
+            "$value": "#D0E3FF",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.1 — Navy Blue — primary logo color — tint step 1."
+          },
+          "2": {
+            "$value": "#A0C6FF",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.2 — Navy Blue — primary logo color — tint step 2."
+          },
+          "3": {
+            "$value": "#81A6DE",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.3 — Navy Blue — primary logo color — tint step 3."
+          },
+          "4": {
+            "$value": "#6084BA",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.4 — Navy Blue — primary logo color — tint step 4."
+          },
+          "5": {
+            "$value": "#476A9D",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.5 — Navy Blue — primary logo color — tint step 5."
+          },
+          "6": {
+            "$value": "#345588",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.6 — Navy Blue — primary logo color — tint step 6."
+          },
+          "7": {
+            "$value": "#254677",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.7 — Navy Blue — primary logo color — base color (step 7, pinned to official brand hex)."
+          },
+          "8": {
+            "$value": "#092958",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.8 — Navy Blue — primary logo color — tint step 8."
+          },
+          "9": {
+            "$value": "#001840",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.navyBlue.9 — Navy Blue — primary logo color — tint step 9."
+          }
+        },
+        "skyBlue": {
+          "0": {
+            "$value": "#EAF8FF",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.0 — Sky Blue — secondary logo color — tint step 0."
+          },
+          "1": {
+            "$value": "#BFE8FF",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.1 — Sky Blue — secondary logo color — tint step 1."
+          },
+          "2": {
+            "$value": "#74D1FF",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.2 — Sky Blue — secondary logo color — tint step 2."
+          },
+          "3": {
+            "$value": "#55BAEA",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.3 — Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex)."
+          },
+          "4": {
+            "$value": "#1E8EBC",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.4 — Sky Blue — secondary logo color — tint step 4."
+          },
+          "5": {
+            "$value": "#00729B",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.5 — Sky Blue — secondary logo color — tint step 5."
+          },
+          "6": {
+            "$value": "#005D7F",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.6 — Sky Blue — secondary logo color — tint step 6."
+          },
+          "7": {
+            "$value": "#004660",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.7 — Sky Blue — secondary logo color — tint step 7."
+          },
+          "8": {
+            "$value": "#003043",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.8 — Sky Blue — secondary logo color — tint step 8."
+          },
+          "9": {
+            "$value": "#001E2C",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.skyBlue.9 — Sky Blue — secondary logo color — tint step 9."
+          }
+        },
+        "purple": {
+          "0": {
+            "$value": "#FFF0FB",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.0 — Purple — typography accent — tint step 0."
+          },
+          "1": {
+            "$value": "#FFD1F5",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.1 — Purple — typography accent — tint step 1."
+          },
+          "2": {
+            "$value": "#FF9DED",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.2 — Purple — typography accent — tint step 2."
+          },
+          "3": {
+            "$value": "#DF7BCE",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.3 — Purple — typography accent — tint step 3."
+          },
+          "4": {
+            "$value": "#BA59AA",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.4 — Purple — typography accent — tint step 4."
+          },
+          "5": {
+            "$value": "#9D3D8E",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.5 — Purple — typography accent — tint step 5."
+          },
+          "6": {
+            "$value": "#822275",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.6 — Purple — typography accent — base color (step 6, pinned to official brand hex)."
+          },
+          "7": {
+            "$value": "#6D0561",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.7 — Purple — typography accent — tint step 7."
+          },
+          "8": {
+            "$value": "#4D0045",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.8 — Purple — typography accent — tint step 8."
+          },
+          "9": {
+            "$value": "#33002D",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.purple.9 — Purple — typography accent — tint step 9."
+          }
+        },
+        "yellow": {
+          "0": {
+            "$value": "#FEFE6C",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.0 — Yellow — decorative highlight — tint step 0."
+          },
+          "1": {
+            "$value": "#E6E651",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.1 — Yellow — decorative highlight — base color (step 1, pinned to official brand hex)."
+          },
+          "2": {
+            "$value": "#CDCC2E",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.2 — Yellow — decorative highlight — tint step 2."
+          },
+          "3": {
+            "$value": "#ADAC00",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.3 — Yellow — decorative highlight — tint step 3."
+          },
+          "4": {
+            "$value": "#8A8900",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.4 — Yellow — decorative highlight — tint step 4."
+          },
+          "5": {
+            "$value": "#6E6E00",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.5 — Yellow — decorative highlight — tint step 5."
+          },
+          "6": {
+            "$value": "#5A5900",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.6 — Yellow — decorative highlight — tint step 6."
+          },
+          "7": {
+            "$value": "#434300",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.7 — Yellow — decorative highlight — tint step 7."
+          },
+          "8": {
+            "$value": "#2E2E00",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.8 — Yellow — decorative highlight — tint step 8."
+          },
+          "9": {
+            "$value": "#1C1C00",
+            "$type": "color",
+            "$description": "color.brand.clearco-21.yellow.9 — Yellow — decorative highlight — tint step 9."
+          }
+        }
+      },
+      "clearco-30": {
+        "whiteGold": {
+          "0": {
+            "$value": "#FDF4E0",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.0 — White Gold — warm cream neutral — tint step 0."
+          },
+          "1": {
+            "$value": "#FBF2DE",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.1 — White Gold — warm cream neutral — tint step 1."
+          },
+          "2": {
+            "$value": "#F9F0DC",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.2 — White Gold — warm cream neutral — tint step 2."
+          },
+          "3": {
+            "$value": "#F6EDD9",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.3 — White Gold — warm cream neutral — tint step 3."
+          },
+          "4": {
+            "$value": "#F4EBD7",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.4 — White Gold — warm cream neutral — base color (step 4, pinned to official brand hex)."
+          },
+          "5": {
+            "$value": "#C5BCA9",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.5 — White Gold — warm cream neutral — tint step 5."
+          },
+          "6": {
+            "$value": "#988F7D",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.6 — White Gold — warm cream neutral — tint step 6."
+          },
+          "7": {
+            "$value": "#6D6554",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.7 — White Gold — warm cream neutral — tint step 7."
+          },
+          "8": {
+            "$value": "#453D2D",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.8 — White Gold — warm cream neutral — tint step 8."
+          },
+          "9": {
+            "$value": "#201A0B",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.whiteGold.9 — White Gold — warm cream neutral — tint step 9."
+          }
+        },
+        "brass": {
+          "0": {
+            "$value": "#FFF4DF",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.0 — Brass — muted warm accent — tint step 0."
+          },
+          "1": {
+            "$value": "#EFE0C1",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.1 — Brass — muted warm accent — tint step 1."
+          },
+          "2": {
+            "$value": "#C3B497",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.2 — Brass — muted warm accent — base color (step 2, pinned to official brand hex)."
+          },
+          "3": {
+            "$value": "#B2A386",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.3 — Brass — muted warm accent — tint step 3."
+          },
+          "4": {
+            "$value": "#908166",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.4 — Brass — muted warm accent — tint step 4."
+          },
+          "5": {
+            "$value": "#75674C",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.5 — Brass — muted warm accent — tint step 5."
+          },
+          "6": {
+            "$value": "#615339",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.6 — Brass — muted warm accent — tint step 6."
+          },
+          "7": {
+            "$value": "#4B3E24",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.7 — Brass — muted warm accent — tint step 7."
+          },
+          "8": {
+            "$value": "#362910",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.8 — Brass — muted warm accent — tint step 8."
+          },
+          "9": {
+            "$value": "#241801",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.brass.9 — Brass — muted warm accent — tint step 9."
+          }
+        },
+        "alloy": {
+          "0": {
+            "$value": "#FFF2ED",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.0 — Alloy — warm highlight, lighter companion to Copper — tint step 0."
+          },
+          "1": {
+            "$value": "#FFD8C7",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.1 — Alloy — warm highlight, lighter companion to Copper — tint step 1."
+          },
+          "2": {
+            "$value": "#FFA680",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.2 — Alloy — warm highlight, lighter companion to Copper — base color (step 2, pinned to official brand hex)."
+          },
+          "3": {
+            "$value": "#E28B66",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.3 — Alloy — warm highlight, lighter companion to Copper — tint step 3."
+          },
+          "4": {
+            "$value": "#BD6A45",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.4 — Alloy — warm highlight, lighter companion to Copper — tint step 4."
+          },
+          "5": {
+            "$value": "#9F4F2A",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.5 — Alloy — warm highlight, lighter companion to Copper — tint step 5."
+          },
+          "6": {
+            "$value": "#893B13",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.6 — Alloy — warm highlight, lighter companion to Copper — tint step 6."
+          },
+          "7": {
+            "$value": "#6C2700",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.7 — Alloy — warm highlight, lighter companion to Copper — tint step 7."
+          },
+          "8": {
+            "$value": "#4C1900",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.8 — Alloy — warm highlight, lighter companion to Copper — tint step 8."
+          },
+          "9": {
+            "$value": "#320E00",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.alloy.9 — Alloy — warm highlight, lighter companion to Copper — tint step 9."
+          }
+        },
+        "copper": {
+          "0": {
+            "$value": "#FFF2EE",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.0 — Copper — signature accent — tint step 0."
+          },
+          "1": {
+            "$value": "#FFD7CB",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.1 — Copper — signature accent — tint step 1."
+          },
+          "2": {
+            "$value": "#FFAC94",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.2 — Copper — signature accent — tint step 2."
+          },
+          "3": {
+            "$value": "#FF7A52",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.3 — Copper — signature accent — base color (step 3, pinned to official brand hex)."
+          },
+          "4": {
+            "$value": "#D5542B",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.4 — Copper — signature accent — tint step 4."
+          },
+          "5": {
+            "$value": "#B63601",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.5 — Copper — signature accent — tint step 5."
+          },
+          "6": {
+            "$value": "#962B00",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.6 — Copper — signature accent — tint step 6."
+          },
+          "7": {
+            "$value": "#721E00",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.7 — Copper — signature accent — tint step 7."
+          },
+          "8": {
+            "$value": "#501300",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.8 — Copper — signature accent — tint step 8."
+          },
+          "9": {
+            "$value": "#350900",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.copper.9 — Copper — signature accent — tint step 9."
+          }
+        },
+        "bronze": {
+          "0": {
+            "$value": "#FFF2EE",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.0 — Bronze — deep earthy anchor — tint step 0."
+          },
+          "1": {
+            "$value": "#FFD7CA",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.1 — Bronze — deep earthy anchor — tint step 1."
+          },
+          "2": {
+            "$value": "#F0B4A1",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.2 — Bronze — deep earthy anchor — tint step 2."
+          },
+          "3": {
+            "$value": "#CF9582",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.3 — Bronze — deep earthy anchor — tint step 3."
+          },
+          "4": {
+            "$value": "#AB7362",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.4 — Bronze — deep earthy anchor — tint step 4."
+          },
+          "5": {
+            "$value": "#8E5948",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.5 — Bronze — deep earthy anchor — tint step 5."
+          },
+          "6": {
+            "$value": "#794635",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.6 — Bronze — deep earthy anchor — tint step 6."
+          },
+          "7": {
+            "$value": "#6C3A2A",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.7 — Bronze — deep earthy anchor — base color (step 7, pinned to official brand hex)."
+          },
+          "8": {
+            "$value": "#491B0B",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.8 — Bronze — deep earthy anchor — tint step 8."
+          },
+          "9": {
+            "$value": "#340A00",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.bronze.9 — Bronze — deep earthy anchor — tint step 9."
+          }
+        },
+        "verdigris": {
+          "0": {
+            "$value": "#E4FCF2",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.0 — Verdigris — nature-inspired supporting color — tint step 0."
+          },
+          "1": {
+            "$value": "#D1E8DE",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.1 — Verdigris — nature-inspired supporting color — tint step 1."
+          },
+          "2": {
+            "$value": "#B4CAC1",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.2 — Verdigris — nature-inspired supporting color — tint step 2."
+          },
+          "3": {
+            "$value": "#9EB4AB",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.3 — Verdigris — nature-inspired supporting color — base color (step 3, pinned to official brand hex)."
+          },
+          "4": {
+            "$value": "#748980",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.4 — Verdigris — nature-inspired supporting color — tint step 4."
+          },
+          "5": {
+            "$value": "#5A6E66",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.5 — Verdigris — nature-inspired supporting color — tint step 5."
+          },
+          "6": {
+            "$value": "#475A53",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.6 — Verdigris — nature-inspired supporting color — tint step 6."
+          },
+          "7": {
+            "$value": "#31453D",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.7 — Verdigris — nature-inspired supporting color — tint step 7."
+          },
+          "8": {
+            "$value": "#1D3029",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.8 — Verdigris — nature-inspired supporting color — tint step 8."
+          },
+          "9": {
+            "$value": "#0D1F18",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.verdigris.9 — Verdigris — nature-inspired supporting color — tint step 9."
+          }
+        },
+        "steel": {
+          "0": {
+            "$value": "#EAFAF3",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.0 — Steel — balanced mid-tone neutral — tint step 0."
+          },
+          "1": {
+            "$value": "#D6E6DF",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.1 — Steel — balanced mid-tone neutral — tint step 1."
+          },
+          "2": {
+            "$value": "#B9C8C2",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.2 — Steel — balanced mid-tone neutral — tint step 2."
+          },
+          "3": {
+            "$value": "#9AA9A2",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.3 — Steel — balanced mid-tone neutral — tint step 3."
+          },
+          "4": {
+            "$value": "#798781",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.4 — Steel — balanced mid-tone neutral — tint step 4."
+          },
+          "5": {
+            "$value": "#697771",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.5 — Steel — balanced mid-tone neutral — base color (step 5, pinned to official brand hex)."
+          },
+          "6": {
+            "$value": "#4B5953",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.6 — Steel — balanced mid-tone neutral — tint step 6."
+          },
+          "7": {
+            "$value": "#36433E",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.7 — Steel — balanced mid-tone neutral — tint step 7."
+          },
+          "8": {
+            "$value": "#222E29",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.8 — Steel — balanced mid-tone neutral — tint step 8."
+          },
+          "9": {
+            "$value": "#121E19",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.steel.9 — Steel — balanced mid-tone neutral — tint step 9."
+          }
+        },
+        "pewter": {
+          "0": {
+            "$value": "#E6F9FF",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.0 — Pewter — cool light neutral — tint step 0."
+          },
+          "1": {
+            "$value": "#D2E5EC",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.1 — Pewter — cool light neutral — tint step 1."
+          },
+          "2": {
+            "$value": "#B5C8CE",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.2 — Pewter — cool light neutral — tint step 2."
+          },
+          "3": {
+            "$value": "#A1B4BA",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.3 — Pewter — cool light neutral — base color (step 3, pinned to official brand hex)."
+          },
+          "4": {
+            "$value": "#75878C",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.4 — Pewter — cool light neutral — tint step 4."
+          },
+          "5": {
+            "$value": "#5B6C72",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.5 — Pewter — cool light neutral — tint step 5."
+          },
+          "6": {
+            "$value": "#48595E",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.6 — Pewter — cool light neutral — tint step 6."
+          },
+          "7": {
+            "$value": "#324348",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.7 — Pewter — cool light neutral — tint step 7."
+          },
+          "8": {
+            "$value": "#1E2E33",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.8 — Pewter — cool light neutral — tint step 8."
+          },
+          "9": {
+            "$value": "#0E1D22",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.pewter.9 — Pewter — cool light neutral — tint step 9."
+          }
+        },
+        "castIron": {
+          "0": {
+            "$value": "#F8F6E7",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.0 — Cast Iron — primary dark neutral — tint step 0."
+          },
+          "1": {
+            "$value": "#E4E2D4",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.1 — Cast Iron — primary dark neutral — tint step 1."
+          },
+          "2": {
+            "$value": "#C7C5B7",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.2 — Cast Iron — primary dark neutral — tint step 2."
+          },
+          "3": {
+            "$value": "#A7A598",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.3 — Cast Iron — primary dark neutral — tint step 3."
+          },
+          "4": {
+            "$value": "#868477",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.4 — Cast Iron — primary dark neutral — tint step 4."
+          },
+          "5": {
+            "$value": "#6B695D",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.5 — Cast Iron — primary dark neutral — tint step 5."
+          },
+          "6": {
+            "$value": "#58564A",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.6 — Cast Iron — primary dark neutral — tint step 6."
+          },
+          "7": {
+            "$value": "#424035",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.7 — Cast Iron — primary dark neutral — tint step 7."
+          },
+          "8": {
+            "$value": "#37352A",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.8 — Cast Iron — primary dark neutral — base color (step 8, pinned to official brand hex)."
+          },
+          "9": {
+            "$value": "#1D1B11",
+            "$type": "color",
+            "$description": "color.brand.clearco-30.castIron.9 — Cast Iron — primary dark neutral — tint step 9."
+          }
+        }
+      }
+    },
     "overlay": {
       "light": {
         "$value": "rgba(0, 0, 0, 0.5)",

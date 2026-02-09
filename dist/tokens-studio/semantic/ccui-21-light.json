@@ -1,46 +1,4 @@
 {
-  "brand": {
-    "primary": {
-      "$value": "{brand.palette.navyBlue.7}",
-      "$type": "color",
-      "$description": "brand.primary — Primary brand color. Navy Blue used in logo 'Clear' letterforms and headings."
-    },
-    "secondary": {
-      "$value": "{brand.palette.skyBlue.3}",
-      "$type": "color",
-      "$description": "brand.secondary — Secondary brand color. Sky Blue used in logo 'Co.' letterforms and subheadings."
-    },
-    "tertiary": {
-      "$value": "{brand.palette.purple.6}",
-      "$type": "color",
-      "$description": "brand.tertiary — Tertiary brand color. Purple for typography accents and supporting elements."
-    },
-    "accent": {
-      "$value": "{brand.palette.yellow.1}",
-      "$type": "color",
-      "$description": "brand.accent — Accent color. Yellow for decorative highlights only — never as main color or text."
-    },
-    "onPrimary": {
-      "$value": "#FFFFFF",
-      "$type": "color",
-      "$description": "brand.onPrimary — Text/foreground on primary (Navy Blue) background."
-    },
-    "onSecondary": {
-      "$value": "#FFFFFF",
-      "$type": "color",
-      "$description": "brand.onSecondary — Text/foreground on secondary (Sky Blue) background."
-    },
-    "onTertiary": {
-      "$value": "#FFFFFF",
-      "$type": "color",
-      "$description": "brand.onTertiary — Text/foreground on tertiary (Purple) background."
-    },
-    "onAccent": {
-      "$value": "{brand.palette.navyBlue.7}",
-      "$type": "color",
-      "$description": "brand.onAccent — Text/foreground on accent (Yellow) background. Uses Navy Blue for contrast."
-    }
-  },
   "color": {
     "overlay": {
       "light": {
@@ -1314,6 +1272,48 @@
         "$type": "number",
         "$description": "mantine.zIndex.max — Maximum z-index for critical elements"
       }
+    }
+  },
+  "brand": {
+    "primary": {
+      "$value": "{color.brand.clearco-21.navyBlue.7}",
+      "$type": "color",
+      "$description": "brand.primary — Primary brand color. Navy Blue used in logo 'Clear' letterforms and headings."
+    },
+    "secondary": {
+      "$value": "{color.brand.clearco-21.skyBlue.3}",
+      "$type": "color",
+      "$description": "brand.secondary — Secondary brand color. Sky Blue used in logo 'Co.' letterforms and subheadings."
+    },
+    "tertiary": {
+      "$value": "{color.brand.clearco-21.purple.6}",
+      "$type": "color",
+      "$description": "brand.tertiary — Tertiary brand color. Purple for typography accents and supporting elements."
+    },
+    "accent": {
+      "$value": "{color.brand.clearco-21.yellow.1}",
+      "$type": "color",
+      "$description": "brand.accent — Accent color. Yellow for decorative highlights only — never as main color or text."
+    },
+    "onPrimary": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "brand.onPrimary — Text/foreground on primary (Navy Blue) background."
+    },
+    "onSecondary": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "brand.onSecondary — Text/foreground on secondary (Sky Blue) background."
+    },
+    "onTertiary": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$description": "brand.onTertiary — Text/foreground on tertiary (Purple) background."
+    },
+    "onAccent": {
+      "$value": "{color.brand.clearco-21.navyBlue.7}",
+      "$type": "color",
+      "$description": "brand.onAccent — Text/foreground on accent (Yellow) background. Uses Navy Blue for contrast."
     }
   },
   "colorPalette": {

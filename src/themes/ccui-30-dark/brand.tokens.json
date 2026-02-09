@@ -3,27 +3,27 @@
     "brand": {
         "$description": "Core brand identity colors for CCUI 3.0 dark mode. Identical to light mode — brand colors do not change with color scheme.",
         "primary": {
-            "$value": "{brand.palette.copper.3}",
+            "$value": "{color.brand.clearco-30.copper.3}",
             "$type": "color",
             "$description": "Primary brand color. Copper — signature accent for hero visuals and brand moments."
         },
         "secondary": {
-            "$value": "{brand.palette.castIron.8}",
+            "$value": "{color.brand.clearco-30.castIron.8}",
             "$type": "color",
             "$description": "Secondary brand color. Cast Iron — primary dark neutral for text and contrast."
         },
         "tertiary": {
-            "$value": "{brand.palette.verdigris.3}",
+            "$value": "{color.brand.clearco-30.verdigris.3}",
             "$type": "color",
             "$description": "Tertiary brand color. Verdigris — nature-inspired supporting color."
         },
         "accent": {
-            "$value": "{brand.palette.alloy.2}",
+            "$value": "{color.brand.clearco-30.alloy.2}",
             "$type": "color",
             "$description": "Accent color. Alloy — warm highlight, lighter companion to Copper."
         },
         "onPrimary": {
-            "$value": "{brand.palette.castIron.8}",
+            "$value": "{color.brand.clearco-30.castIron.8}",
             "$type": "color",
             "$description": "Text/foreground on primary (Copper) background. Cast Iron for WCAG AAA contrast."
         },
@@ -33,12 +33,12 @@
             "$description": "Text/foreground on secondary (Cast Iron) background. White for WCAG AAA contrast."
         },
         "onTertiary": {
-            "$value": "{brand.palette.castIron.8}",
+            "$value": "{color.brand.clearco-30.castIron.8}",
             "$type": "color",
             "$description": "Text/foreground on tertiary (Verdigris) background. Cast Iron for WCAG AAA contrast."
         },
         "onAccent": {
-            "$value": "{brand.palette.castIron.8}",
+            "$value": "{color.brand.clearco-30.castIron.8}",
             "$type": "color",
             "$description": "Text/foreground on accent (Alloy) background. Cast Iron for WCAG AAA contrast."
         }
