@@ -9,9 +9,11 @@
                 "$description": "Text color for dark theme elements"
             },
             "filled": {
-                "$value": "{color.dark.6}",
-                "$type": "color",
-                "$description": "Filled background for dark elements.",
+                "default": {
+                    "$value": "{color.dark.6}",
+                    "$type": "color",
+                    "$description": "Filled background for dark elements."
+                },
                 "hover": {
                     "$value": "{color.dark.7}",
                     "$type": "color",
@@ -19,9 +21,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(46, 46, 46, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of dark color, equal to applying 0.1 opacity to colorPalette.dark.6",
+                "default": {
+                    "$value": "rgba(46, 46, 46, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of dark color, equal to applying 0.1 opacity to colorPalette.dark.6"
+                },
                 "hover": {
                     "$value": "rgba(46, 46, 46, 0.12)",
                     "$type": "color",
@@ -34,9 +38,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.dark.6}",
-                "$type": "color",
-                "$description": "Outline color for dark elements",
+                "default": {
+                    "$value": "{color.dark.6}",
+                    "$type": "color",
+                    "$description": "Outline color for dark elements"
+                },
                 "hover": {
                     "$value": "rgba(46, 46, 46, 0.05)",
                     "$type": "color",
@@ -51,9 +57,11 @@
                 "$description": "Text color for gray theme elements"
             },
             "filled": {
-                "$value": "{color.gray.6}",
-                "$type": "color",
-                "$description": "Filled background for gray elements",
+                "default": {
+                    "$value": "{color.gray.6}",
+                    "$type": "color",
+                    "$description": "Filled background for gray elements"
+                },
                 "hover": {
                     "$value": "{color.gray.7}",
                     "$type": "color",
@@ -61,9 +69,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(134, 142, 150, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of gray color",
+                "default": {
+                    "$value": "rgba(134, 142, 150, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of gray color"
+                },
                 "hover": {
                     "$value": "rgba(134, 142, 150, 0.12)",
                     "$type": "color",
@@ -76,9 +86,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.gray.6}",
-                "$type": "color",
-                "$description": "Outline color for gray elements",
+                "default": {
+                    "$value": "{color.gray.6}",
+                    "$type": "color",
+                    "$description": "Outline color for gray elements"
+                },
                 "hover": {
                     "$value": "rgba(134, 142, 150, 0.05)",
                     "$type": "color",
@@ -93,9 +105,11 @@
                 "$description": "Text color for red theme elements"
             },
             "filled": {
-                "$value": "{color.red.6}",
-                "$type": "color",
-                "$description": "Filled background for red elements",
+                "default": {
+                    "$value": "{color.red.6}",
+                    "$type": "color",
+                    "$description": "Filled background for red elements"
+                },
                 "hover": {
                     "$value": "{color.red.7}",
                     "$type": "color",
@@ -103,9 +117,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(250, 82, 82, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of red color",
+                "default": {
+                    "$value": "rgba(250, 82, 82, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of red color"
+                },
                 "hover": {
                     "$value": "rgba(250, 82, 82, 0.12)",
                     "$type": "color",
@@ -118,9 +134,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.red.6}",
-                "$type": "color",
-                "$description": "Outline color for red elements",
+                "default": {
+                    "$value": "{color.red.6}",
+                    "$type": "color",
+                    "$description": "Outline color for red elements"
+                },
                 "hover": {
                     "$value": "rgba(250, 82, 82, 0.05)",
                     "$type": "color",
@@ -135,9 +153,11 @@
                 "$description": "Text color for pink theme elements"
             },
             "filled": {
-                "$value": "{color.pink.6}",
-                "$type": "color",
-                "$description": "Filled background for pink elements",
+                "default": {
+                    "$value": "{color.pink.6}",
+                    "$type": "color",
+                    "$description": "Filled background for pink elements"
+                },
                 "hover": {
                     "$value": "{color.pink.7}",
                     "$type": "color",
@@ -145,9 +165,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(230, 73, 128, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of pink color",
+                "default": {
+                    "$value": "rgba(230, 73, 128, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of pink color"
+                },
                 "hover": {
                     "$value": "rgba(230, 73, 128, 0.12)",
                     "$type": "color",
@@ -160,9 +182,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.pink.6}",
-                "$type": "color",
-                "$description": "Outline color for pink elements",
+                "default": {
+                    "$value": "{color.pink.6}",
+                    "$type": "color",
+                    "$description": "Outline color for pink elements"
+                },
                 "hover": {
                     "$value": "rgba(230, 73, 128, 0.05)",
                     "$type": "color",
@@ -177,9 +201,11 @@
                 "$description": "Text color for grape theme elements"
             },
             "filled": {
-                "$value": "{color.grape.6}",
-                "$type": "color",
-                "$description": "Filled background for grape elements",
+                "default": {
+                    "$value": "{color.grape.6}",
+                    "$type": "color",
+                    "$description": "Filled background for grape elements"
+                },
                 "hover": {
                     "$value": "{color.grape.7}",
                     "$type": "color",
@@ -187,9 +213,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(190, 75, 219, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of grape color",
+                "default": {
+                    "$value": "rgba(190, 75, 219, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of grape color"
+                },
                 "hover": {
                     "$value": "rgba(190, 75, 219, 0.12)",
                     "$type": "color",
@@ -202,9 +230,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.grape.6}",
-                "$type": "color",
-                "$description": "Outline color for grape elements",
+                "default": {
+                    "$value": "{color.grape.6}",
+                    "$type": "color",
+                    "$description": "Outline color for grape elements"
+                },
                 "hover": {
                     "$value": "rgba(190, 75, 219, 0.05)",
                     "$type": "color",
@@ -219,9 +249,11 @@
                 "$description": "Text color for violet theme elements"
             },
             "filled": {
-                "$value": "{color.violet.6}",
-                "$type": "color",
-                "$description": "Filled background for violet elements",
+                "default": {
+                    "$value": "{color.violet.6}",
+                    "$type": "color",
+                    "$description": "Filled background for violet elements"
+                },
                 "hover": {
                     "$value": "{color.violet.7}",
                     "$type": "color",
@@ -229,9 +261,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(121, 80, 242, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of violet color",
+                "default": {
+                    "$value": "rgba(121, 80, 242, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of violet color"
+                },
                 "hover": {
                     "$value": "rgba(121, 80, 242, 0.12)",
                     "$type": "color",
@@ -244,9 +278,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.violet.6}",
-                "$type": "color",
-                "$description": "Outline color for violet elements",
+                "default": {
+                    "$value": "{color.violet.6}",
+                    "$type": "color",
+                    "$description": "Outline color for violet elements"
+                },
                 "hover": {
                     "$value": "rgba(121, 80, 242, 0.05)",
                     "$type": "color",
@@ -261,9 +297,11 @@
                 "$description": "Text color for indigo theme elements"
             },
             "filled": {
-                "$value": "{color.indigo.6}",
-                "$type": "color",
-                "$description": "Filled background for indigo elements",
+                "default": {
+                    "$value": "{color.indigo.6}",
+                    "$type": "color",
+                    "$description": "Filled background for indigo elements"
+                },
                 "hover": {
                     "$value": "{color.indigo.7}",
                     "$type": "color",
@@ -271,9 +309,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(76, 110, 245, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of indigo color",
+                "default": {
+                    "$value": "rgba(76, 110, 245, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of indigo color"
+                },
                 "hover": {
                     "$value": "rgba(76, 110, 245, 0.12)",
                     "$type": "color",
@@ -286,9 +326,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.indigo.6}",
-                "$type": "color",
-                "$description": "Outline color for indigo elements",
+                "default": {
+                    "$value": "{color.indigo.6}",
+                    "$type": "color",
+                    "$description": "Outline color for indigo elements"
+                },
                 "hover": {
                     "$value": "rgba(76, 110, 245, 0.05)",
                     "$type": "color",
@@ -303,9 +345,11 @@
                 "$description": "Text color for blue theme elements"
             },
             "filled": {
-                "$value": "{color.blue.7}",
-                "$type": "color",
-                "$description": "Filled background for blue elements",
+                "default": {
+                    "$value": "{color.blue.7}",
+                    "$type": "color",
+                    "$description": "Filled background for blue elements"
+                },
                 "hover": {
                     "$value": "{color.blue.8}",
                     "$type": "color",
@@ -313,9 +357,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(20, 94, 184, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of blue color",
+                "default": {
+                    "$value": "rgba(20, 94, 184, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of blue color"
+                },
                 "hover": {
                     "$value": "rgba(20, 94, 184, 0.12)",
                     "$type": "color",
@@ -328,9 +374,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.blue.7}",
-                "$type": "color",
-                "$description": "Outline color for blue elements",
+                "default": {
+                    "$value": "{color.blue.7}",
+                    "$type": "color",
+                    "$description": "Outline color for blue elements"
+                },
                 "hover": {
                     "$value": "rgba(20, 94, 184, 0.05)",
                     "$type": "color",
@@ -345,9 +393,11 @@
                 "$description": "Text color for cyan theme elements"
             },
             "filled": {
-                "$value": "{color.cyan.6}",
-                "$type": "color",
-                "$description": "Filled background for cyan elements",
+                "default": {
+                    "$value": "{color.cyan.6}",
+                    "$type": "color",
+                    "$description": "Filled background for cyan elements"
+                },
                 "hover": {
                     "$value": "{color.cyan.7}",
                     "$type": "color",
@@ -355,9 +405,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(21, 170, 191, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of cyan color",
+                "default": {
+                    "$value": "rgba(21, 170, 191, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of cyan color"
+                },
                 "hover": {
                     "$value": "rgba(21, 170, 191, 0.12)",
                     "$type": "color",
@@ -370,9 +422,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.cyan.6}",
-                "$type": "color",
-                "$description": "Outline color for cyan elements",
+                "default": {
+                    "$value": "{color.cyan.6}",
+                    "$type": "color",
+                    "$description": "Outline color for cyan elements"
+                },
                 "hover": {
                     "$value": "rgba(21, 170, 191, 0.05)",
                     "$type": "color",
@@ -387,9 +441,11 @@
                 "$description": "Text color for teal theme elements"
             },
             "filled": {
-                "$value": "{color.teal.6}",
-                "$type": "color",
-                "$description": "Filled background for teal elements",
+                "default": {
+                    "$value": "{color.teal.6}",
+                    "$type": "color",
+                    "$description": "Filled background for teal elements"
+                },
                 "hover": {
                     "$value": "{color.teal.7}",
                     "$type": "color",
@@ -397,9 +453,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(18, 184, 134, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of teal color",
+                "default": {
+                    "$value": "rgba(18, 184, 134, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of teal color"
+                },
                 "hover": {
                     "$value": "rgba(18, 184, 134, 0.12)",
                     "$type": "color",
@@ -412,9 +470,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.teal.6}",
-                "$type": "color",
-                "$description": "Outline color for teal elements",
+                "default": {
+                    "$value": "{color.teal.6}",
+                    "$type": "color",
+                    "$description": "Outline color for teal elements"
+                },
                 "hover": {
                     "$value": "rgba(18, 184, 134, 0.05)",
                     "$type": "color",
@@ -429,9 +489,11 @@
                 "$description": "Text color for green theme elements"
             },
             "filled": {
-                "$value": "{color.green.6}",
-                "$type": "color",
-                "$description": "Filled background for green elements",
+                "default": {
+                    "$value": "{color.green.6}",
+                    "$type": "color",
+                    "$description": "Filled background for green elements"
+                },
                 "hover": {
                     "$value": "{color.green.7}",
                     "$type": "color",
@@ -439,9 +501,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(64, 192, 87, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of green color",
+                "default": {
+                    "$value": "rgba(64, 192, 87, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of green color"
+                },
                 "hover": {
                     "$value": "rgba(64, 192, 87, 0.12)",
                     "$type": "color",
@@ -454,9 +518,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.green.6}",
-                "$type": "color",
-                "$description": "Outline color for green elements",
+                "default": {
+                    "$value": "{color.green.6}",
+                    "$type": "color",
+                    "$description": "Outline color for green elements"
+                },
                 "hover": {
                     "$value": "rgba(64, 192, 87, 0.05)",
                     "$type": "color",
@@ -471,9 +537,11 @@
                 "$description": "Text color for lime theme elements"
             },
             "filled": {
-                "$value": "{color.lime.6}",
-                "$type": "color",
-                "$description": "Filled background for lime elements",
+                "default": {
+                    "$value": "{color.lime.6}",
+                    "$type": "color",
+                    "$description": "Filled background for lime elements"
+                },
                 "hover": {
                     "$value": "{color.lime.7}",
                     "$type": "color",
@@ -481,9 +549,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(130, 201, 30, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of lime color",
+                "default": {
+                    "$value": "rgba(130, 201, 30, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of lime color"
+                },
                 "hover": {
                     "$value": "rgba(130, 201, 30, 0.12)",
                     "$type": "color",
@@ -496,9 +566,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.lime.6}",
-                "$type": "color",
-                "$description": "Outline color for lime elements",
+                "default": {
+                    "$value": "{color.lime.6}",
+                    "$type": "color",
+                    "$description": "Outline color for lime elements"
+                },
                 "hover": {
                     "$value": "rgba(130, 201, 30, 0.05)",
                     "$type": "color",
@@ -513,9 +585,11 @@
                 "$description": "Text color for yellow theme elements"
             },
             "filled": {
-                "$value": "{color.yellow.6}",
-                "$type": "color",
-                "$description": "Filled background for yellow elements",
+                "default": {
+                    "$value": "{color.yellow.6}",
+                    "$type": "color",
+                    "$description": "Filled background for yellow elements"
+                },
                 "hover": {
                     "$value": "{color.yellow.7}",
                     "$type": "color",
@@ -523,9 +597,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(250, 176, 5, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of yellow color",
+                "default": {
+                    "$value": "rgba(250, 176, 5, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of yellow color"
+                },
                 "hover": {
                     "$value": "rgba(250, 176, 5, 0.12)",
                     "$type": "color",
@@ -538,9 +614,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.yellow.6}",
-                "$type": "color",
-                "$description": "Outline color for yellow elements",
+                "default": {
+                    "$value": "{color.yellow.6}",
+                    "$type": "color",
+                    "$description": "Outline color for yellow elements"
+                },
                 "hover": {
                     "$value": "rgba(250, 176, 5, 0.05)",
                     "$type": "color",
@@ -555,9 +633,11 @@
                 "$description": "Text color for orange theme elements"
             },
             "filled": {
-                "$value": "{color.orange.6}",
-                "$type": "color",
-                "$description": "Filled background for orange elements",
+                "default": {
+                    "$value": "{color.orange.6}",
+                    "$type": "color",
+                    "$description": "Filled background for orange elements"
+                },
                 "hover": {
                     "$value": "{color.orange.7}",
                     "$type": "color",
@@ -565,9 +645,11 @@
                 }
             },
             "light": {
-                "$value": "rgba(253, 126, 20, 0.1)",
-                "$type": "color",
-                "$description": "Light variant of orange color",
+                "default": {
+                    "$value": "rgba(253, 126, 20, 0.1)",
+                    "$type": "color",
+                    "$description": "Light variant of orange color"
+                },
                 "hover": {
                     "$value": "rgba(253, 126, 20, 0.12)",
                     "$type": "color",
@@ -580,9 +662,11 @@
                 }
             },
             "outline": {
-                "$value": "{color.orange.6}",
-                "$type": "color",
-                "$description": "Outline color for orange elements",
+                "default": {
+                    "$value": "{color.orange.6}",
+                    "$type": "color",
+                    "$description": "Outline color for orange elements"
+                },
                 "hover": {
                     "$value": "rgba(253, 126, 20, 0.05)",
                     "$type": "color",

@@ -4,9 +4,11 @@
         "$description": "Button component color tokens",
         "bg": {
             "filled": {
-                "$value": "{color.action.bg.primary}",
-                "$type": "color",
-                "$description": "Filled button background color.",
+                "default": {
+                    "$value": "{color.action.bg.primary.default}",
+                    "$type": "color",
+                    "$description": "Filled button background color."
+                },
                 "hover": {
                     "$value": "{color.action.bg.primary.hover}",
                     "$type": "color",
@@ -15,15 +17,17 @@
             },
             "outline": {
                 "hover": {
-                    "$value": "{color.action.bg.light}",
+                    "$value": "{color.action.bg.light.default}",
                     "$type": "color",
                     "$description": "Outline button hover background color."
                 }
             },
             "light": {
-                "$value": "{color.action.bg.light}",
-                "$type": "color",
-                "$description": "Light button background color.",
+                "default": {
+                    "$value": "{color.action.bg.light.default}",
+                    "$type": "color",
+                    "$description": "Light button background color."
+                },
                 "hover": {
                     "$value": "{color.action.bg.light.hover}",
                     "$type": "color",
@@ -31,19 +35,23 @@
                 }
             },
             "subtle": {
-                "$value": "transparent",
-                "$type": "color",
-                "$description": "Subtle button background color. Transparent by default.",
+                "default": {
+                    "$value": "transparent",
+                    "$type": "color",
+                    "$description": "Subtle button background color. Transparent by default."
+                },
                 "hover": {
-                    "$value": "{color.action.bg.light}",
+                    "$value": "{color.action.bg.light.default}",
                     "$type": "color",
                     "$description": "Subtle button hover background color."
                 }
             },
             "default": {
-                "$value": "{color.bg.surface.default}",
-                "$type": "color",
-                "$description": "Default button background color.",
+                "default": {
+                    "$value": "{color.bg.surface.default}",
+                    "$type": "color",
+                    "$description": "Default button background color."
+                },
                 "hover": {
                     "$value": "{color.bg.surface.elevated}",
                     "$type": "color",
@@ -90,7 +98,7 @@
         },
         "border": {
             "outline": {
-                "$value": "{color.action.border.primary}",
+                "$value": "{color.action.border.primary.default}",
                 "$type": "color",
                 "$description": "Outline button border color."
             },
@@ -245,12 +253,12 @@
         "$description": "Badge component color tokens",
         "bg": {
             "filled": {
-                "$value": "{color.action.bg.primary}",
+                "$value": "{color.action.bg.primary.default}",
                 "$type": "color",
                 "$description": "Filled badge background color."
             },
             "light": {
-                "$value": "{color.action.bg.light}",
+                "$value": "{color.action.bg.light.default}",
                 "$type": "color",
                 "$description": "Light badge background color."
             }
@@ -274,7 +282,7 @@
         },
         "border": {
             "outline": {
-                "$value": "{color.action.border.primary}",
+                "$value": "{color.action.border.primary.default}",
                 "$type": "color",
                 "$description": "Outline badge border color."
             }
@@ -302,7 +310,7 @@
                 "$description": "Unchecked checkbox background color."
             },
             "checked": {
-                "$value": "{color.action.bg.primary}",
+                "$value": "{color.action.bg.primary.default}",
                 "$type": "color",
                 "$description": "Checked checkbox background color."
             },
@@ -319,7 +327,7 @@
                 "$description": "Unchecked checkbox border color."
             },
             "checked": {
-                "$value": "{color.action.bg.primary}",
+                "$value": "{color.action.bg.primary.default}",
                 "$type": "color",
                 "$description": "Checked checkbox border color."
             },
@@ -346,7 +354,7 @@
                 "$description": "Off state track background color."
             },
             "on": {
-                "$value": "{color.action.bg.primary}",
+                "$value": "{color.action.bg.primary.default}",
                 "$type": "color",
                 "$description": "On state track background color."
             },
@@ -411,7 +419,7 @@
                     "$description": "Option hover background color."
                 },
                 "selected": {
-                    "$value": "{color.action.bg.light}",
+                    "$value": "{color.action.bg.light.default}",
                     "$type": "color",
                     "$description": "Selected option background color."
                 }
@@ -484,16 +492,18 @@
         "$description": "Tabs component color tokens",
         "indicator": {
             "active": {
-                "$value": "{color.action.border.primary}",
+                "$value": "{color.action.border.primary.default}",
                 "$type": "color",
                 "$description": "Active tab indicator color."
             }
         },
         "text": {
             "default": {
-                "$value": "{color.text.secondary}",
-                "$type": "color",
-                "$description": "Inactive tab text color.",
+                "default": {
+                    "$value": "{color.text.secondary}",
+                    "$type": "color",
+                    "$description": "Inactive tab text color."
+                },
                 "hover": {
                     "$value": "{color.text.default}",
                     "$type": "color",

@@ -172,9 +172,11 @@
             "$description": "Action/button color tokens.",
             "bg": {
                 "primary": {
-                    "$value": "{colorPalette.blue.filled}",
-                    "$type": "color",
-                    "$description": "Primary action background.",
+                    "default": {
+                        "$value": "{colorPalette.blue.filled.default}",
+                        "$type": "color",
+                        "$description": "Primary action background."
+                    },
                     "hover": {
                         "$value": "{colorPalette.blue.filled.hover}",
                         "$type": "color",
@@ -192,9 +194,11 @@
                     }
                 },
                 "light": {
-                    "$value": "{colorPalette.blue.light}",
-                    "$type": "color",
-                    "$description": "Primary light variant background.",
+                    "default": {
+                        "$value": "{colorPalette.blue.light.default}",
+                        "$type": "color",
+                        "$description": "Primary light variant background."
+                    },
                     "hover": {
                         "$value": "{colorPalette.blue.light.hover}",
                         "$type": "color",
@@ -209,7 +213,7 @@
                     "$description": "Text on primary action backgrounds."
                 },
                 "onSurface": {
-                    "$value": "{colorPalette.blue.filled}",
+                    "$value": "{colorPalette.blue.filled.default}",
                     "$type": "color",
                     "$description": "Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
                 },
@@ -221,9 +225,11 @@
             },
             "border": {
                 "primary": {
-                    "$value": "{colorPalette.blue.filled}",
-                    "$type": "color",
-                    "$description": "Primary action border color.",
+                    "default": {
+                        "$value": "{colorPalette.blue.filled.default}",
+                        "$type": "color",
+                        "$description": "Primary action border color."
+                    },
                     "hover": {
                         "$value": "{colorPalette.blue.filled.hover}",
                         "$type": "color",
@@ -339,7 +345,7 @@
                 "$description": "Focus ring color."
             },
             "glow": {
-                "$value": "{colorPalette.blue.light}",
+                "$value": "{colorPalette.blue.light.default}",
                 "$type": "color",
                 "$description": "Focus ring glow/background color. Use for: input focus ring."
             }
@@ -347,9 +353,11 @@
         "primary": {
             "$description": "Primary color semantic variants.",
             "filled": {
-                "$value": "{colorPalette.blue.filled}",
-                "$type": "color",
-                "$description": "Primary filled background.",
+                "default": {
+                    "$value": "{colorPalette.blue.filled.default}",
+                    "$type": "color",
+                    "$description": "Primary filled background."
+                },
                 "hover": {
                     "$value": "{colorPalette.blue.filled.hover}",
                     "$type": "color",
@@ -357,9 +365,11 @@
                 }
             },
             "light": {
-                "$value": "{colorPalette.blue.light}",
-                "$type": "color",
-                "$description": "Primary light background.",
+                "default": {
+                    "$value": "{colorPalette.blue.light.default}",
+                    "$type": "color",
+                    "$description": "Primary light background."
+                },
                 "hover": {
                     "$value": "{colorPalette.blue.light.hover}",
                     "$type": "color",
