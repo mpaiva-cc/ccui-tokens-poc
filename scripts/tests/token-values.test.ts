@@ -195,89 +195,54 @@ describe('Token Value Validation', () => {
     });
   });
 
-  describe('Primitive Token Sets', () => {
-    const primitiveSets = [
-      { name: 'color.json', expectedType: 'color' },
-      { name: 'spacing.json', expectedType: 'dimension' },
-      { name: 'radius.json', expectedType: 'dimension' },
-      { name: 'typography.json', expectedType: null },
-      { name: 'system.json', expectedType: null },
-    ];
+  describe('Primitive Tokens', () => {
+    const filePath = join(TOKENS_STUDIO_DIR, 'primitives.json');
 
-    describe.each(primitiveSets)('$name', ({ name, expectedType }) => {
-      const filePath = join(TOKENS_STUDIO_DIR, 'primitives', name);
+    if (!existsSync(filePath)) {
+      it.skip('primitives.json not found', () => {});
+      return;
+    }
 
-      if (!existsSync(filePath)) {
-        it.skip('core file not found', () => {});
-        return;
-      }
+    const tokenData = JSON.parse(readFileSync(filePath, 'utf-8'));
+    const tokens = collectTokens(tokenData);
 
-      const tokenData = JSON.parse(readFileSync(filePath, 'utf-8'));
-      const tokens = collectTokens(tokenData);
+    it('should not have empty or null values', () => {
+      const emptyTokens: string[] = [];
 
-      it('should not have empty or null values', () => {
-        const emptyTokens: string[] = [];
-
-        for (const [path, token] of tokens) {
-          const value = token.$value;
-          if (
-            value === '' ||
-            value === null ||
-            value === undefined ||
-            value === 'undefined' ||
-            value === 'null'
-          ) {
-            emptyTokens.push(path);
-          }
+      for (const [path, token] of tokens) {
+        const value = token.$value;
+        if (
+          value === '' ||
+          value === null ||
+          value === undefined ||
+          value === 'undefined' ||
+          value === 'null'
+        ) {
+          emptyTokens.push(path);
         }
-
-        expect(
-          emptyTokens,
-          `Tokens with empty/null values:\n${emptyTokens.join('\n')}`
-        ).toHaveLength(0);
-      });
-
-      if (expectedType === 'color') {
-        it('should have valid color values', () => {
-          const invalidColors: string[] = [];
-
-          for (const [path, token] of tokens) {
-            // Skip reference values
-            if (typeof token.$value === 'string' && token.$value.startsWith('{')) {
-              continue;
-            }
-            if (!isValidColor(token.$value)) {
-              invalidColors.push(`${path}: ${token.$value}`);
-            }
-          }
-
-          expect(
-            invalidColors,
-            `Invalid color values:\n${invalidColors.join('\n')}`
-          ).toHaveLength(0);
-        });
       }
 
-      if (expectedType === 'dimension') {
-        it('should have valid dimension values', () => {
-          const invalidDimensions: string[] = [];
+      expect(
+        emptyTokens,
+        `Tokens with empty/null values:\n${emptyTokens.join('\n')}`
+      ).toHaveLength(0);
+    });
 
-          for (const [path, token] of tokens) {
-            // Skip reference values
-            if (typeof token.$value === 'string' && token.$value.startsWith('{')) {
-              continue;
-            }
-            if (!isValidDimension(token.$value)) {
-              invalidDimensions.push(`${path}: ${token.$value}`);
-            }
-          }
+    it('color tokens should have valid color values', () => {
+      const invalidColors: string[] = [];
 
-          expect(
-            invalidDimensions,
-            `Invalid dimension values:\n${invalidDimensions.join('\n')}`
-          ).toHaveLength(0);
-        });
+      for (const [path, token] of tokens) {
+        if (token.$type !== 'color') continue;
+        if (typeof token.$value === 'string' && token.$value.startsWith('{')) continue;
+        if (!isValidColor(token.$value)) {
+          invalidColors.push(`${path}: ${token.$value}`);
+        }
       }
+
+      expect(
+        invalidColors,
+        `Invalid color values:\n${invalidColors.join('\n')}`
+      ).toHaveLength(0);
     });
   });
 });

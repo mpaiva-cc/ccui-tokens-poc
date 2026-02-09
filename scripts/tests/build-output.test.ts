@@ -20,21 +20,7 @@ const TOKENS_STUDIO_DIR = join(DIST_DIR, 'tokens-studio');
 
 describe('Build Output Validation', () => {
   describe('Tokens Studio Output', () => {
-    const expectedPrimitiveSets = [
-      'color.json',
-      'spacing.json',
-      'radius.json',
-      'typography.json',
-      'shadow.json',
-      'motion.json',
-      'border.json',
-      'breakpoints.json',
-      'z-index.json',
-      'opacity.json',
-      'sizing.json',
-      'focus.json',
-      'system.json',
-    ];
+    const expectedPrimitivesFile = 'primitives.json';
 
     it('should have $metadata.json', () => {
       const filePath = join(TOKENS_STUDIO_DIR, '$metadata.json');
@@ -60,20 +46,20 @@ describe('Build Output Validation', () => {
       expect(parsed.length).toBeGreaterThan(0);
     });
 
-    describe('Primitive Sets', () => {
-      it.each(expectedPrimitiveSets)('should have primitives/%s', (fileName) => {
-        const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
+    describe('Primitives', () => {
+      it('should have primitives.json', () => {
+        const filePath = join(TOKENS_STUDIO_DIR, expectedPrimitivesFile);
         expect(existsSync(filePath)).toBe(true);
       });
 
-      it.each(expectedPrimitiveSets)('primitives/%s should be valid JSON', (fileName) => {
-        const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
+      it('primitives.json should be valid JSON', () => {
+        const filePath = join(TOKENS_STUDIO_DIR, expectedPrimitivesFile);
         const content = readFileSync(filePath, 'utf-8');
         expect(() => JSON.parse(content)).not.toThrow();
       });
 
-      it.each(expectedPrimitiveSets)('primitives/%s should be non-empty object', (fileName) => {
-        const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
+      it('primitives.json should be non-empty object', () => {
+        const filePath = join(TOKENS_STUDIO_DIR, expectedPrimitivesFile);
         const content = readFileSync(filePath, 'utf-8');
         const parsed = JSON.parse(content);
         expect(typeof parsed).toBe('object');

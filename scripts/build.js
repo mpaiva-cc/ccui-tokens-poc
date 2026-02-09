@@ -227,36 +227,35 @@ function inferTokensStudioType(token) {
 }
 
 const TOKENS_STUDIO_PRIMITIVE_SETS = {
-    'color': 'primitives/color',
-    'spacing': 'primitives/spacing',
-    'gridSpacing': 'primitives/spacing',
-    'verticalRhythm': 'primitives/spacing',
-    'radius': 'primitives/radius',
-    // Flat typography categories all map to typography output
-    'fontFamilies': 'primitives/typography',
-    'fontSizes': 'primitives/typography',
-    'fontWeights': 'primitives/typography',
-    'lineHeights': 'primitives/typography',
-    'letterSpacing': 'primitives/typography',
-    'paragraphIndent': 'primitives/typography',
-    'paragraphSpacing': 'primitives/typography',
-    'textDecoration': 'primitives/typography',
-    'textCase': 'primitives/typography',
-    'typography': 'primitives/typography',  // Composite styles
-    'boxShadow': 'primitives/shadow',
-    'motion': 'primitives/motion',
-    'borderWidth': 'primitives/border',
-    'borderStyle': 'primitives/border',
-    'breakpoints': 'primitives/breakpoints',
-    'contentWidth': 'primitives/breakpoints',
-    'zIndex': 'primitives/z-index',
-    'opacity': 'primitives/opacity',
-    'sizing': 'primitives/sizing',
-    'focus': 'primitives/focus',
-    'scale': 'primitives/system',
-    'cursor': 'primitives/system',
-    'fontSmoothing': 'primitives/system',
-    'heading': 'primitives/system'
+    'color': 'primitives',
+    'spacing': 'primitives',
+    'gridSpacing': 'primitives',
+    'verticalRhythm': 'primitives',
+    'radius': 'primitives',
+    'fontFamilies': 'primitives',
+    'fontSizes': 'primitives',
+    'fontWeights': 'primitives',
+    'lineHeights': 'primitives',
+    'letterSpacing': 'primitives',
+    'paragraphIndent': 'primitives',
+    'paragraphSpacing': 'primitives',
+    'textDecoration': 'primitives',
+    'textCase': 'primitives',
+    'typography': 'primitives',
+    'boxShadow': 'primitives',
+    'motion': 'primitives',
+    'borderWidth': 'primitives',
+    'borderStyle': 'primitives',
+    'breakpoints': 'primitives',
+    'contentWidth': 'primitives',
+    'zIndex': 'primitives',
+    'opacity': 'primitives',
+    'sizing': 'primitives',
+    'focus': 'primitives',
+    'scale': 'primitives',
+    'cursor': 'primitives',
+    'fontSmoothing': 'primitives',
+    'heading': 'primitives'
 };
 
 const TOKENS_STUDIO_COMPONENT_SETS = {
@@ -358,11 +357,7 @@ function filterTokensBySet(tokens, setName) {
 function generateTokensStudioMetadata() {
     return {
         tokenSetOrder: [
-            "primitives/border", "primitives/breakpoints", "primitives/color",
-            "primitives/focus", "primitives/motion", "primitives/opacity",
-            "primitives/radius", "primitives/shadow", "primitives/sizing",
-            "primitives/spacing", "primitives/system", "primitives/typography",
-            "primitives/z-index",
+            "primitives",
             "semantic/ccui-21-light",
             "semantic/ccui-30-dark", "semantic/ccui-30-light",
             "semantic/mantine-dark", "semantic/mantine-light",
@@ -375,13 +370,7 @@ function generateTokensStudioMetadata() {
 }
 
 function generateTokensStudioThemes() {
-    const allPrimitiveSets = [
-        "primitives/border", "primitives/breakpoints", "primitives/color",
-        "primitives/focus", "primitives/motion", "primitives/opacity",
-        "primitives/radius", "primitives/shadow", "primitives/sizing",
-        "primitives/spacing", "primitives/system", "primitives/typography",
-        "primitives/z-index"
-    ];
+    const allPrimitiveSets = ["primitives"];
 
     const allComponentSets = [
         "components/alert", "components/badge", "components/button",
@@ -520,71 +509,11 @@ async function buildSharedPrimitives() {
             source: allPrimitiveFiles,
             usesDtcg: true,
             platforms: {
-                // Tokens Studio primitive sets
-                "tokens-studio-primitives-color": {
+                // Tokens Studio primitives — single merged file for alphabetical group ordering
+                "tokens-studio-primitives": {
                     "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "color.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/color" } }]
-                },
-                "tokens-studio-primitives-spacing": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "spacing.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/spacing" } }]
-                },
-                "tokens-studio-primitives-radius": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "radius.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/radius" } }]
-                },
-                "tokens-studio-primitives-typography": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "typography.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/typography", "excludeCategories": ["fontFamilies"] } }]
-                },
-                "tokens-studio-primitives-shadow": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "shadow.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/shadow" } }]
-                },
-                "tokens-studio-primitives-motion": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "motion.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/motion" } }]
-                },
-                "tokens-studio-primitives-border": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "border.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/border" } }]
-                },
-                "tokens-studio-primitives-breakpoints": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "breakpoints.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/breakpoints" } }]
-                },
-                "tokens-studio-primitives-z-index": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "z-index.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/z-index" } }]
-                },
-                "tokens-studio-primitives-opacity": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "opacity.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/opacity" } }]
-                },
-                "tokens-studio-primitives-sizing": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "sizing.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/sizing" } }]
-                },
-                "tokens-studio-primitives-focus": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "focus.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/focus" } }]
-                },
-                "tokens-studio-primitives-system": {
-                    "transformGroup": transformGroups.json,
-                    "buildPath": `${distFolder}/tokens-studio/primitives/`,
-                    "files": [{ "destination": "system.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives/system" } }]
+                    "buildPath": `${distFolder}/tokens-studio/`,
+                    "files": [{ "destination": "primitives.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives", "excludeCategories": ["fontFamilies"] } }]
                 },
                 "tokens-studio-components-button": {
                     "transformGroup": transformGroups.json,

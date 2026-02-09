@@ -75,16 +75,8 @@ describe('Token Reference Resolution', () => {
     });
 
     describe('Primitive Tokens', () => {
-      const primitiveFiles = [
-        'color.json',
-        'spacing.json',
-        'radius.json',
-        'typography.json',
-        'system.json',
-      ];
-
-      it.each(primitiveFiles)('primitives/%s should not have undefined values', (fileName) => {
-        const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
+      it('primitives.json should not have undefined values', () => {
+        const filePath = join(TOKENS_STUDIO_DIR, 'primitives.json');
         if (!existsSync(filePath)) {
           return;
         }
@@ -118,7 +110,7 @@ describe('Token Reference Resolution', () => {
 
         expect(
           undefinedValues,
-          `Undefined values in ${fileName}:\n${undefinedValues.join('\n')}`
+          `Undefined values in primitives.json:\n${undefinedValues.join('\n')}`
         ).toHaveLength(0);
       });
     });

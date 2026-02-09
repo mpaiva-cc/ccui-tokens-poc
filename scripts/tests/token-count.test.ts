@@ -84,17 +84,9 @@ describe('Token Count Regression', () => {
     });
   });
 
-  describe('Primitive Token Set Counts', () => {
-    const primitiveSets = [
-      'color.json',
-      'spacing.json',
-      'radius.json',
-      'typography.json',
-      'system.json',
-    ];
-
-    it.each(primitiveSets)('primitives/%s should have tokens', (fileName) => {
-      const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
+  describe('Primitive Token Counts', () => {
+    it('primitives.json should have tokens', () => {
+      const filePath = join(TOKENS_STUDIO_DIR, 'primitives.json');
       if (!existsSync(filePath)) {
         return;
       }
@@ -118,33 +110,30 @@ describe('Token Count Regression', () => {
       expect(countTokens(tokens)).toBeGreaterThan(0);
     });
 
-    it('should report primitive token set counts', () => {
-      console.log('Primitive token set counts:');
-      for (const fileName of primitiveSets) {
-        const filePath = join(TOKENS_STUDIO_DIR, 'primitives', fileName);
-        if (!existsSync(filePath)) {
-          console.log(`  ${fileName}: not found`);
-          continue;
-        }
-
-        const content = readFileSync(filePath, 'utf-8');
-        const tokens = JSON.parse(content);
-
-        const countTokens = (obj: unknown): number => {
-          if (typeof obj !== 'object' || obj === null) return 0;
-          let count = 0;
-          for (const value of Object.values(obj)) {
-            if (typeof value === 'object' && value !== null && '$value' in value) {
-              count++;
-            } else if (typeof value === 'object') {
-              count += countTokens(value);
-            }
-          }
-          return count;
-        };
-
-        console.log(`  ${fileName}: ${countTokens(tokens)} tokens`);
+    it('should report primitive token count', () => {
+      const filePath = join(TOKENS_STUDIO_DIR, 'primitives.json');
+      if (!existsSync(filePath)) {
+        console.log('  primitives.json: not found');
+        return;
       }
+
+      const content = readFileSync(filePath, 'utf-8');
+      const tokens = JSON.parse(content);
+
+      const countTokens = (obj: unknown): number => {
+        if (typeof obj !== 'object' || obj === null) return 0;
+        let count = 0;
+        for (const value of Object.values(obj)) {
+          if (typeof value === 'object' && value !== null && '$value' in value) {
+            count++;
+          } else if (typeof value === 'object') {
+            count += countTokens(value);
+          }
+        }
+        return count;
+      };
+
+      console.log(`  primitives.json: ${countTokens(tokens)} tokens`);
       expect(true).toBe(true);
     });
   });

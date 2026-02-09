@@ -4,19 +4,7 @@
     "name": "Default",
     "group": "Primitives",
     "selectedTokenSets": {
-      "primitives/border": "enabled",
-      "primitives/breakpoints": "enabled",
-      "primitives/color": "enabled",
-      "primitives/focus": "enabled",
-      "primitives/motion": "enabled",
-      "primitives/opacity": "enabled",
-      "primitives/radius": "enabled",
-      "primitives/shadow": "enabled",
-      "primitives/sizing": "enabled",
-      "primitives/spacing": "enabled",
-      "primitives/system": "enabled",
-      "primitives/typography": "enabled",
-      "primitives/z-index": "enabled"
+      "primitives": "enabled"
     }
   },
   {
@@ -24,19 +12,11 @@
     "name": "Vanilla Mantine light theme",
     "group": "Semantic",
     "selectedTokenSets": {
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/color": "source",
-      "primitives/focus": "source",
-      "primitives/motion": "source",
-      "primitives/opacity": "source",
-      "primitives/radius": "source",
-      "primitives/shadow": "source",
-      "primitives/sizing": "source",
-      "primitives/spacing": "source",
-      "primitives/system": "source",
-      "primitives/typography": "source",
-      "primitives/z-index": "source",
+      "primitives": "source",
+      "semantic/ccui-21-light": "disabled",
+      "semantic/ccui-30-dark": "disabled",
+      "semantic/ccui-30-light": "disabled",
+      "semantic/mantine-dark": "disabled",
       "semantic/mantine-light": "enabled"
     }
   },
@@ -45,20 +25,12 @@
     "name": "Vanilla Mantine dark theme",
     "group": "Semantic",
     "selectedTokenSets": {
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/color": "source",
-      "primitives/focus": "source",
-      "primitives/motion": "source",
-      "primitives/opacity": "source",
-      "primitives/radius": "source",
-      "primitives/shadow": "source",
-      "primitives/sizing": "source",
-      "primitives/spacing": "source",
-      "primitives/system": "source",
-      "primitives/typography": "source",
-      "primitives/z-index": "source",
-      "semantic/mantine-dark": "enabled"
+      "primitives": "source",
+      "semantic/ccui-21-light": "disabled",
+      "semantic/ccui-30-dark": "disabled",
+      "semantic/ccui-30-light": "disabled",
+      "semantic/mantine-dark": "enabled",
+      "semantic/mantine-light": "disabled"
     }
   },
   {
@@ -66,20 +38,12 @@
     "name": "CCUI 2.1 brand theme",
     "group": "Semantic",
     "selectedTokenSets": {
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/color": "source",
-      "primitives/focus": "source",
-      "primitives/motion": "source",
-      "primitives/opacity": "source",
-      "primitives/radius": "source",
-      "primitives/shadow": "source",
-      "primitives/sizing": "source",
-      "primitives/spacing": "source",
-      "primitives/system": "source",
-      "primitives/typography": "source",
-      "primitives/z-index": "source",
-      "semantic/ccui-21-light": "enabled"
+      "primitives": "source",
+      "semantic/ccui-21-light": "enabled",
+      "semantic/ccui-30-dark": "disabled",
+      "semantic/ccui-30-light": "disabled",
+      "semantic/mantine-dark": "disabled",
+      "semantic/mantine-light": "disabled"
     }
   },
   {
@@ -87,20 +51,12 @@
     "name": "CCUI 3.0 rebranding light",
     "group": "Semantic",
     "selectedTokenSets": {
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/color": "source",
-      "primitives/focus": "source",
-      "primitives/motion": "source",
-      "primitives/opacity": "source",
-      "primitives/radius": "source",
-      "primitives/shadow": "source",
-      "primitives/sizing": "source",
-      "primitives/spacing": "source",
-      "primitives/system": "source",
-      "primitives/typography": "source",
-      "primitives/z-index": "source",
-      "semantic/ccui-30-light": "enabled"
+      "primitives": "source",
+      "semantic/ccui-21-light": "disabled",
+      "semantic/ccui-30-dark": "disabled",
+      "semantic/ccui-30-light": "enabled",
+      "semantic/mantine-dark": "disabled",
+      "semantic/mantine-light": "disabled"
     }
   },
   {
@@ -108,20 +64,12 @@
     "name": "CCUI 3.0 rebranding dark",
     "group": "Semantic",
     "selectedTokenSets": {
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/color": "source",
-      "primitives/focus": "source",
-      "primitives/motion": "source",
-      "primitives/opacity": "source",
-      "primitives/radius": "source",
-      "primitives/shadow": "source",
-      "primitives/sizing": "source",
-      "primitives/spacing": "source",
-      "primitives/system": "source",
-      "primitives/typography": "source",
-      "primitives/z-index": "source",
-      "semantic/ccui-30-dark": "enabled"
+      "primitives": "source",
+      "semantic/ccui-21-light": "disabled",
+      "semantic/ccui-30-dark": "enabled",
+      "semantic/ccui-30-light": "disabled",
+      "semantic/mantine-dark": "disabled",
+      "semantic/mantine-light": "disabled"
     }
   },
   {
@@ -129,19 +77,7 @@
     "name": "Default",
     "group": "Components",
     "selectedTokenSets": {
-      "primitives/border": "source",
-      "primitives/breakpoints": "source",
-      "primitives/color": "source",
-      "primitives/focus": "source",
-      "primitives/motion": "source",
-      "primitives/opacity": "source",
-      "primitives/radius": "source",
-      "primitives/shadow": "source",
-      "primitives/sizing": "source",
-      "primitives/spacing": "source",
-      "primitives/system": "source",
-      "primitives/typography": "source",
-      "primitives/z-index": "source",
+      "primitives": "source",
       "components/alert": "enabled",
       "components/badge": "enabled",
       "components/button": "enabled",
