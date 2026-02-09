@@ -682,45 +682,6 @@
         }
       }
     },
-    "overlay": {
-      "light": {
-        "$value": "rgba(0, 0, 0, 0.5)",
-        "$type": "color",
-        "$description": "color.overlay.light — Light theme overlay (50% opacity). Use for: modal backdrops, drawer overlays on light backgrounds."
-      },
-      "dark": {
-        "$value": "rgba(0, 0, 0, 0.75)",
-        "$type": "color",
-        "$description": "color.overlay.dark — Dark theme overlay (75% opacity). Use for: modal backdrops on dark backgrounds, higher contrast overlays."
-      }
-    },
-    "alpha": {
-      "error": {
-        "$value": "rgba(207, 39, 32, 0.15)",
-        "$type": "color",
-        "$description": "color.alpha.error — Error state semi-transparent background (15% red)"
-      },
-      "success": {
-        "$value": "rgba(29, 148, 72, 0.15)",
-        "$type": "color",
-        "$description": "color.alpha.success — Success state semi-transparent background (15% green)"
-      },
-      "warning": {
-        "$value": "rgba(218, 167, 17, 0.15)",
-        "$type": "color",
-        "$description": "color.alpha.warning — Warning state semi-transparent background (15% yellow)"
-      },
-      "info": {
-        "$value": "rgba(9, 116, 235, 0.15)",
-        "$type": "color",
-        "$description": "color.alpha.info — Info state semi-transparent background (15% blue)"
-      },
-      "selected": {
-        "$value": "rgba(9, 116, 235, 0.2)",
-        "$type": "color",
-        "$description": "color.alpha.selected — Selected state semi-transparent background (20% blue)"
-      }
-    },
     "white": {
       "$value": "#ffffff",
       "$type": "color",
