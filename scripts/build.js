@@ -134,6 +134,12 @@ function inferTokensStudioType(token) {
         return 'color';
     }
 
+    // Component color tokens from theme files (e.g., button.filled.backgroundColor)
+    // These are color tokens defined in component-colors.tokens.json
+    if (TOKENS_STUDIO_COMPONENT_SETS[rootCategory] && originalType === 'color') {
+        return 'color';
+    }
+
     // Spacing tokens
     if (['spacing', 'gridSpacing', 'verticalRhythm'].includes(rootCategory)) {
         return 'spacing';
@@ -313,7 +319,13 @@ function buildTokensStudioStructure(tokens) {
             tokenObj["$description"] = `${tokenPath} — ${description}`;
         }
 
-        current[finalKey] = tokenObj;
+        // Merge into existing object to preserve children when a node
+        // is both a token ($value) and a parent of nested tokens
+        if (current[finalKey] && typeof current[finalKey] === 'object') {
+            Object.assign(current[finalKey], tokenObj);
+        } else {
+            current[finalKey] = tokenObj;
+        }
     });
 
     return result;
@@ -418,18 +430,26 @@ StyleDictionary.registerFormat({
     }
 });
 
+// Component names that appear as top-level keys in theme component-colors files
+const SEMANTIC_COMPONENT_NAMES = Object.keys(TOKENS_STUDIO_COMPONENT_SETS);
+
 StyleDictionary.registerFormat({
     name: 'json/tokens-studio-semantic',
     format: ({ dictionary }) => {
         const semanticTokens = dictionary.allTokens.filter(token => {
             const category = token.path[0];
             // Include color-related semantic tokens and component color tokens from theme files
-            if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'componentColors', 'fontFamilies'].includes(category)) {
+            if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'fontFamilies', ...SEMANTIC_COMPONENT_NAMES].includes(category)) {
                 return false;
             }
             // Exclude primitive palette colors - they belong in core/color.json
             if (isPrimitiveColorToken(token)) {
                 return false;
+            }
+            // For component categories, only include color tokens (not dimension/duration primitives)
+            if (SEMANTIC_COMPONENT_NAMES.includes(category)) {
+                const tokenType = token.$type || token.type;
+                if (tokenType !== 'color') return false;
             }
             return true;
         });
