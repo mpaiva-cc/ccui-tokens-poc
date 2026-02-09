@@ -121,6 +121,43 @@
                 "$value": "{focus.ring.offset}",
                 "$description": "Focus ring offset (2px). Space between switch track and focus ring for clear visual separation."
             }
+        },
+        "color": {
+            "$description": "Switch component color tokens. These reference semantic color tokens for theme-aware styling. Dark themes override track.off, thumb.off, thumb.on, and thumb.disabled.",
+            "track": {
+                "off": {
+                    "$value": "{color.bg.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Off state track background color."
+                },
+                "on": {
+                    "$value": "{color.action.bg.primary.default}",
+                    "$type": "color",
+                    "$description": "On state track background color."
+                },
+                "disabled": {
+                    "$value": "{color.bg.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled switch track color."
+                }
+            },
+            "thumb": {
+                "off": {
+                    "$value": "{color.bg.surface.default}",
+                    "$type": "color",
+                    "$description": "Switch thumb color."
+                },
+                "on": {
+                    "$value": "{color.bg.surface.default}",
+                    "$type": "color",
+                    "$description": "Switch thumb color when on."
+                },
+                "disabled": {
+                    "$value": "{color.border.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled switch thumb color."
+                }
+            }
         }
     }
 }

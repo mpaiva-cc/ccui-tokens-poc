@@ -160,6 +160,56 @@
         "$type": "dimension",
         "$description": "select.icon.spacing — Spacing between text and icon (10px). Separates selected text from chevron indicator."
       }
+    },
+    "color": {
+      "bg": {
+        "$value": "{color.bg.surface.default}",
+        "$type": "color",
+        "$description": "select.color.bg — Select input background color."
+      },
+      "border": {
+        "$value": "{color.border.surface.default}",
+        "$type": "color",
+        "$description": "select.color.border — Select input border color."
+      },
+      "text": {
+        "$value": "{color.text.default}",
+        "$type": "color",
+        "$description": "select.color.text — Select input text color."
+      },
+      "dropdown": {
+        "bg": {
+          "$value": "{color.bg.surface.default}",
+          "$type": "color",
+          "$description": "select.color.dropdown.bg — Dropdown menu background color."
+        },
+        "border": {
+          "$value": "{color.border.surface.default}",
+          "$type": "color",
+          "$description": "select.color.dropdown.border — Dropdown menu border color."
+        }
+      },
+      "option": {
+        "bg": {
+          "hover": {
+            "$value": "{color.bg.surface.elevated}",
+            "$type": "color",
+            "$description": "select.color.option.bg.hover — Option hover background color."
+          },
+          "selected": {
+            "$value": "{color.action.bg.light.default}",
+            "$type": "color",
+            "$description": "select.color.option.bg.selected — Selected option background color."
+          }
+        },
+        "text": {
+          "selected": {
+            "$value": "{color.action.text.light}",
+            "$type": "color",
+            "$description": "select.color.option.text.selected — Selected option text color."
+          }
+        }
+      }
     }
   }
 }

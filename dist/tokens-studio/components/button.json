@@ -103,6 +103,119 @@
         "$value": "{motion.easing.easeOut}",
         "$description": "button.transition.easing — Button transition easing curve."
       }
+    },
+    "color": {
+      "bg": {
+        "filled": {
+          "default": {
+            "$value": "{color.action.bg.primary.default}",
+            "$type": "color",
+            "$description": "button.color.bg.filled.default — Filled button background color."
+          },
+          "hover": {
+            "$value": "{color.action.bg.primary.hover}",
+            "$type": "color",
+            "$description": "button.color.bg.filled.hover — Filled button hover background color."
+          }
+        },
+        "outline": {
+          "hover": {
+            "$value": "{color.action.bg.light.default}",
+            "$type": "color",
+            "$description": "button.color.bg.outline.hover — Outline button hover background color."
+          }
+        },
+        "light": {
+          "default": {
+            "$value": "{color.action.bg.light.default}",
+            "$type": "color",
+            "$description": "button.color.bg.light.default — Light button background color."
+          },
+          "hover": {
+            "$value": "{color.action.bg.light.hover}",
+            "$type": "color",
+            "$description": "button.color.bg.light.hover — Light button hover background color."
+          }
+        },
+        "subtle": {
+          "default": {
+            "$value": "transparent",
+            "$type": "color",
+            "$description": "button.color.bg.subtle.default — Subtle button background color. Transparent by default."
+          },
+          "hover": {
+            "$value": "{color.action.bg.light.default}",
+            "$type": "color",
+            "$description": "button.color.bg.subtle.hover — Subtle button hover background color."
+          }
+        },
+        "default": {
+          "default": {
+            "$value": "{color.bg.surface.default}",
+            "$type": "color",
+            "$description": "button.color.bg.default.default — Default button background color."
+          },
+          "hover": {
+            "$value": "{color.bg.surface.elevated}",
+            "$type": "color",
+            "$description": "button.color.bg.default.hover — Default button hover background color."
+          }
+        },
+        "disabled": {
+          "$value": "{color.bg.interactive.disabled}",
+          "$type": "color",
+          "$description": "button.color.bg.disabled — Disabled button background color."
+        }
+      },
+      "text": {
+        "filled": {
+          "$value": "{color.action.text.primary}",
+          "$type": "color",
+          "$description": "button.color.text.filled — Filled button text color for contrast on action background."
+        },
+        "outline": {
+          "$value": "{color.action.text.onSurface}",
+          "$type": "color",
+          "$description": "button.color.text.outline — Outline button text color."
+        },
+        "light": {
+          "$value": "{color.action.text.light}",
+          "$type": "color",
+          "$description": "button.color.text.light — Light button text color."
+        },
+        "subtle": {
+          "$value": "{color.action.text.onSurface}",
+          "$type": "color",
+          "$description": "button.color.text.subtle — Subtle button text color."
+        },
+        "default": {
+          "$value": "{color.text.onDefault}",
+          "$type": "color",
+          "$description": "button.color.text.default — Default button text color."
+        },
+        "disabled": {
+          "$value": "{color.text.disabled}",
+          "$type": "color",
+          "$description": "button.color.text.disabled — Disabled button text color."
+        }
+      },
+      "border": {
+        "outline": {
+          "$value": "{color.action.border.primary.default}",
+          "$type": "color",
+          "$description": "button.color.border.outline — Outline button border color."
+        },
+        "default": {
+          "$value": "{color.border.surface.default}",
+          "$type": "color",
+          "$description": "button.color.border.default — Default button border color."
+        },
+        "disabled": {
+          "$value": "{color.border.interactive.disabled}",
+          "$type": "color",
+          "$description": "button.color.border.disabled — Disabled button border color."
+        }
+      }
     }
   }
 }

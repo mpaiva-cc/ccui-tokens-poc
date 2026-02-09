@@ -113,6 +113,35 @@
         "$type": "duration",
         "$description": "table.transition.duration — Table row hover transition duration (100ms). Fast transition for responsive hover feedback on rows."
       }
+    },
+    "color": {
+      "bg": {
+        "header": {
+          "$value": "{color.bg.surface.elevated}",
+          "$type": "color",
+          "$description": "table.color.bg.header — Table header background color."
+        },
+        "striped": {
+          "$value": "{color.bg.surface.elevated}",
+          "$type": "color",
+          "$description": "table.color.bg.striped — Alternating row background color."
+        },
+        "hover": {
+          "$value": "{color.bg.surface.elevated}",
+          "$type": "color",
+          "$description": "table.color.bg.hover — Row hover background color."
+        },
+        "selected": {
+          "$value": "{color.bg.interactive.selected}",
+          "$type": "color",
+          "$description": "table.color.bg.selected — Selected row background color."
+        }
+      },
+      "border": {
+        "$value": "{color.border.surface.default}",
+        "$type": "color",
+        "$description": "table.color.border — Table border color."
+      }
     }
   }
 }

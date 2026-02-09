@@ -134,8 +134,8 @@ function inferTokensStudioType(token) {
         return 'color';
     }
 
-    // Component color tokens from theme files (e.g., button.filled.backgroundColor)
-    // These are color tokens defined in component-colors.tokens.json
+    // Component color tokens (e.g., button.color.bg.filled.default)
+    // These are color tokens defined within component token files
     if (TOKENS_STUDIO_COMPONENT_SETS[rootCategory] && originalType === 'color') {
         return 'color';
     }
@@ -430,7 +430,7 @@ StyleDictionary.registerFormat({
     }
 });
 
-// Component names that appear as top-level keys in theme component-colors files
+// Component names that may appear as top-level keys
 const SEMANTIC_COMPONENT_NAMES = Object.keys(TOKENS_STUDIO_COMPONENT_SETS);
 
 StyleDictionary.registerFormat({
@@ -438,18 +438,13 @@ StyleDictionary.registerFormat({
     format: ({ dictionary }) => {
         const semanticTokens = dictionary.allTokens.filter(token => {
             const category = token.path[0];
-            // Include color-related semantic tokens and component color tokens from theme files
-            if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'fontFamilies', ...SEMANTIC_COMPONENT_NAMES].includes(category)) {
+            // Include only semantic-level tokens (not component tokens)
+            if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'fontFamilies'].includes(category)) {
                 return false;
             }
             // Exclude primitive palette colors - they belong in core/color.json
             if (isPrimitiveColorToken(token)) {
                 return false;
-            }
-            // For component categories, only include color tokens (not dimension/duration primitives)
-            if (SEMANTIC_COMPONENT_NAMES.includes(category)) {
-                const tokenType = token.$type || token.type;
-                if (tokenType !== 'color') return false;
             }
             return true;
         });
@@ -498,9 +493,18 @@ async function buildSharedPrimitives() {
     console.log('\nBuilding shared primitives...');
 
     try {
-        const sd = new StyleDictionary({
+        const sd = await new StyleDictionary({
             source: allPrimitiveFiles,
             usesDtcg: true,
+            // Component token files reference semantic color tokens (e.g. {color.action.bg.primary.default})
+            // which are only available in theme builds. We allow broken references here since the output
+            // format preserves original reference strings for Tokens Studio consumption.
+            log: {
+                verbosity: 'silent',
+                errors: {
+                    brokenReferences: 'console'
+                }
+            },
             platforms: {
                 // Tokens Studio primitive sets
                 "tokens-studio-primitives-color": {
@@ -623,8 +627,7 @@ async function buildSharedPrimitives() {
                     "buildPath": `${distFolder}/tokens-studio/components/`,
                     "files": [{ "destination": "tabs.json", "format": "json/tokens-studio-set", "options": { "setName": "components/tabs" } }]
                 }
-            },
-            log: { verbosity: 'default' }
+            }
         });
         await sd.buildAllPlatforms();
         console.log('Shared primitives built successfully');
@@ -647,7 +650,7 @@ async function buildThemes() {
         const sourceFiles = [...allPrimitiveFiles, ...baseThemeFiles, ...themeTokenFiles];
 
         try {
-            const sd = new StyleDictionary({
+            const sd = await new StyleDictionary({
                 source: sourceFiles,
                 usesDtcg: true,
                 platforms: {

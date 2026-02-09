@@ -104,6 +104,44 @@
       "$value": "{letterSpacing.wide}",
       "$type": "dimension",
       "$description": "badge.letterSpacing — Badge letter spacing (0.025em). Slightly wide tracking improves readability at small sizes, especially for uppercase text common in badges."
+    },
+    "color": {
+      "bg": {
+        "filled": {
+          "$value": "{color.action.bg.primary.default}",
+          "$type": "color",
+          "$description": "badge.color.bg.filled — Filled badge background color."
+        },
+        "light": {
+          "$value": "{color.action.bg.light.default}",
+          "$type": "color",
+          "$description": "badge.color.bg.light — Light badge background color."
+        }
+      },
+      "text": {
+        "filled": {
+          "$value": "{color.action.text.primary}",
+          "$type": "color",
+          "$description": "badge.color.text.filled — Filled badge text color."
+        },
+        "light": {
+          "$value": "{color.action.text.light}",
+          "$type": "color",
+          "$description": "badge.color.text.light — Light badge text color."
+        },
+        "outline": {
+          "$value": "{color.action.text.onSurface}",
+          "$type": "color",
+          "$description": "badge.color.text.outline — Outline badge text color."
+        }
+      },
+      "border": {
+        "outline": {
+          "$value": "{color.action.border.primary.default}",
+          "$type": "color",
+          "$description": "badge.color.border.outline — Outline badge border color."
+        }
+      }
     }
   }
 }

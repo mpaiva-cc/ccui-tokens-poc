@@ -104,6 +104,49 @@
         "$type": "dimension",
         "$description": "checkbox.focus.ringOffset — Focus ring offset (2px). Space between checkbox border and focus ring. Prevents ring from overlapping checkbox border."
       }
+    },
+    "color": {
+      "bg": {
+        "unchecked": {
+          "$value": "{color.bg.surface.default}",
+          "$type": "color",
+          "$description": "checkbox.color.bg.unchecked — Unchecked checkbox background color."
+        },
+        "checked": {
+          "$value": "{color.action.bg.primary.default}",
+          "$type": "color",
+          "$description": "checkbox.color.bg.checked — Checked checkbox background color."
+        },
+        "disabled": {
+          "$value": "{color.bg.interactive.disabled}",
+          "$type": "color",
+          "$description": "checkbox.color.bg.disabled — Disabled checkbox background color."
+        }
+      },
+      "border": {
+        "unchecked": {
+          "$value": "{color.border.surface.default}",
+          "$type": "color",
+          "$description": "checkbox.color.border.unchecked — Unchecked checkbox border color."
+        },
+        "checked": {
+          "$value": "{color.action.bg.primary.default}",
+          "$type": "color",
+          "$description": "checkbox.color.border.checked — Checked checkbox border color."
+        },
+        "disabled": {
+          "$value": "{color.border.interactive.disabled}",
+          "$type": "color",
+          "$description": "checkbox.color.border.disabled — Disabled checkbox border color."
+        }
+      },
+      "icon": {
+        "checked": {
+          "$value": "{color.action.text.primary}",
+          "$type": "color",
+          "$description": "checkbox.color.icon.checked — Checkmark icon color."
+        }
+      }
     }
   }
 }

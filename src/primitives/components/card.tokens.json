@@ -75,6 +75,19 @@
                 "$value": "{motion.easing.easeOut}",
                 "$description": "Card transition easing"
             }
+        },
+        "color": {
+            "$description": "Card component color tokens. These reference semantic color tokens for theme-aware styling.",
+            "bg": {
+                "$value": "{color.bg.surface.default}",
+                "$type": "color",
+                "$description": "Card background color."
+            },
+            "border": {
+                "$value": "{color.border.surface.default}",
+                "$type": "color",
+                "$description": "Card border color."
+            }
         }
     }
 }

@@ -106,6 +106,72 @@
                 "$value": "{focus.ring.offset}",
                 "$description": "Focus ring offset from input border."
             }
+        },
+        "color": {
+            "$description": "Input component color tokens. These reference semantic color tokens for theme-aware styling.",
+            "bg": {
+                "default": {
+                    "$value": "{color.bg.surface.default}",
+                    "$type": "color",
+                    "$description": "Default input background color."
+                },
+                "disabled": {
+                    "$value": "{color.bg.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled input background color."
+                }
+            },
+            "text": {
+                "default": {
+                    "$value": "{color.text.default}",
+                    "$type": "color",
+                    "$description": "Input text color."
+                },
+                "placeholder": {
+                    "$value": "{color.text.placeholder}",
+                    "$type": "color",
+                    "$description": "Input placeholder text color."
+                },
+                "error": {
+                    "$value": "{color.feedback.text.error}",
+                    "$type": "color",
+                    "$description": "Error message text color."
+                },
+                "disabled": {
+                    "$value": "{color.text.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled input text color."
+                }
+            },
+            "border": {
+                "default": {
+                    "$value": "{color.border.surface.default}",
+                    "$type": "color",
+                    "$description": "Default input border color."
+                },
+                "focus": {
+                    "$value": "{color.border.interactive.focus}",
+                    "$type": "color",
+                    "$description": "Focused input border color."
+                },
+                "error": {
+                    "$value": "{color.feedback.text.error}",
+                    "$type": "color",
+                    "$description": "Error state input border color."
+                },
+                "disabled": {
+                    "$value": "{color.border.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled input border color."
+                }
+            },
+            "ring": {
+                "focus": {
+                    "$value": "{color.focus.glow}",
+                    "$type": "color",
+                    "$description": "Focus ring glow color around input."
+                }
+            }
         }
     }
 }

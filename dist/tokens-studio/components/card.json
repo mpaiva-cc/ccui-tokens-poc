@@ -77,6 +77,18 @@
         "$value": "{motion.easing.easeOut}",
         "$description": "card.transition.easing — Card transition easing"
       }
+    },
+    "color": {
+      "bg": {
+        "$value": "{color.bg.surface.default}",
+        "$type": "color",
+        "$description": "card.color.bg — Card background color."
+      },
+      "border": {
+        "$value": "{color.border.surface.default}",
+        "$type": "color",
+        "$description": "card.color.border — Card border color."
+      }
     }
   }
 }

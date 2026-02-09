@@ -103,6 +103,36 @@
                 "$value": "{motion.duration.fast}",
                 "$description": "Table row hover transition duration (100ms). Fast transition for responsive hover feedback on rows."
             }
+        },
+        "color": {
+            "$description": "Table component color tokens. These reference semantic color tokens for theme-aware styling.",
+            "bg": {
+                "header": {
+                    "$value": "{color.bg.surface.elevated}",
+                    "$type": "color",
+                    "$description": "Table header background color."
+                },
+                "striped": {
+                    "$value": "{color.bg.surface.elevated}",
+                    "$type": "color",
+                    "$description": "Alternating row background color."
+                },
+                "hover": {
+                    "$value": "{color.bg.surface.elevated}",
+                    "$type": "color",
+                    "$description": "Row hover background color."
+                },
+                "selected": {
+                    "$value": "{color.bg.interactive.selected}",
+                    "$type": "color",
+                    "$description": "Selected row background color."
+                }
+            },
+            "border": {
+                "$value": "{color.border.surface.default}",
+                "$type": "color",
+                "$description": "Table border color."
+            }
         }
     }
 }

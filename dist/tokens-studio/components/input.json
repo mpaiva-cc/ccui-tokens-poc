@@ -120,6 +120,71 @@
         "$type": "dimension",
         "$description": "input.focus.ringOffset — Focus ring offset from input border."
       }
+    },
+    "color": {
+      "bg": {
+        "default": {
+          "$value": "{color.bg.surface.default}",
+          "$type": "color",
+          "$description": "input.color.bg.default — Default input background color."
+        },
+        "disabled": {
+          "$value": "{color.bg.interactive.disabled}",
+          "$type": "color",
+          "$description": "input.color.bg.disabled — Disabled input background color."
+        }
+      },
+      "text": {
+        "default": {
+          "$value": "{color.text.default}",
+          "$type": "color",
+          "$description": "input.color.text.default — Input text color."
+        },
+        "placeholder": {
+          "$value": "{color.text.placeholder}",
+          "$type": "color",
+          "$description": "input.color.text.placeholder — Input placeholder text color."
+        },
+        "error": {
+          "$value": "{color.feedback.text.error}",
+          "$type": "color",
+          "$description": "input.color.text.error — Error message text color."
+        },
+        "disabled": {
+          "$value": "{color.text.disabled}",
+          "$type": "color",
+          "$description": "input.color.text.disabled — Disabled input text color."
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.border.surface.default}",
+          "$type": "color",
+          "$description": "input.color.border.default — Default input border color."
+        },
+        "focus": {
+          "$value": "{color.border.interactive.focus}",
+          "$type": "color",
+          "$description": "input.color.border.focus — Focused input border color."
+        },
+        "error": {
+          "$value": "{color.feedback.text.error}",
+          "$type": "color",
+          "$description": "input.color.border.error — Error state input border color."
+        },
+        "disabled": {
+          "$value": "{color.border.interactive.disabled}",
+          "$type": "color",
+          "$description": "input.color.border.disabled — Disabled input border color."
+        }
+      },
+      "ring": {
+        "focus": {
+          "$value": "{color.focus.glow}",
+          "$type": "color",
+          "$description": "input.color.ring.focus — Focus ring glow color around input."
+        }
+      }
     }
   }
 }

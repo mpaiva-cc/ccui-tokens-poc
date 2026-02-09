@@ -152,6 +152,57 @@
                 "$type": "dimension",
                 "$description": "Spacing between text and icon (10px). Separates selected text from chevron indicator."
             }
+        },
+        "color": {
+            "$description": "Select component color tokens. These reference semantic color tokens for theme-aware styling. Dark themes override dropdown.bg.",
+            "bg": {
+                "$value": "{color.bg.surface.default}",
+                "$type": "color",
+                "$description": "Select input background color."
+            },
+            "border": {
+                "$value": "{color.border.surface.default}",
+                "$type": "color",
+                "$description": "Select input border color."
+            },
+            "text": {
+                "$value": "{color.text.default}",
+                "$type": "color",
+                "$description": "Select input text color."
+            },
+            "dropdown": {
+                "bg": {
+                    "$value": "{color.bg.surface.default}",
+                    "$type": "color",
+                    "$description": "Dropdown menu background color."
+                },
+                "border": {
+                    "$value": "{color.border.surface.default}",
+                    "$type": "color",
+                    "$description": "Dropdown menu border color."
+                }
+            },
+            "option": {
+                "bg": {
+                    "hover": {
+                        "$value": "{color.bg.surface.elevated}",
+                        "$type": "color",
+                        "$description": "Option hover background color."
+                    },
+                    "selected": {
+                        "$value": "{color.action.bg.light.default}",
+                        "$type": "color",
+                        "$description": "Selected option background color."
+                    }
+                },
+                "text": {
+                    "selected": {
+                        "$value": "{color.action.text.light}",
+                        "$type": "color",
+                        "$description": "Selected option text color."
+                    }
+                }
+            }
         }
     }
 }

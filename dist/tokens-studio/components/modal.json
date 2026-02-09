@@ -98,6 +98,30 @@
         "$type": "dimension",
         "$description": "modal.title.lineHeight — Modal title line height (1.25). Tight line height for single-line titles. If titles wrap, this keeps them compact within the header area."
       }
+    },
+    "color": {
+      "bg": {
+        "$value": "{color.bg.surface.default}",
+        "$type": "color",
+        "$description": "modal.color.bg — Modal background color."
+      },
+      "overlay": {
+        "$value": "{color.overlay.default}",
+        "$type": "color",
+        "$description": "modal.color.overlay — Modal overlay/backdrop color."
+      },
+      "border": {
+        "header": {
+          "$value": "{color.border.surface.default}",
+          "$type": "color",
+          "$description": "modal.color.border.header — Modal header bottom border color."
+        },
+        "footer": {
+          "$value": "{color.border.surface.default}",
+          "$type": "color",
+          "$description": "modal.color.border.footer — Modal footer top border color."
+        }
+      }
     }
   }
 }

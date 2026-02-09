@@ -105,6 +105,75 @@
                     "$description": "Alert exit easing (ease-in). Accelerating motion - alert starts slow and speeds up as it leaves. Feels like it's sliding away."
                 }
             }
+        },
+        "color": {
+            "$description": "Alert component color tokens. These reference semantic color tokens for theme-aware styling.",
+            "bg": {
+                "info": {
+                    "$value": "{color.feedback.bg.info}",
+                    "$type": "color",
+                    "$description": "Info alert background color."
+                },
+                "success": {
+                    "$value": "{color.feedback.bg.success}",
+                    "$type": "color",
+                    "$description": "Success alert background color."
+                },
+                "warning": {
+                    "$value": "{color.feedback.bg.warning}",
+                    "$type": "color",
+                    "$description": "Warning alert background color."
+                },
+                "error": {
+                    "$value": "{color.feedback.bg.error}",
+                    "$type": "color",
+                    "$description": "Error alert background color."
+                }
+            },
+            "text": {
+                "info": {
+                    "$value": "{color.feedback.text.info}",
+                    "$type": "color",
+                    "$description": "Info alert text color."
+                },
+                "success": {
+                    "$value": "{color.feedback.text.success}",
+                    "$type": "color",
+                    "$description": "Success alert text color."
+                },
+                "warning": {
+                    "$value": "{color.feedback.text.warning}",
+                    "$type": "color",
+                    "$description": "Warning alert text color."
+                },
+                "error": {
+                    "$value": "{color.feedback.text.error}",
+                    "$type": "color",
+                    "$description": "Error alert text color."
+                }
+            },
+            "border": {
+                "info": {
+                    "$value": "{color.feedback.border.info}",
+                    "$type": "color",
+                    "$description": "Info alert border color."
+                },
+                "success": {
+                    "$value": "{color.feedback.border.success}",
+                    "$type": "color",
+                    "$description": "Success alert border color."
+                },
+                "warning": {
+                    "$value": "{color.feedback.border.warning}",
+                    "$type": "color",
+                    "$description": "Warning alert border color."
+                },
+                "error": {
+                    "$value": "{color.feedback.border.error}",
+                    "$type": "color",
+                    "$description": "Error alert border color."
+                }
+            }
         }
     }
 }

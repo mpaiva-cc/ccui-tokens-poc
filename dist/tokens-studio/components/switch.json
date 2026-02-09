@@ -134,6 +134,42 @@
         "$type": "dimension",
         "$description": "switch.focus.ringOffset — Focus ring offset (2px). Space between switch track and focus ring for clear visual separation."
       }
+    },
+    "color": {
+      "track": {
+        "off": {
+          "$value": "{color.bg.interactive.disabled}",
+          "$type": "color",
+          "$description": "switch.color.track.off — Off state track background color."
+        },
+        "on": {
+          "$value": "{color.action.bg.primary.default}",
+          "$type": "color",
+          "$description": "switch.color.track.on — On state track background color."
+        },
+        "disabled": {
+          "$value": "{color.bg.interactive.disabled}",
+          "$type": "color",
+          "$description": "switch.color.track.disabled — Disabled switch track color."
+        }
+      },
+      "thumb": {
+        "off": {
+          "$value": "{color.bg.surface.default}",
+          "$type": "color",
+          "$description": "switch.color.thumb.off — Switch thumb color."
+        },
+        "on": {
+          "$value": "{color.bg.surface.default}",
+          "$type": "color",
+          "$description": "switch.color.thumb.on — Switch thumb color when on."
+        },
+        "disabled": {
+          "$value": "{color.border.interactive.disabled}",
+          "$type": "color",
+          "$description": "switch.color.thumb.disabled — Disabled switch thumb color."
+        }
+      }
     }
   }
 }

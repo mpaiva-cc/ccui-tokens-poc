@@ -95,6 +95,45 @@
             "$value": "{letterSpacing.wide}",
             "$type": "dimension",
             "$description": "Badge letter spacing (0.025em). Slightly wide tracking improves readability at small sizes, especially for uppercase text common in badges."
+        },
+        "color": {
+            "$description": "Badge component color tokens. These reference semantic color tokens for theme-aware styling.",
+            "bg": {
+                "filled": {
+                    "$value": "{color.action.bg.primary.default}",
+                    "$type": "color",
+                    "$description": "Filled badge background color."
+                },
+                "light": {
+                    "$value": "{color.action.bg.light.default}",
+                    "$type": "color",
+                    "$description": "Light badge background color."
+                }
+            },
+            "text": {
+                "filled": {
+                    "$value": "{color.action.text.primary}",
+                    "$type": "color",
+                    "$description": "Filled badge text color."
+                },
+                "light": {
+                    "$value": "{color.action.text.light}",
+                    "$type": "color",
+                    "$description": "Light badge text color."
+                },
+                "outline": {
+                    "$value": "{color.action.text.onSurface}",
+                    "$type": "color",
+                    "$description": "Outline badge text color."
+                }
+            },
+            "border": {
+                "outline": {
+                    "$value": "{color.action.border.primary.default}",
+                    "$type": "color",
+                    "$description": "Outline badge border color."
+                }
+            }
         }
     }
 }

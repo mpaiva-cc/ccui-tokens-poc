@@ -97,6 +97,50 @@
                 "$value": "{focus.ring.offset}",
                 "$description": "Focus ring offset (2px). Space between checkbox border and focus ring. Prevents ring from overlapping checkbox border."
             }
+        },
+        "color": {
+            "$description": "Checkbox component color tokens. These reference semantic color tokens for theme-aware styling.",
+            "bg": {
+                "unchecked": {
+                    "$value": "{color.bg.surface.default}",
+                    "$type": "color",
+                    "$description": "Unchecked checkbox background color."
+                },
+                "checked": {
+                    "$value": "{color.action.bg.primary.default}",
+                    "$type": "color",
+                    "$description": "Checked checkbox background color."
+                },
+                "disabled": {
+                    "$value": "{color.bg.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled checkbox background color."
+                }
+            },
+            "border": {
+                "unchecked": {
+                    "$value": "{color.border.surface.default}",
+                    "$type": "color",
+                    "$description": "Unchecked checkbox border color."
+                },
+                "checked": {
+                    "$value": "{color.action.bg.primary.default}",
+                    "$type": "color",
+                    "$description": "Checked checkbox border color."
+                },
+                "disabled": {
+                    "$value": "{color.border.interactive.disabled}",
+                    "$type": "color",
+                    "$description": "Disabled checkbox border color."
+                }
+            },
+            "icon": {
+                "checked": {
+                    "$value": "{color.action.text.primary}",
+                    "$type": "color",
+                    "$description": "Checkmark icon color."
+                }
+            }
         }
     }
 }
