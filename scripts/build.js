@@ -394,15 +394,12 @@ function generateTokensStudioThemes() {
     // Non-brand primitives (shared across all themes)
     const sharedPrimitiveSets = allPrimitiveSets.filter(s => !brandSets.includes(s));
 
-    // Group 1: Primitives — 1 mode, shared primitives enabled, brand sets disabled
+    // Group 1: Primitives — 1 mode, all primitives enabled (including both brand palettes)
     const primitivesTheme = {
         id: "primitives-default",
         name: "Default",
         group: "Primitives",
-        selectedTokenSets: {
-            ...toStatus(sharedPrimitiveSets, "enabled"),
-            ...toStatus(brandSets, "disabled")
-        }
+        selectedTokenSets: toStatus(allPrimitiveSets, "enabled")
     };
 
     // Group 2: Semantic — 5 modes, one per theme

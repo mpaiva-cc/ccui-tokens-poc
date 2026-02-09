@@ -17,8 +17,8 @@
       "primitives/sizing": "enabled",
       "primitives/focus": "enabled",
       "primitives/system": "enabled",
-      "primitives/brand-21": "disabled",
-      "primitives/brand-30": "disabled"
+      "primitives/brand-21": "enabled",
+      "primitives/brand-30": "enabled"
     }
   },
   {
