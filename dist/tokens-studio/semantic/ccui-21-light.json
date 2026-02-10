@@ -2011,11 +2011,6 @@
       "$description": "mantine.cursorType — Cursor style for interactive elements. 'pointer' for clickable, 'default' for standard.",
       "$value": "pointer"
     },
-    "headingFontWeight": {
-      "$description": "mantine.headingFontWeight — Default font weight for all headings (h1-h6).",
-      "$type": "number",
-      "$value": 700
-    },
     "headingTextWrap": {
       "$description": "mantine.headingTextWrap — Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines.",
       "$value": "wrap"
@@ -2023,11 +2018,6 @@
     "mozFontSmoothing": {
       "$description": "mantine.mozFontSmoothing — Mozilla font smoothing. 'grayscale' for crisp text on Firefox.",
       "$value": "grayscale"
-    },
-    "radiusDefault": {
-      "$description": "mantine.radiusDefault — Default border radius when no size is specified. References radius.sm token.",
-      "$type": "dimension",
-      "$value": "{radius.sm}"
     },
     "scale": {
       "$description": "mantine.scale — Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size.",

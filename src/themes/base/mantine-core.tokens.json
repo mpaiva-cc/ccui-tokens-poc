@@ -22,20 +22,10 @@
       "$type": "string",
       "$description": "Mozilla font smoothing. 'grayscale' for crisp text on Firefox."
     },
-    "headingFontWeight": {
-      "$value": 700,
-      "$type": "number",
-      "$description": "Default font weight for all headings (h1-h6)."
-    },
     "headingTextWrap": {
       "$value": "wrap",
       "$type": "string",
       "$description": "Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines."
-    },
-    "radiusDefault": {
-      "$value": "{radius.sm}",
-      "$type": "dimension",
-      "$description": "Default border radius when no size is specified. References radius.sm token."
     },
     "zIndex": {
       "$description": "Mantine z-index layers",
