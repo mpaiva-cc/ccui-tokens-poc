@@ -357,7 +357,12 @@ function buildTokensStudioStructure(tokens) {
         const description = token.$description ?? token.description ?? token.comment;
         if (description) {
             const tokenPath = path.join('.');
-            tokenObj["$description"] = `${tokenPath} — ${description}`;
+            // Avoid double-prepending if description already starts with the token path
+            if (description.startsWith(`${tokenPath} — `)) {
+                tokenObj["$description"] = description;
+            } else {
+                tokenObj["$description"] = `${tokenPath} — ${description}`;
+            }
         }
 
         // Merge into existing object to preserve children when a node
