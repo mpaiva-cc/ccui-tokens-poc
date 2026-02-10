@@ -1,11 +1,11 @@
 {
-  "$description": "Mantine-specific core settings that are required by Mantine components but don't exist in CCUI's token system. These are added for 1:1 Mantine compatibility.",
-  "mantine": {
-    "$description": "Mantine core configuration variables",
+  "$description": "System-level configuration defaults for global rendering behavior, cursor style, font smoothing, and z-index layering.",
+  "system": {
+    "$description": "Global system configuration tokens that control rendering defaults across all themes.",
     "scale": {
       "$value": 1,
       "$type": "number",
-      "$description": "Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size."
+      "$description": "Global scale factor. 1 = default size, 0.8 = 80% size, 1.2 = 120% size."
     },
     "cursorType": {
       "$value": "pointer",
@@ -28,31 +28,31 @@
       "$description": "Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines."
     },
     "zIndex": {
-      "$description": "Mantine z-index layers",
+      "$description": "Z-index stacking layers for UI elevation ordering.",
       "app": {
         "$value": 100,
         "$type": "number",
-        "$description": "Base app layer z-index"
+        "$description": "Base app layer z-index."
       },
       "modal": {
         "$value": 200,
         "$type": "number",
-        "$description": "Modal dialog z-index"
+        "$description": "Modal dialog z-index."
       },
       "popover": {
         "$value": 300,
         "$type": "number",
-        "$description": "Popover/dropdown z-index"
+        "$description": "Popover/dropdown z-index."
       },
       "overlay": {
         "$value": 400,
         "$type": "number",
-        "$description": "Overlay/backdrop z-index"
+        "$description": "Overlay/backdrop z-index."
       },
       "max": {
         "$value": 9999,
         "$type": "number",
-        "$description": "Maximum z-index for critical elements"
+        "$description": "Maximum z-index for critical elements."
       }
     }
   }

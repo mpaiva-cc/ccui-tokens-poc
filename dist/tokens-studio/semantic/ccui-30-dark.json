@@ -2006,56 +2006,6 @@
       }
     }
   },
-  "mantine": {
-    "cursorType": {
-      "$description": "mantine.cursorType — Cursor style for interactive elements. 'pointer' for clickable, 'default' for standard.",
-      "$value": "pointer"
-    },
-    "headingTextWrap": {
-      "$description": "mantine.headingTextWrap — Text wrapping behavior for headings. 'wrap' allows line breaks, 'balance' balances lines.",
-      "$value": "wrap"
-    },
-    "mozFontSmoothing": {
-      "$description": "mantine.mozFontSmoothing — Mozilla font smoothing. 'grayscale' for crisp text on Firefox.",
-      "$value": "grayscale"
-    },
-    "scale": {
-      "$description": "mantine.scale — Global scale factor for Mantine components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size.",
-      "$type": "number",
-      "$value": 1
-    },
-    "webkitFontSmoothing": {
-      "$description": "mantine.webkitFontSmoothing — WebKit font smoothing. 'antialiased' for crisp text on macOS/iOS.",
-      "$value": "antialiased"
-    },
-    "zIndex": {
-      "app": {
-        "$description": "mantine.zIndex.app — Base app layer z-index",
-        "$type": "number",
-        "$value": 100
-      },
-      "max": {
-        "$description": "mantine.zIndex.max — Maximum z-index for critical elements",
-        "$type": "number",
-        "$value": 9999
-      },
-      "modal": {
-        "$description": "mantine.zIndex.modal — Modal dialog z-index",
-        "$type": "number",
-        "$value": 200
-      },
-      "overlay": {
-        "$description": "mantine.zIndex.overlay — Overlay/backdrop z-index",
-        "$type": "number",
-        "$value": 400
-      },
-      "popover": {
-        "$description": "mantine.zIndex.popover — Popover/dropdown z-index",
-        "$type": "number",
-        "$value": 300
-      }
-    }
-  },
   "modal": {
     "bg": {
       "$description": "modal.bg — Modal content background color.",
