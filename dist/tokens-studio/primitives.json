@@ -630,8 +630,8 @@
         },
         "9": {
           "$type": "color",
-          "$value": "#ff6600",
-          "$description": "color.base.indigo.9 — Darkest indigo - maximum emphasis 131c47"
+          "$value": "#131c47",
+          "$description": "color.base.indigo.9 — Darkest indigo - maximum emphasis"
         }
       },
       "lime": {
