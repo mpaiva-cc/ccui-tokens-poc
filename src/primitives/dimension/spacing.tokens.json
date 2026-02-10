@@ -2,7 +2,15 @@
     "$description": "Core spacing primitives defining the spatial system. Based on a 4px/0.25rem base unit for consistency. Use spacing tokens for margins, paddings, and gaps. RULE: Always use spacing tokens instead of arbitrary values to maintain visual rhythm and consistency across the UI.",
     "spacing": {
         "$type": "dimension",
-        "$description": "Component-level spacing scale for padding, margins, and gaps. Follows a non-linear scale optimized for common UI patterns. Use 2xs-xs for ultra-compact/tight UIs, sm for compact UIs, md for default spacing, lg-xl for breathing room, 2xl for maximum section separation.",
+        "$description": "Component-level spacing scale for padding, margins, and gaps. Follows a non-linear scale optimized for common UI patterns. Use 4xs-3xs for micro-adjustments and hairline gaps, 2xs-xs for ultra-compact/tight UIs, sm for compact UIs, md for default spacing, lg-xl for breathing room, 2xl for maximum section separation.",
+        "4xs": {
+            "$value": "0.125rem",
+            "$description": "spacing.4xs — 4x extra small spacing (2px). Use for: hairline gaps, focus ring offsets, thumb-to-track padding in switches, micro-adjustments between tightly coupled elements. Smallest spacing in the system."
+        },
+        "3xs": {
+            "$value": "0.25rem",
+            "$description": "spacing.3xs — 3x extra small spacing (4px). Use for: minimal internal padding, tight gaps in compact controls, vertical cell padding in dense tables, icon-to-border spacing. Aligns with the 4px base unit."
+        },
         "2xs": {
             "$value": "0.5rem",
             "$description": "spacing.2xs — 2x extra small spacing (8px). Use for: minimal internal padding, tight icon gaps, ultra-compact components, subtle spacing between inline elements."

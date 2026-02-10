@@ -2271,6 +2271,16 @@
       "$type": "spacing",
       "$value": "0.5rem"
     },
+    "3xs": {
+      "$description": "spacing.3xs — spacing.3xs — 3x extra small spacing (4px). Use for: minimal internal padding, tight gaps in compact controls, vertical cell padding in dense tables, icon-to-border spacing. Aligns with the 4px base unit.",
+      "$type": "spacing",
+      "$value": "0.25rem"
+    },
+    "4xs": {
+      "$description": "spacing.4xs — spacing.4xs — 4x extra small spacing (2px). Use for: hairline gaps, focus ring offsets, thumb-to-track padding in switches, micro-adjustments between tightly coupled elements. Smallest spacing in the system.",
+      "$type": "spacing",
+      "$value": "0.125rem"
+    },
     "lg": {
       "$description": "spacing.lg — spacing.lg — Large spacing (20px). Use for: generous padding, separation between related groups, dialog/modal padding, card spacing.",
       "$type": "spacing",
