@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-30.pewter.0",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 0.",
+    "hex": "#E6F9FF",
+    "oklch": "97.0% 0.0215 218.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.1",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 1.",
+    "hex": "#D2E5EC",
+    "oklch": "91.0% 0.0224 221.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.2",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 2.",
+    "hex": "#B5C8CE",
+    "oklch": "82.0% 0.0224 218.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.3",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — base color (step 3, pinned to official brand hex).",
+    "hex": "#A1B4BA",
+    "oklch": "75.7% 0.0228 218.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.4",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 4.",
+    "hex": "#75878C",
+    "oklch": "61.1% 0.0222 216.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.5",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 5.",
+    "hex": "#5B6C72",
+    "oklch": "51.9% 0.0225 221.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.6",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 6.",
+    "hex": "#48595E",
+    "oklch": "45.2% 0.0225 217.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.7",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 7.",
+    "hex": "#324348",
+    "oklch": "37.0% 0.0233 217.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.8",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 8.",
+    "hex": "#1E2E33",
+    "oklch": "28.9% 0.0231 219.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.9",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 9.",
+    "hex": "#0E1D22",
+    "oklch": "22.0% 0.0227 221.2°"
+  }
+]

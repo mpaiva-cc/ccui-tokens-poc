@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.base.grape.0",
+    "groupName": "Base / Grape",
+    "description": "Lightest grape - premium feature backgrounds",
+    "hex": "#FBEFF9",
+    "oklch": "96.4% 0.0184 331.1°"
+  },
+  {
+    "tokenName": "color.base.grape.1",
+    "groupName": "Base / Grape",
+    "description": "Light grape - hover states",
+    "hex": "#F5D9F1",
+    "oklch": "91.5% 0.0441 330.6°"
+  },
+  {
+    "tokenName": "color.base.grape.2",
+    "groupName": "Base / Grape",
+    "description": "Mid-light grape - decorative elements",
+    "hex": "#EBB3E3",
+    "oklch": "83.2% 0.0900 331.3°"
+  },
+  {
+    "tokenName": "color.base.grape.3",
+    "groupName": "Base / Grape",
+    "description": "Medium grape - icons, illustrations",
+    "hex": "#DF8BD3",
+    "oklch": "74.7% 0.1367 332.1°"
+  },
+  {
+    "tokenName": "color.base.grape.4",
+    "groupName": "Base / Grape",
+    "description": "Mid grape - interactive accents",
+    "hex": "#D262C2",
+    "oklch": "66.4% 0.1813 333.2°"
+  },
+  {
+    "tokenName": "color.base.grape.5",
+    "groupName": "Base / Grape",
+    "description": "Base grape - primary grape applications",
+    "hex": "#C338B0",
+    "oklch": "58.9% 0.2159 334.1°"
+  },
+  {
+    "tokenName": "color.base.grape.6",
+    "groupName": "Base / Grape",
+    "description": "Dark grape - text on light grape backgrounds",
+    "hex": "#A22993",
+    "oklch": "51.0% 0.1933 333.6°"
+  },
+  {
+    "tokenName": "color.base.grape.7",
+    "groupName": "Base / Grape",
+    "description": "Darker grape - high contrast",
+    "hex": "#7C2071",
+    "oklch": "42.3% 0.1564 333.3°"
+  },
+  {
+    "tokenName": "color.base.grape.8",
+    "groupName": "Base / Grape",
+    "description": "Very dark grape - text applications",
+    "hex": "#581750",
+    "oklch": "33.5% 0.1188 333.3°"
+  },
+  {
+    "tokenName": "color.base.grape.9",
+    "groupName": "Base / Grape",
+    "description": "Darkest grape - maximum emphasis",
+    "hex": "#370E32",
+    "oklch": "24.9% 0.0826 332.9°"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.0",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 0.",
+    "hex": "#EAF8FF",
+    "oklch": "97.1% 0.0175 229.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.1",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 1.",
+    "hex": "#BFE8FF",
+    "oklch": "90.9% 0.0530 232.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.2",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 2.",
+    "hex": "#74D1FF",
+    "oklch": "82.1% 0.1098 231.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.3",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex).",
+    "hex": "#55BAEA",
+    "oklch": "74.8% 0.1162 231.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.4",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 4.",
+    "hex": "#1E8EBC",
+    "oklch": "60.9% 0.1161 231.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.5",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 5.",
+    "hex": "#00729B",
+    "oklch": "51.9% 0.1063 232.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.6",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 6.",
+    "hex": "#005D7F",
+    "oklch": "44.9% 0.0918 232.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.7",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 7.",
+    "hex": "#004660",
+    "oklch": "37.0% 0.0749 231.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.8",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 8.",
+    "hex": "#003043",
+    "oklch": "29.0% 0.0586 231.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.9",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 9.",
+    "hex": "#001E2C",
+    "oklch": "22.1% 0.0451 232.1°"
+  }
+]

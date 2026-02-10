@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.base.gray.0",
+    "groupName": "Base / Gray",
+    "description": "Lightest gray - subtle backgrounds, hover states on white, zebra striping",
+    "hex": "#F3F4F5",
+    "oklch": "96.7% 0.0017 247.8°"
+  },
+  {
+    "tokenName": "color.base.gray.1",
+    "groupName": "Base / Gray",
+    "description": "Light gray - input backgrounds, disabled backgrounds, table headers",
+    "hex": "#E4E6E8",
+    "oklch": "92.4% 0.0035 247.9°"
+  },
+  {
+    "tokenName": "color.base.gray.2",
+    "groupName": "Base / Gray",
+    "description": "Mid-light gray - borders, dividers, inactive tabs",
+    "hex": "#C8CBCE",
+    "oklch": "84.1% 0.0053 247.9°"
+  },
+  {
+    "tokenName": "color.base.gray.3",
+    "groupName": "Base / Gray",
+    "description": "Medium gray - placeholder text (use carefully - check contrast), icons",
+    "hex": "#ADB1B5",
+    "oklch": "75.8% 0.0073 247.9°"
+  },
+  {
+    "tokenName": "color.base.gray.4",
+    "groupName": "Base / Gray",
+    "description": "Mid gray - secondary icons, chart gridlines",
+    "hex": "#92979D",
+    "oklch": "67.4% 0.0106 252.8°"
+  },
+  {
+    "tokenName": "color.base.gray.5",
+    "groupName": "Base / Gray",
+    "description": "Base gray - dimmed text, help text (4.5:1 on white = AA)",
+    "hex": "#787E85",
+    "oklch": "59.0% 0.0129 252.2°"
+  },
+  {
+    "tokenName": "color.base.gray.6",
+    "groupName": "Base / Gray",
+    "description": "Dark gray - secondary text (7:1 on white = AAA), labels",
+    "hex": "#5F656D",
+    "oklch": "50.4% 0.0147 255.6°"
+  },
+  {
+    "tokenName": "color.base.gray.7",
+    "groupName": "Base / Gray",
+    "description": "Darker gray - primary text alternative, emphasis",
+    "hex": "#474D55",
+    "oklch": "41.8% 0.0154 255.6°"
+  },
+  {
+    "tokenName": "color.base.gray.8",
+    "groupName": "Base / Gray",
+    "description": "Very dark gray - high-emphasis text on light backgrounds",
+    "hex": "#31363D",
+    "oklch": "33.1% 0.0142 256.8°"
+  },
+  {
+    "tokenName": "color.base.gray.9",
+    "groupName": "Base / Gray",
+    "description": "Darkest gray - headings, maximum emphasis text",
+    "hex": "#1C2026",
+    "oklch": "24.2% 0.0129 258.4°"
+  }
+]

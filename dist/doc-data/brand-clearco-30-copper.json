@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-30.copper.0",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 0.",
+    "hex": "#FFF2EE",
+    "oklch": "97.0% 0.0151 37.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.1",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 1.",
+    "hex": "#FFD7CB",
+    "oklch": "91.0% 0.0479 37.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.2",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 2.",
+    "hex": "#FFAC94",
+    "oklch": "81.9% 0.1040 36.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.3",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — base color (step 3, pinned to official brand hex).",
+    "hex": "#FF7A52",
+    "oklch": "72.8% 0.1717 37.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.4",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 4.",
+    "hex": "#D5542B",
+    "oklch": "61.0% 0.1716 37.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.5",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 5.",
+    "hex": "#B63601",
+    "oklch": "52.0% 0.1721 37.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.6",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 6.",
+    "hex": "#962B00",
+    "oklch": "45.1% 0.1492 37.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.7",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 7.",
+    "hex": "#721E00",
+    "oklch": "36.9% 0.1228 37.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.8",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 8.",
+    "hex": "#501300",
+    "oklch": "28.9% 0.0953 37.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.9",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 9.",
+    "hex": "#350900",
+    "oklch": "22.0% 0.0732 37.3°"
+  }
+]

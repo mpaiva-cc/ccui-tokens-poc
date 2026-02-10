@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-30.alloy.0",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 0.",
+    "hex": "#FFF2ED",
+    "oklch": "97.0% 0.0156 42.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.1",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 1.",
+    "hex": "#FFD8C7",
+    "oklch": "91.1% 0.0495 44.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.2",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — base color (step 2, pinned to official brand hex).",
+    "hex": "#FFA680",
+    "oklch": "80.5% 0.1177 43.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.3",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 3.",
+    "hex": "#E28B66",
+    "oklch": "72.0% 0.1182 43.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.4",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 4.",
+    "hex": "#BD6A45",
+    "oklch": "61.1% 0.1178 44.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.5",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 5.",
+    "hex": "#9F4F2A",
+    "oklch": "52.0% 0.1177 43.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.6",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 6.",
+    "hex": "#893B13",
+    "oklch": "45.1% 0.1180 44.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.7",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 7.",
+    "hex": "#6C2700",
+    "oklch": "37.0% 0.1082 43.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.8",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 8.",
+    "hex": "#4C1900",
+    "oklch": "29.0% 0.0849 43.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.9",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 9.",
+    "hex": "#320E00",
+    "oklch": "22.1% 0.0644 44.0°"
+  }
+]

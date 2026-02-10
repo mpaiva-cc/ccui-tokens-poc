@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.base.lime.0",
+    "groupName": "Base / Lime",
+    "description": "Lightest lime - subtle backgrounds",
+    "hex": "#EEF6DC",
+    "oklch": "96.0% 0.0352 121.0°"
+  },
+  {
+    "tokenName": "color.base.lime.1",
+    "groupName": "Base / Lime",
+    "description": "Light lime - hover states",
+    "hex": "#DAEDB4",
+    "oklch": "91.8% 0.0773 122.9°"
+  },
+  {
+    "tokenName": "color.base.lime.2",
+    "groupName": "Base / Lime",
+    "description": "Mid-light lime - decorative",
+    "hex": "#B6DB6E",
+    "oklch": "84.1% 0.1428 124.9°"
+  },
+  {
+    "tokenName": "color.base.lime.3",
+    "groupName": "Base / Lime",
+    "description": "Medium lime - icons, highlights",
+    "hex": "#93C82D",
+    "oklch": "76.8% 0.1837 127.4°"
+  },
+  {
+    "tokenName": "color.base.lime.4",
+    "groupName": "Base / Lime",
+    "description": "Mid lime - interactive elements",
+    "hex": "#7EB11C",
+    "oklch": "69.9% 0.1743 128.0°"
+  },
+  {
+    "tokenName": "color.base.lime.5",
+    "groupName": "Base / Lime",
+    "description": "Base lime - primary applications",
+    "hex": "#6D9918",
+    "oklch": "62.8% 0.1557 127.9°"
+  },
+  {
+    "tokenName": "color.base.lime.6",
+    "groupName": "Base / Lime",
+    "description": "Dark lime - text on light backgrounds",
+    "hex": "#5B8014",
+    "oklch": "55.2% 0.1358 127.8°"
+  },
+  {
+    "tokenName": "color.base.lime.7",
+    "groupName": "Base / Lime",
+    "description": "Darker lime - high contrast",
+    "hex": "#466210",
+    "oklch": "45.7% 0.1101 127.4°"
+  },
+  {
+    "tokenName": "color.base.lime.8",
+    "groupName": "Base / Lime",
+    "description": "Very dark lime - text",
+    "hex": "#32460B",
+    "oklch": "36.4% 0.0853 127.0°"
+  },
+  {
+    "tokenName": "color.base.lime.9",
+    "groupName": "Base / Lime",
+    "description": "Darkest lime - maximum emphasis",
+    "hex": "#1F2B07",
+    "oklch": "26.9% 0.0586 126.0°"
+  }
+]

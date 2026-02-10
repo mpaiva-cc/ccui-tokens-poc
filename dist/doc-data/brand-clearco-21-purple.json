@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-21.purple.0",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 0.",
+    "hex": "#FFF0FB",
+    "oklch": "97.0% 0.0216 334.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.1",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 1.",
+    "hex": "#FFD1F5",
+    "oklch": "91.1% 0.0693 333.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.2",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 2.",
+    "hex": "#FF9DED",
+    "oklch": "82.1% 0.1521 333.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.3",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 3.",
+    "hex": "#DF7BCE",
+    "oklch": "72.0% 0.1598 333.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.4",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 4.",
+    "hex": "#BA59AA",
+    "oklch": "61.0% 0.1593 334.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.5",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 5.",
+    "hex": "#9D3D8E",
+    "oklch": "52.0% 0.1604 334.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.6",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — base color (step 6, pinned to official brand hex).",
+    "hex": "#822275",
+    "oklch": "43.7% 0.1606 334.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.7",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 7.",
+    "hex": "#6D0561",
+    "oklch": "37.0% 0.1605 334.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.8",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 8.",
+    "hex": "#4D0045",
+    "oklch": "28.9% 0.1295 333.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.9",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 9.",
+    "hex": "#33002D",
+    "oklch": "22.1% 0.0987 333.9°"
+  }
+]
