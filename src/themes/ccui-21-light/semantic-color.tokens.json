@@ -201,12 +201,12 @@
             "bg": {
                 "primary": {
                     "default": {
-                        "$value": "{colorPalette.blue.filled.default}",
+                        "$value": "{color.base.blue.7}",
                         "$type": "color",
                         "$description": "Primary action background."
                     },
                     "hover": {
-                        "$value": "{colorPalette.blue.filled.hover}",
+                        "$value": "{color.base.blue.8}",
                         "$type": "color",
                         "$description": "Primary action hover state."
                     },
@@ -223,24 +223,24 @@
                 },
                 "light": {
                     "default": {
-                        "$value": "{colorPalette.blue.light.default}",
+                        "$value": "rgba(20, 94, 184, 0.1)",
                         "$type": "color",
                         "$description": "Primary light variant background."
                     },
                     "hover": {
-                        "$value": "{colorPalette.blue.light.hover}",
+                        "$value": "rgba(20, 94, 184, 0.12)",
                         "$type": "color",
                         "$description": "Primary light variant hover."
                     }
                 },
                 "danger": {
                     "default": {
-                        "$value": "{colorPalette.red.filled.default}",
+                        "$value": "{color.base.red.6}",
                         "$type": "color",
                         "$description": "Danger action background. Use for destructive actions like delete, remove, revoke."
                     },
                     "hover": {
-                        "$value": "{colorPalette.red.filled.hover}",
+                        "$value": "{color.base.red.7}",
                         "$type": "color",
                         "$description": "Danger action hover state."
                     },
@@ -251,12 +251,12 @@
                     },
                     "light": {
                         "default": {
-                            "$value": "{colorPalette.red.light.default}",
+                            "$value": "rgba(250, 82, 82, 0.1)",
                             "$type": "color",
                             "$description": "Danger light variant background."
                         },
                         "hover": {
-                            "$value": "{colorPalette.red.light.hover}",
+                            "$value": "rgba(250, 82, 82, 0.12)",
                             "$type": "color",
                             "$description": "Danger light variant hover."
                         }
@@ -270,12 +270,12 @@
                     "$description": "Text on primary action backgrounds."
                 },
                 "onSurface": {
-                    "$value": "{colorPalette.blue.filled.default}",
+                    "$value": "{color.base.blue.7}",
                     "$type": "color",
                     "$description": "Action-colored text on surface backgrounds. Use for: outline/subtle button text, badge outline text, tab active text."
                 },
                 "light": {
-                    "$value": "{colorPalette.blue.light.text}",
+                    "$value": "{color.base.blue.6}",
                     "$type": "color",
                     "$description": "Text on primary light backgrounds."
                 },
@@ -286,12 +286,12 @@
                         "$description": "Text on danger action backgrounds."
                     },
                     "onSurface": {
-                        "$value": "{colorPalette.red.filled.default}",
+                        "$value": "{color.base.red.6}",
                         "$type": "color",
                         "$description": "Danger-colored text on surface backgrounds. Use for: danger outline/subtle button text."
                     },
                     "light": {
-                        "$value": "{colorPalette.red.light.text}",
+                        "$value": "{color.base.red.6}",
                         "$type": "color",
                         "$description": "Text on danger light backgrounds."
                     }
@@ -300,24 +300,24 @@
             "border": {
                 "primary": {
                     "default": {
-                        "$value": "{colorPalette.blue.filled.default}",
+                        "$value": "{color.base.blue.7}",
                         "$type": "color",
                         "$description": "Primary action border color."
                     },
                     "hover": {
-                        "$value": "{colorPalette.blue.filled.hover}",
+                        "$value": "{color.base.blue.8}",
                         "$type": "color",
                         "$description": "Primary action hover border color."
                     }
                 },
                 "danger": {
                     "default": {
-                        "$value": "{colorPalette.red.filled.default}",
+                        "$value": "{color.base.red.6}",
                         "$type": "color",
                         "$description": "Danger action border color."
                     },
                     "hover": {
-                        "$value": "{colorPalette.red.filled.hover}",
+                        "$value": "{color.base.red.7}",
                         "$type": "color",
                         "$description": "Danger action hover border color."
                     }
@@ -431,7 +431,7 @@
                 "$description": "Focus ring color."
             },
             "glow": {
-                "$value": "{colorPalette.blue.light.default}",
+                "$value": "rgba(20, 94, 184, 0.1)",
                 "$type": "color",
                 "$description": "Focus ring glow/background color. Use for: input focus ring."
             }
@@ -440,29 +440,29 @@
             "$description": "Primary color semantic variants.",
             "filled": {
                 "default": {
-                    "$value": "{colorPalette.blue.filled.default}",
+                    "$value": "{color.base.blue.7}",
                     "$type": "color",
                     "$description": "Primary filled background."
                 },
                 "hover": {
-                    "$value": "{colorPalette.blue.filled.hover}",
+                    "$value": "{color.base.blue.8}",
                     "$type": "color",
                     "$description": "Primary filled hover."
                 }
             },
             "light": {
                 "default": {
-                    "$value": "{colorPalette.blue.light.default}",
+                    "$value": "rgba(20, 94, 184, 0.1)",
                     "$type": "color",
                     "$description": "Primary light background."
                 },
                 "hover": {
-                    "$value": "{colorPalette.blue.light.hover}",
+                    "$value": "rgba(20, 94, 184, 0.12)",
                     "$type": "color",
                     "$description": "Primary light hover."
                 },
                 "text": {
-                    "$value": "{colorPalette.blue.light.text}",
+                    "$value": "{color.base.blue.6}",
                     "$type": "color",
                     "$description": "Text on primary light."
                 }
