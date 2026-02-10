@@ -419,10 +419,6 @@
     "group": "Semantic",
     "selectedTokenSets": {
       "primitives": "source",
-      "semantic/ccui-21-light": "disabled",
-      "semantic/ccui-30-dark": "disabled",
-      "semantic/ccui-30-light": "disabled",
-      "semantic/mantine-dark": "disabled",
       "semantic/mantine-light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
@@ -811,11 +807,7 @@
     "group": "Semantic",
     "selectedTokenSets": {
       "primitives": "source",
-      "semantic/ccui-21-light": "disabled",
-      "semantic/ccui-30-dark": "disabled",
-      "semantic/ccui-30-light": "disabled",
-      "semantic/mantine-dark": "enabled",
-      "semantic/mantine-light": "disabled"
+      "semantic/mantine-dark": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -1203,11 +1195,7 @@
     "group": "Semantic",
     "selectedTokenSets": {
       "primitives": "source",
-      "semantic/ccui-21-light": "enabled",
-      "semantic/ccui-30-dark": "disabled",
-      "semantic/ccui-30-light": "disabled",
-      "semantic/mantine-dark": "disabled",
-      "semantic/mantine-light": "disabled"
+      "semantic/ccui-21-light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:3",
@@ -1603,11 +1591,7 @@
     "group": "Semantic",
     "selectedTokenSets": {
       "primitives": "source",
-      "semantic/ccui-21-light": "disabled",
-      "semantic/ccui-30-dark": "disabled",
-      "semantic/ccui-30-light": "enabled",
-      "semantic/mantine-dark": "disabled",
-      "semantic/mantine-light": "disabled"
+      "semantic/ccui-30-light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:4",
@@ -2003,11 +1987,7 @@
     "group": "Semantic",
     "selectedTokenSets": {
       "primitives": "source",
-      "semantic/ccui-21-light": "disabled",
-      "semantic/ccui-30-dark": "enabled",
-      "semantic/ccui-30-light": "disabled",
-      "semantic/mantine-dark": "disabled",
-      "semantic/mantine-light": "disabled"
+      "semantic/ccui-30-dark": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:5",
