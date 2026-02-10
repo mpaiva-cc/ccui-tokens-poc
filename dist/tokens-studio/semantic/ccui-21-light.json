@@ -584,6 +584,82 @@
         "$value": "{color.action.border.primary.default}"
       }
     },
+    "danger": {
+      "bg": {
+        "filled": {
+          "default": {
+            "$description": "button.danger.bg.filled.default — Danger Button variant='filled' background. Pair with button.danger.text.filled for WCAG AA contrast.",
+            "$type": "color",
+            "$value": "{color.action.bg.danger.default}"
+          },
+          "hover": {
+            "$description": "button.danger.bg.filled.hover — Danger Button variant='filled' hover background.",
+            "$type": "color",
+            "$value": "{color.action.bg.danger.hover}"
+          }
+        },
+        "light": {
+          "default": {
+            "$description": "button.danger.bg.light.default — Danger Button variant='light' background. Tinted red. Pair with button.danger.text.light.",
+            "$type": "color",
+            "$value": "{color.action.bg.danger.light.default}"
+          },
+          "hover": {
+            "$description": "button.danger.bg.light.hover — Danger Button variant='light' hover background.",
+            "$type": "color",
+            "$value": "{color.action.bg.danger.light.hover}"
+          }
+        },
+        "outline": {
+          "hover": {
+            "$description": "button.danger.bg.outline.hover — Danger Button variant='outline' hover background.",
+            "$type": "color",
+            "$value": "{color.action.bg.danger.light.default}"
+          }
+        },
+        "subtle": {
+          "default": {
+            "$description": "button.danger.bg.subtle.default — Danger Button variant='subtle' background. Transparent at rest.",
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "hover": {
+            "$description": "button.danger.bg.subtle.hover — Danger Button variant='subtle' hover background.",
+            "$type": "color",
+            "$value": "{color.action.bg.danger.light.default}"
+          }
+        }
+      },
+      "border": {
+        "outline": {
+          "$description": "button.danger.border.outline — Danger Button variant='outline' border color. Red border on transparent bg.",
+          "$type": "color",
+          "$value": "{color.action.border.danger.default}"
+        }
+      },
+      "text": {
+        "filled": {
+          "$description": "button.danger.text.filled — Danger Button variant='filled' text color. White on red bg.",
+          "$type": "color",
+          "$value": "{color.action.text.danger.default}"
+        },
+        "light": {
+          "$description": "button.danger.text.light — Danger Button variant='light' text color. Readable on light red bg.",
+          "$type": "color",
+          "$value": "{color.action.text.danger.light}"
+        },
+        "outline": {
+          "$description": "button.danger.text.outline — Danger Button variant='outline' text color. Red text on transparent bg.",
+          "$type": "color",
+          "$value": "{color.action.text.danger.onSurface}"
+        },
+        "subtle": {
+          "$description": "button.danger.text.subtle — Danger Button variant='subtle' text color. Red text on transparent bg.",
+          "$type": "color",
+          "$value": "{color.action.text.danger.onSurface}"
+        }
+      }
+    },
     "text": {
       "default": {
         "$description": "button.text.default — Mantine Button variant='default' text color. Neutral text on surface bg.",
@@ -675,6 +751,35 @@
   "color": {
     "action": {
       "bg": {
+        "danger": {
+          "active": {
+            "$description": "color.action.bg.danger.active — Danger action active/pressed state.",
+            "$type": "color",
+            "$value": "{color.base.red.8}"
+          },
+          "default": {
+            "$description": "color.action.bg.danger.default — Danger action background. Use for destructive actions like delete, remove, revoke.",
+            "$type": "color",
+            "$value": "{colorPalette.red.filled.default}"
+          },
+          "hover": {
+            "$description": "color.action.bg.danger.hover — Danger action hover state.",
+            "$type": "color",
+            "$value": "{colorPalette.red.filled.hover}"
+          },
+          "light": {
+            "default": {
+              "$description": "color.action.bg.danger.light.default — Danger light variant background.",
+              "$type": "color",
+              "$value": "{colorPalette.red.light.default}"
+            },
+            "hover": {
+              "$description": "color.action.bg.danger.light.hover — Danger light variant hover.",
+              "$type": "color",
+              "$value": "{colorPalette.red.light.hover}"
+            }
+          }
+        },
         "light": {
           "default": {
             "$description": "color.action.bg.light.default — Primary light variant background.",
@@ -711,6 +816,18 @@
         }
       },
       "border": {
+        "danger": {
+          "default": {
+            "$description": "color.action.border.danger.default — Danger action border color.",
+            "$type": "color",
+            "$value": "{colorPalette.red.filled.default}"
+          },
+          "hover": {
+            "$description": "color.action.border.danger.hover — Danger action hover border color.",
+            "$type": "color",
+            "$value": "{colorPalette.red.filled.hover}"
+          }
+        },
         "primary": {
           "default": {
             "$description": "color.action.border.primary.default — Primary action border color.",
@@ -725,6 +842,23 @@
         }
       },
       "text": {
+        "danger": {
+          "default": {
+            "$description": "color.action.text.danger.default — Text on danger action backgrounds.",
+            "$type": "color",
+            "$value": "{color.base.white}"
+          },
+          "light": {
+            "$description": "color.action.text.danger.light — Text on danger light backgrounds.",
+            "$type": "color",
+            "$value": "{colorPalette.red.light.text}"
+          },
+          "onSurface": {
+            "$description": "color.action.text.danger.onSurface — Danger-colored text on surface backgrounds. Use for: danger outline/subtle button text.",
+            "$type": "color",
+            "$value": "{colorPalette.red.filled.default}"
+          }
+        },
         "light": {
           "$description": "color.action.text.light — Text on primary light backgrounds.",
           "$type": "color",

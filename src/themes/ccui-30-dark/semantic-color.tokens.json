@@ -232,6 +232,35 @@
                         "$type": "color",
                         "$description": "Primary light variant hover."
                     }
+                },
+                "danger": {
+                    "default": {
+                        "$value": "{colorPalette.red.filled.default}",
+                        "$type": "color",
+                        "$description": "Danger action background. Use for destructive actions like delete, remove, revoke."
+                    },
+                    "hover": {
+                        "$value": "{colorPalette.red.filled.hover}",
+                        "$type": "color",
+                        "$description": "Danger action hover state."
+                    },
+                    "active": {
+                        "$value": "{color.base.red.7}",
+                        "$type": "color",
+                        "$description": "Danger action active/pressed state."
+                    },
+                    "light": {
+                        "default": {
+                            "$value": "{colorPalette.red.light.default}",
+                            "$type": "color",
+                            "$description": "Danger light variant background."
+                        },
+                        "hover": {
+                            "$value": "{colorPalette.red.light.hover}",
+                            "$type": "color",
+                            "$description": "Danger light variant hover."
+                        }
+                    }
                 }
             },
             "text": {
@@ -249,6 +278,23 @@
                     "$value": "{colorPalette.blue.light.text}",
                     "$type": "color",
                     "$description": "Text on primary light backgrounds."
+                },
+                "danger": {
+                    "default": {
+                        "$value": "{color.base.white}",
+                        "$type": "color",
+                        "$description": "Text on danger action backgrounds."
+                    },
+                    "onSurface": {
+                        "$value": "{colorPalette.red.filled.default}",
+                        "$type": "color",
+                        "$description": "Danger-colored text on surface backgrounds. Use for: danger outline/subtle button text."
+                    },
+                    "light": {
+                        "$value": "{colorPalette.red.light.text}",
+                        "$type": "color",
+                        "$description": "Text on danger light backgrounds."
+                    }
                 }
             },
             "border": {
@@ -262,6 +308,18 @@
                         "$value": "{colorPalette.blue.filled.hover}",
                         "$type": "color",
                         "$description": "Primary action hover border color."
+                    }
+                },
+                "danger": {
+                    "default": {
+                        "$value": "{colorPalette.red.filled.default}",
+                        "$type": "color",
+                        "$description": "Danger action border color."
+                    },
+                    "hover": {
+                        "$value": "{colorPalette.red.filled.hover}",
+                        "$type": "color",
+                        "$description": "Danger action hover border color."
                     }
                 }
             }

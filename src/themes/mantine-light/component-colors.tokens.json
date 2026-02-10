@@ -112,6 +112,83 @@
                 "$type": "color",
                 "$description": "Disabled button border color. Shared across all variants."
             }
+        },
+        "danger": {
+            "$description": "Danger button tokens for destructive actions (delete, remove, revoke).",
+            "bg": {
+                "filled": {
+                    "default": {
+                        "$value": "{color.action.bg.danger.default}",
+                        "$type": "color",
+                        "$description": "Danger Button variant='filled' background. Pair with button.danger.text.filled for WCAG AA contrast."
+                    },
+                    "hover": {
+                        "$value": "{color.action.bg.danger.hover}",
+                        "$type": "color",
+                        "$description": "Danger Button variant='filled' hover background."
+                    }
+                },
+                "outline": {
+                    "hover": {
+                        "$value": "{color.action.bg.danger.light.default}",
+                        "$type": "color",
+                        "$description": "Danger Button variant='outline' hover background."
+                    }
+                },
+                "light": {
+                    "default": {
+                        "$value": "{color.action.bg.danger.light.default}",
+                        "$type": "color",
+                        "$description": "Danger Button variant='light' background. Tinted red. Pair with button.danger.text.light."
+                    },
+                    "hover": {
+                        "$value": "{color.action.bg.danger.light.hover}",
+                        "$type": "color",
+                        "$description": "Danger Button variant='light' hover background."
+                    }
+                },
+                "subtle": {
+                    "default": {
+                        "$value": "transparent",
+                        "$type": "color",
+                        "$description": "Danger Button variant='subtle' background. Transparent at rest."
+                    },
+                    "hover": {
+                        "$value": "{color.action.bg.danger.light.default}",
+                        "$type": "color",
+                        "$description": "Danger Button variant='subtle' hover background."
+                    }
+                }
+            },
+            "text": {
+                "filled": {
+                    "$value": "{color.action.text.danger.default}",
+                    "$type": "color",
+                    "$description": "Danger Button variant='filled' text color. White on red bg."
+                },
+                "outline": {
+                    "$value": "{color.action.text.danger.onSurface}",
+                    "$type": "color",
+                    "$description": "Danger Button variant='outline' text color. Red text on transparent bg."
+                },
+                "light": {
+                    "$value": "{color.action.text.danger.light}",
+                    "$type": "color",
+                    "$description": "Danger Button variant='light' text color. Readable on light red bg."
+                },
+                "subtle": {
+                    "$value": "{color.action.text.danger.onSurface}",
+                    "$type": "color",
+                    "$description": "Danger Button variant='subtle' text color. Red text on transparent bg."
+                }
+            },
+            "border": {
+                "outline": {
+                    "$value": "{color.action.border.danger.default}",
+                    "$type": "color",
+                    "$description": "Danger Button variant='outline' border color. Red border on transparent bg."
+                }
+            }
         }
     },
     "input": {
