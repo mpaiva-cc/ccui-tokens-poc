@@ -323,7 +323,8 @@
             "disabled": { "$value": "{color.border.interactive.disabled}", "$type": "color", "$description": "Disabled checkbox border." }
         },
         "icon": {
-            "checked": { "$value": "{color.action.text.primary}", "$type": "color", "$description": "Checkmark icon color. High contrast on checkbox.bg.checked (white on brand)." }
+            "checked": { "$value": "{color.action.text.primary}", "$type": "color", "$description": "Checkmark icon color. High contrast on checkbox.bg.checked (white on brand)." },
+            "disabled": { "$value": "{color.icon.disabled}", "$type": "color", "$description": "Disabled checkbox icon color. Muted checkmark for disabled checked state." }
         }
     },
     "switch": {

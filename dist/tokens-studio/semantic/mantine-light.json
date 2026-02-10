@@ -703,6 +703,11 @@
         "$description": "checkbox.icon.checked — Checkmark icon color. High contrast on checkbox.bg.checked (white on brand).",
         "$type": "color",
         "$value": "{color.action.text.primary}"
+      },
+      "disabled": {
+        "$description": "checkbox.icon.disabled — Disabled checkbox icon color. Muted checkmark for disabled checked state.",
+        "$type": "color",
+        "$value": "{color.icon.disabled}"
       }
     }
   },
