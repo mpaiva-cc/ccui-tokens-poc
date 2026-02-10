@@ -1,0 +1,57 @@
+{
+    "$description": "Composite transition presets combining duration and easing into ready-to-use motion tokens. These simplify applying consistent motion patterns across components. Each transition pairs a duration with the appropriate easing curve for its use case. ACCESSIBILITY: Always provide instant (0ms) fallback for prefers-reduced-motion.",
+    "motion": {
+        "transition": {
+            "$type": "transition",
+            "$description": "Preset transition tokens pairing duration with easing. Use these instead of manually combining motion.duration and motion.easing. Match transition to interaction: instant for toggles, fast for micro-interactions, normal for standard UI, slow for panels, slower for dramatic reveals.",
+            "instant": {
+                "$value": {
+                    "duration": "{motion.duration.instant}",
+                    "timingFunction": "{motion.easing.linear}",
+                    "delay": "0ms"
+                },
+                "$description": "Instant transition (0ms linear). Use for: prefers-reduced-motion fallback, immediate state changes, disabling animations. Pairs duration.instant with linear easing since no motion occurs. Apply as reduced-motion override for all animated elements."
+            },
+            "fast": {
+                "$value": {
+                    "duration": "{motion.duration.fast}",
+                    "timingFunction": "{motion.easing.easeOut}",
+                    "delay": "0ms"
+                },
+                "$description": "Fast transition (100ms ease-out). Use for: micro-interactions, hover states, button presses, checkbox toggles, focus ring transitions. Pairs fast duration with ease-out for responsive, natural feel. Common in: hover color changes, toggle switches, icon transitions, focus states."
+            },
+            "normal": {
+                "$value": {
+                    "duration": "{motion.duration.normal}",
+                    "timingFunction": "{motion.easing.easeOut}",
+                    "delay": "0ms"
+                },
+                "$description": "Normal transition (200ms ease-out). DEFAULT transition for most UI elements. Use for: dropdown menus, tooltips, tab switches, sidebar toggles, standard UI feedback. Balanced speed with natural deceleration. Common in: Dropdown open, Tooltip appear, Tab panels, collapsible sections."
+            },
+            "slow": {
+                "$value": {
+                    "duration": "{motion.duration.slow}",
+                    "timingFunction": "{motion.easing.easeInOut}",
+                    "delay": "0ms"
+                },
+                "$description": "Slow transition (300ms ease-in-out). Use for: larger element transitions, slide-in panels, accordion expansions, section reveals. Pairs slow duration with ease-in-out for smooth bidirectional movement. Common in: sidebar slide, accordion panels, card reveals, drawer transitions."
+            },
+            "emphasis": {
+                "$value": {
+                    "duration": "{motion.duration.slow}",
+                    "timingFunction": "{motion.easing.emphasized}",
+                    "delay": "0ms"
+                },
+                "$description": "Emphasis transition (300ms emphasized curve). Use for: attention-grabbing entrances, important notifications, feature reveals. Pairs slow duration with the emphasized deceleration curve for dramatic yet controlled motion. Common in: toast entrance, alert appearance, onboarding reveals, celebration animations."
+            },
+            "slower": {
+                "$value": {
+                    "duration": "{motion.duration.slower}",
+                    "timingFunction": "{motion.easing.easeInOut}",
+                    "delay": "0ms"
+                },
+                "$description": "Slower transition (500ms ease-in-out). MAXIMUM recommended transition. Use for: full-page transitions, dramatic reveals, marketing flourishes. Use sparingly - only for intentional dramatic effect. Common in: page transitions, hero animations, modal entrance with backdrop."
+            }
+        }
+    }
+}

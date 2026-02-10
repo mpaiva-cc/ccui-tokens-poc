@@ -33,7 +33,7 @@ src/
 │   ├── dimension/      # Spacing, radius, breakpoints, sizing
 │   ├── elevation/      # Shadow primitives
 │   ├── interaction/    # z-index, focus
-│   ├── motion/         # Duration, easing
+│   ├── motion/         # Duration, easing, transition presets
 │   ├── system/         # System tokens (scale, cursor, font smoothing)
 │   ├── typography/     # Font families, sizes, weights, headings
 │   └── visibility/     # Opacity
@@ -70,6 +70,7 @@ The build uses Style Dictionary with custom transforms and formats:
   - Shared primitives: spacing, radius, typography, motion, breakpoints, z-index, border, focus, sizing, components
   - Theme-specific: color, colorPalette, shadow, opacity
 - **Type Mapping**: DTCG types are mapped to Tokens Studio types during build (e.g., `dimension` to `spacing`, `fontFamily` to `fontFamilies`)
+- **Token Collisions**: Style Dictionary warns about "token collisions" when multiple tokens share the same final path segment (e.g., `color.base.red.0` and `color.brand.clearco-21.navyBlue.0` both end in `0`). These warnings are suppressed (`log.warnings: 'disabled'`) because our custom formats use full token paths, making the output deterministic and correct. To investigate collisions, temporarily set `LOG_CONFIG.warnings` to `'warn'` and `LOG_CONFIG.verbosity` to `'verbose'` in `scripts/build.js`.
 
 ### Test Suite (scripts/tests/)
 
@@ -82,6 +83,8 @@ Tests run against built output in `dist/`. Key test files:
 - `token-values.test.ts` - Checks token values are well-formed
 - `token-descriptions.test.ts` - Ensures tokens have descriptions
 - `token-deprecation.test.ts` - Validates deprecation metadata
+- `token-value-ranges.test.ts` - Validates value ranges (opacity 0-1, z-index non-negative, etc.)
+- `token-circular-refs.test.ts` - DAG validation to detect circular token references
 
 Shared utilities in `test-utils.ts` provide token parsing and validation helpers.
 

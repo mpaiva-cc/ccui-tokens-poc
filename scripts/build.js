@@ -7,6 +7,19 @@ const primitivesFolder = 'src/primitives';
 const sourceFolder = 'src/themes';
 const distFolder = 'dist';
 
+// Token collision warnings are expected and harmless.
+// Style Dictionary warns when multiple tokens share the same final path segment
+// (e.g., color.base.red.0, color.brand.clearco-21.navyBlue.0, opacity.0 all end in "0").
+// This only affects SD's internal output name generation, which we don't use —
+// our custom formats (json/tokens-studio-set, json/tokens-studio-semantic)
+// write the full token path into the JSON structure. The output is deterministic
+// and correct regardless of these warnings.
+const LOG_CONFIG = {
+    warnings: 'disabled',
+    verbosity: 'default',
+    errors: { brokenReferences: 'throw' }
+};
+
 // ========================================
 // TOKEN CATEGORY DEFINITIONS
 // ========================================
@@ -199,6 +212,7 @@ function inferTokensStudioType(token) {
     if (rootCategory === 'motion') {
         if (path.includes('duration')) return 'duration';
         if (path.includes('easing')) return 'cubicBezier';
+        if (path.includes('transition')) return 'transition';
     }
 
     // Shadow tokens
@@ -291,10 +305,15 @@ function getOriginalValue(token) {
         return originalValue;
     }
 
-    // For composite tokens (typography, boxShadow), preserve original references
+    // For composite tokens (typography, boxShadow, transition), preserve original references
     // These have object values where inner properties may be references
     if (tokenType === 'typography' && typeof originalValue === 'object' && originalValue !== null) {
         // Return the original value object which should contain unresolved references
+        return originalValue;
+    }
+
+    // For transition objects, preserve original (may contain references to duration/easing)
+    if (tokenType === 'transition' && typeof originalValue === 'object' && originalValue !== null) {
         return originalValue;
     }
 
@@ -625,7 +644,7 @@ async function buildSharedPrimitives() {
                     "files": [{ "destination": "breadcrumb.json", "format": "json/tokens-studio-set", "options": { "setName": "components/breadcrumb" } }]
                 }
             },
-            log: { verbosity: 'default' }
+            log: LOG_CONFIG
         });
         await sd.buildAllPlatforms();
         console.log('Shared primitives built successfully');
@@ -661,7 +680,7 @@ async function buildThemes() {
                         }]
                     }
                 },
-                log: { verbosity: 'default' }
+                log: LOG_CONFIG
             });
             await sd.buildAllPlatforms();
             console.log(`${theme} theme built successfully`);
