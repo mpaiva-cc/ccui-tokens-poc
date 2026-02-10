@@ -145,29 +145,79 @@
   },
   "badge": {
     "bg": {
+      "error": {
+        "$description": "badge.bg.error — Error status badge background. Use for failed, rejected, critical, or expired status. Pair with badge.text.error.",
+        "$type": "color",
+        "$value": "{color.feedback.bg.error}"
+      },
       "filled": {
         "$description": "badge.bg.filled — Mantine Badge variant='filled' background. Pair with badge.text.filled.",
         "$type": "color",
         "$value": "{color.action.bg.primary.default}"
       },
+      "info": {
+        "$description": "badge.bg.info — Info status badge background. Use for informational indicators, counts, and neutral status. Pair with badge.text.info.",
+        "$type": "color",
+        "$value": "{color.feedback.bg.info}"
+      },
       "light": {
         "$description": "badge.bg.light — Mantine Badge variant='light' background. Pair with badge.text.light.",
         "$type": "color",
         "$value": "{color.action.bg.light.default}"
+      },
+      "success": {
+        "$description": "badge.bg.success — Success status badge background. Use for active, complete, approved, or healthy status. Pair with badge.text.success.",
+        "$type": "color",
+        "$value": "{color.feedback.bg.success}"
+      },
+      "warning": {
+        "$description": "badge.bg.warning — Warning status badge background. Use for pending, at-risk, or attention-needed status. Pair with badge.text.warning.",
+        "$type": "color",
+        "$value": "{color.feedback.bg.warning}"
       }
     },
     "border": {
+      "error": {
+        "$description": "badge.border.error — Error status badge border color.",
+        "$type": "color",
+        "$value": "{color.feedback.border.error}"
+      },
+      "info": {
+        "$description": "badge.border.info — Info status badge border color.",
+        "$type": "color",
+        "$value": "{color.feedback.border.info}"
+      },
       "outline": {
         "$description": "badge.border.outline — Mantine Badge variant='outline' border color.",
         "$type": "color",
         "$value": "{color.action.border.primary.default}"
+      },
+      "success": {
+        "$description": "badge.border.success — Success status badge border color.",
+        "$type": "color",
+        "$value": "{color.feedback.border.success}"
+      },
+      "warning": {
+        "$description": "badge.border.warning — Warning status badge border color.",
+        "$type": "color",
+        "$value": "{color.feedback.border.warning}"
       }
     },
     "text": {
+      "error": {
+        "$description": "badge.text.error — Error status badge text color. WCAG AA contrast on badge.bg.error.",
+        "$type": "color",
+        "$value": "{color.feedback.text.error}"
+      },
       "filled": {
         "$description": "badge.text.filled — Mantine Badge variant='filled' text color. High contrast on filled bg.",
         "$type": "color",
         "$value": "{color.action.text.primary}"
+      },
+      "info": {
+        "$description": "badge.text.info — Info status badge text color. WCAG AA contrast on badge.bg.info.",
+        "$type": "color",
+        "$value": "{color.feedback.text.info}"
       },
       "light": {
         "$description": "badge.text.light — Mantine Badge variant='light' text color.",
@@ -178,6 +228,16 @@
         "$description": "badge.text.outline — Mantine Badge variant='outline' text color. Brand-colored on transparent bg.",
         "$type": "color",
         "$value": "{color.action.text.onSurface}"
+      },
+      "success": {
+        "$description": "badge.text.success — Success status badge text color. WCAG AA contrast on badge.bg.success.",
+        "$type": "color",
+        "$value": "{color.feedback.text.success}"
+      },
+      "warning": {
+        "$description": "badge.text.warning — Warning status badge text color. Uses darker shade for contrast on yellow bg.",
+        "$type": "color",
+        "$value": "{color.feedback.text.warning}"
       }
     }
   },
