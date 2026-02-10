@@ -1845,11 +1845,6 @@
     }
   },
   "heading": {
-    "fontWeight": {
-      "$description": "heading.fontWeight — Default font weight for all headings (h1-h6). Bold (700) provides strong visual hierarchy.",
-      "$type": "number",
-      "$value": 700
-    },
     "textWrap": {
       "$description": "heading.textWrap — Text wrapping behavior for headings. 'wrap' allows natural line breaks, 'balance' distributes text more evenly.",
       "$value": "wrap"

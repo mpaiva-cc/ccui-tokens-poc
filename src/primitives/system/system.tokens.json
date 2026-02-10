@@ -33,11 +33,6 @@
   },
   "heading": {
     "$description": "Global heading (h1-h6) typography configuration tokens for consistent visual hierarchy",
-    "fontWeight": {
-      "$value": 700,
-      "$type": "number",
-      "$description": "Default font weight for all headings (h1-h6). Bold (700) provides strong visual hierarchy."
-    },
     "textWrap": {
       "$value": "wrap",
       "$type": "string",
