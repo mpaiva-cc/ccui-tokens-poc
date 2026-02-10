@@ -1,0 +1,68 @@
+{
+  "progress": {
+    "fill": {
+      "borderRadius": {
+        "$description": "progress.fill.borderRadius — Fill border radius (full). Matches track borderRadius for consistent pill shape.",
+        "$type": "dimension",
+        "$value": "{radius.full}"
+      },
+      "transition": {
+        "duration": {
+          "$description": "progress.fill.transition.duration — Fill transition duration (300ms). Smooth animation when progress updates. Slow enough to be visible but not sluggish.",
+          "$type": "duration",
+          "$value": "{motion.duration.slow}"
+        },
+        "easing": {
+          "$description": "progress.fill.transition.easing — Fill transition easing. Ease-in-out creates natural-feeling progress advancement.",
+          "$value": "{motion.easing.easeInOut}"
+        }
+      }
+    },
+    "label": {
+      "fontSize": {
+        "$description": "progress.label.fontSize — Label font size (12px). Small text fits inside larger track sizes (lg, xl).",
+        "$type": "dimension",
+        "$value": "{fontSizes.xs}"
+      },
+      "fontWeight": {
+        "$description": "progress.label.fontWeight — Label font weight. Semibold ensures readability on colored fill background.",
+        "$type": "number",
+        "$value": "{fontWeights.semibold}"
+      }
+    },
+    "track": {
+      "borderRadius": {
+        "$description": "progress.track.borderRadius — Track border radius (full). Pill-shaped track is the standard progress bar shape.",
+        "$type": "dimension",
+        "$value": "{radius.full}"
+      },
+      "height": {
+        "lg": {
+          "$description": "progress.track.height.lg — Large track height (12px). Use for: prominent progress bars, progress with labels.",
+          "$type": "dimension",
+          "$value": "0.75rem"
+        },
+        "md": {
+          "$description": "progress.track.height.md — Medium track height (8px). DEFAULT. Use for: standard progress bars.",
+          "$type": "dimension",
+          "$value": "0.5rem"
+        },
+        "sm": {
+          "$description": "progress.track.height.sm — Small track height (5px). Use for: compact progress bars, secondary indicators.",
+          "$type": "dimension",
+          "$value": "0.3125rem"
+        },
+        "xl": {
+          "$description": "progress.track.height.xl — Extra large track height (16px). Use for: hero progress bars, progress with embedded text labels.",
+          "$type": "dimension",
+          "$value": "1rem"
+        },
+        "xs": {
+          "$description": "progress.track.height.xs — Extra small track height (3px). Use for: subtle progress indicators, inline progress.",
+          "$type": "dimension",
+          "$value": "0.1875rem"
+        }
+      }
+    }
+  }
+}

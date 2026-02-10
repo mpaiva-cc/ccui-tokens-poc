@@ -70,6 +70,34 @@
                 "$description": "Informational text color."
             }
         },
+        "icon": {
+            "$description": "Icon color tokens. Icons often need different contrast than text for visual balance.",
+            "default": {
+                "$value": "{color.base.dark.6}",
+                "$type": "color",
+                "$description": "Default icon color. Slightly lighter than text.default for visual balance."
+            },
+            "secondary": {
+                "$value": "{color.base.gray.6}",
+                "$type": "color",
+                "$description": "Secondary/muted icon color."
+            },
+            "disabled": {
+                "$value": "{color.base.gray.4}",
+                "$type": "color",
+                "$description": "Disabled icon color."
+            },
+            "inverse": {
+                "$value": "{color.base.white}",
+                "$type": "color",
+                "$description": "Icon color on dark backgrounds."
+            },
+            "brand": {
+                "$value": "{color.base.blue.6}",
+                "$type": "color",
+                "$description": "Brand-colored icon."
+            }
+        },
         "bg": {
             "$description": "Background color tokens.",
             "surface": {

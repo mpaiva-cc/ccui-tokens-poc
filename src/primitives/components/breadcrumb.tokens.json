@@ -1,0 +1,51 @@
+{
+    "$description": "Breadcrumb component tokens. Breadcrumbs show the user's location in a site hierarchy and enable navigation to parent pages. These tokens compose primitive tokens into breadcrumb-specific configurations. Use breadcrumbs for: multi-level navigation, file system paths, category hierarchies. ACCESSIBILITY: Use nav landmark with aria-label='Breadcrumb', mark current page with aria-current='page'.",
+    "breadcrumb": {
+        "separator": {
+            "$description": "Breadcrumb separator (typically '/' or '>') configuration.",
+            "fontSize": {
+                "$value": "{fontSizes.sm}",
+                "$description": "Separator font size (14px). Matches item font size for visual consistency."
+            },
+            "margin": {
+                "$value": "{spacing.xs}",
+                "$type": "dimension",
+                "$description": "Horizontal margin around separator (8px). Space between breadcrumb items and separator character."
+            }
+        },
+        "item": {
+            "$description": "Breadcrumb item (link) configuration.",
+            "fontSize": {
+                "$value": "{fontSizes.sm}",
+                "$description": "Breadcrumb item font size (14px). Standard size for secondary navigation text."
+            },
+            "fontWeight": {
+                "default": {
+                    "$value": "{fontWeights.regular}",
+                    "$description": "Default breadcrumb item font weight. Regular weight for ancestor/link items."
+                },
+                "active": {
+                    "$value": "{fontWeights.medium}",
+                    "$description": "Active (current page) breadcrumb item font weight. Medium weight distinguishes current page from ancestor links."
+                }
+            },
+            "lineHeight": {
+                "$value": "{lineHeights.sm}",
+                "$description": "Breadcrumb item line height. Compact line height for single-line navigation."
+            },
+            "padding": {
+                "$description": "Breadcrumb item padding for touch targets and click area.",
+                "horizontal": {
+                    "$value": "0.25rem",
+                    "$type": "dimension",
+                    "$description": "Horizontal padding around breadcrumb items (4px). Subtle padding increases click/tap area without changing visual spacing."
+                },
+                "vertical": {
+                    "$value": "0.25rem",
+                    "$type": "dimension",
+                    "$description": "Vertical padding on breadcrumb items (4px). Increases touch target height for better mobile usability."
+                }
+            }
+        }
+    }
+}

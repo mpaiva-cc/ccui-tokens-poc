@@ -1,0 +1,74 @@
+{
+  "tooltip": {
+    "arrow": {
+      "size": {
+        "$description": "tooltip.arrow.size — Tooltip arrow size (7px). Small arrow points toward the trigger element for visual connection.",
+        "$type": "dimension",
+        "$value": "0.4375rem"
+      }
+    },
+    "borderRadius": {
+      "$description": "tooltip.borderRadius — Tooltip border radius (4px). Subtle rounding softens the tooltip without appearing overly styled.",
+      "$type": "dimension",
+      "$value": "{radius.sm}"
+    },
+    "fontSize": {
+      "$description": "tooltip.fontSize — Tooltip font size (12px). Smaller than body text to indicate secondary/supplementary information.",
+      "$type": "dimension",
+      "$value": "{fontSizes.xs}"
+    },
+    "fontWeight": {
+      "$description": "tooltip.fontWeight — Tooltip font weight. Medium weight ensures readability at small font size.",
+      "$type": "number",
+      "$value": "{fontWeights.medium}"
+    },
+    "lineHeight": {
+      "$description": "tooltip.lineHeight — Tooltip line height. Compact line height for single-line or short multi-line tooltips.",
+      "$type": "dimension",
+      "$value": "{lineHeights.sm}"
+    },
+    "maxWidth": {
+      "$description": "tooltip.maxWidth — Maximum tooltip width (300px). Prevents tooltips from becoming too wide. Content wraps at this width.",
+      "$type": "dimension",
+      "$value": "18.75rem"
+    },
+    "offset": {
+      "$description": "tooltip.offset — Tooltip offset from trigger element (8px). Space between trigger and tooltip prevents visual collision.",
+      "$type": "dimension",
+      "$value": "{spacing.xs}"
+    },
+    "padding": {
+      "horizontal": {
+        "$description": "tooltip.padding.horizontal — Horizontal padding inside tooltip (12px). Provides comfortable reading space for short text.",
+        "$type": "dimension",
+        "$value": "{spacing.sm}"
+      },
+      "vertical": {
+        "$description": "tooltip.padding.vertical — Vertical padding inside tooltip (8px). Compact vertical padding keeps tooltip visually lightweight.",
+        "$type": "dimension",
+        "$value": "{spacing.xs}"
+      }
+    },
+    "shadow": {
+      "$description": "tooltip.shadow — Tooltip shadow. Subtle elevation separates tooltip from underlying content.",
+      "$type": "boxShadow",
+      "$value": "{boxShadow.sm}"
+    },
+    "transition": {
+      "duration": {
+        "$description": "tooltip.transition.duration — Tooltip transition duration (100ms). Fast appearance prevents perceived lag when hovering.",
+        "$type": "duration",
+        "$value": "{motion.duration.fast}"
+      },
+      "easing": {
+        "$description": "tooltip.transition.easing — Tooltip transition easing. Smooth deceleration for natural tooltip appearance.",
+        "$value": "{motion.easing.easeOut}"
+      }
+    },
+    "zIndex": {
+      "$description": "tooltip.zIndex — Tooltip z-index. Ensures tooltip floats above other page content.",
+      "$type": "number",
+      "$value": "{zIndex.tooltip}"
+    }
+  }
+}

@@ -19,6 +19,7 @@ const SPEC_COMPLIANT_PATTERNS = [
     /^color\.overlay\.\w+$/,                  // color.overlay.default
     /^color\.focus\.\w+$/,                    // color.focus.ring
     /^color\.primary\.\w+(\.\w+)?$/,          // color.primary.filled.default, color.primary.light.hover, color.primary.contrast
+    /^color\.icon\.\w+$/,                     // color.icon.default, color.icon.secondary, color.icon.brand
 ];
 
 // Patterns to skip (primitive colors, scales, brand tokens, etc.)

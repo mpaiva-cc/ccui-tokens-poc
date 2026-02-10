@@ -1,4 +1,42 @@
 {
+  "accordion": {
+    "border": {
+      "$description": "accordion.border — Accordion item separator border.",
+      "$type": "color",
+      "$value": "{color.border.surface.default}"
+    },
+    "content": {
+      "bg": {
+        "$description": "accordion.content.bg — Accordion content panel background.",
+        "$type": "color",
+        "$value": "transparent"
+      }
+    },
+    "header": {
+      "bg": {
+        "default": {
+          "$description": "accordion.header.bg.default — Accordion header background at rest.",
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "hover": {
+          "$description": "accordion.header.bg.hover — Accordion header hover background.",
+          "$type": "color",
+          "$value": "{color.bg.surface.elevated}"
+        }
+      },
+      "text": {
+        "$description": "accordion.header.text — Accordion header text color.",
+        "$type": "color",
+        "$value": "{color.text.default}"
+      }
+    },
+    "icon": {
+      "$description": "accordion.icon — Accordion chevron icon color.",
+      "$type": "color",
+      "$value": "{color.text.secondary}"
+    }
+  },
   "alert": {
     "bg": {
       "error": {
@@ -64,6 +102,44 @@
         "$description": "alert.text.warning — Warning alert text color. Uses darker shade for contrast on yellow bg.",
         "$type": "color",
         "$value": "{color.feedback.text.warning}"
+      }
+    }
+  },
+  "avatar": {
+    "bg": {
+      "placeholder": {
+        "$description": "avatar.bg.placeholder — Default avatar placeholder background.",
+        "$type": "color",
+        "$value": "{color.action.bg.light.default}"
+      }
+    },
+    "border": {
+      "$description": "avatar.border — Avatar border color.",
+      "$type": "color",
+      "$value": "{color.border.surface.default}"
+    },
+    "status": {
+      "busy": {
+        "$description": "avatar.status.busy — Busy/do-not-disturb status indicator color.",
+        "$type": "color",
+        "$value": "{color.base.red.5}"
+      },
+      "offline": {
+        "$description": "avatar.status.offline — Offline status indicator color.",
+        "$type": "color",
+        "$value": "{color.base.dark.3}"
+      },
+      "online": {
+        "$description": "avatar.status.online — Online status indicator color.",
+        "$type": "color",
+        "$value": "{color.base.green.5}"
+      }
+    },
+    "text": {
+      "placeholder": {
+        "$description": "avatar.text.placeholder — Initials text color on placeholder background.",
+        "$type": "color",
+        "$value": "{color.action.text.light}"
       }
     }
   },
@@ -338,6 +414,34 @@
       "$description": "brand.tertiary — Tertiary brand color. Verdigris — nature-inspired supporting color.",
       "$type": "color",
       "$value": "{color.brand.clearco-30.verdigris.3}"
+    }
+  },
+  "breadcrumb": {
+    "item": {
+      "text": {
+        "active": {
+          "$description": "breadcrumb.item.text.active — Current page breadcrumb text color.",
+          "$type": "color",
+          "$value": "{color.text.default}"
+        },
+        "default": {
+          "$description": "breadcrumb.item.text.default — Breadcrumb ancestor link text color.",
+          "$type": "color",
+          "$value": "{color.text.secondary}"
+        },
+        "hover": {
+          "$description": "breadcrumb.item.text.hover — Breadcrumb link hover text color.",
+          "$type": "color",
+          "$value": "{color.text.link}"
+        }
+      }
+    },
+    "separator": {
+      "text": {
+        "$description": "breadcrumb.separator.text — Breadcrumb separator character color.",
+        "$type": "color",
+        "$value": "{color.text.secondary}"
+      }
     }
   },
   "button": {
@@ -797,6 +901,33 @@
         "$description": "color.focus.ring — Focus ring color.",
         "$type": "color",
         "$value": "{color.base.blue.4}"
+      }
+    },
+    "icon": {
+      "brand": {
+        "$description": "color.icon.brand — Brand-colored icon.",
+        "$type": "color",
+        "$value": "{color.base.blue.4}"
+      },
+      "default": {
+        "$description": "color.icon.default — Default icon color. Slightly lighter than text.default for visual balance on dark backgrounds.",
+        "$type": "color",
+        "$value": "{color.base.dark.1}"
+      },
+      "disabled": {
+        "$description": "color.icon.disabled — Disabled icon color.",
+        "$type": "color",
+        "$value": "{color.base.dark.3}"
+      },
+      "inverse": {
+        "$description": "color.icon.inverse — Icon color on light backgrounds.",
+        "$type": "color",
+        "$value": "{color.base.black}"
+      },
+      "secondary": {
+        "$description": "color.icon.secondary — Secondary/muted icon color.",
+        "$type": "color",
+        "$value": "{color.base.dark.2}"
       }
     },
     "overlay": {
@@ -1842,6 +1973,110 @@
       "$value": 0.6
     }
   },
+  "pagination": {
+    "item": {
+      "bg": {
+        "active": {
+          "$description": "pagination.item.bg.active — Active/current page background.",
+          "$type": "color",
+          "$value": "{color.action.bg.primary.default}"
+        },
+        "default": {
+          "$description": "pagination.item.bg.default — Pagination item default background.",
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "hover": {
+          "$description": "pagination.item.bg.hover — Pagination item hover background.",
+          "$type": "color",
+          "$value": "{color.bg.surface.elevated}"
+        }
+      },
+      "border": {
+        "$description": "pagination.item.border — Pagination item border color.",
+        "$type": "color",
+        "$value": "{color.border.surface.default}"
+      },
+      "text": {
+        "active": {
+          "$description": "pagination.item.text.active — Active page text color.",
+          "$type": "color",
+          "$value": "{color.action.text.primary}"
+        },
+        "default": {
+          "$description": "pagination.item.text.default — Pagination item default text color.",
+          "$type": "color",
+          "$value": "{color.text.default}"
+        }
+      }
+    }
+  },
+  "progress": {
+    "fill": {
+      "bg": {
+        "$description": "progress.fill.bg — Progress fill background. Brand-colored.",
+        "$type": "color",
+        "$value": "{color.action.bg.primary.default}"
+      }
+    },
+    "label": {
+      "text": {
+        "$description": "progress.label.text — Label text inside progress fill.",
+        "$type": "color",
+        "$value": "{color.action.text.primary}"
+      }
+    },
+    "track": {
+      "bg": {
+        "$description": "progress.track.bg — Progress track background.",
+        "$type": "color",
+        "$value": "{color.bg.surface.elevated}"
+      }
+    }
+  },
+  "radio": {
+    "bg": {
+      "checked": {
+        "$description": "radio.bg.checked — Selected radio background. Brand-colored fill.",
+        "$type": "color",
+        "$value": "{color.action.bg.primary.default}"
+      },
+      "disabled": {
+        "$description": "radio.bg.disabled — Disabled radio background.",
+        "$type": "color",
+        "$value": "{color.bg.interactive.disabled}"
+      },
+      "unchecked": {
+        "$description": "radio.bg.unchecked — Unselected radio background.",
+        "$type": "color",
+        "$value": "{color.bg.surface.default}"
+      }
+    },
+    "border": {
+      "checked": {
+        "$description": "radio.border.checked — Selected radio border. Matches checked bg.",
+        "$type": "color",
+        "$value": "{color.action.bg.primary.default}"
+      },
+      "disabled": {
+        "$description": "radio.border.disabled — Disabled radio border.",
+        "$type": "color",
+        "$value": "{color.border.interactive.disabled}"
+      },
+      "unchecked": {
+        "$description": "radio.border.unchecked — Unselected radio border.",
+        "$type": "color",
+        "$value": "{color.border.surface.default}"
+      }
+    },
+    "indicator": {
+      "checked": {
+        "$description": "radio.indicator.checked — Inner dot color when selected. High contrast on radio.bg.checked.",
+        "$type": "color",
+        "$value": "{color.action.text.primary}"
+      }
+    }
+  },
   "select": {
     "bg": {
       "$description": "select.bg — Select input background color.",
@@ -1890,6 +2125,18 @@
       "$description": "select.text — Select input text color.",
       "$type": "color",
       "$value": "{color.text.default}"
+    }
+  },
+  "skeleton": {
+    "bg": {
+      "$description": "skeleton.bg — Skeleton base background color.",
+      "$type": "color",
+      "$value": "{color.base.dark.5}"
+    },
+    "highlight": {
+      "$description": "skeleton.highlight — Skeleton animation highlight color. Slightly lighter for shimmer effect.",
+      "$type": "color",
+      "$value": "{color.base.dark.4}"
     }
   },
   "switch": {
@@ -1988,6 +2235,23 @@
           "$value": "{color.text.default}"
         }
       }
+    }
+  },
+  "tooltip": {
+    "bg": {
+      "$description": "tooltip.bg — Tooltip background. Slightly elevated surface for dark theme.",
+      "$type": "color",
+      "$value": "{color.base.dark.4}"
+    },
+    "border": {
+      "$description": "tooltip.border — Tooltip border color. Subtle border for definition against dark bg.",
+      "$type": "color",
+      "$value": "{color.base.dark.3}"
+    },
+    "text": {
+      "$description": "tooltip.text — Tooltip text color.",
+      "$type": "color",
+      "$value": "{color.base.white}"
     }
   }
 }

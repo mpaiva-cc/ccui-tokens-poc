@@ -1,0 +1,86 @@
+{
+    "$description": "Pagination component tokens. Pagination allows navigation through multi-page content. These tokens compose primitive tokens into pagination-specific configurations. Use pagination for: data tables, search results, content archives, galleries. ACCESSIBILITY: Use nav landmark with aria-label, mark current page with aria-current, ensure keyboard navigation between page items.",
+    "pagination": {
+        "item": {
+            "$description": "Individual pagination item (page number, arrow) configuration.",
+            "size": {
+                "sm": {
+                    "$value": "1.625rem",
+                    "$type": "dimension",
+                    "$description": "Small pagination item size (26px). Compact page numbers for dense layouts."
+                },
+                "md": {
+                    "$value": "2rem",
+                    "$type": "dimension",
+                    "$description": "Medium pagination item size (32px). DEFAULT. Standard page number buttons."
+                },
+                "lg": {
+                    "$value": "2.375rem",
+                    "$type": "dimension",
+                    "$description": "Large pagination item size (38px). Touch-friendly page numbers."
+                }
+            },
+            "borderRadius": {
+                "$value": "{radius.sm}",
+                "$type": "dimension",
+                "$description": "Pagination item border radius (4px). Subtly rounded square items."
+            },
+            "fontSize": {
+                "$description": "Page number font size per pagination size.",
+                "sm": {
+                    "$value": "{fontSizes.xs}",
+                    "$description": "Font size for sm pagination items (12px)."
+                },
+                "md": {
+                    "$value": "{fontSizes.sm}",
+                    "$description": "Font size for md pagination items (14px). DEFAULT."
+                },
+                "lg": {
+                    "$value": "{fontSizes.md}",
+                    "$description": "Font size for lg pagination items (16px)."
+                }
+            },
+            "fontWeight": {
+                "$value": "{fontWeights.medium}",
+                "$description": "Pagination item font weight. Medium weight for clear page number readability."
+            },
+            "padding": {
+                "$type": "dimension",
+                "$description": "Pagination item padding. Horizontal padding ensures text content has breathing room within fixed-height items.",
+                "horizontal": {
+                    "sm": {
+                        "$value": "{spacing.xs}",
+                        "$description": "Horizontal padding for sm pagination items (8px)."
+                    },
+                    "md": {
+                        "$value": "{spacing.sm}",
+                        "$description": "Horizontal padding for md pagination items (12px). DEFAULT."
+                    },
+                    "lg": {
+                        "$value": "{spacing.sm}",
+                        "$description": "Horizontal padding for lg pagination items (12px)."
+                    }
+                }
+            }
+        },
+        "gap": {
+            "$value": "{spacing.xs}",
+            "$type": "dimension",
+            "$description": "Gap between pagination items (8px). Enough separation to distinguish individual items."
+        },
+        "dots": {
+            "$description": "Ellipsis dots configuration for truncated page ranges.",
+            "fontSize": {
+                "$value": "{fontSizes.sm}",
+                "$description": "Dots font size (14px). Matches page number size for visual consistency."
+            }
+        },
+        "transition": {
+            "$description": "Pagination item state transition.",
+            "duration": {
+                "$value": "{motion.duration.fast}",
+                "$description": "Item transition duration (100ms). Quick feedback on hover and selection."
+            }
+        }
+    }
+}

@@ -269,7 +269,15 @@ const TOKENS_STUDIO_COMPONENT_SETS = {
     'checkbox': 'components/checkbox',
     'switch': 'components/switch',
     'alert': 'components/alert',
-    'tabs': 'components/tabs'
+    'tabs': 'components/tabs',
+    'radio': 'components/radio',
+    'avatar': 'components/avatar',
+    'tooltip': 'components/tooltip',
+    'progress': 'components/progress',
+    'accordion': 'components/accordion',
+    'pagination': 'components/pagination',
+    'skeleton': 'components/skeleton',
+    'breadcrumb': 'components/breadcrumb'
 };
 
 function getOriginalValue(token) {
@@ -361,10 +369,13 @@ function generateTokensStudioMetadata() {
             "semantic/ccui-21-light",
             "semantic/ccui-30-dark", "semantic/ccui-30-light",
             "semantic/mantine-dark", "semantic/mantine-light",
-            "components/alert", "components/badge", "components/button",
+            "components/accordion", "components/alert", "components/avatar",
+            "components/badge", "components/breadcrumb", "components/button",
             "components/card", "components/checkbox", "components/input",
-            "components/modal", "components/select", "components/switch",
-            "components/table", "components/tabs"
+            "components/modal", "components/pagination", "components/progress",
+            "components/radio", "components/select", "components/skeleton",
+            "components/switch", "components/table", "components/tabs",
+            "components/tooltip"
         ]
     };
 }
@@ -373,10 +384,13 @@ function generateTokensStudioThemes() {
     const allPrimitiveSets = ["primitives"];
 
     const allComponentSets = [
-        "components/alert", "components/badge", "components/button",
+        "components/accordion", "components/alert", "components/avatar",
+        "components/badge", "components/breadcrumb", "components/button",
         "components/card", "components/checkbox", "components/input",
-        "components/modal", "components/select", "components/switch",
-        "components/table", "components/tabs"
+        "components/modal", "components/pagination", "components/progress",
+        "components/radio", "components/select", "components/skeleton",
+        "components/switch", "components/table", "components/tabs",
+        "components/tooltip"
     ];
 
     const allSemanticSetNames = [
@@ -569,6 +583,46 @@ async function buildSharedPrimitives() {
                     "transformGroup": transformGroups.json,
                     "buildPath": `${distFolder}/tokens-studio/components/`,
                     "files": [{ "destination": "tabs.json", "format": "json/tokens-studio-set", "options": { "setName": "components/tabs" } }]
+                },
+                "tokens-studio-components-radio": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "radio.json", "format": "json/tokens-studio-set", "options": { "setName": "components/radio" } }]
+                },
+                "tokens-studio-components-avatar": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "avatar.json", "format": "json/tokens-studio-set", "options": { "setName": "components/avatar" } }]
+                },
+                "tokens-studio-components-tooltip": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "tooltip.json", "format": "json/tokens-studio-set", "options": { "setName": "components/tooltip" } }]
+                },
+                "tokens-studio-components-progress": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "progress.json", "format": "json/tokens-studio-set", "options": { "setName": "components/progress" } }]
+                },
+                "tokens-studio-components-accordion": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "accordion.json", "format": "json/tokens-studio-set", "options": { "setName": "components/accordion" } }]
+                },
+                "tokens-studio-components-pagination": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "pagination.json", "format": "json/tokens-studio-set", "options": { "setName": "components/pagination" } }]
+                },
+                "tokens-studio-components-skeleton": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "skeleton.json", "format": "json/tokens-studio-set", "options": { "setName": "components/skeleton" } }]
+                },
+                "tokens-studio-components-breadcrumb": {
+                    "transformGroup": transformGroups.json,
+                    "buildPath": `${distFolder}/tokens-studio/components/`,
+                    "files": [{ "destination": "breadcrumb.json", "format": "json/tokens-studio-set", "options": { "setName": "components/breadcrumb" } }]
                 }
             },
             log: { verbosity: 'default' }

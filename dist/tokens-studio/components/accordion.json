@@ -1,0 +1,74 @@
+{
+  "accordion": {
+    "borderRadius": {
+      "$description": "accordion.borderRadius — Accordion container border radius (4px). Subtle rounding for the outer container.",
+      "$type": "dimension",
+      "$value": "{radius.sm}"
+    },
+    "borderWidth": {
+      "$description": "accordion.borderWidth — Accordion item border width (1px). Thin separators between accordion items.",
+      "$type": "dimension",
+      "$value": "{borderWidth.thin}"
+    },
+    "content": {
+      "padding": {
+        "horizontal": {
+          "$description": "accordion.content.padding.horizontal — Content horizontal padding (16px). Matches header horizontal padding for visual alignment.",
+          "$type": "dimension",
+          "$value": "{spacing.md}"
+        },
+        "vertical": {
+          "$description": "accordion.content.padding.vertical — Content vertical padding (12px). Comfortable reading space for body content.",
+          "$type": "dimension",
+          "$value": "{spacing.sm}"
+        }
+      }
+    },
+    "gap": {
+      "$description": "accordion.gap — Gap between accordion items (0). Items are flush with borders providing separation. Set to a spacing token for separated variant.",
+      "$value": "0"
+    },
+    "header": {
+      "fontSize": {
+        "$description": "accordion.header.fontSize — Header font size (16px). Standard body size for section headers. Readable without competing with page headings.",
+        "$type": "dimension",
+        "$value": "{fontSizes.md}"
+      },
+      "fontWeight": {
+        "$description": "accordion.header.fontWeight — Header font weight. Medium weight provides subtle emphasis distinguishing headers from body content.",
+        "$type": "number",
+        "$value": "{fontWeights.medium}"
+      },
+      "padding": {
+        "horizontal": {
+          "$description": "accordion.header.padding.horizontal — Header horizontal padding (16px). Comfortable click target with room for text and chevron icon.",
+          "$type": "dimension",
+          "$value": "{spacing.md}"
+        },
+        "vertical": {
+          "$description": "accordion.header.padding.vertical — Header vertical padding (12px). Balanced spacing for readable header text.",
+          "$type": "dimension",
+          "$value": "{spacing.sm}"
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "$description": "accordion.icon.size — Chevron icon size (16px). Proportional to header text for visual balance.",
+        "$type": "dimension",
+        "$value": "{sizing.icon.sm}"
+      },
+      "transition": {
+        "duration": {
+          "$description": "accordion.icon.transition.duration — Chevron rotation duration (200ms). Matches content expand/collapse timing.",
+          "$type": "duration",
+          "$value": "{motion.duration.normal}"
+        },
+        "easing": {
+          "$description": "accordion.icon.transition.easing — Chevron rotation easing. Smooth rotation for natural open/close motion.",
+          "$value": "{motion.easing.easeInOut}"
+        }
+      }
+    }
+  }
+}

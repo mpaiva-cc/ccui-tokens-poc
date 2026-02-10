@@ -1,0 +1,53 @@
+{
+    "$description": "Skeleton component tokens. Skeletons are placeholder loading indicators that mimic the shape of content. These tokens compose primitive tokens into skeleton-specific configurations. Use skeletons for: initial page loads, lazy-loaded content, data fetching states. Prefer skeletons over spinners when the layout structure is known. ACCESSIBILITY: Use aria-busy on the container and aria-hidden on skeleton elements.",
+    "skeleton": {
+        "borderRadius": {
+            "$description": "Skeleton border radius variants for different content shapes.",
+            "text": {
+                "$value": "{radius.sm}",
+                "$type": "dimension",
+                "$description": "Text skeleton border radius (4px). Slight rounding for text line placeholders."
+            },
+            "circle": {
+                "$value": "{radius.full}",
+                "$type": "dimension",
+                "$description": "Circle skeleton border radius (full). Use for: avatar placeholders, icon placeholders."
+            },
+            "default": {
+                "$value": "{radius.sm}",
+                "$type": "dimension",
+                "$description": "Default skeleton border radius (4px). General-purpose shape for rectangular content blocks."
+            }
+        },
+        "height": {
+            "$description": "Skeleton height presets for common content shapes.",
+            "text": {
+                "$value": "0.875rem",
+                "$type": "dimension",
+                "$description": "Text line skeleton height (14px). Approximates a single line of body text."
+            },
+            "heading": {
+                "$value": "1.5rem",
+                "$type": "dimension",
+                "$description": "Heading skeleton height (24px). Approximates a heading line."
+            },
+            "avatar": {
+                "$value": "2.5rem",
+                "$type": "dimension",
+                "$description": "Avatar skeleton height (40px). Matches medium avatar size for consistent placeholder."
+            }
+        },
+        "animation": {
+            "$description": "Skeleton pulse/shimmer animation configuration.",
+            "duration": {
+                "$value": "1500ms",
+                "$type": "duration",
+                "$description": "Animation cycle duration (1.5s). Slow enough to be subtle, fast enough to indicate loading."
+            },
+            "easing": {
+                "$value": "{motion.easing.ease}",
+                "$description": "Animation easing. Smooth ease for gentle pulsing effect."
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "skeleton": {
+    "animation": {
+      "duration": {
+        "$description": "skeleton.animation.duration — Animation cycle duration (1.5s). Slow enough to be subtle, fast enough to indicate loading.",
+        "$type": "duration",
+        "$value": "1500ms"
+      },
+      "easing": {
+        "$description": "skeleton.animation.easing — Animation easing. Smooth ease for gentle pulsing effect.",
+        "$value": "{motion.easing.ease}"
+      }
+    },
+    "borderRadius": {
+      "circle": {
+        "$description": "skeleton.borderRadius.circle — Circle skeleton border radius (full). Use for: avatar placeholders, icon placeholders.",
+        "$type": "dimension",
+        "$value": "{radius.full}"
+      },
+      "default": {
+        "$description": "skeleton.borderRadius.default — Default skeleton border radius (4px). General-purpose shape for rectangular content blocks.",
+        "$type": "dimension",
+        "$value": "{radius.sm}"
+      },
+      "text": {
+        "$description": "skeleton.borderRadius.text — Text skeleton border radius (4px). Slight rounding for text line placeholders.",
+        "$type": "dimension",
+        "$value": "{radius.sm}"
+      }
+    },
+    "height": {
+      "avatar": {
+        "$description": "skeleton.height.avatar — Avatar skeleton height (40px). Matches medium avatar size for consistent placeholder.",
+        "$type": "dimension",
+        "$value": "2.5rem"
+      },
+      "heading": {
+        "$description": "skeleton.height.heading — Heading skeleton height (24px). Approximates a heading line.",
+        "$type": "dimension",
+        "$value": "1.5rem"
+      },
+      "text": {
+        "$description": "skeleton.height.text — Text line skeleton height (14px). Approximates a single line of body text.",
+        "$type": "dimension",
+        "$value": "0.875rem"
+      }
+    }
+  }
+}

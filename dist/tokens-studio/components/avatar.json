@@ -1,0 +1,148 @@
+{
+  "avatar": {
+    "borderRadius": {
+      "circle": {
+        "$description": "avatar.borderRadius.circle — Circular avatar (full radius). DEFAULT shape. Use for: user photos, profile images.",
+        "$type": "dimension",
+        "$value": "{radius.full}"
+      },
+      "rounded": {
+        "$description": "avatar.borderRadius.rounded — Rounded square avatar. Use for: workspace icons, team logos, entity avatars.",
+        "$type": "dimension",
+        "$value": "{radius.md}"
+      }
+    },
+    "borderWidth": {
+      "$description": "avatar.borderWidth — Avatar border width (1px). Subtle border separates avatar from background. Applied when avatar needs visual boundary.",
+      "$type": "dimension",
+      "$value": "{borderWidth.thin}"
+    },
+    "fontSize": {
+      "lg": {
+        "$description": "avatar.fontSize.lg — Initials font size for lg avatar (20px).",
+        "$type": "dimension",
+        "$value": "1.25rem"
+      },
+      "md": {
+        "$description": "avatar.fontSize.md — Initials font size for md avatar (16px). DEFAULT.",
+        "$type": "dimension",
+        "$value": "1rem"
+      },
+      "sm": {
+        "$description": "avatar.fontSize.sm — Initials font size for sm avatar (12px).",
+        "$type": "dimension",
+        "$value": "0.75rem"
+      },
+      "xl": {
+        "$description": "avatar.fontSize.xl — Initials font size for xl avatar (24px).",
+        "$type": "dimension",
+        "$value": "1.5rem"
+      },
+      "xs": {
+        "$description": "avatar.fontSize.xs — Initials font size for xs avatar (10px). Compact but readable single or dual character.",
+        "$type": "dimension",
+        "$value": "0.625rem"
+      }
+    },
+    "fontWeight": {
+      "$description": "avatar.fontWeight — Initials font weight. Medium weight ensures initials are legible at small sizes without being overly bold.",
+      "$type": "number",
+      "$value": "{fontWeights.medium}"
+    },
+    "group": {
+      "overlap": {
+        "lg": {
+          "$description": "avatar.group.overlap.lg — Overlap for lg avatars (-14px).",
+          "$type": "dimension",
+          "$value": "-0.875rem"
+        },
+        "md": {
+          "$description": "avatar.group.overlap.md — Overlap for md avatars (-10px).",
+          "$type": "dimension",
+          "$value": "-0.625rem"
+        },
+        "sm": {
+          "$description": "avatar.group.overlap.sm — Overlap for sm avatars (-8px).",
+          "$type": "dimension",
+          "$value": "-0.5rem"
+        },
+        "xl": {
+          "$description": "avatar.group.overlap.xl — Overlap for xl avatars (-16px).",
+          "$type": "dimension",
+          "$value": "-1rem"
+        },
+        "xs": {
+          "$description": "avatar.group.overlap.xs — Overlap for xs avatars (-6px).",
+          "$type": "dimension",
+          "$value": "-0.375rem"
+        }
+      },
+      "ring": {
+        "$description": "avatar.group.ring — Ring border width around each avatar in a group (2px). Creates visual separation between overlapping avatars.",
+        "$type": "dimension",
+        "$value": "{borderWidth.thick}"
+      }
+    },
+    "size": {
+      "lg": {
+        "$description": "avatar.size.lg — Large avatar (56px). Use for: profile headers, featured users, team pages.",
+        "$type": "dimension",
+        "$value": "3.5rem"
+      },
+      "md": {
+        "$description": "avatar.size.md — Medium avatar (40px). DEFAULT size. Use for: list items, cards, standard user displays.",
+        "$type": "dimension",
+        "$value": "2.5rem"
+      },
+      "sm": {
+        "$description": "avatar.size.sm — Small avatar (32px). Use for: comment threads, chat messages, navigation items.",
+        "$type": "dimension",
+        "$value": "2rem"
+      },
+      "xl": {
+        "$description": "avatar.size.xl — Extra large avatar (64px). Use for: profile pages, hero sections, prominent user displays.",
+        "$type": "dimension",
+        "$value": "4rem"
+      },
+      "xs": {
+        "$description": "avatar.size.xs — Extra small avatar (24px). Use for: inline mentions, compact lists, dense data tables.",
+        "$type": "dimension",
+        "$value": "1.5rem"
+      }
+    },
+    "status": {
+      "borderWidth": {
+        "$description": "avatar.status.borderWidth — Ring around the status indicator dot (1px). Separates dot from avatar image for visual clarity.",
+        "$type": "dimension",
+        "$value": "{borderWidth.thin}"
+      },
+      "size": {
+        "lg": {
+          "$description": "avatar.status.size.lg — Status dot for lg avatar (12px).",
+          "$type": "dimension",
+          "$value": "0.75rem"
+        },
+        "md": {
+          "$description": "avatar.status.size.md — Status dot for md avatar (10px).",
+          "$type": "dimension",
+          "$value": "0.625rem"
+        },
+        "sm": {
+          "$description": "avatar.status.size.sm — Status dot for sm avatar (8px).",
+          "$type": "dimension",
+          "$value": "0.5rem"
+        },
+        "xl": {
+          "$description": "avatar.status.size.xl — Status dot for xl avatar (14px).",
+          "$type": "dimension",
+          "$value": "0.875rem"
+        },
+        "xs": {
+          "$description": "avatar.status.size.xs — Status dot for xs avatar (6px).",
+          "$type": "dimension",
+          "$value": "0.375rem"
+        }
+      }
+    }
+  }
+}

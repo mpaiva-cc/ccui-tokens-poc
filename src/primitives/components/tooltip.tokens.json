@@ -1,0 +1,74 @@
+{
+    "$description": "Tooltip component tokens. Tooltips provide contextual information on hover or focus. These tokens compose primitive tokens into tooltip-specific configurations. Use tooltips for: icon-only button labels, abbreviated text expansion, additional context without cluttering UI. ACCESSIBILITY: Tooltips must be accessible via keyboard focus (not just hover). Never put essential information solely in tooltips.",
+    "tooltip": {
+        "padding": {
+            "$description": "Tooltip content padding.",
+            "horizontal": {
+                "$value": "{spacing.sm}",
+                "$type": "dimension",
+                "$description": "Horizontal padding inside tooltip (12px). Provides comfortable reading space for short text."
+            },
+            "vertical": {
+                "$value": "{spacing.xs}",
+                "$type": "dimension",
+                "$description": "Vertical padding inside tooltip (8px). Compact vertical padding keeps tooltip visually lightweight."
+            }
+        },
+        "borderRadius": {
+            "$value": "{radius.sm}",
+            "$type": "dimension",
+            "$description": "Tooltip border radius (4px). Subtle rounding softens the tooltip without appearing overly styled."
+        },
+        "fontSize": {
+            "$value": "{fontSizes.xs}",
+            "$description": "Tooltip font size (12px). Smaller than body text to indicate secondary/supplementary information."
+        },
+        "fontWeight": {
+            "$value": "{fontWeights.medium}",
+            "$description": "Tooltip font weight. Medium weight ensures readability at small font size."
+        },
+        "lineHeight": {
+            "$value": "{lineHeights.sm}",
+            "$description": "Tooltip line height. Compact line height for single-line or short multi-line tooltips."
+        },
+        "maxWidth": {
+            "$value": "18.75rem",
+            "$type": "dimension",
+            "$description": "Maximum tooltip width (300px). Prevents tooltips from becoming too wide. Content wraps at this width."
+        },
+        "shadow": {
+            "$value": "{boxShadow.sm}",
+            "$type": "boxShadow",
+            "$description": "Tooltip shadow. Subtle elevation separates tooltip from underlying content."
+        },
+        "zIndex": {
+            "$value": "{zIndex.tooltip}",
+            "$type": "number",
+            "$description": "Tooltip z-index. Ensures tooltip floats above other page content."
+        },
+        "arrow": {
+            "$description": "Tooltip arrow/caret configuration.",
+            "size": {
+                "$value": "0.4375rem",
+                "$type": "dimension",
+                "$description": "Tooltip arrow size (7px). Small arrow points toward the trigger element for visual connection."
+            }
+        },
+        "transition": {
+            "$description": "Tooltip show/hide transition configuration.",
+            "duration": {
+                "$value": "{motion.duration.fast}",
+                "$description": "Tooltip transition duration (100ms). Fast appearance prevents perceived lag when hovering."
+            },
+            "easing": {
+                "$value": "{motion.easing.easeOut}",
+                "$description": "Tooltip transition easing. Smooth deceleration for natural tooltip appearance."
+            }
+        },
+        "offset": {
+            "$value": "{spacing.xs}",
+            "$type": "dimension",
+            "$description": "Tooltip offset from trigger element (8px). Space between trigger and tooltip prevents visual collision."
+        }
+    }
+}

@@ -94,6 +94,14 @@ describe('Build Output Validation', () => {
         'switch.json',
         'alert.json',
         'tabs.json',
+        'radio.json',
+        'avatar.json',
+        'tooltip.json',
+        'progress.json',
+        'accordion.json',
+        'pagination.json',
+        'skeleton.json',
+        'breadcrumb.json',
       ];
 
       it.each(componentFiles)('should have components/%s', (fileName) => {

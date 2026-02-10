@@ -1,0 +1,77 @@
+{
+    "$description": "Accordion component tokens. Accordions organize content into collapsible sections, reducing visual clutter. These tokens compose primitive tokens into accordion-specific configurations. Use accordions for: FAQs, settings panels, navigation menus, content-heavy pages. ACCESSIBILITY: Ensure proper aria-expanded state, keyboard navigation with arrow keys, and Home/End key support.",
+    "accordion": {
+        "header": {
+            "$description": "Accordion header (trigger) configuration.",
+            "padding": {
+                "horizontal": {
+                    "$value": "{spacing.md}",
+                    "$type": "dimension",
+                    "$description": "Header horizontal padding (16px). Comfortable click target with room for text and chevron icon."
+                },
+                "vertical": {
+                    "$value": "{spacing.sm}",
+                    "$type": "dimension",
+                    "$description": "Header vertical padding (12px). Balanced spacing for readable header text."
+                }
+            },
+            "fontSize": {
+                "$value": "{fontSizes.md}",
+                "$description": "Header font size (16px). Standard body size for section headers. Readable without competing with page headings."
+            },
+            "fontWeight": {
+                "$value": "{fontWeights.medium}",
+                "$description": "Header font weight. Medium weight provides subtle emphasis distinguishing headers from body content."
+            }
+        },
+        "content": {
+            "$description": "Accordion content panel configuration.",
+            "padding": {
+                "horizontal": {
+                    "$value": "{spacing.md}",
+                    "$type": "dimension",
+                    "$description": "Content horizontal padding (16px). Matches header horizontal padding for visual alignment."
+                },
+                "vertical": {
+                    "$value": "{spacing.sm}",
+                    "$type": "dimension",
+                    "$description": "Content vertical padding (12px). Comfortable reading space for body content."
+                }
+            }
+        },
+        "borderWidth": {
+            "$value": "{borderWidth.thin}",
+            "$type": "dimension",
+            "$description": "Accordion item border width (1px). Thin separators between accordion items."
+        },
+        "borderRadius": {
+            "$value": "{radius.sm}",
+            "$type": "dimension",
+            "$description": "Accordion container border radius (4px). Subtle rounding for the outer container."
+        },
+        "icon": {
+            "$description": "Accordion chevron/arrow icon configuration.",
+            "size": {
+                "$value": "{sizing.icon.sm}",
+                "$type": "dimension",
+                "$description": "Chevron icon size (16px). Proportional to header text for visual balance."
+            },
+            "transition": {
+                "$description": "Chevron rotation animation when expanding/collapsing.",
+                "duration": {
+                    "$value": "{motion.duration.normal}",
+                    "$description": "Chevron rotation duration (200ms). Matches content expand/collapse timing."
+                },
+                "easing": {
+                    "$value": "{motion.easing.easeInOut}",
+                    "$description": "Chevron rotation easing. Smooth rotation for natural open/close motion."
+                }
+            }
+        },
+        "gap": {
+            "$value": "0",
+            "$type": "dimension",
+            "$description": "Gap between accordion items (0). Items are flush with borders providing separation. Set to a spacing token for separated variant."
+        }
+    }
+}

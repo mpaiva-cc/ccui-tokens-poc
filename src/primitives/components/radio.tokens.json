@@ -1,0 +1,97 @@
+{
+    "$description": "Radio component tokens. Radio buttons allow users to select exactly one option from a set. These tokens compose primitive tokens into radio-specific configurations. Mirrors checkbox patterns closely but uses circular shapes. Use radios for: mutually exclusive options, single-select lists, preference settings. ACCESSIBILITY: Always group radios with a visible legend; ensure tab navigation and arrow-key cycling work correctly.",
+    "radio": {
+        "size": {
+            "$description": "Radio circle diameter (width and height are equal). Size should match surrounding UI density. Larger sizes improve touch targets and accessibility.",
+            "xs": {
+                "$value": "0.875rem",
+                "$description": "Extra small radio size (14px). Use for: compact data tables, dense lists, space-constrained UIs. May not meet touch target guidelines (44px) - consider for mouse-only interfaces."
+            },
+            "sm": {
+                "$value": "1rem",
+                "$description": "Small radio size (16px). Use for: standard form density, inline options, filter panels. Common in desktop applications."
+            },
+            "md": {
+                "$value": "1.25rem",
+                "$description": "Medium radio size (20px). DEFAULT size. Use for: most forms, settings panels, standalone options. Good balance of visibility and space efficiency."
+            },
+            "lg": {
+                "$value": "1.5rem",
+                "$description": "Large radio size (24px). Use for: touch-optimized interfaces, accessibility-focused forms, prominent single options. Better for mobile devices."
+            },
+            "xl": {
+                "$value": "1.75rem",
+                "$description": "Extra large radio size (28px). Use for: high-emphasis standalone selections, large touch targets, accessibility requirements. Maximum visibility and tap target size."
+            }
+        },
+        "borderRadius": {
+            "$value": "{radius.full}",
+            "$type": "dimension",
+            "$description": "Radio border radius (full/50%). Circular shape distinguishes radio buttons from checkboxes (which are square with minimal rounding)."
+        },
+        "borderWidth": {
+            "$value": "{borderWidth.thin}",
+            "$type": "dimension",
+            "$description": "Radio border width (1px). Thin border provides clear boundary without visual heaviness. Thickens visually when selected due to fill color."
+        },
+        "innerCircle": {
+            "$description": "Inner circle (dot) configuration for selected state. The dot should be proportional to the radio size and clearly visible.",
+            "size": {
+                "xs": {
+                    "$value": "0.375rem",
+                    "$description": "Extra small inner dot size (6px). Proportional to xs radio. Small but visible indicator of selected state."
+                },
+                "sm": {
+                    "$value": "0.4375rem",
+                    "$description": "Small inner dot size (7px). Proportional to sm radio."
+                },
+                "md": {
+                    "$value": "0.5rem",
+                    "$description": "Medium inner dot size (8px). DEFAULT. Proportional to md radio. Clear visual feedback for selected state."
+                },
+                "lg": {
+                    "$value": "0.625rem",
+                    "$description": "Large inner dot size (10px). Proportional to lg radio. More prominent dot for better visibility."
+                },
+                "xl": {
+                    "$value": "0.75rem",
+                    "$description": "Extra large inner dot size (12px). Proportional to xl radio. Maximum visibility dot."
+                }
+            }
+        },
+        "label": {
+            "$description": "Radio label configuration. Labels should be clickable to toggle the radio (larger hit area improves usability).",
+            "gap": {
+                "$value": "{spacing.sm}",
+                "$type": "dimension",
+                "$description": "Gap between radio and label (12px). Provides clear visual separation while maintaining association. Label click should toggle radio."
+            },
+            "fontSize": {
+                "$value": "{fontSizes.sm}",
+                "$description": "Label font size (14px). Standard body text size for form labels. Readable alongside radio without overwhelming."
+            }
+        },
+        "transition": {
+            "$description": "Radio state transition configuration. Quick transitions provide immediate feedback for user interactions.",
+            "duration": {
+                "$value": "{motion.duration.fast}",
+                "$description": "Radio transition duration (100ms). Fast transition for snappy feedback when selecting. Should feel instant but smooth."
+            },
+            "easing": {
+                "$value": "{motion.easing.easeOut}",
+                "$description": "Radio transition easing (ease-out). Decelerating motion feels natural for selection actions."
+            }
+        },
+        "focus": {
+            "$description": "Radio focus ring configuration. Visible focus indicators are essential for keyboard navigation and accessibility (WCAG 2.4.7).",
+            "ringWidth": {
+                "$value": "{focus.ring.width}",
+                "$description": "Focus ring width (2px). Clearly visible ring around radio when focused via keyboard. Essential for accessibility compliance."
+            },
+            "ringOffset": {
+                "$value": "{focus.ring.offset}",
+                "$description": "Focus ring offset (2px). Space between radio border and focus ring. Prevents ring from overlapping radio border."
+            }
+        }
+    }
+}

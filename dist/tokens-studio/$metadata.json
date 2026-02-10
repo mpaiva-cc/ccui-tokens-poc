@@ -6,16 +6,24 @@
     "semantic/ccui-30-light",
     "semantic/mantine-dark",
     "semantic/mantine-light",
+    "components/accordion",
     "components/alert",
+    "components/avatar",
     "components/badge",
+    "components/breadcrumb",
     "components/button",
     "components/card",
     "components/checkbox",
     "components/input",
     "components/modal",
+    "components/pagination",
+    "components/progress",
+    "components/radio",
     "components/select",
+    "components/skeleton",
     "components/switch",
     "components/table",
-    "components/tabs"
+    "components/tabs",
+    "components/tooltip"
   ]
 }

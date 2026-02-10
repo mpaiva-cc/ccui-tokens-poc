@@ -1,0 +1,88 @@
+{
+  "pagination": {
+    "dots": {
+      "fontSize": {
+        "$description": "pagination.dots.fontSize — Dots font size (14px). Matches page number size for visual consistency.",
+        "$type": "dimension",
+        "$value": "{fontSizes.sm}"
+      }
+    },
+    "gap": {
+      "$description": "pagination.gap — Gap between pagination items (8px). Enough separation to distinguish individual items.",
+      "$type": "dimension",
+      "$value": "{spacing.xs}"
+    },
+    "item": {
+      "borderRadius": {
+        "$description": "pagination.item.borderRadius — Pagination item border radius (4px). Subtly rounded square items.",
+        "$type": "dimension",
+        "$value": "{radius.sm}"
+      },
+      "fontSize": {
+        "lg": {
+          "$description": "pagination.item.fontSize.lg — Font size for lg pagination items (16px).",
+          "$type": "dimension",
+          "$value": "{fontSizes.md}"
+        },
+        "md": {
+          "$description": "pagination.item.fontSize.md — Font size for md pagination items (14px). DEFAULT.",
+          "$type": "dimension",
+          "$value": "{fontSizes.sm}"
+        },
+        "sm": {
+          "$description": "pagination.item.fontSize.sm — Font size for sm pagination items (12px).",
+          "$type": "dimension",
+          "$value": "{fontSizes.xs}"
+        }
+      },
+      "fontWeight": {
+        "$description": "pagination.item.fontWeight — Pagination item font weight. Medium weight for clear page number readability.",
+        "$type": "number",
+        "$value": "{fontWeights.medium}"
+      },
+      "padding": {
+        "horizontal": {
+          "lg": {
+            "$description": "pagination.item.padding.horizontal.lg — Horizontal padding for lg pagination items (12px).",
+            "$type": "dimension",
+            "$value": "{spacing.sm}"
+          },
+          "md": {
+            "$description": "pagination.item.padding.horizontal.md — Horizontal padding for md pagination items (12px). DEFAULT.",
+            "$type": "dimension",
+            "$value": "{spacing.sm}"
+          },
+          "sm": {
+            "$description": "pagination.item.padding.horizontal.sm — Horizontal padding for sm pagination items (8px).",
+            "$type": "dimension",
+            "$value": "{spacing.xs}"
+          }
+        }
+      },
+      "size": {
+        "lg": {
+          "$description": "pagination.item.size.lg — Large pagination item size (38px). Touch-friendly page numbers.",
+          "$type": "dimension",
+          "$value": "2.375rem"
+        },
+        "md": {
+          "$description": "pagination.item.size.md — Medium pagination item size (32px). DEFAULT. Standard page number buttons.",
+          "$type": "dimension",
+          "$value": "2rem"
+        },
+        "sm": {
+          "$description": "pagination.item.size.sm — Small pagination item size (26px). Compact page numbers for dense layouts.",
+          "$type": "dimension",
+          "$value": "1.625rem"
+        }
+      }
+    },
+    "transition": {
+      "duration": {
+        "$description": "pagination.transition.duration — Item transition duration (100ms). Quick feedback on hover and selection.",
+        "$type": "duration",
+        "$value": "{motion.duration.fast}"
+      }
+    }
+  }
+}

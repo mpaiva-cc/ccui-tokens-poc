@@ -1,0 +1,134 @@
+{
+    "$description": "Avatar component tokens. Avatars represent users or entities with images, initials, or icons. These tokens compose primitive tokens into avatar-specific configurations. Use avatars for: user profiles, comment authors, team member lists, contact cards, and assignment indicators. ACCESSIBILITY: Always provide alt text for image avatars; initials should have aria-label with the full name.",
+    "avatar": {
+        "size": {
+            "$description": "Avatar dimensions (width and height are equal). Size should match the context and information density.",
+            "xs": {
+                "$value": "1.5rem",
+                "$description": "Extra small avatar (24px). Use for: inline mentions, compact lists, dense data tables."
+            },
+            "sm": {
+                "$value": "2rem",
+                "$description": "Small avatar (32px). Use for: comment threads, chat messages, navigation items."
+            },
+            "md": {
+                "$value": "2.5rem",
+                "$description": "Medium avatar (40px). DEFAULT size. Use for: list items, cards, standard user displays."
+            },
+            "lg": {
+                "$value": "3.5rem",
+                "$description": "Large avatar (56px). Use for: profile headers, featured users, team pages."
+            },
+            "xl": {
+                "$value": "4rem",
+                "$description": "Extra large avatar (64px). Use for: profile pages, hero sections, prominent user displays."
+            }
+        },
+        "borderRadius": {
+            "$description": "Avatar border radius variants.",
+            "circle": {
+                "$value": "{radius.full}",
+                "$type": "dimension",
+                "$description": "Circular avatar (full radius). DEFAULT shape. Use for: user photos, profile images."
+            },
+            "rounded": {
+                "$value": "{radius.md}",
+                "$type": "dimension",
+                "$description": "Rounded square avatar. Use for: workspace icons, team logos, entity avatars."
+            }
+        },
+        "borderWidth": {
+            "$value": "{borderWidth.thin}",
+            "$type": "dimension",
+            "$description": "Avatar border width (1px). Subtle border separates avatar from background. Applied when avatar needs visual boundary."
+        },
+        "fontSize": {
+            "$description": "Initials font size per avatar size. Sized to fill the avatar proportionally.",
+            "xs": {
+                "$value": "0.625rem",
+                "$description": "Initials font size for xs avatar (10px). Compact but readable single or dual character."
+            },
+            "sm": {
+                "$value": "0.75rem",
+                "$description": "Initials font size for sm avatar (12px)."
+            },
+            "md": {
+                "$value": "1rem",
+                "$description": "Initials font size for md avatar (16px). DEFAULT."
+            },
+            "lg": {
+                "$value": "1.25rem",
+                "$description": "Initials font size for lg avatar (20px)."
+            },
+            "xl": {
+                "$value": "1.5rem",
+                "$description": "Initials font size for xl avatar (24px)."
+            }
+        },
+        "fontWeight": {
+            "$value": "{fontWeights.medium}",
+            "$description": "Initials font weight. Medium weight ensures initials are legible at small sizes without being overly bold."
+        },
+        "group": {
+            "$description": "Avatar group configuration for stacked/overlapping avatar displays.",
+            "overlap": {
+                "$description": "Negative margin for overlapping avatars in a group. Creates a stacked visual effect.",
+                "xs": {
+                    "$value": "-0.375rem",
+                    "$description": "Overlap for xs avatars (-6px)."
+                },
+                "sm": {
+                    "$value": "-0.5rem",
+                    "$description": "Overlap for sm avatars (-8px)."
+                },
+                "md": {
+                    "$value": "-0.625rem",
+                    "$description": "Overlap for md avatars (-10px)."
+                },
+                "lg": {
+                    "$value": "-0.875rem",
+                    "$description": "Overlap for lg avatars (-14px)."
+                },
+                "xl": {
+                    "$value": "-1rem",
+                    "$description": "Overlap for xl avatars (-16px)."
+                }
+            },
+            "ring": {
+                "$value": "{borderWidth.thick}",
+                "$type": "dimension",
+                "$description": "Ring border width around each avatar in a group (2px). Creates visual separation between overlapping avatars."
+            }
+        },
+        "status": {
+            "$description": "Status indicator dot configuration for online/offline/busy states.",
+            "size": {
+                "xs": {
+                    "$value": "0.375rem",
+                    "$description": "Status dot for xs avatar (6px)."
+                },
+                "sm": {
+                    "$value": "0.5rem",
+                    "$description": "Status dot for sm avatar (8px)."
+                },
+                "md": {
+                    "$value": "0.625rem",
+                    "$description": "Status dot for md avatar (10px)."
+                },
+                "lg": {
+                    "$value": "0.75rem",
+                    "$description": "Status dot for lg avatar (12px)."
+                },
+                "xl": {
+                    "$value": "0.875rem",
+                    "$description": "Status dot for xl avatar (14px)."
+                }
+            },
+            "borderWidth": {
+                "$value": "{borderWidth.thin}",
+                "$type": "dimension",
+                "$description": "Ring around the status indicator dot (1px). Separates dot from avatar image for visual clarity."
+            }
+        }
+    }
+}

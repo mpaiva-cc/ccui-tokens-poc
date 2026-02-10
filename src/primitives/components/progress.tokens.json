@@ -1,0 +1,66 @@
+{
+    "$description": "Progress component tokens. Progress bars indicate the completion status of a task or process. These tokens compose primitive tokens into progress-specific configurations. Use progress for: file uploads, form completion, loading states, step indicators. ACCESSIBILITY: Always provide aria-valuenow, aria-valuemin, aria-valuemax. Include text alternative for screen readers.",
+    "progress": {
+        "track": {
+            "$description": "Progress track (background bar) configuration.",
+            "height": {
+                "$description": "Track heights for different visual densities.",
+                "xs": {
+                    "$value": "0.1875rem",
+                    "$description": "Extra small track height (3px). Use for: subtle progress indicators, inline progress."
+                },
+                "sm": {
+                    "$value": "0.3125rem",
+                    "$description": "Small track height (5px). Use for: compact progress bars, secondary indicators."
+                },
+                "md": {
+                    "$value": "0.5rem",
+                    "$description": "Medium track height (8px). DEFAULT. Use for: standard progress bars."
+                },
+                "lg": {
+                    "$value": "0.75rem",
+                    "$description": "Large track height (12px). Use for: prominent progress bars, progress with labels."
+                },
+                "xl": {
+                    "$value": "1rem",
+                    "$description": "Extra large track height (16px). Use for: hero progress bars, progress with embedded text labels."
+                }
+            },
+            "borderRadius": {
+                "$value": "{radius.full}",
+                "$type": "dimension",
+                "$description": "Track border radius (full). Pill-shaped track is the standard progress bar shape."
+            }
+        },
+        "fill": {
+            "$description": "Progress fill (completed portion) configuration.",
+            "borderRadius": {
+                "$value": "{radius.full}",
+                "$type": "dimension",
+                "$description": "Fill border radius (full). Matches track borderRadius for consistent pill shape."
+            },
+            "transition": {
+                "$description": "Fill animation when progress value changes.",
+                "duration": {
+                    "$value": "{motion.duration.slow}",
+                    "$description": "Fill transition duration (300ms). Smooth animation when progress updates. Slow enough to be visible but not sluggish."
+                },
+                "easing": {
+                    "$value": "{motion.easing.easeInOut}",
+                    "$description": "Fill transition easing. Ease-in-out creates natural-feeling progress advancement."
+                }
+            }
+        },
+        "label": {
+            "$description": "Progress label configuration for embedded percentage text.",
+            "fontSize": {
+                "$value": "{fontSizes.xs}",
+                "$description": "Label font size (12px). Small text fits inside larger track sizes (lg, xl)."
+            },
+            "fontWeight": {
+                "$value": "{fontWeights.semibold}",
+                "$description": "Label font weight. Semibold ensures readability on colored fill background."
+            }
+        }
+    }
+}

@@ -1814,32 +1814,32 @@
   },
   "gridSpacing": {
     "2xl": {
-      "$description": "gridSpacing.2xl — 2x large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts. Rarely needed - consider if layout needs restructuring.",
+      "$description": "gridSpacing.2xl — gridSpacing.2xl — 2x extra large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts.",
       "$type": "spacing",
       "$value": "48px"
     },
     "lg": {
-      "$description": "gridSpacing.lg — Large grid gap (32px). Use for: spacious card layouts, content grids, marketing pages. Good for layouts with larger cards or content blocks.",
+      "$description": "gridSpacing.lg — gridSpacing.lg — Large grid gap (32px). Use for: spacious card layouts, content grids, marketing pages.",
       "$type": "spacing",
       "$value": "32px"
     },
     "md": {
-      "$description": "gridSpacing.md — Medium grid gap (24px). Use for: default content grids, spacious card layouts, comfortable dashboard grids. Balances density with readability.",
+      "$description": "gridSpacing.md — gridSpacing.md — Medium grid gap (24px). Use for: default content grids, spacious card layouts, comfortable dashboard grids.",
       "$type": "spacing",
       "$value": "24px"
     },
     "sm": {
-      "$description": "gridSpacing.sm — Small grid gap (16px). Use for: standard card grids, form layouts, compact dashboard grids. Good default for most grid layouts.",
+      "$description": "gridSpacing.sm — gridSpacing.sm — Small grid gap (16px). Use for: standard card grids, form layouts, compact dashboard grids.",
       "$type": "spacing",
       "$value": "16px"
     },
     "xl": {
-      "$description": "gridSpacing.xl — Extra large grid gap (40px). Use for: hero grids, feature showcases, landing page layouts. Creates clear separation between grid items.",
+      "$description": "gridSpacing.xl — gridSpacing.xl — Extra large grid gap (40px). Use for: hero grids, feature showcases, landing page layouts.",
       "$type": "spacing",
       "$value": "40px"
     },
     "xs": {
-      "$description": "gridSpacing.xs — Extra small grid gap (8px). Use for: compact card grids, dense dashboard layouts, mobile-optimized grids, icon grids. Minimum comfortable gap for touch targets.",
+      "$description": "gridSpacing.xs — gridSpacing.xs — Extra small grid gap (8px). Use for: compact card grids, dense dashboard layouts, mobile-optimized grids, icon grids.",
       "$type": "spacing",
       "$value": "8px"
     }
@@ -2205,28 +2205,38 @@
     }
   },
   "spacing": {
+    "2xl": {
+      "$description": "spacing.2xl — spacing.2xl — 2x extra large spacing (40px). Use for: maximum section separation, page-level padding, large hero spacing, full-width container margins.",
+      "$type": "spacing",
+      "$value": "2.5rem"
+    },
+    "2xs": {
+      "$description": "spacing.2xs — spacing.2xs — 2x extra small spacing (8px). Use for: minimal internal padding, tight icon gaps, ultra-compact components, subtle spacing between inline elements.",
+      "$type": "spacing",
+      "$value": "0.5rem"
+    },
     "lg": {
-      "$description": "spacing.lg — Large spacing (20px). Use for: generous padding, separation between related groups, dialog/modal padding, card spacing. Creates breathing room without excessive whitespace.",
+      "$description": "spacing.lg — spacing.lg — Large spacing (20px). Use for: generous padding, separation between related groups, dialog/modal padding, card spacing.",
       "$type": "spacing",
       "$value": "1.25rem"
     },
     "md": {
-      "$description": "spacing.md — Medium spacing (16px). DEFAULT spacing value. Use for: standard gaps between elements, modal padding, card padding, section padding within components. Most common spacing value in the system.",
+      "$description": "spacing.md — spacing.md — Medium spacing (16px). DEFAULT spacing value. Use for: standard gaps between elements, modal padding, card padding, section padding within components.",
       "$type": "spacing",
       "$value": "1rem"
     },
     "sm": {
-      "$description": "spacing.sm — Small spacing (12px). Use for: standard component internal padding, form field padding, list item padding, card content padding. Common in: buttons, inputs, dropdowns, list items.",
+      "$description": "spacing.sm — spacing.sm — Small spacing (12px). Use for: standard component internal padding, form field padding, list item padding, card content padding.",
       "$type": "spacing",
       "$value": "0.75rem"
     },
     "xl": {
-      "$description": "spacing.xl — Extra large spacing (32px). Use for: major section separation, page-level margins, large component padding, hero sections. Creates significant visual separation between unrelated content areas.",
+      "$description": "spacing.xl — spacing.xl — Extra large spacing (32px). Use for: major section separation, page-level margins, large component padding, hero sections.",
       "$type": "spacing",
       "$value": "2rem"
     },
     "xs": {
-      "$description": "spacing.xs — Extra small spacing (10px). Use for: tight padding in compact components, icon-to-text gaps, inline element spacing, dense data tables. Common in: badges, tags, compact buttons, chip components.",
+      "$description": "spacing.xs — spacing.xs — Extra small spacing (10px). Use for: tight padding in compact components, icon-to-text gaps, inline element spacing, dense data tables.",
       "$type": "spacing",
       "$value": "0.625rem"
     }
@@ -2546,32 +2556,32 @@
   },
   "verticalRhythm": {
     "2xl": {
-      "$description": "verticalRhythm.2xl — Triple baseline (76.8px). Use for: page section breaks, major content area separations, hero-to-content transitions. Maximum prose spacing - use sparingly.",
+      "$description": "verticalRhythm.2xl — verticalRhythm.2xl — Triple baseline (76.8px). Use for: page section breaks, major content area separations, hero-to-content transitions.",
       "$type": "spacing",
       "$value": "4.8rem"
     },
     "lg": {
-      "$description": "verticalRhythm.lg — 1.5 baselines (38.4px). Use for: heading top margins, spacing before new sections within content, emphasis breaks. Creates clear topic transitions.",
+      "$description": "verticalRhythm.lg — verticalRhythm.lg — 1.5 baselines (38.4px). Use for: heading top margins, spacing before new sections within content, emphasis breaks.",
       "$type": "spacing",
       "$value": "2.4rem"
     },
     "md": {
-      "$description": "verticalRhythm.md — Single baseline (25.6px). DEFAULT prose spacing. Use for: paragraph margins, standard content block spacing, default vertical rhythm. One full line height of separation.",
+      "$description": "verticalRhythm.md — verticalRhythm.md — Single baseline (25.6px). DEFAULT prose spacing. Use for: paragraph margins, standard content block spacing, default vertical rhythm.",
       "$type": "spacing",
       "$value": "1.6rem"
     },
     "sm": {
-      "$description": "verticalRhythm.sm — Half baseline (12.8px). Use for: heading bottom margins, spacing after inline elements, paragraph-adjacent element spacing. Creates subtle but noticeable separation.",
+      "$description": "verticalRhythm.sm — verticalRhythm.sm — Half baseline (12.8px). Use for: heading bottom margins, spacing after inline elements, paragraph-adjacent element spacing.",
       "$type": "spacing",
       "$value": "0.8rem"
     },
     "xl": {
-      "$description": "verticalRhythm.xl — Double baseline (51.2px). Use for: major section breaks in prose, chapter-level separations, significant content divisions. Two full line heights of separation.",
+      "$description": "verticalRhythm.xl — verticalRhythm.xl — Double baseline (51.2px). Use for: major section breaks in prose, chapter-level separations, significant content divisions.",
       "$type": "spacing",
       "$value": "3.2rem"
     },
     "xs": {
-      "$description": "verticalRhythm.xs — Quarter baseline (6.4px). Use for: list item spacing within tight lists, line spacing adjustments, micro-spacing in prose. Minimal vertical separation.",
+      "$description": "verticalRhythm.xs — verticalRhythm.xs — Quarter baseline (6.4px). Use for: list item spacing within tight lists, line spacing adjustments, micro-spacing in prose.",
       "$type": "spacing",
       "$value": "0.4rem"
     }
