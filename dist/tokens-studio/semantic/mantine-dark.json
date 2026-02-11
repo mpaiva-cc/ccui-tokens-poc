@@ -1049,11 +1049,6 @@
       }
     },
     "focus": {
-      "glow": {
-        "$description": "color.focus.glow — Focus ring glow/background color. Derived from a lighter blue (#4791EB) at 15% opacity for dark background visibility. Use for: input focus ring. Update this value if the focus blue changes.",
-        "$type": "color",
-        "$value": "rgba(71, 145, 235, 0.15)"
-      },
       "ring": {
         "$description": "color.focus.ring — Focus ring color.",
         "$type": "color",
@@ -1255,16 +1250,9 @@
         "$value": "{color.feedback.text.error}"
       },
       "focus": {
-        "$description": "input.border.focus — Focused input border color. Applied on :focus. Pair with input.ring.focus for glow effect.",
+        "$description": "input.border.focus — Focused input border color. Applied on :focus. Input uses the standard outline-based focus ring pattern via color.focus.ring.",
         "$type": "color",
         "$value": "{color.border.interactive.focus}"
-      }
-    },
-    "ring": {
-      "focus": {
-        "$description": "input.ring.focus — Focus ring glow around input. Box-shadow spread color applied on :focus. Pair with input.border.focus.",
-        "$type": "color",
-        "$value": "{color.focus.glow}"
       }
     },
     "text": {

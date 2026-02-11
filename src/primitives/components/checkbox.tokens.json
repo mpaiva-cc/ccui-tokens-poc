@@ -88,7 +88,7 @@
             }
         },
         "focus": {
-            "$description": "Checkbox focus ring configuration. Visible focus indicators are essential for keyboard navigation and accessibility (WCAG 2.4.7). Focus ring color is inherited from the global color.focus.ring semantic token via CSS outline-color — no component-specific color token needed. Input has dedicated focus color tokens (input.border.focus, input.ring.focus) because it uses a distinct border + glow pattern.",
+            "$description": "Checkbox focus ring configuration. Visible focus indicators are essential for keyboard navigation and accessibility (WCAG 2.4.7). Focus ring color is inherited from the global color.focus.ring semantic token via CSS outline-color — no component-specific color token needed.",
             "ringWidth": {
                 "$value": "{focus.ring.width}",
                 "$description": "Focus ring width (2px). Clearly visible ring around checkbox when focused via keyboard. Essential for accessibility compliance."

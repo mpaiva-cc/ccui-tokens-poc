@@ -236,7 +236,7 @@
             "focus": {
                 "$value": "{color.border.interactive.focus}",
                 "$type": "color",
-                "$description": "Focused input border color. Applied on :focus. Pair with input.ring.focus for glow effect."
+                "$description": "Focused input border color. Applied on :focus. Input uses the standard outline-based focus ring pattern via color.focus.ring."
             },
             "error": {
                 "$value": "{color.feedback.text.error}",
@@ -247,13 +247,6 @@
                 "$value": "{color.border.interactive.disabled}",
                 "$type": "color",
                 "$description": "Disabled input border color."
-            }
-        },
-        "ring": {
-            "focus": {
-                "$value": "{color.focus.glow}",
-                "$type": "color",
-                "$description": "Focus ring glow around input. Box-shadow spread color applied on :focus. Pair with input.border.focus."
             }
         }
     },
