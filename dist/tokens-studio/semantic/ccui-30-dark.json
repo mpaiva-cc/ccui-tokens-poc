@@ -1204,65 +1204,15 @@
     }
   },
   "fontFamilies": {
-    "atkinsonHyperlegibleNext": {
-      "$description": "fontFamilies.atkinsonHyperlegibleNext — CCUI 3.0 UI heading/display sans-serif typeface optimized for accessibility. Designed by the Braille Institute for maximum legibility, especially for users with low vision. Distinct letterforms reduce character confusion (e.g., I/l/1, O/0). Use for: page titles, section headings, hero text.",
-      "$type": "fontFamilies",
-      "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
-    },
     "body": {
       "$description": "fontFamilies.body — Body font stack for CCUI 3.0 theme. Public Sans is a neutral, open-source typeface optimized for UI and web.",
       "$type": "fontFamilies",
       "$value": "{fontFamilies.publicSans}"
     },
-    "ftPolar": {
-      "$description": "fontFamilies.ftPolar — CCUI 3.0 brand secondary/body sans-serif typeface. FT Polar is a geometric sans-serif designed for clean, modern body text. Use for: brand body copy, marketing content, secondary text. Designed by Fontsmith.",
-      "$type": "fontFamilies",
-      "$value": "FT Polar, Helvetica Neue, Helvetica, Arial, sans-serif"
-    },
-    "fustat": {
-      "$description": "fontFamilies.fustat — Google Fonts alternative for FT Polar. Fustat is a geometric sans-serif with clean, modern proportions. Use as a free substitute when FT Polar is unavailable. Available on Google Fonts.",
-      "$type": "fontFamilies",
-      "$value": "Fustat, Helvetica Neue, Helvetica, Arial, sans-serif"
-    },
-    "gtUltraMedian": {
-      "$description": "fontFamilies.gtUltraMedian — CCUI 3.0 brand primary/display serif typeface. GT Ultra Median is a high-contrast serif designed for large display sizes and editorial use. Use for: brand hero text, marketing headlines, editorial content. Part of the GT Ultra superfamily by Grilli Type.",
-      "$type": "fontFamilies",
-      "$value": "GT Ultra Median, Georgia, Cambria, 'Times New Roman', Times, serif"
-    },
     "heading": {
       "$description": "fontFamilies.heading — Heading font stack for CCUI 3.0 theme. Atkinson Hyperlegible Next is designed for maximum legibility, especially for users with low vision.",
       "$type": "fontFamilies",
       "$value": "{fontFamilies.atkinsonHyperlegibleNext}"
-    },
-    "marcellus": {
-      "$description": "fontFamilies.marcellus — Google Fonts alternative for GT Ultra Median. Marcellus is a flared serif inspired by classic Roman inscriptions. Use as a free substitute when GT Ultra Median is unavailable. Available on Google Fonts.",
-      "$type": "fontFamilies",
-      "$value": "Marcellus, Georgia, Cambria, 'Times New Roman', Times, serif"
-    },
-    "mono": {
-      "$description": "fontFamilies.mono — Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment.",
-      "$type": "fontFamilies",
-      "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
-    },
-    "openSans": {
-      "$description": "fontFamilies.openSans — CCUI 2.1 brand body and subheading sans-serif typeface. Open Sans is a humanist sans-serif designed by Steve Matteson with excellent legibility at small sizes. Use for: body text, subheadings, and UI elements in the CCUI 2.1 theme.",
-      "$type": "fontFamilies",
-      "$value": "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
-    },
-    "publicSans": {
-      "$description": "fontFamilies.publicSans — CCUI 3.0 UI body sans-serif typeface. Public Sans is a neutral, open-source typeface by USWDS optimized for UI and web readability. Use for: all body text, UI labels, form inputs, general content. LOADING: Include weights 400, 500, 600, 700 for full design system support.",
-      "$type": "fontFamilies",
-      "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
-    },
-    "roboto": {
-      "$description": "fontFamilies.roboto — Mantine default sans-serif typeface. Roboto is Google's signature typeface, a neo-grotesque sans-serif designed for screen readability. Use for: all text in Mantine-based themes.",
-      "$type": "fontFamilies",
-      "$value": "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif"
-    },
-    "sourceSerifPro": {
-      "$description": "fontFamilies.sourceSerifPro — CCUI 2.1 brand heading serif typeface. Source Serif Pro is an open-source serif designed by Frank Griesshammer for Adobe. Use for: headings and display text in the CCUI 2.1 theme. Pairs well with Open Sans.",
-      "$type": "fontFamilies",
-      "$value": "Source Serif Pro, Georgia, Cambria, 'Times New Roman', Times, serif"
     }
   },
   "input": {

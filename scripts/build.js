@@ -528,6 +528,12 @@ StyleDictionary.registerFormat({
             if (!['color', 'colorPalette', 'boxShadow', 'mantine', 'opacity', 'brand', 'fontFamilies', ...SEMANTIC_COMPONENT_NAMES].includes(category)) {
                 return false;
             }
+            // For fontFamilies, only include role tokens (body, heading) that themes override
+            // Individual font family primitives belong in primitives.json only
+            if (category === 'fontFamilies') {
+                const tokenName = token.path[token.path.length - 1];
+                return ['body', 'heading'].includes(tokenName);
+            }
             // Exclude primitive palette colors (including brand palettes) - they belong in primitives/color.json
             if (isPrimitiveColorToken(token)) {
                 return false;
@@ -592,7 +598,7 @@ async function buildSharedPrimitives() {
                 "tokens-studio-primitives": {
                     "transformGroup": transformGroups.json,
                     "buildPath": `${distFolder}/tokens-studio/`,
-                    "files": [{ "destination": "primitives.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives", "excludeCategories": ["fontFamilies"] } }]
+                    "files": [{ "destination": "primitives.json", "format": "json/tokens-studio-set", "options": { "setName": "primitives" } }]
                 },
                 "tokens-studio-components-button": {
                     "transformGroup": transformGroups.json,
