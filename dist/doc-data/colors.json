@@ -1,0 +1,1913 @@
+[
+  {
+    "tokenName": "color.base.blue.0",
+    "groupName": "Base / Blue",
+    "description": "Lightest blue - primary light backgrounds, selected row highlights",
+    "hex": "#EAF3FE",
+    "oklch": "96.1% 0.0176 253.3°"
+  },
+  {
+    "tokenName": "color.base.blue.1",
+    "groupName": "Base / Blue",
+    "description": "Light blue - hover backgrounds, info alert backgrounds",
+    "hex": "#CFE3FC",
+    "oklch": "90.9% 0.0405 254.0°"
+  },
+  {
+    "tokenName": "color.base.blue.2",
+    "groupName": "Base / Blue",
+    "description": "Mid-light blue - progress bars, decorative",
+    "hex": "#9FC8FA",
+    "oklch": "82.1% 0.0833 253.7°"
+  },
+  {
+    "tokenName": "color.base.blue.3",
+    "groupName": "Base / Blue",
+    "description": "Medium blue - icons on light backgrounds",
+    "hex": "#6EACF6",
+    "oklch": "73.3% 0.1259 253.7°"
+  },
+  {
+    "tokenName": "color.base.blue.4",
+    "groupName": "Base / Blue",
+    "description": "Mid blue - primary buttons on dark theme, links on dark",
+    "hex": "#3C90F1",
+    "oklch": "65.0% 0.1660 254.3°"
+  },
+  {
+    "tokenName": "color.base.blue.5",
+    "groupName": "Base / Blue",
+    "description": "Base blue - primary buttons, links (light theme)",
+    "hex": "#0974EB",
+    "oklch": "57.6% 0.1991 256.9°"
+  },
+  {
+    "tokenName": "color.base.blue.6",
+    "groupName": "Base / Blue",
+    "description": "Dark blue - primary brand color, main CTAs, navigation active states",
+    "hex": "#0760C6",
+    "oklch": "50.5% 0.1758 257.1°"
+  },
+  {
+    "tokenName": "color.base.blue.7",
+    "groupName": "Base / Blue",
+    "description": "Darker blue - pressed states, text on light blue backgrounds",
+    "hex": "#064A98",
+    "oklch": "42.0% 0.1419 256.6°"
+  },
+  {
+    "tokenName": "color.base.blue.8",
+    "groupName": "Base / Blue",
+    "description": "Very dark blue - high contrast text",
+    "hex": "#04356C",
+    "oklch": "33.4% 0.1076 255.6°"
+  },
+  {
+    "tokenName": "color.base.blue.9",
+    "groupName": "Base / Blue",
+    "description": "Darkest blue - maximum emphasis, dark accents",
+    "hex": "#032142",
+    "oklch": "24.8% 0.0717 253.6°"
+  },
+  {
+    "tokenName": "color.base.cyan.0",
+    "groupName": "Base / Cyan",
+    "description": "Lightest cyan - info backgrounds",
+    "hex": "#E5F6FA",
+    "oklch": "96.2% 0.0187 213.4°"
+  },
+  {
+    "tokenName": "color.base.cyan.1",
+    "groupName": "Base / Cyan",
+    "description": "Light cyan - hover states",
+    "hex": "#C5EAF3",
+    "oklch": "91.3% 0.0404 214.1°"
+  },
+  {
+    "tokenName": "color.base.cyan.2",
+    "groupName": "Base / Cyan",
+    "description": "Mid-light cyan - decorative",
+    "hex": "#8CD6E7",
+    "oklch": "83.4% 0.0771 213.8°"
+  },
+  {
+    "tokenName": "color.base.cyan.3",
+    "groupName": "Base / Cyan",
+    "description": "Medium cyan - icons",
+    "hex": "#52C1DA",
+    "oklch": "75.7% 0.1059 215.1°"
+  },
+  {
+    "tokenName": "color.base.cyan.4",
+    "groupName": "Base / Cyan",
+    "description": "Mid cyan - interactive elements",
+    "hex": "#17ACCC",
+    "oklch": "68.8% 0.1201 218.0°"
+  },
+  {
+    "tokenName": "color.base.cyan.5",
+    "groupName": "Base / Cyan",
+    "description": "Base cyan - primary applications",
+    "hex": "#0D95B3",
+    "oklch": "62.0% 0.1101 219.2°"
+  },
+  {
+    "tokenName": "color.base.cyan.6",
+    "groupName": "Base / Cyan",
+    "description": "Dark cyan - text on light backgrounds",
+    "hex": "#0B7D96",
+    "oklch": "54.5% 0.0963 218.8°"
+  },
+  {
+    "tokenName": "color.base.cyan.7",
+    "groupName": "Base / Cyan",
+    "description": "Darker cyan - high contrast",
+    "hex": "#086073",
+    "oklch": "45.2% 0.0790 218.1°"
+  },
+  {
+    "tokenName": "color.base.cyan.8",
+    "groupName": "Base / Cyan",
+    "description": "Very dark cyan - text",
+    "hex": "#064552",
+    "oklch": "36.1% 0.0615 216.4°"
+  },
+  {
+    "tokenName": "color.base.cyan.9",
+    "groupName": "Base / Cyan",
+    "description": "Darkest cyan - maximum emphasis",
+    "hex": "#042B33",
+    "oklch": "26.7% 0.0439 214.8°"
+  },
+  {
+    "tokenName": "color.base.dark.0",
+    "groupName": "Base / Dark",
+    "description": "Lightest dark - text color on dark backgrounds, disabled states on dark theme",
+    "hex": "#D5D7D9",
+    "oklch": "87.8% 0.0035 247.9°"
+  },
+  {
+    "tokenName": "color.base.dark.1",
+    "groupName": "Base / Dark",
+    "description": "Light dark - secondary text on dark theme, subtle borders",
+    "hex": "#B4B7BB",
+    "oklch": "77.8% 0.0066 255.5°"
+  },
+  {
+    "tokenName": "color.base.dark.2",
+    "groupName": "Base / Dark",
+    "description": "Mid-light dark - placeholder text on dark theme, icons",
+    "hex": "#93979C",
+    "oklch": "67.5% 0.0087 253.9°"
+  },
+  {
+    "tokenName": "color.base.dark.3",
+    "groupName": "Base / Dark",
+    "description": "Medium dark - dimmed text, decorative elements",
+    "hex": "#74787E",
+    "oklch": "57.1% 0.0104 258.4°"
+  },
+  {
+    "tokenName": "color.base.dark.4",
+    "groupName": "Base / Dark",
+    "description": "Mid dark - borders on dark theme, dividers",
+    "hex": "#565B61",
+    "oklch": "46.9% 0.0116 252.9°"
+  },
+  {
+    "tokenName": "color.base.dark.5",
+    "groupName": "Base / Dark",
+    "description": "Base dark - elevated surfaces on dark theme, cards",
+    "hex": "#3A3F46",
+    "oklch": "36.6% 0.0138 256.8°"
+  },
+  {
+    "tokenName": "color.base.dark.6",
+    "groupName": "Base / Dark",
+    "description": "Dark base - primary dark theme background, app shells",
+    "hex": "#21262D",
+    "oklch": "26.7% 0.0150 256.8°"
+  },
+  {
+    "tokenName": "color.base.dark.7",
+    "groupName": "Base / Dark",
+    "description": "Darker - alternative dark background, sidebar backgrounds",
+    "hex": "#181C22",
+    "oklch": "22.5% 0.0132 258.4°"
+  },
+  {
+    "tokenName": "color.base.dark.8",
+    "groupName": "Base / Dark",
+    "description": "Very dark - modal overlays on dark theme, deep shadows",
+    "hex": "#13161B",
+    "oklch": "19.9% 0.0111 260.7°"
+  },
+  {
+    "tokenName": "color.base.dark.9",
+    "groupName": "Base / Dark",
+    "description": "Darkest - near-black for maximum contrast elements",
+    "hex": "#0E1014",
+    "oklch": "17.3% 0.0089 264.3°"
+  },
+  {
+    "tokenName": "color.base.grape.0",
+    "groupName": "Base / Grape",
+    "description": "Lightest grape - premium feature backgrounds",
+    "hex": "#FBEFF9",
+    "oklch": "96.4% 0.0184 331.1°"
+  },
+  {
+    "tokenName": "color.base.grape.1",
+    "groupName": "Base / Grape",
+    "description": "Light grape - hover states",
+    "hex": "#F5D9F1",
+    "oklch": "91.5% 0.0441 330.6°"
+  },
+  {
+    "tokenName": "color.base.grape.2",
+    "groupName": "Base / Grape",
+    "description": "Mid-light grape - decorative elements",
+    "hex": "#EBB3E3",
+    "oklch": "83.2% 0.0900 331.3°"
+  },
+  {
+    "tokenName": "color.base.grape.3",
+    "groupName": "Base / Grape",
+    "description": "Medium grape - icons, illustrations",
+    "hex": "#DF8BD3",
+    "oklch": "74.7% 0.1367 332.1°"
+  },
+  {
+    "tokenName": "color.base.grape.4",
+    "groupName": "Base / Grape",
+    "description": "Mid grape - interactive accents",
+    "hex": "#D262C2",
+    "oklch": "66.4% 0.1813 333.2°"
+  },
+  {
+    "tokenName": "color.base.grape.5",
+    "groupName": "Base / Grape",
+    "description": "Base grape - primary grape applications",
+    "hex": "#C338B0",
+    "oklch": "58.9% 0.2159 334.1°"
+  },
+  {
+    "tokenName": "color.base.grape.6",
+    "groupName": "Base / Grape",
+    "description": "Dark grape - text on light grape backgrounds",
+    "hex": "#A22993",
+    "oklch": "51.0% 0.1933 333.6°"
+  },
+  {
+    "tokenName": "color.base.grape.7",
+    "groupName": "Base / Grape",
+    "description": "Darker grape - high contrast",
+    "hex": "#7C2071",
+    "oklch": "42.3% 0.1564 333.3°"
+  },
+  {
+    "tokenName": "color.base.grape.8",
+    "groupName": "Base / Grape",
+    "description": "Very dark grape - text applications",
+    "hex": "#581750",
+    "oklch": "33.5% 0.1188 333.3°"
+  },
+  {
+    "tokenName": "color.base.grape.9",
+    "groupName": "Base / Grape",
+    "description": "Darkest grape - maximum emphasis",
+    "hex": "#370E32",
+    "oklch": "24.9% 0.0826 332.9°"
+  },
+  {
+    "tokenName": "color.base.gray.0",
+    "groupName": "Base / Gray",
+    "description": "Lightest gray - subtle backgrounds, hover states on white, zebra striping",
+    "hex": "#F3F4F5",
+    "oklch": "96.7% 0.0017 247.8°"
+  },
+  {
+    "tokenName": "color.base.gray.1",
+    "groupName": "Base / Gray",
+    "description": "Light gray - input backgrounds, disabled backgrounds, table headers",
+    "hex": "#E4E6E8",
+    "oklch": "92.4% 0.0035 247.9°"
+  },
+  {
+    "tokenName": "color.base.gray.2",
+    "groupName": "Base / Gray",
+    "description": "Mid-light gray - borders, dividers, inactive tabs",
+    "hex": "#C8CBCE",
+    "oklch": "84.1% 0.0053 247.9°"
+  },
+  {
+    "tokenName": "color.base.gray.3",
+    "groupName": "Base / Gray",
+    "description": "Medium gray - placeholder text (use carefully - check contrast), icons",
+    "hex": "#ADB1B5",
+    "oklch": "75.8% 0.0073 247.9°"
+  },
+  {
+    "tokenName": "color.base.gray.4",
+    "groupName": "Base / Gray",
+    "description": "Mid gray - secondary icons, chart gridlines",
+    "hex": "#92979D",
+    "oklch": "67.4% 0.0106 252.8°"
+  },
+  {
+    "tokenName": "color.base.gray.5",
+    "groupName": "Base / Gray",
+    "description": "Base gray - dimmed text, help text (4.5:1 on white = AA)",
+    "hex": "#787E85",
+    "oklch": "59.0% 0.0129 252.2°"
+  },
+  {
+    "tokenName": "color.base.gray.6",
+    "groupName": "Base / Gray",
+    "description": "Dark gray - secondary text (7:1 on white = AAA), labels",
+    "hex": "#5F656D",
+    "oklch": "50.4% 0.0147 255.6°"
+  },
+  {
+    "tokenName": "color.base.gray.7",
+    "groupName": "Base / Gray",
+    "description": "Darker gray - primary text alternative, emphasis",
+    "hex": "#474D55",
+    "oklch": "41.8% 0.0154 255.6°"
+  },
+  {
+    "tokenName": "color.base.gray.8",
+    "groupName": "Base / Gray",
+    "description": "Very dark gray - high-emphasis text on light backgrounds",
+    "hex": "#31363D",
+    "oklch": "33.1% 0.0142 256.8°"
+  },
+  {
+    "tokenName": "color.base.gray.9",
+    "groupName": "Base / Gray",
+    "description": "Darkest gray - headings, maximum emphasis text",
+    "hex": "#1C2026",
+    "oklch": "24.2% 0.0129 258.4°"
+  },
+  {
+    "tokenName": "color.base.green.0",
+    "groupName": "Base / Green",
+    "description": "Lightest green - success alert backgrounds, positive feedback areas",
+    "hex": "#E7F6EC",
+    "oklch": "95.9% 0.0206 156.8°"
+  },
+  {
+    "tokenName": "color.base.green.1",
+    "groupName": "Base / Green",
+    "description": "Light green - hover state for success backgrounds",
+    "hex": "#C9EAD4",
+    "oklch": "90.7% 0.0456 156.2°"
+  },
+  {
+    "tokenName": "color.base.green.2",
+    "groupName": "Base / Green",
+    "description": "Mid-light green - progress indicators, completion bars",
+    "hex": "#94D6AA",
+    "oklch": "82.0% 0.0913 154.7°"
+  },
+  {
+    "tokenName": "color.base.green.3",
+    "groupName": "Base / Green",
+    "description": "Medium green - success icons on light backgrounds",
+    "hex": "#5FC180",
+    "oklch": "73.5% 0.1328 152.8°"
+  },
+  {
+    "tokenName": "color.base.green.4",
+    "groupName": "Base / Green",
+    "description": "Mid green - success badges, online indicators",
+    "hex": "#2AAB58",
+    "oklch": "65.4% 0.1629 150.4°"
+  },
+  {
+    "tokenName": "color.base.green.5",
+    "groupName": "Base / Green",
+    "description": "Base green - primary success buttons, checkmarks",
+    "hex": "#1D9448",
+    "oklch": "58.6% 0.1512 150.0°"
+  },
+  {
+    "tokenName": "color.base.green.6",
+    "groupName": "Base / Green",
+    "description": "Dark green - success text on white (5:1 contrast = AA)",
+    "hex": "#187C3C",
+    "oklch": "51.6% 0.1319 150.1°"
+  },
+  {
+    "tokenName": "color.base.green.7",
+    "groupName": "Base / Green",
+    "description": "Darker green - success text with maximum contrast",
+    "hex": "#125F2E",
+    "oklch": "42.8% 0.1071 150.5°"
+  },
+  {
+    "tokenName": "color.base.green.8",
+    "groupName": "Base / Green",
+    "description": "Very dark green - text on light green backgrounds",
+    "hex": "#0D4421",
+    "oklch": "34.2% 0.0822 151.0°"
+  },
+  {
+    "tokenName": "color.base.green.9",
+    "groupName": "Base / Green",
+    "description": "Darkest green - extreme emphasis",
+    "hex": "#082A15",
+    "oklch": "25.4% 0.0555 152.7°"
+  },
+  {
+    "tokenName": "color.base.indigo.0",
+    "groupName": "Base / Indigo",
+    "description": "Lightest indigo - subtle backgrounds",
+    "hex": "#F0F2FE",
+    "oklch": "96.3% 0.0162 278.5°"
+  },
+  {
+    "tokenName": "color.base.indigo.1",
+    "groupName": "Base / Indigo",
+    "description": "Light indigo - hover states",
+    "hex": "#DCE0FC",
+    "oklch": "91.2% 0.0384 279.2°"
+  },
+  {
+    "tokenName": "color.base.indigo.2",
+    "groupName": "Base / Indigo",
+    "description": "Mid-light indigo - decorative",
+    "hex": "#B9C2F9",
+    "oklch": "82.6% 0.0779 277.3°"
+  },
+  {
+    "tokenName": "color.base.indigo.3",
+    "groupName": "Base / Indigo",
+    "description": "Medium indigo - icons",
+    "hex": "#96A3F5",
+    "oklch": "73.8% 0.1195 276.2°"
+  },
+  {
+    "tokenName": "color.base.indigo.4",
+    "groupName": "Base / Indigo",
+    "description": "Mid indigo - interactive elements",
+    "hex": "#7284F0",
+    "oklch": "65.0% 0.1612 273.9°"
+  },
+  {
+    "tokenName": "color.base.indigo.5",
+    "groupName": "Base / Indigo",
+    "description": "Base indigo - primary applications",
+    "hex": "#4E65EA",
+    "oklch": "56.6% 0.2013 271.1°"
+  },
+  {
+    "tokenName": "color.base.indigo.6",
+    "groupName": "Base / Indigo",
+    "description": "Dark indigo - text on light backgrounds",
+    "hex": "#364FD0",
+    "oklch": "49.2% 0.2000 269.1°"
+  },
+  {
+    "tokenName": "color.base.indigo.7",
+    "groupName": "Base / Indigo",
+    "description": "Darker indigo - high contrast",
+    "hex": "#2A3DA0",
+    "oklch": "41.0% 0.1612 269.5°"
+  },
+  {
+    "tokenName": "color.base.indigo.8",
+    "groupName": "Base / Indigo",
+    "description": "Very dark indigo - text",
+    "hex": "#1E2C72",
+    "oklch": "32.8% 0.1215 269.8°"
+  },
+  {
+    "tokenName": "color.base.indigo.9",
+    "groupName": "Base / Indigo",
+    "description": "Darkest indigo - maximum emphasis",
+    "hex": "#131C47",
+    "oklch": "24.7% 0.0811 270.5°"
+  },
+  {
+    "tokenName": "color.base.lime.0",
+    "groupName": "Base / Lime",
+    "description": "Lightest lime - subtle backgrounds",
+    "hex": "#EEF6DC",
+    "oklch": "96.0% 0.0352 121.0°"
+  },
+  {
+    "tokenName": "color.base.lime.1",
+    "groupName": "Base / Lime",
+    "description": "Light lime - hover states",
+    "hex": "#DAEDB4",
+    "oklch": "91.8% 0.0773 122.9°"
+  },
+  {
+    "tokenName": "color.base.lime.2",
+    "groupName": "Base / Lime",
+    "description": "Mid-light lime - decorative",
+    "hex": "#B6DB6E",
+    "oklch": "84.1% 0.1428 124.9°"
+  },
+  {
+    "tokenName": "color.base.lime.3",
+    "groupName": "Base / Lime",
+    "description": "Medium lime - icons, highlights",
+    "hex": "#93C82D",
+    "oklch": "76.8% 0.1837 127.4°"
+  },
+  {
+    "tokenName": "color.base.lime.4",
+    "groupName": "Base / Lime",
+    "description": "Mid lime - interactive elements",
+    "hex": "#7EB11C",
+    "oklch": "69.9% 0.1743 128.0°"
+  },
+  {
+    "tokenName": "color.base.lime.5",
+    "groupName": "Base / Lime",
+    "description": "Base lime - primary applications",
+    "hex": "#6D9918",
+    "oklch": "62.8% 0.1557 127.9°"
+  },
+  {
+    "tokenName": "color.base.lime.6",
+    "groupName": "Base / Lime",
+    "description": "Dark lime - text on light backgrounds",
+    "hex": "#5B8014",
+    "oklch": "55.2% 0.1358 127.8°"
+  },
+  {
+    "tokenName": "color.base.lime.7",
+    "groupName": "Base / Lime",
+    "description": "Darker lime - high contrast",
+    "hex": "#466210",
+    "oklch": "45.7% 0.1101 127.4°"
+  },
+  {
+    "tokenName": "color.base.lime.8",
+    "groupName": "Base / Lime",
+    "description": "Very dark lime - text",
+    "hex": "#32460B",
+    "oklch": "36.4% 0.0853 127.0°"
+  },
+  {
+    "tokenName": "color.base.lime.9",
+    "groupName": "Base / Lime",
+    "description": "Darkest lime - maximum emphasis",
+    "hex": "#1F2B07",
+    "oklch": "26.9% 0.0586 126.0°"
+  },
+  {
+    "tokenName": "color.base.orange.0",
+    "groupName": "Base / Orange",
+    "description": "Lightest orange - promotional backgrounds",
+    "hex": "#FEF1E6",
+    "oklch": "96.5% 0.0203 62.9°"
+  },
+  {
+    "tokenName": "color.base.orange.1",
+    "groupName": "Base / Orange",
+    "description": "Light orange - hover states",
+    "hex": "#FCDDC6",
+    "oklch": "91.7% 0.0461 58.7°"
+  },
+  {
+    "tokenName": "color.base.orange.2",
+    "groupName": "Base / Orange",
+    "description": "Mid-light orange - decorative",
+    "hex": "#F9BB8F",
+    "oklch": "83.9% 0.0923 56.4°"
+  },
+  {
+    "tokenName": "color.base.orange.3",
+    "groupName": "Base / Orange",
+    "description": "Medium orange - icons, highlights",
+    "hex": "#F49857",
+    "oklch": "76.2% 0.1368 54.3°"
+  },
+  {
+    "tokenName": "color.base.orange.4",
+    "groupName": "Base / Orange",
+    "description": "Mid orange - interactive elements",
+    "hex": "#ED7621",
+    "oklch": "69.3% 0.1712 50.0°"
+  },
+  {
+    "tokenName": "color.base.orange.5",
+    "groupName": "Base / Orange",
+    "description": "Base orange - primary applications",
+    "hex": "#D2620F",
+    "oklch": "62.3% 0.1629 48.8°"
+  },
+  {
+    "tokenName": "color.base.orange.6",
+    "groupName": "Base / Orange",
+    "description": "Dark orange - text on light backgrounds",
+    "hex": "#AF520C",
+    "oklch": "54.6% 0.1408 49.4°"
+  },
+  {
+    "tokenName": "color.base.orange.7",
+    "groupName": "Base / Orange",
+    "description": "Darker orange - high contrast",
+    "hex": "#873F0A",
+    "oklch": "45.4% 0.1148 49.8°"
+  },
+  {
+    "tokenName": "color.base.orange.8",
+    "groupName": "Base / Orange",
+    "description": "Very dark orange - text",
+    "hex": "#612D07",
+    "oklch": "36.2% 0.0887 50.7°"
+  },
+  {
+    "tokenName": "color.base.orange.9",
+    "groupName": "Base / Orange",
+    "description": "Darkest orange - maximum emphasis",
+    "hex": "#3C1C04",
+    "oklch": "26.7% 0.0611 53.8°"
+  },
+  {
+    "tokenName": "color.base.pink.0",
+    "groupName": "Base / Pink",
+    "description": "Lightest pink - subtle highlights, badge backgrounds",
+    "hex": "#FDEEF5",
+    "oklch": "96.3% 0.0186 347.4°"
+  },
+  {
+    "tokenName": "color.base.pink.1",
+    "groupName": "Base / Pink",
+    "description": "Light pink - hover states, selected rows",
+    "hex": "#FAD7E7",
+    "oklch": "91.3% 0.0440 348.7°"
+  },
+  {
+    "tokenName": "color.base.pink.2",
+    "groupName": "Base / Pink",
+    "description": "Mid-light pink - decorative borders",
+    "hex": "#F5AFCF",
+    "oklch": "82.9% 0.0908 350.2°"
+  },
+  {
+    "tokenName": "color.base.pink.3",
+    "groupName": "Base / Pink",
+    "description": "Medium pink - icons, illustrations",
+    "hex": "#EE85B5",
+    "oklch": "74.4% 0.1391 352.2°"
+  },
+  {
+    "tokenName": "color.base.pink.4",
+    "groupName": "Base / Pink",
+    "description": "Mid pink - interactive elements",
+    "hex": "#E55A9B",
+    "oklch": "66.5% 0.1837 354.2°"
+  },
+  {
+    "tokenName": "color.base.pink.5",
+    "groupName": "Base / Pink",
+    "description": "Base pink - primary accent applications",
+    "hex": "#DA2D80",
+    "oklch": "59.7% 0.2155 357.4°"
+  },
+  {
+    "tokenName": "color.base.pink.6",
+    "groupName": "Base / Pink",
+    "description": "Dark pink - text on light pink backgrounds (AA compliant)",
+    "hex": "#B91F69",
+    "oklch": "52.3% 0.1942 358.1°"
+  },
+  {
+    "tokenName": "color.base.pink.7",
+    "groupName": "Base / Pink",
+    "description": "Darker pink - high contrast applications",
+    "hex": "#8E1851",
+    "oklch": "43.3% 0.1582 357.5°"
+  },
+  {
+    "tokenName": "color.base.pink.8",
+    "groupName": "Base / Pink",
+    "description": "Very dark pink - text on light backgrounds",
+    "hex": "#65113A",
+    "oklch": "34.2% 0.1218 356.5°"
+  },
+  {
+    "tokenName": "color.base.pink.9",
+    "groupName": "Base / Pink",
+    "description": "Darkest pink - maximum emphasis",
+    "hex": "#3F0B24",
+    "oklch": "25.3% 0.0839 355.6°"
+  },
+  {
+    "tokenName": "color.base.red.0",
+    "groupName": "Base / Red",
+    "description": "Lightest red - error alert backgrounds, validation field backgrounds",
+    "hex": "#FEF1F0",
+    "oklch": "96.8% 0.0141 22.8°"
+  },
+  {
+    "tokenName": "color.base.red.1",
+    "groupName": "Base / Red",
+    "description": "Light red - hover state for error backgrounds",
+    "hex": "#FCDCDA",
+    "oklch": "92.0% 0.0357 22.1°"
+  },
+  {
+    "tokenName": "color.base.red.2",
+    "groupName": "Base / Red",
+    "description": "Mid-light red - progress indicators, decorative",
+    "hex": "#F9B8B4",
+    "oklch": "84.1% 0.0761 22.8°"
+  },
+  {
+    "tokenName": "color.base.red.3",
+    "groupName": "Base / Red",
+    "description": "Medium red - icons on error backgrounds",
+    "hex": "#F4928C",
+    "oklch": "76.1% 0.1195 24.0°"
+  },
+  {
+    "tokenName": "color.base.red.4",
+    "groupName": "Base / Red",
+    "description": "Mid red - error icons on white backgrounds",
+    "hex": "#ED6A63",
+    "oklch": "68.3% 0.1636 25.4°"
+  },
+  {
+    "tokenName": "color.base.red.5",
+    "groupName": "Base / Red",
+    "description": "Base red - primary destructive buttons, critical alerts",
+    "hex": "#E5413A",
+    "oklch": "61.6% 0.2019 27.3°"
+  },
+  {
+    "tokenName": "color.base.red.6",
+    "groupName": "Base / Red",
+    "description": "Dark red - error text on white (6:1 contrast = AA), danger buttons",
+    "hex": "#CF2720",
+    "oklch": "55.4% 0.2035 28.5°"
+  },
+  {
+    "tokenName": "color.base.red.7",
+    "groupName": "Base / Red",
+    "description": "Darker red - error text with maximum contrast (8:1 = AAA)",
+    "hex": "#A01D18",
+    "oklch": "45.8% 0.1671 28.3°"
+  },
+  {
+    "tokenName": "color.base.red.8",
+    "groupName": "Base / Red",
+    "description": "Very dark red - text on light red backgrounds",
+    "hex": "#731511",
+    "oklch": "36.4% 0.1288 28.2°"
+  },
+  {
+    "tokenName": "color.base.red.9",
+    "groupName": "Base / Red",
+    "description": "Darkest red - reserved for extreme emphasis",
+    "hex": "#480D0B",
+    "oklch": "26.7% 0.0890 27.1°"
+  },
+  {
+    "tokenName": "color.base.teal.0",
+    "groupName": "Base / Teal",
+    "description": "Lightest teal - subtle success backgrounds",
+    "hex": "#E3F7F3",
+    "oklch": "96.0% 0.0216 182.6°"
+  },
+  {
+    "tokenName": "color.base.teal.1",
+    "groupName": "Base / Teal",
+    "description": "Light teal - hover states",
+    "hex": "#C0EDE4",
+    "oklch": "91.2% 0.0480 181.7°"
+  },
+  {
+    "tokenName": "color.base.teal.2",
+    "groupName": "Base / Teal",
+    "description": "Mid-light teal - decorative",
+    "hex": "#83DCC9",
+    "oklch": "83.3% 0.0905 178.7°"
+  },
+  {
+    "tokenName": "color.base.teal.3",
+    "groupName": "Base / Teal",
+    "description": "Medium teal - icons",
+    "hex": "#46CAAE",
+    "oklch": "76.0% 0.1213 175.9°"
+  },
+  {
+    "tokenName": "color.base.teal.4",
+    "groupName": "Base / Teal",
+    "description": "Mid teal - interactive elements",
+    "hex": "#10B794",
+    "oklch": "69.6% 0.1323 172.3°"
+  },
+  {
+    "tokenName": "color.base.teal.5",
+    "groupName": "Base / Teal",
+    "description": "Base teal - primary applications",
+    "hex": "#0E9E80",
+    "oklch": "62.4% 0.1181 172.6°"
+  },
+  {
+    "tokenName": "color.base.teal.6",
+    "groupName": "Base / Teal",
+    "description": "Dark teal - text on light backgrounds",
+    "hex": "#0C846B",
+    "oklch": "54.8% 0.1029 172.9°"
+  },
+  {
+    "tokenName": "color.base.teal.7",
+    "groupName": "Base / Teal",
+    "description": "Darker teal - high contrast",
+    "hex": "#096552",
+    "oklch": "45.3% 0.0840 173.4°"
+  },
+  {
+    "tokenName": "color.base.teal.8",
+    "groupName": "Base / Teal",
+    "description": "Very dark teal - text",
+    "hex": "#06483B",
+    "oklch": "36.0% 0.0651 174.9°"
+  },
+  {
+    "tokenName": "color.base.teal.9",
+    "groupName": "Base / Teal",
+    "description": "Darkest teal - maximum emphasis",
+    "hex": "#042D25",
+    "oklch": "26.7% 0.0465 176.4°"
+  },
+  {
+    "tokenName": "color.base.violet.0",
+    "groupName": "Base / Violet",
+    "description": "Lightest violet - feature highlight backgrounds",
+    "hex": "#F5F1FD",
+    "oklch": "96.5% 0.0165 301.2°"
+  },
+  {
+    "tokenName": "color.base.violet.1",
+    "groupName": "Base / Violet",
+    "description": "Light violet - hover states",
+    "hex": "#E6DCFA",
+    "oklch": "91.2% 0.0418 300.8°"
+  },
+  {
+    "tokenName": "color.base.violet.2",
+    "groupName": "Base / Violet",
+    "description": "Mid-light violet - decorative",
+    "hex": "#CDB9F5",
+    "oklch": "82.3% 0.0855 299.8°"
+  },
+  {
+    "tokenName": "color.base.violet.3",
+    "groupName": "Base / Violet",
+    "description": "Medium violet - icons",
+    "hex": "#B396EF",
+    "oklch": "73.3% 0.1290 298.2°"
+  },
+  {
+    "tokenName": "color.base.violet.4",
+    "groupName": "Base / Violet",
+    "description": "Mid violet - interactive elements",
+    "hex": "#9872E8",
+    "oklch": "64.3% 0.1722 296.1°"
+  },
+  {
+    "tokenName": "color.base.violet.5",
+    "groupName": "Base / Violet",
+    "description": "Base violet - primary applications",
+    "hex": "#7C4EE0",
+    "oklch": "55.5% 0.2103 292.7°"
+  },
+  {
+    "tokenName": "color.base.violet.6",
+    "groupName": "Base / Violet",
+    "description": "Dark violet - text on light backgrounds",
+    "hex": "#6536C7",
+    "oklch": "48.0% 0.2091 291.3°"
+  },
+  {
+    "tokenName": "color.base.violet.7",
+    "groupName": "Base / Violet",
+    "description": "Darker violet - high contrast",
+    "hex": "#4E2A99",
+    "oklch": "40.1% 0.1690 291.8°"
+  },
+  {
+    "tokenName": "color.base.violet.8",
+    "groupName": "Base / Violet",
+    "description": "Very dark violet - text",
+    "hex": "#381E6D",
+    "oklch": "32.0% 0.1288 292.7°"
+  },
+  {
+    "tokenName": "color.base.violet.9",
+    "groupName": "Base / Violet",
+    "description": "Darkest violet - maximum emphasis",
+    "hex": "#231344",
+    "oklch": "24.1% 0.0877 293.8°"
+  },
+  {
+    "tokenName": "color.base.yellow.0",
+    "groupName": "Base / Yellow",
+    "description": "Lightest yellow - warning backgrounds (must use dark text)",
+    "hex": "#FEF6DC",
+    "oklch": "97.3% 0.0350 92.8°"
+  },
+  {
+    "tokenName": "color.base.yellow.1",
+    "groupName": "Base / Yellow",
+    "description": "Light yellow - hover state for warning backgrounds",
+    "hex": "#FCEAB3",
+    "oklch": "93.8% 0.0731 92.1°"
+  },
+  {
+    "tokenName": "color.base.yellow.2",
+    "groupName": "Base / Yellow",
+    "description": "Mid-light yellow - caution icons with dark stroke",
+    "hex": "#F9D56A",
+    "oklch": "88.3% 0.1320 90.9°"
+  },
+  {
+    "tokenName": "color.base.yellow.3",
+    "groupName": "Base / Yellow",
+    "description": "Medium yellow - warning badges (ensure dark text)",
+    "hex": "#F5C023",
+    "oklch": "83.3% 0.1633 87.4°"
+  },
+  {
+    "tokenName": "color.base.yellow.4",
+    "groupName": "Base / Yellow",
+    "description": "Mid yellow - decorative, charts",
+    "hex": "#DAA711",
+    "oklch": "75.5% 0.1517 86.0°"
+  },
+  {
+    "tokenName": "color.base.yellow.5",
+    "groupName": "Base / Yellow",
+    "description": "Base yellow - rarely used for text",
+    "hex": "#BC900F",
+    "oklch": "67.7% 0.1355 86.2°"
+  },
+  {
+    "tokenName": "color.base.yellow.6",
+    "groupName": "Base / Yellow",
+    "description": "Dark yellow - minimum for text (check contrast)",
+    "hex": "#9D780C",
+    "oklch": "59.3% 0.1183 86.3°"
+  },
+  {
+    "tokenName": "color.base.yellow.7",
+    "groupName": "Base / Yellow",
+    "description": "Darker yellow - warning text on light backgrounds (4.5:1)",
+    "hex": "#795C0A",
+    "oklch": "49.1% 0.0969 86.2°"
+  },
+  {
+    "tokenName": "color.base.yellow.8",
+    "groupName": "Base / Yellow",
+    "description": "Very dark yellow - safe for body text on white",
+    "hex": "#564207",
+    "oklch": "39.0% 0.0758 87.8°"
+  },
+  {
+    "tokenName": "color.base.yellow.9",
+    "groupName": "Base / Yellow",
+    "description": "Darkest yellow - high contrast text",
+    "hex": "#352904",
+    "oklch": "28.7% 0.0545 90.1°"
+  },
+  {
+    "tokenName": "color.base.white",
+    "groupName": "Base / White",
+    "description": "Pure white. Use for: light theme backgrounds, text on dark backgrounds, card surfaces. Contrast ratio with black: 21:1 (WCAG AAA). Avoid using directly - prefer semantic tokens like color.body or color.default.",
+    "hex": "#FFFFFF",
+    "oklch": "100.0% 0.0000 0.0°"
+  },
+  {
+    "tokenName": "color.base.black",
+    "groupName": "Base / Black",
+    "description": "Pure black. Use for: dark theme text emphasis, high-contrast borders. Contrast ratio with white: 21:1 (WCAG AAA). Rarely used directly - prefer dark.9 for softer blacks or semantic color.text token.",
+    "hex": "#000000",
+    "oklch": "0.0% 0.0000 0.0°"
+  },
+  {
+    "tokenName": "color.base.transparent",
+    "groupName": "Base / Transparent",
+    "description": "Fully transparent. Use for: invisible interactive areas, overlay starting states, clearfix backgrounds. CSS keyword value - works in all color contexts.",
+    "hex": "TRANSPARENT",
+    "oklch": "N/A"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.0",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 0.",
+    "hex": "#EFF6FF",
+    "oklch": "97.0% 0.0142 254.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.1",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 1.",
+    "hex": "#D0E3FF",
+    "oklch": "91.0% 0.0435 258.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.2",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 2.",
+    "hex": "#A0C6FF",
+    "oklch": "82.0% 0.0907 258.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.3",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 3.",
+    "hex": "#81A6DE",
+    "oklch": "72.0% 0.0918 258.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.4",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 4.",
+    "hex": "#6084BA",
+    "oklch": "60.9% 0.0922 258.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.5",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 5.",
+    "hex": "#476A9D",
+    "oklch": "52.1% 0.0907 257.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.6",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 6.",
+    "hex": "#345588",
+    "oklch": "44.9% 0.0927 258.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.7",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — base color (step 7, pinned to official brand hex).",
+    "hex": "#254677",
+    "oklch": "39.5% 0.0919 258.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.8",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 8.",
+    "hex": "#092958",
+    "oklch": "28.9% 0.0927 258.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.9",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 9.",
+    "hex": "#001840",
+    "oklch": "22.0% 0.0830 258.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.0",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 0.",
+    "hex": "#FFF0FB",
+    "oklch": "97.0% 0.0216 334.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.1",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 1.",
+    "hex": "#FFD1F5",
+    "oklch": "91.1% 0.0693 333.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.2",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 2.",
+    "hex": "#FF9DED",
+    "oklch": "82.1% 0.1521 333.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.3",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 3.",
+    "hex": "#DF7BCE",
+    "oklch": "72.0% 0.1598 333.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.4",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 4.",
+    "hex": "#BA59AA",
+    "oklch": "61.0% 0.1593 334.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.5",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 5.",
+    "hex": "#9D3D8E",
+    "oklch": "52.0% 0.1604 334.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.6",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — base color (step 6, pinned to official brand hex).",
+    "hex": "#822275",
+    "oklch": "43.7% 0.1606 334.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.7",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 7.",
+    "hex": "#6D0561",
+    "oklch": "37.0% 0.1605 334.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.8",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 8.",
+    "hex": "#4D0045",
+    "oklch": "28.9% 0.1295 333.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.purple.9",
+    "groupName": "Brand / Clearco-21 / purple",
+    "description": "Purple — typography accent — tint step 9.",
+    "hex": "#33002D",
+    "oklch": "22.1% 0.0987 333.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.0",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 0.",
+    "hex": "#EAF8FF",
+    "oklch": "97.1% 0.0175 229.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.1",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 1.",
+    "hex": "#BFE8FF",
+    "oklch": "90.9% 0.0530 232.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.2",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 2.",
+    "hex": "#74D1FF",
+    "oklch": "82.1% 0.1098 231.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.3",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex).",
+    "hex": "#55BAEA",
+    "oklch": "74.8% 0.1162 231.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.4",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 4.",
+    "hex": "#1E8EBC",
+    "oklch": "60.9% 0.1161 231.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.5",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 5.",
+    "hex": "#00729B",
+    "oklch": "51.9% 0.1063 232.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.6",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 6.",
+    "hex": "#005D7F",
+    "oklch": "44.9% 0.0918 232.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.7",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 7.",
+    "hex": "#004660",
+    "oklch": "37.0% 0.0749 231.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.8",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 8.",
+    "hex": "#003043",
+    "oklch": "29.0% 0.0586 231.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.skyBlue.9",
+    "groupName": "Brand / Clearco-21 / skyBlue",
+    "description": "Sky Blue — secondary logo color — tint step 9.",
+    "hex": "#001E2C",
+    "oklch": "22.1% 0.0451 232.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.0",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 0.",
+    "hex": "#FEFE6C",
+    "oklch": "97.0% 0.1658 109.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.1",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — base color (step 1, pinned to official brand hex).",
+    "hex": "#E6E651",
+    "oklch": "89.8% 0.1660 109.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.2",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 2.",
+    "hex": "#CDCC2E",
+    "oklch": "82.0% 0.1661 109.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.3",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 3.",
+    "hex": "#ADAC00",
+    "oklch": "72.1% 0.1568 109.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.4",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 4.",
+    "hex": "#8A8900",
+    "oklch": "61.1% 0.1327 109.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.5",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 5.",
+    "hex": "#6E6E00",
+    "oklch": "52.1% 0.1136 109.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.6",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 6.",
+    "hex": "#5A5900",
+    "oklch": "45.0% 0.0976 109.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.7",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 7.",
+    "hex": "#434300",
+    "oklch": "37.1% 0.0808 109.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.8",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 8.",
+    "hex": "#2E2E00",
+    "oklch": "29.2% 0.0636 109.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.yellow.9",
+    "groupName": "Brand / Clearco-21 / yellow",
+    "description": "Yellow — decorative highlight — tint step 9.",
+    "hex": "#1C1C00",
+    "oklch": "21.9% 0.0478 109.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.0",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 0.",
+    "hex": "#FFF2ED",
+    "oklch": "97.0% 0.0156 42.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.1",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 1.",
+    "hex": "#FFD8C7",
+    "oklch": "91.1% 0.0495 44.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.2",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — base color (step 2, pinned to official brand hex).",
+    "hex": "#FFA680",
+    "oklch": "80.5% 0.1177 43.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.3",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 3.",
+    "hex": "#E28B66",
+    "oklch": "72.0% 0.1182 43.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.4",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 4.",
+    "hex": "#BD6A45",
+    "oklch": "61.1% 0.1178 44.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.5",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 5.",
+    "hex": "#9F4F2A",
+    "oklch": "52.0% 0.1177 43.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.6",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 6.",
+    "hex": "#893B13",
+    "oklch": "45.1% 0.1180 44.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.7",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 7.",
+    "hex": "#6C2700",
+    "oklch": "37.0% 0.1082 43.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.8",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 8.",
+    "hex": "#4C1900",
+    "oklch": "29.0% 0.0849 43.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.alloy.9",
+    "groupName": "Brand / Clearco-30 / alloy",
+    "description": "Alloy — warm highlight, lighter companion to Copper — tint step 9.",
+    "hex": "#320E00",
+    "oklch": "22.1% 0.0644 44.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.0",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 0.",
+    "hex": "#FFF4DF",
+    "oklch": "97.0% 0.0300 83.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.1",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 1.",
+    "hex": "#EFE0C1",
+    "oklch": "91.1% 0.0441 85.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.2",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — base color (step 2, pinned to official brand hex).",
+    "hex": "#C3B497",
+    "oklch": "77.5% 0.0432 83.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.3",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 3.",
+    "hex": "#B2A386",
+    "oklch": "72.1% 0.0439 83.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.4",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 4.",
+    "hex": "#908166",
+    "oklch": "61.0% 0.0429 82.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.5",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 5.",
+    "hex": "#75674C",
+    "oklch": "52.0% 0.0437 83.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.6",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 6.",
+    "hex": "#615339",
+    "oklch": "44.9% 0.0435 82.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.7",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 7.",
+    "hex": "#4B3E24",
+    "oklch": "37.1% 0.0440 83.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.8",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 8.",
+    "hex": "#362910",
+    "oklch": "29.0% 0.0433 81.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.9",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 9.",
+    "hex": "#241801",
+    "oklch": "21.9% 0.0432 82.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.0",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 0.",
+    "hex": "#FFF2EE",
+    "oklch": "97.0% 0.0151 37.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.1",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 1.",
+    "hex": "#FFD7CA",
+    "oklch": "91.0% 0.0484 38.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.2",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 2.",
+    "hex": "#F0B4A1",
+    "oklch": "82.0% 0.0752 38.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.3",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 3.",
+    "hex": "#CF9582",
+    "oklch": "72.1% 0.0756 38.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.4",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 4.",
+    "hex": "#AB7362",
+    "oklch": "60.9% 0.0759 37.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.5",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 5.",
+    "hex": "#8E5948",
+    "oklch": "51.9% 0.0754 38.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.6",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 6.",
+    "hex": "#794635",
+    "oklch": "45.1% 0.0755 39.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.7",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — base color (step 7, pinned to official brand hex).",
+    "hex": "#6C3A2A",
+    "oklch": "40.7% 0.0756 38.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.8",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 8.",
+    "hex": "#491B0B",
+    "oklch": "28.9% 0.0750 39.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.bronze.9",
+    "groupName": "Brand / Clearco-30 / bronze",
+    "description": "Bronze — deep earthy anchor — tint step 9.",
+    "hex": "#340A00",
+    "oklch": "21.9% 0.0710 38.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.0",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 0.",
+    "hex": "#F8F6E7",
+    "oklch": "97.1% 0.0199 100.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.1",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 1.",
+    "hex": "#E4E2D4",
+    "oklch": "91.1% 0.0188 100.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.2",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 2.",
+    "hex": "#C7C5B7",
+    "oklch": "82.1% 0.0193 100.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.3",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 3.",
+    "hex": "#A7A598",
+    "oklch": "72.0% 0.0185 99.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.4",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 4.",
+    "hex": "#868477",
+    "oklch": "61.1% 0.0193 99.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.5",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 5.",
+    "hex": "#6B695D",
+    "oklch": "51.9% 0.0185 99.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.6",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 6.",
+    "hex": "#58564A",
+    "oklch": "45.1% 0.0191 99.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.7",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 7.",
+    "hex": "#424035",
+    "oklch": "37.0% 0.0184 98.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.8",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — base color (step 8, pinned to official brand hex).",
+    "hex": "#37352A",
+    "oklch": "32.7% 0.0188 98.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.castIron.9",
+    "groupName": "Brand / Clearco-30 / castIron",
+    "description": "Cast Iron — primary dark neutral — tint step 9.",
+    "hex": "#1D1B11",
+    "oklch": "22.1% 0.0186 98.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.0",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 0.",
+    "hex": "#FFF2EE",
+    "oklch": "97.0% 0.0151 37.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.1",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 1.",
+    "hex": "#FFD7CB",
+    "oklch": "91.0% 0.0479 37.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.2",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 2.",
+    "hex": "#FFAC94",
+    "oklch": "81.9% 0.1040 36.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.3",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — base color (step 3, pinned to official brand hex).",
+    "hex": "#FF7A52",
+    "oklch": "72.8% 0.1717 37.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.4",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 4.",
+    "hex": "#D5542B",
+    "oklch": "61.0% 0.1716 37.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.5",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 5.",
+    "hex": "#B63601",
+    "oklch": "52.0% 0.1721 37.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.6",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 6.",
+    "hex": "#962B00",
+    "oklch": "45.1% 0.1492 37.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.7",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 7.",
+    "hex": "#721E00",
+    "oklch": "36.9% 0.1228 37.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.8",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 8.",
+    "hex": "#501300",
+    "oklch": "28.9% 0.0953 37.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.copper.9",
+    "groupName": "Brand / Clearco-30 / copper",
+    "description": "Copper — signature accent — tint step 9.",
+    "hex": "#350900",
+    "oklch": "22.0% 0.0732 37.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.0",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 0.",
+    "hex": "#E6F9FF",
+    "oklch": "97.0% 0.0215 218.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.1",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 1.",
+    "hex": "#D2E5EC",
+    "oklch": "91.0% 0.0224 221.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.2",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 2.",
+    "hex": "#B5C8CE",
+    "oklch": "82.0% 0.0224 218.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.3",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — base color (step 3, pinned to official brand hex).",
+    "hex": "#A1B4BA",
+    "oklch": "75.7% 0.0228 218.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.4",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 4.",
+    "hex": "#75878C",
+    "oklch": "61.1% 0.0222 216.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.5",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 5.",
+    "hex": "#5B6C72",
+    "oklch": "51.9% 0.0225 221.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.6",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 6.",
+    "hex": "#48595E",
+    "oklch": "45.2% 0.0225 217.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.7",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 7.",
+    "hex": "#324348",
+    "oklch": "37.0% 0.0233 217.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.8",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 8.",
+    "hex": "#1E2E33",
+    "oklch": "28.9% 0.0231 219.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.pewter.9",
+    "groupName": "Brand / Clearco-30 / pewter",
+    "description": "Pewter — cool light neutral — tint step 9.",
+    "hex": "#0E1D22",
+    "oklch": "22.0% 0.0227 221.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.0",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 0.",
+    "hex": "#EAFAF3",
+    "oklch": "97.1% 0.0192 167.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.1",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 1.",
+    "hex": "#D6E6DF",
+    "oklch": "91.1% 0.0195 167.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.2",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 2.",
+    "hex": "#B9C8C2",
+    "oklch": "82.0% 0.0184 170.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.3",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 3.",
+    "hex": "#9AA9A2",
+    "oklch": "72.1% 0.0196 166.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.4",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 4.",
+    "hex": "#798781",
+    "oklch": "61.0% 0.0186 168.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.5",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — base color (step 5, pinned to official brand hex).",
+    "hex": "#697771",
+    "oklch": "55.6% 0.0191 168.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.6",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 6.",
+    "hex": "#4B5953",
+    "oklch": "45.0% 0.0200 167.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.7",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 7.",
+    "hex": "#36433E",
+    "oklch": "37.0% 0.0189 170.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.8",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 8.",
+    "hex": "#222E29",
+    "oklch": "28.8% 0.0188 167.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.steel.9",
+    "groupName": "Brand / Clearco-30 / steel",
+    "description": "Steel — balanced mid-tone neutral — tint step 9.",
+    "hex": "#121E19",
+    "oklch": "22.2% 0.0197 166.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.0",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 0.",
+    "hex": "#E4FCF2",
+    "oklch": "97.1% 0.0283 168.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.1",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 1.",
+    "hex": "#D1E8DE",
+    "oklch": "91.1% 0.0278 167.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.2",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 2.",
+    "hex": "#B4CAC1",
+    "oklch": "82.0% 0.0269 169.1°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.3",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — base color (step 3, pinned to official brand hex).",
+    "hex": "#9EB4AB",
+    "oklch": "75.0% 0.0274 169.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.4",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 4.",
+    "hex": "#748980",
+    "oklch": "61.1% 0.0277 167.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.5",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 5.",
+    "hex": "#5A6E66",
+    "oklch": "51.9% 0.0270 169.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.6",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 6.",
+    "hex": "#475A53",
+    "oklch": "44.9% 0.0260 170.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.7",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 7.",
+    "hex": "#31453D",
+    "oklch": "37.1% 0.0288 168.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.8",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 8.",
+    "hex": "#1D3029",
+    "oklch": "29.0% 0.0280 169.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.verdigris.9",
+    "groupName": "Brand / Clearco-30 / verdigris",
+    "description": "Verdigris — nature-inspired supporting color — tint step 9.",
+    "hex": "#0D1F18",
+    "oklch": "22.1% 0.0279 166.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.0",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 0.",
+    "hex": "#FDF4E0",
+    "oklch": "96.9% 0.0280 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.1",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 1.",
+    "hex": "#FBF2DE",
+    "oklch": "96.3% 0.0280 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.2",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 2.",
+    "hex": "#F9F0DC",
+    "oklch": "95.7% 0.0281 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.3",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 3.",
+    "hex": "#F6EDD9",
+    "oklch": "94.8% 0.0281 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.4",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — base color (step 4, pinned to official brand hex).",
+    "hex": "#F4EBD7",
+    "oklch": "94.2% 0.0282 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.5",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 5.",
+    "hex": "#C5BCA9",
+    "oklch": "79.7% 0.0280 85.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.6",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 6.",
+    "hex": "#988F7D",
+    "oklch": "65.3% 0.0280 84.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.7",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 7.",
+    "hex": "#6D6554",
+    "oklch": "50.9% 0.0278 85.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.8",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 8.",
+    "hex": "#453D2D",
+    "oklch": "36.3% 0.0283 84.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.9",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 9.",
+    "hex": "#201A0B",
+    "oklch": "22.0% 0.0277 88.3°"
+  }
+]

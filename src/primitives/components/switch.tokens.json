@@ -112,7 +112,7 @@
             }
         },
         "focus": {
-            "$description": "Switch focus ring configuration. Visible focus is essential for keyboard accessibility (WCAG 2.4.7).",
+            "$description": "Switch focus ring configuration. Visible focus is essential for keyboard accessibility (WCAG 2.4.7). Focus ring color is inherited from the global color.focus.ring semantic token via CSS outline-color — no component-specific color token needed. Input has dedicated focus color tokens (input.border.focus, input.ring.focus) because it uses a distinct border + glow pattern.",
             "ringWidth": {
                 "$value": "{focus.ring.width}",
                 "$description": "Focus ring width (2px). Clearly visible ring around switch when focused via keyboard navigation."

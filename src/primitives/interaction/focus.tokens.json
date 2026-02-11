@@ -1,9 +1,9 @@
 {
-    "$description": "Core focus ring primitives for keyboard navigation accessibility. Focus indicators are CRITICAL for accessibility - they show keyboard users which element is active. WCAG 2.4.7 requires visible focus indicators. RULE: Never remove focus styles without providing an alternative. Use :focus-visible for keyboard-only focus.",
+    "$description": "Structural focus ring primitives for keyboard navigation accessibility (width and offset only). Focus ring color is a semantic concern handled by color.focus.ring in each theme's semantic-color.tokens.json. Focus indicators are CRITICAL for accessibility - they show keyboard users which element is active. WCAG 2.4.7 requires visible focus indicators. RULE: Never remove focus styles without providing an alternative. Use :focus-visible for keyboard-only focus.",
     "focus": {
-        "$description": "Focus ring configuration for consistent, accessible focus indicators across all interactive elements.",
+        "$description": "Focus ring structural configuration (dimensions only). Color is defined in the semantic layer per theme.",
         "ring": {
-            "$description": "Focus ring appearance. Uses outline (not border) to avoid layout shifts. Combines width, offset, and color for visibility against any background.",
+            "$description": "Focus ring dimensions. Uses outline (not border) to avoid layout shifts. Width and offset control ring size and spacing; color is defined semantically per theme via color.focus.ring.",
             "width": {
                 "$value": "3px",
                 "$type": "dimension",
@@ -13,11 +13,6 @@
                 "$value": "2px",
                 "$type": "dimension",
                 "$description": "Focus ring offset from element (2px). Creates gap between element and focus ring for clarity. Use for: outline-offset property. Prevents focus ring from overlapping element borders. Ensures ring is visible on both light and dark backgrounds."
-            },
-            "color": {
-                "$value": "{color.base.blue.5}",
-                "$type": "color",
-                "$description": "Focus ring color (primary blue). High-visibility color that works on most backgrounds. Reference to color.blue.5 for consistency with primary brand color. ACCESSIBILITY: Ensure 3:1 contrast ratio against adjacent colors. May need adjustment for dark theme."
             }
         }
     }

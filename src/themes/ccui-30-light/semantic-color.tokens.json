@@ -433,7 +433,7 @@
             "glow": {
                 "$value": "rgba(34, 139, 230, 0.1)",
                 "$type": "color",
-                "$description": "Focus ring glow/background color. Use for: input focus ring."
+                "$description": "Focus ring glow/background color. Derived from color.base.blue.5 (#228BE6) at 10% opacity. Use for: input focus ring. Update this value if blue.5 changes."
             }
         },
         "primary": {
