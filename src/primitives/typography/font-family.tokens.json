@@ -1,18 +1,54 @@
 {
-    "$description": "Core font family primitives defining the typographic voice of the design system. Font stacks include fallbacks for system fonts to ensure consistent rendering across platforms. Public Sans is the primary UI font, Atkinson Hyperlegible Next is used for display/headings for improved accessibility.",
+    "$description": "Core font family primitives defining every typeface available in the design system. Individual font families provide a shared catalog for themes to reference. Role tokens (body, heading, mono) define defaults that themes can override. Font stacks include fallbacks for system fonts to ensure consistent rendering across platforms.",
     "fontFamilies": {
         "$type": "fontFamilies",
-        "body": {
-            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Primary body font stack. Use for: all body text, UI labels, form inputs, general content. Public Sans is a neutral, open-source typeface optimized for UI and web. Fallbacks: Helvetica Neue (macOS), Helvetica (older Mac), Arial (Windows/Linux), system sans-serif. LOADING: Include weights 400, 500, 600, 700 for full design system support."
+        "gtUltraMedian": {
+            "$value": "GT Ultra Median, Georgia, Cambria, 'Times New Roman', Times, serif",
+            "$description": "CCUI 3.0 brand primary/display serif typeface. GT Ultra Median is a high-contrast serif designed for large display sizes and editorial use. Use for: brand hero text, marketing headlines, editorial content. Part of the GT Ultra superfamily by Grilli Type."
         },
-        "heading": {
+        "ftPolar": {
+            "$value": "FT Polar, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "CCUI 3.0 brand secondary/body sans-serif typeface. FT Polar is a geometric sans-serif designed for clean, modern body text. Use for: brand body copy, marketing content, secondary text. Designed by Fontsmith."
+        },
+        "marcellus": {
+            "$value": "Marcellus, Georgia, Cambria, 'Times New Roman', Times, serif",
+            "$description": "Google Fonts alternative for GT Ultra Median. Marcellus is a flared serif inspired by classic Roman inscriptions. Use as a free substitute when GT Ultra Median is unavailable. Available on Google Fonts."
+        },
+        "fustat": {
+            "$value": "Fustat, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "Google Fonts alternative for FT Polar. Fustat is a geometric sans-serif with clean, modern proportions. Use as a free substitute when FT Polar is unavailable. Available on Google Fonts."
+        },
+        "sourceSerifPro": {
+            "$value": "Source Serif Pro, Georgia, Cambria, 'Times New Roman', Times, serif",
+            "$description": "CCUI 2.1 brand heading serif typeface. Source Serif Pro is an open-source serif designed by Frank Griesshammer for Adobe. Use for: headings and display text in the CCUI 2.1 theme. Pairs well with Open Sans."
+        },
+        "openSans": {
+            "$value": "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "CCUI 2.1 brand body and subheading sans-serif typeface. Open Sans is a humanist sans-serif designed by Steve Matteson with excellent legibility at small sizes. Use for: body text, subheadings, and UI elements in the CCUI 2.1 theme."
+        },
+        "publicSans": {
+            "$value": "Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "CCUI 3.0 UI body sans-serif typeface. Public Sans is a neutral, open-source typeface by USWDS optimized for UI and web readability. Use for: all body text, UI labels, form inputs, general content. LOADING: Include weights 400, 500, 600, 700 for full design system support."
+        },
+        "atkinsonHyperlegibleNext": {
             "$value": "Atkinson Hyperlegible Next, Atkinson Hyperlegible, Public Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
-            "$description": "Heading/display font stack optimized for accessibility. Atkinson Hyperlegible Next (by Braille Institute) is designed for maximum legibility, especially for users with low vision. Use for: page titles, section headings, hero text, marketing content. Distinct letterforms reduce character confusion. Falls back to Public Sans for consistency."
+            "$description": "CCUI 3.0 UI heading/display sans-serif typeface optimized for accessibility. Designed by the Braille Institute for maximum legibility, especially for users with low vision. Distinct letterforms reduce character confusion (e.g., I/l/1, O/0). Use for: page titles, section headings, hero text."
+        },
+        "roboto": {
+            "$value": "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif",
+            "$description": "Mantine default sans-serif typeface. Roboto is Google's signature typeface, a neo-grotesque sans-serif designed for screen readability. Use for: all text in Mantine-based themes."
         },
         "mono": {
             "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
             "$description": "Monospace font stack for code and technical content. Use for: code blocks, inline code, terminal output, data tables with alignment needs, API references. ui-monospace uses system default (SF Mono on Mac, Cascadia on Windows 11). Fallbacks cover all major platforms. All characters have equal width for alignment."
+        },
+        "body": {
+            "$value": "{fontFamilies.publicSans}",
+            "$description": "Default body font role. References Public Sans as the system-wide default body typeface. Themes override this token to set their own body font."
+        },
+        "heading": {
+            "$value": "{fontFamilies.atkinsonHyperlegibleNext}",
+            "$description": "Default heading font role. References Atkinson Hyperlegible Next as the system-wide default heading typeface. Themes override this token to set their own heading font."
         }
     }
 }
