@@ -335,6 +335,47 @@ function sortKeysDeep(obj) {
     return sorted;
 }
 
+/**
+ * Recursively collect dot-path token names from a Tokens Studio JSON structure.
+ * A node is a token if it has $value or $type. Keys starting with $ are skipped.
+ */
+function collectTokenPaths(obj, prefix = '') {
+    const paths = new Set();
+    for (const [key, value] of Object.entries(obj)) {
+        if (key.startsWith('$')) continue;
+        const path = prefix ? `${prefix}.${key}` : key;
+        if (value && typeof value === 'object' && !Array.isArray(value)) {
+            if ('$value' in value || '$type' in value) {
+                paths.add(path);
+            } else {
+                for (const p of collectTokenPaths(value, path)) {
+                    paths.add(p);
+                }
+            }
+        }
+    }
+    return paths;
+}
+
+/**
+ * Given a theme object, read its output files and collect all token paths.
+ */
+function collectThemeTokenPaths(theme) {
+    const tokensStudioDir = `${distFolder}/tokens-studio`;
+    const allPaths = new Set();
+
+    for (const [setName, status] of Object.entries(theme.selectedTokenSets)) {
+        if (status === 'disabled') continue;
+        const filePath = `${tokensStudioDir}/${setName}.json`;
+        if (!fs.existsSync(filePath)) continue;
+        const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        for (const p of collectTokenPaths(content)) {
+            allPaths.add(p);
+        }
+    }
+    return allPaths;
+}
+
 function buildTokensStudioStructure(tokens) {
     const result = {};
 
@@ -775,6 +816,33 @@ async function buildTokensStudioConfig() {
         }
         if (merged.$figmaStyleReferences) {
             merged.$figmaStyleReferences = sortKeysDeep(merged.$figmaStyleReferences);
+        }
+
+        // Prune stale Figma references (tokens that no longer exist in output)
+        const validPaths = collectThemeTokenPaths(merged);
+        if (merged.$figmaVariableReferences) {
+            const before = Object.keys(merged.$figmaVariableReferences).length;
+            for (const key of Object.keys(merged.$figmaVariableReferences)) {
+                if (!validPaths.has(key)) {
+                    delete merged.$figmaVariableReferences[key];
+                }
+            }
+            const pruned = before - Object.keys(merged.$figmaVariableReferences).length;
+            if (pruned > 0) {
+                console.log(`  Pruned ${pruned} stale Figma variable ref(s) from ${newTheme.name}`);
+            }
+        }
+        if (merged.$figmaStyleReferences) {
+            const before = Object.keys(merged.$figmaStyleReferences).length;
+            for (const key of Object.keys(merged.$figmaStyleReferences)) {
+                if (!validPaths.has(key)) {
+                    delete merged.$figmaStyleReferences[key];
+                }
+            }
+            const pruned = before - Object.keys(merged.$figmaStyleReferences).length;
+            if (pruned > 0) {
+                console.log(`  Pruned ${pruned} stale Figma style ref(s) from ${newTheme.name}`);
+            }
         }
 
         return merged;

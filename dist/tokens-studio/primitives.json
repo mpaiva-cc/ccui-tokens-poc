@@ -1,50 +1,51 @@
 {
   "borderStyle": {
     "dashed": {
+      "$description": "borderStyle.dashed — Dashed border style. Use for: drop zones, placeholder elements, 'add new' areas, temporary states, grouping without containment. Suggests incompleteness or potential. Common in: drag-and-drop zones, placeholder cards, dashed separators.",
       "$type": "strokeStyle",
-      "$value": "dashed",
-      "$description": "borderStyle.dashed — Dashed border style. Use for: drop zones, placeholder elements, 'add new' areas, temporary states, grouping without containment. Suggests incompleteness or potential. Common in: drag-and-drop zones, placeholder cards, dashed separators."
+      "$value": "dashed"
     },
     "dotted": {
+      "$description": "borderStyle.dotted — Dotted border style. Use for: decorative elements, subtle separators, accessibility focus alternatives, lightweight boundaries. Softer than dashed. Common in: decorative dividers, coupon borders, alternative focus styles.",
       "$type": "strokeStyle",
-      "$value": "dotted",
-      "$description": "borderStyle.dotted — Dotted border style. Use for: decorative elements, subtle separators, accessibility focus alternatives, lightweight boundaries. Softer than dashed. Common in: decorative dividers, coupon borders, alternative focus styles."
+      "$value": "dotted"
     },
     "none": {
+      "$description": "borderStyle.none — No border style. Use for: removing inherited borders, clean/minimal designs, when using other separation methods. CSS keyword. Equivalent to border-style: none;.",
       "$type": "strokeStyle",
-      "$value": "none",
-      "$description": "borderStyle.none — No border style. Use for: removing inherited borders, clean/minimal designs, when using other separation methods. CSS keyword. Equivalent to border-style: none;."
+      "$value": "none"
     },
     "solid": {
+      "$description": "borderStyle.solid — Solid border style. DEFAULT for all standard borders. Use for: inputs, cards, buttons, tables, containers. Continuous line - clean and professional. CSS keyword.",
       "$type": "strokeStyle",
-      "$value": "solid",
-      "$description": "borderStyle.solid — Solid border style. DEFAULT for all standard borders. Use for: inputs, cards, buttons, tables, containers. Continuous line - clean and professional. CSS keyword."
+      "$value": "solid"
     }
   },
   "borderWidth": {
     "medium": {
+      "$description": "borderWidth.medium — Medium border (2px). Use for: emphasis, active/selected states, focus indicators, section dividers. More prominent than thin - draws attention. Common in: active tab indicators, selected items, heavy dividers, emphasized cards.",
       "$type": "borderWidth",
-      "$value": "2px",
-      "$description": "borderWidth.medium — Medium border (2px). Use for: emphasis, active/selected states, focus indicators, section dividers. More prominent than thin - draws attention. Common in: active tab indicators, selected items, heavy dividers, emphasized cards."
+      "$value": "2px"
     },
     "none": {
+      "$description": "borderWidth.none — No border (0px). Use for: removing inherited borders, borderless variants, flat designs. CSS: border-width: 0; Common in: ghost buttons, flat cards, seamless containers.",
       "$type": "borderWidth",
-      "$value": "0",
-      "$description": "borderWidth.none — No border (0px). Use for: removing inherited borders, borderless variants, flat designs. CSS: border-width: 0; Common in: ghost buttons, flat cards, seamless containers."
+      "$value": "0"
     },
     "thick": {
+      "$description": "borderWidth.thick — Thick border (4px). Use for: strong emphasis, decorative elements, major section dividers, brand accents. Very prominent - use sparingly. Common in: hero sections, brand elements, major visual accents, side indicators.",
       "$type": "borderWidth",
-      "$value": "4px",
-      "$description": "borderWidth.thick — Thick border (4px). Use for: strong emphasis, decorative elements, major section dividers, brand accents. Very prominent - use sparingly. Common in: hero sections, brand elements, major visual accents, side indicators."
+      "$value": "4px"
     },
     "thin": {
+      "$description": "borderWidth.thin — Thin border (1px). DEFAULT for most UI borders. Use for: input fields, cards, tables, subtle containment, dividers. Provides structure without visual weight. Common in: Input, Select, Card, Table, dividers, most bordered elements.",
       "$type": "borderWidth",
-      "$value": "1px",
-      "$description": "borderWidth.thin — Thin border (1px). DEFAULT for most UI borders. Use for: input fields, cards, tables, subtle containment, dividers. Provides structure without visual weight. Common in: Input, Select, Card, Table, dividers, most bordered elements."
+      "$value": "1px"
     }
   },
   "boxShadow": {
     "footer": {
+      "$description": "boxShadow.footer — Footer shadow - upward-casting shadow for fixed footers. Use for: sticky footers, bottom navigation bars, action bars at bottom of screen. Shadow casts upward to show footer is above scrolling content. Common in: sticky page footers, bottom action bars, mobile bottom nav.",
       "$type": "boxShadow",
       "$value": [
         {
@@ -71,10 +72,10 @@
           "color": "rgba(0, 0, 0, 0.04)",
           "type": "dropShadow"
         }
-      ],
-      "$description": "boxShadow.footer — Footer shadow - upward-casting shadow for fixed footers. Use for: sticky footers, bottom navigation bars, action bars at bottom of screen. Shadow casts upward to show footer is above scrolling content. Common in: sticky page footers, bottom action bars, mobile bottom nav."
+      ]
     },
     "inset": {
+      "$description": "boxShadow.inset — Inset shadow - pressed/recessed appearance. Use for: pressed button states, input:focus, toggle switches (off state), embedded content areas. Creates illusion of pressing INTO the surface. Common in: Button:active, pressed toggles, embedded wells, search input backgrounds.",
       "$type": "boxShadow",
       "$value": [
         {
@@ -85,10 +86,10 @@
           "color": "rgba(0, 0, 0, 0.1)",
           "type": "innerShadow"
         }
-      ],
-      "$description": "boxShadow.inset — Inset shadow - pressed/recessed appearance. Use for: pressed button states, input:focus, toggle switches (off state), embedded content areas. Creates illusion of pressing INTO the surface. Common in: Button:active, pressed toggles, embedded wells, search input backgrounds."
+      ]
     },
     "lg": {
+      "$description": "boxShadow.lg — Large shadow - high elevation (16-24dp). Use for: dialogs, modals, drawers, notification toasts, temporary UI surfaces. Significantly elevated - demands attention. Common in: Modal dialogs, side Drawer, Toast notifications, contextual menus requiring focus.",
       "$type": "boxShadow",
       "$value": [
         {
@@ -115,10 +116,10 @@
           "color": "rgba(0, 0, 0, 0.04)",
           "type": "dropShadow"
         }
-      ],
-      "$description": "boxShadow.lg — Large shadow - high elevation (16-24dp). Use for: dialogs, modals, drawers, notification toasts, temporary UI surfaces. Significantly elevated - demands attention. Common in: Modal dialogs, side Drawer, Toast notifications, contextual menus requiring focus."
+      ]
     },
     "md": {
+      "$description": "boxShadow.md — Medium shadow - moderate elevation (8-12dp). DEFAULT for floating elements. Use for: dropdown menus, popovers, tooltips, floating action buttons, autocomplete lists. Clearly floating above content. Common in: Dropdown menu, Popover, Select options, Autocomplete, FAB.",
       "$type": "boxShadow",
       "$value": [
         {
@@ -145,15 +146,15 @@
           "color": "rgba(0, 0, 0, 0.04)",
           "type": "dropShadow"
         }
-      ],
-      "$description": "boxShadow.md — Medium shadow - moderate elevation (8-12dp). DEFAULT for floating elements. Use for: dropdown menus, popovers, tooltips, floating action buttons, autocomplete lists. Clearly floating above content. Common in: Dropdown menu, Popover, Select options, Autocomplete, FAB."
+      ]
     },
     "none": {
+      "$description": "boxShadow.none — No shadow - flat appearance. Use for: flat design elements, removing inherited shadows, elements that should appear flush with background, focus states that use outline instead. CSS keyword. Common in: flat buttons, inline elements, focus states using outline.",
       "$type": "boxShadow",
-      "$value": "none",
-      "$description": "boxShadow.none — No shadow - flat appearance. Use for: flat design elements, removing inherited shadows, elements that should appear flush with background, focus states that use outline instead. CSS keyword. Common in: flat buttons, inline elements, focus states using outline."
+      "$value": "none"
     },
     "sm": {
+      "$description": "boxShadow.sm — Small shadow - low elevation (4-6dp). Use for: card hover states, raised buttons, navigation elements, slightly prominent containers. Noticeable but not dramatic elevation. Common in: Card:hover, Button:raised, Dropdown trigger, Navigation bar, elevated sections.",
       "$type": "boxShadow",
       "$value": [
         {
@@ -180,10 +181,10 @@
           "color": "rgba(0, 0, 0, 0.04)",
           "type": "dropShadow"
         }
-      ],
-      "$description": "boxShadow.sm — Small shadow - low elevation (4-6dp). Use for: card hover states, raised buttons, navigation elements, slightly prominent containers. Noticeable but not dramatic elevation. Common in: Card:hover, Button:raised, Dropdown trigger, Navigation bar, elevated sections."
+      ]
     },
     "xl": {
+      "$description": "boxShadow.xl — Extra large shadow - maximum elevation (24dp+). Use for: critical modals, full-screen overlays, maximum prominence elements. Dramatic elevation - use sparingly. Common in: Full-screen modals, critical dialogs, onboarding overlays, image lightboxes.",
       "$type": "boxShadow",
       "$value": [
         {
@@ -210,10 +211,10 @@
           "color": "rgba(0, 0, 0, 0.04)",
           "type": "dropShadow"
         }
-      ],
-      "$description": "boxShadow.xl — Extra large shadow - maximum elevation (24dp+). Use for: critical modals, full-screen overlays, maximum prominence elements. Dramatic elevation - use sparingly. Common in: Full-screen modals, critical dialogs, onboarding overlays, image lightboxes."
+      ]
     },
     "xs": {
+      "$description": "boxShadow.xs — Extra small shadow - minimal elevation (1-2dp). Use for: subtle depth on cards at rest, input fields, low-emphasis containers, elements that could be flat. Barely noticeable - adds dimension without prominence. Common in: Card default state, Input fields, Table rows, subtle separation.",
       "$type": "boxShadow",
       "$value": [
         {
@@ -232,780 +233,779 @@
           "color": "rgba(0, 0, 0, 0.1)",
           "type": "dropShadow"
         }
-      ],
-      "$description": "boxShadow.xs — Extra small shadow - minimal elevation (1-2dp). Use for: subtle depth on cards at rest, input fields, low-emphasis containers, elements that could be flat. Barely noticeable - adds dimension without prominence. Common in: Card default state, Input fields, Table rows, subtle separation."
+      ]
     }
   },
   "breakpoints": {
     "lg": {
+      "$description": "breakpoints.lg — Large breakpoint (1200px). Use for: large laptops, standard desktop monitors. Generous space available. Typical changes: four-column grids, expanded dashboards, side panels. Content max-widths often kick in here to prevent over-stretching.",
       "$type": "sizing",
-      "$value": "75em",
-      "$description": "breakpoints.lg — Large breakpoint (1200px). Use for: large laptops, standard desktop monitors. Generous space available. Typical changes: four-column grids, expanded dashboards, side panels. Content max-widths often kick in here to prevent over-stretching."
+      "$value": "75em"
     },
     "md": {
+      "$description": "breakpoints.md — Medium breakpoint (992px). Use for: tablets in landscape, standard laptops, small desktops. Full desktop layouts are comfortable. Typical changes: three-column layouts, full navigation, expanded sidebars. Most 'desktop' designs target this minimum.",
       "$type": "sizing",
-      "$value": "62em",
-      "$description": "breakpoints.md — Medium breakpoint (992px). Use for: tablets in landscape, standard laptops, small desktops. Full desktop layouts are comfortable. Typical changes: three-column layouts, full navigation, expanded sidebars. Most 'desktop' designs target this minimum."
+      "$value": "62em"
     },
     "sm": {
+      "$description": "breakpoints.sm — Small breakpoint (768px). Use for: tablets in portrait, small laptops. Two-column layouts become comfortable. Typical changes: sidebars can appear, cards go 2-up, navigation expands. Common tablet breakpoint. Desktop-like experiences begin here.",
       "$type": "sizing",
-      "$value": "48em",
-      "$description": "breakpoints.sm — Small breakpoint (768px). Use for: tablets in portrait, small laptops. Two-column layouts become comfortable. Typical changes: sidebars can appear, cards go 2-up, navigation expands. Common tablet breakpoint. Desktop-like experiences begin here."
+      "$value": "48em"
     },
     "xl": {
+      "$description": "breakpoints.xl — Extra large breakpoint (1408px). Use for: large desktop monitors, high-resolution displays. Maximum layouts. Typical changes: ultra-wide layouts, multi-panel views, data-dense dashboards. Consider max-width constraints - too wide hurts readability.",
       "$type": "sizing",
-      "$value": "88em",
-      "$description": "breakpoints.xl — Extra large breakpoint (1408px). Use for: large desktop monitors, high-resolution displays. Maximum layouts. Typical changes: ultra-wide layouts, multi-panel views, data-dense dashboards. Consider max-width constraints - too wide hurts readability."
+      "$value": "88em"
     },
     "xs": {
+      "$description": "breakpoints.xs — Extra small breakpoint (576px). Use for: large phones in landscape, small tablets. Content starts having room to breathe. Typical changes: side-by-side layouts begin, hiding mobile-only elements. Above this: no longer 'mobile-only' context.",
       "$type": "sizing",
-      "$value": "36em",
-      "$description": "breakpoints.xs — Extra small breakpoint (576px). Use for: large phones in landscape, small tablets. Content starts having room to breathe. Typical changes: side-by-side layouts begin, hiding mobile-only elements. Above this: no longer 'mobile-only' context."
+      "$value": "36em"
     }
   },
   "color": {
     "base": {
       "black": {
+        "$description": "color.base.black — Pure black. Use for: dark theme text emphasis, high-contrast borders. Contrast ratio with white: 21:1 (WCAG AAA). Rarely used directly - prefer dark.9 for softer blacks or semantic color.text token.",
         "$type": "color",
-        "$value": "#000000",
-        "$description": "color.base.black — Pure black. Use for: dark theme text emphasis, high-contrast borders. Contrast ratio with white: 21:1 (WCAG AAA). Rarely used directly - prefer dark.9 for softer blacks or semantic color.text token."
+        "$value": "#000000"
       },
       "blue": {
         "0": {
+          "$description": "color.base.blue.0 — Lightest blue - primary light backgrounds, selected row highlights",
           "$type": "color",
-          "$value": "#eaf3fe",
-          "$description": "color.base.blue.0 — Lightest blue - primary light backgrounds, selected row highlights"
+          "$value": "#eaf3fe"
         },
         "1": {
+          "$description": "color.base.blue.1 — Light blue - hover backgrounds, info alert backgrounds",
           "$type": "color",
-          "$value": "#cfe3fc",
-          "$description": "color.base.blue.1 — Light blue - hover backgrounds, info alert backgrounds"
+          "$value": "#cfe3fc"
         },
         "2": {
+          "$description": "color.base.blue.2 — Mid-light blue - progress bars, decorative",
           "$type": "color",
-          "$value": "#9fc8fa",
-          "$description": "color.base.blue.2 — Mid-light blue - progress bars, decorative"
+          "$value": "#9fc8fa"
         },
         "3": {
+          "$description": "color.base.blue.3 — Medium blue - icons on light backgrounds",
           "$type": "color",
-          "$value": "#6eacf6",
-          "$description": "color.base.blue.3 — Medium blue - icons on light backgrounds"
+          "$value": "#6eacf6"
         },
         "4": {
+          "$description": "color.base.blue.4 — Mid blue - primary buttons on dark theme, links on dark",
           "$type": "color",
-          "$value": "#3c90f1",
-          "$description": "color.base.blue.4 — Mid blue - primary buttons on dark theme, links on dark"
+          "$value": "#3c90f1"
         },
         "5": {
+          "$description": "color.base.blue.5 — Base blue - primary buttons, links (light theme)",
           "$type": "color",
-          "$value": "#0974eb",
-          "$description": "color.base.blue.5 — Base blue - primary buttons, links (light theme)"
+          "$value": "#0974eb"
         },
         "6": {
+          "$description": "color.base.blue.6 — Dark blue - primary brand color, main CTAs, navigation active states",
           "$type": "color",
-          "$value": "#0760c6",
-          "$description": "color.base.blue.6 — Dark blue - primary brand color, main CTAs, navigation active states"
+          "$value": "#0760c6"
         },
         "7": {
+          "$description": "color.base.blue.7 — Darker blue - pressed states, text on light blue backgrounds",
           "$type": "color",
-          "$value": "#064a98",
-          "$description": "color.base.blue.7 — Darker blue - pressed states, text on light blue backgrounds"
+          "$value": "#064a98"
         },
         "8": {
+          "$description": "color.base.blue.8 — Very dark blue - high contrast text",
           "$type": "color",
-          "$value": "#04356c",
-          "$description": "color.base.blue.8 — Very dark blue - high contrast text"
+          "$value": "#04356c"
         },
         "9": {
+          "$description": "color.base.blue.9 — Darkest blue - maximum emphasis, dark accents",
           "$type": "color",
-          "$value": "#032142",
-          "$description": "color.base.blue.9 — Darkest blue - maximum emphasis, dark accents"
+          "$value": "#032142"
         }
       },
       "cyan": {
         "0": {
+          "$description": "color.base.cyan.0 — Lightest cyan - info backgrounds",
           "$type": "color",
-          "$value": "#e5f6fa",
-          "$description": "color.base.cyan.0 — Lightest cyan - info backgrounds"
+          "$value": "#e5f6fa"
         },
         "1": {
+          "$description": "color.base.cyan.1 — Light cyan - hover states",
           "$type": "color",
-          "$value": "#c5eaf3",
-          "$description": "color.base.cyan.1 — Light cyan - hover states"
+          "$value": "#c5eaf3"
         },
         "2": {
+          "$description": "color.base.cyan.2 — Mid-light cyan - decorative",
           "$type": "color",
-          "$value": "#8cd6e7",
-          "$description": "color.base.cyan.2 — Mid-light cyan - decorative"
+          "$value": "#8cd6e7"
         },
         "3": {
+          "$description": "color.base.cyan.3 — Medium cyan - icons",
           "$type": "color",
-          "$value": "#52c1da",
-          "$description": "color.base.cyan.3 — Medium cyan - icons"
+          "$value": "#52c1da"
         },
         "4": {
+          "$description": "color.base.cyan.4 — Mid cyan - interactive elements",
           "$type": "color",
-          "$value": "#17accc",
-          "$description": "color.base.cyan.4 — Mid cyan - interactive elements"
+          "$value": "#17accc"
         },
         "5": {
+          "$description": "color.base.cyan.5 — Base cyan - primary applications",
           "$type": "color",
-          "$value": "#0d95b3",
-          "$description": "color.base.cyan.5 — Base cyan - primary applications"
+          "$value": "#0d95b3"
         },
         "6": {
+          "$description": "color.base.cyan.6 — Dark cyan - text on light backgrounds",
           "$type": "color",
-          "$value": "#0b7d96",
-          "$description": "color.base.cyan.6 — Dark cyan - text on light backgrounds"
+          "$value": "#0b7d96"
         },
         "7": {
+          "$description": "color.base.cyan.7 — Darker cyan - high contrast",
           "$type": "color",
-          "$value": "#086073",
-          "$description": "color.base.cyan.7 — Darker cyan - high contrast"
+          "$value": "#086073"
         },
         "8": {
+          "$description": "color.base.cyan.8 — Very dark cyan - text",
           "$type": "color",
-          "$value": "#064552",
-          "$description": "color.base.cyan.8 — Very dark cyan - text"
+          "$value": "#064552"
         },
         "9": {
+          "$description": "color.base.cyan.9 — Darkest cyan - maximum emphasis",
           "$type": "color",
-          "$value": "#042b33",
-          "$description": "color.base.cyan.9 — Darkest cyan - maximum emphasis"
+          "$value": "#042b33"
         }
       },
       "dark": {
         "0": {
+          "$description": "color.base.dark.0 — Lightest dark - text color on dark backgrounds, disabled states on dark theme",
           "$type": "color",
-          "$value": "#d5d7d9",
-          "$description": "color.base.dark.0 — Lightest dark - text color on dark backgrounds, disabled states on dark theme"
+          "$value": "#d5d7d9"
         },
         "1": {
+          "$description": "color.base.dark.1 — Light dark - secondary text on dark theme, subtle borders",
           "$type": "color",
-          "$value": "#b4b7bb",
-          "$description": "color.base.dark.1 — Light dark - secondary text on dark theme, subtle borders"
+          "$value": "#b4b7bb"
         },
         "2": {
+          "$description": "color.base.dark.2 — Mid-light dark - placeholder text on dark theme, icons",
           "$type": "color",
-          "$value": "#93979c",
-          "$description": "color.base.dark.2 — Mid-light dark - placeholder text on dark theme, icons"
+          "$value": "#93979c"
         },
         "3": {
+          "$description": "color.base.dark.3 — Medium dark - dimmed text, decorative elements",
           "$type": "color",
-          "$value": "#74787e",
-          "$description": "color.base.dark.3 — Medium dark - dimmed text, decorative elements"
+          "$value": "#74787e"
         },
         "4": {
+          "$description": "color.base.dark.4 — Mid dark - borders on dark theme, dividers",
           "$type": "color",
-          "$value": "#565b61",
-          "$description": "color.base.dark.4 — Mid dark - borders on dark theme, dividers"
+          "$value": "#565b61"
         },
         "5": {
+          "$description": "color.base.dark.5 — Base dark - elevated surfaces on dark theme, cards",
           "$type": "color",
-          "$value": "#3a3f46",
-          "$description": "color.base.dark.5 — Base dark - elevated surfaces on dark theme, cards"
+          "$value": "#3a3f46"
         },
         "6": {
+          "$description": "color.base.dark.6 — Dark base - primary dark theme background, app shells",
           "$type": "color",
-          "$value": "#21262d",
-          "$description": "color.base.dark.6 — Dark base - primary dark theme background, app shells"
+          "$value": "#21262d"
         },
         "7": {
+          "$description": "color.base.dark.7 — Darker - alternative dark background, sidebar backgrounds",
           "$type": "color",
-          "$value": "#181c22",
-          "$description": "color.base.dark.7 — Darker - alternative dark background, sidebar backgrounds"
+          "$value": "#181c22"
         },
         "8": {
+          "$description": "color.base.dark.8 — Very dark - modal overlays on dark theme, deep shadows",
           "$type": "color",
-          "$value": "#13161b",
-          "$description": "color.base.dark.8 — Very dark - modal overlays on dark theme, deep shadows"
+          "$value": "#13161b"
         },
         "9": {
+          "$description": "color.base.dark.9 — Darkest - near-black for maximum contrast elements",
           "$type": "color",
-          "$value": "#0e1014",
-          "$description": "color.base.dark.9 — Darkest - near-black for maximum contrast elements"
+          "$value": "#0e1014"
         }
       },
       "grape": {
         "0": {
+          "$description": "color.base.grape.0 — Lightest grape - premium feature backgrounds",
           "$type": "color",
-          "$value": "#fbeff9",
-          "$description": "color.base.grape.0 — Lightest grape - premium feature backgrounds"
+          "$value": "#fbeff9"
         },
         "1": {
+          "$description": "color.base.grape.1 — Light grape - hover states",
           "$type": "color",
-          "$value": "#f5d9f1",
-          "$description": "color.base.grape.1 — Light grape - hover states"
+          "$value": "#f5d9f1"
         },
         "2": {
+          "$description": "color.base.grape.2 — Mid-light grape - decorative elements",
           "$type": "color",
-          "$value": "#ebb3e3",
-          "$description": "color.base.grape.2 — Mid-light grape - decorative elements"
+          "$value": "#ebb3e3"
         },
         "3": {
+          "$description": "color.base.grape.3 — Medium grape - icons, illustrations",
           "$type": "color",
-          "$value": "#df8bd3",
-          "$description": "color.base.grape.3 — Medium grape - icons, illustrations"
+          "$value": "#df8bd3"
         },
         "4": {
+          "$description": "color.base.grape.4 — Mid grape - interactive accents",
           "$type": "color",
-          "$value": "#d262c2",
-          "$description": "color.base.grape.4 — Mid grape - interactive accents"
+          "$value": "#d262c2"
         },
         "5": {
+          "$description": "color.base.grape.5 — Base grape - primary grape applications",
           "$type": "color",
-          "$value": "#c338b0",
-          "$description": "color.base.grape.5 — Base grape - primary grape applications"
+          "$value": "#c338b0"
         },
         "6": {
+          "$description": "color.base.grape.6 — Dark grape - text on light grape backgrounds",
           "$type": "color",
-          "$value": "#a22993",
-          "$description": "color.base.grape.6 — Dark grape - text on light grape backgrounds"
+          "$value": "#a22993"
         },
         "7": {
+          "$description": "color.base.grape.7 — Darker grape - high contrast",
           "$type": "color",
-          "$value": "#7c2071",
-          "$description": "color.base.grape.7 — Darker grape - high contrast"
+          "$value": "#7c2071"
         },
         "8": {
+          "$description": "color.base.grape.8 — Very dark grape - text applications",
           "$type": "color",
-          "$value": "#581750",
-          "$description": "color.base.grape.8 — Very dark grape - text applications"
+          "$value": "#581750"
         },
         "9": {
+          "$description": "color.base.grape.9 — Darkest grape - maximum emphasis",
           "$type": "color",
-          "$value": "#370e32",
-          "$description": "color.base.grape.9 — Darkest grape - maximum emphasis"
+          "$value": "#370e32"
         }
       },
       "gray": {
         "0": {
+          "$description": "color.base.gray.0 — Lightest gray - subtle backgrounds, hover states on white, zebra striping",
           "$type": "color",
-          "$value": "#f3f4f5",
-          "$description": "color.base.gray.0 — Lightest gray - subtle backgrounds, hover states on white, zebra striping"
+          "$value": "#f3f4f5"
         },
         "1": {
+          "$description": "color.base.gray.1 — Light gray - input backgrounds, disabled backgrounds, table headers",
           "$type": "color",
-          "$value": "#e4e6e8",
-          "$description": "color.base.gray.1 — Light gray - input backgrounds, disabled backgrounds, table headers"
+          "$value": "#e4e6e8"
         },
         "2": {
+          "$description": "color.base.gray.2 — Mid-light gray - borders, dividers, inactive tabs",
           "$type": "color",
-          "$value": "#c8cbce",
-          "$description": "color.base.gray.2 — Mid-light gray - borders, dividers, inactive tabs"
+          "$value": "#c8cbce"
         },
         "3": {
+          "$description": "color.base.gray.3 — Medium gray - placeholder text (use carefully - check contrast), icons",
           "$type": "color",
-          "$value": "#adb1b5",
-          "$description": "color.base.gray.3 — Medium gray - placeholder text (use carefully - check contrast), icons"
+          "$value": "#adb1b5"
         },
         "4": {
+          "$description": "color.base.gray.4 — Mid gray - secondary icons, chart gridlines",
           "$type": "color",
-          "$value": "#92979d",
-          "$description": "color.base.gray.4 — Mid gray - secondary icons, chart gridlines"
+          "$value": "#92979d"
         },
         "5": {
+          "$description": "color.base.gray.5 — Base gray - dimmed text, help text (4.5:1 on white = AA)",
           "$type": "color",
-          "$value": "#787e85",
-          "$description": "color.base.gray.5 — Base gray - dimmed text, help text (4.5:1 on white = AA)"
+          "$value": "#787e85"
         },
         "6": {
+          "$description": "color.base.gray.6 — Dark gray - secondary text (7:1 on white = AAA), labels",
           "$type": "color",
-          "$value": "#5f656d",
-          "$description": "color.base.gray.6 — Dark gray - secondary text (7:1 on white = AAA), labels"
+          "$value": "#5f656d"
         },
         "7": {
+          "$description": "color.base.gray.7 — Darker gray - primary text alternative, emphasis",
           "$type": "color",
-          "$value": "#474d55",
-          "$description": "color.base.gray.7 — Darker gray - primary text alternative, emphasis"
+          "$value": "#474d55"
         },
         "8": {
+          "$description": "color.base.gray.8 — Very dark gray - high-emphasis text on light backgrounds",
           "$type": "color",
-          "$value": "#31363d",
-          "$description": "color.base.gray.8 — Very dark gray - high-emphasis text on light backgrounds"
+          "$value": "#31363d"
         },
         "9": {
+          "$description": "color.base.gray.9 — Darkest gray - headings, maximum emphasis text",
           "$type": "color",
-          "$value": "#1c2026",
-          "$description": "color.base.gray.9 — Darkest gray - headings, maximum emphasis text"
+          "$value": "#1c2026"
         }
       },
       "green": {
         "0": {
+          "$description": "color.base.green.0 — Lightest green - success alert backgrounds, positive feedback areas",
           "$type": "color",
-          "$value": "#e7f6ec",
-          "$description": "color.base.green.0 — Lightest green - success alert backgrounds, positive feedback areas"
+          "$value": "#e7f6ec"
         },
         "1": {
+          "$description": "color.base.green.1 — Light green - hover state for success backgrounds",
           "$type": "color",
-          "$value": "#c9ead4",
-          "$description": "color.base.green.1 — Light green - hover state for success backgrounds"
+          "$value": "#c9ead4"
         },
         "2": {
+          "$description": "color.base.green.2 — Mid-light green - progress indicators, completion bars",
           "$type": "color",
-          "$value": "#94d6aa",
-          "$description": "color.base.green.2 — Mid-light green - progress indicators, completion bars"
+          "$value": "#94d6aa"
         },
         "3": {
+          "$description": "color.base.green.3 — Medium green - success icons on light backgrounds",
           "$type": "color",
-          "$value": "#5fc180",
-          "$description": "color.base.green.3 — Medium green - success icons on light backgrounds"
+          "$value": "#5fc180"
         },
         "4": {
+          "$description": "color.base.green.4 — Mid green - success badges, online indicators",
           "$type": "color",
-          "$value": "#2aab58",
-          "$description": "color.base.green.4 — Mid green - success badges, online indicators"
+          "$value": "#2aab58"
         },
         "5": {
+          "$description": "color.base.green.5 — Base green - primary success buttons, checkmarks",
           "$type": "color",
-          "$value": "#1d9448",
-          "$description": "color.base.green.5 — Base green - primary success buttons, checkmarks"
+          "$value": "#1d9448"
         },
         "6": {
+          "$description": "color.base.green.6 — Dark green - success text on white (5:1 contrast = AA)",
           "$type": "color",
-          "$value": "#187c3c",
-          "$description": "color.base.green.6 — Dark green - success text on white (5:1 contrast = AA)"
+          "$value": "#187c3c"
         },
         "7": {
+          "$description": "color.base.green.7 — Darker green - success text with maximum contrast",
           "$type": "color",
-          "$value": "#125f2e",
-          "$description": "color.base.green.7 — Darker green - success text with maximum contrast"
+          "$value": "#125f2e"
         },
         "8": {
+          "$description": "color.base.green.8 — Very dark green - text on light green backgrounds",
           "$type": "color",
-          "$value": "#0d4421",
-          "$description": "color.base.green.8 — Very dark green - text on light green backgrounds"
+          "$value": "#0d4421"
         },
         "9": {
+          "$description": "color.base.green.9 — Darkest green - extreme emphasis",
           "$type": "color",
-          "$value": "#082a15",
-          "$description": "color.base.green.9 — Darkest green - extreme emphasis"
+          "$value": "#082a15"
         }
       },
       "indigo": {
         "0": {
+          "$description": "color.base.indigo.0 — Lightest indigo - subtle backgrounds",
           "$type": "color",
-          "$value": "#f0f2fe",
-          "$description": "color.base.indigo.0 — Lightest indigo - subtle backgrounds"
+          "$value": "#f0f2fe"
         },
         "1": {
+          "$description": "color.base.indigo.1 — Light indigo - hover states",
           "$type": "color",
-          "$value": "#dce0fc",
-          "$description": "color.base.indigo.1 — Light indigo - hover states"
+          "$value": "#dce0fc"
         },
         "2": {
+          "$description": "color.base.indigo.2 — Mid-light indigo - decorative",
           "$type": "color",
-          "$value": "#b9c2f9",
-          "$description": "color.base.indigo.2 — Mid-light indigo - decorative"
+          "$value": "#b9c2f9"
         },
         "3": {
+          "$description": "color.base.indigo.3 — Medium indigo - icons",
           "$type": "color",
-          "$value": "#96a3f5",
-          "$description": "color.base.indigo.3 — Medium indigo - icons"
+          "$value": "#96a3f5"
         },
         "4": {
+          "$description": "color.base.indigo.4 — Mid indigo - interactive elements",
           "$type": "color",
-          "$value": "#7284f0",
-          "$description": "color.base.indigo.4 — Mid indigo - interactive elements"
+          "$value": "#7284f0"
         },
         "5": {
+          "$description": "color.base.indigo.5 — Base indigo - primary applications",
           "$type": "color",
-          "$value": "#4e65ea",
-          "$description": "color.base.indigo.5 — Base indigo - primary applications"
+          "$value": "#4e65ea"
         },
         "6": {
+          "$description": "color.base.indigo.6 — Dark indigo - text on light backgrounds",
           "$type": "color",
-          "$value": "#364fd0",
-          "$description": "color.base.indigo.6 — Dark indigo - text on light backgrounds"
+          "$value": "#364fd0"
         },
         "7": {
+          "$description": "color.base.indigo.7 — Darker indigo - high contrast",
           "$type": "color",
-          "$value": "#2a3da0",
-          "$description": "color.base.indigo.7 — Darker indigo - high contrast"
+          "$value": "#2a3da0"
         },
         "8": {
+          "$description": "color.base.indigo.8 — Very dark indigo - text",
           "$type": "color",
-          "$value": "#1e2c72",
-          "$description": "color.base.indigo.8 — Very dark indigo - text"
+          "$value": "#1e2c72"
         },
         "9": {
+          "$description": "color.base.indigo.9 — Darkest indigo - maximum emphasis",
           "$type": "color",
-          "$value": "#131c47",
-          "$description": "color.base.indigo.9 — Darkest indigo - maximum emphasis"
+          "$value": "#131c47"
         }
       },
       "lime": {
         "0": {
+          "$description": "color.base.lime.0 — Lightest lime - subtle backgrounds",
           "$type": "color",
-          "$value": "#eef6dc",
-          "$description": "color.base.lime.0 — Lightest lime - subtle backgrounds"
+          "$value": "#eef6dc"
         },
         "1": {
+          "$description": "color.base.lime.1 — Light lime - hover states",
           "$type": "color",
-          "$value": "#daedb4",
-          "$description": "color.base.lime.1 — Light lime - hover states"
+          "$value": "#daedb4"
         },
         "2": {
+          "$description": "color.base.lime.2 — Mid-light lime - decorative",
           "$type": "color",
-          "$value": "#b6db6e",
-          "$description": "color.base.lime.2 — Mid-light lime - decorative"
+          "$value": "#b6db6e"
         },
         "3": {
+          "$description": "color.base.lime.3 — Medium lime - icons, highlights",
           "$type": "color",
-          "$value": "#93c82d",
-          "$description": "color.base.lime.3 — Medium lime - icons, highlights"
+          "$value": "#93c82d"
         },
         "4": {
+          "$description": "color.base.lime.4 — Mid lime - interactive elements",
           "$type": "color",
-          "$value": "#7eb11c",
-          "$description": "color.base.lime.4 — Mid lime - interactive elements"
+          "$value": "#7eb11c"
         },
         "5": {
+          "$description": "color.base.lime.5 — Base lime - primary applications",
           "$type": "color",
-          "$value": "#6d9918",
-          "$description": "color.base.lime.5 — Base lime - primary applications"
+          "$value": "#6d9918"
         },
         "6": {
+          "$description": "color.base.lime.6 — Dark lime - text on light backgrounds",
           "$type": "color",
-          "$value": "#5b8014",
-          "$description": "color.base.lime.6 — Dark lime - text on light backgrounds"
+          "$value": "#5b8014"
         },
         "7": {
+          "$description": "color.base.lime.7 — Darker lime - high contrast",
           "$type": "color",
-          "$value": "#466210",
-          "$description": "color.base.lime.7 — Darker lime - high contrast"
+          "$value": "#466210"
         },
         "8": {
+          "$description": "color.base.lime.8 — Very dark lime - text",
           "$type": "color",
-          "$value": "#32460b",
-          "$description": "color.base.lime.8 — Very dark lime - text"
+          "$value": "#32460b"
         },
         "9": {
+          "$description": "color.base.lime.9 — Darkest lime - maximum emphasis",
           "$type": "color",
-          "$value": "#1f2b07",
-          "$description": "color.base.lime.9 — Darkest lime - maximum emphasis"
+          "$value": "#1f2b07"
         }
       },
       "orange": {
         "0": {
+          "$description": "color.base.orange.0 — Lightest orange - promotional backgrounds",
           "$type": "color",
-          "$value": "#fef1e6",
-          "$description": "color.base.orange.0 — Lightest orange - promotional backgrounds"
+          "$value": "#fef1e6"
         },
         "1": {
+          "$description": "color.base.orange.1 — Light orange - hover states",
           "$type": "color",
-          "$value": "#fcddc6",
-          "$description": "color.base.orange.1 — Light orange - hover states"
+          "$value": "#fcddc6"
         },
         "2": {
+          "$description": "color.base.orange.2 — Mid-light orange - decorative",
           "$type": "color",
-          "$value": "#f9bb8f",
-          "$description": "color.base.orange.2 — Mid-light orange - decorative"
+          "$value": "#f9bb8f"
         },
         "3": {
+          "$description": "color.base.orange.3 — Medium orange - icons, highlights",
           "$type": "color",
-          "$value": "#f49857",
-          "$description": "color.base.orange.3 — Medium orange - icons, highlights"
+          "$value": "#f49857"
         },
         "4": {
+          "$description": "color.base.orange.4 — Mid orange - interactive elements",
           "$type": "color",
-          "$value": "#ed7621",
-          "$description": "color.base.orange.4 — Mid orange - interactive elements"
+          "$value": "#ed7621"
         },
         "5": {
+          "$description": "color.base.orange.5 — Base orange - primary applications",
           "$type": "color",
-          "$value": "#d2620f",
-          "$description": "color.base.orange.5 — Base orange - primary applications"
+          "$value": "#d2620f"
         },
         "6": {
+          "$description": "color.base.orange.6 — Dark orange - text on light backgrounds",
           "$type": "color",
-          "$value": "#af520c",
-          "$description": "color.base.orange.6 — Dark orange - text on light backgrounds"
+          "$value": "#af520c"
         },
         "7": {
+          "$description": "color.base.orange.7 — Darker orange - high contrast",
           "$type": "color",
-          "$value": "#873f0a",
-          "$description": "color.base.orange.7 — Darker orange - high contrast"
+          "$value": "#873f0a"
         },
         "8": {
+          "$description": "color.base.orange.8 — Very dark orange - text",
           "$type": "color",
-          "$value": "#612d07",
-          "$description": "color.base.orange.8 — Very dark orange - text"
+          "$value": "#612d07"
         },
         "9": {
+          "$description": "color.base.orange.9 — Darkest orange - maximum emphasis",
           "$type": "color",
-          "$value": "#3c1c04",
-          "$description": "color.base.orange.9 — Darkest orange - maximum emphasis"
+          "$value": "#3c1c04"
         }
       },
       "pink": {
         "0": {
+          "$description": "color.base.pink.0 — Lightest pink - subtle highlights, badge backgrounds",
           "$type": "color",
-          "$value": "#fdeef5",
-          "$description": "color.base.pink.0 — Lightest pink - subtle highlights, badge backgrounds"
+          "$value": "#fdeef5"
         },
         "1": {
+          "$description": "color.base.pink.1 — Light pink - hover states, selected rows",
           "$type": "color",
-          "$value": "#fad7e7",
-          "$description": "color.base.pink.1 — Light pink - hover states, selected rows"
+          "$value": "#fad7e7"
         },
         "2": {
+          "$description": "color.base.pink.2 — Mid-light pink - decorative borders",
           "$type": "color",
-          "$value": "#f5afcf",
-          "$description": "color.base.pink.2 — Mid-light pink - decorative borders"
+          "$value": "#f5afcf"
         },
         "3": {
+          "$description": "color.base.pink.3 — Medium pink - icons, illustrations",
           "$type": "color",
-          "$value": "#ee85b5",
-          "$description": "color.base.pink.3 — Medium pink - icons, illustrations"
+          "$value": "#ee85b5"
         },
         "4": {
+          "$description": "color.base.pink.4 — Mid pink - interactive elements",
           "$type": "color",
-          "$value": "#e55a9b",
-          "$description": "color.base.pink.4 — Mid pink - interactive elements"
+          "$value": "#e55a9b"
         },
         "5": {
+          "$description": "color.base.pink.5 — Base pink - primary accent applications",
           "$type": "color",
-          "$value": "#da2d80",
-          "$description": "color.base.pink.5 — Base pink - primary accent applications"
+          "$value": "#da2d80"
         },
         "6": {
+          "$description": "color.base.pink.6 — Dark pink - text on light pink backgrounds (AA compliant)",
           "$type": "color",
-          "$value": "#b91f69",
-          "$description": "color.base.pink.6 — Dark pink - text on light pink backgrounds (AA compliant)"
+          "$value": "#b91f69"
         },
         "7": {
+          "$description": "color.base.pink.7 — Darker pink - high contrast applications",
           "$type": "color",
-          "$value": "#8e1851",
-          "$description": "color.base.pink.7 — Darker pink - high contrast applications"
+          "$value": "#8e1851"
         },
         "8": {
+          "$description": "color.base.pink.8 — Very dark pink - text on light backgrounds",
           "$type": "color",
-          "$value": "#65113a",
-          "$description": "color.base.pink.8 — Very dark pink - text on light backgrounds"
+          "$value": "#65113a"
         },
         "9": {
+          "$description": "color.base.pink.9 — Darkest pink - maximum emphasis",
           "$type": "color",
-          "$value": "#3f0b24",
-          "$description": "color.base.pink.9 — Darkest pink - maximum emphasis"
+          "$value": "#3f0b24"
         }
       },
       "red": {
         "0": {
+          "$description": "color.base.red.0 — Lightest red - error alert backgrounds, validation field backgrounds",
           "$type": "color",
-          "$value": "#fef1f0",
-          "$description": "color.base.red.0 — Lightest red - error alert backgrounds, validation field backgrounds"
+          "$value": "#fef1f0"
         },
         "1": {
+          "$description": "color.base.red.1 — Light red - hover state for error backgrounds",
           "$type": "color",
-          "$value": "#fcdcda",
-          "$description": "color.base.red.1 — Light red - hover state for error backgrounds"
+          "$value": "#fcdcda"
         },
         "2": {
+          "$description": "color.base.red.2 — Mid-light red - progress indicators, decorative",
           "$type": "color",
-          "$value": "#f9b8b4",
-          "$description": "color.base.red.2 — Mid-light red - progress indicators, decorative"
+          "$value": "#f9b8b4"
         },
         "3": {
+          "$description": "color.base.red.3 — Medium red - icons on error backgrounds",
           "$type": "color",
-          "$value": "#f4928c",
-          "$description": "color.base.red.3 — Medium red - icons on error backgrounds"
+          "$value": "#f4928c"
         },
         "4": {
+          "$description": "color.base.red.4 — Mid red - error icons on white backgrounds",
           "$type": "color",
-          "$value": "#ed6a63",
-          "$description": "color.base.red.4 — Mid red - error icons on white backgrounds"
+          "$value": "#ed6a63"
         },
         "5": {
+          "$description": "color.base.red.5 — Base red - primary destructive buttons, critical alerts",
           "$type": "color",
-          "$value": "#e5413a",
-          "$description": "color.base.red.5 — Base red - primary destructive buttons, critical alerts"
+          "$value": "#e5413a"
         },
         "6": {
+          "$description": "color.base.red.6 — Dark red - error text on white (6:1 contrast = AA), danger buttons",
           "$type": "color",
-          "$value": "#cf2720",
-          "$description": "color.base.red.6 — Dark red - error text on white (6:1 contrast = AA), danger buttons"
+          "$value": "#cf2720"
         },
         "7": {
+          "$description": "color.base.red.7 — Darker red - error text with maximum contrast (8:1 = AAA)",
           "$type": "color",
-          "$value": "#a01d18",
-          "$description": "color.base.red.7 — Darker red - error text with maximum contrast (8:1 = AAA)"
+          "$value": "#a01d18"
         },
         "8": {
+          "$description": "color.base.red.8 — Very dark red - text on light red backgrounds",
           "$type": "color",
-          "$value": "#731511",
-          "$description": "color.base.red.8 — Very dark red - text on light red backgrounds"
+          "$value": "#731511"
         },
         "9": {
+          "$description": "color.base.red.9 — Darkest red - reserved for extreme emphasis",
           "$type": "color",
-          "$value": "#480d0b",
-          "$description": "color.base.red.9 — Darkest red - reserved for extreme emphasis"
+          "$value": "#480d0b"
         }
       },
       "teal": {
         "0": {
+          "$description": "color.base.teal.0 — Lightest teal - subtle success backgrounds",
           "$type": "color",
-          "$value": "#e3f7f3",
-          "$description": "color.base.teal.0 — Lightest teal - subtle success backgrounds"
+          "$value": "#e3f7f3"
         },
         "1": {
+          "$description": "color.base.teal.1 — Light teal - hover states",
           "$type": "color",
-          "$value": "#c0ede4",
-          "$description": "color.base.teal.1 — Light teal - hover states"
+          "$value": "#c0ede4"
         },
         "2": {
+          "$description": "color.base.teal.2 — Mid-light teal - decorative",
           "$type": "color",
-          "$value": "#83dcc9",
-          "$description": "color.base.teal.2 — Mid-light teal - decorative"
+          "$value": "#83dcc9"
         },
         "3": {
+          "$description": "color.base.teal.3 — Medium teal - icons",
           "$type": "color",
-          "$value": "#46caae",
-          "$description": "color.base.teal.3 — Medium teal - icons"
+          "$value": "#46caae"
         },
         "4": {
+          "$description": "color.base.teal.4 — Mid teal - interactive elements",
           "$type": "color",
-          "$value": "#10b794",
-          "$description": "color.base.teal.4 — Mid teal - interactive elements"
+          "$value": "#10b794"
         },
         "5": {
+          "$description": "color.base.teal.5 — Base teal - primary applications",
           "$type": "color",
-          "$value": "#0e9e80",
-          "$description": "color.base.teal.5 — Base teal - primary applications"
+          "$value": "#0e9e80"
         },
         "6": {
+          "$description": "color.base.teal.6 — Dark teal - text on light backgrounds",
           "$type": "color",
-          "$value": "#0c846b",
-          "$description": "color.base.teal.6 — Dark teal - text on light backgrounds"
+          "$value": "#0c846b"
         },
         "7": {
+          "$description": "color.base.teal.7 — Darker teal - high contrast",
           "$type": "color",
-          "$value": "#096552",
-          "$description": "color.base.teal.7 — Darker teal - high contrast"
+          "$value": "#096552"
         },
         "8": {
+          "$description": "color.base.teal.8 — Very dark teal - text",
           "$type": "color",
-          "$value": "#06483b",
-          "$description": "color.base.teal.8 — Very dark teal - text"
+          "$value": "#06483b"
         },
         "9": {
+          "$description": "color.base.teal.9 — Darkest teal - maximum emphasis",
           "$type": "color",
-          "$value": "#042d25",
-          "$description": "color.base.teal.9 — Darkest teal - maximum emphasis"
+          "$value": "#042d25"
         }
       },
       "transparent": {
+        "$description": "color.base.transparent — Fully transparent. Use for: invisible interactive areas, overlay starting states, clearfix backgrounds. CSS keyword value - works in all color contexts.",
         "$type": "color",
-        "$value": "transparent",
-        "$description": "color.base.transparent — Fully transparent. Use for: invisible interactive areas, overlay starting states, clearfix backgrounds. CSS keyword value - works in all color contexts."
+        "$value": "transparent"
       },
       "violet": {
         "0": {
+          "$description": "color.base.violet.0 — Lightest violet - feature highlight backgrounds",
           "$type": "color",
-          "$value": "#f5f1fd",
-          "$description": "color.base.violet.0 — Lightest violet - feature highlight backgrounds"
+          "$value": "#f5f1fd"
         },
         "1": {
+          "$description": "color.base.violet.1 — Light violet - hover states",
           "$type": "color",
-          "$value": "#e6dcfa",
-          "$description": "color.base.violet.1 — Light violet - hover states"
+          "$value": "#e6dcfa"
         },
         "2": {
+          "$description": "color.base.violet.2 — Mid-light violet - decorative",
           "$type": "color",
-          "$value": "#cdb9f5",
-          "$description": "color.base.violet.2 — Mid-light violet - decorative"
+          "$value": "#cdb9f5"
         },
         "3": {
+          "$description": "color.base.violet.3 — Medium violet - icons",
           "$type": "color",
-          "$value": "#b396ef",
-          "$description": "color.base.violet.3 — Medium violet - icons"
+          "$value": "#b396ef"
         },
         "4": {
+          "$description": "color.base.violet.4 — Mid violet - interactive elements",
           "$type": "color",
-          "$value": "#9872e8",
-          "$description": "color.base.violet.4 — Mid violet - interactive elements"
+          "$value": "#9872e8"
         },
         "5": {
+          "$description": "color.base.violet.5 — Base violet - primary applications",
           "$type": "color",
-          "$value": "#7c4ee0",
-          "$description": "color.base.violet.5 — Base violet - primary applications"
+          "$value": "#7c4ee0"
         },
         "6": {
+          "$description": "color.base.violet.6 — Dark violet - text on light backgrounds",
           "$type": "color",
-          "$value": "#6536c7",
-          "$description": "color.base.violet.6 — Dark violet - text on light backgrounds"
+          "$value": "#6536c7"
         },
         "7": {
+          "$description": "color.base.violet.7 — Darker violet - high contrast",
           "$type": "color",
-          "$value": "#4e2a99",
-          "$description": "color.base.violet.7 — Darker violet - high contrast"
+          "$value": "#4e2a99"
         },
         "8": {
+          "$description": "color.base.violet.8 — Very dark violet - text",
           "$type": "color",
-          "$value": "#381e6d",
-          "$description": "color.base.violet.8 — Very dark violet - text"
+          "$value": "#381e6d"
         },
         "9": {
+          "$description": "color.base.violet.9 — Darkest violet - maximum emphasis",
           "$type": "color",
-          "$value": "#231344",
-          "$description": "color.base.violet.9 — Darkest violet - maximum emphasis"
+          "$value": "#231344"
         }
       },
       "white": {
+        "$description": "color.base.white — Pure white. Use for: light theme backgrounds, text on dark backgrounds, card surfaces. Contrast ratio with black: 21:1 (WCAG AAA). Avoid using directly - prefer semantic tokens like color.body or color.default.",
         "$type": "color",
-        "$value": "#ffffff",
-        "$description": "color.base.white — Pure white. Use for: light theme backgrounds, text on dark backgrounds, card surfaces. Contrast ratio with black: 21:1 (WCAG AAA). Avoid using directly - prefer semantic tokens like color.body or color.default."
+        "$value": "#ffffff"
       },
       "yellow": {
         "0": {
+          "$description": "color.base.yellow.0 — Lightest yellow - warning backgrounds (must use dark text)",
           "$type": "color",
-          "$value": "#fef6dc",
-          "$description": "color.base.yellow.0 — Lightest yellow - warning backgrounds (must use dark text)"
+          "$value": "#fef6dc"
         },
         "1": {
+          "$description": "color.base.yellow.1 — Light yellow - hover state for warning backgrounds",
           "$type": "color",
-          "$value": "#fceab3",
-          "$description": "color.base.yellow.1 — Light yellow - hover state for warning backgrounds"
+          "$value": "#fceab3"
         },
         "2": {
+          "$description": "color.base.yellow.2 — Mid-light yellow - caution icons with dark stroke",
           "$type": "color",
-          "$value": "#f9d56a",
-          "$description": "color.base.yellow.2 — Mid-light yellow - caution icons with dark stroke"
+          "$value": "#f9d56a"
         },
         "3": {
+          "$description": "color.base.yellow.3 — Medium yellow - warning badges (ensure dark text)",
           "$type": "color",
-          "$value": "#f5c023",
-          "$description": "color.base.yellow.3 — Medium yellow - warning badges (ensure dark text)"
+          "$value": "#f5c023"
         },
         "4": {
+          "$description": "color.base.yellow.4 — Mid yellow - decorative, charts",
           "$type": "color",
-          "$value": "#daa711",
-          "$description": "color.base.yellow.4 — Mid yellow - decorative, charts"
+          "$value": "#daa711"
         },
         "5": {
+          "$description": "color.base.yellow.5 — Base yellow - rarely used for text",
           "$type": "color",
-          "$value": "#bc900f",
-          "$description": "color.base.yellow.5 — Base yellow - rarely used for text"
+          "$value": "#bc900f"
         },
         "6": {
+          "$description": "color.base.yellow.6 — Dark yellow - minimum for text (check contrast)",
           "$type": "color",
-          "$value": "#9d780c",
-          "$description": "color.base.yellow.6 — Dark yellow - minimum for text (check contrast)"
+          "$value": "#9d780c"
         },
         "7": {
+          "$description": "color.base.yellow.7 — Darker yellow - warning text on light backgrounds (4.5:1)",
           "$type": "color",
-          "$value": "#795c0a",
-          "$description": "color.base.yellow.7 — Darker yellow - warning text on light backgrounds (4.5:1)"
+          "$value": "#795c0a"
         },
         "8": {
+          "$description": "color.base.yellow.8 — Very dark yellow - safe for body text on white",
           "$type": "color",
-          "$value": "#564207",
-          "$description": "color.base.yellow.8 — Very dark yellow - safe for body text on white"
+          "$value": "#564207"
         },
         "9": {
+          "$description": "color.base.yellow.9 — Darkest yellow - high contrast text",
           "$type": "color",
-          "$value": "#352904",
-          "$description": "color.base.yellow.9 — Darkest yellow - high contrast text"
+          "$value": "#352904"
         }
       }
     },
@@ -1013,680 +1013,680 @@
       "clearco-21": {
         "navyBlue": {
           "0": {
+            "$description": "color.brand.clearco-21.navyBlue.0 — Navy Blue — primary logo color — tint step 0.",
             "$type": "color",
-            "$value": "#EFF6FF",
-            "$description": "color.brand.clearco-21.navyBlue.0 — Navy Blue — primary logo color — tint step 0."
+            "$value": "#EFF6FF"
           },
           "1": {
+            "$description": "color.brand.clearco-21.navyBlue.1 — Navy Blue — primary logo color — tint step 1.",
             "$type": "color",
-            "$value": "#D0E3FF",
-            "$description": "color.brand.clearco-21.navyBlue.1 — Navy Blue — primary logo color — tint step 1."
+            "$value": "#D0E3FF"
           },
           "2": {
+            "$description": "color.brand.clearco-21.navyBlue.2 — Navy Blue — primary logo color — tint step 2.",
             "$type": "color",
-            "$value": "#A0C6FF",
-            "$description": "color.brand.clearco-21.navyBlue.2 — Navy Blue — primary logo color — tint step 2."
+            "$value": "#A0C6FF"
           },
           "3": {
+            "$description": "color.brand.clearco-21.navyBlue.3 — Navy Blue — primary logo color — tint step 3.",
             "$type": "color",
-            "$value": "#81A6DE",
-            "$description": "color.brand.clearco-21.navyBlue.3 — Navy Blue — primary logo color — tint step 3."
+            "$value": "#81A6DE"
           },
           "4": {
+            "$description": "color.brand.clearco-21.navyBlue.4 — Navy Blue — primary logo color — tint step 4.",
             "$type": "color",
-            "$value": "#6084BA",
-            "$description": "color.brand.clearco-21.navyBlue.4 — Navy Blue — primary logo color — tint step 4."
+            "$value": "#6084BA"
           },
           "5": {
+            "$description": "color.brand.clearco-21.navyBlue.5 — Navy Blue — primary logo color — tint step 5.",
             "$type": "color",
-            "$value": "#476A9D",
-            "$description": "color.brand.clearco-21.navyBlue.5 — Navy Blue — primary logo color — tint step 5."
+            "$value": "#476A9D"
           },
           "6": {
+            "$description": "color.brand.clearco-21.navyBlue.6 — Navy Blue — primary logo color — tint step 6.",
             "$type": "color",
-            "$value": "#345588",
-            "$description": "color.brand.clearco-21.navyBlue.6 — Navy Blue — primary logo color — tint step 6."
+            "$value": "#345588"
           },
           "7": {
+            "$description": "color.brand.clearco-21.navyBlue.7 — Navy Blue — primary logo color — base color (step 7, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#254677",
-            "$description": "color.brand.clearco-21.navyBlue.7 — Navy Blue — primary logo color — base color (step 7, pinned to official brand hex)."
+            "$value": "#254677"
           },
           "8": {
+            "$description": "color.brand.clearco-21.navyBlue.8 — Navy Blue — primary logo color — tint step 8.",
             "$type": "color",
-            "$value": "#092958",
-            "$description": "color.brand.clearco-21.navyBlue.8 — Navy Blue — primary logo color — tint step 8."
+            "$value": "#092958"
           },
           "9": {
+            "$description": "color.brand.clearco-21.navyBlue.9 — Navy Blue — primary logo color — tint step 9.",
             "$type": "color",
-            "$value": "#001840",
-            "$description": "color.brand.clearco-21.navyBlue.9 — Navy Blue — primary logo color — tint step 9."
+            "$value": "#001840"
           }
         },
         "purple": {
           "0": {
+            "$description": "color.brand.clearco-21.purple.0 — Purple — typography accent — tint step 0.",
             "$type": "color",
-            "$value": "#FFF0FB",
-            "$description": "color.brand.clearco-21.purple.0 — Purple — typography accent — tint step 0."
+            "$value": "#FFF0FB"
           },
           "1": {
+            "$description": "color.brand.clearco-21.purple.1 — Purple — typography accent — tint step 1.",
             "$type": "color",
-            "$value": "#FFD1F5",
-            "$description": "color.brand.clearco-21.purple.1 — Purple — typography accent — tint step 1."
+            "$value": "#FFD1F5"
           },
           "2": {
+            "$description": "color.brand.clearco-21.purple.2 — Purple — typography accent — tint step 2.",
             "$type": "color",
-            "$value": "#FF9DED",
-            "$description": "color.brand.clearco-21.purple.2 — Purple — typography accent — tint step 2."
+            "$value": "#FF9DED"
           },
           "3": {
+            "$description": "color.brand.clearco-21.purple.3 — Purple — typography accent — tint step 3.",
             "$type": "color",
-            "$value": "#DF7BCE",
-            "$description": "color.brand.clearco-21.purple.3 — Purple — typography accent — tint step 3."
+            "$value": "#DF7BCE"
           },
           "4": {
+            "$description": "color.brand.clearco-21.purple.4 — Purple — typography accent — tint step 4.",
             "$type": "color",
-            "$value": "#BA59AA",
-            "$description": "color.brand.clearco-21.purple.4 — Purple — typography accent — tint step 4."
+            "$value": "#BA59AA"
           },
           "5": {
+            "$description": "color.brand.clearco-21.purple.5 — Purple — typography accent — tint step 5.",
             "$type": "color",
-            "$value": "#9D3D8E",
-            "$description": "color.brand.clearco-21.purple.5 — Purple — typography accent — tint step 5."
+            "$value": "#9D3D8E"
           },
           "6": {
+            "$description": "color.brand.clearco-21.purple.6 — Purple — typography accent — base color (step 6, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#822275",
-            "$description": "color.brand.clearco-21.purple.6 — Purple — typography accent — base color (step 6, pinned to official brand hex)."
+            "$value": "#822275"
           },
           "7": {
+            "$description": "color.brand.clearco-21.purple.7 — Purple — typography accent — tint step 7.",
             "$type": "color",
-            "$value": "#6D0561",
-            "$description": "color.brand.clearco-21.purple.7 — Purple — typography accent — tint step 7."
+            "$value": "#6D0561"
           },
           "8": {
+            "$description": "color.brand.clearco-21.purple.8 — Purple — typography accent — tint step 8.",
             "$type": "color",
-            "$value": "#4D0045",
-            "$description": "color.brand.clearco-21.purple.8 — Purple — typography accent — tint step 8."
+            "$value": "#4D0045"
           },
           "9": {
+            "$description": "color.brand.clearco-21.purple.9 — Purple — typography accent — tint step 9.",
             "$type": "color",
-            "$value": "#33002D",
-            "$description": "color.brand.clearco-21.purple.9 — Purple — typography accent — tint step 9."
+            "$value": "#33002D"
           }
         },
         "skyBlue": {
           "0": {
+            "$description": "color.brand.clearco-21.skyBlue.0 — Sky Blue — secondary logo color — tint step 0.",
             "$type": "color",
-            "$value": "#EAF8FF",
-            "$description": "color.brand.clearco-21.skyBlue.0 — Sky Blue — secondary logo color — tint step 0."
+            "$value": "#EAF8FF"
           },
           "1": {
+            "$description": "color.brand.clearco-21.skyBlue.1 — Sky Blue — secondary logo color — tint step 1.",
             "$type": "color",
-            "$value": "#BFE8FF",
-            "$description": "color.brand.clearco-21.skyBlue.1 — Sky Blue — secondary logo color — tint step 1."
+            "$value": "#BFE8FF"
           },
           "2": {
+            "$description": "color.brand.clearco-21.skyBlue.2 — Sky Blue — secondary logo color — tint step 2.",
             "$type": "color",
-            "$value": "#74D1FF",
-            "$description": "color.brand.clearco-21.skyBlue.2 — Sky Blue — secondary logo color — tint step 2."
+            "$value": "#74D1FF"
           },
           "3": {
+            "$description": "color.brand.clearco-21.skyBlue.3 — Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#55BAEA",
-            "$description": "color.brand.clearco-21.skyBlue.3 — Sky Blue — secondary logo color — base color (step 3, pinned to official brand hex)."
+            "$value": "#55BAEA"
           },
           "4": {
+            "$description": "color.brand.clearco-21.skyBlue.4 — Sky Blue — secondary logo color — tint step 4.",
             "$type": "color",
-            "$value": "#1E8EBC",
-            "$description": "color.brand.clearco-21.skyBlue.4 — Sky Blue — secondary logo color — tint step 4."
+            "$value": "#1E8EBC"
           },
           "5": {
+            "$description": "color.brand.clearco-21.skyBlue.5 — Sky Blue — secondary logo color — tint step 5.",
             "$type": "color",
-            "$value": "#00729B",
-            "$description": "color.brand.clearco-21.skyBlue.5 — Sky Blue — secondary logo color — tint step 5."
+            "$value": "#00729B"
           },
           "6": {
+            "$description": "color.brand.clearco-21.skyBlue.6 — Sky Blue — secondary logo color — tint step 6.",
             "$type": "color",
-            "$value": "#005D7F",
-            "$description": "color.brand.clearco-21.skyBlue.6 — Sky Blue — secondary logo color — tint step 6."
+            "$value": "#005D7F"
           },
           "7": {
+            "$description": "color.brand.clearco-21.skyBlue.7 — Sky Blue — secondary logo color — tint step 7.",
             "$type": "color",
-            "$value": "#004660",
-            "$description": "color.brand.clearco-21.skyBlue.7 — Sky Blue — secondary logo color — tint step 7."
+            "$value": "#004660"
           },
           "8": {
+            "$description": "color.brand.clearco-21.skyBlue.8 — Sky Blue — secondary logo color — tint step 8.",
             "$type": "color",
-            "$value": "#003043",
-            "$description": "color.brand.clearco-21.skyBlue.8 — Sky Blue — secondary logo color — tint step 8."
+            "$value": "#003043"
           },
           "9": {
+            "$description": "color.brand.clearco-21.skyBlue.9 — Sky Blue — secondary logo color — tint step 9.",
             "$type": "color",
-            "$value": "#001E2C",
-            "$description": "color.brand.clearco-21.skyBlue.9 — Sky Blue — secondary logo color — tint step 9."
+            "$value": "#001E2C"
           }
         },
         "yellow": {
           "0": {
+            "$description": "color.brand.clearco-21.yellow.0 — Yellow — decorative highlight — tint step 0.",
             "$type": "color",
-            "$value": "#FEFE6C",
-            "$description": "color.brand.clearco-21.yellow.0 — Yellow — decorative highlight — tint step 0."
+            "$value": "#FEFE6C"
           },
           "1": {
+            "$description": "color.brand.clearco-21.yellow.1 — Yellow — decorative highlight — base color (step 1, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#E6E651",
-            "$description": "color.brand.clearco-21.yellow.1 — Yellow — decorative highlight — base color (step 1, pinned to official brand hex)."
+            "$value": "#E6E651"
           },
           "2": {
+            "$description": "color.brand.clearco-21.yellow.2 — Yellow — decorative highlight — tint step 2.",
             "$type": "color",
-            "$value": "#CDCC2E",
-            "$description": "color.brand.clearco-21.yellow.2 — Yellow — decorative highlight — tint step 2."
+            "$value": "#CDCC2E"
           },
           "3": {
+            "$description": "color.brand.clearco-21.yellow.3 — Yellow — decorative highlight — tint step 3.",
             "$type": "color",
-            "$value": "#ADAC00",
-            "$description": "color.brand.clearco-21.yellow.3 — Yellow — decorative highlight — tint step 3."
+            "$value": "#ADAC00"
           },
           "4": {
+            "$description": "color.brand.clearco-21.yellow.4 — Yellow — decorative highlight — tint step 4.",
             "$type": "color",
-            "$value": "#8A8900",
-            "$description": "color.brand.clearco-21.yellow.4 — Yellow — decorative highlight — tint step 4."
+            "$value": "#8A8900"
           },
           "5": {
+            "$description": "color.brand.clearco-21.yellow.5 — Yellow — decorative highlight — tint step 5.",
             "$type": "color",
-            "$value": "#6E6E00",
-            "$description": "color.brand.clearco-21.yellow.5 — Yellow — decorative highlight — tint step 5."
+            "$value": "#6E6E00"
           },
           "6": {
+            "$description": "color.brand.clearco-21.yellow.6 — Yellow — decorative highlight — tint step 6.",
             "$type": "color",
-            "$value": "#5A5900",
-            "$description": "color.brand.clearco-21.yellow.6 — Yellow — decorative highlight — tint step 6."
+            "$value": "#5A5900"
           },
           "7": {
+            "$description": "color.brand.clearco-21.yellow.7 — Yellow — decorative highlight — tint step 7.",
             "$type": "color",
-            "$value": "#434300",
-            "$description": "color.brand.clearco-21.yellow.7 — Yellow — decorative highlight — tint step 7."
+            "$value": "#434300"
           },
           "8": {
+            "$description": "color.brand.clearco-21.yellow.8 — Yellow — decorative highlight — tint step 8.",
             "$type": "color",
-            "$value": "#2E2E00",
-            "$description": "color.brand.clearco-21.yellow.8 — Yellow — decorative highlight — tint step 8."
+            "$value": "#2E2E00"
           },
           "9": {
+            "$description": "color.brand.clearco-21.yellow.9 — Yellow — decorative highlight — tint step 9.",
             "$type": "color",
-            "$value": "#1C1C00",
-            "$description": "color.brand.clearco-21.yellow.9 — Yellow — decorative highlight — tint step 9."
+            "$value": "#1C1C00"
           }
         }
       },
       "clearco-30": {
         "alloy": {
           "0": {
+            "$description": "color.brand.clearco-30.alloy.0 — Alloy — warm highlight, lighter companion to Copper — tint step 0.",
             "$type": "color",
-            "$value": "#FFF2ED",
-            "$description": "color.brand.clearco-30.alloy.0 — Alloy — warm highlight, lighter companion to Copper — tint step 0."
+            "$value": "#FFF2ED"
           },
           "1": {
+            "$description": "color.brand.clearco-30.alloy.1 — Alloy — warm highlight, lighter companion to Copper — tint step 1.",
             "$type": "color",
-            "$value": "#FFD8C7",
-            "$description": "color.brand.clearco-30.alloy.1 — Alloy — warm highlight, lighter companion to Copper — tint step 1."
+            "$value": "#FFD8C7"
           },
           "2": {
+            "$description": "color.brand.clearco-30.alloy.2 — Alloy — warm highlight, lighter companion to Copper — base color (step 2, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#FFA680",
-            "$description": "color.brand.clearco-30.alloy.2 — Alloy — warm highlight, lighter companion to Copper — base color (step 2, pinned to official brand hex)."
+            "$value": "#FFA680"
           },
           "3": {
+            "$description": "color.brand.clearco-30.alloy.3 — Alloy — warm highlight, lighter companion to Copper — tint step 3.",
             "$type": "color",
-            "$value": "#E28B66",
-            "$description": "color.brand.clearco-30.alloy.3 — Alloy — warm highlight, lighter companion to Copper — tint step 3."
+            "$value": "#E28B66"
           },
           "4": {
+            "$description": "color.brand.clearco-30.alloy.4 — Alloy — warm highlight, lighter companion to Copper — tint step 4.",
             "$type": "color",
-            "$value": "#BD6A45",
-            "$description": "color.brand.clearco-30.alloy.4 — Alloy — warm highlight, lighter companion to Copper — tint step 4."
+            "$value": "#BD6A45"
           },
           "5": {
+            "$description": "color.brand.clearco-30.alloy.5 — Alloy — warm highlight, lighter companion to Copper — tint step 5.",
             "$type": "color",
-            "$value": "#9F4F2A",
-            "$description": "color.brand.clearco-30.alloy.5 — Alloy — warm highlight, lighter companion to Copper — tint step 5."
+            "$value": "#9F4F2A"
           },
           "6": {
+            "$description": "color.brand.clearco-30.alloy.6 — Alloy — warm highlight, lighter companion to Copper — tint step 6.",
             "$type": "color",
-            "$value": "#893B13",
-            "$description": "color.brand.clearco-30.alloy.6 — Alloy — warm highlight, lighter companion to Copper — tint step 6."
+            "$value": "#893B13"
           },
           "7": {
+            "$description": "color.brand.clearco-30.alloy.7 — Alloy — warm highlight, lighter companion to Copper — tint step 7.",
             "$type": "color",
-            "$value": "#6C2700",
-            "$description": "color.brand.clearco-30.alloy.7 — Alloy — warm highlight, lighter companion to Copper — tint step 7."
+            "$value": "#6C2700"
           },
           "8": {
+            "$description": "color.brand.clearco-30.alloy.8 — Alloy — warm highlight, lighter companion to Copper — tint step 8.",
             "$type": "color",
-            "$value": "#4C1900",
-            "$description": "color.brand.clearco-30.alloy.8 — Alloy — warm highlight, lighter companion to Copper — tint step 8."
+            "$value": "#4C1900"
           },
           "9": {
+            "$description": "color.brand.clearco-30.alloy.9 — Alloy — warm highlight, lighter companion to Copper — tint step 9.",
             "$type": "color",
-            "$value": "#320E00",
-            "$description": "color.brand.clearco-30.alloy.9 — Alloy — warm highlight, lighter companion to Copper — tint step 9."
+            "$value": "#320E00"
           }
         },
         "brass": {
           "0": {
+            "$description": "color.brand.clearco-30.brass.0 — Brass — muted warm accent — tint step 0.",
             "$type": "color",
-            "$value": "#FFF4DF",
-            "$description": "color.brand.clearco-30.brass.0 — Brass — muted warm accent — tint step 0."
+            "$value": "#FFF4DF"
           },
           "1": {
+            "$description": "color.brand.clearco-30.brass.1 — Brass — muted warm accent — tint step 1.",
             "$type": "color",
-            "$value": "#EFE0C1",
-            "$description": "color.brand.clearco-30.brass.1 — Brass — muted warm accent — tint step 1."
+            "$value": "#EFE0C1"
           },
           "2": {
+            "$description": "color.brand.clearco-30.brass.2 — Brass — muted warm accent — base color (step 2, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#C3B497",
-            "$description": "color.brand.clearco-30.brass.2 — Brass — muted warm accent — base color (step 2, pinned to official brand hex)."
+            "$value": "#C3B497"
           },
           "3": {
+            "$description": "color.brand.clearco-30.brass.3 — Brass — muted warm accent — tint step 3.",
             "$type": "color",
-            "$value": "#B2A386",
-            "$description": "color.brand.clearco-30.brass.3 — Brass — muted warm accent — tint step 3."
+            "$value": "#B2A386"
           },
           "4": {
+            "$description": "color.brand.clearco-30.brass.4 — Brass — muted warm accent — tint step 4.",
             "$type": "color",
-            "$value": "#908166",
-            "$description": "color.brand.clearco-30.brass.4 — Brass — muted warm accent — tint step 4."
+            "$value": "#908166"
           },
           "5": {
+            "$description": "color.brand.clearco-30.brass.5 — Brass — muted warm accent — tint step 5.",
             "$type": "color",
-            "$value": "#75674C",
-            "$description": "color.brand.clearco-30.brass.5 — Brass — muted warm accent — tint step 5."
+            "$value": "#75674C"
           },
           "6": {
+            "$description": "color.brand.clearco-30.brass.6 — Brass — muted warm accent — tint step 6.",
             "$type": "color",
-            "$value": "#615339",
-            "$description": "color.brand.clearco-30.brass.6 — Brass — muted warm accent — tint step 6."
+            "$value": "#615339"
           },
           "7": {
+            "$description": "color.brand.clearco-30.brass.7 — Brass — muted warm accent — tint step 7.",
             "$type": "color",
-            "$value": "#4B3E24",
-            "$description": "color.brand.clearco-30.brass.7 — Brass — muted warm accent — tint step 7."
+            "$value": "#4B3E24"
           },
           "8": {
+            "$description": "color.brand.clearco-30.brass.8 — Brass — muted warm accent — tint step 8.",
             "$type": "color",
-            "$value": "#362910",
-            "$description": "color.brand.clearco-30.brass.8 — Brass — muted warm accent — tint step 8."
+            "$value": "#362910"
           },
           "9": {
+            "$description": "color.brand.clearco-30.brass.9 — Brass — muted warm accent — tint step 9.",
             "$type": "color",
-            "$value": "#241801",
-            "$description": "color.brand.clearco-30.brass.9 — Brass — muted warm accent — tint step 9."
+            "$value": "#241801"
           }
         },
         "bronze": {
           "0": {
+            "$description": "color.brand.clearco-30.bronze.0 — Bronze — deep earthy anchor — tint step 0.",
             "$type": "color",
-            "$value": "#FFF2EE",
-            "$description": "color.brand.clearco-30.bronze.0 — Bronze — deep earthy anchor — tint step 0."
+            "$value": "#FFF2EE"
           },
           "1": {
+            "$description": "color.brand.clearco-30.bronze.1 — Bronze — deep earthy anchor — tint step 1.",
             "$type": "color",
-            "$value": "#FFD7CA",
-            "$description": "color.brand.clearco-30.bronze.1 — Bronze — deep earthy anchor — tint step 1."
+            "$value": "#FFD7CA"
           },
           "2": {
+            "$description": "color.brand.clearco-30.bronze.2 — Bronze — deep earthy anchor — tint step 2.",
             "$type": "color",
-            "$value": "#F0B4A1",
-            "$description": "color.brand.clearco-30.bronze.2 — Bronze — deep earthy anchor — tint step 2."
+            "$value": "#F0B4A1"
           },
           "3": {
+            "$description": "color.brand.clearco-30.bronze.3 — Bronze — deep earthy anchor — tint step 3.",
             "$type": "color",
-            "$value": "#CF9582",
-            "$description": "color.brand.clearco-30.bronze.3 — Bronze — deep earthy anchor — tint step 3."
+            "$value": "#CF9582"
           },
           "4": {
+            "$description": "color.brand.clearco-30.bronze.4 — Bronze — deep earthy anchor — tint step 4.",
             "$type": "color",
-            "$value": "#AB7362",
-            "$description": "color.brand.clearco-30.bronze.4 — Bronze — deep earthy anchor — tint step 4."
+            "$value": "#AB7362"
           },
           "5": {
+            "$description": "color.brand.clearco-30.bronze.5 — Bronze — deep earthy anchor — tint step 5.",
             "$type": "color",
-            "$value": "#8E5948",
-            "$description": "color.brand.clearco-30.bronze.5 — Bronze — deep earthy anchor — tint step 5."
+            "$value": "#8E5948"
           },
           "6": {
+            "$description": "color.brand.clearco-30.bronze.6 — Bronze — deep earthy anchor — tint step 6.",
             "$type": "color",
-            "$value": "#794635",
-            "$description": "color.brand.clearco-30.bronze.6 — Bronze — deep earthy anchor — tint step 6."
+            "$value": "#794635"
           },
           "7": {
+            "$description": "color.brand.clearco-30.bronze.7 — Bronze — deep earthy anchor — base color (step 7, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#6C3A2A",
-            "$description": "color.brand.clearco-30.bronze.7 — Bronze — deep earthy anchor — base color (step 7, pinned to official brand hex)."
+            "$value": "#6C3A2A"
           },
           "8": {
+            "$description": "color.brand.clearco-30.bronze.8 — Bronze — deep earthy anchor — tint step 8.",
             "$type": "color",
-            "$value": "#491B0B",
-            "$description": "color.brand.clearco-30.bronze.8 — Bronze — deep earthy anchor — tint step 8."
+            "$value": "#491B0B"
           },
           "9": {
+            "$description": "color.brand.clearco-30.bronze.9 — Bronze — deep earthy anchor — tint step 9.",
             "$type": "color",
-            "$value": "#340A00",
-            "$description": "color.brand.clearco-30.bronze.9 — Bronze — deep earthy anchor — tint step 9."
+            "$value": "#340A00"
           }
         },
         "castIron": {
           "0": {
+            "$description": "color.brand.clearco-30.castIron.0 — Cast Iron — primary dark neutral — tint step 0.",
             "$type": "color",
-            "$value": "#F8F6E7",
-            "$description": "color.brand.clearco-30.castIron.0 — Cast Iron — primary dark neutral — tint step 0."
+            "$value": "#F8F6E7"
           },
           "1": {
+            "$description": "color.brand.clearco-30.castIron.1 — Cast Iron — primary dark neutral — tint step 1.",
             "$type": "color",
-            "$value": "#E4E2D4",
-            "$description": "color.brand.clearco-30.castIron.1 — Cast Iron — primary dark neutral — tint step 1."
+            "$value": "#E4E2D4"
           },
           "2": {
+            "$description": "color.brand.clearco-30.castIron.2 — Cast Iron — primary dark neutral — tint step 2.",
             "$type": "color",
-            "$value": "#C7C5B7",
-            "$description": "color.brand.clearco-30.castIron.2 — Cast Iron — primary dark neutral — tint step 2."
+            "$value": "#C7C5B7"
           },
           "3": {
+            "$description": "color.brand.clearco-30.castIron.3 — Cast Iron — primary dark neutral — tint step 3.",
             "$type": "color",
-            "$value": "#A7A598",
-            "$description": "color.brand.clearco-30.castIron.3 — Cast Iron — primary dark neutral — tint step 3."
+            "$value": "#A7A598"
           },
           "4": {
+            "$description": "color.brand.clearco-30.castIron.4 — Cast Iron — primary dark neutral — tint step 4.",
             "$type": "color",
-            "$value": "#868477",
-            "$description": "color.brand.clearco-30.castIron.4 — Cast Iron — primary dark neutral — tint step 4."
+            "$value": "#868477"
           },
           "5": {
+            "$description": "color.brand.clearco-30.castIron.5 — Cast Iron — primary dark neutral — tint step 5.",
             "$type": "color",
-            "$value": "#6B695D",
-            "$description": "color.brand.clearco-30.castIron.5 — Cast Iron — primary dark neutral — tint step 5."
+            "$value": "#6B695D"
           },
           "6": {
+            "$description": "color.brand.clearco-30.castIron.6 — Cast Iron — primary dark neutral — tint step 6.",
             "$type": "color",
-            "$value": "#58564A",
-            "$description": "color.brand.clearco-30.castIron.6 — Cast Iron — primary dark neutral — tint step 6."
+            "$value": "#58564A"
           },
           "7": {
+            "$description": "color.brand.clearco-30.castIron.7 — Cast Iron — primary dark neutral — tint step 7.",
             "$type": "color",
-            "$value": "#424035",
-            "$description": "color.brand.clearco-30.castIron.7 — Cast Iron — primary dark neutral — tint step 7."
+            "$value": "#424035"
           },
           "8": {
+            "$description": "color.brand.clearco-30.castIron.8 — Cast Iron — primary dark neutral — base color (step 8, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#37352A",
-            "$description": "color.brand.clearco-30.castIron.8 — Cast Iron — primary dark neutral — base color (step 8, pinned to official brand hex)."
+            "$value": "#37352A"
           },
           "9": {
+            "$description": "color.brand.clearco-30.castIron.9 — Cast Iron — primary dark neutral — tint step 9.",
             "$type": "color",
-            "$value": "#1D1B11",
-            "$description": "color.brand.clearco-30.castIron.9 — Cast Iron — primary dark neutral — tint step 9."
+            "$value": "#1D1B11"
           }
         },
         "copper": {
           "0": {
+            "$description": "color.brand.clearco-30.copper.0 — Copper — signature accent — tint step 0.",
             "$type": "color",
-            "$value": "#FFF2EE",
-            "$description": "color.brand.clearco-30.copper.0 — Copper — signature accent — tint step 0."
+            "$value": "#FFF2EE"
           },
           "1": {
+            "$description": "color.brand.clearco-30.copper.1 — Copper — signature accent — tint step 1.",
             "$type": "color",
-            "$value": "#FFD7CB",
-            "$description": "color.brand.clearco-30.copper.1 — Copper — signature accent — tint step 1."
+            "$value": "#FFD7CB"
           },
           "2": {
+            "$description": "color.brand.clearco-30.copper.2 — Copper — signature accent — tint step 2.",
             "$type": "color",
-            "$value": "#FFAC94",
-            "$description": "color.brand.clearco-30.copper.2 — Copper — signature accent — tint step 2."
+            "$value": "#FFAC94"
           },
           "3": {
+            "$description": "color.brand.clearco-30.copper.3 — Copper — signature accent — base color (step 3, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#FF7A52",
-            "$description": "color.brand.clearco-30.copper.3 — Copper — signature accent — base color (step 3, pinned to official brand hex)."
+            "$value": "#FF7A52"
           },
           "4": {
+            "$description": "color.brand.clearco-30.copper.4 — Copper — signature accent — tint step 4.",
             "$type": "color",
-            "$value": "#D5542B",
-            "$description": "color.brand.clearco-30.copper.4 — Copper — signature accent — tint step 4."
+            "$value": "#D5542B"
           },
           "5": {
+            "$description": "color.brand.clearco-30.copper.5 — Copper — signature accent — tint step 5.",
             "$type": "color",
-            "$value": "#B63601",
-            "$description": "color.brand.clearco-30.copper.5 — Copper — signature accent — tint step 5."
+            "$value": "#B63601"
           },
           "6": {
+            "$description": "color.brand.clearco-30.copper.6 — Copper — signature accent — tint step 6.",
             "$type": "color",
-            "$value": "#962B00",
-            "$description": "color.brand.clearco-30.copper.6 — Copper — signature accent — tint step 6."
+            "$value": "#962B00"
           },
           "7": {
+            "$description": "color.brand.clearco-30.copper.7 — Copper — signature accent — tint step 7.",
             "$type": "color",
-            "$value": "#721E00",
-            "$description": "color.brand.clearco-30.copper.7 — Copper — signature accent — tint step 7."
+            "$value": "#721E00"
           },
           "8": {
+            "$description": "color.brand.clearco-30.copper.8 — Copper — signature accent — tint step 8.",
             "$type": "color",
-            "$value": "#501300",
-            "$description": "color.brand.clearco-30.copper.8 — Copper — signature accent — tint step 8."
+            "$value": "#501300"
           },
           "9": {
+            "$description": "color.brand.clearco-30.copper.9 — Copper — signature accent — tint step 9.",
             "$type": "color",
-            "$value": "#350900",
-            "$description": "color.brand.clearco-30.copper.9 — Copper — signature accent — tint step 9."
+            "$value": "#350900"
           }
         },
         "pewter": {
           "0": {
+            "$description": "color.brand.clearco-30.pewter.0 — Pewter — cool light neutral — tint step 0.",
             "$type": "color",
-            "$value": "#E6F9FF",
-            "$description": "color.brand.clearco-30.pewter.0 — Pewter — cool light neutral — tint step 0."
+            "$value": "#E6F9FF"
           },
           "1": {
+            "$description": "color.brand.clearco-30.pewter.1 — Pewter — cool light neutral — tint step 1.",
             "$type": "color",
-            "$value": "#D2E5EC",
-            "$description": "color.brand.clearco-30.pewter.1 — Pewter — cool light neutral — tint step 1."
+            "$value": "#D2E5EC"
           },
           "2": {
+            "$description": "color.brand.clearco-30.pewter.2 — Pewter — cool light neutral — tint step 2.",
             "$type": "color",
-            "$value": "#B5C8CE",
-            "$description": "color.brand.clearco-30.pewter.2 — Pewter — cool light neutral — tint step 2."
+            "$value": "#B5C8CE"
           },
           "3": {
+            "$description": "color.brand.clearco-30.pewter.3 — Pewter — cool light neutral — base color (step 3, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#A1B4BA",
-            "$description": "color.brand.clearco-30.pewter.3 — Pewter — cool light neutral — base color (step 3, pinned to official brand hex)."
+            "$value": "#A1B4BA"
           },
           "4": {
+            "$description": "color.brand.clearco-30.pewter.4 — Pewter — cool light neutral — tint step 4.",
             "$type": "color",
-            "$value": "#75878C",
-            "$description": "color.brand.clearco-30.pewter.4 — Pewter — cool light neutral — tint step 4."
+            "$value": "#75878C"
           },
           "5": {
+            "$description": "color.brand.clearco-30.pewter.5 — Pewter — cool light neutral — tint step 5.",
             "$type": "color",
-            "$value": "#5B6C72",
-            "$description": "color.brand.clearco-30.pewter.5 — Pewter — cool light neutral — tint step 5."
+            "$value": "#5B6C72"
           },
           "6": {
+            "$description": "color.brand.clearco-30.pewter.6 — Pewter — cool light neutral — tint step 6.",
             "$type": "color",
-            "$value": "#48595E",
-            "$description": "color.brand.clearco-30.pewter.6 — Pewter — cool light neutral — tint step 6."
+            "$value": "#48595E"
           },
           "7": {
+            "$description": "color.brand.clearco-30.pewter.7 — Pewter — cool light neutral — tint step 7.",
             "$type": "color",
-            "$value": "#324348",
-            "$description": "color.brand.clearco-30.pewter.7 — Pewter — cool light neutral — tint step 7."
+            "$value": "#324348"
           },
           "8": {
+            "$description": "color.brand.clearco-30.pewter.8 — Pewter — cool light neutral — tint step 8.",
             "$type": "color",
-            "$value": "#1E2E33",
-            "$description": "color.brand.clearco-30.pewter.8 — Pewter — cool light neutral — tint step 8."
+            "$value": "#1E2E33"
           },
           "9": {
+            "$description": "color.brand.clearco-30.pewter.9 — Pewter — cool light neutral — tint step 9.",
             "$type": "color",
-            "$value": "#0E1D22",
-            "$description": "color.brand.clearco-30.pewter.9 — Pewter — cool light neutral — tint step 9."
+            "$value": "#0E1D22"
           }
         },
         "steel": {
           "0": {
+            "$description": "color.brand.clearco-30.steel.0 — Steel — balanced mid-tone neutral — tint step 0.",
             "$type": "color",
-            "$value": "#EAFAF3",
-            "$description": "color.brand.clearco-30.steel.0 — Steel — balanced mid-tone neutral — tint step 0."
+            "$value": "#EAFAF3"
           },
           "1": {
+            "$description": "color.brand.clearco-30.steel.1 — Steel — balanced mid-tone neutral — tint step 1.",
             "$type": "color",
-            "$value": "#D6E6DF",
-            "$description": "color.brand.clearco-30.steel.1 — Steel — balanced mid-tone neutral — tint step 1."
+            "$value": "#D6E6DF"
           },
           "2": {
+            "$description": "color.brand.clearco-30.steel.2 — Steel — balanced mid-tone neutral — tint step 2.",
             "$type": "color",
-            "$value": "#B9C8C2",
-            "$description": "color.brand.clearco-30.steel.2 — Steel — balanced mid-tone neutral — tint step 2."
+            "$value": "#B9C8C2"
           },
           "3": {
+            "$description": "color.brand.clearco-30.steel.3 — Steel — balanced mid-tone neutral — tint step 3.",
             "$type": "color",
-            "$value": "#9AA9A2",
-            "$description": "color.brand.clearco-30.steel.3 — Steel — balanced mid-tone neutral — tint step 3."
+            "$value": "#9AA9A2"
           },
           "4": {
+            "$description": "color.brand.clearco-30.steel.4 — Steel — balanced mid-tone neutral — tint step 4.",
             "$type": "color",
-            "$value": "#798781",
-            "$description": "color.brand.clearco-30.steel.4 — Steel — balanced mid-tone neutral — tint step 4."
+            "$value": "#798781"
           },
           "5": {
+            "$description": "color.brand.clearco-30.steel.5 — Steel — balanced mid-tone neutral — base color (step 5, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#697771",
-            "$description": "color.brand.clearco-30.steel.5 — Steel — balanced mid-tone neutral — base color (step 5, pinned to official brand hex)."
+            "$value": "#697771"
           },
           "6": {
+            "$description": "color.brand.clearco-30.steel.6 — Steel — balanced mid-tone neutral — tint step 6.",
             "$type": "color",
-            "$value": "#4B5953",
-            "$description": "color.brand.clearco-30.steel.6 — Steel — balanced mid-tone neutral — tint step 6."
+            "$value": "#4B5953"
           },
           "7": {
+            "$description": "color.brand.clearco-30.steel.7 — Steel — balanced mid-tone neutral — tint step 7.",
             "$type": "color",
-            "$value": "#36433E",
-            "$description": "color.brand.clearco-30.steel.7 — Steel — balanced mid-tone neutral — tint step 7."
+            "$value": "#36433E"
           },
           "8": {
+            "$description": "color.brand.clearco-30.steel.8 — Steel — balanced mid-tone neutral — tint step 8.",
             "$type": "color",
-            "$value": "#222E29",
-            "$description": "color.brand.clearco-30.steel.8 — Steel — balanced mid-tone neutral — tint step 8."
+            "$value": "#222E29"
           },
           "9": {
+            "$description": "color.brand.clearco-30.steel.9 — Steel — balanced mid-tone neutral — tint step 9.",
             "$type": "color",
-            "$value": "#121E19",
-            "$description": "color.brand.clearco-30.steel.9 — Steel — balanced mid-tone neutral — tint step 9."
+            "$value": "#121E19"
           }
         },
         "verdigris": {
           "0": {
+            "$description": "color.brand.clearco-30.verdigris.0 — Verdigris — nature-inspired supporting color — tint step 0.",
             "$type": "color",
-            "$value": "#E4FCF2",
-            "$description": "color.brand.clearco-30.verdigris.0 — Verdigris — nature-inspired supporting color — tint step 0."
+            "$value": "#E4FCF2"
           },
           "1": {
+            "$description": "color.brand.clearco-30.verdigris.1 — Verdigris — nature-inspired supporting color — tint step 1.",
             "$type": "color",
-            "$value": "#D1E8DE",
-            "$description": "color.brand.clearco-30.verdigris.1 — Verdigris — nature-inspired supporting color — tint step 1."
+            "$value": "#D1E8DE"
           },
           "2": {
+            "$description": "color.brand.clearco-30.verdigris.2 — Verdigris — nature-inspired supporting color — tint step 2.",
             "$type": "color",
-            "$value": "#B4CAC1",
-            "$description": "color.brand.clearco-30.verdigris.2 — Verdigris — nature-inspired supporting color — tint step 2."
+            "$value": "#B4CAC1"
           },
           "3": {
+            "$description": "color.brand.clearco-30.verdigris.3 — Verdigris — nature-inspired supporting color — base color (step 3, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#9EB4AB",
-            "$description": "color.brand.clearco-30.verdigris.3 — Verdigris — nature-inspired supporting color — base color (step 3, pinned to official brand hex)."
+            "$value": "#9EB4AB"
           },
           "4": {
+            "$description": "color.brand.clearco-30.verdigris.4 — Verdigris — nature-inspired supporting color — tint step 4.",
             "$type": "color",
-            "$value": "#748980",
-            "$description": "color.brand.clearco-30.verdigris.4 — Verdigris — nature-inspired supporting color — tint step 4."
+            "$value": "#748980"
           },
           "5": {
+            "$description": "color.brand.clearco-30.verdigris.5 — Verdigris — nature-inspired supporting color — tint step 5.",
             "$type": "color",
-            "$value": "#5A6E66",
-            "$description": "color.brand.clearco-30.verdigris.5 — Verdigris — nature-inspired supporting color — tint step 5."
+            "$value": "#5A6E66"
           },
           "6": {
+            "$description": "color.brand.clearco-30.verdigris.6 — Verdigris — nature-inspired supporting color — tint step 6.",
             "$type": "color",
-            "$value": "#475A53",
-            "$description": "color.brand.clearco-30.verdigris.6 — Verdigris — nature-inspired supporting color — tint step 6."
+            "$value": "#475A53"
           },
           "7": {
+            "$description": "color.brand.clearco-30.verdigris.7 — Verdigris — nature-inspired supporting color — tint step 7.",
             "$type": "color",
-            "$value": "#31453D",
-            "$description": "color.brand.clearco-30.verdigris.7 — Verdigris — nature-inspired supporting color — tint step 7."
+            "$value": "#31453D"
           },
           "8": {
+            "$description": "color.brand.clearco-30.verdigris.8 — Verdigris — nature-inspired supporting color — tint step 8.",
             "$type": "color",
-            "$value": "#1D3029",
-            "$description": "color.brand.clearco-30.verdigris.8 — Verdigris — nature-inspired supporting color — tint step 8."
+            "$value": "#1D3029"
           },
           "9": {
+            "$description": "color.brand.clearco-30.verdigris.9 — Verdigris — nature-inspired supporting color — tint step 9.",
             "$type": "color",
-            "$value": "#0D1F18",
-            "$description": "color.brand.clearco-30.verdigris.9 — Verdigris — nature-inspired supporting color — tint step 9."
+            "$value": "#0D1F18"
           }
         },
         "whiteGold": {
           "0": {
+            "$description": "color.brand.clearco-30.whiteGold.0 — White Gold — warm cream neutral — tint step 0.",
             "$type": "color",
-            "$value": "#FDF4E0",
-            "$description": "color.brand.clearco-30.whiteGold.0 — White Gold — warm cream neutral — tint step 0."
+            "$value": "#FDF4E0"
           },
           "1": {
+            "$description": "color.brand.clearco-30.whiteGold.1 — White Gold — warm cream neutral — tint step 1.",
             "$type": "color",
-            "$value": "#FBF2DE",
-            "$description": "color.brand.clearco-30.whiteGold.1 — White Gold — warm cream neutral — tint step 1."
+            "$value": "#FBF2DE"
           },
           "2": {
+            "$description": "color.brand.clearco-30.whiteGold.2 — White Gold — warm cream neutral — tint step 2.",
             "$type": "color",
-            "$value": "#F9F0DC",
-            "$description": "color.brand.clearco-30.whiteGold.2 — White Gold — warm cream neutral — tint step 2."
+            "$value": "#F9F0DC"
           },
           "3": {
+            "$description": "color.brand.clearco-30.whiteGold.3 — White Gold — warm cream neutral — tint step 3.",
             "$type": "color",
-            "$value": "#F6EDD9",
-            "$description": "color.brand.clearco-30.whiteGold.3 — White Gold — warm cream neutral — tint step 3."
+            "$value": "#F6EDD9"
           },
           "4": {
+            "$description": "color.brand.clearco-30.whiteGold.4 — White Gold — warm cream neutral — base color (step 4, pinned to official brand hex).",
             "$type": "color",
-            "$value": "#F4EBD7",
-            "$description": "color.brand.clearco-30.whiteGold.4 — White Gold — warm cream neutral — base color (step 4, pinned to official brand hex)."
+            "$value": "#F4EBD7"
           },
           "5": {
+            "$description": "color.brand.clearco-30.whiteGold.5 — White Gold — warm cream neutral — tint step 5.",
             "$type": "color",
-            "$value": "#C5BCA9",
-            "$description": "color.brand.clearco-30.whiteGold.5 — White Gold — warm cream neutral — tint step 5."
+            "$value": "#C5BCA9"
           },
           "6": {
+            "$description": "color.brand.clearco-30.whiteGold.6 — White Gold — warm cream neutral — tint step 6.",
             "$type": "color",
-            "$value": "#988F7D",
-            "$description": "color.brand.clearco-30.whiteGold.6 — White Gold — warm cream neutral — tint step 6."
+            "$value": "#988F7D"
           },
           "7": {
+            "$description": "color.brand.clearco-30.whiteGold.7 — White Gold — warm cream neutral — tint step 7.",
             "$type": "color",
-            "$value": "#6D6554",
-            "$description": "color.brand.clearco-30.whiteGold.7 — White Gold — warm cream neutral — tint step 7."
+            "$value": "#6D6554"
           },
           "8": {
+            "$description": "color.brand.clearco-30.whiteGold.8 — White Gold — warm cream neutral — tint step 8.",
             "$type": "color",
-            "$value": "#453D2D",
-            "$description": "color.brand.clearco-30.whiteGold.8 — White Gold — warm cream neutral — tint step 8."
+            "$value": "#453D2D"
           },
           "9": {
+            "$description": "color.brand.clearco-30.whiteGold.9 — White Gold — warm cream neutral — tint step 9.",
             "$type": "color",
-            "$value": "#201A0B",
-            "$description": "color.brand.clearco-30.whiteGold.9 — White Gold — warm cream neutral — tint step 9."
+            "$value": "#201A0B"
           }
         }
       }
@@ -1694,650 +1694,641 @@
   },
   "contentWidth": {
     "lg": {
+      "$description": "contentWidth.lg — Large content width (1280px). Use for: full application layouts, dashboards, data-heavy interfaces. Maximum comfortable width for most content. Common in: main app container, dashboard layouts, admin interfaces. Beyond this, consider multi-column or sidebar layouts.",
       "$type": "sizing",
-      "$value": "80em",
-      "$description": "contentWidth.lg — Large content width (1280px). Use for: full application layouts, dashboards, data-heavy interfaces. Maximum comfortable width for most content. Common in: main app container, dashboard layouts, admin interfaces. Beyond this, consider multi-column or sidebar layouts."
+      "$value": "80em"
     },
     "sm": {
+      "$description": "contentWidth.sm — Small content width (600px). Use for: prose content, documentation, blog posts, reading-focused layouts. Optimal line length for readability (~65-75 characters). Common in: article bodies, help documentation, settings panels, narrow modals.",
       "$type": "sizing",
-      "$value": "37.5em",
-      "$description": "contentWidth.sm — Small content width (600px). Use for: prose content, documentation, blog posts, reading-focused layouts. Optimal line length for readability (~65-75 characters). Common in: article bodies, help documentation, settings panels, narrow modals."
+      "$value": "37.5em"
     }
   },
   "cursor": {
     "default": {
-      "$type": "other",
-      "$value": "default",
-      "$description": "cursor.default — Standard cursor for non-interactive content. Use for text, containers, and static elements."
+      "$description": "cursor.default — Standard cursor for non-interactive content. Use for text, containers, and static elements.",
+      "$value": "default"
     },
     "interactive": {
-      "$type": "other",
-      "$value": "pointer",
-      "$description": "cursor.interactive — Cursor for clickable/interactive elements. Use 'pointer' for buttons, links, and actionable items."
+      "$description": "cursor.interactive — Cursor for clickable/interactive elements. Use 'pointer' for buttons, links, and actionable items.",
+      "$value": "pointer"
     }
   },
   "focus": {
     "ring": {
-      "color": {
-        "$type": "color",
-        "$value": "{color.base.blue.5}",
-        "$description": "focus.ring.color — Focus ring color (primary blue). High-visibility color that works on most backgrounds. Reference to color.blue.5 for consistency with primary brand color. ACCESSIBILITY: Ensure 3:1 contrast ratio against adjacent colors. May need adjustment for dark theme."
-      },
       "offset": {
+        "$description": "focus.ring.offset — Focus ring offset from element (2px). Creates gap between element and focus ring for clarity. Use for: outline-offset property. Prevents focus ring from overlapping element borders. Ensures ring is visible on both light and dark backgrounds.",
         "$type": "dimension",
-        "$value": "2px",
-        "$description": "focus.ring.offset — Focus ring offset from element (2px). Creates gap between element and focus ring for clarity. Use for: outline-offset property. Prevents focus ring from overlapping element borders. Ensures ring is visible on both light and dark backgrounds."
+        "$value": "2px"
       },
       "width": {
+        "$description": "focus.ring.width — Focus ring width (3px). Thick enough to be clearly visible per WCAG 2.4.11 (Focus Appearance). Use for: outline-width property. 3px provides clear visibility without being obtrusive. Consistent across all focusable elements.",
         "$type": "dimension",
-        "$value": "3px",
-        "$description": "focus.ring.width — Focus ring width (3px). Thick enough to be clearly visible per WCAG 2.4.11 (Focus Appearance). Use for: outline-width property. 3px provides clear visibility without being obtrusive. Consistent across all focusable elements."
+        "$value": "3px"
       }
     }
   },
   "fontSizes": {
     "2xl": {
+      "$description": "fontSizes.2xl — 2x large font size (22px). Use for: medium headings (h3), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h3 headings, sidebar section titles, panel headers.",
       "$type": "fontSizes",
-      "$value": "1.375rem",
-      "$description": "fontSizes.2xl — 2x large font size (22px). Use for: medium headings (h3), component titles, feature headings. Clearly heading-sized but not dominant. Common in: h3 headings, sidebar section titles, panel headers."
+      "$value": "1.375rem"
     },
     "3xl": {
+      "$description": "fontSizes.3xl — 3x large font size (26px). Use for: prominent headings (h3), page section titles. Commands attention without overwhelming. Common in: h3 headings, dashboard section titles, feature section headers.",
       "$type": "fontSizes",
-      "$value": "1.625rem",
-      "$description": "fontSizes.3xl — 3x large font size (26px). Use for: prominent headings (h3), page section titles. Commands attention without overwhelming. Common in: h3 headings, dashboard section titles, feature section headers."
+      "$value": "1.625rem"
     },
     "4xl": {
+      "$description": "fontSizes.4xl — 4x large font size (34px). Use for: major headings (h1-h2), page titles, hero text. Primary visual hierarchy anchor. Common in: page titles, h1/h2 headings, hero headlines. Pair with lineHeight.xs or lineHeight.sm for tighter leading.",
       "$type": "fontSizes",
-      "$value": "2.125rem",
-      "$description": "fontSizes.4xl — 4x large font size (34px). Use for: major headings (h1-h2), page titles, hero text. Primary visual hierarchy anchor. Common in: page titles, h1/h2 headings, hero headlines. Pair with lineHeight.xs or lineHeight.sm for tighter leading."
+      "$value": "2.125rem"
     },
     "lg": {
+      "$description": "fontSizes.lg — Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, h4 headings. Bridges body and heading sizes. Common in: intro paragraphs, feature descriptions, prominent labels, h4, large button text.",
       "$type": "fontSizes",
-      "$value": "1.125rem",
-      "$description": "fontSizes.lg — Large font size (18px). Use for: lead paragraphs, emphasized body text, large UI elements, h4 headings. Bridges body and heading sizes. Common in: intro paragraphs, feature descriptions, prominent labels, h4, large button text."
+      "$value": "1.125rem"
     },
     "md": {
+      "$description": "fontSizes.md — Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content, h5 headings. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text, h5.",
       "$type": "fontSizes",
-      "$value": "1rem",
-      "$description": "fontSizes.md — Medium font size (16px). DEFAULT body text size. Use for: primary body text, paragraphs, form inputs, buttons, main content, h5 headings. Browser default - optimal for extended reading. WCAG baseline assumption for contrast calculations. Common in: body text, input values, primary UI text, h5."
+      "$value": "1rem"
     },
     "sm": {
+      "$description": "fontSizes.sm — Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content, h6 headings. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons, h6. Good balance of density and readability.",
       "$type": "fontSizes",
-      "$value": "0.875rem",
-      "$description": "fontSizes.sm — Small font size (14px). Use for: secondary text, table content, form labels, captions, sidebar content, h6 headings. Comfortable for extended reading in UI contexts. Common in: data tables, form labels, navigation items, secondary buttons, h6. Good balance of density and readability."
+      "$value": "0.875rem"
     },
     "xl": {
+      "$description": "fontSizes.xl — Extra large font size (20px). Use for: subtitle text, section labels, prominent UI elements, blockquotes. Between body and heading scale. Common in: modal titles, section headers within content, blockquotes.",
       "$type": "fontSizes",
-      "$value": "1.25rem",
-      "$description": "fontSizes.xl — Extra large font size (20px). Use for: subtitle text, section labels, prominent UI elements, blockquotes. Between body and heading scale. Common in: modal titles, section headers within content, blockquotes."
+      "$value": "1.25rem"
     },
     "xs": {
+      "$description": "fontSizes.xs — Extra small font size (12px). MINIMUM readable size. Use for: helper text, timestamps, metadata, legal text, footnotes, badge content. Requires high contrast - use with strong foreground colors. Not recommended for primary content. Common in: timestamps, version numbers, copyright notices.",
       "$type": "fontSizes",
-      "$value": "0.75rem",
-      "$description": "fontSizes.xs — Extra small font size (12px). MINIMUM readable size. Use for: helper text, timestamps, metadata, legal text, footnotes, badge content. Requires high contrast - use with strong foreground colors. Not recommended for primary content. Common in: timestamps, version numbers, copyright notices."
+      "$value": "0.75rem"
     }
   },
   "fontSmoothing": {
     "moz": {
-      "$type": "other",
-      "$value": "grayscale",
-      "$description": "fontSmoothing.moz — Mozilla font smoothing for Firefox. Use for crisp text rendering in heading and body content. Apply to -moz-osx-font-smoothing CSS property."
+      "$description": "fontSmoothing.moz — Mozilla font smoothing for Firefox. Use for crisp text rendering in heading and body content. Apply to -moz-osx-font-smoothing CSS property.",
+      "$value": "grayscale"
     },
     "webkit": {
-      "$type": "other",
-      "$value": "antialiased",
-      "$description": "fontSmoothing.webkit — WebKit font smoothing for macOS/iOS. Use for crisp, thin text in heading and body text. Apply to -webkit-font-smoothing CSS property."
+      "$description": "fontSmoothing.webkit — WebKit font smoothing for macOS/iOS. Use for crisp, thin text in heading and body text. Apply to -webkit-font-smoothing CSS property.",
+      "$value": "antialiased"
     }
   },
   "fontWeights": {
     "bold": {
+      "$description": "fontWeights.bold — Bold font weight (700). Use for: headings (h1-h3), strong emphasis, critical information, maximum text prominence. Reserve for true emphasis - overuse dilutes impact. Common in: h1-h3 headings, alert titles, critical labels, strong inline emphasis (<strong>).",
       "$type": "fontWeights",
-      "$value": 700,
-      "$description": "fontWeights.bold — Bold font weight (700). Use for: headings (h1-h3), strong emphasis, critical information, maximum text prominence. Reserve for true emphasis - overuse dilutes impact. Common in: h1-h3 headings, alert titles, critical labels, strong inline emphasis (<strong>)."
+      "$value": 700
     },
     "light": {
+      "$description": "fontWeights.light — Light font weight (300). Use sparingly for: large display text, hero headlines, artistic/elegant contexts, stylized marketing content. CAUTION: Poor readability at small sizes or low contrast. Never use for body text or UI labels. Requires high contrast ratio. Common in: hero text, large quotes, stylized headings.",
       "$type": "fontWeights",
-      "$value": 300,
-      "$description": "fontWeights.light — Light font weight (300). Use sparingly for: large display text, hero headlines, artistic/elegant contexts, stylized marketing content. CAUTION: Poor readability at small sizes or low contrast. Never use for body text or UI labels. Requires high contrast ratio. Common in: hero text, large quotes, stylized headings."
+      "$value": 300
     },
     "medium": {
+      "$description": "fontWeights.medium — Medium font weight (500). Use for: subtle emphasis, navigation items, form labels, table headers, slightly prominent UI text. Noticeable but not bold - professional emphasis. Common in: nav items, active states, form labels, table column headers, subheadings.",
       "$type": "fontWeights",
-      "$value": 500,
-      "$description": "fontWeights.medium — Medium font weight (500). Use for: subtle emphasis, navigation items, form labels, table headers, slightly prominent UI text. Noticeable but not bold - professional emphasis. Common in: nav items, active states, form labels, table column headers, subheadings."
+      "$value": 500
     },
     "regular": {
+      "$description": "fontWeights.regular — Regular font weight (400). DEFAULT weight for all body text. Use for: paragraphs, descriptions, general content, form input values, most UI text. Optimized for extended reading. Most content should use this weight. Common in: body text, input values, descriptions, help text.",
       "$type": "fontWeights",
-      "$value": 400,
-      "$description": "fontWeights.regular — Regular font weight (400). DEFAULT weight for all body text. Use for: paragraphs, descriptions, general content, form input values, most UI text. Optimized for extended reading. Most content should use this weight. Common in: body text, input values, descriptions, help text."
+      "$value": 400
     },
     "semibold": {
+      "$description": "fontWeights.semibold — Semibold font weight (600). Use for: buttons, important labels, card titles, moderate emphasis headings. Strong emphasis without the heaviness of bold. Common in: button text, card titles, important labels, h4-h6 headings, badge text, tab labels.",
       "$type": "fontWeights",
-      "$value": 600,
-      "$description": "fontWeights.semibold — Semibold font weight (600). Use for: buttons, important labels, card titles, moderate emphasis headings. Strong emphasis without the heaviness of bold. Common in: button text, card titles, important labels, h4-h6 headings, badge text, tab labels."
+      "$value": 600
     }
   },
   "gridSpacing": {
     "2xl": {
+      "$description": "gridSpacing.2xl — 2x extra large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts.",
       "$type": "spacing",
-      "$value": "48px",
-      "$description": "gridSpacing.2xl — 2x extra large grid gap (48px). Use for: maximum separation in grids, presentation layouts, sparse artistic layouts."
+      "$value": "48px"
     },
     "lg": {
+      "$description": "gridSpacing.lg — Large grid gap (32px). Use for: spacious card layouts, content grids, marketing pages.",
       "$type": "spacing",
-      "$value": "32px",
-      "$description": "gridSpacing.lg — Large grid gap (32px). Use for: spacious card layouts, content grids, marketing pages."
+      "$value": "32px"
     },
     "md": {
+      "$description": "gridSpacing.md — Medium grid gap (24px). Use for: default content grids, spacious card layouts, comfortable dashboard grids.",
       "$type": "spacing",
-      "$value": "24px",
-      "$description": "gridSpacing.md — Medium grid gap (24px). Use for: default content grids, spacious card layouts, comfortable dashboard grids."
+      "$value": "24px"
     },
     "sm": {
+      "$description": "gridSpacing.sm — Small grid gap (16px). Use for: standard card grids, form layouts, compact dashboard grids.",
       "$type": "spacing",
-      "$value": "16px",
-      "$description": "gridSpacing.sm — Small grid gap (16px). Use for: standard card grids, form layouts, compact dashboard grids."
+      "$value": "16px"
     },
     "xl": {
+      "$description": "gridSpacing.xl — Extra large grid gap (40px). Use for: hero grids, feature showcases, landing page layouts.",
       "$type": "spacing",
-      "$value": "40px",
-      "$description": "gridSpacing.xl — Extra large grid gap (40px). Use for: hero grids, feature showcases, landing page layouts."
+      "$value": "40px"
     },
     "xs": {
+      "$description": "gridSpacing.xs — Extra small grid gap (8px). Use for: compact card grids, dense dashboard layouts, mobile-optimized grids, icon grids.",
       "$type": "spacing",
-      "$value": "8px",
-      "$description": "gridSpacing.xs — Extra small grid gap (8px). Use for: compact card grids, dense dashboard layouts, mobile-optimized grids, icon grids."
+      "$value": "8px"
     }
   },
   "heading": {
     "textWrap": {
-      "$type": "other",
-      "$value": "wrap",
-      "$description": "heading.textWrap — Text wrapping behavior for headings. 'wrap' allows natural line breaks, 'balance' distributes text more evenly."
+      "$description": "heading.textWrap — Text wrapping behavior for headings. 'wrap' allows natural line breaks, 'balance' distributes text more evenly.",
+      "$value": "wrap"
     }
   },
   "letterSpacing": {
     "normal": {
+      "$description": "letterSpacing.normal — Default letter spacing (0). DEFAULT for all body text and most headings. Let the typeface's natural spacing work. Optimal for reading comprehension.",
       "$type": "letterSpacing",
-      "$value": "0",
-      "$description": "letterSpacing.normal — Default letter spacing (0). DEFAULT for all body text and most headings. Let the typeface's natural spacing work. Optimal for reading comprehension."
+      "$value": "0"
     },
     "tight": {
+      "$description": "letterSpacing.tight — Slightly tight tracking (-0.025em). Use for: large headings (h1-h2), medium display text. Subtle tightening that improves visual density without sacrificing readability.",
       "$type": "letterSpacing",
-      "$value": "-0.025em",
-      "$description": "letterSpacing.tight — Slightly tight tracking (-0.025em). Use for: large headings (h1-h2), medium display text. Subtle tightening that improves visual density without sacrificing readability."
+      "$value": "-0.025em"
     },
     "tighter": {
+      "$description": "letterSpacing.tighter — Tighter tracking (-0.05em). Use for: very large display text (48px+), hero headlines, logos. Brings characters closer for visual cohesion at large sizes. CAUTION: Can reduce readability if overused.",
       "$type": "letterSpacing",
-      "$value": "-0.05em",
-      "$description": "letterSpacing.tighter — Tighter tracking (-0.05em). Use for: very large display text (48px+), hero headlines, logos. Brings characters closer for visual cohesion at large sizes. CAUTION: Can reduce readability if overused."
+      "$value": "-0.05em"
     },
     "wide": {
+      "$description": "letterSpacing.wide — Slightly wide tracking (0.025em). Use for: small text (12px or less), captions that need more breathing room. Improves legibility at small sizes.",
       "$type": "letterSpacing",
-      "$value": "0.025em",
-      "$description": "letterSpacing.wide — Slightly wide tracking (0.025em). Use for: small text (12px or less), captions that need more breathing room. Improves legibility at small sizes."
+      "$value": "0.025em"
     },
     "wider": {
+      "$description": "letterSpacing.wider — Wide tracking (0.05em). Use for: small caps, labels, overlines, all-caps text. Prevents all-caps text from feeling cramped. Common in: button text (sometimes), navigation labels, category headers.",
       "$type": "letterSpacing",
-      "$value": "0.05em",
-      "$description": "letterSpacing.wider — Wide tracking (0.05em). Use for: small caps, labels, overlines, all-caps text. Prevents all-caps text from feeling cramped. Common in: button text (sometimes), navigation labels, category headers."
+      "$value": "0.05em"
     },
     "widest": {
+      "$description": "letterSpacing.widest — Maximum tracking (0.1em). Use for: stylistic emphasis, spaced-out headings, decorative typography. Very pronounced spacing for special typographic treatments. Use sparingly.",
       "$type": "letterSpacing",
-      "$value": "0.1em",
-      "$description": "letterSpacing.widest — Maximum tracking (0.1em). Use for: stylistic emphasis, spaced-out headings, decorative typography. Very pronounced spacing for special typographic treatments. Use sparingly."
+      "$value": "0.1em"
     }
   },
   "lineHeights": {
     "2xs": {
+      "$description": "lineHeights.2xs — Extra tight line height (130%). Use for: large headings (h1) where text needs slightly more breathing room than xs but remains compact. Matches Mantine v8 h1 lineHeight (1.3). Common in: h1 page titles, primary headings.",
       "$type": "lineHeights",
-      "$value": "130%",
-      "$description": "lineHeights.2xs — Extra tight line height (130%). Use for: large headings (h1) where text needs slightly more breathing room than xs but remains compact. Matches Mantine v8 h1 lineHeight (1.3). Common in: h1 page titles, primary headings."
+      "$value": "130%"
     },
     "lg": {
+      "$description": "lineHeights.lg — Relaxed line height (165%). Use for: longer paragraphs, improved readability, wide content areas, users who need more visual separation. Better for sustained reading. Common in: article content, documentation, expanded descriptions, accessibility-focused interfaces.",
       "$type": "lineHeights",
-      "$value": "165%",
-      "$description": "lineHeights.lg — Relaxed line height (165%). Use for: longer paragraphs, improved readability, wide content areas, users who need more visual separation. Better for sustained reading. Common in: article content, documentation, expanded descriptions, accessibility-focused interfaces."
+      "$value": "165%"
     },
     "md": {
+      "$description": "lineHeights.md — Normal line height (150%). WCAG MINIMUM for body text. Use for: standard body text, paragraphs, UI descriptions, form inputs, most readable content. Baseline for accessibility compliance. Common in: body paragraphs, descriptions, form values, help text, table cells.",
       "$type": "lineHeights",
-      "$value": "150%",
-      "$description": "lineHeights.md — Normal line height (150%). WCAG MINIMUM for body text. Use for: standard body text, paragraphs, UI descriptions, form inputs, most readable content. Baseline for accessibility compliance. Common in: body paragraphs, descriptions, form values, help text, table cells."
+      "$value": "150%"
     },
     "sm": {
+      "$description": "lineHeights.sm — Snug line height (135%). Use for: smaller headings (h3-h6), subheadings, short multi-line text, compact interfaces. Tighter than body but readable for short passages. Common in: h3-h6 headings, card titles, navigation items, form labels, compact UI text.",
       "$type": "lineHeights",
-      "$value": "135%",
-      "$description": "lineHeights.sm — Snug line height (135%). Use for: smaller headings (h3-h6), subheadings, short multi-line text, compact interfaces. Tighter than body but readable for short passages. Common in: h3-h6 headings, card titles, navigation items, form labels, compact UI text."
+      "$value": "135%"
     },
     "xl": {
+      "$description": "lineHeights.xl — Loose line height (180%). Use for: long-form prose, documentation, maximum readability, accessibility accommodations. Very generous spacing between lines. Common in: blog posts, help documentation, legal text, content prioritizing readability over density.",
       "$type": "lineHeights",
-      "$value": "180%",
-      "$description": "lineHeights.xl — Loose line height (180%). Use for: long-form prose, documentation, maximum readability, accessibility accommodations. Very generous spacing between lines. Common in: blog posts, help documentation, legal text, content prioritizing readability over density."
+      "$value": "180%"
     },
     "xs": {
+      "$description": "lineHeights.xs — Tightest line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for display text 24px+ or single-line UI elements. Common in: display headlines, hero text, button text, badge labels.",
       "$type": "lineHeights",
-      "$value": "120%",
-      "$description": "lineHeights.xs — Tightest line height (120%). Use for: large display headings, hero text, single-line elements, buttons, badges. Text appears compact and impactful. CAUTION: Not accessible for multi-line body text. Only use for display text 24px+ or single-line UI elements. Common in: display headlines, hero text, button text, badge labels."
+      "$value": "120%"
     }
   },
   "motion": {
     "duration": {
       "fast": {
+        "$description": "motion.duration.fast — Fast transitions (100ms). Use for: micro-interactions, hover states, button presses, checkbox toggles, small element transitions, focus rings. Feels instantaneous but smooth. Anything faster is imperceptible. Common in: hover color changes, button active states, toggle switches, icon transitions.",
         "$type": "duration",
-        "$value": "100ms",
-        "$description": "motion.duration.fast — Fast transitions (100ms). Use for: micro-interactions, hover states, button presses, checkbox toggles, small element transitions, focus rings. Feels instantaneous but smooth. Anything faster is imperceptible. Common in: hover color changes, button active states, toggle switches, icon transitions."
+        "$value": "100ms"
       },
       "instant": {
+        "$description": "motion.duration.instant — Instant/no duration (0ms). Use for: prefers-reduced-motion fallback, immediate state changes, disabled animations, no-transition scenarios. CSS: transition-duration: 0ms; effectively disables transitions. ACCESSIBILITY: Use this as fallback for users who prefer reduced motion.",
         "$type": "duration",
-        "$value": "0ms",
-        "$description": "motion.duration.instant — Instant/no duration (0ms). Use for: prefers-reduced-motion fallback, immediate state changes, disabled animations, no-transition scenarios. CSS: transition-duration: 0ms; effectively disables transitions. ACCESSIBILITY: Use this as fallback for users who prefer reduced motion."
+        "$value": "0ms"
       },
       "normal": {
+        "$description": "motion.duration.normal — Normal transitions (200ms). DEFAULT duration for most UI transitions. Use for: dropdown menus, tooltips, tab switches, sidebar toggles, modal fade-ins, standard UI feedback. Balanced: noticeable but not slow. Common in: Dropdown, Tooltip, Tab panels, collapsible sections.",
         "$type": "duration",
-        "$value": "200ms",
-        "$description": "motion.duration.normal — Normal transitions (200ms). DEFAULT duration for most UI transitions. Use for: dropdown menus, tooltips, tab switches, sidebar toggles, modal fade-ins, standard UI feedback. Balanced: noticeable but not slow. Common in: Dropdown, Tooltip, Tab panels, collapsible sections."
+        "$value": "200ms"
       },
       "slow": {
+        "$description": "motion.duration.slow — Slow transitions (300ms). Use for: larger element transitions, slide-in panels, accordion expansions, page section reveals, image transitions. Gives eye time to track larger movements. Common in: sidebar slide, accordion panels, card reveals, hero image transitions.",
         "$type": "duration",
-        "$value": "300ms",
-        "$description": "motion.duration.slow — Slow transitions (300ms). Use for: larger element transitions, slide-in panels, accordion expansions, page section reveals, image transitions. Gives eye time to track larger movements. Common in: sidebar slide, accordion panels, card reveals, hero image transitions."
+        "$value": "300ms"
       },
       "slower": {
+        "$description": "motion.duration.slower — Slower transitions (500ms). MAXIMUM recommended duration. Use for: full-page transitions, dramatic reveals, onboarding animations, marketing flourishes. Any longer feels unresponsive. Use sparingly - only for intentional dramatic effect. Common in: page transitions, hero animations, loading sequences.",
         "$type": "duration",
-        "$value": "500ms",
-        "$description": "motion.duration.slower — Slower transitions (500ms). MAXIMUM recommended duration. Use for: full-page transitions, dramatic reveals, onboarding animations, marketing flourishes. Any longer feels unresponsive. Use sparingly - only for intentional dramatic effect. Common in: page transitions, hero animations, loading sequences."
+        "$value": "500ms"
       }
     },
     "easing": {
       "ease": {
+        "$description": "motion.easing.ease — Standard ease curve - CSS default. Quick start, gradual slow-down. Use for: general-purpose transitions when specific easing isn't needed. Good default but 'easeOut' often feels better for UI. CSS: ease. Common in: fallback transitions, simple state changes.",
         "$type": "cubicBezier",
         "$value": [
           0.25,
           0.1,
           0.25,
           1
-        ],
-        "$description": "motion.easing.ease — Standard ease curve - CSS default. Quick start, gradual slow-down. Use for: general-purpose transitions when specific easing isn't needed. Good default but 'easeOut' often feels better for UI. CSS: ease. Common in: fallback transitions, simple state changes."
+        ]
       },
       "easeIn": {
+        "$description": "motion.easing.easeIn — Ease in - starts slow, accelerates. CSS: ease-in. Use for: elements LEAVING the screen, dismissals, fade-outs, exits. Creates sense of departure/acceleration away. AVOID for entrances - feels sluggish. Common in: modal dismiss, toast exit, dropdown close, element removal animations.",
         "$type": "cubicBezier",
         "$value": [
           0.42,
           0,
           1,
           1
-        ],
-        "$description": "motion.easing.easeIn — Ease in - starts slow, accelerates. CSS: ease-in. Use for: elements LEAVING the screen, dismissals, fade-outs, exits. Creates sense of departure/acceleration away. AVOID for entrances - feels sluggish. Common in: modal dismiss, toast exit, dropdown close, element removal animations."
+        ]
       },
       "easeInOut": {
+        "$description": "motion.easing.easeInOut — Ease in and out - slow start, fast middle, slow end. CSS: ease-in-out. Use for: elements transforming in place, position changes, size changes, bidirectional animations. Natural for movements that start and end at rest. Common in: tab transitions, carousel slides, position animations, transform effects.",
         "$type": "cubicBezier",
         "$value": [
           0.42,
           0,
           0.58,
           1
-        ],
-        "$description": "motion.easing.easeInOut — Ease in and out - slow start, fast middle, slow end. CSS: ease-in-out. Use for: elements transforming in place, position changes, size changes, bidirectional animations. Natural for movements that start and end at rest. Common in: tab transitions, carousel slides, position animations, transform effects."
+        ]
       },
       "easeOut": {
+        "$description": "motion.easing.easeOut — Ease out - starts fast, decelerates. CSS: ease-out. RECOMMENDED for most UI transitions. Use for: elements ENTERING the screen, reveals, expansions, focus states. Creates sense of arrival/settling into place. Feels responsive and natural. Common in: modal open, tooltip appear, dropdown open, hover effects.",
         "$type": "cubicBezier",
         "$value": [
           0,
           0,
           0.58,
           1
-        ],
-        "$description": "motion.easing.easeOut — Ease out - starts fast, decelerates. CSS: ease-out. RECOMMENDED for most UI transitions. Use for: elements ENTERING the screen, reveals, expansions, focus states. Creates sense of arrival/settling into place. Feels responsive and natural. Common in: modal open, tooltip appear, dropdown open, hover effects."
+        ]
       },
       "emphasized": {
+        "$description": "motion.easing.emphasized — Emphasized deceleration - quick start, strong deceleration. Custom Material-inspired curve. Use for: attention-grabbing entrances, important notifications, emphasized reveals, dramatic effect. More pronounced than standard easeOut. Use sparingly for emphasis. Common in: snackbar/toast entrance, important alerts, feature reveals, celebration animations.",
         "$type": "cubicBezier",
         "$value": [
           0.2,
           0,
           0,
           1
-        ],
-        "$description": "motion.easing.emphasized — Emphasized deceleration - quick start, strong deceleration. Custom Material-inspired curve. Use for: attention-grabbing entrances, important notifications, emphasized reveals, dramatic effect. More pronounced than standard easeOut. Use sparingly for emphasis. Common in: snackbar/toast entrance, important alerts, feature reveals, celebration animations."
+        ]
       },
       "linear": {
+        "$description": "motion.easing.linear — Linear easing - constant speed, no acceleration. CSS: linear. Use for: progress bars, looping animations, continuous scrolling, mechanical movements. Feels robotic/artificial - avoid for UI interactions. Only use when constant speed is intentionally desired. Common in: progress indicators, loading spinners, continuous carousels.",
         "$type": "cubicBezier",
         "$value": [
           0,
           0,
           1,
           1
-        ],
-        "$description": "motion.easing.linear — Linear easing - constant speed, no acceleration. CSS: linear. Use for: progress bars, looping animations, continuous scrolling, mechanical movements. Feels robotic/artificial - avoid for UI interactions. Only use when constant speed is intentionally desired. Common in: progress indicators, loading spinners, continuous carousels."
+        ]
       }
     },
     "transition": {
       "emphasis": {
+        "$description": "motion.transition.emphasis — Emphasis transition (300ms emphasized curve). Use for: attention-grabbing entrances, important notifications, feature reveals. Pairs slow duration with the emphasized deceleration curve for dramatic yet controlled motion. Common in: toast entrance, alert appearance, onboarding reveals, celebration animations.",
         "$type": "transition",
         "$value": {
           "delay": "0ms",
           "duration": "{motion.duration.slow}",
           "timingFunction": "{motion.easing.emphasized}"
-        },
-        "$description": "motion.transition.emphasis — Emphasis transition (300ms emphasized curve). Use for: attention-grabbing entrances, important notifications, feature reveals. Pairs slow duration with the emphasized deceleration curve for dramatic yet controlled motion. Common in: toast entrance, alert appearance, onboarding reveals, celebration animations."
+        }
       },
       "fast": {
+        "$description": "motion.transition.fast — Fast transition (100ms ease-out). Use for: micro-interactions, hover states, button presses, checkbox toggles, focus ring transitions. Pairs fast duration with ease-out for responsive, natural feel. Common in: hover color changes, toggle switches, icon transitions, focus states.",
         "$type": "transition",
         "$value": {
           "delay": "0ms",
           "duration": "{motion.duration.fast}",
           "timingFunction": "{motion.easing.easeOut}"
-        },
-        "$description": "motion.transition.fast — Fast transition (100ms ease-out). Use for: micro-interactions, hover states, button presses, checkbox toggles, focus ring transitions. Pairs fast duration with ease-out for responsive, natural feel. Common in: hover color changes, toggle switches, icon transitions, focus states."
+        }
       },
       "instant": {
+        "$description": "motion.transition.instant — Instant transition (0ms linear). Use for: prefers-reduced-motion fallback, immediate state changes, disabling animations. Pairs duration.instant with linear easing since no motion occurs. Apply as reduced-motion override for all animated elements.",
         "$type": "transition",
         "$value": {
           "delay": "0ms",
           "duration": "{motion.duration.instant}",
           "timingFunction": "{motion.easing.linear}"
-        },
-        "$description": "motion.transition.instant — Instant transition (0ms linear). Use for: prefers-reduced-motion fallback, immediate state changes, disabling animations. Pairs duration.instant with linear easing since no motion occurs. Apply as reduced-motion override for all animated elements."
+        }
       },
       "normal": {
+        "$description": "motion.transition.normal — Normal transition (200ms ease-out). DEFAULT transition for most UI elements. Use for: dropdown menus, tooltips, tab switches, sidebar toggles, standard UI feedback. Balanced speed with natural deceleration. Common in: Dropdown open, Tooltip appear, Tab panels, collapsible sections.",
         "$type": "transition",
         "$value": {
           "delay": "0ms",
           "duration": "{motion.duration.normal}",
           "timingFunction": "{motion.easing.easeOut}"
-        },
-        "$description": "motion.transition.normal — Normal transition (200ms ease-out). DEFAULT transition for most UI elements. Use for: dropdown menus, tooltips, tab switches, sidebar toggles, standard UI feedback. Balanced speed with natural deceleration. Common in: Dropdown open, Tooltip appear, Tab panels, collapsible sections."
+        }
       },
       "slow": {
+        "$description": "motion.transition.slow — Slow transition (300ms ease-in-out). Use for: larger element transitions, slide-in panels, accordion expansions, section reveals. Pairs slow duration with ease-in-out for smooth bidirectional movement. Common in: sidebar slide, accordion panels, card reveals, drawer transitions.",
         "$type": "transition",
         "$value": {
           "delay": "0ms",
           "duration": "{motion.duration.slow}",
           "timingFunction": "{motion.easing.easeInOut}"
-        },
-        "$description": "motion.transition.slow — Slow transition (300ms ease-in-out). Use for: larger element transitions, slide-in panels, accordion expansions, section reveals. Pairs slow duration with ease-in-out for smooth bidirectional movement. Common in: sidebar slide, accordion panels, card reveals, drawer transitions."
+        }
       },
       "slower": {
+        "$description": "motion.transition.slower — Slower transition (500ms ease-in-out). MAXIMUM recommended transition. Use for: full-page transitions, dramatic reveals, marketing flourishes. Use sparingly - only for intentional dramatic effect. Common in: page transitions, hero animations, modal entrance with backdrop.",
         "$type": "transition",
         "$value": {
           "delay": "0ms",
           "duration": "{motion.duration.slower}",
           "timingFunction": "{motion.easing.easeInOut}"
-        },
-        "$description": "motion.transition.slower — Slower transition (500ms ease-in-out). MAXIMUM recommended transition. Use for: full-page transitions, dramatic reveals, marketing flourishes. Use sparingly - only for intentional dramatic effect. Common in: page transitions, hero animations, modal entrance with backdrop."
+        }
       }
     }
   },
   "opacity": {
     "0": {
+      "$description": "opacity.0 — Fully transparent (0%). Use for: hidden elements, animation start states, invisible interactive areas. Element is invisible but may still be interactive. CSS: opacity: 0; visibility: hidden for truly hidden.",
       "$type": "opacity",
-      "$value": 0,
-      "$description": "opacity.0 — Fully transparent (0%). Use for: hidden elements, animation start states, invisible interactive areas. Element is invisible but may still be interactive. CSS: opacity: 0; visibility: hidden for truly hidden."
+      "$value": 0
     },
     "5": {
+      "$description": "opacity.5 — 5% opacity - barely visible. Use for: extremely subtle hover states, ghost backgrounds, near-invisible separators. Only visible against high-contrast backgrounds.",
       "$type": "opacity",
-      "$value": 0.05,
-      "$description": "opacity.5 — 5% opacity - barely visible. Use for: extremely subtle hover states, ghost backgrounds, near-invisible separators. Only visible against high-contrast backgrounds."
+      "$value": 0.05
     },
     "10": {
+      "$description": "opacity.10 — 10% opacity - subtle transparency. Use for: light hover backgrounds, subtle shadows, faint overlays. Minimally perceptible change.",
       "$type": "opacity",
-      "$value": 0.1,
-      "$description": "opacity.10 — 10% opacity - subtle transparency. Use for: light hover backgrounds, subtle shadows, faint overlays. Minimally perceptible change."
+      "$value": 0.1
     },
     "20": {
+      "$description": "opacity.20 — 20% opacity - light transparency. Use for: hover states, light overlays, muted backgrounds. Noticeable but unobtrusive.",
       "$type": "opacity",
-      "$value": 0.2,
-      "$description": "opacity.20 — 20% opacity - light transparency. Use for: hover states, light overlays, muted backgrounds. Noticeable but unobtrusive."
+      "$value": 0.2
     },
     "25": {
+      "$description": "opacity.25 — 25% opacity - quarter visible. Use for: skeleton loading states, light dimming, subtle backgrounds. Common for placeholder content.",
       "$type": "opacity",
-      "$value": 0.25,
-      "$description": "opacity.25 — 25% opacity - quarter visible. Use for: skeleton loading states, light dimming, subtle backgrounds. Common for placeholder content."
+      "$value": 0.25
     },
     "30": {
+      "$description": "opacity.30 — 30% opacity - moderate transparency. Use for: image overlays, text shadows, moderate dimming. Visible but allows content behind to show clearly.",
       "$type": "opacity",
-      "$value": 0.3,
-      "$description": "opacity.30 — 30% opacity - moderate transparency. Use for: image overlays, text shadows, moderate dimming. Visible but allows content behind to show clearly."
+      "$value": 0.3
     },
     "40": {
+      "$description": "opacity.40 — 40% opacity - semi-transparent. Use for: medium overlays, watermarks, partially hidden content. Balanced visibility.",
       "$type": "opacity",
-      "$value": 0.4,
-      "$description": "opacity.40 — 40% opacity - semi-transparent. Use for: medium overlays, watermarks, partially hidden content. Balanced visibility."
+      "$value": 0.4
     },
     "50": {
+      "$description": "opacity.50 — 50% opacity - half visible. Use for: disabled elements (semantic alias: 'disabled'), balanced overlays, de-emphasized content. CAUTION: May not meet contrast requirements for text.",
       "$type": "opacity",
-      "$value": 0.5,
-      "$description": "opacity.50 — 50% opacity - half visible. Use for: disabled elements (semantic alias: 'disabled'), balanced overlays, de-emphasized content. CAUTION: May not meet contrast requirements for text."
+      "$value": 0.5
     },
     "60": {
+      "$description": "opacity.60 — 60% opacity - mostly visible. Use for: modal backdrops (semantic alias: 'overlay'), dimmed backgrounds, focus-drawing overlays. Content behind is visible but de-emphasized.",
       "$type": "opacity",
-      "$value": 0.6,
-      "$description": "opacity.60 — 60% opacity - mostly visible. Use for: modal backdrops (semantic alias: 'overlay'), dimmed backgrounds, focus-drawing overlays. Content behind is visible but de-emphasized."
+      "$value": 0.6
     },
     "70": {
+      "$description": "opacity.70 — 70% opacity - high visibility. Use for: heavy overlays, strong dimming, de-emphasized backgrounds. Most content visible but clearly secondary.",
       "$type": "opacity",
-      "$value": 0.7,
-      "$description": "opacity.70 — 70% opacity - high visibility. Use for: heavy overlays, strong dimming, de-emphasized backgrounds. Most content visible but clearly secondary."
+      "$value": 0.7
     },
     "75": {
+      "$description": "opacity.75 — 75% opacity - three-quarters visible. Use for: dark overlays, strong backgrounds, significant dimming. Mostly solid with hint of transparency.",
       "$type": "opacity",
-      "$value": 0.75,
-      "$description": "opacity.75 — 75% opacity - three-quarters visible. Use for: dark overlays, strong backgrounds, significant dimming. Mostly solid with hint of transparency."
+      "$value": 0.75
     },
     "80": {
+      "$description": "opacity.80 — 80% opacity - mostly solid. Use for: nearly-opaque overlays, frosted glass effects (with backdrop-filter), heavy backgrounds.",
       "$type": "opacity",
-      "$value": 0.8,
-      "$description": "opacity.80 — 80% opacity - mostly solid. Use for: nearly-opaque overlays, frosted glass effects (with backdrop-filter), heavy backgrounds."
+      "$value": 0.8
     },
     "90": {
+      "$description": "opacity.90 — 90% opacity - nearly solid. Use for: subtle transparency effects, slight see-through, glass-like surfaces. Almost indistinguishable from solid.",
       "$type": "opacity",
-      "$value": 0.9,
-      "$description": "opacity.90 — 90% opacity - nearly solid. Use for: subtle transparency effects, slight see-through, glass-like surfaces. Almost indistinguishable from solid."
+      "$value": 0.9
     },
     "100": {
+      "$description": "opacity.100 — Fully opaque (100%). Use for: solid elements, removing inherited transparency, default element state. CSS: opacity: 1; (default browser value).",
       "$type": "opacity",
-      "$value": 1,
-      "$description": "opacity.100 — Fully opaque (100%). Use for: solid elements, removing inherited transparency, default element state. CSS: opacity: 1; (default browser value)."
+      "$value": 1
     },
     "disabled": {
+      "$description": "opacity.disabled — Disabled element opacity (50%). SEMANTIC alias for opacity.50. Use for: disabled buttons, inactive controls, unavailable options. Universally recognized as 'inactive'. ACCESSIBILITY: Ensure disabled elements are still perceivable and their disabled state is communicated via aria-disabled.",
       "$type": "opacity",
-      "$value": 0.5,
-      "$description": "opacity.disabled — Disabled element opacity (50%). SEMANTIC alias for opacity.50. Use for: disabled buttons, inactive controls, unavailable options. Universally recognized as 'inactive'. ACCESSIBILITY: Ensure disabled elements are still perceivable and their disabled state is communicated via aria-disabled."
+      "$value": 0.5
     },
     "overlay": {
+      "$description": "opacity.overlay — Modal overlay opacity (60%). SEMANTIC alias for opacity.60. Use for: modal backdrops, lightbox backgrounds, focus-drawing overlays. Dims background while keeping it visible for context. Common in: Modal backdrop, Drawer overlay, image lightbox backgrounds.",
       "$type": "opacity",
-      "$value": 0.6,
-      "$description": "opacity.overlay — Modal overlay opacity (60%). SEMANTIC alias for opacity.60. Use for: modal backdrops, lightbox backgrounds, focus-drawing overlays. Dims background while keeping it visible for context. Common in: Modal backdrop, Drawer overlay, image lightbox backgrounds."
+      "$value": 0.6
     }
   },
   "paragraphIndent": {
     "none": {
+      "$description": "paragraphIndent.none — No paragraph indentation. Default for UI text.",
       "$type": "dimension",
-      "$value": "0",
-      "$description": "paragraphIndent.none — No paragraph indentation. Default for UI text."
+      "$value": "0"
     }
   },
   "paragraphSpacing": {
     "none": {
+      "$description": "paragraphSpacing.none — No paragraph spacing. Default for UI text.",
       "$type": "dimension",
-      "$value": "0",
-      "$description": "paragraphSpacing.none — No paragraph spacing. Default for UI text."
+      "$value": "0"
     }
   },
   "radius": {
     "default": {
+      "$description": "radius.default — Default border radius when no size is specified. References radius.sm (4px) as a safe default for most components. Use this when a component needs rounded corners but no specific size is mandated.",
       "$type": "borderRadius",
-      "$value": "{radius.sm}",
-      "$description": "radius.default — Default border radius when no size is specified. References radius.sm (4px) as a safe default for most components. Use this when a component needs rounded corners but no specific size is mandated."
+      "$value": "{radius.sm}"
     },
     "full": {
+      "$description": "radius.full — Full/pill radius (circular). Use for: avatar circles, round buttons, pill-shaped tags, circular indicators, FABs. Creates perfect circles on square elements or pill shapes on rectangles. Common in: Avatar, round IconButton, pill Badge, circular progress.",
       "$type": "borderRadius",
-      "$value": "9999px",
-      "$description": "radius.full — Full/pill radius (circular). Use for: avatar circles, round buttons, pill-shaped tags, circular indicators, FABs. Creates perfect circles on square elements or pill shapes on rectangles. Common in: Avatar, round IconButton, pill Badge, circular progress."
+      "$value": "9999px"
     },
     "lg": {
+      "$description": "radius.lg — Large radius (16px). Use for: hero cards, featured content, marketing components, prominent UI elements. Noticeably rounded - use intentionally for emphasis or friendly tone. Common in: feature cards, promotional banners, onboarding modals.",
       "$type": "borderRadius",
-      "$value": "1rem",
-      "$description": "radius.lg — Large radius (16px). Use for: hero cards, featured content, marketing components, prominent UI elements. Noticeably rounded - use intentionally for emphasis or friendly tone. Common in: feature cards, promotional banners, onboarding modals."
+      "$value": "1rem"
     },
     "md": {
+      "$description": "radius.md — Medium radius (8px). Use for: cards, modals, dialogs, larger containers, image thumbnails, panels. Creates friendly, approachable feel without being playful. Common in: Card, Modal, Popover, larger interactive surfaces.",
       "$type": "borderRadius",
-      "$value": "0.5rem",
-      "$description": "radius.md — Medium radius (8px). Use for: cards, modals, dialogs, larger containers, image thumbnails, panels. Creates friendly, approachable feel without being playful. Common in: Card, Modal, Popover, larger interactive surfaces."
+      "$value": "0.5rem"
     },
     "sm": {
+      "$description": "radius.sm — Small radius (4px). DEFAULT for small components. Use for: buttons, inputs, dropdowns, tooltips, small cards, table cells. The workhorse radius - professional and subtle. Most form elements use this. Common in: Button, Input, Select, Badge, Alert.",
       "$type": "borderRadius",
-      "$value": "0.25rem",
-      "$description": "radius.sm — Small radius (4px). DEFAULT for small components. Use for: buttons, inputs, dropdowns, tooltips, small cards, table cells. The workhorse radius - professional and subtle. Most form elements use this. Common in: Button, Input, Select, Badge, Alert."
+      "$value": "0.25rem"
     },
     "xl": {
+      "$description": "radius.xl — Extra large radius (32px). Use for: hero sections, large promotional elements, artistic layouts, very large cards. Significantly rounded - creates soft, approachable aesthetic. Use sparingly - can feel too casual for business applications.",
       "$type": "borderRadius",
-      "$value": "2rem",
-      "$description": "radius.xl — Extra large radius (32px). Use for: hero sections, large promotional elements, artistic layouts, very large cards. Significantly rounded - creates soft, approachable aesthetic. Use sparingly - can feel too casual for business applications."
+      "$value": "2rem"
     },
     "xs": {
+      "$description": "radius.xs — Extra small radius (2px). Use for: small badges, tags, inline code blocks, tiny indicators, nested elements inside sm-radius containers. Barely perceptible rounding - softens without calling attention. Common in: chip components, status dots, code snippets.",
       "$type": "borderRadius",
-      "$value": "0.125rem",
-      "$description": "radius.xs — Extra small radius (2px). Use for: small badges, tags, inline code blocks, tiny indicators, nested elements inside sm-radius containers. Barely perceptible rounding - softens without calling attention. Common in: chip components, status dots, code snippets."
+      "$value": "0.125rem"
     }
   },
   "scale": {
+    "$description": "scale — Global scale factor for UI components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size. Affects computed dimensions when frameworks support proportional scaling.",
     "$type": "number",
-    "$value": 1,
-    "$description": "scale — Global scale factor for UI components. 1 = default size, 0.8 = 80% size, 1.2 = 120% size. Affects computed dimensions when frameworks support proportional scaling."
+    "$value": 1
   },
   "sizing": {
     "controlHeight": {
       "lg": {
+        "$description": "sizing.controlHeight.lg — Large control height (48px). Use for: prominent controls, touch-optimized UIs.",
         "$type": "sizing",
-        "$value": "3rem",
-        "$description": "sizing.controlHeight.lg — Large control height (48px). Use for: prominent controls, touch-optimized UIs."
+        "$value": "3rem"
       },
       "md": {
+        "$description": "sizing.controlHeight.md — Medium control height (42px). DEFAULT size for most controls.",
         "$type": "sizing",
-        "$value": "2.625rem",
-        "$description": "sizing.controlHeight.md — Medium control height (42px). DEFAULT size for most controls."
+        "$value": "2.625rem"
       },
       "sm": {
+        "$description": "sizing.controlHeight.sm — Small control height (36px). Use for: secondary controls, compact layouts.",
         "$type": "sizing",
-        "$value": "2.25rem",
-        "$description": "sizing.controlHeight.sm — Small control height (36px). Use for: secondary controls, compact layouts."
+        "$value": "2.25rem"
       },
       "xl": {
+        "$description": "sizing.controlHeight.xl — Extra large control height (60px). Use for: marketing forms, high-emphasis controls.",
         "$type": "sizing",
-        "$value": "3.75rem",
-        "$description": "sizing.controlHeight.xl — Extra large control height (60px). Use for: marketing forms, high-emphasis controls."
+        "$value": "3.75rem"
       },
       "xs": {
+        "$description": "sizing.controlHeight.xs — Extra small control height (30px). Use for: compact forms, inline actions, space-constrained UIs.",
         "$type": "sizing",
-        "$value": "1.875rem",
-        "$description": "sizing.controlHeight.xs — Extra small control height (30px). Use for: compact forms, inline actions, space-constrained UIs."
+        "$value": "1.875rem"
       }
     },
     "icon": {
       "lg": {
+        "$description": "sizing.icon.lg — Large icon size (24px). Use for: prominent icons, action icons, toolbar icons.",
         "$type": "sizing",
-        "$value": "1.5rem",
-        "$description": "sizing.icon.lg — Large icon size (24px). Use for: prominent icons, action icons, toolbar icons."
+        "$value": "1.5rem"
       },
       "md": {
+        "$description": "sizing.icon.md — Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons.",
         "$type": "sizing",
-        "$value": "1.25rem",
-        "$description": "sizing.icon.md — Medium icon size (20px). DEFAULT for most icons. Use for: standalone icons, navigation icons."
+        "$value": "1.25rem"
       },
       "sm": {
+        "$description": "sizing.icon.sm — Small icon size (16px). Use for: inline icons, button icons with text, input icons.",
         "$type": "sizing",
-        "$value": "1rem",
-        "$description": "sizing.icon.sm — Small icon size (16px). Use for: inline icons, button icons with text, input icons."
+        "$value": "1rem"
       },
       "xl": {
+        "$description": "sizing.icon.xl — Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons.",
         "$type": "sizing",
-        "$value": "2rem",
-        "$description": "sizing.icon.xl — Extra large icon size (32px). Use for: feature icons, empty state illustrations, marketing icons."
+        "$value": "2rem"
       },
       "xs": {
+        "$description": "sizing.icon.xs — Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs.",
         "$type": "sizing",
-        "$value": "0.75rem",
-        "$description": "sizing.icon.xs — Extra small icon size (12px). Use for: inline indicators, badge icons, compact UIs."
+        "$value": "0.75rem"
       }
     }
   },
   "spacing": {
     "2xl": {
+      "$description": "spacing.2xl — 2x extra large spacing (40px). Use for: maximum section separation, page-level padding, large hero spacing, full-width container margins.",
       "$type": "spacing",
-      "$value": "2.5rem",
-      "$description": "spacing.2xl — 2x extra large spacing (40px). Use for: maximum section separation, page-level padding, large hero spacing, full-width container margins."
+      "$value": "2.5rem"
     },
     "2xs": {
+      "$description": "spacing.2xs — 2x extra small spacing (8px). Use for: minimal internal padding, tight icon gaps, ultra-compact components, subtle spacing between inline elements.",
       "$type": "spacing",
-      "$value": "0.5rem",
-      "$description": "spacing.2xs — 2x extra small spacing (8px). Use for: minimal internal padding, tight icon gaps, ultra-compact components, subtle spacing between inline elements."
+      "$value": "0.5rem"
     },
     "lg": {
+      "$description": "spacing.lg — Large spacing (20px). Use for: generous padding, separation between related groups, dialog/modal padding, card spacing.",
       "$type": "spacing",
-      "$value": "1.25rem",
-      "$description": "spacing.lg — Large spacing (20px). Use for: generous padding, separation between related groups, dialog/modal padding, card spacing."
+      "$value": "1.25rem"
     },
     "md": {
+      "$description": "spacing.md — Medium spacing (16px). DEFAULT spacing value. Use for: standard gaps between elements, modal padding, card padding, section padding within components.",
       "$type": "spacing",
-      "$value": "1rem",
-      "$description": "spacing.md — Medium spacing (16px). DEFAULT spacing value. Use for: standard gaps between elements, modal padding, card padding, section padding within components."
+      "$value": "1rem"
     },
     "sm": {
+      "$description": "spacing.sm — Small spacing (12px). Use for: standard component internal padding, form field padding, list item padding, card content padding.",
       "$type": "spacing",
-      "$value": "0.75rem",
-      "$description": "spacing.sm — Small spacing (12px). Use for: standard component internal padding, form field padding, list item padding, card content padding."
+      "$value": "0.75rem"
     },
     "xl": {
+      "$description": "spacing.xl — Extra large spacing (32px). Use for: major section separation, page-level margins, large component padding, hero sections.",
       "$type": "spacing",
-      "$value": "2rem",
-      "$description": "spacing.xl — Extra large spacing (32px). Use for: major section separation, page-level margins, large component padding, hero sections."
+      "$value": "2rem"
     },
     "xs": {
+      "$description": "spacing.xs — Extra small spacing (10px). Use for: tight padding in compact components, icon-to-text gaps, inline element spacing, dense data tables.",
       "$type": "spacing",
-      "$value": "0.625rem",
-      "$description": "spacing.xs — Extra small spacing (10px). Use for: tight padding in compact components, icon-to-text gaps, inline element spacing, dense data tables."
+      "$value": "0.625rem"
     }
   },
   "textCase": {
     "capitalize": {
+      "$description": "textCase.capitalize — Capitalize first letter of each word. Use for: titles, headings.",
       "$type": "textCase",
-      "$value": "capitalize",
-      "$description": "textCase.capitalize — Capitalize first letter of each word. Use for: titles, headings."
+      "$value": "capitalize"
     },
     "lowercase": {
+      "$description": "textCase.lowercase — All lowercase. Use rarely in UI.",
       "$type": "textCase",
-      "$value": "lowercase",
-      "$description": "textCase.lowercase — All lowercase. Use rarely in UI."
+      "$value": "lowercase"
     },
     "none": {
+      "$description": "textCase.none — No text transformation. Default for most text.",
       "$type": "textCase",
-      "$value": "none",
-      "$description": "textCase.none — No text transformation. Default for most text."
+      "$value": "none"
     },
     "uppercase": {
+      "$description": "textCase.uppercase — All uppercase. Use for: overlines, labels, buttons (sparingly).",
       "$type": "textCase",
-      "$value": "uppercase",
-      "$description": "textCase.uppercase — All uppercase. Use for: overlines, labels, buttons (sparingly)."
+      "$value": "uppercase"
     }
   },
   "textDecoration": {
     "none": {
+      "$description": "textDecoration.none — No text decoration. Default for most text.",
       "$type": "textDecoration",
-      "$value": "none",
-      "$description": "textDecoration.none — No text decoration. Default for most text."
+      "$value": "none"
     },
     "strikethrough": {
+      "$description": "textDecoration.strikethrough — Strikethrough text. Use for: deleted/removed content, completed tasks.",
       "$type": "textDecoration",
-      "$value": "line-through",
-      "$description": "textDecoration.strikethrough — Strikethrough text. Use for: deleted/removed content, completed tasks."
+      "$value": "line-through"
     },
     "underline": {
+      "$description": "textDecoration.underline — Underlined text. Use for: links, emphasized content.",
       "$type": "textDecoration",
-      "$value": "underline",
-      "$description": "textDecoration.underline — Underlined text. Use for: links, emphasized content."
+      "$value": "underline"
     }
   },
   "typography": {
     "blockquote": {
+      "$description": "typography.blockquote — Blockquote text (20px light). Use for: prominent quotes, feature testimonials, highlighted citations.",
       "$type": "typography",
       "$value": {
         "fontFamily": "{fontFamilies.heading}",
@@ -2346,11 +2337,11 @@
         "letterSpacing": "{letterSpacing.normal}",
         "lineHeight": "{lineHeights.lg}",
         "paragraphSpacing": "{paragraphSpacing.none}"
-      },
-      "$description": "typography.blockquote — Blockquote text (20px light). Use for: prominent quotes, feature testimonials, highlighted citations."
+      }
     },
     "body": {
       "lg": {
+        "$description": "typography.body.lg — Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.body}",
@@ -2359,10 +2350,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.md}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.body.lg — Large body text (18px). Use for: lead paragraphs, emphasized content, feature descriptions."
+        }
       },
       "md": {
+        "$description": "typography.body.md — Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.body}",
@@ -2371,10 +2362,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.md}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.body.md — Medium body text (16px). DEFAULT for paragraphs, descriptions, and primary content."
+        }
       },
       "sm": {
+        "$description": "typography.body.sm — Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.body}",
@@ -2383,10 +2374,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.md}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.body.sm — Small body text (14px). Use for: secondary content, captions in dense layouts, table cells, sidebar text."
+        }
       },
       "xl": {
+        "$description": "typography.body.xl — Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.body}",
@@ -2395,11 +2386,11 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.md}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.body.xl — Extra large body text (20px). Use for: intro paragraphs, prominent content, marketing copy."
+        }
       }
     },
     "button": {
+      "$description": "typography.button — Button text (14px semibold). Use for: all button variants, CTAs, action triggers.",
       "$type": "typography",
       "$value": {
         "fontFamily": "{fontFamilies.body}",
@@ -2408,10 +2399,10 @@
         "letterSpacing": "{letterSpacing.normal}",
         "lineHeight": "{lineHeights.xs}",
         "paragraphSpacing": "{paragraphSpacing.none}"
-      },
-      "$description": "typography.button — Button text (14px semibold). Use for: all button variants, CTAs, action triggers."
+      }
     },
     "caption": {
+      "$description": "typography.caption — Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata.",
       "$type": "typography",
       "$value": {
         "fontFamily": "{fontFamilies.body}",
@@ -2420,10 +2411,10 @@
         "letterSpacing": "{letterSpacing.wide}",
         "lineHeight": "{lineHeights.md}",
         "paragraphSpacing": "{paragraphSpacing.none}"
-      },
-      "$description": "typography.caption — Caption text (12px regular). Use for: image captions, helper text, timestamps, metadata."
+      }
     },
     "code": {
+      "$description": "typography.code — Code text (14px regular monospace). Use for: inline code, code blocks, technical content, API references.",
       "$type": "typography",
       "$value": {
         "fontFamily": "{fontFamilies.mono}",
@@ -2432,11 +2423,11 @@
         "letterSpacing": "{letterSpacing.normal}",
         "lineHeight": "{lineHeights.lg}",
         "paragraphSpacing": "{paragraphSpacing.none}"
-      },
-      "$description": "typography.code — Code text (14px regular monospace). Use for: inline code, code blocks, technical content, API references."
+      }
     },
     "display": {
       "lg": {
+        "$description": "typography.display.lg — Large display text (34px light). Use for: hero headlines, marketing banners, splash screens.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2445,10 +2436,10 @@
           "letterSpacing": "{letterSpacing.tighter}",
           "lineHeight": "{lineHeights.xs}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.display.lg — Large display text (34px light). Use for: hero headlines, marketing banners, splash screens."
+        }
       },
       "md": {
+        "$description": "typography.display.md — Medium display text (26px light). Use for: secondary hero text, feature highlights, callouts.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2457,12 +2448,12 @@
           "letterSpacing": "{letterSpacing.tight}",
           "lineHeight": "{lineHeights.xs}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.display.md — Medium display text (26px light). Use for: secondary hero text, feature highlights, callouts."
+        }
       }
     },
     "heading": {
       "h1": {
+        "$description": "typography.heading.h1 — Page title (34px bold). Use for: main page headings, hero titles, primary page headers.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2471,10 +2462,10 @@
           "letterSpacing": "{letterSpacing.tight}",
           "lineHeight": "{lineHeights.2xs}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.heading.h1 — Page title (34px bold). Use for: main page headings, hero titles, primary page headers."
+        }
       },
       "h2": {
+        "$description": "typography.heading.h2 — Section heading (26px bold). Use for: major sections, content dividers, feature headers.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2483,10 +2474,10 @@
           "letterSpacing": "{letterSpacing.tight}",
           "lineHeight": "{lineHeights.sm}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.heading.h2 — Section heading (26px bold). Use for: major sections, content dividers, feature headers."
+        }
       },
       "h3": {
+        "$description": "typography.heading.h3 — Subsection heading (22px semibold). Use for: subsections, panel headers, grouped content titles.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2495,10 +2486,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.sm}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.heading.h3 — Subsection heading (22px semibold). Use for: subsections, panel headers, grouped content titles."
+        }
       },
       "h4": {
+        "$description": "typography.heading.h4 — Card heading (18px semibold). Use for: card titles, modal headers, component titles.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2507,10 +2498,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.sm}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.heading.h4 — Card heading (18px semibold). Use for: card titles, modal headers, component titles."
+        }
       },
       "h5": {
+        "$description": "typography.heading.h5 — Small heading (16px semibold). Use for: minor sections, list group titles, compact headers.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2519,10 +2510,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.md}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.heading.h5 — Small heading (16px semibold). Use for: minor sections, list group titles, compact headers."
+        }
       },
       "h6": {
+        "$description": "typography.heading.h6 — Label heading (14px semibold). Use for: label-like headings, form section titles, metadata headers.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.heading}",
@@ -2531,11 +2522,11 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.md}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.heading.h6 — Label heading (14px semibold). Use for: label-like headings, form section titles, metadata headers."
+        }
       }
     },
     "input": {
+      "$description": "typography.input — Input text (16px regular). Use for: form input values, textarea content, select values.",
       "$type": "typography",
       "$value": {
         "fontFamily": "{fontFamilies.body}",
@@ -2544,11 +2535,11 @@
         "letterSpacing": "{letterSpacing.normal}",
         "lineHeight": "{lineHeights.md}",
         "paragraphSpacing": "{paragraphSpacing.none}"
-      },
-      "$description": "typography.input — Input text (16px regular). Use for: form input values, textarea content, select values."
+      }
     },
     "label": {
       "lg": {
+        "$description": "typography.label.lg — Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.body}",
@@ -2557,10 +2548,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.sm}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.label.lg — Large label (16px medium). Use for: prominent labels, section labels, emphasized form fields."
+        }
       },
       "md": {
+        "$description": "typography.label.md — Medium label (14px medium). DEFAULT for form labels, field labels, control labels.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.body}",
@@ -2569,10 +2560,10 @@
           "letterSpacing": "{letterSpacing.normal}",
           "lineHeight": "{lineHeights.sm}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.label.md — Medium label (14px medium). DEFAULT for form labels, field labels, control labels."
+        }
       },
       "sm": {
+        "$description": "typography.label.sm — Small label (12px medium). Use for: compact form labels, helper text labels, dense UI.",
         "$type": "typography",
         "$value": {
           "fontFamily": "{fontFamilies.body}",
@@ -2581,11 +2572,11 @@
           "letterSpacing": "{letterSpacing.wide}",
           "lineHeight": "{lineHeights.sm}",
           "paragraphSpacing": "{paragraphSpacing.none}"
-        },
-        "$description": "typography.label.sm — Small label (12px medium). Use for: compact form labels, helper text labels, dense UI."
+        }
       }
     },
     "overline": {
+      "$description": "typography.overline — Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Typically uppercase.",
       "$type": "typography",
       "$value": {
         "fontFamily": "{fontFamilies.body}",
@@ -2594,10 +2585,10 @@
         "letterSpacing": "{letterSpacing.wider}",
         "lineHeight": "{lineHeights.sm}",
         "paragraphSpacing": "{paragraphSpacing.none}"
-      },
-      "$description": "typography.overline — Overline text (12px medium, wide tracking). Use for: category labels, eyebrow text, section markers. Typically uppercase."
+      }
     },
     "quote": {
+      "$description": "typography.quote — Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes.",
       "$type": "typography",
       "$value": {
         "fontFamily": "{fontFamilies.body}",
@@ -2606,87 +2597,86 @@
         "letterSpacing": "{letterSpacing.normal}",
         "lineHeight": "{lineHeights.lg}",
         "paragraphSpacing": "{paragraphSpacing.none}"
-      },
-      "$description": "typography.quote — Quote text (18px regular italic-style). Use for: inline quotes, testimonials, pull quotes."
+      }
     }
   },
   "verticalRhythm": {
     "2xl": {
+      "$description": "verticalRhythm.2xl — Triple baseline (76.8px). Use for: page section breaks, major content area separations, hero-to-content transitions.",
       "$type": "spacing",
-      "$value": "4.8rem",
-      "$description": "verticalRhythm.2xl — Triple baseline (76.8px). Use for: page section breaks, major content area separations, hero-to-content transitions."
+      "$value": "4.8rem"
     },
     "lg": {
+      "$description": "verticalRhythm.lg — 1.5 baselines (38.4px). Use for: heading top margins, spacing before new sections within content, emphasis breaks.",
       "$type": "spacing",
-      "$value": "2.4rem",
-      "$description": "verticalRhythm.lg — 1.5 baselines (38.4px). Use for: heading top margins, spacing before new sections within content, emphasis breaks."
+      "$value": "2.4rem"
     },
     "md": {
+      "$description": "verticalRhythm.md — Single baseline (25.6px). DEFAULT prose spacing. Use for: paragraph margins, standard content block spacing, default vertical rhythm.",
       "$type": "spacing",
-      "$value": "1.6rem",
-      "$description": "verticalRhythm.md — Single baseline (25.6px). DEFAULT prose spacing. Use for: paragraph margins, standard content block spacing, default vertical rhythm."
+      "$value": "1.6rem"
     },
     "sm": {
+      "$description": "verticalRhythm.sm — Half baseline (12.8px). Use for: heading bottom margins, spacing after inline elements, paragraph-adjacent element spacing.",
       "$type": "spacing",
-      "$value": "0.8rem",
-      "$description": "verticalRhythm.sm — Half baseline (12.8px). Use for: heading bottom margins, spacing after inline elements, paragraph-adjacent element spacing."
+      "$value": "0.8rem"
     },
     "xl": {
+      "$description": "verticalRhythm.xl — Double baseline (51.2px). Use for: major section breaks in prose, chapter-level separations, significant content divisions.",
       "$type": "spacing",
-      "$value": "3.2rem",
-      "$description": "verticalRhythm.xl — Double baseline (51.2px). Use for: major section breaks in prose, chapter-level separations, significant content divisions."
+      "$value": "3.2rem"
     },
     "xs": {
+      "$description": "verticalRhythm.xs — Quarter baseline (6.4px). Use for: list item spacing within tight lists, line spacing adjustments, micro-spacing in prose.",
       "$type": "spacing",
-      "$value": "0.4rem",
-      "$description": "verticalRhythm.xs — Quarter baseline (6.4px). Use for: list item spacing within tight lists, line spacing adjustments, micro-spacing in prose."
+      "$value": "0.4rem"
     }
   },
   "zIndex": {
     "app": {
+      "$description": "zIndex.app — Application layer (z-index: 100). Use for: app-level UI chrome, sidebars, persistent navigation. First elevated layer above base content. Common in: app shells, navigation drawers, persistent toolbars.",
       "$type": "number",
-      "$value": 100,
-      "$description": "zIndex.app — Application layer (z-index: 100). Use for: app-level UI chrome, sidebars, persistent navigation. First elevated layer above base content. Common in: app shells, navigation drawers, persistent toolbars."
+      "$value": 100
     },
     "base": {
+      "$description": "zIndex.base — Base layer (z-index: 0). DEFAULT for all standard content. Use for: page content, cards, sections, anything in normal document flow. Establishes baseline - everything else stacks above this. Never use negative z-index unless absolutely necessary.",
       "$type": "number",
-      "$value": 0,
-      "$description": "zIndex.base — Base layer (z-index: 0). DEFAULT for all standard content. Use for: page content, cards, sections, anything in normal document flow. Establishes baseline - everything else stacks above this. Never use negative z-index unless absolutely necessary."
+      "$value": 0
     },
     "dropdown": {
+      "$description": "zIndex.dropdown — Dropdown layer (z-index: 150). Use for: dropdown menus, select options, autocomplete lists, combobox panels. Above app chrome but below sticky headers. Common in: Select menu, Dropdown, Autocomplete, Menu, Popover (when not in modal).",
       "$type": "number",
-      "$value": 150,
-      "$description": "zIndex.dropdown — Dropdown layer (z-index: 150). Use for: dropdown menus, select options, autocomplete lists, combobox panels. Above app chrome but below sticky headers. Common in: Select menu, Dropdown, Autocomplete, Menu, Popover (when not in modal)."
+      "$value": 150
     },
     "max": {
+      "$description": "zIndex.max — Maximum layer (z-index: 9999). HIGHEST layer - use sparingly. Use for: critical system overlays, loading states that must block all interaction, debug overlays. Reserved for truly exceptional cases where nothing else should appear on top.",
       "$type": "number",
-      "$value": 9999,
-      "$description": "zIndex.max — Maximum layer (z-index: 9999). HIGHEST layer - use sparingly. Use for: critical system overlays, loading states that must block all interaction, debug overlays. Reserved for truly exceptional cases where nothing else should appear on top."
+      "$value": 9999
     },
     "modal": {
+      "$description": "zIndex.modal — Modal layer (z-index: 400). Use for: modal dialogs, side drawers, full-screen overlays, dialog content. Primary overlay content layer - above backdrop but below popovers. Common in: Modal content, Drawer content, Dialog, Sheet, full-screen menus.",
       "$type": "number",
-      "$value": 400,
-      "$description": "zIndex.modal — Modal layer (z-index: 400). Use for: modal dialogs, side drawers, full-screen overlays, dialog content. Primary overlay content layer - above backdrop but below popovers. Common in: Modal content, Drawer content, Dialog, Sheet, full-screen menus."
+      "$value": 400
     },
     "overlay": {
+      "$description": "zIndex.overlay — Overlay layer (z-index: 300). Use for: modal backdrops, drawer overlays, lightbox backgrounds, focus-trap containers. Dims/blocks underlying content. Separate from modal content to allow proper stacking. Common in: Modal backdrop, Drawer backdrop, lightbox overlay.",
       "$type": "number",
-      "$value": 300,
-      "$description": "zIndex.overlay — Overlay layer (z-index: 300). Use for: modal backdrops, drawer overlays, lightbox backgrounds, focus-trap containers. Dims/blocks underlying content. Separate from modal content to allow proper stacking. Common in: Modal backdrop, Drawer backdrop, lightbox overlay."
+      "$value": 300
     },
     "popover": {
+      "$description": "zIndex.popover — Popover layer (z-index: 500). Use for: popovers triggered from within modals, nested floating elements, color pickers, date pickers in modals. Above modal content but below tooltips. Common in: DatePicker in modal, ColorPicker in modal, nested menus.",
       "$type": "number",
-      "$value": 500,
-      "$description": "zIndex.popover — Popover layer (z-index: 500). Use for: popovers triggered from within modals, nested floating elements, color pickers, date pickers in modals. Above modal content but below tooltips. Common in: DatePicker in modal, ColorPicker in modal, nested menus."
+      "$value": 500
     },
     "sticky": {
+      "$description": "zIndex.sticky — Sticky layer (z-index: 200). Use for: sticky headers, fixed navigation, persistent UI elements, scroll-aware banners. Stays visible during scroll but below overlay content. Common in: Sticky header, fixed sidebar, persistent action bars, scroll-to-top buttons.",
       "$type": "number",
-      "$value": 200,
-      "$description": "zIndex.sticky — Sticky layer (z-index: 200). Use for: sticky headers, fixed navigation, persistent UI elements, scroll-aware banners. Stays visible during scroll but below overlay content. Common in: Sticky header, fixed sidebar, persistent action bars, scroll-to-top buttons."
+      "$value": 200
     },
     "tooltip": {
+      "$description": "zIndex.tooltip — Tooltip layer (z-index: 600). Use for: tooltips, toasts, notifications, snackbars. Near top of standard layers. Common in: Tooltip, Toast, Snackbar, notification badges, loading indicators.",
       "$type": "number",
-      "$value": 600,
-      "$description": "zIndex.tooltip — Tooltip layer (z-index: 600). Use for: tooltips, toasts, notifications, snackbars. Near top of standard layers. Common in: Tooltip, Toast, Snackbar, notification badges, loading indicators."
+      "$value": 600
     }
   }
 }
