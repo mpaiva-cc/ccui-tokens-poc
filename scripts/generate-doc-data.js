@@ -2,7 +2,7 @@
  * Generate Color Doc-Data JSON for Figma Data Populator
  *
  * Reads built color primitives from dist/tokens-studio/primitives.json
- * and generates one JSON file per color group in dist/doc-data/.
+ * and generates a single consolidated JSON file at dist/doc-data/colors.json.
  *
  * Usage: npm run generate:doc-data (after npm run build)
  */
@@ -12,6 +12,7 @@ import { parse, converter, formatHex } from 'culori';
 
 const distDir = 'dist/tokens-studio';
 const outputDir = 'dist/doc-data';
+const outputFile = path.join(outputDir, 'colors.json');
 
 const toOklch = converter('oklch');
 
@@ -138,10 +139,7 @@ function main() {
   const primitives = readJSON(path.join(distDir, 'primitives.json'));
   const colorData = primitives.color;
 
-  fs.mkdirSync(outputDir, { recursive: true });
-
-  const indexGroups = [];
-  let totalColors = 0;
+  const allColors = [];
 
   // --- Base palette scales ---
   for (const scaleName of BASE_SCALES) {
@@ -152,39 +150,17 @@ function main() {
     }
 
     const groupName = toGroupLabel('base', scaleName);
-    const entries = processScale(scaleObj, `color.base.${scaleName}`, groupName);
-    const fileName = `base-${scaleName}.json`;
-
-    fs.writeFileSync(
-      path.join(outputDir, fileName),
-      JSON.stringify(entries, null, 2) + '\n',
-      'utf-8',
-    );
-
-    indexGroups.push({ file: fileName, groupName, count: entries.length });
-    totalColors += entries.length;
+    allColors.push(...processScale(scaleObj, `color.base.${scaleName}`, groupName));
   }
 
   // --- Base singletons ---
-  const singletonEntries = [];
   for (const name of BASE_SINGLETONS) {
     const token = colorData.base[name];
     if (!token || !token.$value) continue;
 
-    singletonEntries.push(
+    allColors.push(
       processSingleton(token, `color.base.${name}`, toGroupLabel('base', name)),
     );
-  }
-
-  if (singletonEntries.length > 0) {
-    const fileName = 'base-singletons.json';
-    fs.writeFileSync(
-      path.join(outputDir, fileName),
-      JSON.stringify(singletonEntries, null, 2) + '\n',
-      'utf-8',
-    );
-    indexGroups.push({ file: fileName, groupName: 'Base / Singletons', count: singletonEntries.length });
-    totalColors += singletonEntries.length;
   }
 
   // --- Brand palettes (dynamic) ---
@@ -196,42 +172,18 @@ function main() {
       if (!scaleObj || typeof scaleObj !== 'object') continue;
 
       const groupName = toGroupLabel('brand', `${brandGroup} / ${colorName}`);
-      const entries = processScale(
-        scaleObj,
-        `color.brand.${brandGroup}.${colorName}`,
-        groupName,
+      allColors.push(
+        ...processScale(scaleObj, `color.brand.${brandGroup}.${colorName}`, groupName),
       );
-      const fileName = `brand-${brandGroup}-${colorName}.json`;
-
-      fs.writeFileSync(
-        path.join(outputDir, fileName),
-        JSON.stringify(entries, null, 2) + '\n',
-        'utf-8',
-      );
-
-      indexGroups.push({ file: fileName, groupName, count: entries.length });
-      totalColors += entries.length;
     }
   }
 
-  // --- Index file ---
-  const index = {
-    generated: new Date().toISOString().split('T')[0],
-    totalFiles: indexGroups.length,
-    totalColors,
-    groups: indexGroups,
-  };
+  // --- Write single consolidated file ---
+  fs.mkdirSync(outputDir, { recursive: true });
+  fs.writeFileSync(outputFile, JSON.stringify(allColors, null, 2) + '\n', 'utf-8');
 
-  fs.writeFileSync(
-    path.join(outputDir, '_index.json'),
-    JSON.stringify(index, null, 2) + '\n',
-    'utf-8',
-  );
-
-  // --- Summary ---
-  console.log(`Doc-data written to ${outputDir}/`);
-  console.log(`  Files: ${indexGroups.length} data files + 1 index`);
-  console.log(`  Total colors: ${totalColors}`);
+  console.log(`Doc-data written to ${outputFile}`);
+  console.log(`  Total colors: ${allColors.length}`);
 }
 
 main();
