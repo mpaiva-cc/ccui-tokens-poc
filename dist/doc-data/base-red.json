@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.base.red.0",
+    "groupName": "Base / Red",
+    "description": "Lightest red - error alert backgrounds, validation field backgrounds",
+    "hex": "#FEF1F0",
+    "oklch": "96.8% 0.0141 22.8°"
+  },
+  {
+    "tokenName": "color.base.red.1",
+    "groupName": "Base / Red",
+    "description": "Light red - hover state for error backgrounds",
+    "hex": "#FCDCDA",
+    "oklch": "92.0% 0.0357 22.1°"
+  },
+  {
+    "tokenName": "color.base.red.2",
+    "groupName": "Base / Red",
+    "description": "Mid-light red - progress indicators, decorative",
+    "hex": "#F9B8B4",
+    "oklch": "84.1% 0.0761 22.8°"
+  },
+  {
+    "tokenName": "color.base.red.3",
+    "groupName": "Base / Red",
+    "description": "Medium red - icons on error backgrounds",
+    "hex": "#F4928C",
+    "oklch": "76.1% 0.1195 24.0°"
+  },
+  {
+    "tokenName": "color.base.red.4",
+    "groupName": "Base / Red",
+    "description": "Mid red - error icons on white backgrounds",
+    "hex": "#ED6A63",
+    "oklch": "68.3% 0.1636 25.4°"
+  },
+  {
+    "tokenName": "color.base.red.5",
+    "groupName": "Base / Red",
+    "description": "Base red - primary destructive buttons, critical alerts",
+    "hex": "#E5413A",
+    "oklch": "61.6% 0.2019 27.3°"
+  },
+  {
+    "tokenName": "color.base.red.6",
+    "groupName": "Base / Red",
+    "description": "Dark red - error text on white (6:1 contrast = AA), danger buttons",
+    "hex": "#CF2720",
+    "oklch": "55.4% 0.2035 28.5°"
+  },
+  {
+    "tokenName": "color.base.red.7",
+    "groupName": "Base / Red",
+    "description": "Darker red - error text with maximum contrast (8:1 = AAA)",
+    "hex": "#A01D18",
+    "oklch": "45.8% 0.1671 28.3°"
+  },
+  {
+    "tokenName": "color.base.red.8",
+    "groupName": "Base / Red",
+    "description": "Very dark red - text on light red backgrounds",
+    "hex": "#731511",
+    "oklch": "36.4% 0.1288 28.2°"
+  },
+  {
+    "tokenName": "color.base.red.9",
+    "groupName": "Base / Red",
+    "description": "Darkest red - reserved for extreme emphasis",
+    "hex": "#480D0B",
+    "oklch": "26.7% 0.0890 27.1°"
+  }
+]

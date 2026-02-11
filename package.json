@@ -22,6 +22,7 @@
     "watch": "nodemon --watch src --ext json --exec npm run build",
     "catalog": "node ./scripts/catalog.js",
     "generate:brand-palettes": "node scripts/generate-brand-palettes.js",
+    "generate:doc-data": "node scripts/generate-doc-data.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "postinstall": "npm run build",

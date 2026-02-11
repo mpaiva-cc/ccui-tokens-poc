@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.base.violet.0",
+    "groupName": "Base / Violet",
+    "description": "Lightest violet - feature highlight backgrounds",
+    "hex": "#F5F1FD",
+    "oklch": "96.5% 0.0165 301.2°"
+  },
+  {
+    "tokenName": "color.base.violet.1",
+    "groupName": "Base / Violet",
+    "description": "Light violet - hover states",
+    "hex": "#E6DCFA",
+    "oklch": "91.2% 0.0418 300.8°"
+  },
+  {
+    "tokenName": "color.base.violet.2",
+    "groupName": "Base / Violet",
+    "description": "Mid-light violet - decorative",
+    "hex": "#CDB9F5",
+    "oklch": "82.3% 0.0855 299.8°"
+  },
+  {
+    "tokenName": "color.base.violet.3",
+    "groupName": "Base / Violet",
+    "description": "Medium violet - icons",
+    "hex": "#B396EF",
+    "oklch": "73.3% 0.1290 298.2°"
+  },
+  {
+    "tokenName": "color.base.violet.4",
+    "groupName": "Base / Violet",
+    "description": "Mid violet - interactive elements",
+    "hex": "#9872E8",
+    "oklch": "64.3% 0.1722 296.1°"
+  },
+  {
+    "tokenName": "color.base.violet.5",
+    "groupName": "Base / Violet",
+    "description": "Base violet - primary applications",
+    "hex": "#7C4EE0",
+    "oklch": "55.5% 0.2103 292.7°"
+  },
+  {
+    "tokenName": "color.base.violet.6",
+    "groupName": "Base / Violet",
+    "description": "Dark violet - text on light backgrounds",
+    "hex": "#6536C7",
+    "oklch": "48.0% 0.2091 291.3°"
+  },
+  {
+    "tokenName": "color.base.violet.7",
+    "groupName": "Base / Violet",
+    "description": "Darker violet - high contrast",
+    "hex": "#4E2A99",
+    "oklch": "40.1% 0.1690 291.8°"
+  },
+  {
+    "tokenName": "color.base.violet.8",
+    "groupName": "Base / Violet",
+    "description": "Very dark violet - text",
+    "hex": "#381E6D",
+    "oklch": "32.0% 0.1288 292.7°"
+  },
+  {
+    "tokenName": "color.base.violet.9",
+    "groupName": "Base / Violet",
+    "description": "Darkest violet - maximum emphasis",
+    "hex": "#231344",
+    "oklch": "24.1% 0.0877 293.8°"
+  }
+]

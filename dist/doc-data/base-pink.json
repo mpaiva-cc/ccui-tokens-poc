@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.base.pink.0",
+    "groupName": "Base / Pink",
+    "description": "Lightest pink - subtle highlights, badge backgrounds",
+    "hex": "#FDEEF5",
+    "oklch": "96.3% 0.0186 347.4°"
+  },
+  {
+    "tokenName": "color.base.pink.1",
+    "groupName": "Base / Pink",
+    "description": "Light pink - hover states, selected rows",
+    "hex": "#FAD7E7",
+    "oklch": "91.3% 0.0440 348.7°"
+  },
+  {
+    "tokenName": "color.base.pink.2",
+    "groupName": "Base / Pink",
+    "description": "Mid-light pink - decorative borders",
+    "hex": "#F5AFCF",
+    "oklch": "82.9% 0.0908 350.2°"
+  },
+  {
+    "tokenName": "color.base.pink.3",
+    "groupName": "Base / Pink",
+    "description": "Medium pink - icons, illustrations",
+    "hex": "#EE85B5",
+    "oklch": "74.4% 0.1391 352.2°"
+  },
+  {
+    "tokenName": "color.base.pink.4",
+    "groupName": "Base / Pink",
+    "description": "Mid pink - interactive elements",
+    "hex": "#E55A9B",
+    "oklch": "66.5% 0.1837 354.2°"
+  },
+  {
+    "tokenName": "color.base.pink.5",
+    "groupName": "Base / Pink",
+    "description": "Base pink - primary accent applications",
+    "hex": "#DA2D80",
+    "oklch": "59.7% 0.2155 357.4°"
+  },
+  {
+    "tokenName": "color.base.pink.6",
+    "groupName": "Base / Pink",
+    "description": "Dark pink - text on light pink backgrounds (AA compliant)",
+    "hex": "#B91F69",
+    "oklch": "52.3% 0.1942 358.1°"
+  },
+  {
+    "tokenName": "color.base.pink.7",
+    "groupName": "Base / Pink",
+    "description": "Darker pink - high contrast applications",
+    "hex": "#8E1851",
+    "oklch": "43.3% 0.1582 357.5°"
+  },
+  {
+    "tokenName": "color.base.pink.8",
+    "groupName": "Base / Pink",
+    "description": "Very dark pink - text on light backgrounds",
+    "hex": "#65113A",
+    "oklch": "34.2% 0.1218 356.5°"
+  },
+  {
+    "tokenName": "color.base.pink.9",
+    "groupName": "Base / Pink",
+    "description": "Darkest pink - maximum emphasis",
+    "hex": "#3F0B24",
+    "oklch": "25.3% 0.0839 355.6°"
+  }
+]

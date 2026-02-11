@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.base.green.0",
+    "groupName": "Base / Green",
+    "description": "Lightest green - success alert backgrounds, positive feedback areas",
+    "hex": "#E7F6EC",
+    "oklch": "95.9% 0.0206 156.8°"
+  },
+  {
+    "tokenName": "color.base.green.1",
+    "groupName": "Base / Green",
+    "description": "Light green - hover state for success backgrounds",
+    "hex": "#C9EAD4",
+    "oklch": "90.7% 0.0456 156.2°"
+  },
+  {
+    "tokenName": "color.base.green.2",
+    "groupName": "Base / Green",
+    "description": "Mid-light green - progress indicators, completion bars",
+    "hex": "#94D6AA",
+    "oklch": "82.0% 0.0913 154.7°"
+  },
+  {
+    "tokenName": "color.base.green.3",
+    "groupName": "Base / Green",
+    "description": "Medium green - success icons on light backgrounds",
+    "hex": "#5FC180",
+    "oklch": "73.5% 0.1328 152.8°"
+  },
+  {
+    "tokenName": "color.base.green.4",
+    "groupName": "Base / Green",
+    "description": "Mid green - success badges, online indicators",
+    "hex": "#2AAB58",
+    "oklch": "65.4% 0.1629 150.4°"
+  },
+  {
+    "tokenName": "color.base.green.5",
+    "groupName": "Base / Green",
+    "description": "Base green - primary success buttons, checkmarks",
+    "hex": "#1D9448",
+    "oklch": "58.6% 0.1512 150.0°"
+  },
+  {
+    "tokenName": "color.base.green.6",
+    "groupName": "Base / Green",
+    "description": "Dark green - success text on white (5:1 contrast = AA)",
+    "hex": "#187C3C",
+    "oklch": "51.6% 0.1319 150.1°"
+  },
+  {
+    "tokenName": "color.base.green.7",
+    "groupName": "Base / Green",
+    "description": "Darker green - success text with maximum contrast",
+    "hex": "#125F2E",
+    "oklch": "42.8% 0.1071 150.5°"
+  },
+  {
+    "tokenName": "color.base.green.8",
+    "groupName": "Base / Green",
+    "description": "Very dark green - text on light green backgrounds",
+    "hex": "#0D4421",
+    "oklch": "34.2% 0.0822 151.0°"
+  },
+  {
+    "tokenName": "color.base.green.9",
+    "groupName": "Base / Green",
+    "description": "Darkest green - extreme emphasis",
+    "hex": "#082A15",
+    "oklch": "25.4% 0.0555 152.7°"
+  }
+]

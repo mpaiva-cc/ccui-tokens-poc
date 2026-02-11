@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.0",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 0.",
+    "hex": "#EFF6FF",
+    "oklch": "97.0% 0.0142 254.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.1",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 1.",
+    "hex": "#D0E3FF",
+    "oklch": "91.0% 0.0435 258.0°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.2",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 2.",
+    "hex": "#A0C6FF",
+    "oklch": "82.0% 0.0907 258.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.3",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 3.",
+    "hex": "#81A6DE",
+    "oklch": "72.0% 0.0918 258.5°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.4",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 4.",
+    "hex": "#6084BA",
+    "oklch": "60.9% 0.0922 258.3°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.5",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 5.",
+    "hex": "#476A9D",
+    "oklch": "52.1% 0.0907 257.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.6",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 6.",
+    "hex": "#345588",
+    "oklch": "44.9% 0.0927 258.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.7",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — base color (step 7, pinned to official brand hex).",
+    "hex": "#254677",
+    "oklch": "39.5% 0.0919 258.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.8",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 8.",
+    "hex": "#092958",
+    "oklch": "28.9% 0.0927 258.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-21.navyBlue.9",
+    "groupName": "Brand / Clearco-21 / navyBlue",
+    "description": "Navy Blue — primary logo color — tint step 9.",
+    "hex": "#001840",
+    "oklch": "22.0% 0.0830 258.4°"
+  }
+]

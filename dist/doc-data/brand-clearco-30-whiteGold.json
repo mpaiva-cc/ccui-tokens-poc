@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.0",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 0.",
+    "hex": "#FDF4E0",
+    "oklch": "96.9% 0.0280 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.1",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 1.",
+    "hex": "#FBF2DE",
+    "oklch": "96.3% 0.0280 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.2",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 2.",
+    "hex": "#F9F0DC",
+    "oklch": "95.7% 0.0281 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.3",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 3.",
+    "hex": "#F6EDD9",
+    "oklch": "94.8% 0.0281 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.4",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — base color (step 4, pinned to official brand hex).",
+    "hex": "#F4EBD7",
+    "oklch": "94.2% 0.0282 86.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.5",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 5.",
+    "hex": "#C5BCA9",
+    "oklch": "79.7% 0.0280 85.7°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.6",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 6.",
+    "hex": "#988F7D",
+    "oklch": "65.3% 0.0280 84.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.7",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 7.",
+    "hex": "#6D6554",
+    "oklch": "50.9% 0.0278 85.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.8",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 8.",
+    "hex": "#453D2D",
+    "oklch": "36.3% 0.0283 84.4°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.whiteGold.9",
+    "groupName": "Brand / Clearco-30 / whiteGold",
+    "description": "White Gold — warm cream neutral — tint step 9.",
+    "hex": "#201A0B",
+    "oklch": "22.0% 0.0277 88.3°"
+  }
+]

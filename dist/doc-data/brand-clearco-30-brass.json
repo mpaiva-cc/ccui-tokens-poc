@@ -1,0 +1,72 @@
+[
+  {
+    "tokenName": "color.brand.clearco-30.brass.0",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 0.",
+    "hex": "#FFF4DF",
+    "oklch": "97.0% 0.0300 83.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.1",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 1.",
+    "hex": "#EFE0C1",
+    "oklch": "91.1% 0.0441 85.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.2",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — base color (step 2, pinned to official brand hex).",
+    "hex": "#C3B497",
+    "oklch": "77.5% 0.0432 83.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.3",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 3.",
+    "hex": "#B2A386",
+    "oklch": "72.1% 0.0439 83.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.4",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 4.",
+    "hex": "#908166",
+    "oklch": "61.0% 0.0429 82.2°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.5",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 5.",
+    "hex": "#75674C",
+    "oklch": "52.0% 0.0437 83.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.6",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 6.",
+    "hex": "#615339",
+    "oklch": "44.9% 0.0435 82.6°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.7",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 7.",
+    "hex": "#4B3E24",
+    "oklch": "37.1% 0.0440 83.8°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.8",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 8.",
+    "hex": "#362910",
+    "oklch": "29.0% 0.0433 81.9°"
+  },
+  {
+    "tokenName": "color.brand.clearco-30.brass.9",
+    "groupName": "Brand / Clearco-30 / brass",
+    "description": "Brass — muted warm accent — tint step 9.",
+    "hex": "#241801",
+    "oklch": "21.9% 0.0432 82.6°"
+  }
+]
